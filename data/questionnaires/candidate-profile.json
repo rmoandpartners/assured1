@@ -1,0 +1,594 @@
+{
+  "questionnaire": {
+    "id": "candidate-profile",
+    "title": "Candidate Profile Questionnaire",
+    "description": "General profile information for risk, audit and control professionals",
+    "version": "1.0.0",
+    "createdAt": "2025-12-13",
+    "sections": [
+      {
+        "id": "personal_info",
+        "title": "Personal Information",
+        "description": "Basic personal details",
+        "order": 1,
+        "questions": [
+          {
+            "id": "first_name",
+            "question": "First Name",
+            "type": "text",
+            "required": true,
+            "placeholder": "Enter your first name",
+            "validation": {
+              "minLength": 1,
+              "maxLength": 50
+            }
+          },
+          {
+            "id": "last_name",
+            "question": "Last Name",
+            "type": "text",
+            "required": true,
+            "placeholder": "Enter your last name",
+            "validation": {
+              "minLength": 1,
+              "maxLength": 50
+            }
+          },
+          {
+            "id": "preferred_name",
+            "question": "Preferred Name",
+            "type": "text",
+            "required": false,
+            "placeholder": "How would you like to be addressed?",
+            "helpText": "Leave blank if same as first name"
+          },
+          {
+            "id": "date_of_birth",
+            "question": "Date of Birth",
+            "type": "date",
+            "required": false,
+            "helpText": "Optional - used for verification purposes only"
+          },
+          {
+            "id": "nationality",
+            "question": "Nationality",
+            "type": "text",
+            "required": false,
+            "placeholder": "Enter your nationality"
+          }
+        ]
+      },
+      {
+        "id": "contact_details",
+        "title": "Contact Details",
+        "description": "How we can reach you",
+        "order": 2,
+        "questions": [
+          {
+            "id": "email",
+            "question": "Email Address",
+            "type": "email",
+            "required": true,
+            "placeholder": "your.email@example.com",
+            "validation": {
+              "pattern": "^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$"
+            }
+          },
+          {
+            "id": "phone_primary",
+            "question": "Primary Phone Number",
+            "type": "tel",
+            "required": true,
+            "placeholder": "+44 7XXX XXX XXX",
+            "helpText": "Include country code"
+          },
+          {
+            "id": "phone_secondary",
+            "question": "Secondary Phone Number",
+            "type": "tel",
+            "required": false,
+            "placeholder": "+44 7XXX XXX XXX"
+          },
+          {
+            "id": "preferred_contact_method",
+            "question": "Preferred Contact Method",
+            "type": "select",
+            "required": true,
+            "options": [
+              { "value": "email", "label": "Email" },
+              { "value": "phone", "label": "Phone Call" },
+              { "value": "sms", "label": "SMS/Text" },
+              { "value": "whatsapp", "label": "WhatsApp" }
+            ]
+          },
+          {
+            "id": "best_time_to_contact",
+            "question": "Best Time to Contact",
+            "type": "multiselect",
+            "required": false,
+            "options": [
+              { "value": "morning", "label": "Morning (9am-12pm)" },
+              { "value": "afternoon", "label": "Afternoon (12pm-5pm)" },
+              { "value": "evening", "label": "Evening (5pm-8pm)" }
+            ]
+          },
+          {
+            "id": "linkedin_url",
+            "question": "LinkedIn Profile URL",
+            "type": "url",
+            "required": false,
+            "placeholder": "https://www.linkedin.com/in/yourprofile"
+          }
+        ]
+      },
+      {
+        "id": "location",
+        "title": "Location & Work Preferences",
+        "description": "Where you are based and work location preferences",
+        "order": 3,
+        "questions": [
+          {
+            "id": "current_country",
+            "question": "Country of Residence",
+            "type": "text",
+            "required": true,
+            "placeholder": "e.g., United Kingdom"
+          },
+          {
+            "id": "current_city",
+            "question": "City/Town",
+            "type": "text",
+            "required": true,
+            "placeholder": "e.g., London"
+          },
+          {
+            "id": "postcode",
+            "question": "Postcode/Zip Code",
+            "type": "text",
+            "required": false,
+            "placeholder": "e.g., EC2A 1NT",
+            "helpText": "Used for calculating commute distances"
+          },
+          {
+            "id": "right_to_work",
+            "question": "Do you have the right to work in your country of residence?",
+            "type": "select",
+            "required": true,
+            "options": [
+              { "value": "citizen", "label": "Yes - Citizen/Permanent Resident" },
+              { "value": "visa_no_sponsorship", "label": "Yes - Work Visa (no sponsorship required)" },
+              { "value": "visa_sponsorship_required", "label": "Yes - But will require sponsorship in future" },
+              { "value": "no", "label": "No - Require visa sponsorship" }
+            ]
+          },
+          {
+            "id": "work_location_preference",
+            "question": "Preferred Work Location",
+            "type": "multiselect",
+            "required": true,
+            "options": [
+              { "value": "office", "label": "Office-based" },
+              { "value": "hybrid", "label": "Hybrid (mix of office and remote)" },
+              { "value": "remote", "label": "Fully Remote" }
+            ]
+          },
+          {
+            "id": "max_commute_time",
+            "question": "Maximum Commute Time (one way)",
+            "type": "select",
+            "required": false,
+            "options": [
+              { "value": "15", "label": "15 minutes" },
+              { "value": "30", "label": "30 minutes" },
+              { "value": "45", "label": "45 minutes" },
+              { "value": "60", "label": "1 hour" },
+              { "value": "90", "label": "1.5 hours" },
+              { "value": "120", "label": "2+ hours" }
+            ]
+          },
+          {
+            "id": "willing_to_relocate",
+            "question": "Are you willing to relocate?",
+            "type": "select",
+            "required": true,
+            "options": [
+              { "value": "yes", "label": "Yes" },
+              { "value": "for_right_role", "label": "For the right opportunity" },
+              { "value": "no", "label": "No" }
+            ]
+          },
+          {
+            "id": "relocation_preferences",
+            "question": "If relocating, which locations would you consider?",
+            "type": "textarea",
+            "required": false,
+            "placeholder": "e.g., London, Manchester, Edinburgh, Dublin",
+            "conditionalOn": {
+              "field": "willing_to_relocate",
+              "values": ["yes", "for_right_role"]
+            }
+          },
+          {
+            "id": "travel_willingness",
+            "question": "Willingness to Travel for Work",
+            "type": "select",
+            "required": true,
+            "options": [
+              { "value": "none", "label": "No travel" },
+              { "value": "occasional", "label": "Occasional (up to 10%)" },
+              { "value": "moderate", "label": "Moderate (10-25%)" },
+              { "value": "frequent", "label": "Frequent (25-50%)" },
+              { "value": "extensive", "label": "Extensive (50%+)" }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "current_employment",
+        "title": "Current Employment Status",
+        "description": "Your current work situation",
+        "order": 4,
+        "questions": [
+          {
+            "id": "employment_status",
+            "question": "Current Employment Status",
+            "type": "select",
+            "required": true,
+            "options": [
+              { "value": "employed_permanent", "label": "Employed - Permanent" },
+              { "value": "employed_contract", "label": "Employed - Contract" },
+              { "value": "self_employed", "label": "Self-employed/Freelance" },
+              { "value": "unemployed_seeking", "label": "Unemployed - Actively seeking" },
+              { "value": "unemployed_not_seeking", "label": "Unemployed - Not actively seeking" },
+              { "value": "student", "label": "Student" },
+              { "value": "career_break", "label": "On career break" }
+            ]
+          },
+          {
+            "id": "current_employer",
+            "question": "Current/Most Recent Employer",
+            "type": "text",
+            "required": false,
+            "placeholder": "Company name"
+          },
+          {
+            "id": "current_job_title",
+            "question": "Current/Most Recent Job Title",
+            "type": "text",
+            "required": false,
+            "placeholder": "e.g., Senior Risk Analyst"
+          },
+          {
+            "id": "current_industry",
+            "question": "Current/Most Recent Industry",
+            "type": "select",
+            "required": false,
+            "options": [
+              { "value": "banking", "label": "Banking" },
+              { "value": "insurance", "label": "Insurance" },
+              { "value": "asset_management", "label": "Asset Management" },
+              { "value": "private_equity", "label": "Private Equity/Venture Capital" },
+              { "value": "fintech", "label": "FinTech" },
+              { "value": "big4", "label": "Big 4 Accounting Firm" },
+              { "value": "consulting", "label": "Consulting" },
+              { "value": "corporate", "label": "Corporate (Non-Financial)" },
+              { "value": "public_sector", "label": "Public Sector/Government" },
+              { "value": "ngo", "label": "NGO/Non-Profit" },
+              { "value": "other", "label": "Other" }
+            ]
+          },
+          {
+            "id": "notice_period",
+            "question": "Notice Period",
+            "type": "select",
+            "required": false,
+            "options": [
+              { "value": "immediately", "label": "Available Immediately" },
+              { "value": "1_week", "label": "1 Week" },
+              { "value": "2_weeks", "label": "2 Weeks" },
+              { "value": "1_month", "label": "1 Month" },
+              { "value": "2_months", "label": "2 Months" },
+              { "value": "3_months", "label": "3 Months" },
+              { "value": "3_months_plus", "label": "More than 3 Months" }
+            ]
+          },
+          {
+            "id": "gardening_leave",
+            "question": "Are you currently on gardening leave?",
+            "type": "checkbox",
+            "required": false,
+            "defaultValue": false
+          },
+          {
+            "id": "available_from",
+            "question": "Earliest Start Date",
+            "type": "date",
+            "required": false,
+            "helpText": "When could you start a new role?"
+          }
+        ]
+      },
+      {
+        "id": "job_search_status",
+        "title": "Job Search Status",
+        "description": "What you're looking for",
+        "order": 5,
+        "questions": [
+          {
+            "id": "actively_looking",
+            "question": "How actively are you looking for a new role?",
+            "type": "select",
+            "required": true,
+            "options": [
+              { "value": "actively_interviewing", "label": "Actively interviewing" },
+              { "value": "actively_looking", "label": "Actively looking" },
+              { "value": "casually_looking", "label": "Casually looking/Open to opportunities" },
+              { "value": "not_looking", "label": "Not currently looking" }
+            ]
+          },
+          {
+            "id": "job_type_preference",
+            "question": "What type of employment are you seeking?",
+            "type": "multiselect",
+            "required": true,
+            "options": [
+              { "value": "permanent", "label": "Permanent" },
+              { "value": "contract", "label": "Contract" },
+              { "value": "interim", "label": "Interim" },
+              { "value": "part_time", "label": "Part-time" },
+              { "value": "freelance", "label": "Freelance/Consulting" }
+            ]
+          },
+          {
+            "id": "contract_preference_ir35",
+            "question": "If contract, what is your IR35 preference?",
+            "type": "select",
+            "required": false,
+            "options": [
+              { "value": "inside_ir35", "label": "Inside IR35 only" },
+              { "value": "outside_ir35", "label": "Outside IR35 only" },
+              { "value": "either", "label": "No preference" }
+            ],
+            "conditionalOn": {
+              "field": "job_type_preference",
+              "contains": ["contract", "interim", "freelance"]
+            }
+          },
+          {
+            "id": "reason_for_change",
+            "question": "Primary reason for seeking a new role",
+            "type": "select",
+            "required": false,
+            "options": [
+              { "value": "career_progression", "label": "Career progression" },
+              { "value": "new_challenge", "label": "New challenge/variety" },
+              { "value": "better_compensation", "label": "Better compensation" },
+              { "value": "work_life_balance", "label": "Better work-life balance" },
+              { "value": "company_culture", "label": "Company culture fit" },
+              { "value": "job_security", "label": "Job security" },
+              { "value": "relocation", "label": "Relocation" },
+              { "value": "redundancy", "label": "Redundancy" },
+              { "value": "contract_ending", "label": "Contract ending" },
+              { "value": "other", "label": "Other" }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "salary_expectations",
+        "title": "Compensation Expectations",
+        "description": "Your salary and benefits expectations",
+        "order": 6,
+        "questions": [
+          {
+            "id": "current_salary",
+            "question": "Current/Most Recent Base Salary",
+            "type": "number",
+            "required": false,
+            "placeholder": "e.g., 75000",
+            "helpText": "Annual figure in GBP (before tax)",
+            "validation": {
+              "min": 0,
+              "max": 10000000
+            }
+          },
+          {
+            "id": "current_bonus",
+            "question": "Current/Most Recent Bonus",
+            "type": "number",
+            "required": false,
+            "placeholder": "e.g., 15000",
+            "helpText": "Typical annual bonus in GBP"
+          },
+          {
+            "id": "current_benefits",
+            "question": "Current Benefits Package",
+            "type": "multiselect",
+            "required": false,
+            "options": [
+              { "value": "pension", "label": "Pension" },
+              { "value": "health_insurance", "label": "Private Health Insurance" },
+              { "value": "life_insurance", "label": "Life Insurance" },
+              { "value": "car_allowance", "label": "Car Allowance" },
+              { "value": "company_car", "label": "Company Car" },
+              { "value": "gym_membership", "label": "Gym Membership" },
+              { "value": "share_options", "label": "Share Options/Equity" },
+              { "value": "flexible_working", "label": "Flexible Working" },
+              { "value": "training_budget", "label": "Training/Development Budget" }
+            ]
+          },
+          {
+            "id": "salary_expectation_min",
+            "question": "Minimum Acceptable Salary",
+            "type": "number",
+            "required": true,
+            "placeholder": "e.g., 70000",
+            "helpText": "The lowest base salary you would consider (GBP)"
+          },
+          {
+            "id": "salary_expectation_ideal",
+            "question": "Target/Ideal Salary",
+            "type": "number",
+            "required": true,
+            "placeholder": "e.g., 85000",
+            "helpText": "Your preferred base salary (GBP)"
+          },
+          {
+            "id": "contract_day_rate",
+            "question": "Expected Day Rate (if contracting)",
+            "type": "number",
+            "required": false,
+            "placeholder": "e.g., 600",
+            "helpText": "Daily rate in GBP",
+            "conditionalOn": {
+              "field": "job_type_preference",
+              "contains": ["contract", "interim", "freelance"]
+            }
+          },
+          {
+            "id": "salary_flexibility",
+            "question": "Would you consider a lower salary for the right opportunity?",
+            "type": "select",
+            "required": false,
+            "options": [
+              { "value": "yes", "label": "Yes, significantly lower" },
+              { "value": "somewhat", "label": "Somewhat flexible" },
+              { "value": "no", "label": "No, salary is firm" }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "professional_summary",
+        "title": "Professional Summary",
+        "description": "Tell us about yourself",
+        "order": 7,
+        "questions": [
+          {
+            "id": "professional_summary",
+            "question": "Professional Summary",
+            "type": "textarea",
+            "required": true,
+            "placeholder": "Provide a brief overview of your professional background, key achievements, and career goals...",
+            "helpText": "2-4 sentences summarising your experience and what you're looking for",
+            "validation": {
+              "minLength": 50,
+              "maxLength": 1000
+            }
+          },
+          {
+            "id": "cv_upload",
+            "question": "Upload Your CV",
+            "type": "file",
+            "required": false,
+            "acceptedFormats": [".pdf", ".doc", ".docx"],
+            "maxFileSizeMB": 5,
+            "helpText": "PDF or Word document, max 5MB"
+          },
+          {
+            "id": "portfolio_url",
+            "question": "Portfolio/Website URL",
+            "type": "url",
+            "required": false,
+            "placeholder": "https://www.yourwebsite.com"
+          }
+        ]
+      },
+      {
+        "id": "referral_source",
+        "title": "How Did You Find Us?",
+        "description": "Help us understand how you discovered Assured Recruitment",
+        "order": 8,
+        "questions": [
+          {
+            "id": "referral_source",
+            "question": "How did you hear about Assured Recruitment?",
+            "type": "select",
+            "required": true,
+            "options": [
+              { "value": "linkedin", "label": "LinkedIn" },
+              { "value": "google", "label": "Google Search" },
+              { "value": "job_board", "label": "Job Board" },
+              { "value": "referral", "label": "Referral from friend/colleague" },
+              { "value": "previous_candidate", "label": "Previously worked with us" },
+              { "value": "event", "label": "Industry Event" },
+              { "value": "other", "label": "Other" }
+            ]
+          },
+          {
+            "id": "referral_name",
+            "question": "If referred, who recommended us?",
+            "type": "text",
+            "required": false,
+            "placeholder": "Name of referrer",
+            "conditionalOn": {
+              "field": "referral_source",
+              "values": ["referral"]
+            }
+          }
+        ]
+      },
+      {
+        "id": "preferences_communication",
+        "title": "Communication Preferences",
+        "description": "How you'd like us to stay in touch",
+        "order": 9,
+        "questions": [
+          {
+            "id": "marketing_consent",
+            "question": "Would you like to receive job alerts and career insights?",
+            "type": "checkbox",
+            "required": false,
+            "defaultValue": true,
+            "helpText": "Relevant opportunities matching your profile"
+          },
+          {
+            "id": "job_alert_frequency",
+            "question": "How often would you like to receive job alerts?",
+            "type": "select",
+            "required": false,
+            "options": [
+              { "value": "daily", "label": "Daily" },
+              { "value": "weekly", "label": "Weekly" },
+              { "value": "fortnightly", "label": "Fortnightly" },
+              { "value": "monthly", "label": "Monthly" }
+            ],
+            "conditionalOn": {
+              "field": "marketing_consent",
+              "values": [true]
+            }
+          },
+          {
+            "id": "privacy_consent",
+            "question": "I consent to Assured Recruitment storing and processing my personal data in accordance with the Privacy Policy",
+            "type": "checkbox",
+            "required": true,
+            "defaultValue": false
+          },
+          {
+            "id": "terms_consent",
+            "question": "I agree to the Terms and Conditions",
+            "type": "checkbox",
+            "required": true,
+            "defaultValue": false
+          }
+        ]
+      }
+    ],
+    "metadata": {
+      "totalQuestions": 54,
+      "estimatedCompletionMinutes": 10,
+      "targetAudience": "Risk, Audit and Control Professionals",
+      "matchingFields": [
+        "current_industry",
+        "work_location_preference",
+        "job_type_preference",
+        "willing_to_relocate",
+        "travel_willingness",
+        "salary_expectation_min",
+        "salary_expectation_ideal",
+        "notice_period"
+      ]
+    }
+  }
+}

@@ -1,0 +1,3022 @@
+{
+  "questionnaire": {
+    "id": "bcm-role-profile",
+    "title": "Business Continuity & Resilience Role Profile",
+    "description": "BCM, Crisis Management and Organizational Resilience role requirements (complements general job-profile)",
+    "version": "1.0.1",
+    "createdAt": "2025-12-15",
+    "updatedAt": "2025-12-15",
+    "mirrorProfile": "bcm-candidate-profile",
+    "parentProfile": "job-profile",
+    "importanceScale": {
+      "0": {
+        "label": "Not Required",
+        "description": "This skill/qualification is not needed for the role"
+      },
+      "1": {
+        "label": "Nice to Have",
+        "description": "Beneficial but not essential; would be a plus"
+      },
+      "2": {
+        "label": "Important",
+        "description": "Expected for the role; gaps would need development"
+      },
+      "3": {
+        "label": "Very Important",
+        "description": "Core requirement; strong competency expected"
+      },
+      "4": {
+        "label": "Essential",
+        "description": "Critical requirement; must have from day one"
+      }
+    },
+    "sections": [
+      {
+        "id": "bcm_role_specifics",
+        "title": "BCM Role Specifics",
+        "description": "Business Continuity, Crisis Management and Resilience role characteristics",
+        "order": 1,
+        "questions": [
+          {
+            "id": "bcm_role_level",
+            "question": "BCM/Resilience Role Level",
+            "type": "select",
+            "required": true,
+            "options": [
+              {
+                "value": "analyst",
+                "label": "BCM Analyst / Coordinator"
+              },
+              {
+                "value": "senior_analyst",
+                "label": "Senior BCM Analyst / Specialist"
+              },
+              {
+                "value": "manager",
+                "label": "BCM Manager / Lead"
+              },
+              {
+                "value": "senior_manager",
+                "label": "Senior BCM Manager"
+              },
+              {
+                "value": "director",
+                "label": "Head of BCM / Resilience Director"
+              },
+              {
+                "value": "cro",
+                "label": "Chief Resilience Officer / VP Resilience"
+              }
+            ],
+            "mirrorsCandidate": {
+              "questionId": "target_bcm_level",
+              "matchType": "compatibility"
+            }
+          },
+          {
+            "id": "bcm_function_scope",
+            "question": "BCM Function Scope",
+            "type": "select",
+            "required": true,
+            "options": [
+              {
+                "value": "group_enterprise",
+                "label": "Group / Enterprise-wide BCM"
+              },
+              {
+                "value": "country",
+                "label": "Country / National BCM"
+              },
+              {
+                "value": "regional",
+                "label": "Regional BCM"
+              },
+              {
+                "value": "business_unit",
+                "label": "Business Unit / Division BCM"
+              },
+              {
+                "value": "site_facility",
+                "label": "Site / Facility BCM"
+              }
+            ],
+            "mirrorsCandidate": {
+              "questionId": "bcm_scope_experience",
+              "matchType": "compatibility"
+            }
+          },
+          {
+            "id": "bcm_reporting_line",
+            "question": "BCM Function Reports To",
+            "type": "select",
+            "required": true,
+            "options": [
+              {
+                "value": "board_committee",
+                "label": "Board / Risk Committee"
+              },
+              {
+                "value": "cro",
+                "label": "Chief Risk Officer / Chief Resilience Officer"
+              },
+              {
+                "value": "coo",
+                "label": "COO / Operations Director"
+              },
+              {
+                "value": "cfo",
+                "label": "CFO / Finance Director"
+              },
+              {
+                "value": "head_of_risk",
+                "label": "Head of Risk / ERM Director"
+              },
+              {
+                "value": "ciso",
+                "label": "CISO / IT Director"
+              },
+              {
+                "value": "other_c_suite",
+                "label": "Other C-Suite Executive"
+              }
+            ]
+          },
+          {
+            "id": "years_bcm_required",
+            "question": "Minimum Years in Business Continuity / Resilience",
+            "type": "number",
+            "required": true,
+            "min": 0,
+            "max": 20,
+            "helpText": "Years specifically in BCM, resilience or continuity planning roles",
+            "mirrorsCandidate": {
+              "questionId": "years_in_bcm",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "years_crisis_required",
+            "question": "Minimum Years in Crisis Management",
+            "type": "number",
+            "required": true,
+            "min": 0,
+            "max": 20,
+            "helpText": "Years in crisis management, emergency response or incident management roles",
+            "mirrorsCandidate": {
+              "questionId": "years_in_crisis",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "years_emergency_required",
+            "question": "Minimum Years in Emergency Management",
+            "type": "number",
+            "required": false,
+            "min": 0,
+            "max": 20,
+            "helpText": "Years in emergency management or first response coordination",
+            "mirrorsCandidate": {
+              "questionId": "years_in_emergency",
+              "matchType": "minimum"
+            }
+          }
+        ]
+      },
+      {
+        "id": "framework_requirements",
+        "title": "Framework & Standards Knowledge",
+        "description": "Required familiarity with BCM frameworks and standards",
+        "order": 2,
+        "helpText": "Rate the importance of knowledge in each framework (0 = Not Required, 4 = Essential)",
+        "questions": [
+          {
+            "id": "framework_iso22301",
+            "question": "ISO 22301 (BCMS)",
+            "description": "Business Continuity Management Systems - Requirements",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 2,
+            "proficiencyDefinitions": {
+              "1": "Aware of ISO 22301 structure; understands BCMS concepts",
+              "2": "Applied ISO 22301 in BC planning; contributed to audits",
+              "3": "Implemented ISO 22301 BCMS; led certification programmes",
+              "4": "Designed enterprise BCMS architectures; led multi-site certifications"
+            },
+            "mirrorsCandidate": {
+              "questionId": "framework_iso22301",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "framework_iso22316",
+            "question": "ISO 22316 (Organizational Resilience)",
+            "description": "Principles and attributes for organizational resilience",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Aware of organizational resilience concepts",
+              "2": "Applied resilience principles; assessed maturity",
+              "3": "Designed resilience programmes; led assessments",
+              "4": "Built enterprise resilience frameworks; advised C-suite"
+            },
+            "mirrorsCandidate": {
+              "questionId": "framework_iso22316",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "framework_iso22317",
+            "question": "ISO 22317 (BIA Guidelines)",
+            "description": "Guidelines for business impact analysis",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Aware of BIA methodology requirements",
+              "2": "Conducted BIAs following ISO 22317 guidance",
+              "3": "Designed BIA methodologies; established governance",
+              "4": "Built enterprise BIA capability; led methodology innovation"
+            },
+            "mirrorsCandidate": {
+              "questionId": "framework_iso22317",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "framework_iso22320",
+            "question": "ISO 22320 (Emergency Management)",
+            "description": "Guidelines for emergency management",
+            "type": "slider",
+            "required": false,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Aware of emergency management requirements",
+              "2": "Applied ISO 22320 in emergency response planning",
+              "3": "Designed emergency management systems; led response coordination",
+              "4": "Built enterprise emergency management capability"
+            },
+            "mirrorsCandidate": {
+              "questionId": "framework_iso22320",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "framework_bci_gpg",
+            "question": "BCI Good Practice Guidelines",
+            "description": "Business Continuity Institute Good Practice Guidelines",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 2,
+            "proficiencyDefinitions": {
+              "1": "Aware of BCI 6 Professional Practices",
+              "2": "Applied BCI GPG in BC programme development",
+              "3": "Designed BC programmes aligned to BCI GPG; CBCI/MBCI level",
+              "4": "Subject matter expert in BCI methodology; FBCI level"
+            },
+            "mirrorsCandidate": {
+              "questionId": "framework_bci_gpg",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "framework_dri_pp",
+            "question": "DRI International Professional Practices",
+            "description": "DRI International 10 Professional Practices for BCM",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Aware of DRI 10 Professional Practices",
+              "2": "Applied DRI methodology in BC planning",
+              "3": "Designed programmes aligned to DRI; CBCP certified",
+              "4": "MBCP certified; DRI subject matter expert"
+            },
+            "mirrorsCandidate": {
+              "questionId": "framework_dri_pp",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "framework_nist_csf",
+            "question": "NIST Cybersecurity Framework (Resilience context)",
+            "description": "NIST CSF application to business resilience and recovery",
+            "type": "slider",
+            "required": false,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Aware of NIST CSF structure",
+              "2": "Applied NIST CSF in cyber recovery planning",
+              "3": "Designed cyber resilience programmes using NIST CSF",
+              "4": "Built enterprise cyber resilience frameworks"
+            },
+            "mirrorsCandidate": {
+              "questionId": "framework_nist_csf",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "framework_nfpa_1600",
+            "question": "NFPA 1600 (Emergency Management Standard)",
+            "description": "Standard on Continuity, Emergency, and Crisis Management",
+            "type": "slider",
+            "required": false,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Aware of NFPA 1600 requirements",
+              "2": "Applied NFPA 1600 in programme development",
+              "3": "Designed programmes achieving NFPA 1600 compliance",
+              "4": "Expert in NFPA 1600; led multi-site compliance"
+            },
+            "mirrorsCandidate": {
+              "questionId": "framework_nfpa_1600",
+              "matchType": "minimum"
+            }
+          }
+        ]
+      },
+      {
+        "id": "systems_requirements",
+        "title": "BCM/Resilience Systems & Technology",
+        "description": "Required experience with BCM software platforms and notification systems",
+        "order": 3,
+        "helpText": "Select systems where experience is required",
+        "questions": [
+          {
+            "id": "bcm_systems_required",
+            "question": "Required BCM/Resilience Software Experience",
+            "description": "Select BCM platforms where experience is required",
+            "type": "system_proficiency",
+            "required": false,
+            "proficiencyScale": {
+              "1": "Basic User - Can navigate and input data",
+              "2": "Proficient User - Runs reports, manages workflows",
+              "3": "Power User/Admin - Configures modules, designs workflows",
+              "4": "Implementation Lead - Designed and deployed the system"
+            },
+            "systems": [
+              {
+                "value": "fusion",
+                "label": "Fusion Framework System"
+              },
+              {
+                "value": "archer_bc",
+                "label": "Archer Business Resiliency"
+              },
+              {
+                "value": "castellan",
+                "label": "Castellan (Riskonnect)"
+              },
+              {
+                "value": "servicenow_bcm",
+                "label": "ServiceNow BCM"
+              },
+              {
+                "value": "noggin",
+                "label": "Noggin"
+              },
+              {
+                "value": "continuity_logic",
+                "label": "Continuity Logic"
+              },
+              {
+                "value": "navex_bcm",
+                "label": "NAVEX Global BCM"
+              },
+              {
+                "value": "sai360_bcm",
+                "label": "SAI360 BCM"
+              },
+              {
+                "value": "recoveryplanner",
+                "label": "RecoveryPlanner"
+              },
+              {
+                "value": "premier_continuum",
+                "label": "Premier Continuum"
+              },
+              {
+                "value": "quantivate",
+                "label": "Quantivate"
+              },
+              {
+                "value": "assurance_cm",
+                "label": "Assurance Software CM"
+              },
+              {
+                "value": "clearview",
+                "label": "Clearview Continuity"
+              }
+            ],
+            "mirrorsCandidate": {
+              "questionId": "bcm_systems_experience",
+              "matchType": "overlap"
+            }
+          },
+          {
+            "id": "notification_systems_required",
+            "question": "Required Emergency Notification Systems Experience",
+            "description": "Select notification/alerting systems where experience is required",
+            "type": "system_proficiency",
+            "required": false,
+            "proficiencyScale": {
+              "1": "Basic User - Can send alerts",
+              "2": "Proficient User - Manages templates, groups, reports",
+              "3": "Power User/Admin - Configures workflows, integrations",
+              "4": "Implementation Lead - Designed and deployed the system"
+            },
+            "systems": [
+              {
+                "value": "everbridge",
+                "label": "Everbridge"
+              },
+              {
+                "value": "onsolve",
+                "label": "OnSolve (AlertMedia, Send Word Now)"
+              },
+              {
+                "value": "blackberry_athoc",
+                "label": "BlackBerry AtHoc"
+              },
+              {
+                "value": "rave",
+                "label": "Rave Mobile Safety"
+              },
+              {
+                "value": "alertmedia",
+                "label": "AlertMedia"
+              },
+              {
+                "value": "singlewire",
+                "label": "Singlewire InformaCast"
+              },
+              {
+                "value": "regroup",
+                "label": "Regroup Mass Notification"
+              },
+              {
+                "value": "alertfind",
+                "label": "AlertFind"
+              },
+              {
+                "value": "message_one",
+                "label": "MessageOne"
+              }
+            ],
+            "mirrorsCandidate": {
+              "questionId": "notification_systems_experience",
+              "matchType": "overlap"
+            }
+          },
+          {
+            "id": "bcm_system_selection",
+            "question": "BCM System Selection & Implementation",
+            "description": "Experience selecting, implementing and configuring BCM software",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Participated in system evaluation",
+              "2": "Led requirements definition; evaluated vendors",
+              "3": "Led BCM system implementation projects",
+              "4": "Designed enterprise BCM technology architecture"
+            },
+            "mirrorsCandidate": {
+              "questionId": "bcm_system_selection",
+              "matchType": "minimum"
+            }
+          }
+        ]
+      },
+      {
+        "id": "bia_requirements",
+        "title": "Business Impact Analysis (BIA)",
+        "description": "Required BIA methodology and execution skills",
+        "order": 4,
+        "helpText": "Rate the importance of each BIA skill (0 = Not Required, 4 = Essential)",
+        "questions": [
+          {
+            "id": "bia_methodology",
+            "question": "BIA Methodology Design",
+            "description": "Designing BIA frameworks, templates and methodologies",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Understands BIA methodology concepts",
+              "2": "Applied existing BIA methodologies; documented results",
+              "3": "Designed BIA methodologies; established governance",
+              "4": "Built enterprise BIA capability; led methodology innovation"
+            },
+            "mirrorsCandidate": {
+              "questionId": "bia_methodology",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "bia_quantitative",
+            "question": "Quantitative Impact Analysis",
+            "description": "Financial and quantitative impact modelling",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Understands financial impact concepts",
+              "2": "Conducted financial impact assessments",
+              "3": "Designed quantitative models; validated financial impacts",
+              "4": "Built enterprise financial impact models; Monte Carlo simulation"
+            },
+            "mirrorsCandidate": {
+              "questionId": "bia_quantitative",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "bia_qualitative",
+            "question": "Qualitative Impact Analysis",
+            "description": "Non-financial impact assessment including reputational, regulatory, operational",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Understands qualitative impact categories",
+              "2": "Assessed non-financial impacts; stakeholder interviews",
+              "3": "Designed qualitative assessment frameworks",
+              "4": "Built integrated impact models; enterprise-wide calibration"
+            },
+            "mirrorsCandidate": {
+              "questionId": "bia_qualitative",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "bia_rto_rpo",
+            "question": "RTO/RPO Definition & Calibration",
+            "description": "Setting and validating recovery time and point objectives",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Understands RTO/RPO/MTPD concepts",
+              "2": "Documented RTOs/RPOs; participated in validation",
+              "3": "Calibrated RTOs across business units; validated with IT",
+              "4": "Designed enterprise RTO calibration methodology"
+            },
+            "mirrorsCandidate": {
+              "questionId": "bia_rto_rpo",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "bia_dependency_mapping",
+            "question": "Dependency Mapping",
+            "description": "Mapping process, technology, supplier and people dependencies",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Understands dependency concepts",
+              "2": "Documented dependencies; created dependency diagrams",
+              "3": "Designed dependency mapping methodology; identified SPOFs",
+              "4": "Built enterprise dependency databases; CMDB integration"
+            },
+            "mirrorsCandidate": {
+              "questionId": "bia_dependency_mapping",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "bia_critical_activity",
+            "question": "Critical Activity Identification",
+            "description": "Identifying and prioritising critical business activities",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Understands critical activity concepts",
+              "2": "Identified critical activities; documented prioritisation",
+              "3": "Designed critical activity frameworks; executive validation",
+              "4": "Built enterprise criticality models; strategic alignment"
+            },
+            "mirrorsCandidate": {
+              "questionId": "bia_critical_activity",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "bia_workshop_facilitation",
+            "question": "BIA Workshop Facilitation",
+            "description": "Facilitating BIA workshops with business stakeholders",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Participated in BIA workshops",
+              "2": "Facilitated BIA workshops; documented outcomes",
+              "3": "Designed workshop approaches; executive presentations",
+              "4": "Master facilitator; designed enterprise BIA programmes"
+            },
+            "mirrorsCandidate": {
+              "questionId": "bia_workshop_facilitation",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "bia_data_collection",
+            "question": "BIA Data Collection & Validation",
+            "description": "Systematic collection and quality assurance of BIA data",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Understands data collection requirements",
+              "2": "Collected and validated BIA data; QA processes",
+              "3": "Designed data collection methodologies; automation",
+              "4": "Built enterprise BIA data management capability"
+            },
+            "mirrorsCandidate": {
+              "questionId": "bia_data_collection",
+              "matchType": "minimum"
+            }
+          }
+        ]
+      },
+      {
+        "id": "bc_strategy_requirements",
+        "title": "Business Continuity Strategy & Design",
+        "description": "Required experience in BC strategy development",
+        "order": 5,
+        "helpText": "Rate the importance of each strategy skill (0 = Not Required, 4 = Essential)",
+        "questions": [
+          {
+            "id": "bc_strategy_development",
+            "question": "BC Strategy Development",
+            "description": "Developing overall BC strategy aligned to business objectives",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Understands BC strategy concepts",
+              "2": "Contributed to strategy development; option analysis",
+              "3": "Led BC strategy development; executive presentations",
+              "4": "Designed enterprise BC strategies; board-level engagement"
+            },
+            "mirrorsCandidate": {
+              "questionId": "bc_strategy_development",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "recovery_site_strategies",
+            "question": "Recovery Site Strategies",
+            "description": "Workplace recovery, hot/warm/cold sites, work area recovery",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Understands recovery site concepts",
+              "2": "Documented recovery site requirements; vendor evaluation",
+              "3": "Designed recovery site strategies; contract negotiation",
+              "4": "Built enterprise recovery site network; multi-region strategies"
+            },
+            "mirrorsCandidate": {
+              "questionId": "recovery_site_strategies",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "workaround_procedures",
+            "question": "Manual Workaround Design",
+            "description": "Designing manual processes to continue operations during system outages",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Understands workaround concepts",
+              "2": "Documented manual workarounds; tested procedures",
+              "3": "Designed workaround frameworks; validated with operations",
+              "4": "Built enterprise workaround capability; automated testing"
+            },
+            "mirrorsCandidate": {
+              "questionId": "workaround_procedures",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "alternate_supplier_strategies",
+            "question": "Alternate Supplier Strategies",
+            "description": "Identifying and managing alternate supplier arrangements",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Understands alternate supplier concepts",
+              "2": "Identified alternate suppliers; documented arrangements",
+              "3": "Designed supplier resilience strategies; contract clauses",
+              "4": "Built enterprise supplier resilience programme"
+            },
+            "mirrorsCandidate": {
+              "questionId": "alternate_supplier_strategies",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "workforce_displacement",
+            "question": "Workforce Displacement Strategies",
+            "description": "Remote working, staff relocation and workforce resilience",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Understands workforce resilience concepts",
+              "2": "Documented workforce displacement procedures",
+              "3": "Designed workforce resilience strategies; HR coordination",
+              "4": "Built enterprise workforce resilience capability"
+            },
+            "mirrorsCandidate": {
+              "questionId": "workforce_displacement",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "cost_benefit_analysis",
+            "question": "BC Cost-Benefit Analysis",
+            "description": "Analysing costs and benefits of BC investments",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Understands BC economics concepts",
+              "2": "Conducted cost-benefit analyses; business cases",
+              "3": "Designed investment frameworks; ROI models",
+              "4": "Built enterprise BC investment optimisation capability"
+            },
+            "mirrorsCandidate": {
+              "questionId": "cost_benefit_analysis",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "technology_recovery_strategies",
+            "question": "Technology Recovery Strategies",
+            "description": "IT/technology recovery approaches aligned to business needs",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Understands IT recovery concepts",
+              "2": "Documented technology requirements; IT liaison",
+              "3": "Designed technology recovery strategies; DR alignment",
+              "4": "Built enterprise technology resilience architecture"
+            },
+            "mirrorsCandidate": {
+              "questionId": "technology_recovery_strategies",
+              "matchType": "minimum"
+            }
+          }
+        ]
+      },
+      {
+        "id": "bcp_development_requirements",
+        "title": "Business Continuity Plan Development",
+        "description": "Required plan development and documentation skills",
+        "order": 6,
+        "helpText": "Rate the importance of each planning skill (0 = Not Required, 4 = Essential)",
+        "questions": [
+          {
+            "id": "bcp_development",
+            "question": "BCP Document Development",
+            "description": "Writing clear, actionable business continuity plans",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Understands BCP structure and content",
+              "2": "Wrote BCPs using templates; documented procedures",
+              "3": "Designed BCP templates; established standards",
+              "4": "Built enterprise BCP framework; methodology expert"
+            },
+            "mirrorsCandidate": {
+              "questionId": "bcp_development",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "bcp_structure_design",
+            "question": "BCP Structure & Architecture",
+            "description": "Designing plan hierarchies, modular structures and cross-references",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Understands plan architecture concepts",
+              "2": "Worked within established plan structures",
+              "3": "Designed plan hierarchies; modular architectures",
+              "4": "Built enterprise plan architecture; integration frameworks"
+            },
+            "mirrorsCandidate": {
+              "questionId": "bcp_structure_design",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "playbook_development",
+            "question": "Dynamic Playbook Development",
+            "description": "Creating scenario-based playbooks and decision trees",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Understands playbook concepts",
+              "2": "Developed playbooks; scenario documentation",
+              "3": "Designed playbook frameworks; digital formats",
+              "4": "Built enterprise playbook libraries; automation"
+            },
+            "mirrorsCandidate": {
+              "questionId": "playbook_development",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "plan_maintenance",
+            "question": "Plan Maintenance & Version Control",
+            "description": "Systematic plan review, update and version management",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Understands plan maintenance requirements",
+              "2": "Maintained plans; tracked versions; scheduled reviews",
+              "3": "Designed maintenance programmes; automated triggers",
+              "4": "Built enterprise plan lifecycle management capability"
+            },
+            "mirrorsCandidate": {
+              "questionId": "plan_maintenance",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "role_based_procedures",
+            "question": "Role-Based Procedure Writing",
+            "description": "Writing clear procedures for specific roles during incidents",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Understands procedure writing principles",
+              "2": "Wrote role-based procedures; validated with users",
+              "3": "Designed procedure frameworks; role-specific templates",
+              "4": "Built enterprise procedure library; usability testing"
+            },
+            "mirrorsCandidate": {
+              "questionId": "role_based_procedures",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "plan_integration",
+            "question": "Cross-Plan Integration",
+            "description": "Ensuring consistency across multiple plans and with related plans",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Understands plan integration concepts",
+              "2": "Ensured consistency across plans; cross-references",
+              "3": "Designed integration frameworks; gap analysis",
+              "4": "Built enterprise plan integration architecture"
+            },
+            "mirrorsCandidate": {
+              "questionId": "plan_integration",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "recovery_documentation",
+            "question": "Recovery Procedure Documentation",
+            "description": "Documenting step-by-step recovery procedures",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Understands recovery documentation needs",
+              "2": "Documented recovery procedures; validated accuracy",
+              "3": "Designed recovery documentation standards",
+              "4": "Built enterprise recovery documentation capability"
+            },
+            "mirrorsCandidate": {
+              "questionId": "recovery_documentation",
+              "matchType": "minimum"
+            }
+          }
+        ]
+      },
+      {
+        "id": "exercise_requirements",
+        "title": "Exercise & Validation Programme",
+        "description": "Required exercise design and facilitation skills",
+        "order": 7,
+        "helpText": "Rate the importance of each exercise skill (0 = Not Required, 4 = Essential)",
+        "questions": [
+          {
+            "id": "exercise_programme_design",
+            "question": "Exercise Programme Design",
+            "description": "Designing annual exercise programmes with progressive complexity",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Understands exercise programme concepts",
+              "2": "Contributed to exercise planning; scheduling",
+              "3": "Designed exercise programmes; resource planning",
+              "4": "Built enterprise exercise capability; multi-year strategies"
+            },
+            "mirrorsCandidate": {
+              "questionId": "exercise_programme_design",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "tabletop_exercise",
+            "question": "Tabletop Exercise Design & Facilitation",
+            "description": "Designing and facilitating discussion-based exercises",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Participated in tabletop exercises",
+              "2": "Supported tabletop design; facilitated small groups",
+              "3": "Designed tabletop exercises; executive facilitation",
+              "4": "Master facilitator; designed enterprise exercise frameworks"
+            },
+            "mirrorsCandidate": {
+              "questionId": "tabletop_exercise",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "functional_exercise",
+            "question": "Functional Exercise Design",
+            "description": "Designing exercises that test specific functions or capabilities",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Participated in functional exercises",
+              "2": "Supported functional exercise design",
+              "3": "Designed functional exercises; objective-based testing",
+              "4": "Expert in functional exercise methodology"
+            },
+            "mirrorsCandidate": {
+              "questionId": "functional_exercise",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "full_scale_exercise",
+            "question": "Full-Scale Simulation Exercises",
+            "description": "Designing and executing comprehensive simulation exercises",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Participated in full-scale exercises",
+              "2": "Supported full-scale exercise logistics",
+              "3": "Designed full-scale exercises; multi-team coordination",
+              "4": "Led enterprise-wide simulations; external partner integration"
+            },
+            "mirrorsCandidate": {
+              "questionId": "full_scale_exercise",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "exercise_inject_design",
+            "question": "Scenario Inject Development",
+            "description": "Creating realistic scenario injects that drive exercise objectives",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Understands inject design concepts",
+              "2": "Wrote scenario injects; timed delivery",
+              "3": "Designed inject frameworks; dynamic adaptation",
+              "4": "Master inject designer; branching scenarios"
+            },
+            "mirrorsCandidate": {
+              "questionId": "exercise_inject_design",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "after_action_review",
+            "question": "After-Action Review (Hot Wash)",
+            "description": "Facilitating structured post-exercise debriefs",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Participated in after-action reviews",
+              "2": "Facilitated debrief sessions; documented findings",
+              "3": "Designed AAR methodologies; executive debriefs",
+              "4": "Expert facilitator; psychological safety in debriefs"
+            },
+            "mirrorsCandidate": {
+              "questionId": "after_action_review",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "lessons_learned",
+            "question": "Lessons Learned Management",
+            "description": "Capturing, tracking and implementing lessons learned",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Understands lessons learned processes",
+              "2": "Documented lessons; tracked action completion",
+              "3": "Designed lessons learned systems; closure governance",
+              "4": "Built enterprise lessons learned capability"
+            },
+            "mirrorsCandidate": {
+              "questionId": "lessons_learned",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "exercise_metrics",
+            "question": "Exercise Success Metrics",
+            "description": "Defining and measuring exercise effectiveness",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Understands exercise metrics concepts",
+              "2": "Tracked exercise metrics; reported results",
+              "3": "Designed exercise measurement frameworks",
+              "4": "Built enterprise exercise analytics capability"
+            },
+            "mirrorsCandidate": {
+              "questionId": "exercise_metrics",
+              "matchType": "minimum"
+            }
+          }
+        ]
+      },
+      {
+        "id": "crisis_management_requirements",
+        "title": "Crisis Management",
+        "description": "Required crisis management and leadership skills",
+        "order": 8,
+        "helpText": "Rate the importance of each crisis management skill (0 = Not Required, 4 = Essential)",
+        "questions": [
+          {
+            "id": "crisis_management_framework",
+            "question": "Crisis Management Framework Design",
+            "description": "Designing organisational crisis management structures",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Understands crisis management concepts",
+              "2": "Worked within crisis frameworks; documented procedures",
+              "3": "Designed crisis management frameworks; executive alignment",
+              "4": "Built enterprise crisis capability; board-level governance"
+            },
+            "mirrorsCandidate": {
+              "questionId": "crisis_management_framework",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "crisis_team_structure",
+            "question": "Crisis Team Structure & Roles",
+            "description": "Designing crisis team composition, roles and responsibilities",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Understands crisis team concepts",
+              "2": "Documented crisis team roles; RACI matrices",
+              "3": "Designed crisis team structures; succession planning",
+              "4": "Built enterprise crisis team architecture"
+            },
+            "mirrorsCandidate": {
+              "questionId": "crisis_team_structure",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "crisis_activation",
+            "question": "Crisis Activation Protocols",
+            "description": "Designing triggers and processes for crisis activation",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Understands activation concepts",
+              "2": "Documented activation criteria; participated in activations",
+              "3": "Designed activation protocols; threshold calibration",
+              "4": "Built enterprise activation capability; automated triggers"
+            },
+            "mirrorsCandidate": {
+              "questionId": "crisis_activation",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "crisis_decision_making",
+            "question": "Crisis Decision-Making Under Pressure",
+            "description": "Making effective decisions in high-pressure, ambiguous situations",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Understands crisis decision-making challenges",
+              "2": "Supported crisis decisions; information gathering",
+              "3": "Made crisis decisions; structured decision processes",
+              "4": "Expert in crisis cognition; OODA/Cynefin application"
+            },
+            "mirrorsCandidate": {
+              "questionId": "crisis_decision_making",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "crisis_escalation",
+            "question": "Escalation Procedures",
+            "description": "Designing and operating escalation pathways",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Understands escalation concepts",
+              "2": "Operated escalation procedures; documented pathways",
+              "3": "Designed escalation frameworks; executive thresholds",
+              "4": "Built enterprise escalation architecture"
+            },
+            "mirrorsCandidate": {
+              "questionId": "crisis_escalation",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "crisis_coordination",
+            "question": "Multi-Team Crisis Coordination",
+            "description": "Coordinating multiple response teams during crises",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Participated in multi-team coordination",
+              "2": "Supported coordination activities; liaison roles",
+              "3": "Led multi-team coordination; battle rhythm design",
+              "4": "Expert in complex coordination; multi-agency exercises"
+            },
+            "mirrorsCandidate": {
+              "questionId": "crisis_coordination",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "cognitive_frameworks",
+            "question": "Cognitive Frameworks (OODA, Cynefin)",
+            "description": "Applying decision frameworks under uncertainty",
+            "type": "slider",
+            "required": false,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Aware of decision frameworks",
+              "2": "Applied frameworks in exercises and planning",
+              "3": "Integrated frameworks into crisis methodology",
+              "4": "Expert practitioner; trained others; published"
+            },
+            "mirrorsCandidate": {
+              "questionId": "cognitive_frameworks",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "psychological_safety",
+            "question": "Psychological Safety in Crisis Teams",
+            "description": "Creating environments for effective team performance under stress",
+            "type": "slider",
+            "required": false,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Aware of psychological safety concepts",
+              "2": "Applied psychological safety principles",
+              "3": "Designed team environments; stress management",
+              "4": "Expert in crisis team dynamics; research-based practice"
+            },
+            "mirrorsCandidate": {
+              "questionId": "psychological_safety",
+              "matchType": "minimum"
+            }
+          }
+        ]
+      },
+      {
+        "id": "crisis_comms_requirements",
+        "title": "Crisis Communications",
+        "description": "Required crisis communications skills",
+        "order": 9,
+        "helpText": "Rate the importance of each communications skill (0 = Not Required, 4 = Essential)",
+        "questions": [
+          {
+            "id": "crisis_comms_strategy",
+            "question": "Crisis Communications Strategy",
+            "description": "Developing comprehensive crisis communications approaches",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Understands crisis communications concepts",
+              "2": "Contributed to communications planning",
+              "3": "Designed crisis communications strategies",
+              "4": "Built enterprise crisis communications capability"
+            },
+            "mirrorsCandidate": {
+              "questionId": "crisis_comms_strategy",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "holding_statements",
+            "question": "Holding Statement Development",
+            "description": "Preparing pre-approved statements for rapid deployment",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Understands holding statement purposes",
+              "2": "Drafted holding statements; approval workflows",
+              "3": "Designed holding statement libraries; scenario coverage",
+              "4": "Built enterprise statement management capability"
+            },
+            "mirrorsCandidate": {
+              "questionId": "holding_statements",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "stakeholder_messaging",
+            "question": "Stakeholder-Specific Messaging",
+            "description": "Tailoring messages for different stakeholder groups",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Understands stakeholder segmentation",
+              "2": "Drafted stakeholder-specific messages",
+              "3": "Designed stakeholder messaging frameworks",
+              "4": "Built enterprise stakeholder communications capability"
+            },
+            "mirrorsCandidate": {
+              "questionId": "stakeholder_messaging",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "media_relations",
+            "question": "Media Relations in Crisis",
+            "description": "Managing media interactions during crises",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Understands media relations concepts",
+              "2": "Supported media coordination; monitoring",
+              "3": "Managed media relations; spokesperson briefing",
+              "4": "Expert in crisis media; executive media training"
+            },
+            "mirrorsCandidate": {
+              "questionId": "media_relations",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "social_media_crisis",
+            "question": "Social Media Crisis Management",
+            "description": "Managing social media during crisis events",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Understands social media crisis dynamics",
+              "2": "Monitored social media; escalated issues",
+              "3": "Designed social media crisis playbooks",
+              "4": "Expert in social crisis management; real-time response"
+            },
+            "mirrorsCandidate": {
+              "questionId": "social_media_crisis",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "internal_crisis_comms",
+            "question": "Internal Crisis Communications",
+            "description": "Communicating with employees during crises",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Understands internal communications needs",
+              "2": "Drafted internal communications; cascade processes",
+              "3": "Designed internal crisis communications frameworks",
+              "4": "Built enterprise employee communications capability"
+            },
+            "mirrorsCandidate": {
+              "questionId": "internal_crisis_comms",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "comms_templates",
+            "question": "Crisis Communications Templates",
+            "description": "Developing reusable communications templates",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Understands template benefits",
+              "2": "Used and adapted templates; maintained libraries",
+              "3": "Designed template frameworks; scenario coverage",
+              "4": "Built enterprise template management capability"
+            },
+            "mirrorsCandidate": {
+              "questionId": "comms_templates",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "five_cs_framework",
+            "question": "5 Cs Crisis Communication",
+            "description": "Applying Competence, Confidence, Concern, Commitment, Clarity",
+            "type": "slider",
+            "required": false,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Aware of 5 Cs framework",
+              "2": "Applied 5 Cs in message development",
+              "3": "Integrated 5 Cs into communications methodology",
+              "4": "Expert in crisis communications theory; trained executives"
+            },
+            "mirrorsCandidate": {
+              "questionId": "five_cs_framework",
+              "matchType": "minimum"
+            }
+          }
+        ]
+      },
+      {
+        "id": "incident_management_requirements",
+        "title": "Incident Management",
+        "description": "Required incident management skills",
+        "order": 10,
+        "helpText": "Rate the importance of each incident management skill (0 = Not Required, 4 = Essential)",
+        "questions": [
+          {
+            "id": "incident_management_system",
+            "question": "Incident Management System Design",
+            "description": "Designing organisational incident management structures",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Understands IMS concepts",
+              "2": "Worked within incident management systems",
+              "3": "Designed incident management frameworks",
+              "4": "Built enterprise incident management capability"
+            },
+            "mirrorsCandidate": {
+              "questionId": "incident_management_system",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "incident_classification",
+            "question": "Incident Classification & Triage",
+            "description": "Categorising and prioritising incidents effectively",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Understands classification concepts",
+              "2": "Applied classification criteria; triage processes",
+              "3": "Designed classification frameworks; severity matrices",
+              "4": "Built enterprise classification capability; automation"
+            },
+            "mirrorsCandidate": {
+              "questionId": "incident_classification",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "incident_response",
+            "question": "Incident Response Coordination",
+            "description": "Coordinating response activities during incidents",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Participated in incident response",
+              "2": "Coordinated response activities; team liaison",
+              "3": "Led incident response; battle rhythm management",
+              "4": "Expert in complex incident coordination"
+            },
+            "mirrorsCandidate": {
+              "questionId": "incident_response",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "command_structure",
+            "question": "Command Structure (ICS/NIMS)",
+            "description": "Applying Incident Command System principles",
+            "type": "slider",
+            "required": false,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Aware of ICS/NIMS concepts",
+              "2": "Worked in ICS structures; completed training",
+              "3": "Applied ICS in corporate environments",
+              "4": "Expert in ICS adaptation; multi-agency exercises"
+            },
+            "mirrorsCandidate": {
+              "questionId": "command_structure",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "situation_reporting",
+            "question": "Situation Reporting (SitReps)",
+            "description": "Producing clear, accurate situation reports",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Understands SitRep purposes",
+              "2": "Wrote situation reports; information gathering",
+              "3": "Designed SitRep frameworks; reporting cadences",
+              "4": "Built enterprise situation awareness capability"
+            },
+            "mirrorsCandidate": {
+              "questionId": "situation_reporting",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "incident_logging",
+            "question": "Incident Logging & Documentation",
+            "description": "Maintaining accurate incident records",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Understands logging requirements",
+              "2": "Maintained incident logs; timeline documentation",
+              "3": "Designed logging frameworks; legal considerations",
+              "4": "Built enterprise incident documentation capability"
+            },
+            "mirrorsCandidate": {
+              "questionId": "incident_logging",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "incident_handover",
+            "question": "Incident Handover Protocols",
+            "description": "Managing shift changes and handovers during incidents",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Understands handover requirements",
+              "2": "Participated in handovers; briefing notes",
+              "3": "Designed handover protocols; extended incidents",
+              "4": "Built enterprise handover capability"
+            },
+            "mirrorsCandidate": {
+              "questionId": "incident_handover",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "stand_down_procedures",
+            "question": "Stand-Down & Return to Normal",
+            "description": "Managing the transition from response to normal operations",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Understands stand-down concepts",
+              "2": "Supported stand-down activities; checklists",
+              "3": "Designed stand-down procedures; staged return",
+              "4": "Built enterprise recovery transition capability"
+            },
+            "mirrorsCandidate": {
+              "questionId": "stand_down_procedures",
+              "matchType": "minimum"
+            }
+          }
+        ]
+      },
+      {
+        "id": "supply_chain_requirements",
+        "title": "Supply Chain Resilience",
+        "description": "Required supply chain resilience skills",
+        "order": 11,
+        "helpText": "Rate the importance of each supply chain skill (0 = Not Required, 4 = Essential)",
+        "questions": [
+          {
+            "id": "supply_chain_mapping",
+            "question": "Supply Chain Dependency Mapping",
+            "description": "Mapping critical supply chain dependencies",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Understands supply chain dependency concepts",
+              "2": "Documented supply chain dependencies",
+              "3": "Designed supply chain mapping methodologies",
+              "4": "Built enterprise supply chain visibility capability"
+            },
+            "mirrorsCandidate": {
+              "questionId": "supply_chain_mapping",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "multi_tier_analysis",
+            "question": "Multi-Tier Supplier Analysis (Tier N)",
+            "description": "Assessing dependencies beyond direct suppliers",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Understands multi-tier concepts",
+              "2": "Documented Tier 1-2 dependencies",
+              "3": "Designed multi-tier assessment methodologies",
+              "4": "Built enterprise Tier N visibility; concentration analysis"
+            },
+            "mirrorsCandidate": {
+              "questionId": "multi_tier_analysis",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "supplier_risk_assessment",
+            "question": "Supplier Risk Assessment",
+            "description": "Assessing and rating supplier resilience",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Understands supplier risk concepts",
+              "2": "Conducted supplier assessments; questionnaires",
+              "3": "Designed supplier assessment frameworks; ratings",
+              "4": "Built enterprise supplier risk capability"
+            },
+            "mirrorsCandidate": {
+              "questionId": "supplier_risk_assessment",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "supply_chain_monitoring",
+            "question": "Supply Chain Risk Monitoring",
+            "description": "Ongoing monitoring of supply chain risks",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Understands monitoring concepts",
+              "2": "Monitored key suppliers; alert management",
+              "3": "Designed monitoring frameworks; early warning",
+              "4": "Built enterprise supply chain monitoring capability"
+            },
+            "mirrorsCandidate": {
+              "questionId": "supply_chain_monitoring",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "alternative_sourcing",
+            "question": "Alternative Sourcing Strategies",
+            "description": "Developing backup supplier arrangements",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Understands alternative sourcing concepts",
+              "2": "Identified alternative suppliers; documented options",
+              "3": "Designed alternative sourcing strategies",
+              "4": "Built enterprise sourcing resilience capability"
+            },
+            "mirrorsCandidate": {
+              "questionId": "alternative_sourcing",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "geospatial_analysis",
+            "question": "Geospatial Risk Analysis",
+            "description": "Mapping supply chain exposure to geographic risks",
+            "type": "slider",
+            "required": false,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Understands geospatial risk concepts",
+              "2": "Conducted location-based risk assessments",
+              "3": "Designed geospatial analysis frameworks; tools",
+              "4": "Expert in supply chain geospatial analytics"
+            },
+            "mirrorsCandidate": {
+              "questionId": "geospatial_analysis",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "supply_chain_resilience_design",
+            "question": "Supply Chain Resilience Design",
+            "description": "Designing resilient supply chain architectures",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Understands supply chain resilience concepts",
+              "2": "Contributed to resilience improvement initiatives",
+              "3": "Designed supply chain resilience strategies",
+              "4": "Built enterprise supply chain resilience architecture"
+            },
+            "mirrorsCandidate": {
+              "questionId": "supply_chain_resilience_design",
+              "matchType": "minimum"
+            }
+          }
+        ]
+      },
+      {
+        "id": "it_cyber_requirements",
+        "title": "IT/Cyber Resilience Integration",
+        "description": "Required IT and cyber resilience integration skills",
+        "order": 12,
+        "helpText": "Rate the importance of each IT/cyber skill (0 = Not Required, 4 = Essential)",
+        "questions": [
+          {
+            "id": "it_dr_integration",
+            "question": "IT DR & BC Integration",
+            "description": "Aligning IT disaster recovery with business continuity",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Understands IT DR/BC relationship",
+              "2": "Coordinated IT DR and BC activities; requirements",
+              "3": "Designed integrated DR/BC frameworks",
+              "4": "Built enterprise IT/BC integration capability"
+            },
+            "mirrorsCandidate": {
+              "questionId": "it_dr_integration",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "cyber_bc_coordination",
+            "question": "Cyber Incident BC Coordination",
+            "description": "Coordinating BC response to cyber incidents",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Understands cyber incident impacts",
+              "2": "Supported BC activities during cyber incidents",
+              "3": "Designed cyber-specific BC playbooks",
+              "4": "Built enterprise cyber resilience capability"
+            },
+            "mirrorsCandidate": {
+              "questionId": "cyber_bc_coordination",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "data_backup_recovery",
+            "question": "Data Backup & Recovery Assurance",
+            "description": "Understanding and validating data recovery capabilities",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Understands backup/recovery concepts",
+              "2": "Validated backup capabilities; tested restores",
+              "3": "Designed backup assurance programmes",
+              "4": "Built enterprise data resilience capability"
+            },
+            "mirrorsCandidate": {
+              "questionId": "data_backup_recovery",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "clean_room_recovery",
+            "question": "Clean Room Recovery",
+            "description": "Planning for recovery in isolated environments",
+            "type": "slider",
+            "required": false,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Understands clean room concepts",
+              "2": "Participated in clean room planning",
+              "3": "Designed clean room recovery procedures",
+              "4": "Expert in clean room methodology; led exercises"
+            },
+            "mirrorsCandidate": {
+              "questionId": "clean_room_recovery",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "ransomware_response",
+            "question": "Ransomware Response Planning",
+            "description": "Planning BC response to ransomware attacks",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Understands ransomware impacts",
+              "2": "Contributed to ransomware planning; playbooks",
+              "3": "Designed ransomware response frameworks",
+              "4": "Expert in ransomware resilience; multi-scenario planning"
+            },
+            "mirrorsCandidate": {
+              "questionId": "ransomware_response",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "it_dependency_understanding",
+            "question": "IT Dependency Understanding",
+            "description": "Understanding technology dependencies and architectures",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Basic IT literacy; understands key dependencies",
+              "2": "Documented IT dependencies; worked with CMDB",
+              "3": "Designed IT dependency mapping methodologies",
+              "4": "Expert in IT architecture; enterprise dependency modelling"
+            },
+            "mirrorsCandidate": {
+              "questionId": "it_dependency_understanding",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "ciso_collaboration",
+            "question": "CISO/IT Collaboration",
+            "description": "Effective partnership with IT and security teams",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Works with IT colleagues as needed",
+              "2": "Regular IT/security liaison; joint planning",
+              "3": "Established IT/BC governance; joint exercises",
+              "4": "Strategic IT/BC partnership; board-level integration"
+            },
+            "mirrorsCandidate": {
+              "questionId": "ciso_collaboration",
+              "matchType": "minimum"
+            }
+          }
+        ]
+      },
+      {
+        "id": "governance_requirements",
+        "title": "Programme Governance & Management",
+        "description": "Required programme governance and management skills",
+        "order": 13,
+        "helpText": "Rate the importance of each governance skill (0 = Not Required, 4 = Essential)",
+        "questions": [
+          {
+            "id": "bcm_policy_development",
+            "question": "BCM Policy Development",
+            "description": "Developing organisational BCM policies",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Understands policy requirements",
+              "2": "Contributed to policy development; maintained documents",
+              "3": "Designed BCM policies; board approval processes",
+              "4": "Built enterprise policy framework; regulatory alignment"
+            },
+            "mirrorsCandidate": {
+              "questionId": "bcm_policy_development",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "bcm_programme_governance",
+            "question": "BCM Programme Governance",
+            "description": "Establishing BCM governance structures",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Understands governance concepts",
+              "2": "Worked within governance structures",
+              "3": "Designed BCM governance frameworks",
+              "4": "Built enterprise BCM governance architecture"
+            },
+            "mirrorsCandidate": {
+              "questionId": "bcm_programme_governance",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "steering_committee",
+            "question": "Steering Committee Management",
+            "description": "Managing BCM steering committees",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Attended steering committee meetings",
+              "2": "Supported committee secretariat; papers and actions",
+              "3": "Managed steering committees; agenda design",
+              "4": "Established committee frameworks; effectiveness reviews"
+            },
+            "mirrorsCandidate": {
+              "questionId": "steering_committee",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "budget_management",
+            "question": "BCM Budget Management",
+            "description": "Managing BCM programme budgets",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Understands budget processes",
+              "2": "Managed small budgets; expense tracking",
+              "3": "Managed significant BCM budgets; business cases",
+              "4": "Managed enterprise BCM investment portfolios"
+            },
+            "mirrorsCandidate": {
+              "questionId": "budget_management",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "executive_reporting",
+            "question": "Executive/Board Reporting",
+            "description": "Preparing and presenting BCM reports to executives",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Understands executive reporting needs",
+              "2": "Contributed to executive reports; data gathering",
+              "3": "Designed executive reporting frameworks; presentations",
+              "4": "Presented to boards; regulatory reporting"
+            },
+            "mirrorsCandidate": {
+              "questionId": "executive_reporting",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "maturity_assessment",
+            "question": "BCM Maturity Assessment",
+            "description": "Assessing and improving BCM programme maturity",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Understands maturity concepts",
+              "2": "Participated in maturity assessments",
+              "3": "Led maturity assessments; improvement planning",
+              "4": "Designed maturity frameworks; benchmarking"
+            },
+            "mirrorsCandidate": {
+              "questionId": "maturity_assessment",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "audit_compliance",
+            "question": "Audit & Compliance Management",
+            "description": "Managing BCM audits and compliance requirements",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Understands audit requirements",
+              "2": "Supported audit activities; evidence provision",
+              "3": "Managed audit programmes; finding remediation",
+              "4": "Designed audit frameworks; regulatory engagement"
+            },
+            "mirrorsCandidate": {
+              "questionId": "audit_compliance",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "regulatory_engagement",
+            "question": "Regulatory Engagement",
+            "description": "Engaging with regulators on BCM matters",
+            "type": "slider",
+            "required": false,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Understands regulatory landscape",
+              "2": "Supported regulatory submissions; information requests",
+              "3": "Managed regulatory relationships; inspections",
+              "4": "Strategic regulatory engagement; policy influence"
+            },
+            "mirrorsCandidate": {
+              "questionId": "regulatory_engagement",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "roi_articulation",
+            "question": "BCM ROI Articulation",
+            "description": "Demonstrating BCM value and return on investment",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Understands BCM value proposition",
+              "2": "Contributed to value demonstrations; case studies",
+              "3": "Designed ROI frameworks; executive presentations",
+              "4": "Expert in BCM economics; research-based practice"
+            },
+            "mirrorsCandidate": {
+              "questionId": "roi_articulation",
+              "matchType": "minimum"
+            }
+          }
+        ]
+      },
+      {
+        "id": "embedding_requirements",
+        "title": "Embedding & Culture",
+        "description": "Required culture and embedding skills",
+        "order": 14,
+        "helpText": "Rate the importance of each embedding skill (0 = Not Required, 4 = Essential)",
+        "questions": [
+          {
+            "id": "resilience_culture",
+            "question": "Resilience Culture Development",
+            "description": "Building organisational resilience mindset",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Understands culture concepts",
+              "2": "Contributed to culture initiatives",
+              "3": "Designed culture programmes; behaviour change",
+              "4": "Built enterprise resilience culture capability"
+            },
+            "mirrorsCandidate": {
+              "questionId": "resilience_culture",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "awareness_programmes",
+            "question": "BCM Awareness Programmes",
+            "description": "Developing and delivering awareness initiatives",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Participated in awareness activities",
+              "2": "Delivered awareness sessions; materials development",
+              "3": "Designed awareness programmes; multi-channel campaigns",
+              "4": "Built enterprise awareness capability; effectiveness measurement"
+            },
+            "mirrorsCandidate": {
+              "questionId": "awareness_programmes",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "training_design",
+            "question": "BCM Training Design & Delivery",
+            "description": "Developing and delivering BCM training",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Attended BCM training",
+              "2": "Delivered training sessions; materials adaptation",
+              "3": "Designed training programmes; competency frameworks",
+              "4": "Built enterprise training capability; certification programmes"
+            },
+            "mirrorsCandidate": {
+              "questionId": "training_design",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "first_line_embedding",
+            "question": "First Line Embedding",
+            "description": "Embedding BCM into business operations",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Understands first line concepts",
+              "2": "Supported first line activities; plan ownership",
+              "3": "Designed first line embedding approaches",
+              "4": "Built enterprise first line BCM capability"
+            },
+            "mirrorsCandidate": {
+              "questionId": "first_line_embedding",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "executive_engagement",
+            "question": "Executive Engagement & Buy-In",
+            "description": "Engaging executives in BCM programmes",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Interacts with executives as needed",
+              "2": "Regular executive updates; sponsorship support",
+              "3": "Designed executive engagement strategies",
+              "4": "Strategic executive partnership; board champion"
+            },
+            "mirrorsCandidate": {
+              "questionId": "executive_engagement",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "bc_champion_networks",
+            "question": "BC Champion Networks",
+            "description": "Building and managing BC coordinator networks",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Participated in champion networks",
+              "2": "Supported champion activities; coordination",
+              "3": "Designed champion programmes; community building",
+              "4": "Built enterprise champion capability; recognition programmes"
+            },
+            "mirrorsCandidate": {
+              "questionId": "bc_champion_networks",
+              "matchType": "minimum"
+            }
+          }
+        ]
+      },
+      {
+        "id": "emergency_management_requirements",
+        "title": "Emergency Management & External Coordination",
+        "description": "Required emergency management skills",
+        "order": 15,
+        "helpText": "Rate the importance of each emergency management skill (0 = Not Required, 4 = Essential)",
+        "questions": [
+          {
+            "id": "emergency_response",
+            "question": "Emergency Response Procedures",
+            "description": "Developing and managing emergency response",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Understands emergency response concepts",
+              "2": "Documented emergency procedures; participated in response",
+              "3": "Designed emergency response programmes",
+              "4": "Built enterprise emergency response capability"
+            },
+            "mirrorsCandidate": {
+              "questionId": "emergency_response",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "evacuation_procedures",
+            "question": "Evacuation & Shelter Procedures",
+            "description": "Evacuation planning and shelter-in-place procedures",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Understands evacuation requirements",
+              "2": "Documented evacuation procedures; conducted drills",
+              "3": "Designed evacuation programmes; multi-site coordination",
+              "4": "Built enterprise evacuation capability"
+            },
+            "mirrorsCandidate": {
+              "questionId": "evacuation_procedures",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "external_agency_coord",
+            "question": "External Agency Coordination",
+            "description": "Coordinating with emergency services and agencies",
+            "type": "slider",
+            "required": false,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Understands external agency roles",
+              "2": "Liaised with external agencies; joint planning",
+              "3": "Established agency relationships; joint exercises",
+              "4": "Strategic agency partnerships; mutual aid frameworks"
+            },
+            "mirrorsCandidate": {
+              "questionId": "external_agency_coord",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "first_responder_liaison",
+            "question": "First Responder Liaison",
+            "description": "Working with police, fire and ambulance services",
+            "type": "slider",
+            "required": false,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Understands first responder roles",
+              "2": "Coordinated with first responders; site visits",
+              "3": "Established first responder relationships; joint exercises",
+              "4": "Strategic first responder partnerships; community programmes"
+            },
+            "mirrorsCandidate": {
+              "questionId": "first_responder_liaison",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "mutual_aid_agreements",
+            "question": "Mutual Aid Agreements",
+            "description": "Establishing mutual aid with other organisations",
+            "type": "slider",
+            "required": false,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Understands mutual aid concepts",
+              "2": "Participated in mutual aid discussions",
+              "3": "Negotiated mutual aid agreements; testing",
+              "4": "Built enterprise mutual aid networks"
+            },
+            "mirrorsCandidate": {
+              "questionId": "mutual_aid_agreements",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "regulatory_notification",
+            "question": "Regulatory Notification Requirements",
+            "description": "Managing regulatory notification obligations",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Understands notification requirements",
+              "2": "Supported notification processes; tracking",
+              "3": "Designed notification frameworks; SLA management",
+              "4": "Built enterprise notification capability; multi-regulator"
+            },
+            "mirrorsCandidate": {
+              "questionId": "regulatory_notification",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "public_authority_liaison",
+            "question": "Public Authority Liaison",
+            "description": "Working with government and public authorities",
+            "type": "slider",
+            "required": false,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Understands public authority roles",
+              "2": "Liaised with public authorities; joint planning",
+              "3": "Established authority relationships; exercises",
+              "4": "Strategic public authority partnerships; policy input"
+            },
+            "mirrorsCandidate": {
+              "questionId": "public_authority_liaison",
+              "matchType": "minimum"
+            }
+          }
+        ]
+      },
+      {
+        "id": "metrics_requirements",
+        "title": "Metrics, Reporting & Continuous Improvement",
+        "description": "Required metrics and reporting skills",
+        "order": 16,
+        "helpText": "Rate the importance of each metrics skill (0 = Not Required, 4 = Essential)",
+        "questions": [
+          {
+            "id": "kpi_design",
+            "question": "BCM KPI Design",
+            "description": "Designing meaningful BCM performance indicators",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Understands KPI concepts",
+              "2": "Tracked BCM KPIs; reported metrics",
+              "3": "Designed BCM KPI frameworks; leading indicators",
+              "4": "Built enterprise BCM metrics capability"
+            },
+            "mirrorsCandidate": {
+              "questionId": "kpi_design",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "capability_measurement",
+            "question": "Capability vs Maturity Measurement",
+            "description": "Distinguishing between capability and maturity metrics",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Understands capability/maturity distinction",
+              "2": "Applied measurement frameworks",
+              "3": "Designed integrated measurement approaches",
+              "4": "Expert in BCM measurement methodology"
+            },
+            "mirrorsCandidate": {
+              "questionId": "capability_measurement",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "dashboard_design",
+            "question": "BCM Dashboard Design",
+            "description": "Creating effective BCM dashboards and visualisations",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Understands dashboard concepts",
+              "2": "Built BCM dashboards; data visualisation",
+              "3": "Designed dashboard frameworks; executive views",
+              "4": "Built enterprise BCM reporting capability"
+            },
+            "mirrorsCandidate": {
+              "questionId": "dashboard_design",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "continuous_improvement",
+            "question": "Continuous Improvement Programmes",
+            "description": "Driving systematic BCM improvement",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Understands improvement concepts",
+              "2": "Contributed to improvement initiatives",
+              "3": "Designed improvement programmes; PDCA cycles",
+              "4": "Built enterprise BCM improvement capability"
+            },
+            "mirrorsCandidate": {
+              "questionId": "continuous_improvement",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "benchmarking",
+            "question": "BCM Benchmarking",
+            "description": "Comparing BCM capability against peers",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Understands benchmarking concepts",
+              "2": "Participated in benchmarking exercises",
+              "3": "Designed benchmarking programmes; industry surveys",
+              "4": "Expert in BCM benchmarking; research contributions"
+            },
+            "mirrorsCandidate": {
+              "questionId": "benchmarking",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "gap_analysis",
+            "question": "Gap Analysis & Remediation",
+            "description": "Identifying and addressing BCM gaps",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Understands gap analysis concepts",
+              "2": "Conducted gap analyses; tracked remediation",
+              "3": "Designed gap analysis frameworks; prioritisation",
+              "4": "Built enterprise gap management capability"
+            },
+            "mirrorsCandidate": {
+              "questionId": "gap_analysis",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "reporting_automation",
+            "question": "BCM Reporting Automation",
+            "description": "Automating BCM data collection and reporting",
+            "type": "slider",
+            "required": false,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Understands automation opportunities",
+              "2": "Implemented basic automation; data extraction",
+              "3": "Designed automated reporting solutions",
+              "4": "Built enterprise BCM data analytics capability"
+            },
+            "mirrorsCandidate": {
+              "questionId": "reporting_automation",
+              "matchType": "minimum"
+            }
+          }
+        ]
+      },
+      {
+        "id": "domain_experience_requirements",
+        "title": "Domain-Specific Experience",
+        "description": "Required experience with specific disruption types",
+        "order": 17,
+        "helpText": "Rate the importance of experience with each disruption type (0 = Not Required, 4 = Essential)",
+        "questions": [
+          {
+            "id": "natural_disaster",
+            "question": "Natural Disaster Response",
+            "description": "Experience responding to natural disasters",
+            "type": "slider",
+            "required": false,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Aware of natural disaster response requirements",
+              "2": "Participated in natural disaster response",
+              "3": "Led natural disaster response activities",
+              "4": "Expert in natural disaster resilience"
+            },
+            "mirrorsCandidate": {
+              "questionId": "natural_disaster",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "pandemic_response",
+            "question": "Pandemic/Health Emergency Response",
+            "description": "Experience responding to health emergencies",
+            "type": "slider",
+            "required": false,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Aware of pandemic response requirements",
+              "2": "Participated in pandemic response",
+              "3": "Led pandemic response activities",
+              "4": "Expert in health emergency resilience"
+            },
+            "mirrorsCandidate": {
+              "questionId": "pandemic_response",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "cyber_incident",
+            "question": "Cyber Incident Response",
+            "description": "Experience in BC response to cyber incidents",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Aware of cyber incident impacts",
+              "2": "Supported BC activities during cyber incidents",
+              "3": "Led BC response to cyber incidents",
+              "4": "Expert in cyber resilience"
+            },
+            "mirrorsCandidate": {
+              "questionId": "cyber_incident",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "physical_security",
+            "question": "Physical Security Incidents",
+            "description": "Experience responding to security incidents",
+            "type": "slider",
+            "required": false,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Aware of physical security response requirements",
+              "2": "Participated in security incident response",
+              "3": "Led security incident response",
+              "4": "Expert in physical security resilience"
+            },
+            "mirrorsCandidate": {
+              "questionId": "physical_security",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "supply_chain_disruption",
+            "question": "Supply Chain Disruption",
+            "description": "Experience managing supply chain disruptions",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Aware of supply chain disruption impacts",
+              "2": "Supported supply chain disruption response",
+              "3": "Led supply chain disruption response",
+              "4": "Expert in supply chain resilience"
+            },
+            "mirrorsCandidate": {
+              "questionId": "supply_chain_disruption",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "utility_failure",
+            "question": "Utility/Infrastructure Failure",
+            "description": "Experience responding to utility failures",
+            "type": "slider",
+            "required": false,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Aware of utility failure impacts",
+              "2": "Participated in utility failure response",
+              "3": "Led utility failure response",
+              "4": "Expert in infrastructure resilience"
+            },
+            "mirrorsCandidate": {
+              "questionId": "utility_failure",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "reputational_crisis",
+            "question": "Reputational Crisis",
+            "description": "Experience managing reputational crises",
+            "type": "slider",
+            "required": false,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Aware of reputational crisis dynamics",
+              "2": "Supported reputational crisis response",
+              "3": "Led reputational crisis response",
+              "4": "Expert in reputation resilience"
+            },
+            "mirrorsCandidate": {
+              "questionId": "reputational_crisis",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "workplace_violence",
+            "question": "Workplace Violence/Active Threat",
+            "description": "Experience with workplace violence response",
+            "type": "slider",
+            "required": false,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Aware of workplace violence response requirements",
+              "2": "Trained in active threat response",
+              "3": "Designed workplace violence programmes",
+              "4": "Expert in workplace violence prevention and response"
+            },
+            "mirrorsCandidate": {
+              "questionId": "workplace_violence",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "industrial_accident",
+            "question": "Industrial Accident Response",
+            "description": "Experience responding to industrial accidents",
+            "type": "slider",
+            "required": false,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Aware of industrial accident response requirements",
+              "2": "Participated in industrial accident response",
+              "3": "Led industrial accident response",
+              "4": "Expert in industrial safety resilience"
+            },
+            "mirrorsCandidate": {
+              "questionId": "industrial_accident",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "regulatory_crisis",
+            "question": "Regulatory/Compliance Crisis",
+            "description": "Experience managing regulatory crises",
+            "type": "slider",
+            "required": false,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Aware of regulatory crisis dynamics",
+              "2": "Supported regulatory crisis response",
+              "3": "Led regulatory crisis response",
+              "4": "Expert in regulatory resilience"
+            },
+            "mirrorsCandidate": {
+              "questionId": "regulatory_crisis",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "climate_risk",
+            "question": "Climate Risk & Adaptation",
+            "description": "Experience with climate risk assessment and adaptation",
+            "type": "slider",
+            "required": false,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Aware of climate risk concepts",
+              "2": "Integrated climate risk into BC planning",
+              "3": "Designed climate adaptation strategies",
+              "4": "Expert in climate resilience"
+            },
+            "mirrorsCandidate": {
+              "questionId": "climate_risk",
+              "matchType": "minimum"
+            }
+          }
+        ]
+      },
+      {
+        "id": "fs_topup",
+        "title": "Financial Services Operational Resilience",
+        "description": "FS-specific operational resilience and regulatory requirements. Only complete if hiring for roles in Financial Services.",
+        "order": 18,
+        "helpText": "0 = Not Required, 1 = Nice to Have, 2 = Important, 3 = Very Important, 4 = Essential",
+        "questions": [
+          {
+            "id": "fs_ibs_identification",
+            "question": "How important is Important Business Services (IBS) Identification expertise for this role?",
+            "description": "Identifying and mapping Important Business Services under PRA/FCA operational resilience requirements",
+            "type": "slider",
+            "required": false,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - beneficial but not essential",
+              "2": "Important - expected competency with development support",
+              "3": "Very Important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            },
+            "mirrorsCandidate": {
+              "questionId": "fs_ibs_identification",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "fs_ibs_service_mapping",
+            "question": "How important is IBS Service Mapping & Dependencies expertise for this role?",
+            "description": "End-to-end mapping of Important Business Services including people, process, technology, and data dependencies",
+            "type": "slider",
+            "required": false,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - beneficial but not essential",
+              "2": "Important - expected competency with development support",
+              "3": "Very Important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            },
+            "mirrorsCandidate": {
+              "questionId": "fs_ibs_service_mapping",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "fs_impact_tolerance_setting",
+            "question": "How important is Impact Tolerance Setting expertise for this role?",
+            "description": "Setting maximum tolerable disruption for Important Business Services under PRA/FCA requirements",
+            "type": "slider",
+            "required": false,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - beneficial but not essential",
+              "2": "Important - expected competency with development support",
+              "3": "Very Important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            },
+            "mirrorsCandidate": {
+              "questionId": "fs_impact_tolerance_setting",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "fs_tolerance_metrics",
+            "question": "How important is Impact Tolerance Metrics & Measurement expertise for this role?",
+            "description": "Defining and monitoring metrics for measuring service disruption against impact tolerances",
+            "type": "slider",
+            "required": false,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - beneficial but not essential",
+              "2": "Important - expected competency with development support",
+              "3": "Very Important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            },
+            "mirrorsCandidate": {
+              "questionId": "fs_tolerance_metrics",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "fs_pra_fca_opres",
+            "question": "How important is PRA/FCA Operational Resilience Policy knowledge for this role?",
+            "description": "Knowledge of UK PRA/FCA operational resilience policy requirements (SS1/21, SS2/21)",
+            "type": "slider",
+            "required": false,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - beneficial but not essential",
+              "2": "Important - expected competency with development support",
+              "3": "Very Important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            },
+            "mirrorsCandidate": {
+              "questionId": "fs_pra_fca_opres",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "fs_dora_compliance",
+            "question": "How important is DORA (Digital Operational Resilience Act) expertise for this role?",
+            "description": "EU DORA compliance including ICT risk management, incident reporting, and resilience testing",
+            "type": "slider",
+            "required": false,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - beneficial but not essential",
+              "2": "Important - expected competency with development support",
+              "3": "Very Important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            },
+            "mirrorsCandidate": {
+              "questionId": "fs_dora_compliance",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "fs_tlpt",
+            "question": "How important is Threat-Led Penetration Testing (TLPT/TIBER) expertise for this role?",
+            "description": "Intelligence-led cyber resilience testing under DORA/regulatory requirements",
+            "type": "slider",
+            "required": false,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - beneficial but not essential",
+              "2": "Important - expected competency with development support",
+              "3": "Very Important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            },
+            "mirrorsCandidate": {
+              "questionId": "fs_tlpt",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "fs_scenario_testing_opres",
+            "question": "How important is FS Operational Resilience Scenario Testing expertise for this role?",
+            "description": "Testing resilience under severe but plausible disruption scenarios for Important Business Services",
+            "type": "slider",
+            "required": false,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - beneficial but not essential",
+              "2": "Important - expected competency with development support",
+              "3": "Very Important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            },
+            "mirrorsCandidate": {
+              "questionId": "fs_scenario_testing_opres",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "fs_third_party_concentration",
+            "question": "How important is Third Party & Concentration Risk (FS) expertise for this role?",
+            "description": "Managing third-party and concentration risks under FS operational resilience requirements",
+            "type": "slider",
+            "required": false,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - beneficial but not essential",
+              "2": "Important - expected competency with development support",
+              "3": "Very Important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            },
+            "mirrorsCandidate": {
+              "questionId": "fs_third_party_concentration",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "fs_regulatory_reporting_opres",
+            "question": "How important is FS Regulatory Reporting (Operational Resilience) expertise for this role?",
+            "description": "Regulatory reporting and self-assessment for operational resilience",
+            "type": "slider",
+            "required": false,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - beneficial but not essential",
+              "2": "Important - expected competency with development support",
+              "3": "Very Important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            },
+            "mirrorsCandidate": {
+              "questionId": "fs_regulatory_reporting_opres",
+              "matchType": "minimum"
+            }
+          }
+        ]
+      }
+    ],
+    "metadata": {
+      "totalQuestions": 135,
+      "totalSections": 18,
+      "estimatedCompletionMinutes": 22,
+      "lastUpdated": "2025-12-15"
+    }
+  }
+}

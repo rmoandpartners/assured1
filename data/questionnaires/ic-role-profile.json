@@ -1,0 +1,2806 @@
+{
+  "questionnaire": {
+    "id": "ic-role-profile",
+    "title": "Internal Control Role Profile",
+    "description": "Internal Control skills and experience requirements (complements general job-profile)",
+    "version": "1.0.1",
+    "createdAt": "2025-12-15",
+    "updatedAt": "2025-12-15",
+    "mirrorProfile": "ic-candidate-profile",
+    "parentProfile": "job-profile",
+    "importanceScale": {
+      "0": {
+        "label": "Not Required",
+        "description": "Not needed for this role"
+      },
+      "1": {
+        "label": "Nice to Have",
+        "description": "Beneficial but not essential; gaps acceptable"
+      },
+      "2": {
+        "label": "Important",
+        "description": "Expected capability; gaps need development plan"
+      },
+      "3": {
+        "label": "Very Important",
+        "description": "Core requirement; limited gaps acceptable"
+      },
+      "4": {
+        "label": "Essential",
+        "description": "Must have from day one; no gaps acceptable"
+      }
+    },
+    "sections": [
+      {
+        "id": "ic_role_requirements",
+        "title": "Internal Control Role Requirements",
+        "description": "Define the level and scope of the Internal Control role",
+        "order": 1,
+        "questions": [
+          {
+            "id": "ic_role_level",
+            "question": "Internal Control Role Level",
+            "type": "select",
+            "required": true,
+            "options": [
+              {
+                "value": "control_analyst",
+                "label": "Control Analyst / Associate"
+              },
+              {
+                "value": "senior_control_analyst",
+                "label": "Senior Control Analyst / Senior Associate"
+              },
+              {
+                "value": "control_manager",
+                "label": "Control Manager / AVP"
+              },
+              {
+                "value": "senior_control_manager",
+                "label": "Senior Control Manager / VP"
+              },
+              {
+                "value": "director_ic",
+                "label": "Director of Internal Control"
+              },
+              {
+                "value": "head_of_ic",
+                "label": "Head of Internal Control / Chief Control Officer"
+              }
+            ],
+            "mirrorsCandidate": {
+              "questionId": "target_ic_level",
+              "matchType": "compatibility"
+            }
+          },
+          {
+            "id": "ic_function_scope",
+            "question": "Internal Control Function Scope",
+            "type": "select",
+            "required": true,
+            "options": [
+              {
+                "value": "entity_subsidiary",
+                "label": "Entity / Subsidiary Controls"
+              },
+              {
+                "value": "business_unit",
+                "label": "Business Unit / Division Controls"
+              },
+              {
+                "value": "regional",
+                "label": "Regional Controls"
+              },
+              {
+                "value": "country",
+                "label": "Country / National Controls"
+              },
+              {
+                "value": "group_enterprise",
+                "label": "Group / Enterprise-wide Controls"
+              }
+            ],
+            "mirrorsCandidate": {
+              "questionId": "ic_scope_experience",
+              "matchType": "compatibility"
+            }
+          },
+          {
+            "id": "years_ic_required",
+            "question": "Minimum Years Internal Control Experience Required",
+            "description": "Minimum years of internal control / second line experience expected",
+            "type": "number",
+            "required": true,
+            "min": 0,
+            "max": 25,
+            "mirrorsCandidate": {
+              "questionId": "years_in_ic",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "years_audit_preferred",
+            "question": "Preferred Years Audit Experience",
+            "description": "Preferred years of external or internal audit experience (0 if not required)",
+            "type": "number",
+            "required": false,
+            "min": 0,
+            "max": 20,
+            "mirrorsCandidate": {
+              "questionId": "years_in_audit",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "team_size_required",
+            "question": "Minimum Team Size Management Experience",
+            "description": "Minimum team size the candidate should have managed (0 if not required)",
+            "type": "number",
+            "required": false,
+            "min": 0,
+            "max": 200,
+            "mirrorsCandidate": {
+              "questionId": "ic_team_size",
+              "matchType": "minimum"
+            }
+          }
+        ]
+      },
+      {
+        "id": "framework_standards_requirements",
+        "title": "Framework & Standards Requirements",
+        "description": "Required knowledge of internal control standards and governance frameworks",
+        "order": 2,
+        "helpText": "0 = Not Required, 1 = Nice to Have, 2 = Important, 3 = Very Important, 4 = Essential",
+        "questions": [
+          {
+            "id": "framework_coso_ic",
+            "question": "COSO Internal Control Framework (2013)",
+            "description": "Committee of Sponsoring Organizations Internal Control - Integrated Framework",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "COSO IC knowledge not required",
+              "1": "Basic COSO IC awareness beneficial",
+              "2": "Working knowledge of COSO IC expected for control assessments",
+              "3": "Strong COSO IC knowledge required; must apply in control design and assessment",
+              "4": "Expert COSO IC knowledge essential; must lead control framework design"
+            },
+            "mirrorsCandidate": {
+              "questionId": "framework_coso_ic",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "framework_coso_erm",
+            "question": "COSO ERM Framework (2017)",
+            "description": "COSO Enterprise Risk Management - Integrating with Strategy and Performance",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "COSO ERM knowledge not required",
+              "1": "Basic COSO ERM awareness beneficial",
+              "2": "Working knowledge of COSO ERM expected for risk-control integration",
+              "3": "Strong COSO ERM knowledge required; must integrate ERM with control activities",
+              "4": "Expert COSO ERM knowledge essential; must lead risk-control alignment"
+            },
+            "mirrorsCandidate": {
+              "questionId": "framework_coso_erm",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "framework_uk_cgc",
+            "question": "UK Corporate Governance Code",
+            "description": "FRC's UK Corporate Governance Code and related governance principles",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "UK CGC knowledge not required",
+              "1": "Basic UK CGC awareness beneficial",
+              "2": "Working knowledge of UK CGC expected",
+              "3": "Strong UK CGC knowledge required; must support board reporting",
+              "4": "Expert UK CGC knowledge essential; must lead governance compliance"
+            },
+            "mirrorsCandidate": {
+              "questionId": "framework_uk_cgc",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "framework_provision_29",
+            "question": "Provision 29 Compliance",
+            "description": "UK CGC 2024 Provision 29 - Board declaration on internal control effectiveness",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Provision 29 knowledge not required",
+              "1": "Basic Provision 29 awareness beneficial",
+              "2": "Working knowledge of Provision 29 expected; training can be provided",
+              "3": "Strong Provision 29 knowledge required; must support declaration preparation",
+              "4": "Expert Provision 29 knowledge essential; must lead declaration programme"
+            },
+            "mirrorsCandidate": {
+              "questionId": "framework_provision_29",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "framework_sox_404",
+            "question": "US SOX Section 404",
+            "description": "Sarbanes-Oxley Act Section 404 - Management assessment of internal control",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "SOX 404 knowledge not required",
+              "1": "Basic SOX 404 awareness beneficial",
+              "2": "Working knowledge of SOX 404 expected",
+              "3": "Strong SOX 404 knowledge required; must lead SOX compliance activities",
+              "4": "Expert SOX 404 knowledge essential; must lead ICFR programmes"
+            },
+            "mirrorsCandidate": {
+              "questionId": "framework_sox_404",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "framework_jsox",
+            "question": "J-SOX (Japan SOX)",
+            "description": "Japanese Financial Instruments and Exchange Act - Internal control requirements",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "J-SOX knowledge not required",
+              "1": "Basic J-SOX awareness beneficial",
+              "2": "Working knowledge of J-SOX expected",
+              "3": "Strong J-SOX knowledge required; must support Japanese compliance",
+              "4": "Expert J-SOX knowledge essential; must lead J-SOX programmes"
+            },
+            "mirrorsCandidate": {
+              "questionId": "framework_jsox",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "framework_three_lines",
+            "question": "Three Lines Model",
+            "description": "IIA's Three Lines Model for organisational governance and assurance",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Three Lines knowledge not required",
+              "1": "Basic Three Lines awareness beneficial",
+              "2": "Working knowledge expected for coordination activities",
+              "3": "Strong knowledge required; must lead three lines coordination",
+              "4": "Expert knowledge essential; must design integrated assurance"
+            },
+            "mirrorsCandidate": {
+              "questionId": "framework_three_lines",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "framework_iso31000",
+            "question": "ISO 31000 (Risk Management)",
+            "description": "International standard for risk management principles and guidelines",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "ISO 31000 knowledge not required",
+              "1": "Basic ISO 31000 awareness beneficial",
+              "2": "Working knowledge expected for risk-control integration",
+              "3": "Strong ISO 31000 knowledge required; must apply in control frameworks",
+              "4": "Expert ISO 31000 knowledge essential; must design risk-control architectures"
+            },
+            "mirrorsCandidate": {
+              "questionId": "framework_iso31000",
+              "matchType": "minimum"
+            }
+          }
+        ]
+      },
+      {
+        "id": "coso_components_requirements",
+        "title": "COSO Components Requirements",
+        "description": "Required proficiency across the five COSO Internal Control components",
+        "order": 3,
+        "helpText": "0 = Not Required, 1 = Nice to Have, 2 = Important, 3 = Very Important, 4 = Essential",
+        "questions": [
+          {
+            "id": "coso_control_environment",
+            "question": "Control Environment (Tone at Top, Ethics, Structure)",
+            "description": "COSO Component 1: Organisational commitment to integrity, ethics, and competence",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Control environment expertise not required",
+              "1": "Basic control environment awareness beneficial",
+              "2": "Working knowledge expected; ability to assess control environment",
+              "3": "Strong expertise required; must lead control environment assessments",
+              "4": "Expert level essential; must design enterprise control environment programmes"
+            },
+            "mirrorsCandidate": {
+              "questionId": "coso_control_environment",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "coso_risk_assessment",
+            "question": "Risk Assessment (Objective Setting, Risk Identification)",
+            "description": "COSO Component 2: Identification and analysis of risks to achieving objectives",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Risk assessment expertise not required",
+              "1": "Basic risk assessment awareness beneficial",
+              "2": "Working knowledge expected; ability to perform risk assessments",
+              "3": "Strong expertise required; must lead risk assessment programmes",
+              "4": "Expert level essential; must design enterprise risk-control alignment"
+            },
+            "mirrorsCandidate": {
+              "questionId": "coso_risk_assessment",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "coso_control_activities",
+            "question": "Control Activities (Preventive, Detective, Manual, Automated)",
+            "description": "COSO Component 3: Policies and procedures that help ensure management directives are carried out",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Control activities expertise not required",
+              "1": "Basic control activities awareness beneficial",
+              "2": "Working knowledge expected; ability to design and assess controls",
+              "3": "Strong expertise required; must lead control design programmes",
+              "4": "Expert level essential; must design enterprise control architectures"
+            },
+            "mirrorsCandidate": {
+              "questionId": "coso_control_activities",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "coso_info_communication",
+            "question": "Information & Communication (Data Quality, Reporting Lines)",
+            "description": "COSO Component 4: Systems to support identification, capture, and exchange of information",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Information & communication expertise not required",
+              "1": "Basic I&C awareness beneficial",
+              "2": "Working knowledge expected; ability to assess I&C controls",
+              "3": "Strong expertise required; must design control reporting frameworks",
+              "4": "Expert level essential; must lead enterprise information governance"
+            },
+            "mirrorsCandidate": {
+              "questionId": "coso_info_communication",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "coso_monitoring",
+            "question": "Monitoring Activities (Ongoing, Separate Evaluations)",
+            "description": "COSO Component 5: Processes that assess the quality of internal control over time",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Monitoring expertise not required",
+              "1": "Basic monitoring awareness beneficial",
+              "2": "Working knowledge expected; ability to implement monitoring processes",
+              "3": "Strong expertise required; must design monitoring frameworks",
+              "4": "Expert level essential; must lead enterprise continuous monitoring"
+            },
+            "mirrorsCandidate": {
+              "questionId": "coso_monitoring",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "coso_principles",
+            "question": "COSO 17 Principles Application",
+            "description": "Ability to apply all 17 COSO principles holistically across the framework",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Holistic COSO principles application not required",
+              "1": "Basic principles awareness beneficial",
+              "2": "Working knowledge expected; ability to apply principles in assessments",
+              "3": "Strong expertise required; must lead principle-based programmes",
+              "4": "Expert level essential; must design enterprise COSO frameworks"
+            },
+            "mirrorsCandidate": {
+              "questionId": "coso_principles",
+              "matchType": "minimum"
+            }
+          }
+        ]
+      },
+      {
+        "id": "provision_29_board_requirements",
+        "title": "Provision 29 & Board Reporting Requirements",
+        "description": "Required experience with UK Provision 29 compliance and board-level reporting",
+        "order": 4,
+        "helpText": "0 = Not Required, 1 = Nice to Have, 2 = Important, 3 = Very Important, 4 = Essential",
+        "questions": [
+          {
+            "id": "materiality_determination",
+            "question": "Material Control Determination",
+            "description": "Identifying and documenting material controls for board declaration",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Materiality determination not required",
+              "1": "Basic materiality awareness beneficial",
+              "2": "Working knowledge expected; ability to support materiality assessments",
+              "3": "Strong expertise required; must lead materiality determination",
+              "4": "Expert level essential; must design enterprise materiality frameworks"
+            },
+            "mirrorsCandidate": {
+              "questionId": "materiality_determination",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "effectiveness_declaration",
+            "question": "Effectiveness Declaration Preparation",
+            "description": "Preparing evidence and narrative for board declaration on control effectiveness",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Declaration preparation not required",
+              "1": "Basic declaration awareness beneficial",
+              "2": "Working knowledge expected; ability to support declaration preparation",
+              "3": "Strong expertise required; must lead declaration preparation",
+              "4": "Expert level essential; must design enterprise declaration programmes"
+            },
+            "mirrorsCandidate": {
+              "questionId": "effectiveness_declaration",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "dry_run_testing",
+            "question": "Dry Run / Pilot Declaration",
+            "description": "Conducting pilot or dry run declarations to prepare for formal compliance",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Dry run experience not required",
+              "1": "Basic dry run awareness beneficial",
+              "2": "Working knowledge expected; ability to participate in dry runs",
+              "3": "Strong expertise required; must lead dry run programmes",
+              "4": "Expert level essential; must design enterprise readiness frameworks"
+            },
+            "mirrorsCandidate": {
+              "questionId": "dry_run_testing",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "audit_committee_reporting",
+            "question": "Audit Committee Reporting",
+            "description": "Preparing and presenting control information to Audit Committee",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Audit Committee reporting not required",
+              "1": "Basic AC reporting awareness beneficial",
+              "2": "Working knowledge expected; ability to support AC papers",
+              "3": "Strong expertise required; must present to Audit Committee",
+              "4": "Expert level essential; must lead AC relationships"
+            },
+            "mirrorsCandidate": {
+              "questionId": "audit_committee_reporting",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "board_presentation",
+            "question": "Board / Executive Presentation",
+            "description": "Presenting control matters to Board of Directors or Executive Committee",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Board presentation not required",
+              "1": "Basic board exposure beneficial",
+              "2": "Working knowledge expected; ability to support board materials",
+              "3": "Strong expertise required; must present to Board/ExCo",
+              "4": "Expert level essential; regular Board presenter required"
+            },
+            "mirrorsCandidate": {
+              "questionId": "board_presentation",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "annual_report_drafting",
+            "question": "Annual Report Disclosure Drafting",
+            "description": "Drafting internal control disclosures for annual report and accounts",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Disclosure drafting not required",
+              "1": "Basic disclosure awareness beneficial",
+              "2": "Working knowledge expected; ability to contribute to disclosures",
+              "3": "Strong expertise required; must lead disclosure drafting",
+              "4": "Expert level essential; must design disclosure frameworks"
+            },
+            "mirrorsCandidate": {
+              "questionId": "annual_report_drafting",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "evidence_strategy",
+            "question": "Evidence Strategy Design",
+            "description": "Designing evidence collection and retention strategies for control effectiveness",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Evidence strategy not required",
+              "1": "Basic evidence awareness beneficial",
+              "2": "Working knowledge expected; ability to collect and organise evidence",
+              "3": "Strong expertise required; must design evidence strategies",
+              "4": "Expert level essential; must lead enterprise evidence programmes"
+            },
+            "mirrorsCandidate": {
+              "questionId": "evidence_strategy",
+              "matchType": "minimum"
+            }
+          }
+        ]
+      },
+      {
+        "id": "control_design_requirements",
+        "title": "Control Design & Documentation Requirements",
+        "description": "Required experience designing, documenting, and managing internal controls",
+        "order": 5,
+        "helpText": "0 = Not Required, 1 = Nice to Have, 2 = Important, 3 = Very Important, 4 = Essential",
+        "questions": [
+          {
+            "id": "process_flowcharting",
+            "question": "Process Flowcharting (BPMN)",
+            "description": "Creating process flow diagrams to document control points",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Process flowcharting not required",
+              "1": "Basic flowcharting awareness beneficial",
+              "2": "Working knowledge expected; ability to create process maps",
+              "3": "Strong expertise required; must establish documentation standards",
+              "4": "Expert level essential; must lead enterprise process architecture"
+            },
+            "mirrorsCandidate": {
+              "questionId": "process_flowcharting",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "rcm_development",
+            "question": "Risk & Control Matrix (RCM) Development",
+            "description": "Creating and maintaining risk and control matrices",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "RCM development not required",
+              "1": "Basic RCM awareness beneficial",
+              "2": "Working knowledge expected; ability to develop RCMs",
+              "3": "Strong expertise required; must design RCM frameworks",
+              "4": "Expert level essential; must lead enterprise RCM governance"
+            },
+            "mirrorsCandidate": {
+              "questionId": "rcm_development",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "control_narratives",
+            "question": "Control Narrative Writing",
+            "description": "Writing clear, complete control descriptions and documentation",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Control narrative writing not required",
+              "1": "Basic narrative awareness beneficial",
+              "2": "Working knowledge expected; ability to write clear narratives",
+              "3": "Strong expertise required; must establish narrative standards",
+              "4": "Expert level essential; must lead control documentation transformation"
+            },
+            "mirrorsCandidate": {
+              "questionId": "control_narratives",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "entity_level_controls",
+            "question": "Entity-Level Controls (ELCs)",
+            "description": "Designing and assessing pervasive controls at the entity level",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "ELC expertise not required",
+              "1": "Basic ELC awareness beneficial",
+              "2": "Working knowledge expected; ability to assess ELCs",
+              "3": "Strong expertise required; must design ELC frameworks",
+              "4": "Expert level essential; must lead enterprise ELC programmes"
+            },
+            "mirrorsCandidate": {
+              "questionId": "entity_level_controls",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "control_library",
+            "question": "Control Library Management",
+            "description": "Building and maintaining standardised control libraries",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Control library expertise not required",
+              "1": "Basic control library awareness beneficial",
+              "2": "Working knowledge expected; ability to maintain libraries",
+              "3": "Strong expertise required; must design library structures",
+              "4": "Expert level essential; must lead enterprise library governance"
+            },
+            "mirrorsCandidate": {
+              "questionId": "control_library",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "segregation_of_duties",
+            "question": "Segregation of Duties (SoD) Design",
+            "description": "Designing and assessing segregation of duties controls",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "SoD expertise not required",
+              "1": "Basic SoD awareness beneficial",
+              "2": "Working knowledge expected; ability to assess SoD controls",
+              "3": "Strong expertise required; must design SoD frameworks",
+              "4": "Expert level essential; must lead enterprise SoD governance"
+            },
+            "mirrorsCandidate": {
+              "questionId": "segregation_of_duties",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "control_objectives",
+            "question": "Control Objectives (CAVR: Completeness, Accuracy, Validity, Restricted Access)",
+            "description": "Applying control objective frameworks to control design",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Control objectives expertise not required",
+              "1": "Basic control objectives awareness beneficial",
+              "2": "Working knowledge expected; ability to apply control objectives",
+              "3": "Strong expertise required; must design objective frameworks",
+              "4": "Expert level essential; must lead enterprise control objective architectures"
+            },
+            "mirrorsCandidate": {
+              "questionId": "control_objectives",
+              "matchType": "minimum"
+            }
+          }
+        ]
+      },
+      {
+        "id": "control_testing_requirements",
+        "title": "Control Testing & Assurance Requirements",
+        "description": "Required experience testing control design and operating effectiveness",
+        "order": 6,
+        "helpText": "0 = Not Required, 1 = Nice to Have, 2 = Important, 3 = Very Important, 4 = Essential",
+        "questions": [
+          {
+            "id": "design_effectiveness",
+            "question": "Design Effectiveness Testing",
+            "description": "Evaluating whether controls are suitably designed to mitigate risks",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Design effectiveness testing not required",
+              "1": "Basic design testing awareness beneficial",
+              "2": "Working knowledge expected; ability to perform design assessments",
+              "3": "Strong expertise required; must lead design effectiveness programmes",
+              "4": "Expert level essential; must design enterprise effectiveness frameworks"
+            },
+            "mirrorsCandidate": {
+              "questionId": "design_effectiveness",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "operating_effectiveness",
+            "question": "Operating Effectiveness Testing",
+            "description": "Testing whether controls are operating as designed over a period",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Operating effectiveness testing not required",
+              "1": "Basic operating testing awareness beneficial",
+              "2": "Working knowledge expected; ability to perform operating tests",
+              "3": "Strong expertise required; must lead operating effectiveness programmes",
+              "4": "Expert level essential; must design continuous effectiveness monitoring"
+            },
+            "mirrorsCandidate": {
+              "questionId": "operating_effectiveness",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "control_self_assessment",
+            "question": "Control Self-Assessment (CSA) Programmes",
+            "description": "Designing and managing control self-assessment programmes",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "CSA experience not required",
+              "1": "Basic CSA awareness beneficial",
+              "2": "Working knowledge expected; ability to administer CSA programmes",
+              "3": "Strong expertise required; must design CSA frameworks",
+              "4": "Expert level essential; must lead enterprise CSA governance"
+            },
+            "mirrorsCandidate": {
+              "questionId": "control_self_assessment",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "independent_testing",
+            "question": "Independent Testing",
+            "description": "Conducting or coordinating independent control testing",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Independent testing not required",
+              "1": "Basic independent testing awareness beneficial",
+              "2": "Working knowledge expected; ability to perform independent tests",
+              "3": "Strong expertise required; must design independent testing programmes",
+              "4": "Expert level essential; must lead combined assurance testing"
+            },
+            "mirrorsCandidate": {
+              "questionId": "independent_testing",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "sampling_methodology",
+            "question": "Sampling Methodology (Statistical & Judgmental)",
+            "description": "Applying appropriate sampling methods to control testing",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Sampling methodology not required",
+              "1": "Basic sampling awareness beneficial",
+              "2": "Working knowledge expected; ability to apply sampling methods",
+              "3": "Strong expertise required; must design sampling frameworks",
+              "4": "Expert level essential; must establish sampling governance"
+            },
+            "mirrorsCandidate": {
+              "questionId": "sampling_methodology",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "walkthrough_testing",
+            "question": "Process Walkthroughs",
+            "description": "Conducting end-to-end process walkthroughs to understand and test controls",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Walkthrough experience not required",
+              "1": "Basic walkthrough awareness beneficial",
+              "2": "Working knowledge expected; ability to conduct walkthroughs",
+              "3": "Strong expertise required; must design walkthrough programmes",
+              "4": "Expert level essential; must establish walkthrough quality standards"
+            },
+            "mirrorsCandidate": {
+              "questionId": "walkthrough_testing",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "evidence_collection",
+            "question": "Evidence Collection & Documentation",
+            "description": "Collecting and documenting control testing evidence",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Evidence collection not required",
+              "1": "Basic evidence awareness beneficial",
+              "2": "Working knowledge expected; ability to collect and organise evidence",
+              "3": "Strong expertise required; must design evidence frameworks",
+              "4": "Expert level essential; must lead enterprise evidence governance"
+            },
+            "mirrorsCandidate": {
+              "questionId": "evidence_collection",
+              "matchType": "minimum"
+            }
+          }
+        ]
+      },
+      {
+        "id": "deficiency_management_requirements",
+        "title": "Deficiency Management & Remediation Requirements",
+        "description": "Required experience identifying, classifying, and remediating control deficiencies",
+        "order": 7,
+        "helpText": "0 = Not Required, 1 = Nice to Have, 2 = Important, 3 = Very Important, 4 = Essential",
+        "questions": [
+          {
+            "id": "deficiency_classification",
+            "question": "Deficiency Classification (Minor, Significant, Material Weakness)",
+            "description": "Classifying control deficiencies by severity and impact",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Deficiency classification not required",
+              "1": "Basic classification awareness beneficial",
+              "2": "Working knowledge expected; ability to classify deficiencies",
+              "3": "Strong expertise required; must design classification frameworks",
+              "4": "Expert level essential; must lead enterprise classification governance"
+            },
+            "mirrorsCandidate": {
+              "questionId": "deficiency_classification",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "remediation_tracking",
+            "question": "Remediation Tracking & Project Management",
+            "description": "Managing remediation projects and tracking progress to closure",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Remediation tracking not required",
+              "1": "Basic tracking awareness beneficial",
+              "2": "Working knowledge expected; ability to track remediation",
+              "3": "Strong expertise required; must design tracking systems",
+              "4": "Expert level essential; must lead enterprise remediation governance"
+            },
+            "mirrorsCandidate": {
+              "questionId": "remediation_tracking",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "root_cause_analysis",
+            "question": "Root Cause Analysis",
+            "description": "Identifying underlying causes of control failures",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Root cause analysis not required",
+              "1": "Basic RCA awareness beneficial",
+              "2": "Working knowledge expected; ability to perform RCA",
+              "3": "Strong expertise required; must design RCA frameworks",
+              "4": "Expert level essential; must lead enterprise RCA programmes"
+            },
+            "mirrorsCandidate": {
+              "questionId": "root_cause_analysis",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "compensating_controls",
+            "question": "Compensating Control Design",
+            "description": "Designing alternative controls when primary controls cannot be implemented",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Compensating control expertise not required",
+              "1": "Basic compensating control awareness beneficial",
+              "2": "Working knowledge expected; ability to identify compensating controls",
+              "3": "Strong expertise required; must design compensating control frameworks",
+              "4": "Expert level essential; must lead enterprise compensating control governance"
+            },
+            "mirrorsCandidate": {
+              "questionId": "compensating_controls",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "management_action_plans",
+            "question": "Management Action Plan Development",
+            "description": "Developing actionable remediation plans with management",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Action plan development not required",
+              "1": "Basic action plan awareness beneficial",
+              "2": "Working knowledge expected; ability to develop action plans",
+              "3": "Strong expertise required; must design action plan frameworks",
+              "4": "Expert level essential; must lead enterprise action plan governance"
+            },
+            "mirrorsCandidate": {
+              "questionId": "management_action_plans",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "remediation_validation",
+            "question": "Remediation Validation Testing",
+            "description": "Testing to confirm deficiencies have been effectively remediated",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Remediation validation not required",
+              "1": "Basic validation awareness beneficial",
+              "2": "Working knowledge expected; ability to perform validation tests",
+              "3": "Strong expertise required; must design validation frameworks",
+              "4": "Expert level essential; must lead enterprise validation governance"
+            },
+            "mirrorsCandidate": {
+              "questionId": "remediation_validation",
+              "matchType": "minimum"
+            }
+          }
+        ]
+      },
+      {
+        "id": "grc_technology_requirements",
+        "title": "GRC & Control Technology Requirements",
+        "description": "Required experience with GRC platforms and control management systems",
+        "order": 8,
+        "helpText": "Select required systems and rate importance level",
+        "questions": [
+          {
+            "id": "grc_systems_required",
+            "question": "GRC Platform Requirements",
+            "description": "Select GRC platforms required or preferred and rate importance (1-4)",
+            "type": "system_proficiency",
+            "required": false,
+            "proficiencyScale": {
+              "1": "Basic User capability sufficient",
+              "2": "Proficient User capability expected",
+              "3": "Power User/Admin capability required",
+              "4": "Implementation Lead capability required"
+            },
+            "systems": [
+              {
+                "value": "protecht",
+                "label": "Protecht"
+              },
+              {
+                "value": "auditboard",
+                "label": "AuditBoard"
+              },
+              {
+                "value": "diligent_highbond",
+                "label": "Diligent (HighBond)"
+              },
+              {
+                "value": "servicenow_grc",
+                "label": "ServiceNow GRC"
+              },
+              {
+                "value": "sai360_bwise",
+                "label": "SAI360 (BWise)"
+              },
+              {
+                "value": "metricstream",
+                "label": "MetricStream"
+              },
+              {
+                "value": "logicgate",
+                "label": "LogicGate"
+              },
+              {
+                "value": "workiva",
+                "label": "Workiva"
+              },
+              {
+                "value": "onetrust",
+                "label": "OneTrust"
+              },
+              {
+                "value": "archer",
+                "label": "RSA Archer"
+              }
+            ],
+            "mirrorsCandidate": {
+              "questionId": "grc_systems_experience",
+              "matchType": "overlap"
+            }
+          },
+          {
+            "id": "erp_systems_required",
+            "question": "ERP System Requirements",
+            "description": "Select ERP systems required or preferred and rate importance (1-4)",
+            "type": "system_proficiency",
+            "required": false,
+            "proficiencyScale": {
+              "1": "Basic control knowledge sufficient",
+              "2": "Proficient control knowledge expected",
+              "3": "Advanced control design capability required",
+              "4": "Expert implementation capability required"
+            },
+            "systems": [
+              {
+                "value": "sap_s4hana",
+                "label": "SAP S/4HANA"
+              },
+              {
+                "value": "sap_ecc",
+                "label": "SAP ECC"
+              },
+              {
+                "value": "oracle_erp",
+                "label": "Oracle ERP Cloud"
+              },
+              {
+                "value": "ms_dynamics",
+                "label": "Microsoft Dynamics 365"
+              },
+              {
+                "value": "netsuite",
+                "label": "NetSuite"
+              },
+              {
+                "value": "workday",
+                "label": "Workday"
+              }
+            ],
+            "mirrorsCandidate": {
+              "questionId": "erp_controls_knowledge",
+              "matchType": "overlap"
+            }
+          },
+          {
+            "id": "grc_system_selection",
+            "question": "GRC System Selection & Implementation",
+            "description": "Leading GRC platform selection, procurement, and implementation",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "GRC system selection experience not required",
+              "1": "Basic system selection awareness beneficial",
+              "2": "Working knowledge expected; ability to contribute to selection",
+              "3": "Strong expertise required; must lead system selection",
+              "4": "Expert level essential; must direct enterprise GRC implementations"
+            },
+            "mirrorsCandidate": {
+              "questionId": "grc_system_selection",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "dashboard_design",
+            "question": "Board-Ready Dashboard Design",
+            "description": "Creating executive dashboards and visualisations for control reporting",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Dashboard design not required",
+              "1": "Basic dashboard awareness beneficial",
+              "2": "Working knowledge expected; ability to create dashboards",
+              "3": "Strong expertise required; must design board-ready dashboards",
+              "4": "Expert level essential; must lead enterprise dashboard programmes"
+            },
+            "mirrorsCandidate": {
+              "questionId": "dashboard_design",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "workflow_automation",
+            "question": "Control Workflow Automation",
+            "description": "Automating control processes using GRC and workflow tools",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Workflow automation not required",
+              "1": "Basic automation awareness beneficial",
+              "2": "Working knowledge expected; ability to implement workflows",
+              "3": "Strong expertise required; must design automation strategies",
+              "4": "Expert level essential; must lead enterprise automation"
+            },
+            "mirrorsCandidate": {
+              "questionId": "workflow_automation",
+              "matchType": "minimum"
+            }
+          }
+        ]
+      },
+      {
+        "id": "data_analytics_requirements",
+        "title": "Data Analytics & Continuous Monitoring Requirements",
+        "description": "Required experience with data analytics and continuous control monitoring",
+        "order": 9,
+        "helpText": "0 = Not Required, 1 = Nice to Have, 2 = Important, 3 = Very Important, 4 = Essential",
+        "questions": [
+          {
+            "id": "data_literacy",
+            "question": "Data Literacy & Interpretation",
+            "description": "Ability to understand, interpret, and communicate data-driven insights",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Data literacy not required",
+              "1": "Basic data literacy beneficial",
+              "2": "Working knowledge expected; ability to interpret data outputs",
+              "3": "Strong expertise required; must lead data-driven initiatives",
+              "4": "Expert level essential; must establish analytics centres of excellence"
+            },
+            "mirrorsCandidate": {
+              "questionId": "data_literacy",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "analytics_tools",
+            "question": "Analytics Tools (SQL, Python, R)",
+            "description": "Experience with programming languages and databases for control data analysis",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Analytics tools not required",
+              "1": "Basic analytics awareness beneficial",
+              "2": "Working knowledge expected; ability to write basic queries",
+              "3": "Strong expertise required; must design complex analytics",
+              "4": "Expert level essential; must build enterprise analytics platforms"
+            },
+            "mirrorsCandidate": {
+              "questionId": "analytics_tools",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "visualization_tools",
+            "question": "Data Visualization (Power BI, Tableau)",
+            "description": "Creating visual dashboards and reports for control monitoring",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Visualization tools not required",
+              "1": "Basic visualization awareness beneficial",
+              "2": "Working knowledge expected; ability to create dashboards",
+              "3": "Strong expertise required; must design advanced visualizations",
+              "4": "Expert level essential; must build enterprise BI programmes"
+            },
+            "mirrorsCandidate": {
+              "questionId": "visualization_tools",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "full_population_testing",
+            "question": "Full Population Testing",
+            "description": "Testing 100% of transactions rather than sampling",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Full population testing not required",
+              "1": "Basic population testing awareness beneficial",
+              "2": "Working knowledge expected; ability to perform full population tests",
+              "3": "Strong expertise required; must design population testing approaches",
+              "4": "Expert level essential; must lead enterprise testing programmes"
+            },
+            "mirrorsCandidate": {
+              "questionId": "full_population_testing",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "anomaly_detection",
+            "question": "Anomaly Detection & Red Flag Monitoring",
+            "description": "Identifying unusual patterns and potential control failures",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Anomaly detection not required",
+              "1": "Basic anomaly awareness beneficial",
+              "2": "Working knowledge expected; ability to implement detection rules",
+              "3": "Strong expertise required; must design detection frameworks",
+              "4": "Expert level essential; must build enterprise predictive monitoring"
+            },
+            "mirrorsCandidate": {
+              "questionId": "anomaly_detection",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "continuous_monitoring",
+            "question": "Continuous Monitoring Design",
+            "description": "Designing ongoing automated control monitoring processes",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Continuous monitoring not required",
+              "1": "Basic monitoring awareness beneficial",
+              "2": "Working knowledge expected; ability to support monitoring programmes",
+              "3": "Strong expertise required; must design monitoring frameworks",
+              "4": "Expert level essential; must lead enterprise real-time assurance"
+            },
+            "mirrorsCandidate": {
+              "questionId": "continuous_monitoring",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "benfords_law",
+            "question": "Benford's Law & Statistical Analysis",
+            "description": "Applying statistical techniques to detect anomalies in financial data",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Statistical analysis not required",
+              "1": "Basic statistical awareness beneficial",
+              "2": "Working knowledge expected; ability to apply statistical tests",
+              "3": "Strong expertise required; must design statistical programmes",
+              "4": "Expert level essential; must build enterprise analytical frameworks"
+            },
+            "mirrorsCandidate": {
+              "questionId": "benfords_law",
+              "matchType": "minimum"
+            }
+          }
+        ]
+      },
+      {
+        "id": "it_controls_requirements",
+        "title": "IT Controls & Cybersecurity Requirements",
+        "description": "Required experience with IT general controls, application controls, and cybersecurity",
+        "order": 10,
+        "helpText": "0 = Not Required, 1 = Nice to Have, 2 = Important, 3 = Very Important, 4 = Essential",
+        "questions": [
+          {
+            "id": "it_general_controls",
+            "question": "IT General Controls (ITGCs)",
+            "description": "Designing and assessing access management, change management, operations, and program development controls",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "ITGC expertise not required",
+              "1": "Basic ITGC awareness beneficial",
+              "2": "Working knowledge expected; ability to assess ITGCs",
+              "3": "Strong expertise required; must design ITGC frameworks",
+              "4": "Expert level essential; must lead enterprise IT control governance"
+            },
+            "mirrorsCandidate": {
+              "questionId": "it_general_controls",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "it_application_controls",
+            "question": "IT Application Controls (ITACs)",
+            "description": "Designing controls embedded within applications to ensure data integrity",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "ITAC expertise not required",
+              "1": "Basic ITAC awareness beneficial",
+              "2": "Working knowledge expected; ability to design ITACs",
+              "3": "Strong expertise required; must build ITAC frameworks",
+              "4": "Expert level essential; must lead enterprise application control governance"
+            },
+            "mirrorsCandidate": {
+              "questionId": "it_application_controls",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "automated_controls",
+            "question": "Automated Control Design (3-Way Match, Tolerance Limits)",
+            "description": "Designing automated controls such as matching, tolerance checks, and validations",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Automated control design not required",
+              "1": "Basic automated control awareness beneficial",
+              "2": "Working knowledge expected; ability to design automated controls",
+              "3": "Strong expertise required; must build automation frameworks",
+              "4": "Expert level essential; must lead enterprise control automation"
+            },
+            "mirrorsCandidate": {
+              "questionId": "automated_controls",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "access_controls",
+            "question": "Access Control & IAM",
+            "description": "Designing and assessing identity and access management controls",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Access control expertise not required",
+              "1": "Basic access control awareness beneficial",
+              "2": "Working knowledge expected; ability to design access frameworks",
+              "3": "Strong expertise required; must build IAM programmes",
+              "4": "Expert level essential; must lead enterprise identity governance"
+            },
+            "mirrorsCandidate": {
+              "questionId": "access_controls",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "change_management_controls",
+            "question": "Change Management Controls",
+            "description": "Designing controls over system and application changes",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Change management expertise not required",
+              "1": "Basic change management awareness beneficial",
+              "2": "Working knowledge expected; ability to design change controls",
+              "3": "Strong expertise required; must build change management frameworks",
+              "4": "Expert level essential; must lead enterprise change governance"
+            },
+            "mirrorsCandidate": {
+              "questionId": "change_management_controls",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "iso27001",
+            "question": "ISO 27001 / Information Security",
+            "description": "Designing information security controls aligned to ISO 27001",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "ISO 27001 expertise not required",
+              "1": "Basic ISO 27001 awareness beneficial",
+              "2": "Working knowledge expected; ability to design ISMS controls",
+              "3": "Strong expertise required; must lead security programmes",
+              "4": "Expert level essential; must lead enterprise information security governance"
+            },
+            "mirrorsCandidate": {
+              "questionId": "iso27001",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "nist_csf",
+            "question": "NIST Cybersecurity Framework",
+            "description": "Applying NIST CSF (Identify, Protect, Detect, Respond, Recover) in control design",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "NIST CSF expertise not required",
+              "1": "Basic NIST CSF awareness beneficial",
+              "2": "Working knowledge expected; ability to design against NIST CSF",
+              "3": "Strong expertise required; must build security control programmes",
+              "4": "Expert level essential; must lead enterprise cybersecurity governance"
+            },
+            "mirrorsCandidate": {
+              "questionId": "nist_csf",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "cloud_controls",
+            "question": "Cloud Security Controls (AWS, Azure, GCP)",
+            "description": "Designing controls for cloud infrastructure and services",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Cloud security expertise not required",
+              "1": "Basic cloud security awareness beneficial",
+              "2": "Working knowledge expected; ability to design cloud controls",
+              "3": "Strong expertise required; must build cloud control frameworks",
+              "4": "Expert level essential; must lead enterprise cloud governance"
+            },
+            "mirrorsCandidate": {
+              "questionId": "cloud_controls",
+              "matchType": "minimum"
+            }
+          }
+        ]
+      },
+      {
+        "id": "financial_controls_requirements",
+        "title": "Financial Controls & ICFR Requirements",
+        "description": "Required experience with financial reporting controls and ICFR",
+        "order": 11,
+        "helpText": "0 = Not Required, 1 = Nice to Have, 2 = Important, 3 = Very Important, 4 = Essential",
+        "questions": [
+          {
+            "id": "icfr_framework",
+            "question": "ICFR Framework Design",
+            "description": "Designing Internal Control over Financial Reporting frameworks",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "ICFR expertise not required",
+              "1": "Basic ICFR awareness beneficial",
+              "2": "Working knowledge expected; ability to support ICFR compliance",
+              "3": "Strong expertise required; must build ICFR frameworks",
+              "4": "Expert level essential; must lead enterprise ICFR transformation"
+            },
+            "mirrorsCandidate": {
+              "questionId": "icfr_framework",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "financial_close_controls",
+            "question": "Financial Close Controls",
+            "description": "Designing controls over the financial close process",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Financial close expertise not required",
+              "1": "Basic close control awareness beneficial",
+              "2": "Working knowledge expected; ability to design close controls",
+              "3": "Strong expertise required; must build close control frameworks",
+              "4": "Expert level essential; must lead enterprise close transformation"
+            },
+            "mirrorsCandidate": {
+              "questionId": "financial_close_controls",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "revenue_controls",
+            "question": "Revenue Recognition Controls",
+            "description": "Designing controls over revenue recognition processes",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Revenue control expertise not required",
+              "1": "Basic revenue control awareness beneficial",
+              "2": "Working knowledge expected; ability to design revenue controls",
+              "3": "Strong expertise required; must build revenue control frameworks",
+              "4": "Expert level essential; must lead enterprise revenue control transformation"
+            },
+            "mirrorsCandidate": {
+              "questionId": "revenue_controls",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "journal_entry_controls",
+            "question": "Journal Entry Controls",
+            "description": "Designing controls over manual and automated journal entries",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Journal entry expertise not required",
+              "1": "Basic journal control awareness beneficial",
+              "2": "Working knowledge expected; ability to design journal controls",
+              "3": "Strong expertise required; must build journal control frameworks",
+              "4": "Expert level essential; must design AI-based journal detection"
+            },
+            "mirrorsCandidate": {
+              "questionId": "journal_entry_controls",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "management_override",
+            "question": "Management Override Controls",
+            "description": "Designing controls to prevent and detect management override of controls",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Management override expertise not required",
+              "1": "Basic override control awareness beneficial",
+              "2": "Working knowledge expected; ability to design override controls",
+              "3": "Strong expertise required; must build override detection frameworks",
+              "4": "Expert level essential; must lead enterprise fraud prevention"
+            },
+            "mirrorsCandidate": {
+              "questionId": "management_override",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "reconciliation_controls",
+            "question": "Account Reconciliation Controls",
+            "description": "Designing controls over account reconciliation processes",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Reconciliation expertise not required",
+              "1": "Basic reconciliation awareness beneficial",
+              "2": "Working knowledge expected; ability to design reconciliation controls",
+              "3": "Strong expertise required; must build reconciliation frameworks",
+              "4": "Expert level essential; must lead enterprise reconciliation transformation"
+            },
+            "mirrorsCandidate": {
+              "questionId": "reconciliation_controls",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "external_audit_coordination",
+            "question": "External Auditor Coordination (ISA 720)",
+            "description": "Coordinating with external auditors on internal control matters",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "External audit coordination not required",
+              "1": "Basic audit coordination awareness beneficial",
+              "2": "Working knowledge expected; ability to support audit requests",
+              "3": "Strong expertise required; must manage auditor relationships",
+              "4": "Expert level essential; must lead integrated assurance approaches"
+            },
+            "mirrorsCandidate": {
+              "questionId": "external_audit_coordination",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "ifrs_uk_gaap",
+            "question": "IFRS / UK GAAP Knowledge",
+            "description": "Understanding accounting standards relevant to control design",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Accounting standards knowledge not required",
+              "1": "Basic accounting awareness beneficial",
+              "2": "Working knowledge expected; ability to apply in control design",
+              "3": "Strong expertise required; must advise on accounting controls",
+              "4": "Expert level essential; must lead accounting-integrated programmes"
+            },
+            "mirrorsCandidate": {
+              "questionId": "ifrs_uk_gaap",
+              "matchType": "minimum"
+            }
+          }
+        ]
+      },
+      {
+        "id": "esg_sustainability_requirements",
+        "title": "ESG & Sustainability Controls (ICSR) Requirements",
+        "description": "Required experience with Internal Control over Sustainability Reporting",
+        "order": 12,
+        "helpText": "0 = Not Required, 1 = Nice to Have, 2 = Important, 3 = Very Important, 4 = Essential",
+        "questions": [
+          {
+            "id": "coso_icsr",
+            "question": "COSO ICSR Framework",
+            "description": "Applying COSO guidance on Internal Control over Sustainability Reporting",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "COSO ICSR expertise not required",
+              "1": "Basic COSO ICSR awareness beneficial",
+              "2": "Working knowledge expected; ability to apply COSO ICSR",
+              "3": "Strong expertise required; must design ICSR frameworks",
+              "4": "Expert level essential; must lead enterprise ICSR programmes"
+            },
+            "mirrorsCandidate": {
+              "questionId": "coso_icsr",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "esg_data_controls",
+            "question": "ESG Data Controls & Data Lineage",
+            "description": "Designing controls over ESG data collection, calculation, and reporting",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "ESG data control expertise not required",
+              "1": "Basic ESG data awareness beneficial",
+              "2": "Working knowledge expected; ability to design ESG data controls",
+              "3": "Strong expertise required; must build ESG data frameworks",
+              "4": "Expert level essential; must lead enterprise ESG data programmes"
+            },
+            "mirrorsCandidate": {
+              "questionId": "esg_data_controls",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "carbon_ghg_controls",
+            "question": "Carbon / GHG Emissions Controls (Scope 1-3)",
+            "description": "Designing controls over greenhouse gas emissions reporting",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Carbon/GHG control expertise not required",
+              "1": "Basic GHG control awareness beneficial",
+              "2": "Working knowledge expected; ability to design GHG controls",
+              "3": "Strong expertise required; must build GHG control frameworks",
+              "4": "Expert level essential; must lead enterprise carbon programmes"
+            },
+            "mirrorsCandidate": {
+              "questionId": "carbon_ghg_controls",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "sustainability_reporting",
+            "question": "Sustainability Reporting Controls",
+            "description": "Designing controls over sustainability report preparation",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Sustainability reporting expertise not required",
+              "1": "Basic sustainability reporting awareness beneficial",
+              "2": "Working knowledge expected; ability to design reporting controls",
+              "3": "Strong expertise required; must build reporting frameworks",
+              "4": "Expert level essential; must lead enterprise sustainability programmes"
+            },
+            "mirrorsCandidate": {
+              "questionId": "sustainability_reporting",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "greenwashing_prevention",
+            "question": "Greenwashing Prevention Controls",
+            "description": "Designing controls to prevent misleading sustainability claims",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Greenwashing prevention expertise not required",
+              "1": "Basic greenwashing awareness beneficial",
+              "2": "Working knowledge expected; ability to design prevention controls",
+              "3": "Strong expertise required; must build prevention frameworks",
+              "4": "Expert level essential; must lead enterprise claim verification"
+            },
+            "mirrorsCandidate": {
+              "questionId": "greenwashing_prevention",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "csrd_compliance",
+            "question": "CSRD Compliance Controls",
+            "description": "Designing controls for EU Corporate Sustainability Reporting Directive compliance",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "CSRD expertise not required",
+              "1": "Basic CSRD awareness beneficial",
+              "2": "Working knowledge expected; ability to support CSRD compliance",
+              "3": "Strong expertise required; must build CSRD control frameworks",
+              "4": "Expert level essential; must lead enterprise CSRD programmes"
+            },
+            "mirrorsCandidate": {
+              "questionId": "csrd_compliance",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "esg_frameworks",
+            "question": "ESG Frameworks (GRI, SASB, TCFD)",
+            "description": "Knowledge of ESG reporting frameworks and standards",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "ESG framework knowledge not required",
+              "1": "Basic ESG framework awareness beneficial",
+              "2": "Working knowledge expected; ability to apply frameworks",
+              "3": "Strong expertise required; must lead multi-framework compliance",
+              "4": "Expert level essential; must build enterprise ESG programmes"
+            },
+            "mirrorsCandidate": {
+              "questionId": "esg_frameworks",
+              "matchType": "minimum"
+            }
+          }
+        ]
+      },
+      {
+        "id": "third_party_operational_requirements",
+        "title": "Third-Party & Operational Controls Requirements",
+        "description": "Required experience with vendor controls and operational resilience",
+        "order": 13,
+        "helpText": "0 = Not Required, 1 = Nice to Have, 2 = Important, 3 = Very Important, 4 = Essential",
+        "questions": [
+          {
+            "id": "soc_report_review",
+            "question": "SOC 1 / SOC 2 Report Review",
+            "description": "Reviewing and relying on service organisation control reports",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "SOC report expertise not required",
+              "1": "Basic SOC report awareness beneficial",
+              "2": "Working knowledge expected; ability to review SOC reports",
+              "3": "Strong expertise required; must design SOC review programmes",
+              "4": "Expert level essential; must lead enterprise vendor assurance"
+            },
+            "mirrorsCandidate": {
+              "questionId": "soc_report_review",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "third_party_controls",
+            "question": "Third-Party / Vendor Control Assessment",
+            "description": "Assessing and monitoring controls at third-party service providers",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Third-party assessment expertise not required",
+              "1": "Basic vendor assessment awareness beneficial",
+              "2": "Working knowledge expected; ability to assess third parties",
+              "3": "Strong expertise required; must design vendor control frameworks",
+              "4": "Expert level essential; must lead enterprise third-party programmes"
+            },
+            "mirrorsCandidate": {
+              "questionId": "third_party_controls",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "bridging_letters",
+            "question": "Bridging Letters & Gap Analysis",
+            "description": "Managing SOC report period gaps through bridging controls",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Bridging letter expertise not required",
+              "1": "Basic bridging awareness beneficial",
+              "2": "Working knowledge expected; ability to manage bridging letters",
+              "3": "Strong expertise required; must design bridging programmes",
+              "4": "Expert level essential; must lead enterprise period coverage"
+            },
+            "mirrorsCandidate": {
+              "questionId": "bridging_letters",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "supply_chain_controls",
+            "question": "Supply Chain Controls",
+            "description": "Designing controls over supply chain processes and risks",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Supply chain expertise not required",
+              "1": "Basic supply chain awareness beneficial",
+              "2": "Working knowledge expected; ability to design supply chain controls",
+              "3": "Strong expertise required; must build supply chain frameworks",
+              "4": "Expert level essential; must lead enterprise supply chain programmes"
+            },
+            "mirrorsCandidate": {
+              "questionId": "supply_chain_controls",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "business_continuity_controls",
+            "question": "Business Continuity / DR Controls",
+            "description": "Designing controls for business continuity and disaster recovery",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "BC/DR expertise not required",
+              "1": "Basic BC/DR awareness beneficial",
+              "2": "Working knowledge expected; ability to design BC/DR controls",
+              "3": "Strong expertise required; must build BC/DR frameworks",
+              "4": "Expert level essential; must lead enterprise resilience programmes"
+            },
+            "mirrorsCandidate": {
+              "questionId": "business_continuity_controls",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "operational_resilience",
+            "question": "Operational Resilience Controls",
+            "description": "Designing controls for operational resilience and important business services",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Operational resilience expertise not required",
+              "1": "Basic resilience awareness beneficial",
+              "2": "Working knowledge expected; ability to design resilience controls",
+              "3": "Strong expertise required; must build resilience frameworks",
+              "4": "Expert level essential; must lead enterprise operational resilience"
+            },
+            "mirrorsCandidate": {
+              "questionId": "operational_resilience",
+              "matchType": "minimum"
+            }
+          }
+        ]
+      },
+      {
+        "id": "ai_governance_requirements",
+        "title": "AI Governance & Emerging Technology Requirements",
+        "description": "Required experience with AI governance and emerging technology controls",
+        "order": 14,
+        "helpText": "0 = Not Required, 1 = Nice to Have, 2 = Important, 3 = Very Important, 4 = Essential",
+        "questions": [
+          {
+            "id": "ai_governance",
+            "question": "AI Governance & Algorithm Assurance",
+            "description": "Designing governance and controls for AI systems and algorithmic decision-making",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "AI governance expertise not required",
+              "1": "Basic AI governance awareness beneficial",
+              "2": "Working knowledge expected; ability to design AI controls",
+              "3": "Strong expertise required; must build AI governance frameworks",
+              "4": "Expert level essential; must lead enterprise AI programmes"
+            },
+            "mirrorsCandidate": {
+              "questionId": "ai_governance",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "ai_impact_assessment",
+            "question": "AI Impact Assessments",
+            "description": "Conducting impact assessments for AI implementations",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "AI impact assessment expertise not required",
+              "1": "Basic impact assessment awareness beneficial",
+              "2": "Working knowledge expected; ability to conduct assessments",
+              "3": "Strong expertise required; must design assessment frameworks",
+              "4": "Expert level essential; must lead enterprise AI evaluation"
+            },
+            "mirrorsCandidate": {
+              "questionId": "ai_impact_assessment",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "model_controls",
+            "question": "Model Risk Controls",
+            "description": "Designing controls over model development, validation, and monitoring",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Model risk expertise not required",
+              "1": "Basic model risk awareness beneficial",
+              "2": "Working knowledge expected; ability to design model controls",
+              "3": "Strong expertise required; must build model risk frameworks",
+              "4": "Expert level essential; must lead enterprise model governance"
+            },
+            "mirrorsCandidate": {
+              "questionId": "model_controls",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "agentic_ai_controls",
+            "question": "Agentic AI Controls (Human-in-the-Loop)",
+            "description": "Designing controls for autonomous AI agents and human oversight",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Agentic AI expertise not required",
+              "1": "Basic agentic AI awareness beneficial",
+              "2": "Working knowledge expected; ability to design oversight controls",
+              "3": "Strong expertise required; must build agentic control frameworks",
+              "4": "Expert level essential; must lead enterprise autonomous system governance"
+            },
+            "mirrorsCandidate": {
+              "questionId": "agentic_ai_controls",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "genai_policies",
+            "question": "Generative AI Policies",
+            "description": "Designing policies and controls for generative AI usage",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "GenAI policy expertise not required",
+              "1": "Basic GenAI awareness beneficial",
+              "2": "Working knowledge expected; ability to design usage policies",
+              "3": "Strong expertise required; must build GenAI governance",
+              "4": "Expert level essential; must lead enterprise GenAI programmes"
+            },
+            "mirrorsCandidate": {
+              "questionId": "genai_policies",
+              "matchType": "minimum"
+            }
+          }
+        ]
+      },
+      {
+        "id": "three_lines_coordination_requirements",
+        "title": "Three Lines Coordination & Assurance Requirements",
+        "description": "Required experience coordinating across the Three Lines Model",
+        "order": 15,
+        "helpText": "0 = Not Required, 1 = Nice to Have, 2 = Important, 3 = Very Important, 4 = Essential",
+        "questions": [
+          {
+            "id": "first_line_engagement",
+            "question": "First Line Engagement & Training",
+            "description": "Engaging and training first line management on control responsibilities",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "First line engagement not required",
+              "1": "Basic first line awareness beneficial",
+              "2": "Working knowledge expected; ability to engage first line",
+              "3": "Strong expertise required; must design engagement programmes",
+              "4": "Expert level essential; must lead enterprise control culture"
+            },
+            "mirrorsCandidate": {
+              "questionId": "first_line_engagement",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "control_owner_management",
+            "question": "Control Owner Management",
+            "description": "Managing relationships with control owners and ensuring accountability",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Control owner management not required",
+              "1": "Basic owner management awareness beneficial",
+              "2": "Working knowledge expected; ability to manage control owners",
+              "3": "Strong expertise required; must design owner programmes",
+              "4": "Expert level essential; must lead enterprise accountability"
+            },
+            "mirrorsCandidate": {
+              "questionId": "control_owner_management",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "internal_audit_relationship",
+            "question": "Internal Audit Relationship",
+            "description": "Coordinating with internal audit as a second line function",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Internal audit coordination not required",
+              "1": "Basic IA coordination awareness beneficial",
+              "2": "Working knowledge expected; ability to coordinate with IA",
+              "3": "Strong expertise required; must design IA coordination",
+              "4": "Expert level essential; must lead integrated assurance"
+            },
+            "mirrorsCandidate": {
+              "questionId": "internal_audit_relationship",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "assurance_mapping",
+            "question": "Assurance Mapping",
+            "description": "Mapping assurance activities across all three lines",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Assurance mapping not required",
+              "1": "Basic assurance mapping awareness beneficial",
+              "2": "Working knowledge expected; ability to perform mapping",
+              "3": "Strong expertise required; must design mapping frameworks",
+              "4": "Expert level essential; must lead enterprise coverage"
+            },
+            "mirrorsCandidate": {
+              "questionId": "assurance_mapping",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "combined_assurance",
+            "question": "Combined Assurance Reporting",
+            "description": "Producing integrated assurance reports across all lines",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Combined assurance not required",
+              "1": "Basic combined assurance awareness beneficial",
+              "2": "Working knowledge expected; ability to contribute to reports",
+              "3": "Strong expertise required; must design combined frameworks",
+              "4": "Expert level essential; must lead enterprise integration"
+            },
+            "mirrorsCandidate": {
+              "questionId": "combined_assurance",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "external_audit_interface",
+            "question": "External Audit Interface",
+            "description": "Managing the interface with external auditors on control matters",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "External audit interface not required",
+              "1": "Basic audit interface awareness beneficial",
+              "2": "Working knowledge expected; ability to support audit",
+              "3": "Strong expertise required; must manage audit relationships",
+              "4": "Expert level essential; must design efficient audit interfaces"
+            },
+            "mirrorsCandidate": {
+              "questionId": "external_audit_interface",
+              "matchType": "minimum"
+            }
+          }
+        ]
+      },
+      {
+        "id": "stakeholder_management_requirements",
+        "title": "Stakeholder Management & Influence Requirements",
+        "description": "Required experience managing stakeholders and driving control culture",
+        "order": 16,
+        "helpText": "0 = Not Required, 1 = Nice to Have, 2 = Important, 3 = Very Important, 4 = Essential",
+        "questions": [
+          {
+            "id": "boardroom_translation",
+            "question": "Boardroom Translation (Technical to Business)",
+            "description": "Translating technical control issues into business risk language",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Boardroom translation not required",
+              "1": "Basic translation awareness beneficial",
+              "2": "Working knowledge expected; ability to translate findings",
+              "3": "Strong expertise required; must design communication standards",
+              "4": "Expert level essential; must master executive communication"
+            },
+            "mirrorsCandidate": {
+              "questionId": "boardroom_translation",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "diplomatic_truth_telling",
+            "question": "Diplomatic Truth-Telling",
+            "description": "Delivering difficult messages constructively and professionally",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Diplomatic truth-telling not required",
+              "1": "Basic diplomatic skills beneficial",
+              "2": "Working knowledge expected; ability to deliver difficult messages",
+              "3": "Strong expertise required; must navigate sensitive situations",
+              "4": "Expert level essential; trusted for honest counsel"
+            },
+            "mirrorsCandidate": {
+              "questionId": "diplomatic_truth_telling",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "negotiation_influence",
+            "question": "Negotiation & Influence (First Line)",
+            "description": "Negotiating with first line management on control requirements",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Negotiation skills not required",
+              "1": "Basic negotiation awareness beneficial",
+              "2": "Working knowledge expected; ability to negotiate requirements",
+              "3": "Strong expertise required; must influence without authority",
+              "4": "Expert level essential; must shape control expectations"
+            },
+            "mirrorsCandidate": {
+              "questionId": "negotiation_influence",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "control_culture",
+            "question": "Control Culture Assessment",
+            "description": "Assessing and shaping organisational control culture",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Control culture expertise not required",
+              "1": "Basic culture awareness beneficial",
+              "2": "Working knowledge expected; ability to assess culture",
+              "3": "Strong expertise required; must lead culture initiatives",
+              "4": "Expert level essential; must transform control mindset"
+            },
+            "mirrorsCandidate": {
+              "questionId": "control_culture",
+              "matchType": "minimum"
+            }
+          }
+        ]
+      },
+      {
+        "id": "ic_function_operations_requirements",
+        "title": "IC Function Operations & Domain Experience Requirements",
+        "description": "Required IC function management and sector expertise",
+        "order": 17,
+        "helpText": "0 = Not Required, 1 = Nice to Have, 2 = Important, 3 = Very Important, 4 = Essential",
+        "questions": [
+          {
+            "id": "skills_development",
+            "question": "Skills Development & Training",
+            "description": "Developing IC team capabilities and delivering training",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Skills development not required",
+              "1": "Basic coaching experience beneficial",
+              "2": "Working knowledge expected; ability to deliver training",
+              "3": "Strong expertise required; must build training programmes",
+              "4": "Expert level essential; must establish IC academies"
+            },
+            "mirrorsCandidate": {
+              "questionId": "skills_development",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "cosourcing_management",
+            "question": "Co-sourcing / Outsourcing Management",
+            "description": "Managing co-sourced or outsourced IC resources",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Co-sourcing management not required",
+              "1": "Basic co-sourcing awareness beneficial",
+              "2": "Working knowledge expected; ability to work with co-source teams",
+              "3": "Strong expertise required; must manage vendor relationships",
+              "4": "Expert level essential; must lead enterprise co-sourcing strategy"
+            },
+            "mirrorsCandidate": {
+              "questionId": "cosourcing_management",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "budget_management",
+            "question": "IC Budget Management",
+            "description": "Managing internal control function budgets",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Budget management not required",
+              "1": "Basic budget tracking beneficial",
+              "2": "Working knowledge expected; ability to manage team budgets",
+              "3": "Strong expertise required; must manage significant budgets",
+              "4": "Expert level essential; must lead enterprise IC budget strategy"
+            },
+            "mirrorsCandidate": {
+              "questionId": "budget_management",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "sector_manufacturing",
+            "question": "Manufacturing / Industrial",
+            "description": "Internal control experience in manufacturing and industrial sectors",
+            "type": "slider",
+            "required": false,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Manufacturing experience not required",
+              "1": "Basic manufacturing awareness beneficial",
+              "2": "Working knowledge expected; some manufacturing experience",
+              "3": "Strong expertise required; significant manufacturing experience",
+              "4": "Expert level essential; deep manufacturing sector expertise"
+            },
+            "mirrorsCandidate": {
+              "questionId": "sector_manufacturing",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "sector_retail",
+            "question": "Retail / Consumer",
+            "description": "Internal control experience in retail and consumer sectors",
+            "type": "slider",
+            "required": false,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Retail experience not required",
+              "1": "Basic retail awareness beneficial",
+              "2": "Working knowledge expected; some retail experience",
+              "3": "Strong expertise required; significant retail experience",
+              "4": "Expert level essential; deep retail sector expertise"
+            },
+            "mirrorsCandidate": {
+              "questionId": "sector_retail",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "sector_technology",
+            "question": "Technology / Software",
+            "description": "Internal control experience in technology and software sectors",
+            "type": "slider",
+            "required": false,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Technology experience not required",
+              "1": "Basic technology awareness beneficial",
+              "2": "Working knowledge expected; some technology experience",
+              "3": "Strong expertise required; significant technology experience",
+              "4": "Expert level essential; deep technology sector expertise"
+            },
+            "mirrorsCandidate": {
+              "questionId": "sector_technology",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "sector_healthcare",
+            "question": "Healthcare / Life Sciences",
+            "description": "Internal control experience in healthcare and life sciences sectors",
+            "type": "slider",
+            "required": false,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Healthcare experience not required",
+              "1": "Basic healthcare awareness beneficial",
+              "2": "Working knowledge expected; some healthcare experience",
+              "3": "Strong expertise required; significant healthcare experience",
+              "4": "Expert level essential; deep healthcare sector expertise"
+            },
+            "mirrorsCandidate": {
+              "questionId": "sector_healthcare",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "sector_energy",
+            "question": "Energy / Utilities",
+            "description": "Internal control experience in energy and utilities sectors",
+            "type": "slider",
+            "required": false,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Energy experience not required",
+              "1": "Basic energy awareness beneficial",
+              "2": "Working knowledge expected; some energy experience",
+              "3": "Strong expertise required; significant energy experience",
+              "4": "Expert level essential; deep energy sector expertise"
+            },
+            "mirrorsCandidate": {
+              "questionId": "sector_energy",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "sector_financial_services",
+            "question": "Financial Services",
+            "description": "Internal control experience in financial services sector",
+            "type": "slider",
+            "required": false,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Financial services experience not required",
+              "1": "Basic FS awareness beneficial",
+              "2": "Working knowledge expected; some FS experience",
+              "3": "Strong expertise required; significant FS experience",
+              "4": "Expert level essential; deep FS sector expertise"
+            },
+            "mirrorsCandidate": {
+              "questionId": "sector_financial_services",
+              "matchType": "minimum"
+            }
+          }
+        ]
+      },
+      {
+        "id": "fs_topup",
+        "title": "Financial Services Internal Controls",
+        "description": "FS-specific internal control frameworks and regulatory requirements. Only complete if hiring for roles in Financial Services.",
+        "order": 18,
+        "helpText": "0 = Not Required, 1 = Nice to Have, 2 = Important, 3 = Very Important, 4 = Essential",
+        "questions": [
+          {
+            "id": "fs_sox_controls",
+            "question": "How important is SOX / Financial Reporting Controls (FS) expertise for this role?",
+            "description": "SOX 404 and financial reporting controls in a financial services context",
+            "type": "slider",
+            "required": false,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - beneficial but not essential",
+              "2": "Important - expected competency with development support",
+              "3": "Very Important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            },
+            "mirrorsCandidate": {
+              "questionId": "fs_sox_controls",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "fs_basel_controls",
+            "question": "How important is Basel Operational Risk Controls expertise for this role?",
+            "description": "Internal controls for Basel operational risk requirements",
+            "type": "slider",
+            "required": false,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - beneficial but not essential",
+              "2": "Important - expected competency with development support",
+              "3": "Very Important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            },
+            "mirrorsCandidate": {
+              "questionId": "fs_basel_controls",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "fs_capital_controls",
+            "question": "How important is Capital & Liquidity Controls expertise for this role?",
+            "description": "Internal controls over capital adequacy and liquidity management",
+            "type": "slider",
+            "required": false,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - beneficial but not essential",
+              "2": "Important - expected competency with development support",
+              "3": "Very Important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            },
+            "mirrorsCandidate": {
+              "questionId": "fs_capital_controls",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "fs_conduct_controls",
+            "question": "How important is Conduct Risk Controls expertise for this role?",
+            "description": "Internal controls for conduct risk and customer outcomes",
+            "type": "slider",
+            "required": false,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - beneficial but not essential",
+              "2": "Important - expected competency with development support",
+              "3": "Very Important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            },
+            "mirrorsCandidate": {
+              "questionId": "fs_conduct_controls",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "fs_aml_controls",
+            "question": "How important is AML/KYC Control Environment expertise for this role?",
+            "description": "Internal controls for AML, KYC, and financial crime prevention",
+            "type": "slider",
+            "required": false,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - beneficial but not essential",
+              "2": "Important - expected competency with development support",
+              "3": "Very Important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            },
+            "mirrorsCandidate": {
+              "questionId": "fs_aml_controls",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "fs_market_abuse_controls",
+            "question": "How important is Market Abuse Controls (MAR) expertise for this role?",
+            "description": "Internal controls for market abuse prevention and surveillance",
+            "type": "slider",
+            "required": false,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - beneficial but not essential",
+              "2": "Important - expected competency with development support",
+              "3": "Very Important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            },
+            "mirrorsCandidate": {
+              "questionId": "fs_market_abuse_controls",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "fs_smcr_controls",
+            "question": "How important is SM&CR Governance Controls expertise for this role?",
+            "description": "Internal controls for Senior Managers & Certification Regime compliance",
+            "type": "slider",
+            "required": false,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - beneficial but not essential",
+              "2": "Important - expected competency with development support",
+              "3": "Very Important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            },
+            "mirrorsCandidate": {
+              "questionId": "fs_smcr_controls",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "fs_model_controls",
+            "question": "How important is Model Risk Controls expertise for this role?",
+            "description": "Internal controls over model development, validation, and governance",
+            "type": "slider",
+            "required": false,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - beneficial but not essential",
+              "2": "Important - expected competency with development support",
+              "3": "Very Important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            },
+            "mirrorsCandidate": {
+              "questionId": "fs_model_controls",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "fs_prudential_controls",
+            "question": "How important is Prudential Controls (PRA Requirements) expertise for this role?",
+            "description": "Internal controls for PRA prudential requirements and submissions",
+            "type": "slider",
+            "required": false,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - beneficial but not essential",
+              "2": "Important - expected competency with development support",
+              "3": "Very Important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            },
+            "mirrorsCandidate": {
+              "questionId": "fs_prudential_controls",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "fs_operational_resilience_controls",
+            "question": "How important is Operational Resilience Controls (IBS/Impact Tolerance) expertise for this role?",
+            "description": "Internal controls for PRA/FCA operational resilience requirements",
+            "type": "slider",
+            "required": false,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - beneficial but not essential",
+              "2": "Important - expected competency with development support",
+              "3": "Very Important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            },
+            "mirrorsCandidate": {
+              "questionId": "fs_operational_resilience_controls",
+              "matchType": "minimum"
+            }
+          }
+        ]
+      }
+    ],
+    "metadata": {
+      "totalQuestions": 121,
+      "totalSections": 18,
+      "estimatedCompletionMinutes": 20,
+      "lastUpdated": "2025-12-15"
+    }
+  }
+}

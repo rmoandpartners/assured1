@@ -1,0 +1,3906 @@
+{
+  "questionnaire": {
+    "id": "esg-sustainability-candidate-profile",
+    "title": "ESG & Sustainability Leadership Candidate Profile",
+    "description": "Sustainability and ESG leadership competencies for CSOs, Heads of ESG, Sustainability Managers, and ESG Controllers across all sectors. Covers carbon management, climate risk, biodiversity, social impact, ESG governance, reporting frameworks (CSRD, ISSB, GRI, TCFD, TNFD), and stakeholder engagement. Sector-agnostic design applicable to manufacturing, retail, energy, technology, healthcare, and all industries.",
+    "version": "1.0.1",
+    "createdAt": "2025-12-15",
+    "updatedAt": "2025-12-15",
+    "mirrorProfile": "esg-sustainability-role-profile",
+    "parentProfile": "candidate-profile",
+    "proficiencyScale": {
+      "0": {
+        "label": "No Experience",
+        "description": "No exposure or experience in this area"
+      },
+      "1": {
+        "label": "Awareness",
+        "description": "Understands concepts; can interpret outputs; works under supervision"
+      },
+      "2": {
+        "label": "Practical Application",
+        "description": "Can apply frameworks independently; works autonomously on standard tasks"
+      },
+      "3": {
+        "label": "Implementation & Management",
+        "description": "Can implement, adapt and lead frameworks; designs solutions for specific contexts"
+      },
+      "4": {
+        "label": "Strategic Leadership",
+        "description": "Can design from first principles; creates methodologies; enterprise-wide scope; thought leader"
+      }
+    },
+    "interviewNote": "All self-assessed proficiency ratings will be explored during interviews. Be prepared to provide specific examples demonstrating your claimed level of expertise, particularly for reporting frameworks, decarbonisation initiatives, stakeholder engagement, and ESG governance.",
+    "sections": [
+      {
+        "id": "sustainability_experience_overview",
+        "title": "Sustainability Experience Overview",
+        "description": "Your sustainability and ESG background, career level, and scope of responsibility",
+        "order": 1,
+        "questions": [
+          {
+            "id": "target_sustainability_level",
+            "question": "Target Sustainability Role Level",
+            "type": "select",
+            "required": true,
+            "options": [
+              {
+                "value": "analyst",
+                "label": "Sustainability Analyst / Coordinator"
+              },
+              {
+                "value": "senior_analyst",
+                "label": "Senior Sustainability Analyst / Specialist"
+              },
+              {
+                "value": "manager",
+                "label": "Sustainability Manager"
+              },
+              {
+                "value": "senior_manager",
+                "label": "Senior Sustainability Manager / Associate Director"
+              },
+              {
+                "value": "head_of",
+                "label": "Head of Sustainability / Director"
+              },
+              {
+                "value": "cso",
+                "label": "Chief Sustainability Officer (CSO)"
+              }
+            ],
+            "mirrorsRole": {
+              "questionId": "sustainability_role_level",
+              "matchType": "compatibility"
+            }
+          },
+          {
+            "id": "sustainability_scope_experience",
+            "question": "Highest Level of Sustainability Scope You Have Worked At",
+            "type": "select",
+            "required": true,
+            "options": [
+              {
+                "value": "site_facility",
+                "label": "Site / Facility Level"
+              },
+              {
+                "value": "business_unit",
+                "label": "Business Unit / Division"
+              },
+              {
+                "value": "regional",
+                "label": "Regional"
+              },
+              {
+                "value": "country",
+                "label": "Country"
+              },
+              {
+                "value": "group_enterprise",
+                "label": "Group / Enterprise"
+              }
+            ],
+            "mirrorsRole": {
+              "questionId": "sustainability_scope_required",
+              "matchType": "compatibility"
+            }
+          },
+          {
+            "id": "years_in_sustainability",
+            "question": "Years in Sustainability/ESG Roles",
+            "description": "Years spent specifically in dedicated sustainability or ESG positions",
+            "type": "number",
+            "required": true,
+            "min": 0,
+            "max": 40,
+            "helpText": "Count only dedicated sustainability/ESG roles, not general EHS or CSR positions",
+            "mirrorsRole": {
+              "questionId": "years_sustainability_required",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "years_in_related_functions",
+            "question": "Years in Related Functions (EHS, CSR, Communications)",
+            "description": "Years in adjacent roles that provided sustainability-relevant experience",
+            "type": "number",
+            "required": false,
+            "min": 0,
+            "max": 40,
+            "helpText": "Include EHS, CSR, corporate affairs, investor relations, or strategy roles with sustainability exposure",
+            "mirrorsRole": {
+              "questionId": "years_related_functions_required",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "sustainability_team_size",
+            "question": "Largest Sustainability Team Managed",
+            "description": "Maximum number of direct and indirect reports you have managed in a sustainability function",
+            "type": "number",
+            "required": false,
+            "min": 0,
+            "max": 200,
+            "helpText": "Include both direct reports and matrix/embedded sustainability professionals",
+            "mirrorsRole": {
+              "questionId": "team_size_required",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "primary_esg_specialism",
+            "question": "Primary ESG Specialism",
+            "description": "Your dominant area of expertise within sustainability and ESG",
+            "type": "select",
+            "required": true,
+            "options": [
+              {
+                "value": "esg_generalist",
+                "label": "ESG Strategy & Reporting (Generalist)"
+              },
+              {
+                "value": "carbon_climate",
+                "label": "Carbon & Climate"
+              },
+              {
+                "value": "circular_waste",
+                "label": "Circular Economy & Waste"
+              },
+              {
+                "value": "biodiversity_nature",
+                "label": "Biodiversity & Nature"
+              },
+              {
+                "value": "social_impact",
+                "label": "Social Impact & Human Rights"
+              },
+              {
+                "value": "supply_chain",
+                "label": "Supply Chain Sustainability"
+              },
+              {
+                "value": "sustainable_finance",
+                "label": "Sustainable Finance / Green Bonds"
+              },
+              {
+                "value": "environmental_ehs",
+                "label": "Environmental Management (EHS)"
+              }
+            ],
+            "mirrorsRole": {
+              "questionId": "primary_specialism_required",
+              "matchType": "compatibility"
+            }
+          },
+          {
+            "id": "reporting_line",
+            "question": "Current/Most Recent Reporting Line",
+            "description": "Who does/did your sustainability role report to?",
+            "type": "select",
+            "required": true,
+            "options": [
+              {
+                "value": "ceo_board",
+                "label": "CEO / Board Direct"
+              },
+              {
+                "value": "cfo_finance",
+                "label": "CFO / Finance"
+              },
+              {
+                "value": "gc_legal",
+                "label": "General Counsel / Legal"
+              },
+              {
+                "value": "coo",
+                "label": "Chief Operating Officer"
+              },
+              {
+                "value": "cco_comms",
+                "label": "Chief Communications Officer"
+              },
+              {
+                "value": "cso_strategy",
+                "label": "Chief Strategy Officer"
+              },
+              {
+                "value": "chro_hr",
+                "label": "HR / People Director"
+              },
+              {
+                "value": "other_csuite",
+                "label": "Other C-Suite"
+              }
+            ],
+            "mirrorsRole": {
+              "questionId": "reporting_line_preference",
+              "matchType": "compatibility"
+            }
+          }
+        ]
+      },
+      {
+        "id": "reporting_framework_knowledge",
+        "title": "Reporting Framework Knowledge",
+        "description": "Self-assess your familiarity with key sustainability reporting frameworks and standards",
+        "order": 2,
+        "helpText": "0 = No Experience, 1 = Awareness, 2 = Practical Application, 3 = Implementation & Management, 4 = Strategic Leadership",
+        "interviewNote": "Be prepared to explain how you have applied these frameworks in sustainability reporting and disclosure contexts.",
+        "questions": [
+          {
+            "id": "framework_csrd_esrs",
+            "question": "CSRD / ESRS (European Sustainability Reporting Standards)",
+            "description": "EU Corporate Sustainability Reporting Directive and European Sustainability Reporting Standards",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with CSRD/ESRS",
+              "1": "Aware of CSRD scope and ESRS structure; understands reporting timelines",
+              "2": "Applied ESRS requirements; conducted gap assessments; drafted disclosure content",
+              "3": "Led CSRD implementation projects; designed data collection processes; managed double materiality assessments",
+              "4": "Enterprise-wide CSRD architect; regulatory thought leader; assurance-ready reporting design"
+            },
+            "mirrorsRole": {
+              "questionId": "framework_csrd_esrs",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "framework_issb",
+            "question": "ISSB / IFRS S1 & S2",
+            "description": "International Sustainability Standards Board climate and general sustainability disclosures",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with ISSB standards",
+              "1": "Aware of IFRS S1/S2 requirements and relationship to TCFD",
+              "2": "Applied ISSB disclosure requirements; assessed financial materiality of sustainability matters",
+              "3": "Implemented ISSB-aligned reporting; designed metrics and targets frameworks",
+              "4": "Strategic ISSB interpretation; led multi-jurisdictional adoption; engaged with standard-setters"
+            },
+            "mirrorsRole": {
+              "questionId": "framework_issb",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "framework_gri",
+            "question": "GRI Standards",
+            "description": "Global Reporting Initiative sustainability reporting standards",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with GRI Standards",
+              "1": "Aware of GRI framework structure; understands universal vs topic standards",
+              "2": "Applied GRI Standards in sustainability reporting; conducted materiality assessments",
+              "3": "Led GRI-compliant report production; designed stakeholder engagement processes",
+              "4": "Enterprise GRI strategy; 'in accordance' reporting; GRI Content Index excellence"
+            },
+            "mirrorsRole": {
+              "questionId": "framework_gri",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "framework_tcfd",
+            "question": "TCFD Recommendations",
+            "description": "Task Force on Climate-related Financial Disclosures framework",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with TCFD",
+              "1": "Aware of TCFD four pillars (Governance, Strategy, Risk Management, Metrics & Targets)",
+              "2": "Applied TCFD framework; contributed to climate risk disclosures",
+              "3": "Led TCFD implementation; conducted scenario analysis; designed climate metrics",
+              "4": "Strategic TCFD thought leader; enterprise climate governance; regulatory engagement"
+            },
+            "mirrorsRole": {
+              "questionId": "framework_tcfd",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "framework_tnfd",
+            "question": "TNFD / LEAP Approach",
+            "description": "Taskforce on Nature-related Financial Disclosures and LEAP methodology",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with TNFD",
+              "1": "Aware of TNFD framework and LEAP approach (Locate, Evaluate, Assess, Prepare)",
+              "2": "Applied TNFD LEAP methodology; assessed nature-related dependencies and impacts",
+              "3": "Led TNFD implementation; designed nature-positive strategies; biodiversity target setting",
+              "4": "Enterprise TNFD architect; nature-related scenario analysis; regulatory thought leader"
+            },
+            "mirrorsRole": {
+              "questionId": "framework_tnfd",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "framework_ghg_protocol",
+            "question": "GHG Protocol (Scopes 1, 2, 3)",
+            "description": "Greenhouse Gas Protocol corporate accounting and reporting standard",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with GHG Protocol",
+              "1": "Understands Scope 1, 2, 3 categories; aware of calculation methodologies",
+              "2": "Applied GHG Protocol for carbon footprinting; selected emission factors; calculated inventories",
+              "3": "Led GHG accounting programs; designed Scope 3 data collection; managed verification",
+              "4": "Enterprise carbon accounting architect; methodology design; assurance-ready inventories"
+            },
+            "mirrorsRole": {
+              "questionId": "framework_ghg_protocol",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "framework_sbti",
+            "question": "Science Based Targets initiative (SBTi)",
+            "description": "SBTi target setting and validation framework",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with SBTi",
+              "1": "Understands SBTi commitment and target validation process",
+              "2": "Applied SBTi target-setting methods; supported commitment submissions",
+              "3": "Led SBTi target development and validation; designed decarbonisation pathways",
+              "4": "Enterprise SBTi strategy; Net-Zero Standard implementation; sector decarbonisation leader"
+            },
+            "mirrorsRole": {
+              "questionId": "framework_sbti",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "framework_eu_taxonomy",
+            "question": "EU Taxonomy",
+            "description": "EU Taxonomy for sustainable activities classification",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with EU Taxonomy",
+              "1": "Understands Taxonomy structure; environmental objectives and technical screening criteria",
+              "2": "Assessed Taxonomy eligibility and alignment; calculated KPIs (turnover, CapEx, OpEx)",
+              "3": "Led Taxonomy implementation; designed assessment methodologies; DNSH analysis",
+              "4": "Enterprise Taxonomy strategy; regulatory interpretation; thought leadership on alignment"
+            },
+            "mirrorsRole": {
+              "questionId": "framework_eu_taxonomy",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "framework_un_sdgs",
+            "question": "UN Sustainable Development Goals",
+            "description": "United Nations 2030 Agenda and SDG framework",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with UN SDGs in business context",
+              "1": "Understands SDG framework; can map business activities to relevant goals",
+              "2": "Integrated SDGs into sustainability strategy; reported against SDG targets",
+              "3": "Led SDG-aligned strategy development; designed impact measurement frameworks",
+              "4": "Enterprise SDG integration; partnership development; systemic impact leadership"
+            },
+            "mirrorsRole": {
+              "questionId": "framework_un_sdgs",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "framework_cdp",
+            "question": "CDP Questionnaires (Climate, Water, Forests)",
+            "description": "CDP disclosure platform for environmental reporting",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with CDP questionnaires",
+              "1": "Understands CDP disclosure process and scoring methodology",
+              "2": "Contributed to CDP questionnaire responses; gathered data for submissions",
+              "3": "Led CDP disclosure strategy; achieved improved scores; A-list pathway development",
+              "4": "Enterprise CDP strategy; A-list achievement; CDP scoring methodology expertise"
+            },
+            "mirrorsRole": {
+              "questionId": "framework_cdp",
+              "matchType": "minimum"
+            }
+          }
+        ]
+      },
+      {
+        "id": "sustainability_reporting_disclosure",
+        "title": "Sustainability Reporting & Disclosure",
+        "description": "Experience with materiality assessment, report production, and regulatory filings",
+        "order": 3,
+        "helpText": "0 = No Experience, 1 = Awareness, 2 = Practical Application, 3 = Implementation & Management, 4 = Strategic Leadership",
+        "questions": [
+          {
+            "id": "double_materiality",
+            "question": "Double Materiality Assessment (DMA)",
+            "description": "Combined impact and financial materiality assessment under ESRS",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with double materiality assessments",
+              "1": "Understands DMA concepts and ESRS requirements; difference between impact and financial materiality",
+              "2": "Contributed to DMA processes; gathered stakeholder input; scored IROs",
+              "3": "Led end-to-end DMA process; designed scoring methodology; managed stakeholder panels",
+              "4": "Enterprise DMA architect; regulatory thought leader; assurance-ready methodology design"
+            },
+            "mirrorsRole": {
+              "questionId": "double_materiality",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "impact_materiality",
+            "question": "Impact Materiality (Inside-Out)",
+            "description": "Assessment of organisation's impacts on people and environment",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with impact materiality",
+              "1": "Understands inside-out perspective; can identify potential impacts",
+              "2": "Conducted impact assessments; engaged stakeholders on material topics",
+              "3": "Led impact materiality processes; designed assessment frameworks; managed remediation",
+              "4": "Enterprise impact strategy; human rights due diligence integration; systemic impact leadership"
+            },
+            "mirrorsRole": {
+              "questionId": "impact_materiality",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "financial_materiality",
+            "question": "Financial Materiality (Outside-In)",
+            "description": "Assessment of sustainability risks and opportunities affecting enterprise value",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with financial materiality in sustainability context",
+              "1": "Understands outside-in perspective; can identify sustainability-related financial risks",
+              "2": "Assessed financial materiality of sustainability topics; quantified business impacts",
+              "3": "Led financial materiality assessments; integrated with enterprise risk management",
+              "4": "Enterprise value-driven sustainability; CFO partnership; investor materiality expertise"
+            },
+            "mirrorsRole": {
+              "questionId": "financial_materiality",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "value_chain_mapping",
+            "question": "Value Chain Mapping for Reporting",
+            "description": "Upstream and downstream value chain analysis for sustainability reporting",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with value chain mapping",
+              "1": "Understands value chain concept; can identify upstream/downstream activities",
+              "2": "Mapped value chains for reporting purposes; identified material activities",
+              "3": "Led comprehensive value chain analysis; designed data collection from chain partners",
+              "4": "Enterprise value chain strategy; Scope 3 excellence; supply chain transformation"
+            },
+            "mirrorsRole": {
+              "questionId": "value_chain_mapping",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "iro_identification",
+            "question": "IRO Identification (Impacts, Risks, Opportunities)",
+            "description": "Systematic identification of sustainability-related impacts, risks, and opportunities",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with IRO identification",
+              "1": "Understands IRO concepts under ESRS; can distinguish impacts from risks",
+              "2": "Contributed to IRO identification; assessed materiality of identified items",
+              "3": "Led IRO assessment processes; designed identification methodologies; managed scoring",
+              "4": "Enterprise IRO framework architect; integration with strategic planning; board-level reporting"
+            },
+            "mirrorsRole": {
+              "questionId": "iro_identification",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "sustainability_report_production",
+            "question": "Annual Sustainability Report Production",
+            "description": "End-to-end sustainability report development and publication",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with sustainability report production",
+              "1": "Understands report production process; contributed content sections",
+              "2": "Managed report workstreams; coordinated data collection; drafted disclosures",
+              "3": "Led report production end-to-end; managed stakeholders and timelines; external assurance",
+              "4": "Enterprise reporting strategy; award-winning reports; thought leadership in disclosure"
+            },
+            "mirrorsRole": {
+              "questionId": "sustainability_report_production",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "integrated_reporting",
+            "question": "Integrated Reporting / Annual Report Integration",
+            "description": "Integration of sustainability content into mainstream financial reporting",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with integrated reporting",
+              "1": "Understands integrated reporting concept; IIRC framework awareness",
+              "2": "Contributed sustainability content to annual reports; worked with finance teams",
+              "3": "Led integration of sustainability into annual reports; designed connectivity",
+              "4": "Enterprise integrated thinking; value creation narrative; investor-grade disclosure"
+            },
+            "mirrorsRole": {
+              "questionId": "integrated_reporting",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "regulatory_esg_filings",
+            "question": "Regulatory ESG Filings",
+            "description": "Mandatory sustainability-related regulatory submissions",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with regulatory ESG filings",
+              "1": "Aware of regulatory ESG requirements (SECR, ESOS, EU Taxonomy)",
+              "2": "Prepared regulatory ESG submissions; ensured compliance with requirements",
+              "3": "Led regulatory filing programs; managed multi-jurisdictional requirements",
+              "4": "Enterprise regulatory strategy; engagement with regulators; policy advocacy"
+            },
+            "mirrorsRole": {
+              "questionId": "regulatory_esg_filings",
+              "matchType": "minimum"
+            }
+          }
+        ]
+      },
+      {
+        "id": "assurance_internal_controls",
+        "title": "Assurance & Internal Controls",
+        "description": "ESG assurance management, data governance, and audit readiness",
+        "order": 4,
+        "helpText": "0 = No Experience, 1 = Awareness, 2 = Practical Application, 3 = Implementation & Management, 4 = Strategic Leadership",
+        "questions": [
+          {
+            "id": "esg_external_assurance",
+            "question": "ESG External Assurance Management",
+            "description": "Managing external assurance engagements for sustainability data and reports",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with ESG assurance",
+              "1": "Understands assurance process; aware of assurance standards (ISAE 3000, AA1000)",
+              "2": "Supported assurance engagements; provided data and evidence to assurers",
+              "3": "Managed assurance provider relationships; scoped engagements; addressed findings",
+              "4": "Enterprise assurance strategy; assurance provider selection; limited to reasonable pathway"
+            },
+            "mirrorsRole": {
+              "questionId": "esg_external_assurance",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "limited_reasonable_assurance",
+            "question": "Limited vs Reasonable Assurance Understanding",
+            "description": "Understanding of different assurance levels and their requirements",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No understanding of assurance levels",
+              "1": "Understands difference between limited and reasonable assurance",
+              "2": "Prepared data for different assurance levels; understands evidence requirements",
+              "3": "Designed controls for reasonable assurance; managed assurance scope decisions",
+              "4": "Enterprise assurance maturity roadmap; reasonable assurance achievement; CSRD readiness"
+            },
+            "mirrorsRole": {
+              "questionId": "limited_reasonable_assurance",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "internal_controls_nonfinancial",
+            "question": "Internal Controls for Non-Financial Data",
+            "description": "Designing and operating internal controls over sustainability data",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with ESG internal controls",
+              "1": "Understands internal control concepts applied to non-financial data",
+              "2": "Documented ESG data controls; performed control testing",
+              "3": "Designed ESG control frameworks; implemented COSO-aligned controls",
+              "4": "Enterprise ESG controls architect; SOX-like rigor for sustainability; regulatory engagement"
+            },
+            "mirrorsRole": {
+              "questionId": "internal_controls_nonfinancial",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "esg_data_governance",
+            "question": "ESG Data Governance & Policies",
+            "description": "Governance frameworks and policies for sustainability data management",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with ESG data governance",
+              "1": "Understands data governance principles; aware of data quality challenges",
+              "2": "Implemented data governance policies; managed data dictionaries",
+              "3": "Designed ESG data governance frameworks; established data ownership models",
+              "4": "Enterprise data governance architect; integration with corporate data strategy"
+            },
+            "mirrorsRole": {
+              "questionId": "esg_data_governance",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "audit_readiness",
+            "question": "Audit Readiness & Documentation",
+            "description": "Preparing sustainability data and processes for audit",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with ESG audit readiness",
+              "1": "Understands audit documentation requirements; can compile evidence",
+              "2": "Prepared audit-ready documentation; maintained evidence trails",
+              "3": "Led audit readiness programs; designed documentation standards",
+              "4": "Enterprise audit strategy; continuous audit readiness; exemplary documentation"
+            },
+            "mirrorsRole": {
+              "questionId": "audit_readiness",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "restatement_policies",
+            "question": "Restatement & Correction Policies",
+            "description": "Policies for restating historical sustainability data",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with ESG restatements",
+              "1": "Understands when restatements are required; awareness of disclosure implications",
+              "2": "Applied restatement policies; documented methodology changes",
+              "3": "Designed restatement frameworks; managed material corrections",
+              "4": "Enterprise restatement strategy; proactive disclosure; assurance integration"
+            },
+            "mirrorsRole": {
+              "questionId": "restatement_policies",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "control_testing",
+            "question": "Control Testing & Evidence",
+            "description": "Testing effectiveness of ESG data controls",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with ESG control testing",
+              "1": "Understands control testing concepts; can gather evidence",
+              "2": "Performed control testing; documented test results",
+              "3": "Designed control testing programs; managed remediation of deficiencies",
+              "4": "Enterprise control testing strategy; continuous monitoring; internal audit integration"
+            },
+            "mirrorsRole": {
+              "questionId": "control_testing",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "auditor_liaison",
+            "question": "External Auditor / Assurance Provider Liaison",
+            "description": "Managing relationships with external assurance providers",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience liaising with ESG assurance providers",
+              "1": "Understands assurance provider requirements; can respond to queries",
+              "2": "Coordinated with assurance providers; managed information requests",
+              "3": "Led assurance relationships; negotiated scope; managed findings",
+              "4": "Enterprise assurance partner; strategic provider relationships; market expertise"
+            },
+            "mirrorsRole": {
+              "questionId": "auditor_liaison",
+              "matchType": "minimum"
+            }
+          }
+        ]
+      },
+      {
+        "id": "carbon_ghg_management",
+        "title": "Carbon & GHG Management",
+        "description": "Greenhouse gas accounting, decarbonisation, and carbon management expertise",
+        "order": 5,
+        "helpText": "0 = No Experience, 1 = Awareness, 2 = Practical Application, 3 = Implementation & Management, 4 = Strategic Leadership",
+        "questions": [
+          {
+            "id": "scope_1_2_accounting",
+            "question": "Scope 1 & 2 GHG Accounting",
+            "description": "Direct emissions and purchased energy accounting",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with Scope 1 & 2 accounting",
+              "1": "Understands Scope 1 & 2 categories; aware of calculation methods",
+              "2": "Calculated Scope 1 & 2 inventories; selected emission factors; compiled data",
+              "3": "Led Scope 1 & 2 accounting programs; designed data collection; managed verification",
+              "4": "Enterprise GHG architect; methodology design; assurance-ready inventories"
+            },
+            "mirrorsRole": {
+              "questionId": "scope_1_2_accounting",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "scope_3_accounting",
+            "question": "Scope 3 Value Chain Emissions",
+            "description": "Indirect value chain emissions across 15 categories",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with Scope 3 accounting",
+              "1": "Understands Scope 3 categories; aware of complexity and data challenges",
+              "2": "Calculated Scope 3 categories; applied spend-based and activity-based methods",
+              "3": "Led comprehensive Scope 3 programs; supplier engagement; primary data collection",
+              "4": "Enterprise Scope 3 strategy; supply chain decarbonisation; thought leadership"
+            },
+            "mirrorsRole": {
+              "questionId": "scope_3_accounting",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "emission_factor_selection",
+            "question": "Emission Factor Selection (DEFRA, EPA, Ecoinvent)",
+            "description": "Selection and application of appropriate emission factors",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with emission factor selection",
+              "1": "Aware of emission factor databases; understands regional differences",
+              "2": "Selected appropriate emission factors; documented methodology choices",
+              "3": "Designed emission factor hierarchies; managed database updates; supplier factors",
+              "4": "Emission factor expertise; custom factor development; methodology thought leader"
+            },
+            "mirrorsRole": {
+              "questionId": "emission_factor_selection",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "carbon_footprinting",
+            "question": "Organisational Carbon Footprinting",
+            "description": "Complete organisational GHG inventory development",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with carbon footprinting",
+              "1": "Understands carbon footprint concept; aware of boundary setting",
+              "2": "Contributed to carbon footprint calculations; gathered activity data",
+              "3": "Led carbon footprinting programs; designed methodologies; managed assurance",
+              "4": "Enterprise carbon footprint architect; multi-entity consolidation; industry benchmark"
+            },
+            "mirrorsRole": {
+              "questionId": "carbon_footprinting",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "product_carbon_footprint",
+            "question": "Product Carbon Footprint (PCF)",
+            "description": "Product-level life cycle carbon assessment",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with product carbon footprints",
+              "1": "Understands PCF concept; aware of ISO 14067 standard",
+              "2": "Calculated product carbon footprints; applied LCA principles",
+              "3": "Led PCF programs; designed product-level methodologies; supported eco-labelling",
+              "4": "Enterprise PCF strategy; customer engagement; supply chain collaboration"
+            },
+            "mirrorsRole": {
+              "questionId": "product_carbon_footprint",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "sbti_target_setting",
+            "question": "SBTi Target Setting & Validation",
+            "description": "Science-based target development and SBTi validation process",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with SBTi target setting",
+              "1": "Understands SBTi process; aware of target-setting methods",
+              "2": "Contributed to SBTi submissions; modelled target scenarios",
+              "3": "Led SBTi target development and validation; managed submission process",
+              "4": "Enterprise SBTi strategy; Net-Zero Standard; sector decarbonisation leader"
+            },
+            "mirrorsRole": {
+              "questionId": "sbti_target_setting",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "decarbonisation_roadmaps",
+            "question": "Decarbonisation Roadmap Development",
+            "description": "Strategic planning for emissions reduction pathways",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with decarbonisation roadmaps",
+              "1": "Understands decarbonisation levers; aware of technology options",
+              "2": "Contributed to roadmap development; assessed reduction opportunities",
+              "3": "Led decarbonisation roadmap development; business case development; stakeholder alignment",
+              "4": "Enterprise decarbonisation architect; CapEx integration; transformation leadership"
+            },
+            "mirrorsRole": {
+              "questionId": "decarbonisation_roadmaps",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "internal_carbon_pricing",
+            "question": "Internal Carbon Pricing",
+            "description": "Design and implementation of internal carbon pricing mechanisms",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with internal carbon pricing",
+              "1": "Understands carbon pricing concepts; shadow vs internal fee",
+              "2": "Supported carbon pricing implementation; assessed financial impacts",
+              "3": "Designed internal carbon pricing schemes; integrated into capital allocation",
+              "4": "Enterprise carbon pricing architect; CFO partnership; investment decision integration"
+            },
+            "mirrorsRole": {
+              "questionId": "internal_carbon_pricing",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "carbon_offsets",
+            "question": "Carbon Offsets & Credits (VCM)",
+            "description": "Voluntary carbon market navigation and offset strategy",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with carbon offsets",
+              "1": "Understands offset types; aware of quality standards (Gold Standard, Verra)",
+              "2": "Procured carbon offsets; conducted due diligence on projects",
+              "3": "Designed offset strategies; managed portfolios; addressed stakeholder concerns",
+              "4": "Enterprise offset strategy; market expertise; credibility and integrity leadership"
+            },
+            "mirrorsRole": {
+              "questionId": "carbon_offsets",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "supplier_emissions",
+            "question": "Supplier Emissions Data Collection",
+            "description": "Collecting primary GHG data from supply chain partners",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with supplier emissions data",
+              "1": "Understands supplier data challenges; aware of collection methods",
+              "2": "Collected supplier emissions data; managed questionnaires and portals",
+              "3": "Designed supplier data programs; capacity building; data quality management",
+              "4": "Enterprise supplier engagement; supply chain decarbonisation partnerships"
+            },
+            "mirrorsRole": {
+              "questionId": "supplier_emissions",
+              "matchType": "minimum"
+            }
+          }
+        ]
+      },
+      {
+        "id": "climate_risk_tcfd",
+        "title": "Climate Risk & TCFD",
+        "description": "Climate risk assessment, scenario analysis, and TCFD disclosure",
+        "order": 6,
+        "helpText": "0 = No Experience, 1 = Awareness, 2 = Practical Application, 3 = Implementation & Management, 4 = Strategic Leadership",
+        "questions": [
+          {
+            "id": "climate_scenario_analysis",
+            "question": "Climate Scenario Analysis",
+            "description": "Modelling business impacts under different climate scenarios",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with climate scenario analysis",
+              "1": "Understands scenario analysis concept; aware of IPCC/NGFS scenarios",
+              "2": "Contributed to scenario analysis; assessed impacts on business activities",
+              "3": "Led scenario analysis exercises; designed methodology; modelled financial impacts",
+              "4": "Enterprise scenario strategy; board-level integration; strategic planning influence"
+            },
+            "mirrorsRole": {
+              "questionId": "climate_scenario_analysis",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "physical_risk_assessment",
+            "question": "Physical Risk Assessment (Floods, Heat, Storms)",
+            "description": "Assessment of acute and chronic physical climate risks",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with physical risk assessment",
+              "1": "Understands physical risk categories; aware of climate hazards",
+              "2": "Assessed physical risks for assets/operations; used climate data",
+              "3": "Led physical risk assessments; designed adaptation strategies; asset resilience",
+              "4": "Enterprise physical risk strategy; insurance integration; climate adaptation leadership"
+            },
+            "mirrorsRole": {
+              "questionId": "physical_risk_assessment",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "transition_risk_assessment",
+            "question": "Transition Risk Assessment (Policy, Technology, Market)",
+            "description": "Assessment of risks from low-carbon transition",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with transition risk assessment",
+              "1": "Understands transition risk categories; policy, technology, market, reputation",
+              "2": "Assessed transition risks for business activities; regulatory horizon scanning",
+              "3": "Led transition risk programs; strategic response development; opportunity identification",
+              "4": "Enterprise transition strategy; business model transformation; thought leadership"
+            },
+            "mirrorsRole": {
+              "questionId": "transition_risk_assessment",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "climate_financial_impact",
+            "question": "Climate Risk Financial Quantification",
+            "description": "Translating climate risks into financial impacts",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with climate risk quantification",
+              "1": "Understands need for financial quantification; aware of challenges",
+              "2": "Supported financial modelling of climate impacts; assessed P&L/balance sheet effects",
+              "3": "Led climate risk quantification; designed models; CFO engagement",
+              "4": "Enterprise climate financial strategy; disclosure excellence; investor engagement"
+            },
+            "mirrorsRole": {
+              "questionId": "climate_financial_impact",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "tcfd_governance",
+            "question": "TCFD Governance Pillar",
+            "description": "Board and management oversight of climate-related risks",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with climate governance",
+              "1": "Understands governance requirements; board oversight expectations",
+              "2": "Supported climate governance disclosures; documented oversight structures",
+              "3": "Designed climate governance frameworks; board reporting; committee integration",
+              "4": "Enterprise climate governance architect; board education; best practice leadership"
+            },
+            "mirrorsRole": {
+              "questionId": "tcfd_governance",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "tcfd_strategy",
+            "question": "TCFD Strategy Pillar",
+            "description": "Climate-related risks and opportunities in business strategy",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with climate strategy disclosure",
+              "1": "Understands strategy disclosure requirements; short/medium/long-term horizons",
+              "2": "Contributed to strategy disclosures; identified risks and opportunities",
+              "3": "Led climate strategy development and disclosure; scenario integration",
+              "4": "Enterprise climate strategy architect; business model resilience; transformation leadership"
+            },
+            "mirrorsRole": {
+              "questionId": "tcfd_strategy",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "tcfd_risk_management",
+            "question": "TCFD Risk Management Pillar",
+            "description": "Integration of climate risks into enterprise risk management",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with climate risk management integration",
+              "1": "Understands risk management disclosure requirements",
+              "2": "Supported climate risk integration; documented processes",
+              "3": "Led climate risk integration into ERM; designed assessment frameworks",
+              "4": "Enterprise climate risk architect; CRO partnership; risk framework transformation"
+            },
+            "mirrorsRole": {
+              "questionId": "tcfd_risk_management",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "tcfd_metrics_targets",
+            "question": "TCFD Metrics & Targets Pillar",
+            "description": "Climate-related metrics and targets disclosure",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with climate metrics disclosure",
+              "1": "Understands metrics requirements; emissions, targets, climate risk metrics",
+              "2": "Compiled climate metrics; contributed to target disclosures",
+              "3": "Led metrics and targets framework; designed KPIs; performance management",
+              "4": "Enterprise climate metrics architect; target-setting excellence; disclosure leadership"
+            },
+            "mirrorsRole": {
+              "questionId": "tcfd_metrics_targets",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "ngfs_scenarios",
+            "question": "NGFS Scenario Application",
+            "description": "Application of Network for Greening the Financial System scenarios",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with NGFS scenarios",
+              "1": "Aware of NGFS scenarios; orderly, disorderly, hot house",
+              "2": "Applied NGFS scenarios to business analysis; interpreted pathways",
+              "3": "Led NGFS-based analysis; customised scenarios; stakeholder communication",
+              "4": "Enterprise scenario expertise; regulatory engagement; thought leadership"
+            },
+            "mirrorsRole": {
+              "questionId": "ngfs_scenarios",
+              "matchType": "minimum"
+            }
+          }
+        ]
+      },
+      {
+        "id": "biodiversity_nature_circularity",
+        "title": "Biodiversity, Nature & Circularity",
+        "description": "Nature-related impacts, TNFD, circular economy, and resource management",
+        "order": 7,
+        "helpText": "0 = No Experience, 1 = Awareness, 2 = Practical Application, 3 = Implementation & Management, 4 = Strategic Leadership",
+        "questions": [
+          {
+            "id": "tnfd_leap",
+            "question": "TNFD LEAP Approach",
+            "description": "Taskforce on Nature-related Financial Disclosures methodology",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with TNFD LEAP",
+              "1": "Aware of LEAP approach (Locate, Evaluate, Assess, Prepare)",
+              "2": "Applied LEAP methodology; conducted location-based assessments",
+              "3": "Led TNFD implementation; designed nature risk frameworks; target setting",
+              "4": "Enterprise TNFD architect; nature-positive strategy; regulatory thought leader"
+            },
+            "mirrorsRole": {
+              "questionId": "tnfd_leap",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "biodiversity_assessment",
+            "question": "Biodiversity Impact Assessment",
+            "description": "Assessment of business impacts on biodiversity",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with biodiversity assessment",
+              "1": "Understands biodiversity impact concepts; aware of assessment tools",
+              "2": "Conducted biodiversity assessments; identified impacts and dependencies",
+              "3": "Led biodiversity programs; designed mitigation strategies; target setting",
+              "4": "Enterprise biodiversity strategy; nature-positive leadership; ecosystem restoration"
+            },
+            "mirrorsRole": {
+              "questionId": "biodiversity_assessment",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "nature_dependency",
+            "question": "Nature Dependency Mapping",
+            "description": "Mapping business dependencies on ecosystem services",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with nature dependency mapping",
+              "1": "Understands ecosystem service concepts; dependency vs impact",
+              "2": "Mapped nature dependencies; used tools like ENCORE",
+              "3": "Led dependency assessments; valued ecosystem services; risk integration",
+              "4": "Enterprise nature strategy; natural capital accounting; board-level integration"
+            },
+            "mirrorsRole": {
+              "questionId": "nature_dependency",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "water_stewardship",
+            "question": "Water Stewardship & Risk",
+            "description": "Water-related risk management and stewardship",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with water stewardship",
+              "1": "Understands water risk concepts; aware of water stress indicators",
+              "2": "Assessed water risks; implemented water efficiency measures",
+              "3": "Led water stewardship programs; watershed engagement; target setting",
+              "4": "Enterprise water strategy; AWS certification; water positive leadership"
+            },
+            "mirrorsRole": {
+              "questionId": "water_stewardship",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "land_use_change",
+            "question": "Land Use & Deforestation Risk",
+            "description": "Assessment and management of land use and deforestation risks",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with land use/deforestation risk",
+              "1": "Understands deforestation risks; aware of commodity links",
+              "2": "Assessed deforestation risks; implemented due diligence",
+              "3": "Led deforestation-free programs; supply chain engagement; certification",
+              "4": "Enterprise deforestation strategy; landscape initiatives; industry leadership"
+            },
+            "mirrorsRole": {
+              "questionId": "land_use_change",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "circular_economy",
+            "question": "Circular Economy Strategy",
+            "description": "Design and implementation of circular economy principles",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with circular economy",
+              "1": "Understands circular economy principles; R-strategies",
+              "2": "Implemented circular initiatives; product redesign; material substitution",
+              "3": "Led circular economy programs; business model innovation; value chain collaboration",
+              "4": "Enterprise circularity architect; closed-loop systems; industry transformation"
+            },
+            "mirrorsRole": {
+              "questionId": "circular_economy",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "waste_management",
+            "question": "Waste Management & Reduction",
+            "description": "Waste reduction, recycling, and zero-waste initiatives",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with waste management strategy",
+              "1": "Understands waste hierarchy; reduction, reuse, recycle principles",
+              "2": "Implemented waste reduction programs; managed waste data",
+              "3": "Led zero-waste initiatives; designed waste strategies; supplier engagement",
+              "4": "Enterprise waste strategy; zero waste to landfill; extended producer responsibility"
+            },
+            "mirrorsRole": {
+              "questionId": "waste_management",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "lca_methodology",
+            "question": "Life Cycle Assessment (LCA) Methodology",
+            "description": "Environmental life cycle assessment for products and services",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with LCA",
+              "1": "Understands LCA concept; ISO 14040/14044 awareness",
+              "2": "Conducted or interpreted LCA studies; used LCA software",
+              "3": "Led LCA programs; designed product ecodesign frameworks; EPD development",
+              "4": "Enterprise LCA strategy; methodology innovation; thought leadership"
+            },
+            "mirrorsRole": {
+              "questionId": "lca_methodology",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "embodied_carbon",
+            "question": "Embodied Carbon Analysis",
+            "description": "Carbon embedded in materials, products, and assets",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with embodied carbon",
+              "1": "Understands embodied carbon concept; scope 3 category 1 & 2 relationship",
+              "2": "Calculated embodied carbon; used EPD data; material selection",
+              "3": "Led embodied carbon programs; procurement integration; supplier engagement",
+              "4": "Enterprise embodied carbon strategy; construction/asset decarbonisation leadership"
+            },
+            "mirrorsRole": {
+              "questionId": "embodied_carbon",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "geospatial_tools",
+            "question": "Geospatial Tools (IBAT, ENCORE, GIS)",
+            "description": "Use of geospatial data and tools for nature assessment",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with geospatial ESG tools",
+              "1": "Aware of geospatial tools; IBAT, ENCORE, GIS basics",
+              "2": "Used geospatial tools for nature assessments; location-based analysis",
+              "3": "Led geospatial analysis programs; designed location screening frameworks",
+              "4": "Enterprise geospatial strategy; satellite data integration; advanced analytics"
+            },
+            "mirrorsRole": {
+              "questionId": "geospatial_tools",
+              "matchType": "minimum"
+            }
+          }
+        ]
+      },
+      {
+        "id": "human_rights_labour",
+        "title": "Human Rights & Labour Standards",
+        "description": "Human rights due diligence, labour standards, and social impact",
+        "order": 8,
+        "helpText": "0 = No Experience, 1 = Awareness, 2 = Practical Application, 3 = Implementation & Management, 4 = Strategic Leadership",
+        "questions": [
+          {
+            "id": "human_rights_dd",
+            "question": "Human Rights Due Diligence (HRDD)",
+            "description": "Systematic process to identify and address human rights impacts",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with human rights due diligence",
+              "1": "Understands HRDD concept; aware of UNGP framework",
+              "2": "Conducted HRDD assessments; identified salient issues; risk mapping",
+              "3": "Led HRDD programs; designed policies and procedures; remediation",
+              "4": "Enterprise HRDD architect; stakeholder engagement; thought leadership"
+            },
+            "mirrorsRole": {
+              "questionId": "human_rights_dd",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "modern_slavery",
+            "question": "Modern Slavery Act Compliance",
+            "description": "Modern slavery statement and supply chain due diligence",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with modern slavery compliance",
+              "1": "Understands Modern Slavery Act requirements; statement obligations",
+              "2": "Contributed to modern slavery statements; conducted due diligence",
+              "3": "Led modern slavery programs; designed due diligence frameworks",
+              "4": "Enterprise modern slavery strategy; supply chain transformation; best practice"
+            },
+            "mirrorsRole": {
+              "questionId": "modern_slavery",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "ungp_implementation",
+            "question": "UN Guiding Principles on Business & Human Rights",
+            "description": "Implementation of UNGPs and corporate responsibility to respect",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with UNGPs",
+              "1": "Understands UNGP framework; state duty, corporate responsibility, access to remedy",
+              "2": "Applied UNGPs in policy and process; conducted human rights impact assessments",
+              "3": "Led UNGP implementation; designed human rights frameworks; stakeholder dialogue",
+              "4": "Enterprise UNGP leadership; National Action Plan engagement; thought leadership"
+            },
+            "mirrorsRole": {
+              "questionId": "ungp_implementation",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "labour_standards",
+            "question": "ILO Labour Standards",
+            "description": "International Labour Organization core conventions and standards",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with ILO standards in business context",
+              "1": "Aware of ILO core conventions; freedom of association, forced labour, child labour",
+              "2": "Applied ILO standards in supplier assessment; policy development",
+              "3": "Led labour rights programs; supplier engagement; collective bargaining support",
+              "4": "Enterprise labour standards architect; union engagement; industry leadership"
+            },
+            "mirrorsRole": {
+              "questionId": "labour_standards",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "living_wage",
+            "question": "Living Wage Assessment",
+            "description": "Living wage analysis and implementation",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with living wage assessment",
+              "1": "Understands living wage concept; difference from minimum wage",
+              "2": "Conducted living wage analysis; gap assessment; benchmarking",
+              "3": "Led living wage implementation; supply chain programs; accreditation",
+              "4": "Enterprise living wage strategy; industry leadership; systemic change"
+            },
+            "mirrorsRole": {
+              "questionId": "living_wage",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "dei_strategy",
+            "question": "Diversity, Equity & Inclusion Strategy",
+            "description": "DEI strategy development and implementation",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with DEI strategy",
+              "1": "Understands DEI concepts; aware of business case and metrics",
+              "2": "Contributed to DEI programs; supported data collection and reporting",
+              "3": "Led DEI initiatives; designed strategies; target setting",
+              "4": "Enterprise DEI architect; cultural transformation; industry leadership"
+            },
+            "mirrorsRole": {
+              "questionId": "dei_strategy",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "employee_wellbeing",
+            "question": "Employee Health, Safety & Wellbeing",
+            "description": "Workplace health, safety, and wellbeing programs",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with H&S/wellbeing from sustainability perspective",
+              "1": "Understands H&S reporting requirements; wellbeing metrics",
+              "2": "Contributed to H&S/wellbeing disclosures; supported programs",
+              "3": "Led H&S/wellbeing integration into sustainability; designed metrics",
+              "4": "Enterprise employee wellbeing strategy; psychosocial safety leadership"
+            },
+            "mirrorsRole": {
+              "questionId": "employee_wellbeing",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "grievance_mechanisms",
+            "question": "Grievance Mechanisms",
+            "description": "Access to remedy and grievance handling processes",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with operational grievance mechanisms",
+              "1": "Understands grievance mechanism requirements; UNGP effectiveness criteria",
+              "2": "Supported grievance mechanism implementation; case management",
+              "3": "Designed grievance mechanisms; stakeholder engagement; remediation",
+              "4": "Enterprise grievance strategy; operational-level mechanism excellence"
+            },
+            "mirrorsRole": {
+              "questionId": "grievance_mechanisms",
+              "matchType": "minimum"
+            }
+          }
+        ]
+      },
+      {
+        "id": "supply_chain_sustainability",
+        "title": "Supply Chain Sustainability",
+        "description": "Sustainable procurement, supplier engagement, and due diligence",
+        "order": 9,
+        "helpText": "0 = No Experience, 1 = Awareness, 2 = Practical Application, 3 = Implementation & Management, 4 = Strategic Leadership",
+        "questions": [
+          {
+            "id": "supply_chain_mapping",
+            "question": "Supply Chain Sustainability Mapping",
+            "description": "Understanding and mapping sustainability risks across supply chains",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with supply chain sustainability mapping",
+              "1": "Understands supply chain ESG risk concepts; hotspot identification",
+              "2": "Mapped supply chain sustainability risks; tier 1 analysis",
+              "3": "Led comprehensive supply chain mapping; risk prioritisation; mitigation strategies",
+              "4": "Enterprise supply chain strategy; multi-tier visibility; transformation leadership"
+            },
+            "mirrorsRole": {
+              "questionId": "supply_chain_mapping",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "supplier_assessment",
+            "question": "Supplier ESG Assessment & Scoring",
+            "description": "Evaluation and scoring of supplier sustainability performance",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with supplier ESG assessment",
+              "1": "Understands supplier assessment concepts; questionnaire-based approaches",
+              "2": "Conducted supplier assessments; interpreted results; risk categorisation",
+              "3": "Designed assessment frameworks; managed platforms (EcoVadis, IntegrityNext)",
+              "4": "Enterprise supplier assessment architect; procurement integration; supplier development"
+            },
+            "mirrorsRole": {
+              "questionId": "supplier_assessment",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "supplier_engagement",
+            "question": "Supplier Engagement & Capacity Building",
+            "description": "Working with suppliers to improve sustainability performance",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with supplier engagement",
+              "1": "Understands supplier engagement importance; communication approaches",
+              "2": "Engaged suppliers on sustainability; delivered training and guidance",
+              "3": "Led supplier engagement programs; capacity building; performance improvement",
+              "4": "Enterprise supplier partnership strategy; value chain transformation"
+            },
+            "mirrorsRole": {
+              "questionId": "supplier_engagement",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "csddd_compliance",
+            "question": "CSDDD (Corporate Sustainability Due Diligence)",
+            "description": "EU Corporate Sustainability Due Diligence Directive compliance",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with CSDDD",
+              "1": "Aware of CSDDD requirements; mandatory due diligence obligations",
+              "2": "Assessed CSDDD readiness; gap analysis against requirements",
+              "3": "Led CSDDD implementation; designed due diligence frameworks",
+              "4": "Enterprise CSDDD strategy; policy advocacy; thought leadership"
+            },
+            "mirrorsRole": {
+              "questionId": "csddd_compliance",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "conflict_minerals",
+            "question": "Conflict Minerals / Responsible Sourcing",
+            "description": "Due diligence for conflict minerals and responsible material sourcing",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with conflict minerals due diligence",
+              "1": "Understands conflict minerals regulations; 3TG and cobalt",
+              "2": "Conducted conflict minerals due diligence; CMRT/CRT management",
+              "3": "Led responsible sourcing programs; smelter engagement; RMI tools",
+              "4": "Enterprise responsible sourcing strategy; multi-material programs; industry leadership"
+            },
+            "mirrorsRole": {
+              "questionId": "conflict_minerals",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "traceability_systems",
+            "question": "Traceability & Transparency Systems",
+            "description": "Systems for tracking materials and products through supply chains",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with supply chain traceability",
+              "1": "Understands traceability concepts; chain of custody, mass balance",
+              "2": "Implemented traceability systems; certification schemes",
+              "3": "Designed traceability programs; technology implementation; blockchain/digital",
+              "4": "Enterprise traceability strategy; digital product passports; innovation leadership"
+            },
+            "mirrorsRole": {
+              "questionId": "traceability_systems",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "tier_n_visibility",
+            "question": "Tier 2+ Supply Chain Visibility",
+            "description": "Visibility beyond tier 1 suppliers into deeper supply chain",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with multi-tier supply chain visibility",
+              "1": "Understands tier visibility challenges; aware of approaches",
+              "2": "Achieved visibility into tier 2 suppliers; mapping exercises",
+              "3": "Led multi-tier programs; data sharing platforms; supplier cascading",
+              "4": "Enterprise supply chain transparency; raw material origin traceability"
+            },
+            "mirrorsRole": {
+              "questionId": "tier_n_visibility",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "supplier_codes",
+            "question": "Supplier Code of Conduct Development",
+            "description": "Creating and implementing supplier sustainability requirements",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with supplier codes of conduct",
+              "1": "Understands supplier code purpose; aware of standard elements",
+              "2": "Contributed to code development; supported rollout",
+              "3": "Designed supplier codes; contractual integration; compliance monitoring",
+              "4": "Enterprise supplier standards architect; industry alignment; best practice"
+            },
+            "mirrorsRole": {
+              "questionId": "supplier_codes",
+              "matchType": "minimum"
+            }
+          }
+        ]
+      },
+      {
+        "id": "social_value_community",
+        "title": "Social Value & Community",
+        "description": "Social impact measurement, community engagement, and stakeholder dialogue",
+        "order": 10,
+        "helpText": "0 = No Experience, 1 = Awareness, 2 = Practical Application, 3 = Implementation & Management, 4 = Strategic Leadership",
+        "questions": [
+          {
+            "id": "sroi_methodology",
+            "question": "Social Return on Investment (SROI)",
+            "description": "SROI methodology for measuring social value",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with SROI",
+              "1": "Understands SROI concept; aware of methodology",
+              "2": "Conducted SROI analyses; calculated social value ratios",
+              "3": "Led SROI programs; designed measurement frameworks",
+              "4": "Enterprise social value architect; methodology innovation; thought leadership"
+            },
+            "mirrorsRole": {
+              "questionId": "sroi_methodology",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "theory_of_change",
+            "question": "Theory of Change Development",
+            "description": "Developing theories of change for social impact programs",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with theory of change",
+              "1": "Understands theory of change concept; inputs, outputs, outcomes, impact",
+              "2": "Developed theories of change for initiatives; logic model design",
+              "3": "Led theory of change development; stakeholder engagement; impact pathways",
+              "4": "Enterprise impact strategy; complex system change; thought leadership"
+            },
+            "mirrorsRole": {
+              "questionId": "theory_of_change",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "community_engagement",
+            "question": "Community Engagement & Investment",
+            "description": "Corporate community programs and local stakeholder engagement",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with community engagement",
+              "1": "Understands community engagement principles; stakeholder mapping",
+              "2": "Managed community programs; delivered initiatives; measured outcomes",
+              "3": "Led community strategy; designed investment frameworks; partnership development",
+              "4": "Enterprise community architect; strategic philanthropy; systemic change"
+            },
+            "mirrorsRole": {
+              "questionId": "community_engagement",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "social_impact_measurement",
+            "question": "Social Impact Measurement",
+            "description": "Measuring and reporting social impacts of business activities",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with social impact measurement",
+              "1": "Understands impact measurement concepts; awareness of frameworks",
+              "2": "Measured social impacts; selected indicators; data collection",
+              "3": "Designed impact measurement systems; managed reporting; continuous improvement",
+              "4": "Enterprise impact architect; methodology excellence; industry leadership"
+            },
+            "mirrorsRole": {
+              "questionId": "social_impact_measurement",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "just_transition",
+            "question": "Just Transition Planning",
+            "description": "Managing social impacts of decarbonisation and transition",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with just transition",
+              "1": "Understands just transition concept; social dimension of climate action",
+              "2": "Assessed just transition impacts; stakeholder dialogue; planning",
+              "3": "Led just transition programs; workforce planning; community support",
+              "4": "Enterprise just transition strategy; policy engagement; thought leadership"
+            },
+            "mirrorsRole": {
+              "questionId": "just_transition",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "stakeholder_dialogue",
+            "question": "Stakeholder Dialogue & Panels",
+            "description": "Structured stakeholder engagement and advisory panels",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with stakeholder dialogue",
+              "1": "Understands stakeholder engagement importance; dialogue principles",
+              "2": "Participated in stakeholder dialogues; gathered input for materiality",
+              "3": "Designed stakeholder engagement programs; managed advisory panels",
+              "4": "Enterprise stakeholder strategy; multi-stakeholder partnerships; governance"
+            },
+            "mirrorsRole": {
+              "questionId": "stakeholder_dialogue",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "materiality_engagement",
+            "question": "Materiality Stakeholder Engagement",
+            "description": "Engaging stakeholders specifically for materiality assessment",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with materiality stakeholder engagement",
+              "1": "Understands role of stakeholders in materiality; ESRS requirements",
+              "2": "Engaged stakeholders for materiality; surveys, interviews, workshops",
+              "3": "Designed materiality engagement processes; managed diverse stakeholder groups",
+              "4": "Enterprise materiality engagement architect; best practice methodology"
+            },
+            "mirrorsRole": {
+              "questionId": "materiality_engagement",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "indigenous_rights",
+            "question": "Indigenous Peoples & FPIC",
+            "description": "Free, Prior and Informed Consent and indigenous rights",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with indigenous rights in business context",
+              "1": "Understands FPIC concept; indigenous rights frameworks",
+              "2": "Applied FPIC principles; conducted indigenous impact assessments",
+              "3": "Led indigenous engagement programs; designed policies; community partnerships",
+              "4": "Enterprise indigenous rights strategy; cultural heritage protection; thought leadership"
+            },
+            "mirrorsRole": {
+              "questionId": "indigenous_rights",
+              "matchType": "minimum"
+            }
+          }
+        ]
+      },
+      {
+        "id": "esg_governance_integration",
+        "title": "ESG Governance & Integration",
+        "description": "ESG governance frameworks, board oversight, and strategic integration",
+        "order": 11,
+        "helpText": "0 = No Experience, 1 = Awareness, 2 = Practical Application, 3 = Implementation & Management, 4 = Strategic Leadership",
+        "questions": [
+          {
+            "id": "esg_governance_framework",
+            "question": "ESG Governance Framework Design",
+            "description": "Designing governance structures for ESG oversight",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with ESG governance design",
+              "1": "Understands ESG governance principles; roles and responsibilities",
+              "2": "Contributed to governance design; documented structures and processes",
+              "3": "Designed ESG governance frameworks; established committees; defined accountabilities",
+              "4": "Enterprise ESG governance architect; board advisory; best practice thought leadership"
+            },
+            "mirrorsRole": {
+              "questionId": "esg_governance_framework",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "board_esg_oversight",
+            "question": "Board-Level ESG Oversight",
+            "description": "Supporting board and committee ESG responsibilities",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with board ESG oversight",
+              "1": "Understands board ESG responsibilities; disclosure requirements",
+              "2": "Prepared board ESG papers; supported committee meetings",
+              "3": "Managed board ESG reporting; designed oversight frameworks; committee secretary",
+              "4": "Board ESG advisor; director education; governance excellence"
+            },
+            "mirrorsRole": {
+              "questionId": "board_esg_oversight",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "esg_steering_committee",
+            "question": "ESG Steering Committee Management",
+            "description": "Running management-level ESG governance committees",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with ESG committees",
+              "1": "Understands committee governance; terms of reference",
+              "2": "Supported ESG committees; prepared papers and minutes",
+              "3": "Managed ESG steering committees; agenda setting; action tracking",
+              "4": "Enterprise committee architecture; cross-functional governance; decision effectiveness"
+            },
+            "mirrorsRole": {
+              "questionId": "esg_steering_committee",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "esg_policies",
+            "question": "ESG Policy Development",
+            "description": "Creating and maintaining sustainability policies",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with ESG policy development",
+              "1": "Understands policy architecture; standard ESG policy areas",
+              "2": "Drafted ESG policies; conducted policy reviews",
+              "3": "Led policy development programs; stakeholder consultation; implementation",
+              "4": "Enterprise policy architect; policy framework design; best practice leadership"
+            },
+            "mirrorsRole": {
+              "questionId": "esg_policies",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "executive_remuneration",
+            "question": "ESG-Linked Executive Remuneration",
+            "description": "Integrating ESG metrics into executive compensation",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with ESG-linked remuneration",
+              "1": "Understands ESG remuneration concepts; investor expectations",
+              "2": "Supported ESG remuneration design; metric selection",
+              "3": "Designed ESG remuneration frameworks; RemCo engagement; target setting",
+              "4": "Enterprise ESG incentive architect; investor engagement; best practice thought leader"
+            },
+            "mirrorsRole": {
+              "questionId": "executive_remuneration",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "materiality_governance",
+            "question": "Materiality Assessment Governance",
+            "description": "Governance of materiality assessment processes",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with materiality governance",
+              "1": "Understands materiality governance requirements; approval processes",
+              "2": "Supported materiality governance; documented approvals and decisions",
+              "3": "Designed materiality governance frameworks; board sign-off processes",
+              "4": "Enterprise materiality governance architect; audit committee integration"
+            },
+            "mirrorsRole": {
+              "questionId": "materiality_governance",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "risk_integration",
+            "question": "ESG Risk Integration into ERM",
+            "description": "Integrating ESG risks into enterprise risk management",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with ESG risk integration",
+              "1": "Understands ESG risk concepts; ERM framework awareness",
+              "2": "Supported ESG risk integration; risk assessment and scoring",
+              "3": "Led ESG risk integration; designed methodologies; risk committee engagement",
+              "4": "Enterprise ESG risk architect; CRO partnership; risk framework transformation"
+            },
+            "mirrorsRole": {
+              "questionId": "risk_integration",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "strategy_integration",
+            "question": "ESG Strategy Integration into Business",
+            "description": "Embedding sustainability into core business strategy",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with ESG strategy integration",
+              "1": "Understands strategy integration importance; business case for sustainability",
+              "2": "Contributed to strategy integration; aligned ESG with business priorities",
+              "3": "Led ESG strategy integration; strategic planning process; KPI alignment",
+              "4": "Enterprise sustainability strategy architect; CEO partnership; transformation leadership"
+            },
+            "mirrorsRole": {
+              "questionId": "strategy_integration",
+              "matchType": "minimum"
+            }
+          }
+        ]
+      },
+      {
+        "id": "ratings_rankings_external",
+        "title": "Ratings, Rankings & External Engagement",
+        "description": "ESG ratings management, benchmarks, and external stakeholder engagement",
+        "order": 12,
+        "helpText": "0 = No Experience, 1 = Awareness, 2 = Practical Application, 3 = Implementation & Management, 4 = Strategic Leadership",
+        "questions": [
+          {
+            "id": "esg_ratings",
+            "question": "ESG Ratings Management (MSCI, Sustainalytics, ISS)",
+            "description": "Managing ESG ratings agency relationships and performance",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with ESG ratings",
+              "1": "Understands ESG ratings landscape; major agencies and methodologies",
+              "2": "Responded to ratings questionnaires; gathered data for submissions",
+              "3": "Managed ratings programs; score improvement strategies; agency engagement",
+              "4": "Enterprise ratings strategy; multi-agency optimization; investor-grade performance"
+            },
+            "mirrorsRole": {
+              "questionId": "esg_ratings",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "cdp_response",
+            "question": "CDP Questionnaire Response",
+            "description": "Leading CDP disclosure submissions",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with CDP responses",
+              "1": "Understands CDP questionnaire structure and scoring",
+              "2": "Contributed to CDP responses; gathered data and drafted answers",
+              "3": "Led CDP disclosure programs; score improvement; A-list pathway",
+              "4": "Enterprise CDP strategy; A-list achievement; methodology expertise"
+            },
+            "mirrorsRole": {
+              "questionId": "cdp_response",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "benchmark_participation",
+            "question": "Benchmark Participation (DJSI, FTSE4Good)",
+            "description": "Participation in sustainability benchmarks and indices",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with sustainability benchmarks",
+              "1": "Understands benchmark landscape; index inclusion criteria",
+              "2": "Supported benchmark submissions; data gathering and coordination",
+              "3": "Managed benchmark participation; improvement strategies; index inclusion",
+              "4": "Enterprise benchmark strategy; industry leadership positions; thought leadership"
+            },
+            "mirrorsRole": {
+              "questionId": "benchmark_participation",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "investor_engagement",
+            "question": "ESG Investor Engagement",
+            "description": "Engaging with investors on ESG topics",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with ESG investor engagement",
+              "1": "Understands investor ESG focus areas; engagement formats",
+              "2": "Supported investor ESG meetings; prepared materials and Q&A",
+              "3": "Led investor ESG engagement; roadshows; proxy/AGM preparation",
+              "4": "Enterprise investor relations partnership; capital markets expertise; thought leadership"
+            },
+            "mirrorsRole": {
+              "questionId": "investor_engagement",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "regulatory_engagement",
+            "question": "Regulatory & Policy Engagement",
+            "description": "Engaging with regulators and policymakers on sustainability",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with regulatory engagement",
+              "1": "Understands regulatory engagement importance; consultation processes",
+              "2": "Contributed to consultation responses; regulatory horizon scanning",
+              "3": "Led regulatory engagement; consultation submissions; relationship building",
+              "4": "Enterprise regulatory strategy; policy influence; thought leadership"
+            },
+            "mirrorsRole": {
+              "questionId": "regulatory_engagement",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "industry_collaboration",
+            "question": "Industry Collaboration & Initiatives",
+            "description": "Participation in industry sustainability initiatives",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with industry collaboration",
+              "1": "Understands industry initiatives; awareness of major collaborations",
+              "2": "Participated in industry working groups; contributed to initiatives",
+              "3": "Led industry engagement; chaired working groups; initiative development",
+              "4": "Enterprise collaboration strategy; industry leadership positions; systemic change"
+            },
+            "mirrorsRole": {
+              "questionId": "industry_collaboration",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "ngo_engagement",
+            "question": "NGO & Civil Society Engagement",
+            "description": "Engagement with NGOs and civil society organisations",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with NGO engagement",
+              "1": "Understands NGO landscape; key organisations in sustainability",
+              "2": "Engaged with NGOs; supported partnerships and dialogue",
+              "3": "Led NGO engagement strategy; partnership development; issue response",
+              "4": "Enterprise NGO relationship architect; strategic partnerships; issue leadership"
+            },
+            "mirrorsRole": {
+              "questionId": "ngo_engagement",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "greenwashing_defence",
+            "question": "Greenwashing Risk & Defence",
+            "description": "Managing greenwashing risks and substantiating claims",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with greenwashing risk management",
+              "1": "Understands greenwashing risks; regulatory expectations",
+              "2": "Reviewed sustainability claims; ensured substantiation",
+              "3": "Designed claim review processes; legal partnership; crisis prevention",
+              "4": "Enterprise greenwashing defence; communications excellence; thought leadership"
+            },
+            "mirrorsRole": {
+              "questionId": "greenwashing_defence",
+              "matchType": "minimum"
+            }
+          }
+        ]
+      },
+      {
+        "id": "esg_software_platforms",
+        "title": "ESG Software Platforms",
+        "description": "Experience with ESG data management and reporting platforms",
+        "order": 13,
+        "helpText": "0 = No Experience, 1 = Awareness, 2 = Practical Application, 3 = Implementation & Management, 4 = Strategic Leadership",
+        "questions": [
+          {
+            "id": "esg_software_experience",
+            "question": "ESG Software Platform Experience",
+            "description": "Rate your experience with ESG software platforms",
+            "type": "system_proficiency",
+            "required": false,
+            "systems": [
+              {
+                "id": "workiva",
+                "name": "Workiva"
+              },
+              {
+                "id": "sweep",
+                "name": "Sweep"
+              },
+              {
+                "id": "persefoni",
+                "name": "Persefoni"
+              },
+              {
+                "id": "watershed",
+                "name": "Watershed"
+              },
+              {
+                "id": "salesforce_nzc",
+                "name": "Salesforce Net Zero Cloud"
+              },
+              {
+                "id": "microsoft_sm",
+                "name": "Microsoft Sustainability Manager"
+              },
+              {
+                "id": "sphera",
+                "name": "Sphera"
+              },
+              {
+                "id": "enablon",
+                "name": "Enablon"
+              },
+              {
+                "id": "ecovadis",
+                "name": "EcoVadis"
+              },
+              {
+                "id": "integritynext",
+                "name": "IntegrityNext"
+              }
+            ],
+            "mirrorsRole": {
+              "questionId": "esg_software_experience",
+              "matchType": "system_match"
+            }
+          },
+          {
+            "id": "platform_selection",
+            "question": "ESG Platform Selection & Procurement",
+            "description": "Selecting and procuring ESG software solutions",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with ESG platform selection",
+              "1": "Understands ESG software market; vendor landscape",
+              "2": "Contributed to platform selection; requirements gathering; vendor demos",
+              "3": "Led platform selection processes; RFP management; vendor negotiation",
+              "4": "Enterprise ESG technology strategy; market expertise; thought leadership"
+            },
+            "mirrorsRole": {
+              "questionId": "platform_selection",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "platform_implementation",
+            "question": "ESG Platform Implementation",
+            "description": "Implementing ESG software systems",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with ESG platform implementation",
+              "1": "Understands implementation challenges; project phases",
+              "2": "Contributed to implementations; user acceptance testing; training",
+              "3": "Led platform implementations; project management; change management",
+              "4": "Enterprise ESG technology architect; multi-platform integration; transformation"
+            },
+            "mirrorsRole": {
+              "questionId": "platform_implementation",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "erp_integration",
+            "question": "ERP Integration (SAP, Oracle)",
+            "description": "Integrating ESG data with enterprise resource planning systems",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with ERP integration for ESG",
+              "1": "Understands ERP integration concepts; data flows",
+              "2": "Supported ERP integration projects; data mapping; testing",
+              "3": "Led ERP integration for ESG data; finance partnership; automation",
+              "4": "Enterprise data integration architect; CFO partnership; technology transformation"
+            },
+            "mirrorsRole": {
+              "questionId": "erp_integration",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "data_automation",
+            "question": "Data Collection Automation",
+            "description": "Automating ESG data collection processes",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with ESG data automation",
+              "1": "Understands automation opportunities; manual vs automated processes",
+              "2": "Implemented data automation; API connections; scheduled imports",
+              "3": "Designed automation frameworks; workflow optimization; exception handling",
+              "4": "Enterprise automation strategy; continuous data collection; real-time reporting"
+            },
+            "mirrorsRole": {
+              "questionId": "data_automation",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "supplier_portals",
+            "question": "Supplier Data Portals",
+            "description": "Managing supplier sustainability data collection portals",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with supplier data portals",
+              "1": "Understands supplier portal concepts; data collection challenges",
+              "2": "Managed supplier portal programs; data requests; follow-up",
+              "3": "Designed supplier data strategies; portal implementation; quality assurance",
+              "4": "Enterprise supplier data architecture; integration excellence; automation"
+            },
+            "mirrorsRole": {
+              "questionId": "supplier_portals",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "carbon_accounting_software",
+            "question": "Carbon Accounting Software",
+            "description": "Specialized carbon accounting and GHG management tools",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with carbon accounting software",
+              "1": "Aware of carbon software options; basic functionality",
+              "2": "Used carbon accounting software; data input; report generation",
+              "3": "Led carbon software implementation; methodology configuration; assurance",
+              "4": "Enterprise carbon technology strategy; multi-system architecture; automation"
+            },
+            "mirrorsRole": {
+              "questionId": "carbon_accounting_software",
+              "matchType": "minimum"
+            }
+          }
+        ]
+      },
+      {
+        "id": "data_analytics_technical",
+        "title": "Data Analytics & Technical Skills",
+        "description": "Technical data skills for ESG analysis and reporting",
+        "order": 14,
+        "helpText": "0 = No Experience, 1 = Awareness, 2 = Practical Application, 3 = Implementation & Management, 4 = Strategic Leadership",
+        "questions": [
+          {
+            "id": "sql_proficiency",
+            "question": "SQL Proficiency",
+            "description": "Database querying for ESG data analysis",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No SQL experience",
+              "1": "Basic SQL understanding; can read simple queries",
+              "2": "Writes SQL queries for data extraction; joins, aggregations",
+              "3": "Advanced SQL; complex queries; performance optimization",
+              "4": "Expert SQL; database design; data warehouse integration"
+            },
+            "mirrorsRole": {
+              "questionId": "sql_proficiency",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "python_analytics",
+            "question": "Python for ESG Analytics",
+            "description": "Python programming for sustainability data analysis",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No Python experience",
+              "1": "Basic Python understanding; can read scripts",
+              "2": "Writes Python scripts for data analysis; pandas, numpy",
+              "3": "Advanced Python; automation; API integrations; data pipelines",
+              "4": "Expert Python; machine learning applications; production systems"
+            },
+            "mirrorsRole": {
+              "questionId": "python_analytics",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "data_visualization",
+            "question": "Data Visualization (PowerBI/Tableau)",
+            "description": "Creating ESG dashboards and visualizations",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No data visualization experience",
+              "1": "Can interpret dashboards; basic chart creation",
+              "2": "Creates ESG dashboards; connects data sources; standard visualizations",
+              "3": "Designs complex dashboards; advanced visualizations; storytelling",
+              "4": "Enterprise visualization architect; BI strategy; executive reporting"
+            },
+            "mirrorsRole": {
+              "questionId": "data_visualization",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "excel_advanced",
+            "question": "Advanced Excel & Modeling",
+            "description": "Advanced Excel for ESG data management and modeling",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "Basic Excel only",
+              "1": "Intermediate Excel; formulas, pivot tables, charts",
+              "2": "Advanced Excel; complex models, Power Query, macros",
+              "3": "Expert Excel; scenario modeling, audit-ready workbooks",
+              "4": "Excel architect; enterprise templates; VBA automation"
+            },
+            "mirrorsRole": {
+              "questionId": "excel_advanced",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "gis_tools",
+            "question": "GIS & Geospatial Analysis",
+            "description": "Geographic information systems for ESG analysis",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No GIS experience",
+              "1": "Basic understanding of GIS concepts; can interpret maps",
+              "2": "Uses GIS tools for location analysis; basic mapping",
+              "3": "Advanced GIS; spatial analysis; climate/nature risk mapping",
+              "4": "GIS expert; satellite data; advanced geospatial modeling"
+            },
+            "mirrorsRole": {
+              "questionId": "gis_tools",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "dashboard_design",
+            "question": "ESG Dashboard Design",
+            "description": "Designing dashboards and visual reporting for ESG metrics",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with ESG MI design",
+              "1": "Understands MI requirements; KPI selection",
+              "2": "Designed ESG dashboards; metric definition; visualization",
+              "3": "Led MI programs; automated reporting; executive dashboards",
+              "4": "Enterprise ESG MI architect; real-time intelligence; strategic analytics"
+            },
+            "mirrorsRole": {
+              "questionId": "dashboard_design",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "data_quality_management",
+            "question": "Data Quality Management",
+            "description": "Ensuring quality and accuracy of ESG data",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with ESG data quality",
+              "1": "Understands data quality importance; common issues",
+              "2": "Implemented data quality checks; validation rules; error correction",
+              "3": "Designed data quality frameworks; governance processes; continuous monitoring",
+              "4": "Enterprise data quality architect; assurance integration; best practice"
+            },
+            "mirrorsRole": {
+              "questionId": "data_quality_management",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "ai_esg_applications",
+            "question": "AI Applications in ESG",
+            "description": "Use of artificial intelligence for ESG analysis and automation",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with AI in ESG",
+              "1": "Aware of AI applications; use cases in sustainability",
+              "2": "Used AI tools for ESG; document analysis, data extraction",
+              "3": "Implemented AI solutions; predictive analytics; NLP for ESG",
+              "4": "Enterprise AI strategy for ESG; innovation leadership; thought leadership"
+            },
+            "mirrorsRole": {
+              "questionId": "ai_esg_applications",
+              "matchType": "minimum"
+            }
+          }
+        ]
+      },
+      {
+        "id": "change_management_transformation",
+        "title": "Change Management & Transformation",
+        "description": "Leading sustainability transformation and organizational change",
+        "order": 15,
+        "helpText": "0 = No Experience, 1 = Awareness, 2 = Practical Application, 3 = Implementation & Management, 4 = Strategic Leadership",
+        "questions": [
+          {
+            "id": "change_frameworks",
+            "question": "Change Management Frameworks (Kotter, ADKAR)",
+            "description": "Application of structured change management methodologies",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with change management frameworks",
+              "1": "Understands change management concepts; Kotter, ADKAR awareness",
+              "2": "Applied change frameworks to sustainability initiatives; stakeholder analysis",
+              "3": "Led change programs using structured methodologies; designed change strategies",
+              "4": "Enterprise change architect; transformation leadership; organizational development"
+            },
+            "mirrorsRole": {
+              "questionId": "change_frameworks",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "culture_transformation",
+            "question": "Sustainability Culture Transformation",
+            "description": "Embedding sustainability into organizational culture",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with sustainability culture change",
+              "1": "Understands culture transformation concepts; behavior change",
+              "2": "Contributed to culture programs; engagement initiatives; communications",
+              "3": "Led culture transformation; designed programs; measured cultural shifts",
+              "4": "Enterprise culture architect; systemic culture change; thought leadership"
+            },
+            "mirrorsRole": {
+              "questionId": "culture_transformation",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "ambassador_networks",
+            "question": "Sustainability Ambassador Networks",
+            "description": "Building and managing networks of sustainability champions",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with ambassador networks",
+              "1": "Understands ambassador/champion model; engagement approaches",
+              "2": "Supported ambassador programs; training and coordination",
+              "3": "Designed ambassador networks; recruitment, training, empowerment",
+              "4": "Enterprise ambassador strategy; global networks; cultural embedding"
+            },
+            "mirrorsRole": {
+              "questionId": "ambassador_networks",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "incentive_design",
+            "question": "ESG Incentive & KPI Design",
+            "description": "Designing ESG performance metrics and incentive structures",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with ESG incentive design",
+              "1": "Understands ESG KPI concepts; metric types",
+              "2": "Contributed to KPI development; data requirements; target setting",
+              "3": "Designed ESG incentive frameworks; balanced scorecards; performance management",
+              "4": "Enterprise ESG incentive architect; executive compensation integration"
+            },
+            "mirrorsRole": {
+              "questionId": "incentive_design",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "business_case_development",
+            "question": "Sustainability Business Case Development",
+            "description": "Building financial business cases for sustainability initiatives",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with sustainability business cases",
+              "1": "Understands business case concepts; ROI, payback, NPV",
+              "2": "Developed business cases for initiatives; cost-benefit analysis",
+              "3": "Led business case development; financial modeling; stakeholder approval",
+              "4": "Enterprise business case architect; CFO partnership; investment committee"
+            },
+            "mirrorsRole": {
+              "questionId": "business_case_development",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "capex_business_cases",
+            "question": "CapEx Business Cases for Decarbonisation",
+            "description": "Capital expenditure proposals for emissions reduction projects",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with decarbonisation CapEx",
+              "1": "Understands capital investment processes; hurdle rates",
+              "2": "Contributed to CapEx cases; technology assessment; cost modeling",
+              "3": "Led CapEx proposals for decarbonisation; board approval; implementation",
+              "4": "Enterprise decarbonisation investment strategy; portfolio optimization"
+            },
+            "mirrorsRole": {
+              "questionId": "capex_business_cases",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "barrier_removal",
+            "question": "Structural Barrier Identification & Removal",
+            "description": "Identifying and addressing organizational barriers to sustainability",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with barrier analysis",
+              "1": "Understands common barriers to sustainability; organizational dynamics",
+              "2": "Identified barriers in specific initiatives; developed workarounds",
+              "3": "Led barrier analysis and removal; process redesign; governance changes",
+              "4": "Enterprise barrier architect; systemic change; organizational transformation"
+            },
+            "mirrorsRole": {
+              "questionId": "barrier_removal",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "systems_thinking",
+            "question": "Systems Thinking & Integration",
+            "description": "Applying systems thinking to sustainability challenges",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with systems thinking",
+              "1": "Understands systems thinking concepts; interconnections",
+              "2": "Applied systems thinking to sustainability analysis; causal loops",
+              "3": "Led systems-based approaches; designed integrated strategies",
+              "4": "Enterprise systems architect; complexity navigation; transformation leadership"
+            },
+            "mirrorsRole": {
+              "questionId": "systems_thinking",
+              "matchType": "minimum"
+            }
+          }
+        ]
+      },
+      {
+        "id": "stakeholder_management_influence",
+        "title": "Stakeholder Management & Influence",
+        "description": "Managing executive relationships and influencing without authority",
+        "order": 16,
+        "helpText": "0 = No Experience, 1 = Awareness, 2 = Practical Application, 3 = Implementation & Management, 4 = Strategic Leadership",
+        "questions": [
+          {
+            "id": "board_presentation",
+            "question": "Board & Committee Presentation",
+            "description": "Presenting sustainability matters to boards and committees",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No board presentation experience",
+              "1": "Understands board dynamics; governance structures",
+              "2": "Prepared board papers; supported presentations",
+              "3": "Presented to boards and committees; managed Q&A; action follow-up",
+              "4": "Board-level trusted advisor; strategic counsel; governance leadership"
+            },
+            "mirrorsRole": {
+              "questionId": "board_presentation",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "executive_influence",
+            "question": "Executive Stakeholder Influence",
+            "description": "Influencing C-suite and senior executives on sustainability",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience influencing executives",
+              "1": "Understands executive priorities; stakeholder mapping",
+              "2": "Engaged executives on sustainability; tailored messaging",
+              "3": "Influenced executive decisions; built senior relationships; managed escalations",
+              "4": "Enterprise influence architect; C-suite partnership; strategic advisory"
+            },
+            "mirrorsRole": {
+              "questionId": "executive_influence",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "cfo_partnership",
+            "question": "CFO / Finance Partnership",
+            "description": "Working with CFO and finance function on sustainability",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No CFO/finance partnership experience",
+              "1": "Understands finance function; financial metrics and language",
+              "2": "Collaborated with finance on ESG; data sharing, reporting alignment",
+              "3": "Built strong CFO partnership; integrated planning; joint initiatives",
+              "4": "Strategic CFO partner; financial materiality excellence; integrated thinking"
+            },
+            "mirrorsRole": {
+              "questionId": "cfo_partnership",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "legal_partnership",
+            "question": "Legal / General Counsel Partnership",
+            "description": "Working with legal function on sustainability compliance and risk",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No legal partnership experience",
+              "1": "Understands legal function; regulatory compliance context",
+              "2": "Collaborated with legal on ESG; claim substantiation, disclosure review",
+              "3": "Built strong legal partnership; regulatory strategy; litigation prevention",
+              "4": "Strategic legal partner; greenwashing defence; regulatory thought leadership"
+            },
+            "mirrorsRole": {
+              "questionId": "legal_partnership",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "operations_partnership",
+            "question": "Operations Partnership",
+            "description": "Working with operations to embed sustainability",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No operations partnership experience",
+              "1": "Understands operations function; manufacturing/service delivery",
+              "2": "Collaborated with operations on sustainability; efficiency projects",
+              "3": "Built strong operations partnership; embedded sustainability; continuous improvement",
+              "4": "Strategic operations partner; operational transformation; sustainability integration"
+            },
+            "mirrorsRole": {
+              "questionId": "operations_partnership",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "investor_roadshows",
+            "question": "Investor ESG Roadshows",
+            "description": "Presenting to investors on sustainability performance",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No investor roadshow experience",
+              "1": "Understands investor ESG focus; engagement formats",
+              "2": "Supported investor meetings; prepared materials and briefings",
+              "3": "Led investor ESG roadshows; presented to institutional investors",
+              "4": "Enterprise investor engagement; capital markets expertise; IR partnership"
+            },
+            "mirrorsRole": {
+              "questionId": "investor_roadshows",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "crisis_management",
+            "question": "ESG Crisis & Reputation Management",
+            "description": "Managing ESG-related crises and reputation issues",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No ESG crisis management experience",
+              "1": "Understands ESG reputation risks; crisis communication principles",
+              "2": "Supported crisis response; stakeholder communications; issue monitoring",
+              "3": "Managed ESG crises; led response coordination; media engagement",
+              "4": "Enterprise crisis architect; prevention strategies; reputation excellence"
+            },
+            "mirrorsRole": {
+              "questionId": "crisis_management",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "corporate_chameleon",
+            "question": "\"Corporate Chameleon\" - Stakeholder Language Adaptation",
+            "description": "Adapting sustainability messaging for different audiences (CFO, Legal, HR, Operations)",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience adapting sustainability messaging",
+              "1": "Understands different stakeholder perspectives; terminology differences",
+              "2": "Adapted sustainability messages for different audiences; basic translation",
+              "3": "Skilled chameleon; fluent in multiple business languages; effective influence",
+              "4": "Master translator; seamless adaptation; strategic influence across all functions"
+            },
+            "mirrorsRole": {
+              "questionId": "corporate_chameleon",
+              "matchType": "minimum"
+            }
+          }
+        ]
+      },
+      {
+        "id": "behavioral_competencies",
+        "title": "Behavioral Competencies",
+        "description": "Personal effectiveness and leadership behaviors for sustainability roles",
+        "order": 17,
+        "helpText": "0 = No Experience, 1 = Awareness, 2 = Practical Application, 3 = Implementation & Management, 4 = Strategic Leadership",
+        "questions": [
+          {
+            "id": "sense_making",
+            "question": "\"Sense-Making\" - Interpreting External Signals",
+            "description": "Ability to interpret complex, ambiguous external sustainability signals",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with sustainability sense-making",
+              "1": "Monitors sustainability developments; tracks key sources",
+              "2": "Interprets external signals; connects dots; identifies implications",
+              "3": "Skilled sense-maker; synthesizes complex information; strategic interpretation",
+              "4": "Master sense-maker; predicts trends; shapes organizational response"
+            },
+            "mirrorsRole": {
+              "questionId": "sense_making",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "strategic_foresight",
+            "question": "Strategic Foresight & Horizon Scanning",
+            "description": "Looking ahead to anticipate sustainability trends and risks",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No foresight experience",
+              "1": "Monitors trends; aware of horizon scanning concepts",
+              "2": "Conducts horizon scanning; identifies emerging issues; briefings",
+              "3": "Leads foresight activities; scenario development; strategic planning input",
+              "4": "Enterprise foresight architect; shapes long-term strategy; thought leadership"
+            },
+            "mirrorsRole": {
+              "questionId": "strategic_foresight",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "resilience",
+            "question": "Personal & Professional Resilience",
+            "description": "Resilience in face of setbacks, resistance, and long-term challenges",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "Limited resilience experience",
+              "1": "Understands importance of resilience; copes with setbacks",
+              "2": "Demonstrates resilience; persists through challenges; learns from failure",
+              "3": "Highly resilient; maintains effectiveness under pressure; supports team resilience",
+              "4": "Resilience exemplar; thrives in adversity; builds organizational resilience"
+            },
+            "mirrorsRole": {
+              "questionId": "resilience",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "ethical_leadership",
+            "question": "Ethical Leadership & Integrity",
+            "description": "Demonstrating ethical behavior and integrity in sustainability leadership",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "Limited ethical leadership demonstration",
+              "1": "Understands ethical importance; acts with personal integrity",
+              "2": "Demonstrates ethical leadership; challenges inappropriate behavior",
+              "3": "Models ethical behavior; creates ethical cultures; navigates dilemmas",
+              "4": "Ethics exemplar; shapes organizational ethics; thought leadership"
+            },
+            "mirrorsRole": {
+              "questionId": "ethical_leadership",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "storytelling",
+            "question": "Sustainability Storytelling",
+            "description": "Compelling narrative communication about sustainability",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No storytelling experience",
+              "1": "Understands storytelling importance; basic narrative skills",
+              "2": "Crafts sustainability stories; engages audiences; case studies",
+              "3": "Skilled storyteller; inspires action; multi-channel narratives",
+              "4": "Master storyteller; shapes organizational narrative; external thought leadership"
+            },
+            "mirrorsRole": {
+              "questionId": "storytelling",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "persuasion_influence",
+            "question": "Persuasion & Influence Without Authority",
+            "description": "Influencing outcomes without direct authority",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "Limited influence experience",
+              "1": "Understands influence principles; basic persuasion skills",
+              "2": "Influences peers and stakeholders; builds coalitions",
+              "3": "Skilled influencer; navigates politics; achieves outcomes without authority",
+              "4": "Master influencer; shapes agendas; moves organizations"
+            },
+            "mirrorsRole": {
+              "questionId": "persuasion_influence",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "commercial_awareness",
+            "question": "Commercial & Business Awareness",
+            "description": "Understanding business context and commercial drivers",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "Limited commercial awareness",
+              "1": "Understands basic business concepts; P&L, balance sheet",
+              "2": "Good commercial awareness; connects sustainability to business value",
+              "3": "Strong commercial acumen; speaks business language; quantifies value",
+              "4": "Business leader; strategic commercial thinking; value creation excellence"
+            },
+            "mirrorsRole": {
+              "questionId": "commercial_awareness",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "diplomatic_navigation",
+            "question": "Diplomatic Navigation (Greenhushing, Political Sensitivity)",
+            "description": "Navigating politically sensitive sustainability topics",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with political navigation",
+              "1": "Understands political sensitivities; greenhushing concept",
+              "2": "Navigates sensitive topics; balanced communications; stakeholder awareness",
+              "3": "Skilled diplomat; strategic silence when needed; defensible positions",
+              "4": "Master navigator; shapes discourse; manages controversy; thought leadership"
+            },
+            "mirrorsRole": {
+              "questionId": "diplomatic_navigation",
+              "matchType": "minimum"
+            }
+          }
+        ]
+      },
+      {
+        "id": "team_leadership_function",
+        "title": "Team Leadership & Function Building",
+        "description": "Leading sustainability teams and building organizational capability",
+        "order": 18,
+        "helpText": "0 = No Experience, 1 = Awareness, 2 = Practical Application, 3 = Implementation & Management, 4 = Strategic Leadership",
+        "questions": [
+          {
+            "id": "function_design",
+            "question": "Sustainability Function Design",
+            "description": "Designing organizational structure for sustainability function",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No function design experience",
+              "1": "Understands function design concepts; team structures",
+              "2": "Contributed to function design; role definitions; org charts",
+              "3": "Designed sustainability functions; operating models; reporting lines",
+              "4": "Enterprise function architect; transformation leadership; best practice design"
+            },
+            "mirrorsRole": {
+              "questionId": "function_design",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "matrix_management",
+            "question": "Matrix & Embedded Model Management",
+            "description": "Managing sustainability in matrix or embedded organizational models",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No matrix management experience",
+              "1": "Understands matrix concepts; dotted-line relationships",
+              "2": "Worked in matrix structures; coordinated across functions",
+              "3": "Managed embedded sustainability models; influence without authority",
+              "4": "Matrix expert; designed federated models; enterprise coordination"
+            },
+            "mirrorsRole": {
+              "questionId": "matrix_management",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "budget_management",
+            "question": "Sustainability Budget Management",
+            "description": "Managing sustainability function budgets",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No budget management experience",
+              "1": "Understands budgeting basics; cost tracking",
+              "2": "Managed budgets; forecasting; variance analysis",
+              "3": "Led significant budgets; business cases; resource allocation",
+              "4": "Enterprise budget management; multi-million budgets; CFO partnership"
+            },
+            "mirrorsRole": {
+              "questionId": "budget_management",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "vendor_management",
+            "question": "Consultant & Vendor Management",
+            "description": "Managing external sustainability consultants and vendors",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No vendor management experience",
+              "1": "Understands vendor relationships; basic coordination",
+              "2": "Managed vendor relationships; scope definition; delivery oversight",
+              "3": "Led vendor programs; procurement; performance management",
+              "4": "Enterprise vendor strategy; market expertise; partnership development"
+            },
+            "mirrorsRole": {
+              "questionId": "vendor_management",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "cross_functional_leadership",
+            "question": "Cross-Functional Project Leadership",
+            "description": "Leading sustainability projects across organizational functions",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No cross-functional leadership experience",
+              "1": "Understands cross-functional dynamics; participated in projects",
+              "2": "Led cross-functional workstreams; coordinated multiple teams",
+              "3": "Led significant cross-functional projects; stakeholder alignment",
+              "4": "Enterprise project leader; transformation programs; complex coordination"
+            },
+            "mirrorsRole": {
+              "questionId": "cross_functional_leadership",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "capability_building",
+            "question": "Organisation-Wide Capability Building",
+            "description": "Building sustainability capability across the organization",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No capability building experience",
+              "1": "Understands capability development; training basics",
+              "2": "Delivered sustainability training; knowledge sharing",
+              "3": "Designed capability programs; learning pathways; competency frameworks",
+              "4": "Enterprise capability architect; cultural embedding; transformation"
+            },
+            "mirrorsRole": {
+              "questionId": "capability_building",
+              "matchType": "minimum"
+            }
+          }
+        ]
+      },
+      {
+        "id": "sector_domain_experience",
+        "title": "Sector & Domain Experience",
+        "description": "Experience across different industry sectors",
+        "order": 19,
+        "helpText": "0 = No Experience, 1 = Awareness, 2 = Practical Application, 3 = Implementation & Management, 4 = Strategic Leadership",
+        "questions": [
+          {
+            "id": "sector_manufacturing",
+            "question": "Manufacturing & Industrial",
+            "description": "Sustainability experience in manufacturing and industrial sectors",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No manufacturing/industrial experience",
+              "1": "Basic understanding of sector sustainability challenges",
+              "2": "Worked in or with manufacturing; Scope 1 reduction, operational efficiency",
+              "3": "Led sustainability in manufacturing; decarbonisation, circularity",
+              "4": "Deep manufacturing expertise; industrial transformation; thought leadership"
+            },
+            "mirrorsRole": {
+              "questionId": "sector_manufacturing",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "sector_retail_consumer",
+            "question": "Retail & Consumer Goods",
+            "description": "Sustainability experience in retail and FMCG sectors",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No retail/consumer goods experience",
+              "1": "Basic understanding of sector sustainability challenges",
+              "2": "Worked in or with retail/FMCG; supply chain, packaging, consumer engagement",
+              "3": "Led sustainability in retail/FMCG; brand positioning, sustainable products",
+              "4": "Deep retail expertise; consumer transformation; thought leadership"
+            },
+            "mirrorsRole": {
+              "questionId": "sector_retail_consumer",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "sector_energy_utilities",
+            "question": "Energy & Utilities",
+            "description": "Sustainability experience in energy and utilities sectors",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No energy/utilities experience",
+              "1": "Basic understanding of sector sustainability challenges",
+              "2": "Worked in or with energy/utilities; transition planning, renewable integration",
+              "3": "Led sustainability in energy/utilities; net-zero strategy, just transition",
+              "4": "Deep energy expertise; sector transformation; thought leadership"
+            },
+            "mirrorsRole": {
+              "questionId": "sector_energy_utilities",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "sector_construction",
+            "question": "Construction & Real Estate",
+            "description": "Sustainability experience in construction and property sectors",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No construction/real estate experience",
+              "1": "Basic understanding of sector sustainability challenges",
+              "2": "Worked in or with construction; embodied carbon, green buildings",
+              "3": "Led sustainability in construction/property; net-zero buildings, BREEAM",
+              "4": "Deep construction expertise; built environment transformation; thought leadership"
+            },
+            "mirrorsRole": {
+              "questionId": "sector_construction",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "sector_technology",
+            "question": "Technology & Telecommunications",
+            "description": "Sustainability experience in technology and telecoms sectors",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No technology/telecoms experience",
+              "1": "Basic understanding of sector sustainability challenges",
+              "2": "Worked in or with tech/telecoms; data centers, e-waste, digital sustainability",
+              "3": "Led sustainability in tech/telecoms; renewable energy, circular devices",
+              "4": "Deep tech expertise; digital transformation; thought leadership"
+            },
+            "mirrorsRole": {
+              "questionId": "sector_technology",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "sector_healthcare",
+            "question": "Healthcare & Pharmaceuticals",
+            "description": "Sustainability experience in healthcare and pharma sectors",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No healthcare/pharma experience",
+              "1": "Basic understanding of sector sustainability challenges",
+              "2": "Worked in or with healthcare/pharma; supply chain, clinical trials, waste",
+              "3": "Led sustainability in healthcare; green healthcare, pharmaceutical supply chain",
+              "4": "Deep healthcare expertise; health system transformation; thought leadership"
+            },
+            "mirrorsRole": {
+              "questionId": "sector_healthcare",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "sector_food_agriculture",
+            "question": "Food, Beverage & Agriculture",
+            "description": "Sustainability experience in food and agriculture sectors",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No food/agriculture experience",
+              "1": "Basic understanding of sector sustainability challenges",
+              "2": "Worked in or with food/agriculture; sustainable sourcing, regenerative",
+              "3": "Led sustainability in food/agriculture; deforestation, water, packaging",
+              "4": "Deep food expertise; agricultural transformation; thought leadership"
+            },
+            "mirrorsRole": {
+              "questionId": "sector_food_agriculture",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "sector_transport_logistics",
+            "question": "Transport & Logistics",
+            "description": "Sustainability experience in transport and logistics sectors",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No transport/logistics experience",
+              "1": "Basic understanding of sector sustainability challenges",
+              "2": "Worked in or with transport/logistics; fleet electrification, last mile",
+              "3": "Led sustainability in transport; modal shift, sustainable aviation fuels",
+              "4": "Deep transport expertise; mobility transformation; thought leadership"
+            },
+            "mirrorsRole": {
+              "questionId": "sector_transport_logistics",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "sector_financial_services",
+            "question": "Financial Services",
+            "description": "Sustainability experience in banking, insurance, and asset management",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No financial services experience",
+              "1": "Basic understanding of sector sustainability challenges",
+              "2": "Worked in or with FS; sustainable finance, ESG integration, disclosure",
+              "3": "Led sustainability in FS; ESG integration, sustainable products, TCFD implementation",
+              "4": "Deep FS expertise; sustainable finance transformation; thought leadership"
+            },
+            "mirrorsRole": {
+              "questionId": "sector_financial_services",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "sector_professional_services",
+            "question": "Professional Services / Consulting",
+            "description": "Sustainability experience in consulting and professional services",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No professional services/consulting experience",
+              "1": "Basic understanding of sector and consulting approaches",
+              "2": "Worked in or with consulting; client delivery, methodology development",
+              "3": "Led sustainability consulting; practice development, client relationships",
+              "4": "Deep consulting expertise; practice leadership; thought leadership"
+            },
+            "mirrorsRole": {
+              "questionId": "sector_professional_services",
+              "matchType": "minimum"
+            }
+          }
+        ]
+      },
+      {
+        "id": "fs_topup",
+        "title": "Financial Services ESG & Sustainable Finance",
+        "description": "FS-specific sustainability regulations and sustainable finance. Only complete if seeking/hiring for roles in Financial Services.",
+        "order": 20,
+        "helpText": "0 = No Experience, 1 = Awareness, 2 = Practical Application, 3 = Implementation & Management, 4 = Strategic Leadership",
+        "questions": [
+          {
+            "id": "fs_sustainable_finance",
+            "question": "Sustainable Finance Strategy",
+            "description": "Developing and implementing sustainable finance strategies in FS organisations",
+            "type": "slider",
+            "required": false,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No sustainable finance experience",
+              "1": "Understand sustainable finance concepts; familiar with market developments",
+              "2": "Contributed to sustainable finance initiatives; supported product development",
+              "3": "Led sustainable finance programmes; designed strategies; managed governance",
+              "4": "Enterprise sustainable finance leadership; market-leading products; industry thought leadership"
+            },
+            "mirrorsRole": {
+              "questionId": "fs_sustainable_finance",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "fs_green_bonds",
+            "question": "Green Bonds & Sustainability-Linked Instruments",
+            "description": "Issuing or investing in green bonds, sustainability-linked bonds, and similar instruments",
+            "type": "slider",
+            "required": false,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No green bond experience",
+              "1": "Understand green bond concepts; familiar with ICMA principles",
+              "2": "Contributed to green bond issuance/investment; managed frameworks; reported on use of proceeds",
+              "3": "Led green bond programmes; designed frameworks; managed external verification",
+              "4": "Enterprise sustainable debt strategy; innovative structures; market leadership"
+            },
+            "mirrorsRole": {
+              "questionId": "fs_green_bonds",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "fs_esg_product_development",
+            "question": "ESG Product Development (FS)",
+            "description": "Developing ESG-integrated financial products and services",
+            "type": "slider",
+            "required": false,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No ESG product development experience",
+              "1": "Understand ESG product concepts; familiar with market offerings",
+              "2": "Contributed to ESG product development; supported due diligence; managed documentation",
+              "3": "Led ESG product launches; designed product frameworks; managed regulatory approval",
+              "4": "Enterprise ESG product strategy; innovative product development; market leadership"
+            },
+            "mirrorsRole": {
+              "questionId": "fs_esg_product_development",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "fs_sdr_labelling",
+            "question": "FCA SDR & Investment Labels",
+            "description": "FCA Sustainability Disclosure Requirements and investment labelling regime",
+            "type": "slider",
+            "required": false,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No SDR experience",
+              "1": "Understand FCA SDR requirements; familiar with labelling categories",
+              "2": "Contributed to SDR compliance; assessed products for labelling; prepared disclosures",
+              "3": "Led SDR implementation; designed labelling frameworks; managed FCA engagement",
+              "4": "Enterprise SDR strategy; innovative compliance approaches; industry thought leadership"
+            },
+            "mirrorsRole": {
+              "questionId": "fs_sdr_labelling",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "fs_anti_greenwashing",
+            "question": "FCA Anti-Greenwashing Rule",
+            "description": "Compliance with FCA's anti-greenwashing rule and sustainability claims",
+            "type": "slider",
+            "required": false,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No anti-greenwashing experience",
+              "1": "Understand FCA anti-greenwashing requirements; aware of risks",
+              "2": "Reviewed sustainability claims; supported compliance processes; documented evidence",
+              "3": "Led anti-greenwashing compliance; designed review frameworks; managed governance",
+              "4": "Enterprise greenwashing risk management; FCA engagement; industry thought leadership"
+            },
+            "mirrorsRole": {
+              "questionId": "fs_anti_greenwashing",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "fs_sfdr",
+            "question": "SFDR (EU Sustainable Finance Disclosure)",
+            "description": "EU Sustainable Finance Disclosure Regulation compliance and Article 8/9 products",
+            "type": "slider",
+            "required": false,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No SFDR experience",
+              "1": "Understand SFDR requirements; familiar with Article 6/8/9 classifications",
+              "2": "Contributed to SFDR compliance; prepared disclosures; classified products",
+              "3": "Led SFDR implementation; designed disclosure frameworks; managed PAI reporting",
+              "4": "Enterprise SFDR strategy; complex product classification; regulatory thought leadership"
+            },
+            "mirrorsRole": {
+              "questionId": "fs_sfdr",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "fs_eu_taxonomy_alignment",
+            "question": "EU Taxonomy Product Alignment (FS)",
+            "description": "Assessing and reporting EU Taxonomy alignment for FS products and portfolios",
+            "type": "slider",
+            "required": false,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No EU Taxonomy alignment experience",
+              "1": "Understand EU Taxonomy framework; familiar with TSC and DNSH",
+              "2": "Assessed Taxonomy alignment; collected data; prepared disclosures",
+              "3": "Led Taxonomy alignment programmes; designed assessment frameworks; managed reporting",
+              "4": "Enterprise Taxonomy strategy; complex alignment methodologies; industry thought leadership"
+            },
+            "mirrorsRole": {
+              "questionId": "fs_eu_taxonomy_alignment",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "fs_net_zero_banking",
+            "question": "Net Zero Banking Alliance / NZAOA",
+            "description": "Net Zero Banking Alliance, Net Zero Asset Owner Alliance, and sector transition pathways",
+            "type": "slider",
+            "required": false,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No net zero alliance experience",
+              "1": "Understand NZBA/NZAOA commitments; familiar with target-setting requirements",
+              "2": "Contributed to alliance commitments; supported target development; prepared disclosures",
+              "3": "Led net zero banking programmes; designed sector pathways; managed transition planning",
+              "4": "Enterprise net zero strategy; alliance leadership; industry target-setting expertise"
+            },
+            "mirrorsRole": {
+              "questionId": "fs_net_zero_banking",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "fs_climate_stress_testing",
+            "question": "Climate Stress Testing (BoE/PRA)",
+            "description": "Climate scenario analysis and stress testing for financial services (BoE CBES, PRA SS3/19)",
+            "type": "slider",
+            "required": false,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No climate stress testing experience",
+              "1": "Understand climate stress testing concepts; familiar with CBES/PRA requirements",
+              "2": "Contributed to climate stress testing; supported scenario analysis; prepared submissions",
+              "3": "Led climate stress testing programmes; designed methodologies; managed PRA submissions",
+              "4": "Enterprise climate risk strategy; CBES leadership; regulatory thought leadership"
+            },
+            "mirrorsRole": {
+              "questionId": "fs_climate_stress_testing",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "fs_esg_integration_lending",
+            "question": "ESG Integration in Lending/Underwriting",
+            "description": "Integrating ESG factors into credit decisions, underwriting, and lending criteria",
+            "type": "slider",
+            "required": false,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No ESG lending integration experience",
+              "1": "Understand ESG lending concepts; familiar with sector policies",
+              "2": "Contributed to ESG lending frameworks; supported credit assessments; documented policies",
+              "3": "Led ESG lending integration; designed sector policies; managed exclusions",
+              "4": "Enterprise ESG lending strategy; innovative integration approaches; market leadership"
+            },
+            "mirrorsRole": {
+              "questionId": "fs_esg_integration_lending",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "fs_esg_integration_investment",
+            "question": "ESG Integration in Investment Management",
+            "description": "Integrating ESG factors into investment analysis, portfolio construction, and stewardship",
+            "type": "slider",
+            "required": false,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No ESG investment integration experience",
+              "1": "Understand ESG investment concepts; familiar with integration approaches",
+              "2": "Contributed to ESG integration; supported portfolio analysis; documented processes",
+              "3": "Led ESG investment integration; designed frameworks; managed stewardship",
+              "4": "Enterprise ESG investment strategy; innovative approaches; industry thought leadership"
+            },
+            "mirrorsRole": {
+              "questionId": "fs_esg_integration_investment",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "fs_stewardship_code",
+            "question": "UK Stewardship Code / Engagement",
+            "description": "UK Stewardship Code compliance, engagement, and voting activities",
+            "type": "slider",
+            "required": false,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No Stewardship Code experience",
+              "1": "Understand Stewardship Code principles; familiar with engagement concepts",
+              "2": "Contributed to stewardship activities; supported engagement; prepared reports",
+              "3": "Led stewardship programmes; designed engagement strategies; managed voting",
+              "4": "Enterprise stewardship strategy; FRC signatory leadership; industry engagement"
+            },
+            "mirrorsRole": {
+              "questionId": "fs_stewardship_code",
+              "matchType": "minimum"
+            }
+          }
+        ]
+      },
+      {
+        "id": "additional_information",
+        "title": "Additional Information",
+        "description": "Share anything else that demonstrates your value as a candidate",
+        "order": 21,
+        "helpText": "This is your opportunity to highlight achievements, results, and career progression that haven't been captured elsewhere",
+        "questions": [
+          {
+            "id": "key_achievements",
+            "question": "Key Achievements & Exceeding Expectations",
+            "description": "Describe examples from previous roles where you exceeded expectations, met challenging targets, or took on responsibilities beyond your role",
+            "type": "textarea",
+            "required": false,
+            "placeholder": "e.g., 'Led organisation to achieve SBTi validation 6 months ahead of schedule; Designed double materiality assessment methodology adopted group-wide; Successfully delivered first CSRD-compliant sustainability report...'"
+          },
+          {
+            "id": "quantifiable_impact",
+            "question": "Quantifiable Results & Impact",
+            "description": "Share specific metrics that demonstrate your impact, such as emissions reductions, rating improvements, or business outcomes you have delivered",
+            "type": "textarea",
+            "required": false,
+            "placeholder": "e.g., 'Delivered 35% Scope 1&2 emissions reduction over 3 years; Improved MSCI ESG rating from BB to AA; Achieved CDP Climate A-List status; Secured \u00a350M green bond at favourable terms; Delivered sustainability programme 15% under budget...'"
+          },
+          {
+            "id": "career_progression",
+            "question": "Career Progression & Promotions",
+            "description": "Describe your career trajectory, including promotions, expanded responsibilities, or recognition of your value by previous employers",
+            "type": "textarea",
+            "required": false,
+            "placeholder": "e.g., 'Promoted from Sustainability Manager to Head of ESG within 3 years; Expanded remit from environmental to full E, S & G; Headhunted by current employer to build their sustainability function from scratch...'"
+          },
+          {
+            "id": "unique_value_proposition",
+            "question": "Your Unique Value",
+            "description": "What makes you stand out from other sustainability/ESG professionals? What unique combination of skills, experiences, or perspectives do you bring?",
+            "type": "textarea",
+            "required": false,
+            "placeholder": "e.g., 'Finance background enables me to translate ESG into CFO language; Technical environmental science expertise combined with strategic business acumen; Multi-sector experience across manufacturing, retail, and financial services...'"
+          },
+          {
+            "id": "anything_else",
+            "question": "Anything Else?",
+            "description": "Is there anything else you would like us to know about your skills, experience, or candidacy that you haven't had the opportunity to share?",
+            "type": "textarea",
+            "required": false,
+            "placeholder": "Use this space to share any additional information that would help us understand your candidacy..."
+          }
+        ]
+      }
+    ],
+    "metadata": {
+      "totalQuestions": 174,
+      "totalSections": 21,
+      "estimatedCompletionMinutes": 29,
+      "lastUpdated": "2025-12-15"
+    }
+  }
+}

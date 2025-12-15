@@ -1,0 +1,3819 @@
+{
+  "questionnaire": {
+    "id": "fs-compliance-candidate-profile",
+    "title": "Financial Services Compliance Candidate Profile",
+    "description": "FS Compliance skills and experience for conduct risk, financial crime, regulatory compliance, and consumer protection roles in UK regulated firms. Covers SM&CR, AML/Financial Crime, Consumer Duty, Market Abuse, and Product Governance. Distinct from FS Risk profile (credit/market/liquidity/operational risk).",
+    "version": "1.0.1",
+    "createdAt": "2025-12-15",
+    "updatedAt": "2025-12-15",
+    "mirrorProfile": "fs-compliance-role-profile",
+    "parentProfile": "candidate-profile",
+    "proficiencyScale": {
+      "0": {
+        "label": "No Experience",
+        "description": "No exposure or experience in this area"
+      },
+      "1": {
+        "label": "Awareness",
+        "description": "Understands concepts; can interpret outputs; works under supervision"
+      },
+      "2": {
+        "label": "Practical Application",
+        "description": "Can apply frameworks independently; works autonomously on standard tasks"
+      },
+      "3": {
+        "label": "Implementation & Management",
+        "description": "Can implement, adapt and lead frameworks; manages specific contexts"
+      },
+      "4": {
+        "label": "Strategic Leadership",
+        "description": "Can design from first principles; creates methodologies; enterprise-wide scope"
+      }
+    },
+    "interviewNote": "All self-assessed proficiency ratings will be explored during interviews. Be prepared to provide specific examples demonstrating your claimed level of expertise, particularly for regulatory frameworks, financial crime controls, and conduct monitoring.",
+    "sections": [
+      {
+        "id": "compliance_experience_overview",
+        "title": "Compliance Experience Overview",
+        "description": "Your Financial Services Compliance background and career level",
+        "order": 1,
+        "questions": [
+          {
+            "id": "target_compliance_level",
+            "question": "Target Compliance Role Level",
+            "type": "select",
+            "required": true,
+            "options": [
+              {
+                "value": "analyst",
+                "label": "Compliance Analyst / Associate"
+              },
+              {
+                "value": "senior_analyst",
+                "label": "Senior Compliance Analyst / AVP"
+              },
+              {
+                "value": "manager",
+                "label": "Compliance Manager / VP"
+              },
+              {
+                "value": "senior_manager",
+                "label": "Senior Compliance Manager / Director"
+              },
+              {
+                "value": "head_of",
+                "label": "Head of Compliance / MD"
+              },
+              {
+                "value": "cco",
+                "label": "Chief Compliance Officer (CCO)"
+              }
+            ],
+            "mirrorsRole": {
+              "questionId": "compliance_role_level",
+              "matchType": "compatibility"
+            }
+          },
+          {
+            "id": "compliance_scope_experience",
+            "question": "Highest Level of Compliance Scope You Have Worked At",
+            "type": "select",
+            "required": true,
+            "options": [
+              {
+                "value": "product_desk",
+                "label": "Product / Desk Level Compliance"
+              },
+              {
+                "value": "business_unit",
+                "label": "Business Unit / Division Compliance"
+              },
+              {
+                "value": "regional",
+                "label": "Regional Compliance"
+              },
+              {
+                "value": "country_entity",
+                "label": "Country / Legal Entity Compliance"
+              },
+              {
+                "value": "group_enterprise",
+                "label": "Group / Enterprise Compliance"
+              }
+            ],
+            "mirrorsRole": {
+              "questionId": "compliance_scope_required",
+              "matchType": "compatibility"
+            }
+          },
+          {
+            "id": "years_in_fs_compliance",
+            "question": "Years in Financial Services Compliance",
+            "description": "Years spent specifically in FS compliance roles (banking, insurance, asset management, fintech)",
+            "type": "number",
+            "required": true,
+            "min": 0,
+            "max": 40,
+            "helpText": "Count only dedicated FS compliance roles, not general corporate compliance positions",
+            "mirrorsRole": {
+              "questionId": "years_fs_compliance_required",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "years_in_compliance_broad",
+            "question": "Years in Compliance (Any Sector)",
+            "description": "Total years in any compliance discipline across all sectors",
+            "type": "number",
+            "required": true,
+            "min": 0,
+            "max": 45,
+            "helpText": "This should include your FS compliance years plus any other compliance experience",
+            "mirrorsRole": {
+              "questionId": "years_compliance_broad_required",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "compliance_team_size",
+            "question": "Largest Compliance Team Managed",
+            "description": "Maximum number of direct and indirect reports you have managed in a compliance function",
+            "type": "number",
+            "required": false,
+            "min": 0,
+            "max": 500,
+            "helpText": "Include both direct reports and matrix/dotted-line reports",
+            "mirrorsRole": {
+              "questionId": "team_size_required",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "primary_compliance_specialism",
+            "question": "Primary Compliance Specialism",
+            "description": "Your dominant area of expertise within FS compliance",
+            "type": "select",
+            "required": true,
+            "options": [
+              {
+                "value": "conduct_regulatory",
+                "label": "Conduct & Regulatory Compliance (Generalist)"
+              },
+              {
+                "value": "financial_crime",
+                "label": "Financial Crime / AML"
+              },
+              {
+                "value": "market_abuse",
+                "label": "Market Abuse & Surveillance"
+              },
+              {
+                "value": "product_governance",
+                "label": "Product Governance"
+              },
+              {
+                "value": "consumer_protection",
+                "label": "Consumer Protection"
+              },
+              {
+                "value": "prudential",
+                "label": "Prudential Compliance"
+              },
+              {
+                "value": "data_protection",
+                "label": "Data Protection / Privacy"
+              }
+            ],
+            "mirrorsRole": {
+              "questionId": "primary_specialism_required",
+              "matchType": "compatibility"
+            }
+          },
+          {
+            "id": "smf_holder",
+            "question": "Current/Previous SMF Holder Status",
+            "description": "Senior Manager Function accountability under SM&CR",
+            "type": "select",
+            "required": true,
+            "options": [
+              {
+                "value": "smf16",
+                "label": "SMF16 (Compliance Oversight)"
+              },
+              {
+                "value": "smf17",
+                "label": "SMF17 (Money Laundering Reporting Officer)"
+              },
+              {
+                "value": "both_smf16_17",
+                "label": "Both SMF16 and SMF17"
+              },
+              {
+                "value": "prescribed_resp",
+                "label": "Prescribed Responsibility holder (non-SMF)"
+              },
+              {
+                "value": "none",
+                "label": "No SMF/CF currently held"
+              }
+            ],
+            "mirrorsRole": {
+              "questionId": "smf_required",
+              "matchType": "compatibility"
+            }
+          }
+        ]
+      },
+      {
+        "id": "regulatory_framework_knowledge",
+        "title": "Regulatory Framework Knowledge",
+        "description": "Self-assess your familiarity with key UK regulatory frameworks and standards",
+        "order": 2,
+        "helpText": "0 = No Experience, 1 = Awareness, 2 = Practical Application, 3 = Implementation & Management, 4 = Strategic Leadership",
+        "interviewNote": "Be prepared to explain how you have applied these frameworks in FS compliance contexts.",
+        "questions": [
+          {
+            "id": "framework_fca_handbook",
+            "question": "FCA Handbook (PRIN, SYSC, COBS, MCOB)",
+            "description": "FCA's Principles for Business, Systems & Controls, Conduct of Business, and Mortgage conduct sourcebooks",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with FCA Handbook",
+              "1": "Aware of FCA Handbook structure; can navigate key sourcebooks",
+              "2": "Applied FCA rules in compliance assessments; interpret requirements for business",
+              "3": "Implemented FCA-compliant frameworks; designed policies aligned to sourcebooks",
+              "4": "Strategic interpretation of FCA rules; engaged with FCA on rule changes; enterprise-wide compliance programs"
+            },
+            "mirrorsRole": {
+              "questionId": "framework_fca_handbook",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "framework_pra_rulebook",
+            "question": "PRA Rulebook",
+            "description": "Prudential Regulation Authority rules for banks, insurers, and major investment firms",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with PRA Rulebook",
+              "1": "Aware of PRA's role and key prudential requirements",
+              "2": "Applied PRA rules in compliance context; understand capital and liquidity requirements",
+              "3": "Implemented PRA-compliant frameworks; managed regulatory submissions",
+              "4": "Strategic prudential compliance; engaged with PRA supervisors; led s166 responses"
+            },
+            "mirrorsRole": {
+              "questionId": "framework_pra_rulebook",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "framework_mifid_ii",
+            "question": "MiFID II / MiFIR",
+            "description": "Markets in Financial Instruments Directive and Regulation",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with MiFID II",
+              "1": "Aware of MiFID II scope and key requirements (best execution, inducements, product governance)",
+              "2": "Applied MiFID II requirements in investment services compliance; conduct assessments",
+              "3": "Implemented MiFID II compliance programs; designed suitability and appropriateness frameworks",
+              "4": "Strategic MiFID II interpretation; led firm-wide implementation; engaged with regulators on interpretation"
+            },
+            "mirrorsRole": {
+              "questionId": "framework_mifid_ii",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "framework_mar",
+            "question": "Market Abuse Regulation (MAR)",
+            "description": "EU/UK regulation on insider dealing, market manipulation, and disclosure",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with MAR",
+              "1": "Aware of MAR prohibitions and disclosure requirements",
+              "2": "Applied MAR in surveillance and insider list management; PDMR notifications",
+              "3": "Implemented MAR compliance programs; designed surveillance frameworks; STOR submissions",
+              "4": "Strategic MAR interpretation; led enterprise surveillance programs; regulatory engagement on market abuse"
+            },
+            "mirrorsRole": {
+              "questionId": "framework_mar",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "framework_consumer_duty",
+            "question": "FCA Consumer Duty",
+            "description": "FCA's new Consumer Duty regime (PRIN 2A) for retail customer outcomes",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with Consumer Duty",
+              "1": "Aware of Consumer Duty outcomes and cross-cutting rules",
+              "2": "Applied Consumer Duty in product assessments; conducted fair value reviews",
+              "3": "Implemented Consumer Duty frameworks; designed outcomes monitoring; Board reporting",
+              "4": "Strategic Consumer Duty architect; enterprise-wide implementation; regulatory thought leader"
+            },
+            "mirrorsRole": {
+              "questionId": "framework_consumer_duty",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "framework_aml_regs",
+            "question": "UK Money Laundering Regulations",
+            "description": "MLR 2017 (as amended), POCA, Terrorism Act, and related AML legislation",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with UK AML regulations",
+              "1": "Aware of MLR requirements and POCA offences",
+              "2": "Applied MLR in CDD and monitoring; SAR submissions; understand JMLSG guidance",
+              "3": "Implemented AML frameworks; led MLR compliance programs; NCA engagement",
+              "4": "Strategic AML leader; designed enterprise AML programs; regulatory engagement on policy"
+            },
+            "mirrorsRole": {
+              "questionId": "framework_aml_regs",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "framework_gdpr",
+            "question": "UK GDPR / Data Protection Act 2018",
+            "description": "Data protection regulation and its application in financial services",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with UK GDPR",
+              "1": "Aware of GDPR principles and data subject rights",
+              "2": "Applied GDPR in compliance context; data mapping; privacy notices; DPIA",
+              "3": "Implemented data protection frameworks; managed ICO engagement; breach response",
+              "4": "Strategic data protection leader; enterprise privacy programs; regulatory engagement"
+            },
+            "mirrorsRole": {
+              "questionId": "framework_gdpr",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "framework_solvency_ii",
+            "question": "Solvency II (Insurance)",
+            "description": "EU/UK prudential regime for insurance and reinsurance undertakings",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with Solvency II",
+              "1": "Aware of Solvency II pillars and compliance function requirements",
+              "2": "Applied Solvency II compliance requirements; understand governance system",
+              "3": "Implemented Solvency II compliance frameworks; ORSA compliance input",
+              "4": "Strategic Solvency II compliance; enterprise governance; regulatory engagement"
+            },
+            "mirrorsRole": {
+              "questionId": "framework_solvency_ii",
+              "matchType": "minimum"
+            }
+          }
+        ]
+      },
+      {
+        "id": "senior_managers_regime",
+        "title": "Senior Managers Regime",
+        "description": "SM&CR framework knowledge and accountability mechanisms",
+        "order": 3,
+        "helpText": "0 = No Experience, 1 = Awareness, 2 = Practical Application, 3 = Implementation & Management, 4 = Strategic Leadership",
+        "interviewNote": "Be prepared to discuss your experience with SMF applications, reasonable steps defence, and regulatory engagement.",
+        "questions": [
+          {
+            "id": "smcr_framework",
+            "question": "SM&CR Framework Understanding",
+            "description": "Senior Managers and Certification Regime overall framework",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with SM&CR",
+              "1": "Aware of SM&CR structure; understand SMF, Certification, and Conduct Rules",
+              "2": "Applied SM&CR requirements; managed Certification Regime; conduct rules training",
+              "3": "Implemented SM&CR frameworks; designed accountability structures; regulatory submissions",
+              "4": "Strategic SM&CR architect; enterprise-wide implementation; FCA/PRA engagement on interpretation"
+            },
+            "mirrorsRole": {
+              "questionId": "smcr_framework",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "smf_applications",
+            "question": "SMF Application & Approval Process",
+            "description": "Managing Senior Manager Function applications and FCA/PRA approvals",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with SMF applications",
+              "1": "Aware of SMF application requirements and Form A process",
+              "2": "Prepared SMF applications; supported candidates through approval process",
+              "3": "Managed SMF application pipeline; engaged with regulators on applications; conditional approvals",
+              "4": "Strategic SMF governance; designed application frameworks; handled complex/contentious applications"
+            },
+            "mirrorsRole": {
+              "questionId": "smf_applications",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "statements_responsibility",
+            "question": "Statements of Responsibilities (SoR)",
+            "description": "Drafting and maintaining SMF Statements of Responsibilities",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with SoRs",
+              "1": "Aware of SoR requirements and purpose",
+              "2": "Drafted SoRs; ensured no gaps or overlaps in responsibilities",
+              "3": "Designed SoR frameworks; managed SoR governance; regulatory submissions",
+              "4": "Enterprise SoR architecture; complex matrix organisations; regulatory engagement on accountability"
+            },
+            "mirrorsRole": {
+              "questionId": "statements_responsibility",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "management_resp_maps",
+            "question": "Management Responsibilities Maps",
+            "description": "Firm-wide Management Responsibilities Maps and governance documentation",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with MRMs",
+              "1": "Aware of MRM requirements and structure",
+              "2": "Contributed to MRM development; maintained governance documentation",
+              "3": "Designed MRM frameworks; managed annual refresh; Board approval process",
+              "4": "Enterprise MRM architecture; complex group structures; regulatory engagement"
+            },
+            "mirrorsRole": {
+              "questionId": "management_resp_maps",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "reasonable_steps",
+            "question": "Reasonable Steps Defence Documentation",
+            "description": "Documenting reasonable steps taken by Senior Managers to prevent regulatory breaches",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with reasonable steps documentation",
+              "1": "Aware of reasonable steps defence concept and regulatory expectations",
+              "2": "Supported SMFs in documenting reasonable steps; maintained evidence packs",
+              "3": "Designed reasonable steps frameworks; coached SMFs; managed documentation systems",
+              "4": "Strategic reasonable steps programs; enforcement experience; regulatory thought leadership"
+            },
+            "mirrorsRole": {
+              "questionId": "reasonable_steps",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "handover_procedures",
+            "question": "SMF Handover Procedures",
+            "description": "Managing transitions between Senior Managers and handover documentation",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with SMF handovers",
+              "1": "Aware of handover requirements and regulatory expectations",
+              "2": "Supported SMF handovers; prepared handover documentation",
+              "3": "Designed handover frameworks; managed complex transitions; regulatory notifications",
+              "4": "Enterprise handover governance; handled contentious departures; regulatory engagement"
+            },
+            "mirrorsRole": {
+              "questionId": "handover_procedures",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "prescribed_responsibilities",
+            "question": "Prescribed Responsibilities Allocation",
+            "description": "Allocating and managing FCA/PRA Prescribed Responsibilities",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with Prescribed Responsibilities",
+              "1": "Aware of PR requirements and allocation rules",
+              "2": "Mapped PRs to SMFs; maintained allocation records",
+              "3": "Designed PR allocation frameworks; managed complex allocations; regulatory submissions",
+              "4": "Strategic PR governance; group-wide allocation; regulatory engagement on interpretation"
+            },
+            "mirrorsRole": {
+              "questionId": "prescribed_responsibilities",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "directory_persons",
+            "question": "Directory Persons Management",
+            "description": "Managing the Directory of individuals who can perform controlled functions",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with Directory management",
+              "1": "Aware of Directory requirements and regulatory expectations",
+              "2": "Maintained Directory records; managed notifications and updates",
+              "3": "Designed Directory frameworks; automated processes; regulatory submissions",
+              "4": "Enterprise Directory governance; complex populations; regulatory engagement"
+            },
+            "mirrorsRole": {
+              "questionId": "directory_persons",
+              "matchType": "minimum"
+            }
+          }
+        ]
+      },
+      {
+        "id": "conduct_rules_accountability",
+        "title": "Conduct Rules & Accountability",
+        "description": "Individual accountability and conduct rules application",
+        "order": 4,
+        "helpText": "0 = No Experience, 1 = Awareness, 2 = Practical Application, 3 = Implementation & Management, 4 = Strategic Leadership",
+        "questions": [
+          {
+            "id": "conduct_rules",
+            "question": "FCA/PRA Conduct Rules",
+            "description": "Application and enforcement of Individual Conduct Rules",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with Conduct Rules",
+              "1": "Aware of Individual Conduct Rules and Senior Manager Conduct Rules",
+              "2": "Applied Conduct Rules in breach assessments; conducted training",
+              "3": "Implemented Conduct Rules frameworks; designed breach processes; regulatory reporting",
+              "4": "Strategic Conduct Rules governance; enforcement experience; regulatory engagement"
+            },
+            "mirrorsRole": {
+              "questionId": "conduct_rules",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "conduct_training",
+            "question": "Conduct Rules Training Design",
+            "description": "Designing and delivering Conduct Rules training programmes",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with Conduct Rules training",
+              "1": "Aware of training requirements; attended training as participant",
+              "2": "Delivered Conduct Rules training; tailored content for audiences",
+              "3": "Designed training programmes; implemented effectiveness assessments; regulatory evidence",
+              "4": "Enterprise training strategy; innovative delivery methods; regulatory best practice"
+            },
+            "mirrorsRole": {
+              "questionId": "conduct_training",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "breach_investigation_conduct",
+            "question": "Conduct Breach Investigation",
+            "description": "Investigating potential breaches of Conduct Rules",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with conduct breach investigations",
+              "1": "Aware of investigation process and notification requirements",
+              "2": "Participated in breach investigations; gathered evidence; documented findings",
+              "3": "Led breach investigations; made breach determinations; regulatory notifications",
+              "4": "Strategic breach governance; enforcement liaison; designed investigation frameworks"
+            },
+            "mirrorsRole": {
+              "questionId": "breach_investigation_conduct",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "fitness_propriety",
+            "question": "Fitness & Propriety Assessments",
+            "description": "Assessing fitness and propriety of individuals for controlled functions",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with F&P assessments",
+              "1": "Aware of F&P criteria and assessment requirements",
+              "2": "Conducted F&P assessments; DBS checks; adverse information review",
+              "3": "Designed F&P frameworks; managed complex cases; regulatory dialogue",
+              "4": "Enterprise F&P governance; handled contentious cases; regulatory engagement"
+            },
+            "mirrorsRole": {
+              "questionId": "fitness_propriety",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "reference_requests",
+            "question": "Regulatory Reference Requests",
+            "description": "Managing SM&CR regulatory reference requests and responses",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with regulatory references",
+              "1": "Aware of regulatory reference requirements and templates",
+              "2": "Prepared regulatory references; managed incoming reference requests",
+              "3": "Designed reference processes; handled complex disclosures; legal coordination",
+              "4": "Enterprise reference governance; contentious matters; regulatory engagement"
+            },
+            "mirrorsRole": {
+              "questionId": "reference_requests",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "enforcement_liaison",
+            "question": "Enforcement Liaison",
+            "description": "Engaging with FCA/PRA enforcement teams on individual accountability matters",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No enforcement experience",
+              "1": "Aware of enforcement process and regulatory powers",
+              "2": "Supported enforcement responses; gathered documentation; witness coordination",
+              "3": "Managed enforcement matters; regulatory dialogue; settlement negotiations",
+              "4": "Strategic enforcement management; complex cases; regulatory relationship management"
+            },
+            "mirrorsRole": {
+              "questionId": "enforcement_liaison",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "individual_accountability_culture",
+            "question": "Individual Accountability Culture",
+            "description": "Embedding individual accountability culture across the organisation",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with accountability culture",
+              "1": "Aware of importance of accountability culture and regulatory expectations",
+              "2": "Contributed to culture initiatives; supported tone from the top messaging",
+              "3": "Designed accountability culture programmes; measured effectiveness; Board reporting",
+              "4": "Strategic culture architect; enterprise transformation; regulatory thought leadership"
+            },
+            "mirrorsRole": {
+              "questionId": "individual_accountability_culture",
+              "matchType": "minimum"
+            }
+          }
+        ]
+      },
+      {
+        "id": "aml_framework_governance",
+        "title": "AML Framework & Governance",
+        "description": "Anti-Money Laundering framework design and MLRO responsibilities",
+        "order": 5,
+        "helpText": "0 = No Experience, 1 = Awareness, 2 = Practical Application, 3 = Implementation & Management, 4 = Strategic Leadership",
+        "interviewNote": "Be prepared to discuss your experience with EWRA, JMLSG guidance application, and NCA engagement.",
+        "questions": [
+          {
+            "id": "aml_framework",
+            "question": "AML/CTF Framework Design",
+            "description": "Designing and implementing AML and Counter-Terrorist Financing frameworks",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No AML framework experience",
+              "1": "Aware of AML framework components and regulatory requirements",
+              "2": "Applied AML frameworks; contributed to policy development; understand MLR requirements",
+              "3": "Designed AML frameworks; led implementation programs; regulatory submissions",
+              "4": "Strategic AML architect; enterprise-wide programs; regulatory thought leadership"
+            },
+            "mirrorsRole": {
+              "questionId": "aml_framework",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "mlro_responsibilities",
+            "question": "MLRO Responsibilities",
+            "description": "Money Laundering Reporting Officer duties and accountabilities",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No MLRO experience",
+              "1": "Aware of MLRO role and regulatory requirements",
+              "2": "Supported MLRO function; deputised for MLRO; SAR oversight",
+              "3": "Acted as MLRO or Deputy MLRO; regulatory reporting; NCA engagement",
+              "4": "Group MLRO; complex structures; regulatory relationship management; industry forums"
+            },
+            "mirrorsRole": {
+              "questionId": "mlro_responsibilities",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "ewra",
+            "question": "Enterprise-Wide Risk Assessment (EWRA)",
+            "description": "Conducting firm-wide ML/TF risk assessments",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No EWRA experience",
+              "1": "Aware of EWRA requirements and methodology",
+              "2": "Contributed to EWRA; gathered data; assessed specific risk areas",
+              "3": "Led EWRA process; designed methodology; Board presentation",
+              "4": "Strategic EWRA architect; group-wide assessments; regulatory engagement"
+            },
+            "mirrorsRole": {
+              "questionId": "ewra",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "bsa_crmp",
+            "question": "Business/Customer Risk Assessment",
+            "description": "Assessing ML/TF risk at business line and customer level",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No business risk assessment experience",
+              "1": "Aware of risk assessment principles and factors",
+              "2": "Conducted business and customer risk assessments; applied risk ratings",
+              "3": "Designed risk assessment methodologies; implemented scoring models",
+              "4": "Strategic risk assessment frameworks; model governance; regulatory validation"
+            },
+            "mirrorsRole": {
+              "questionId": "bsa_crmp",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "aml_policy",
+            "question": "AML Policy Development",
+            "description": "Developing and maintaining AML/CTF policies and procedures",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No AML policy experience",
+              "1": "Aware of AML policy requirements and structure",
+              "2": "Contributed to policy development; maintained procedures; training content",
+              "3": "Authored AML policies; managed policy governance; regulatory alignment",
+              "4": "Enterprise AML policy architecture; group standards; regulatory engagement"
+            },
+            "mirrorsRole": {
+              "questionId": "aml_policy",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "aml_governance",
+            "question": "AML Governance Committees",
+            "description": "AML governance structures and committee frameworks",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No AML governance experience",
+              "1": "Aware of AML governance requirements",
+              "2": "Supported AML committees; prepared papers; tracked actions",
+              "3": "Managed AML governance; designed committee structures; Board reporting",
+              "4": "Strategic AML governance; group oversight; regulatory best practice"
+            },
+            "mirrorsRole": {
+              "questionId": "aml_governance",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "jmlsg_guidance",
+            "question": "JMLSG Guidance Application",
+            "description": "Applying Joint Money Laundering Steering Group guidance",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No JMLSG experience",
+              "1": "Aware of JMLSG guidance and structure",
+              "2": "Applied JMLSG guidance in CDD and monitoring procedures",
+              "3": "Implemented JMLSG-aligned frameworks; sector-specific guidance application",
+              "4": "Strategic JMLSG interpretation; contributed to industry guidance; regulatory dialogue"
+            },
+            "mirrorsRole": {
+              "questionId": "jmlsg_guidance",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "nca_engagement",
+            "question": "NCA Engagement & Liaison",
+            "description": "Engaging with National Crime Agency on AML matters",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No NCA engagement experience",
+              "1": "Aware of NCA role and SAR reporting process",
+              "2": "Submitted SARs; responded to NCA requests; DAML applications",
+              "3": "Managed NCA relationship; complex SAR matters; consent regime",
+              "4": "Strategic NCA engagement; industry liaison; policy discussions"
+            },
+            "mirrorsRole": {
+              "questionId": "nca_engagement",
+              "matchType": "minimum"
+            }
+          }
+        ]
+      },
+      {
+        "id": "customer_due_diligence",
+        "title": "Customer Due Diligence",
+        "description": "CDD/KYC frameworks and enhanced due diligence",
+        "order": 6,
+        "helpText": "0 = No Experience, 1 = Awareness, 2 = Practical Application, 3 = Implementation & Management, 4 = Strategic Leadership",
+        "questions": [
+          {
+            "id": "cdd_framework",
+            "question": "CDD/KYC Framework",
+            "description": "Customer Due Diligence and Know Your Customer frameworks",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No CDD/KYC experience",
+              "1": "Aware of CDD requirements and customer identification",
+              "2": "Applied CDD procedures; conducted customer verification; risk assessment",
+              "3": "Designed CDD frameworks; implemented KYC systems; quality assurance",
+              "4": "Strategic CDD architect; enterprise KYC transformation; regulatory engagement"
+            },
+            "mirrorsRole": {
+              "questionId": "cdd_framework",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "edd_pep",
+            "question": "Enhanced Due Diligence (EDD) & PEPs",
+            "description": "Enhanced due diligence for high-risk customers and PEPs",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No EDD/PEP experience",
+              "1": "Aware of EDD triggers and PEP definition",
+              "2": "Conducted EDD; PEP identification and approval; source of wealth",
+              "3": "Designed EDD frameworks; PEP governance; escalation procedures",
+              "4": "Strategic EDD programs; complex PEP relationships; regulatory engagement"
+            },
+            "mirrorsRole": {
+              "questionId": "edd_pep",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "beneficial_ownership",
+            "question": "Beneficial Ownership Identification",
+            "description": "Identifying and verifying ultimate beneficial owners",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No beneficial ownership experience",
+              "1": "Aware of UBO requirements and thresholds",
+              "2": "Identified UBOs; verified ownership structures; Companies House checks",
+              "3": "Designed UBO frameworks; complex structures; trusts and foundations",
+              "4": "Strategic UBO programs; multi-jurisdictional; regulatory engagement"
+            },
+            "mirrorsRole": {
+              "questionId": "beneficial_ownership",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "ongoing_monitoring",
+            "question": "Ongoing CDD/Periodic Reviews",
+            "description": "Ongoing customer due diligence and periodic review processes",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No ongoing CDD experience",
+              "1": "Aware of ongoing monitoring requirements",
+              "2": "Conducted periodic reviews; updated customer information; trigger events",
+              "3": "Designed ongoing CDD frameworks; risk-based review cycles; automation",
+              "4": "Strategic ongoing CDD programs; perpetual KYC; regulatory best practice"
+            },
+            "mirrorsRole": {
+              "questionId": "ongoing_monitoring",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "correspondent_banking",
+            "question": "Correspondent Banking Due Diligence",
+            "description": "Due diligence for correspondent banking relationships",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No correspondent banking CDD experience",
+              "1": "Aware of correspondent banking requirements",
+              "2": "Conducted respondent bank CDD; Wolfsberg questionnaires",
+              "3": "Designed correspondent banking frameworks; RMA due diligence",
+              "4": "Strategic correspondent banking programs; regulatory engagement"
+            },
+            "mirrorsRole": {
+              "questionId": "correspondent_banking",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "corporate_kyc",
+            "question": "Corporate/Institutional KYC",
+            "description": "KYC for corporate clients and institutional counterparties",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No corporate KYC experience",
+              "1": "Aware of corporate KYC requirements",
+              "2": "Conducted corporate KYC; ownership structures; control assessments",
+              "3": "Designed corporate KYC frameworks; complex structures; outsourcing",
+              "4": "Strategic corporate KYC programs; transformation; regulatory engagement"
+            },
+            "mirrorsRole": {
+              "questionId": "corporate_kyc",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "pep_screening",
+            "question": "PEP & Adverse Media Screening",
+            "description": "PEP identification and adverse media screening processes",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No screening experience",
+              "1": "Aware of PEP and adverse media screening requirements",
+              "2": "Conducted screening; resolved alerts; escalated matches",
+              "3": "Designed screening programs; vendor management; tuning",
+              "4": "Strategic screening programs; enterprise deployment; regulatory engagement"
+            },
+            "mirrorsRole": {
+              "questionId": "pep_screening",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "high_risk_jurisdictions",
+            "question": "High-Risk Jurisdiction Assessment",
+            "description": "Assessing and managing relationships with high-risk jurisdictions",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No high-risk jurisdiction experience",
+              "1": "Aware of FATF grey/black lists and high-risk country indicators",
+              "2": "Applied jurisdiction risk in CDD; enhanced measures; approval processes",
+              "3": "Designed jurisdiction risk frameworks; country risk assessments",
+              "4": "Strategic jurisdiction risk programs; board risk appetite; regulatory engagement"
+            },
+            "mirrorsRole": {
+              "questionId": "high_risk_jurisdictions",
+              "matchType": "minimum"
+            }
+          }
+        ]
+      },
+      {
+        "id": "transaction_monitoring_sar",
+        "title": "Transaction Monitoring & SAR",
+        "description": "Transaction monitoring systems and suspicious activity reporting",
+        "order": 7,
+        "helpText": "0 = No Experience, 1 = Awareness, 2 = Practical Application, 3 = Implementation & Management, 4 = Strategic Leadership",
+        "questions": [
+          {
+            "id": "tm_framework",
+            "question": "Transaction Monitoring Framework",
+            "description": "Overall transaction monitoring framework and strategy",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No transaction monitoring experience",
+              "1": "Aware of TM requirements and alert types",
+              "2": "Worked within TM framework; investigated alerts; understood scenarios",
+              "3": "Designed TM frameworks; scenario coverage; effectiveness testing",
+              "4": "Strategic TM architect; enterprise programs; regulatory engagement"
+            },
+            "mirrorsRole": {
+              "questionId": "tm_framework",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "tm_rules_tuning",
+            "question": "TM Rules Design & Tuning",
+            "description": "Designing and tuning transaction monitoring rules and scenarios",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No TM rules experience",
+              "1": "Aware of TM rule types and threshold concepts",
+              "2": "Participated in rule tuning; analysed false positives; threshold adjustments",
+              "3": "Designed TM rules; led tuning programs; above/below the line testing",
+              "4": "Strategic rule design; model governance; regulatory validation"
+            },
+            "mirrorsRole": {
+              "questionId": "tm_rules_tuning",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "alert_investigation",
+            "question": "Alert Investigation & Disposition",
+            "description": "Investigating TM alerts and making disposition decisions",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No alert investigation experience",
+              "1": "Aware of investigation process and documentation requirements",
+              "2": "Investigated alerts; gathered evidence; made SAR recommendations",
+              "3": "Led investigation teams; quality assurance; escalation frameworks",
+              "4": "Strategic investigation programs; complex cases; regulatory engagement"
+            },
+            "mirrorsRole": {
+              "questionId": "alert_investigation",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "sar_preparation",
+            "question": "SAR Preparation & Filing",
+            "description": "Preparing and filing Suspicious Activity Reports",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No SAR experience",
+              "1": "Aware of SAR requirements and POCA obligations",
+              "2": "Prepared SARs; understood disclosure requirements; NCA portal",
+              "3": "Managed SAR process; quality review; complex disclosures",
+              "4": "Strategic SAR governance; NCA engagement; industry best practice"
+            },
+            "mirrorsRole": {
+              "questionId": "sar_preparation",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "daml_requests",
+            "question": "DAML (Defence Against Money Laundering) Requests",
+            "description": "Managing consent regime and DAML requests",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No DAML experience",
+              "1": "Aware of consent regime and DAML process",
+              "2": "Prepared DAML requests; managed moratorium periods; NCA liaison",
+              "3": "Managed DAML process; complex requests; legal coordination",
+              "4": "Strategic consent regime management; regulatory engagement"
+            },
+            "mirrorsRole": {
+              "questionId": "daml_requests",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "tipping_off",
+            "question": "Tipping Off Prevention",
+            "description": "Managing tipping off obligations and information barriers",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No tipping off experience",
+              "1": "Aware of tipping off offences and obligations",
+              "2": "Applied tipping off controls; managed information barriers",
+              "3": "Designed tipping off frameworks; trained staff; handled incidents",
+              "4": "Strategic tipping off governance; complex scenarios; legal coordination"
+            },
+            "mirrorsRole": {
+              "questionId": "tipping_off",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "suspicious_activity",
+            "question": "Suspicious Activity Recognition",
+            "description": "Identifying red flags and suspicious activity indicators",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No suspicious activity experience",
+              "1": "Aware of common red flags and typologies",
+              "2": "Identified suspicious activity; applied typology knowledge; referrals",
+              "3": "Designed red flag frameworks; typology training; case studies",
+              "4": "Strategic typology development; industry intelligence; regulatory engagement"
+            },
+            "mirrorsRole": {
+              "questionId": "suspicious_activity",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "tm_model_validation",
+            "question": "TM Model Validation",
+            "description": "Validating transaction monitoring models and effectiveness",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No TM validation experience",
+              "1": "Aware of TM validation requirements",
+              "2": "Participated in TM validation; effectiveness testing; coverage analysis",
+              "3": "Led TM validation; designed testing programs; remediation tracking",
+              "4": "Strategic TM validation; model risk governance; regulatory dialogue"
+            },
+            "mirrorsRole": {
+              "questionId": "tm_model_validation",
+              "matchType": "minimum"
+            }
+          }
+        ]
+      },
+      {
+        "id": "sanctions_financial_crime_emerging",
+        "title": "Sanctions & Financial Crime Emerging",
+        "description": "Sanctions compliance and emerging financial crime areas",
+        "order": 8,
+        "helpText": "0 = No Experience, 1 = Awareness, 2 = Practical Application, 3 = Implementation & Management, 4 = Strategic Leadership",
+        "questions": [
+          {
+            "id": "sanctions_screening",
+            "question": "Sanctions Screening Programmes",
+            "description": "Implementing and managing sanctions screening systems",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No sanctions screening experience",
+              "1": "Aware of sanctions screening requirements and lists",
+              "2": "Operated screening systems; resolved alerts; escalated matches",
+              "3": "Designed screening programs; vendor management; tuning and testing",
+              "4": "Strategic sanctions screening; enterprise deployment; regulatory engagement"
+            },
+            "mirrorsRole": {
+              "questionId": "sanctions_screening",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "ofsi_compliance",
+            "question": "OFSI Sanctions Compliance",
+            "description": "UK Office of Financial Sanctions Implementation compliance",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No OFSI experience",
+              "1": "Aware of OFSI role and UK sanctions framework",
+              "2": "Applied OFSI guidance; reported breaches; managed frozen assets",
+              "3": "Designed OFSI compliance frameworks; licence applications; OFSI engagement",
+              "4": "Strategic OFSI relationship; complex designations; industry forums"
+            },
+            "mirrorsRole": {
+              "questionId": "ofsi_compliance",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "ofac_sdns",
+            "question": "OFAC/SDN List Management",
+            "description": "US sanctions compliance and OFAC SDN list management",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No OFAC experience",
+              "1": "Aware of OFAC and SDN list requirements",
+              "2": "Applied OFAC rules; managed US nexus analysis; SDN screening",
+              "3": "Designed OFAC compliance programs; 50% rule; secondary sanctions",
+              "4": "Strategic OFAC compliance; complex structures; regulatory engagement"
+            },
+            "mirrorsRole": {
+              "questionId": "ofac_sdns",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "sanctions_investigations",
+            "question": "Sanctions Match Investigation",
+            "description": "Investigating potential sanctions matches and true hits",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No sanctions investigation experience",
+              "1": "Aware of sanctions investigation process",
+              "2": "Investigated sanctions alerts; true/false positive determination",
+              "3": "Led sanctions investigations; complex matches; escalation frameworks",
+              "4": "Strategic investigation governance; regulatory engagement; enforcement liaison"
+            },
+            "mirrorsRole": {
+              "questionId": "sanctions_investigations",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "licence_applications",
+            "question": "Sanctions Licence Applications",
+            "description": "Applying for sanctions licences and exemptions",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No licence application experience",
+              "1": "Aware of licensing process and exemptions",
+              "2": "Supported licence applications; gathered documentation; OFSI portal",
+              "3": "Managed licence applications; complex requests; ongoing compliance",
+              "4": "Strategic licensing; multiple jurisdictions; regulatory engagement"
+            },
+            "mirrorsRole": {
+              "questionId": "licence_applications",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "proliferation_financing",
+            "question": "Proliferation Financing Risk",
+            "description": "Managing proliferation financing and WMD-related sanctions risk",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No proliferation financing experience",
+              "1": "Aware of PF risks and dual-use goods concerns",
+              "2": "Applied PF controls; identified red flags; trade finance screening",
+              "3": "Designed PF frameworks; risk assessment; regulatory alignment",
+              "4": "Strategic PF programs; industry engagement; regulatory dialogue"
+            },
+            "mirrorsRole": {
+              "questionId": "proliferation_financing",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "cryptoasset_compliance",
+            "question": "Cryptoasset/Virtual Asset Compliance",
+            "description": "Compliance for cryptoassets and virtual asset service providers",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No cryptoasset compliance experience",
+              "1": "Aware of crypto regulations and Travel Rule requirements",
+              "2": "Applied crypto compliance controls; blockchain analytics; wallet screening",
+              "3": "Designed crypto compliance frameworks; FCA registration; FATF guidance",
+              "4": "Strategic crypto compliance; emerging regulations; regulatory engagement"
+            },
+            "mirrorsRole": {
+              "questionId": "cryptoasset_compliance",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "trade_based_ml",
+            "question": "Trade-Based Money Laundering",
+            "description": "Identifying and preventing trade-based money laundering",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No TBML experience",
+              "1": "Aware of TBML typologies and red flags",
+              "2": "Identified TBML indicators; trade finance compliance; documentary credits",
+              "3": "Designed TBML controls; dual-use goods screening; supply chain analysis",
+              "4": "Strategic TBML programs; regulatory engagement; industry best practice"
+            },
+            "mirrorsRole": {
+              "questionId": "trade_based_ml",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "fraud_prevention",
+            "question": "Fraud Prevention & Detection",
+            "description": "Fraud prevention and detection within compliance context",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No fraud prevention experience",
+              "1": "Aware of fraud typologies and APP fraud risks",
+              "2": "Applied fraud controls; investigated fraud alerts; customer notifications",
+              "3": "Designed fraud prevention frameworks; Authorised Push Payment controls",
+              "4": "Strategic fraud programs; industry collaboration; regulatory engagement"
+            },
+            "mirrorsRole": {
+              "questionId": "fraud_prevention",
+              "matchType": "minimum"
+            }
+          }
+        ]
+      },
+      {
+        "id": "consumer_duty",
+        "title": "Consumer Duty",
+        "description": "FCA Consumer Duty framework and outcomes-based compliance",
+        "order": 9,
+        "helpText": "0 = No Experience, 1 = Awareness, 2 = Practical Application, 3 = Implementation & Management, 4 = Strategic Leadership",
+        "interviewNote": "Be prepared to discuss your experience with fair value assessments, outcomes monitoring, and vulnerable customer frameworks.",
+        "questions": [
+          {
+            "id": "consumer_duty_framework",
+            "question": "Consumer Duty Framework",
+            "description": "Overall Consumer Duty framework understanding and implementation",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No Consumer Duty experience",
+              "1": "Aware of Consumer Duty principle, outcomes, and cross-cutting rules",
+              "2": "Applied Consumer Duty requirements; contributed to implementation programs",
+              "3": "Led Consumer Duty implementation; designed frameworks; Board reporting",
+              "4": "Strategic Consumer Duty architect; enterprise programs; regulatory thought leader"
+            },
+            "mirrorsRole": {
+              "questionId": "consumer_duty_framework",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "cross_cutting_rules",
+            "question": "Cross-Cutting Rules Implementation",
+            "description": "Acting in good faith, avoiding foreseeable harm, enabling customer objectives",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No cross-cutting rules experience",
+              "1": "Aware of three cross-cutting rules and their application",
+              "2": "Applied cross-cutting rules in product and service assessments",
+              "3": "Designed cross-cutting rules frameworks; trained business; embedded culture",
+              "4": "Strategic cross-cutting rules governance; regulatory engagement"
+            },
+            "mirrorsRole": {
+              "questionId": "cross_cutting_rules",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "consumer_understanding",
+            "question": "Consumer Understanding Outcome",
+            "description": "Ensuring customers understand products and communications",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No consumer understanding experience",
+              "1": "Aware of consumer understanding requirements and testing",
+              "2": "Assessed communications for understanding; conducted customer testing",
+              "3": "Designed understanding frameworks; testing programs; monitored effectiveness",
+              "4": "Strategic understanding programs; behavioural insights; regulatory engagement"
+            },
+            "mirrorsRole": {
+              "questionId": "consumer_understanding",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "price_value",
+            "question": "Price & Value Outcome",
+            "description": "Ensuring products and services provide fair value",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No price and value experience",
+              "1": "Aware of fair value requirements and assessment methodology",
+              "2": "Conducted fair value assessments; benchmarking; customer outcomes analysis",
+              "3": "Designed fair value frameworks; led assessments; Board reporting",
+              "4": "Strategic fair value governance; industry benchmarking; regulatory engagement"
+            },
+            "mirrorsRole": {
+              "questionId": "price_value",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "consumer_support",
+            "question": "Consumer Support Outcome",
+            "description": "Ensuring customers receive appropriate support",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No consumer support outcome experience",
+              "1": "Aware of support requirements and friction point concerns",
+              "2": "Assessed customer journeys; identified friction; monitored support quality",
+              "3": "Designed support frameworks; monitored outcomes; remediation programs",
+              "4": "Strategic support governance; customer journey transformation; regulatory engagement"
+            },
+            "mirrorsRole": {
+              "questionId": "consumer_support",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "products_services",
+            "question": "Products & Services Outcome",
+            "description": "Ensuring products and services meet customer needs",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No products and services outcome experience",
+              "1": "Aware of product governance requirements under Consumer Duty",
+              "2": "Assessed product design and distribution; target market alignment",
+              "3": "Designed product outcome frameworks; monitored distribution; remediation",
+              "4": "Strategic product governance; enterprise frameworks; regulatory engagement"
+            },
+            "mirrorsRole": {
+              "questionId": "products_services",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "fair_value_assessment",
+            "question": "Fair Value Assessment",
+            "description": "Conducting and governing fair value assessments",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No fair value assessment experience",
+              "1": "Aware of fair value methodology and FCA expectations",
+              "2": "Conducted fair value assessments; cost-benefit analysis; benchmarking",
+              "3": "Designed fair value methodology; led assessments; governance frameworks",
+              "4": "Strategic fair value programs; industry thought leadership; regulatory dialogue"
+            },
+            "mirrorsRole": {
+              "questionId": "fair_value_assessment",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "vulnerable_customers",
+            "question": "Vulnerable Customer Framework",
+            "description": "Identifying and supporting customers in vulnerable circumstances",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No vulnerable customer experience",
+              "1": "Aware of FCA vulnerability guidance and TEXAS model",
+              "2": "Applied vulnerability frameworks; identified at-risk customers; support measures",
+              "3": "Designed vulnerability frameworks; training programs; outcome monitoring",
+              "4": "Strategic vulnerability programs; enterprise transformation; regulatory engagement"
+            },
+            "mirrorsRole": {
+              "questionId": "vulnerable_customers",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "outcomes_monitoring",
+            "question": "Outcomes-Based Monitoring",
+            "description": "Monitoring customer outcomes rather than just process compliance",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No outcomes monitoring experience",
+              "1": "Aware of outcomes-based approach vs rules-based compliance",
+              "2": "Designed outcome metrics; monitored customer outcomes; MI reporting",
+              "3": "Led outcomes monitoring programs; dashboards; Board reporting",
+              "4": "Strategic outcomes architecture; data-driven compliance; regulatory thought leadership"
+            },
+            "mirrorsRole": {
+              "questionId": "outcomes_monitoring",
+              "matchType": "minimum"
+            }
+          }
+        ]
+      },
+      {
+        "id": "market_conduct_surveillance",
+        "title": "Market Conduct & Surveillance",
+        "description": "Market abuse prevention and surveillance systems",
+        "order": 10,
+        "helpText": "0 = No Experience, 1 = Awareness, 2 = Practical Application, 3 = Implementation & Management, 4 = Strategic Leadership",
+        "questions": [
+          {
+            "id": "mar_compliance",
+            "question": "Market Abuse Regulation (MAR) Compliance",
+            "description": "Overall MAR compliance framework and requirements",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No MAR experience",
+              "1": "Aware of MAR prohibitions and disclosure requirements",
+              "2": "Applied MAR in compliance context; supported surveillance; PDMR processes",
+              "3": "Implemented MAR frameworks; designed policies; regulatory submissions",
+              "4": "Strategic MAR governance; enterprise surveillance; regulatory engagement"
+            },
+            "mirrorsRole": {
+              "questionId": "mar_compliance",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "insider_dealing",
+            "question": "Insider Dealing Prevention",
+            "description": "Preventing insider dealing and unlawful disclosure",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No insider dealing experience",
+              "1": "Aware of insider dealing offences and prevention measures",
+              "2": "Applied insider dealing controls; managed restricted lists; clearance procedures",
+              "3": "Designed insider dealing frameworks; wall-crossing procedures; training",
+              "4": "Strategic insider dealing governance; complex transactions; regulatory engagement"
+            },
+            "mirrorsRole": {
+              "questionId": "insider_dealing",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "market_manipulation",
+            "question": "Market Manipulation Detection",
+            "description": "Detecting and preventing market manipulation",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No market manipulation experience",
+              "1": "Aware of manipulation typologies (spoofing, layering, wash trading)",
+              "2": "Applied manipulation detection; reviewed alerts; investigated patterns",
+              "3": "Designed manipulation controls; surveillance tuning; STOR submissions",
+              "4": "Strategic manipulation detection; advanced analytics; regulatory engagement"
+            },
+            "mirrorsRole": {
+              "questionId": "market_manipulation",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "insider_lists",
+            "question": "Insider Lists Management",
+            "description": "Maintaining and governing insider lists",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No insider list experience",
+              "1": "Aware of insider list requirements and MAR Article 18",
+              "2": "Maintained insider lists; deal-specific and permanent lists; acknowledgements",
+              "3": "Designed insider list frameworks; systems implementation; regulatory requests",
+              "4": "Strategic insider list governance; complex transactions; regulatory engagement"
+            },
+            "mirrorsRole": {
+              "questionId": "insider_lists",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "pdmr_notifications",
+            "question": "PDMR Notifications",
+            "description": "Managing notifications from Persons Discharging Managerial Responsibilities",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No PDMR experience",
+              "1": "Aware of PDMR notification requirements and closed periods",
+              "2": "Processed PDMR notifications; managed closed periods; clearance procedures",
+              "3": "Designed PDMR frameworks; systems implementation; regulatory submissions",
+              "4": "Strategic PDMR governance; complex structures; regulatory engagement"
+            },
+            "mirrorsRole": {
+              "questionId": "pdmr_notifications",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "trade_surveillance",
+            "question": "Trade Surveillance Systems",
+            "description": "Implementing and managing trade surveillance technology",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No trade surveillance experience",
+              "1": "Aware of trade surveillance requirements and alert types",
+              "2": "Operated surveillance systems; investigated alerts; escalation",
+              "3": "Designed surveillance programs; vendor selection; tuning and testing",
+              "4": "Strategic surveillance architecture; enterprise deployment; regulatory engagement"
+            },
+            "mirrorsRole": {
+              "questionId": "trade_surveillance",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "communications_surveillance",
+            "question": "Communications Surveillance",
+            "description": "Monitoring electronic and voice communications",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No communications surveillance experience",
+              "1": "Aware of eComms surveillance requirements and lexicons",
+              "2": "Reviewed communications alerts; investigated escalations; voice sampling",
+              "3": "Designed eComms programs; lexicon development; vendor management",
+              "4": "Strategic communications surveillance; AI/NLP implementation; regulatory engagement"
+            },
+            "mirrorsRole": {
+              "questionId": "communications_surveillance",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "stor_filing",
+            "question": "STOR Filing (Suspicious Transaction Reports)",
+            "description": "Filing Suspicious Transaction and Order Reports under MAR",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No STOR experience",
+              "1": "Aware of STOR requirements and reporting obligations",
+              "2": "Prepared STORs; understood reporting thresholds; FCA submission",
+              "3": "Managed STOR process; quality review; regulatory liaison",
+              "4": "Strategic STOR governance; complex cases; regulatory engagement"
+            },
+            "mirrorsRole": {
+              "questionId": "stor_filing",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "conflicts_management",
+            "question": "Conflicts of Interest Management",
+            "description": "Identifying and managing conflicts of interest",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No conflicts management experience",
+              "1": "Aware of conflicts requirements and disclosure obligations",
+              "2": "Applied conflicts frameworks; maintained registers; reviewed transactions",
+              "3": "Designed conflicts frameworks; information barriers; training programs",
+              "4": "Strategic conflicts governance; complex structures; regulatory engagement"
+            },
+            "mirrorsRole": {
+              "questionId": "conflicts_management",
+              "matchType": "minimum"
+            }
+          }
+        ]
+      },
+      {
+        "id": "product_governance",
+        "title": "Product Governance",
+        "description": "MiFID II product governance and suitability frameworks",
+        "order": 11,
+        "helpText": "0 = No Experience, 1 = Awareness, 2 = Practical Application, 3 = Implementation & Management, 4 = Strategic Leadership",
+        "questions": [
+          {
+            "id": "prod_gov_framework",
+            "question": "Product Governance Framework",
+            "description": "Overall product governance framework design and implementation",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No product governance experience",
+              "1": "Aware of MiFID II product governance requirements",
+              "2": "Applied product governance; target market assessments; distribution reviews",
+              "3": "Designed product governance frameworks; manufacturer/distributor obligations",
+              "4": "Strategic product governance architect; enterprise programs; regulatory engagement"
+            },
+            "mirrorsRole": {
+              "questionId": "prod_gov_framework",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "target_market",
+            "question": "Target Market Definition",
+            "description": "Defining and documenting product target markets",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No target market experience",
+              "1": "Aware of target market requirements and categories",
+              "2": "Defined target markets; client categorisation; negative target market",
+              "3": "Designed target market frameworks; EMT standards; distribution alignment",
+              "4": "Strategic target market governance; industry standards; regulatory engagement"
+            },
+            "mirrorsRole": {
+              "questionId": "target_market",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "product_approval",
+            "question": "Product Approval Process (NPAP)",
+            "description": "New Product Approval Process governance",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No NPAP experience",
+              "1": "Aware of product approval requirements and governance",
+              "2": "Participated in product approvals; compliance sign-off; risk assessment",
+              "3": "Designed NPAP frameworks; governance committees; approval criteria",
+              "4": "Strategic NPAP architecture; enterprise governance; regulatory engagement"
+            },
+            "mirrorsRole": {
+              "questionId": "product_approval",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "distribution_strategy",
+            "question": "Distribution Strategy Assessment",
+            "description": "Assessing and aligning distribution strategies",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No distribution strategy experience",
+              "1": "Aware of distribution strategy requirements",
+              "2": "Assessed distribution channels; intermediary oversight; sales monitoring",
+              "3": "Designed distribution frameworks; channel governance; MI reporting",
+              "4": "Strategic distribution governance; enterprise programs; regulatory engagement"
+            },
+            "mirrorsRole": {
+              "questionId": "distribution_strategy",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "product_reviews",
+            "question": "Product Reviews & Monitoring",
+            "description": "Ongoing product reviews and lifecycle monitoring",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No product review experience",
+              "1": "Aware of product review requirements",
+              "2": "Conducted product reviews; outcome monitoring; manufacturer reporting",
+              "3": "Designed product review frameworks; triggers; remediation processes",
+              "4": "Strategic product lifecycle governance; industry best practice; regulatory engagement"
+            },
+            "mirrorsRole": {
+              "questionId": "product_reviews",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "manufacturer_distributor",
+            "question": "Manufacturer/Distributor Obligations",
+            "description": "Managing manufacturer and distributor responsibilities",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No manufacturer/distributor experience",
+              "1": "Aware of respective obligations and information exchange",
+              "2": "Applied manufacturer/distributor frameworks; due diligence; reporting",
+              "3": "Designed information exchange frameworks; agreements; governance",
+              "4": "Strategic manufacturer/distributor governance; industry standards; regulatory engagement"
+            },
+            "mirrorsRole": {
+              "questionId": "manufacturer_distributor",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "priips_kid",
+            "question": "PRIIPs KID Compliance",
+            "description": "Packaged Retail Investment Products Key Information Documents",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No PRIIPs experience",
+              "1": "Aware of PRIIPs KID requirements and content",
+              "2": "Reviewed KIDs; methodology compliance; distribution requirements",
+              "3": "Designed PRIIPs frameworks; KID production governance; regulatory change",
+              "4": "Strategic PRIIPs governance; methodology development; regulatory engagement"
+            },
+            "mirrorsRole": {
+              "questionId": "priips_kid",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "suitability_appropriateness",
+            "question": "Suitability & Appropriateness",
+            "description": "Suitability and appropriateness assessment frameworks",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No suitability/appropriateness experience",
+              "1": "Aware of suitability and appropriateness requirements",
+              "2": "Applied suitability frameworks; assessed advice processes; monitoring",
+              "3": "Designed suitability frameworks; file review programs; quality assurance",
+              "4": "Strategic suitability governance; enterprise programs; regulatory engagement"
+            },
+            "mirrorsRole": {
+              "questionId": "suitability_appropriateness",
+              "matchType": "minimum"
+            }
+          }
+        ]
+      },
+      {
+        "id": "compliance_monitoring_plan",
+        "title": "Compliance Monitoring Plan (CMP)",
+        "description": "Risk-based compliance monitoring and testing programs",
+        "order": 12,
+        "helpText": "0 = No Experience, 1 = Awareness, 2 = Practical Application, 3 = Implementation & Management, 4 = Strategic Leadership",
+        "questions": [
+          {
+            "id": "cmp_design",
+            "question": "CMP Design & Methodology",
+            "description": "Designing risk-based compliance monitoring plans",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No CMP experience",
+              "1": "Aware of CMP requirements and risk-based approach",
+              "2": "Contributed to CMP development; conducted monitoring reviews",
+              "3": "Designed CMP methodology; risk assessment; resource allocation",
+              "4": "Strategic CMP governance; enterprise programs; regulatory engagement"
+            },
+            "mirrorsRole": {
+              "questionId": "cmp_design",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "risk_based_planning",
+            "question": "Risk-Based Monitoring Planning",
+            "description": "Prioritising monitoring activities based on risk assessment",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No risk-based planning experience",
+              "1": "Aware of risk-based prioritisation principles",
+              "2": "Applied risk-based planning; conducted risk assessments; universe management",
+              "3": "Designed risk-based frameworks; dynamic planning; agile methodologies",
+              "4": "Strategic risk-based governance; enterprise alignment; regulatory engagement"
+            },
+            "mirrorsRole": {
+              "questionId": "risk_based_planning",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "thematic_reviews",
+            "question": "Thematic Review Design",
+            "description": "Designing and executing thematic compliance reviews",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No thematic review experience",
+              "1": "Aware of thematic review approach and methodology",
+              "2": "Participated in thematic reviews; conducted testing; documented findings",
+              "3": "Led thematic reviews; designed methodology; presented findings",
+              "4": "Strategic thematic governance; FCA portfolio alignment; regulatory engagement"
+            },
+            "mirrorsRole": {
+              "questionId": "thematic_reviews",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "monitoring_testing",
+            "question": "Compliance Testing Execution",
+            "description": "Executing compliance testing and sample-based reviews",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No compliance testing experience",
+              "1": "Aware of testing methodologies and sampling approaches",
+              "2": "Conducted compliance testing; sampling; evidence gathering; documentation",
+              "3": "Designed testing programs; quality assurance; effectiveness assessment",
+              "4": "Strategic testing governance; continuous monitoring; regulatory engagement"
+            },
+            "mirrorsRole": {
+              "questionId": "monitoring_testing",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "issue_tracking",
+            "question": "Issue & Action Tracking",
+            "description": "Managing compliance issues and remediation actions",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No issue tracking experience",
+              "1": "Aware of issue management requirements",
+              "2": "Tracked issues and actions; monitored remediation; MI reporting",
+              "3": "Designed issue management frameworks; root cause analysis; escalation",
+              "4": "Strategic issue governance; enterprise tracking; regulatory engagement"
+            },
+            "mirrorsRole": {
+              "questionId": "issue_tracking",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "findings_reporting",
+            "question": "Findings Reporting & Escalation",
+            "description": "Reporting compliance findings and escalating issues",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No findings reporting experience",
+              "1": "Aware of reporting requirements and escalation protocols",
+              "2": "Prepared findings reports; escalated issues; tracked closure",
+              "3": "Designed reporting frameworks; committee papers; Board reporting",
+              "4": "Strategic reporting governance; enterprise MI; regulatory engagement"
+            },
+            "mirrorsRole": {
+              "questionId": "findings_reporting",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "cmp_governance",
+            "question": "CMP Governance & Oversight",
+            "description": "Governing the compliance monitoring plan and program",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No CMP governance experience",
+              "1": "Aware of CMP governance requirements",
+              "2": "Supported CMP governance; progress tracking; committee reporting",
+              "3": "Managed CMP governance; designed frameworks; Board oversight",
+              "4": "Strategic CMP oversight; enterprise coordination; regulatory engagement"
+            },
+            "mirrorsRole": {
+              "questionId": "cmp_governance",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "quality_assurance",
+            "question": "QA of Monitoring Work",
+            "description": "Quality assurance of compliance monitoring and testing work",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No QA experience",
+              "1": "Aware of QA requirements and standards",
+              "2": "Participated in QA reviews; applied quality standards",
+              "3": "Designed QA frameworks; led QA programs; continuous improvement",
+              "4": "Strategic QA governance; enterprise standards; regulatory engagement"
+            },
+            "mirrorsRole": {
+              "questionId": "quality_assurance",
+              "matchType": "minimum"
+            }
+          }
+        ]
+      },
+      {
+        "id": "breach_management_incidents",
+        "title": "Breach Management & Incidents",
+        "description": "Managing compliance breaches and regulatory incidents",
+        "order": 13,
+        "helpText": "0 = No Experience, 1 = Awareness, 2 = Practical Application, 3 = Implementation & Management, 4 = Strategic Leadership",
+        "questions": [
+          {
+            "id": "breach_identification",
+            "question": "Breach Identification & Classification",
+            "description": "Identifying and classifying regulatory breaches",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No breach identification experience",
+              "1": "Aware of breach definitions and classification criteria",
+              "2": "Identified breaches; applied classification frameworks; documented",
+              "3": "Designed breach frameworks; classification criteria; severity assessment",
+              "4": "Strategic breach governance; enterprise taxonomy; regulatory engagement"
+            },
+            "mirrorsRole": {
+              "questionId": "breach_identification",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "breach_investigation",
+            "question": "Breach Investigation",
+            "description": "Investigating compliance breaches and incidents",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No breach investigation experience",
+              "1": "Aware of investigation process and documentation requirements",
+              "2": "Participated in breach investigations; evidence gathering; witness interviews",
+              "3": "Led breach investigations; complex cases; regulatory liaison",
+              "4": "Strategic investigation governance; enforcement experience; regulatory engagement"
+            },
+            "mirrorsRole": {
+              "questionId": "breach_investigation",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "root_cause_analysis",
+            "question": "Root Cause Analysis",
+            "description": "Conducting root cause analysis of breaches and incidents",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No root cause analysis experience",
+              "1": "Aware of RCA methodologies (5 Whys, Fishbone)",
+              "2": "Conducted RCA; identified contributing factors; documented findings",
+              "3": "Designed RCA frameworks; facilitated workshops; systemic analysis",
+              "4": "Strategic RCA governance; enterprise learning; regulatory engagement"
+            },
+            "mirrorsRole": {
+              "questionId": "root_cause_analysis",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "remediation_oversight",
+            "question": "Remediation Oversight",
+            "description": "Overseeing remediation of breaches and control gaps",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No remediation oversight experience",
+              "1": "Aware of remediation requirements and tracking",
+              "2": "Monitored remediation progress; tracked actions; verified closure",
+              "3": "Designed remediation frameworks; governance committees; effectiveness testing",
+              "4": "Strategic remediation governance; enterprise programs; regulatory engagement"
+            },
+            "mirrorsRole": {
+              "questionId": "remediation_oversight",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "regulatory_notifications",
+            "question": "Regulatory Breach Notifications",
+            "description": "Notifying regulators of breaches under Principle 11",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No regulatory notification experience",
+              "1": "Aware of Principle 11 requirements and notification triggers",
+              "2": "Prepared breach notifications; REP001/Notification forms; timeline management",
+              "3": "Managed notification process; complex breaches; regulatory dialogue",
+              "4": "Strategic notification governance; enforcement engagement; regulatory relationship"
+            },
+            "mirrorsRole": {
+              "questionId": "regulatory_notifications",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "lessons_learned",
+            "question": "Lessons Learned Process",
+            "description": "Embedding lessons learned from breaches and incidents",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No lessons learned experience",
+              "1": "Aware of lessons learned requirements",
+              "2": "Documented lessons learned; contributed to improvement initiatives",
+              "3": "Designed lessons learned frameworks; embedded improvements; culture change",
+              "4": "Strategic lessons governance; enterprise learning culture; regulatory engagement"
+            },
+            "mirrorsRole": {
+              "questionId": "lessons_learned",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "breach_reporting",
+            "question": "Breach Reporting to Board/Committees",
+            "description": "Reporting breaches to Board and governance committees",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No breach reporting experience",
+              "1": "Aware of Board/committee reporting requirements",
+              "2": "Prepared breach reports; MI dashboards; trend analysis",
+              "3": "Designed breach reporting frameworks; Board papers; executive updates",
+              "4": "Strategic breach governance; enterprise reporting; regulatory engagement"
+            },
+            "mirrorsRole": {
+              "questionId": "breach_reporting",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "customer_redress",
+            "question": "Customer Redress Programmes",
+            "description": "Managing customer redress and remediation programs",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No redress experience",
+              "1": "Aware of redress requirements and FCA expectations",
+              "2": "Participated in redress programs; customer identification; calculations",
+              "3": "Managed redress programs; methodology design; regulatory engagement",
+              "4": "Strategic redress governance; s166 experience; FCA liaison"
+            },
+            "mirrorsRole": {
+              "questionId": "customer_redress",
+              "matchType": "minimum"
+            }
+          }
+        ]
+      },
+      {
+        "id": "regulatory_change_horizon",
+        "title": "Regulatory Change & Horizon Scanning",
+        "description": "Managing regulatory change and advisory services",
+        "order": 14,
+        "helpText": "0 = No Experience, 1 = Awareness, 2 = Practical Application, 3 = Implementation & Management, 4 = Strategic Leadership",
+        "questions": [
+          {
+            "id": "horizon_scanning",
+            "question": "Regulatory Horizon Scanning",
+            "description": "Scanning for upcoming regulatory changes",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No horizon scanning experience",
+              "1": "Aware of horizon scanning requirements and sources",
+              "2": "Monitored regulatory developments; summarised changes; impact flags",
+              "3": "Designed horizon scanning frameworks; regulatory intelligence; business alerts",
+              "4": "Strategic horizon scanning; industry engagement; regulatory dialogue"
+            },
+            "mirrorsRole": {
+              "questionId": "horizon_scanning",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "reg_change_assessment",
+            "question": "Regulatory Change Impact Assessment",
+            "description": "Assessing impact of regulatory changes on the business",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No impact assessment experience",
+              "1": "Aware of impact assessment methodology",
+              "2": "Conducted impact assessments; gap analysis; business engagement",
+              "3": "Designed impact assessment frameworks; prioritisation; resource planning",
+              "4": "Strategic change governance; enterprise assessment; regulatory engagement"
+            },
+            "mirrorsRole": {
+              "questionId": "reg_change_assessment",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "implementation_projects",
+            "question": "Implementation Project Management",
+            "description": "Managing regulatory implementation projects",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No regulatory project experience",
+              "1": "Aware of project management requirements",
+              "2": "Participated in regulatory projects; workstream delivery; stakeholder coordination",
+              "3": "Led regulatory implementations; program management; cross-functional delivery",
+              "4": "Strategic program governance; enterprise transformation; regulatory engagement"
+            },
+            "mirrorsRole": {
+              "questionId": "implementation_projects",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "consultation_responses",
+            "question": "Consultation Responses",
+            "description": "Preparing responses to regulatory consultations",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No consultation response experience",
+              "1": "Aware of consultation process and response requirements",
+              "2": "Contributed to consultation responses; drafted sections; reviewed proposals",
+              "3": "Led consultation responses; industry coordination; regulatory dialogue",
+              "4": "Strategic consultation engagement; industry representation; policy influence"
+            },
+            "mirrorsRole": {
+              "questionId": "consultation_responses",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "policy_updates",
+            "question": "Policy & Procedure Updates",
+            "description": "Updating policies and procedures for regulatory changes",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No policy update experience",
+              "1": "Aware of policy update requirements",
+              "2": "Updated policies; procedure changes; version control; approval processes",
+              "3": "Designed policy frameworks; governance; enterprise standards",
+              "4": "Strategic policy architecture; group-wide governance; regulatory alignment"
+            },
+            "mirrorsRole": {
+              "questionId": "policy_updates",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "training_design",
+            "question": "Compliance Training Design",
+            "description": "Designing and delivering compliance training programs",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No training design experience",
+              "1": "Aware of training requirements and approaches",
+              "2": "Developed training content; delivered sessions; assessed effectiveness",
+              "3": "Designed training programs; learning management; competence assessment",
+              "4": "Strategic training governance; enterprise curriculum; regulatory best practice"
+            },
+            "mirrorsRole": {
+              "questionId": "training_design",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "regulatory_relationships",
+            "question": "Regulatory Relationship Management",
+            "description": "Managing relationships with FCA, PRA, and other regulators",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No regulatory relationship experience",
+              "1": "Aware of regulatory engagement principles",
+              "2": "Supported regulatory meetings; prepared materials; action tracking",
+              "3": "Managed regulatory relationships; supervision meetings; s166 liaison",
+              "4": "Strategic regulatory engagement; industry representation; policy dialogue"
+            },
+            "mirrorsRole": {
+              "questionId": "regulatory_relationships",
+              "matchType": "minimum"
+            }
+          }
+        ]
+      },
+      {
+        "id": "regtech_platforms",
+        "title": "RegTech Platforms",
+        "description": "Experience with compliance technology and RegTech solutions",
+        "order": 15,
+        "helpText": "0 = No Experience, 1 = Awareness, 2 = Practical Application, 3 = Implementation & Management, 4 = Strategic Leadership",
+        "questions": [
+          {
+            "id": "regtech_experience",
+            "question": "RegTech Platform Experience",
+            "description": "Experience with compliance and AML technology platforms",
+            "type": "system_proficiency",
+            "required": true,
+            "systems": [
+              {
+                "id": "fenergo",
+                "name": "Fenergo (CLM/KYC)"
+              },
+              {
+                "id": "encompass",
+                "name": "Encompass (KYC)"
+              },
+              {
+                "id": "nice_actimize",
+                "name": "Nice Actimize (AML/TM)"
+              },
+              {
+                "id": "napier",
+                "name": "Napier (AML)"
+              },
+              {
+                "id": "quantexa",
+                "name": "Quantexa (Entity Resolution)"
+              },
+              {
+                "id": "axiomsL",
+                "name": "AxiomSL (Regulatory Reporting)"
+              },
+              {
+                "id": "workiva",
+                "name": "Workiva (Compliance Reporting)"
+              },
+              {
+                "id": "cube",
+                "name": "CUBE (Regulatory Intelligence)"
+              },
+              {
+                "id": "complyadvantage",
+                "name": "ComplyAdvantage (Screening)"
+              },
+              {
+                "id": "worldcheck",
+                "name": "World-Check (Screening)"
+              }
+            ],
+            "mirrorsRole": {
+              "questionId": "regtech_experience",
+              "matchType": "system_match"
+            }
+          },
+          {
+            "id": "regtech_selection",
+            "question": "RegTech Vendor Selection",
+            "description": "Selecting and evaluating RegTech vendors and solutions",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No vendor selection experience",
+              "1": "Aware of vendor selection process and criteria",
+              "2": "Participated in vendor selection; RFP evaluation; demos",
+              "3": "Led vendor selection; designed evaluation criteria; contract negotiation",
+              "4": "Strategic vendor governance; enterprise procurement; industry benchmarking"
+            },
+            "mirrorsRole": {
+              "questionId": "regtech_selection",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "regtech_implementation",
+            "question": "RegTech Implementation",
+            "description": "Implementing compliance technology solutions",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No implementation experience",
+              "1": "Aware of implementation requirements and phases",
+              "2": "Participated in RegTech implementations; UAT; training",
+              "3": "Led RegTech implementations; business requirements; data migration",
+              "4": "Strategic RegTech transformation; enterprise programs; vendor partnerships"
+            },
+            "mirrorsRole": {
+              "questionId": "regtech_implementation",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "workflow_automation",
+            "question": "Compliance Workflow Automation",
+            "description": "Automating compliance processes and workflows",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No workflow automation experience",
+              "1": "Aware of automation opportunities in compliance",
+              "2": "Contributed to automation initiatives; process mapping; requirements",
+              "3": "Designed automation programs; RPA implementation; efficiency gains",
+              "4": "Strategic automation governance; AI/ML adoption; enterprise transformation"
+            },
+            "mirrorsRole": {
+              "questionId": "workflow_automation",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "case_management",
+            "question": "Case Management Systems",
+            "description": "Using and implementing case management systems",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No case management experience",
+              "1": "Aware of case management requirements",
+              "2": "Used case management systems; workflow configuration; reporting",
+              "3": "Designed case management frameworks; system implementation; governance",
+              "4": "Strategic case management; enterprise platforms; vendor management"
+            },
+            "mirrorsRole": {
+              "questionId": "case_management",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "regulatory_reporting_tech",
+            "question": "Regulatory Reporting Technology",
+            "description": "Technology solutions for regulatory reporting",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No regulatory reporting tech experience",
+              "1": "Aware of regulatory reporting solutions",
+              "2": "Used regulatory reporting systems; data quality; validation",
+              "3": "Implemented reporting technology; system integration; automation",
+              "4": "Strategic reporting architecture; enterprise solutions; regulatory engagement"
+            },
+            "mirrorsRole": {
+              "questionId": "regulatory_reporting_tech",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "api_integration",
+            "question": "API Integration & Data Feeds",
+            "description": "Integrating compliance systems via APIs and data feeds",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No API integration experience",
+              "1": "Aware of API integration concepts",
+              "2": "Participated in integration projects; data mapping; testing",
+              "3": "Designed integration architecture; API strategy; data governance",
+              "4": "Strategic integration governance; enterprise architecture; technology leadership"
+            },
+            "mirrorsRole": {
+              "questionId": "api_integration",
+              "matchType": "minimum"
+            }
+          }
+        ]
+      },
+      {
+        "id": "data_analytics_technical",
+        "title": "Data Analytics & Technical Skills",
+        "description": "Technical data analysis and visualization capabilities",
+        "order": 16,
+        "helpText": "0 = No Experience, 1 = Awareness, 2 = Practical Application, 3 = Implementation & Management, 4 = Strategic Leadership",
+        "interviewNote": "Be prepared to demonstrate your technical skills with examples of compliance analytics work.",
+        "questions": [
+          {
+            "id": "sql_proficiency",
+            "question": "SQL Proficiency",
+            "description": "Structured Query Language for data extraction and analysis",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No SQL experience",
+              "1": "Aware of SQL concepts; can read basic queries",
+              "2": "Write SELECT queries; JOINs; filtering; aggregations",
+              "3": "Complex queries; subqueries; CTEs; performance optimization",
+              "4": "Advanced SQL; database design; stored procedures; data architecture"
+            },
+            "mirrorsRole": {
+              "questionId": "sql_proficiency",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "python_analytics",
+            "question": "Python for Compliance Analytics",
+            "description": "Python programming for compliance data analysis and automation",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No Python experience",
+              "1": "Aware of Python capabilities; basic syntax understanding",
+              "2": "Write Python scripts; pandas for data analysis; basic automation",
+              "3": "Advanced analytics; statistical analysis; ML concepts; process automation",
+              "4": "Production-grade Python; ML implementation; enterprise solutions"
+            },
+            "mirrorsRole": {
+              "questionId": "python_analytics",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "data_visualization",
+            "question": "Data Visualization (Tableau/PowerBI)",
+            "description": "Creating compliance dashboards and visualizations",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No visualization experience",
+              "1": "Aware of visualization tools and principles",
+              "2": "Create basic dashboards; charts; filters; calculated fields",
+              "3": "Advanced visualizations; data modeling; enterprise deployment",
+              "4": "Strategic visualization; data storytelling; executive dashboards"
+            },
+            "mirrorsRole": {
+              "questionId": "data_visualization",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "excel_advanced",
+            "question": "Advanced Excel & VBA",
+            "description": "Advanced Excel and VBA for compliance analysis",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No advanced Excel experience",
+              "1": "Basic Excel; formulas; pivot tables",
+              "2": "Advanced formulas; VLOOKUP/INDEX-MATCH; complex pivots; Power Query",
+              "3": "VBA macros; automation; data modeling; Power Pivot",
+              "4": "Enterprise Excel solutions; complex modeling; training others"
+            },
+            "mirrorsRole": {
+              "questionId": "excel_advanced",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "data_quality",
+            "question": "Data Quality Assessment",
+            "description": "Assessing and improving compliance data quality",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No data quality experience",
+              "1": "Aware of data quality concepts and importance",
+              "2": "Identified data quality issues; documented gaps; remediation",
+              "3": "Designed data quality frameworks; metrics; governance",
+              "4": "Strategic data quality; enterprise programs; regulatory alignment"
+            },
+            "mirrorsRole": {
+              "questionId": "data_quality",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "dashboard_design",
+            "question": "Compliance Dashboard Design",
+            "description": "Designing dashboards and visual reporting for compliance metrics",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No MI dashboard experience",
+              "1": "Aware of MI requirements and dashboard concepts",
+              "2": "Created MI reports; KPI tracking; basic dashboards",
+              "3": "Designed MI frameworks; executive dashboards; Board reporting",
+              "4": "Strategic MI architecture; enterprise dashboards; data-driven compliance"
+            },
+            "mirrorsRole": {
+              "questionId": "dashboard_design",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "data_extraction",
+            "question": "Data Extraction & Analysis",
+            "description": "Extracting and analyzing data for compliance purposes",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No data extraction experience",
+              "1": "Aware of data extraction concepts",
+              "2": "Extracted data for analysis; sampling; population analysis",
+              "3": "Designed extraction frameworks; complex data analysis; automation",
+              "4": "Strategic data analysis; enterprise data strategy; advanced analytics"
+            },
+            "mirrorsRole": {
+              "questionId": "data_extraction",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "automation_scripting",
+            "question": "Process Automation & Scripting",
+            "description": "Automating compliance processes through scripting",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No automation experience",
+              "1": "Aware of automation opportunities",
+              "2": "Created basic automation scripts; task scheduling; reporting automation",
+              "3": "Designed automation frameworks; RPA; complex scripting",
+              "4": "Strategic automation; enterprise RPA; AI-assisted automation"
+            },
+            "mirrorsRole": {
+              "questionId": "automation_scripting",
+              "matchType": "minimum"
+            }
+          }
+        ]
+      },
+      {
+        "id": "ai_algorithm_governance",
+        "title": "AI & Algorithm Governance",
+        "description": "AI governance frameworks and algorithmic compliance",
+        "order": 17,
+        "helpText": "0 = No Experience, 1 = Awareness, 2 = Practical Application, 3 = Implementation & Management, 4 = Strategic Leadership",
+        "questions": [
+          {
+            "id": "ai_governance_framework",
+            "question": "AI Governance Framework",
+            "description": "Governance frameworks for AI and algorithmic decision-making",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No AI governance experience",
+              "1": "Aware of AI governance principles and regulatory expectations",
+              "2": "Applied AI governance requirements; use case assessment; risk classification",
+              "3": "Designed AI governance frameworks; approval processes; ongoing monitoring",
+              "4": "Strategic AI governance architect; enterprise programs; regulatory engagement"
+            },
+            "mirrorsRole": {
+              "questionId": "ai_governance_framework",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "genai_risk",
+            "question": "Generative AI Compliance Governance",
+            "description": "Compliance oversight and governance for generative AI tools and applications",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No GenAI risk experience",
+              "1": "Aware of GenAI risks (hallucinations, data leakage, copyright)",
+              "2": "Assessed GenAI risks; contributed to policies; use case evaluation",
+              "3": "Designed GenAI risk frameworks; acceptable use policies; monitoring",
+              "4": "Strategic GenAI governance; enterprise implementation; regulatory engagement"
+            },
+            "mirrorsRole": {
+              "questionId": "genai_risk",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "algorithmic_bias",
+            "question": "Algorithmic Bias & Fairness",
+            "description": "Identifying and mitigating algorithmic bias",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No algorithmic bias experience",
+              "1": "Aware of bias concepts and fairness requirements",
+              "2": "Assessed algorithms for bias; fairness testing; outcome monitoring",
+              "3": "Designed bias detection frameworks; remediation processes; governance",
+              "4": "Strategic fairness programs; enterprise frameworks; regulatory engagement"
+            },
+            "mirrorsRole": {
+              "questionId": "algorithmic_bias",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "model_explainability",
+            "question": "Model Explainability Requirements",
+            "description": "Ensuring AI/ML model explainability and transparency",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No explainability experience",
+              "1": "Aware of explainability requirements (SHAP, LIME concepts)",
+              "2": "Assessed model explainability; documentation requirements; customer disclosure",
+              "3": "Designed explainability frameworks; audit trails; regulatory alignment",
+              "4": "Strategic explainability governance; enterprise standards; regulatory engagement"
+            },
+            "mirrorsRole": {
+              "questionId": "model_explainability",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "eu_ai_act",
+            "question": "EU AI Act Compliance",
+            "description": "Compliance with EU AI Act requirements",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No EU AI Act experience",
+              "1": "Aware of EU AI Act risk classification and requirements",
+              "2": "Assessed AI systems against EU AI Act; high-risk classification",
+              "3": "Implemented EU AI Act compliance; conformity assessments; documentation",
+              "4": "Strategic EU AI Act governance; enterprise readiness; regulatory engagement"
+            },
+            "mirrorsRole": {
+              "questionId": "eu_ai_act",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "ai_use_cases",
+            "question": "AI Use Case Assessment",
+            "description": "Assessing AI use cases for compliance and risk",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No AI use case assessment experience",
+              "1": "Aware of AI use case evaluation principles",
+              "2": "Assessed AI use cases; risk classification; approval processes",
+              "3": "Designed use case assessment frameworks; governance committees",
+              "4": "Strategic AI oversight; enterprise governance; regulatory dialogue"
+            },
+            "mirrorsRole": {
+              "questionId": "ai_use_cases",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "hallucination_risk",
+            "question": "AI Hallucination Risk Management",
+            "description": "Managing risks from AI hallucinations and false outputs",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No hallucination risk experience",
+              "1": "Aware of hallucination risks and impacts",
+              "2": "Assessed hallucination risks; human-in-the-loop requirements; validation",
+              "3": "Designed hallucination controls; testing frameworks; escalation procedures",
+              "4": "Strategic hallucination governance; enterprise frameworks; regulatory engagement"
+            },
+            "mirrorsRole": {
+              "questionId": "hallucination_risk",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "model_drift",
+            "question": "Model Drift & Performance Monitoring",
+            "description": "Monitoring AI/ML model performance and drift",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No model monitoring experience",
+              "1": "Aware of model drift concepts and monitoring requirements",
+              "2": "Monitored model performance; drift detection; retraining triggers",
+              "3": "Designed monitoring frameworks; KPIs; governance processes",
+              "4": "Strategic model governance; enterprise MLOps; regulatory alignment"
+            },
+            "mirrorsRole": {
+              "questionId": "model_drift",
+              "matchType": "minimum"
+            }
+          }
+        ]
+      },
+      {
+        "id": "esg_climate_compliance",
+        "title": "ESG & Climate Compliance",
+        "description": "ESG compliance and greenwashing risk management",
+        "order": 18,
+        "helpText": "0 = No Experience, 1 = Awareness, 2 = Practical Application, 3 = Implementation & Management, 4 = Strategic Leadership",
+        "questions": [
+          {
+            "id": "esg_compliance",
+            "question": "ESG Compliance Framework",
+            "description": "Environmental, Social, and Governance compliance frameworks",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No ESG compliance experience",
+              "1": "Aware of ESG regulatory landscape and requirements",
+              "2": "Applied ESG compliance requirements; disclosure review; claims assessment",
+              "3": "Designed ESG compliance frameworks; governance; regulatory alignment",
+              "4": "Strategic ESG governance architect; enterprise programs; regulatory engagement"
+            },
+            "mirrorsRole": {
+              "questionId": "esg_compliance",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "greenwashing_risk",
+            "question": "Greenwashing Prevention & Compliance",
+            "description": "Compliance framework for identifying and preventing greenwashing in products and communications",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No greenwashing experience",
+              "1": "Aware of greenwashing risks and FCA expectations",
+              "2": "Assessed products/communications for greenwashing; substantiation review",
+              "3": "Designed greenwashing frameworks; approval processes; monitoring",
+              "4": "Strategic anti-greenwashing governance; enterprise programs; regulatory engagement"
+            },
+            "mirrorsRole": {
+              "questionId": "greenwashing_risk",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "sfdr",
+            "question": "SFDR (Sustainable Finance Disclosure)",
+            "description": "Sustainable Finance Disclosure Regulation compliance",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No SFDR experience",
+              "1": "Aware of SFDR requirements and Article classifications",
+              "2": "Applied SFDR requirements; Article 6/8/9 classification; disclosure review",
+              "3": "Designed SFDR compliance frameworks; PAI statements; website disclosures",
+              "4": "Strategic SFDR governance; enterprise implementation; regulatory engagement"
+            },
+            "mirrorsRole": {
+              "questionId": "sfdr",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "esg_labelling",
+            "question": "ESG Fund Labelling Rules",
+            "description": "FCA sustainability disclosure and labelling requirements",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No ESG labelling experience",
+              "1": "Aware of FCA labelling regime and categories",
+              "2": "Assessed fund eligibility; labelling criteria; investor-facing disclosures",
+              "3": "Designed labelling frameworks; governance; ongoing monitoring",
+              "4": "Strategic labelling governance; enterprise implementation; regulatory engagement"
+            },
+            "mirrorsRole": {
+              "questionId": "esg_labelling",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "climate_disclosures",
+            "question": "Climate-Related Disclosures",
+            "description": "Climate-related financial disclosure requirements",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No climate disclosure experience",
+              "1": "Aware of climate disclosure requirements",
+              "2": "Contributed to climate disclosures; data gathering; reporting",
+              "3": "Designed disclosure frameworks; governance; regulatory compliance",
+              "4": "Strategic climate disclosure governance; enterprise programs; regulatory engagement"
+            },
+            "mirrorsRole": {
+              "questionId": "climate_disclosures",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "tcfd_compliance",
+            "question": "TCFD Compliance",
+            "description": "Task Force on Climate-related Financial Disclosures compliance",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No TCFD experience",
+              "1": "Aware of TCFD framework and four pillars",
+              "2": "Applied TCFD requirements; disclosure preparation; scenario analysis input",
+              "3": "Designed TCFD compliance frameworks; governance; metrics and targets",
+              "4": "Strategic TCFD governance; enterprise implementation; regulatory engagement"
+            },
+            "mirrorsRole": {
+              "questionId": "tcfd_compliance",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "esg_data_verification",
+            "question": "ESG Data Verification",
+            "description": "Verifying ESG data and third-party ratings",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No ESG data verification experience",
+              "1": "Aware of ESG data quality challenges",
+              "2": "Verified ESG data; assessed third-party ratings; data governance",
+              "3": "Designed ESG data frameworks; vendor oversight; quality assurance",
+              "4": "Strategic ESG data governance; enterprise programs; regulatory engagement"
+            },
+            "mirrorsRole": {
+              "questionId": "esg_data_verification",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "anti_greenwashing",
+            "question": "FCA Anti-Greenwashing Rule",
+            "description": "Compliance with FCA's anti-greenwashing rule",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No anti-greenwashing rule experience",
+              "1": "Aware of FCA anti-greenwashing rule requirements",
+              "2": "Applied anti-greenwashing rule; claims substantiation; approval process",
+              "3": "Designed anti-greenwashing frameworks; governance; monitoring",
+              "4": "Strategic anti-greenwashing governance; enterprise programs; regulatory engagement"
+            },
+            "mirrorsRole": {
+              "questionId": "anti_greenwashing",
+              "matchType": "minimum"
+            }
+          }
+        ]
+      },
+      {
+        "id": "behavioral_competencies",
+        "title": "Behavioral Competencies",
+        "description": "Leadership behaviors and professional attributes",
+        "order": 19,
+        "helpText": "0 = No Experience, 1 = Awareness, 2 = Practical Application, 3 = Implementation & Management, 4 = Strategic Leadership",
+        "questions": [
+          {
+            "id": "psychological_safety",
+            "question": "Psychological Safety Culture",
+            "description": "Creating an environment where people can speak up without fear",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No psychological safety experience",
+              "1": "Aware of psychological safety concepts and importance",
+              "2": "Contributed to safe environments; encouraged speaking up; active listening",
+              "3": "Created psychological safety in teams; designed frameworks; role modeled",
+              "4": "Strategic culture architect; enterprise transformation; thought leadership"
+            },
+            "mirrorsRole": {
+              "questionId": "psychological_safety",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "ethical_leadership",
+            "question": "Ethical Leadership",
+            "description": "Demonstrating and promoting ethical behavior",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No ethical leadership experience",
+              "1": "Aware of ethical leadership principles",
+              "2": "Demonstrated ethical behavior; raised concerns; supported others",
+              "3": "Led ethical initiatives; designed frameworks; coached others",
+              "4": "Strategic ethics architect; enterprise culture; industry thought leader"
+            },
+            "mirrorsRole": {
+              "questionId": "ethical_leadership",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "speak_up_culture",
+            "question": "Speak Up / Whistleblowing Culture",
+            "description": "Promoting and supporting speak up culture",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No speak up culture experience",
+              "1": "Aware of speak up requirements and whistleblowing processes",
+              "2": "Supported speak up culture; encouraged reporting; handled concerns",
+              "3": "Designed speak up frameworks; investigation processes; protected reporters",
+              "4": "Strategic speak up governance; enterprise programs; regulatory engagement"
+            },
+            "mirrorsRole": {
+              "questionId": "speak_up_culture",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "challenger_mindset",
+            "question": "Constructive Challenge",
+            "description": "Ability to challenge decisions and push back appropriately",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No constructive challenge experience",
+              "1": "Aware of importance of constructive challenge",
+              "2": "Provided constructive challenge; raised concerns; offered alternatives",
+              "3": "Embedded challenge culture; designed escalation frameworks; coached others",
+              "4": "Strategic challenge architect; enterprise culture; regulatory engagement"
+            },
+            "mirrorsRole": {
+              "questionId": "challenger_mindset",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "commercial_awareness",
+            "question": "Commercial Awareness",
+            "description": "Understanding business context and commercial implications",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No commercial awareness",
+              "1": "Aware of business model and revenue drivers",
+              "2": "Applied commercial context to compliance decisions; balanced risk and reward",
+              "3": "Integrated commercial understanding; business enablement; strategic advice",
+              "4": "Strategic commercial partner; enterprise value creation; business leadership"
+            },
+            "mirrorsRole": {
+              "questionId": "commercial_awareness",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "change_leadership",
+            "question": "Change Leadership",
+            "description": "Leading and managing organizational change",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No change leadership experience",
+              "1": "Aware of change management principles",
+              "2": "Supported change initiatives; stakeholder engagement; communication",
+              "3": "Led change programs; designed transformation; managed resistance",
+              "4": "Strategic change architect; enterprise transformation; thought leadership"
+            },
+            "mirrorsRole": {
+              "questionId": "change_leadership",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "resilience_pressure",
+            "question": "Resilience Under Pressure",
+            "description": "Maintaining performance under pressure and adversity",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No high-pressure experience",
+              "1": "Aware of resilience requirements in compliance",
+              "2": "Performed under pressure; managed deadlines; crisis support",
+              "3": "Led teams through crises; maintained composure; supported others",
+              "4": "Strategic resilience; enterprise crisis leadership; regulatory engagement"
+            },
+            "mirrorsRole": {
+              "questionId": "resilience_pressure",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "integrity_courage",
+            "question": "Integrity & Moral Courage",
+            "description": "Demonstrating integrity and courage to do the right thing",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No integrity demonstration required",
+              "1": "Aware of integrity requirements in compliance role",
+              "2": "Demonstrated integrity; made difficult decisions; stood firm on principles",
+              "3": "Led with integrity; designed ethical frameworks; coached others",
+              "4": "Strategic integrity champion; enterprise culture; industry thought leader"
+            },
+            "mirrorsRole": {
+              "questionId": "integrity_courage",
+              "matchType": "minimum"
+            }
+          }
+        ]
+      },
+      {
+        "id": "stakeholder_management_influence",
+        "title": "Stakeholder Management & Influence",
+        "description": "Managing stakeholders and exercising influence",
+        "order": 20,
+        "helpText": "0 = No Experience, 1 = Awareness, 2 = Practical Application, 3 = Implementation & Management, 4 = Strategic Leadership",
+        "questions": [
+          {
+            "id": "board_presentation",
+            "question": "Board & Committee Presentation",
+            "description": "Presenting to Board and governance committees",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No Board presentation experience",
+              "1": "Aware of Board reporting requirements",
+              "2": "Prepared Board materials; attended committee meetings; presented sections",
+              "3": "Regular Board/committee presenter; complex topics; strategic recommendations",
+              "4": "Strategic Board advisor; executive presence; regulatory engagement"
+            },
+            "mirrorsRole": {
+              "questionId": "board_presentation",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "executive_influence",
+            "question": "Executive Stakeholder Influence",
+            "description": "Influencing executive stakeholders and senior leadership",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No executive influence experience",
+              "1": "Aware of stakeholder management principles",
+              "2": "Influenced senior stakeholders; built relationships; managed expectations",
+              "3": "Regular executive engagement; strategic influence; trusted advisor",
+              "4": "C-suite presence; enterprise influence; strategic partnership"
+            },
+            "mirrorsRole": {
+              "questionId": "executive_influence",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "regulatory_engagement",
+            "question": "Regulatory Engagement",
+            "description": "Engaging with regulators (FCA, PRA, NCA)",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No regulatory engagement experience",
+              "1": "Aware of regulatory engagement principles",
+              "2": "Supported regulatory meetings; prepared materials; action tracking",
+              "3": "Led regulatory engagements; supervision meetings; s166 liaison",
+              "4": "Strategic regulatory relationship; industry representation; policy influence"
+            },
+            "mirrorsRole": {
+              "questionId": "regulatory_engagement",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "business_partnering_leadership",
+            "question": "Business Partnering",
+            "description": "Partnering with business to enable compliant growth",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No business partnering experience",
+              "1": "Aware of business partnership model",
+              "2": "Partnered with business areas; provided advice; enabled activities",
+              "3": "Designed partnership models; embedded compliance; commercial enablement",
+              "4": "Strategic business partner; enterprise integration; value creation"
+            },
+            "mirrorsRole": {
+              "questionId": "business_partnering_leadership",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "first_line_engagement",
+            "question": "First Line Engagement",
+            "description": "Working with first line of defence on compliance matters",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No first line engagement experience",
+              "1": "Aware of three lines model and first line role",
+              "2": "Engaged with first line; provided guidance; supported ownership",
+              "3": "Designed first line engagement frameworks; embedded compliance",
+              "4": "Strategic first line partnership; enterprise model; culture change"
+            },
+            "mirrorsRole": {
+              "questionId": "first_line_engagement",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "audit_liaison",
+            "question": "Internal/External Audit Liaison",
+            "description": "Working with internal audit and external auditors",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No audit liaison experience",
+              "1": "Aware of audit engagement requirements",
+              "2": "Supported audit engagements; provided evidence; managed findings",
+              "3": "Led audit relationships; coordinated responses; remediation oversight",
+              "4": "Strategic audit engagement; enterprise coordination; three lines alignment"
+            },
+            "mirrorsRole": {
+              "questionId": "audit_liaison",
+              "matchType": "minimum"
+            }
+          }
+        ]
+      },
+      {
+        "id": "fs_subsector_experience",
+        "title": "FS Sub-Sector Experience",
+        "description": "Experience across financial services sub-sectors",
+        "order": 21,
+        "helpText": "0 = No Experience, 1 = Awareness, 2 = Practical Application, 3 = Implementation & Management, 4 = Strategic Leadership",
+        "questions": [
+          {
+            "id": "sector_banking",
+            "question": "Banking (Retail/Commercial/Investment)",
+            "description": "Compliance experience in banking sector",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No banking compliance experience",
+              "1": "Aware of banking regulatory landscape",
+              "2": "Worked in banking compliance; understand products and risks",
+              "3": "Led banking compliance; multiple business lines; regulatory expertise",
+              "4": "Strategic banking compliance leader; enterprise programs; regulatory engagement"
+            },
+            "mirrorsRole": {
+              "questionId": "sector_banking",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "sector_insurance",
+            "question": "Insurance (Life/General/Reinsurance)",
+            "description": "Compliance experience in insurance sector",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No insurance compliance experience",
+              "1": "Aware of insurance regulatory landscape (Solvency II, IDD)",
+              "2": "Worked in insurance compliance; understand products and distribution",
+              "3": "Led insurance compliance; multiple lines; regulatory expertise",
+              "4": "Strategic insurance compliance leader; enterprise programs; regulatory engagement"
+            },
+            "mirrorsRole": {
+              "questionId": "sector_insurance",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "sector_asset_management",
+            "question": "Asset Management",
+            "description": "Compliance experience in asset management sector",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No asset management compliance experience",
+              "1": "Aware of asset management regulatory landscape (UCITS, AIFMD)",
+              "2": "Worked in asset management compliance; understand products and distribution",
+              "3": "Led asset management compliance; multiple strategies; regulatory expertise",
+              "4": "Strategic AM compliance leader; enterprise programs; regulatory engagement"
+            },
+            "mirrorsRole": {
+              "questionId": "sector_asset_management",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "sector_wealth",
+            "question": "Wealth Management / Private Banking",
+            "description": "Compliance experience in wealth management",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No wealth management compliance experience",
+              "1": "Aware of wealth management regulatory landscape",
+              "2": "Worked in wealth compliance; understand HNW clients and products",
+              "3": "Led wealth compliance; multiple jurisdictions; regulatory expertise",
+              "4": "Strategic wealth compliance leader; enterprise programs; regulatory engagement"
+            },
+            "mirrorsRole": {
+              "questionId": "sector_wealth",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "sector_payments",
+            "question": "Payments / Fintech",
+            "description": "Compliance experience in payments and fintech",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No payments/fintech compliance experience",
+              "1": "Aware of payments regulatory landscape (PSD2, EMD)",
+              "2": "Worked in payments compliance; understand products and risks",
+              "3": "Led payments compliance; authorisation experience; regulatory expertise",
+              "4": "Strategic payments compliance leader; enterprise programs; regulatory engagement"
+            },
+            "mirrorsRole": {
+              "questionId": "sector_payments",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "sector_capital_markets",
+            "question": "Capital Markets / Trading",
+            "description": "Compliance experience in capital markets",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No capital markets compliance experience",
+              "1": "Aware of capital markets regulatory landscape (MiFID II, MAR)",
+              "2": "Worked in capital markets compliance; understand trading and surveillance",
+              "3": "Led capital markets compliance; multiple asset classes; regulatory expertise",
+              "4": "Strategic capital markets compliance leader; enterprise programs; regulatory engagement"
+            },
+            "mirrorsRole": {
+              "questionId": "sector_capital_markets",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "sector_consumer_credit",
+            "question": "Consumer Credit / Lending",
+            "description": "Compliance experience in consumer credit",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No consumer credit compliance experience",
+              "1": "Aware of consumer credit regulatory landscape (CCA, CONC)",
+              "2": "Worked in consumer credit compliance; understand products and conduct",
+              "3": "Led consumer credit compliance; regulatory expertise; vulnerable customers",
+              "4": "Strategic consumer credit compliance leader; enterprise programs; regulatory engagement"
+            },
+            "mirrorsRole": {
+              "questionId": "sector_consumer_credit",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "sector_crypto",
+            "question": "Cryptoasset / Digital Assets",
+            "description": "Compliance experience in cryptoassets and digital assets",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No crypto compliance experience",
+              "1": "Aware of crypto regulatory landscape (MLR registration, Travel Rule)",
+              "2": "Worked in crypto compliance; understand products and AML risks",
+              "3": "Led crypto compliance; FCA registration; regulatory expertise",
+              "4": "Strategic crypto compliance leader; enterprise programs; regulatory engagement"
+            },
+            "mirrorsRole": {
+              "questionId": "sector_crypto",
+              "matchType": "minimum"
+            }
+          }
+        ]
+      },
+      {
+        "id": "additional_information",
+        "title": "Additional Information",
+        "description": "Share anything else that demonstrates your value as a candidate",
+        "order": 22,
+        "helpText": "This is your opportunity to highlight achievements, results, and career progression that haven't been captured elsewhere",
+        "questions": [
+          {
+            "id": "key_achievements",
+            "question": "Key Achievements & Exceeding Expectations",
+            "description": "Describe examples from previous roles where you exceeded expectations, met challenging targets, or took on responsibilities beyond your role",
+            "type": "textarea",
+            "required": false,
+            "placeholder": "e.g., 'Led remediation programme following FCA Section 166; Designed conduct risk framework adopted group-wide; Successfully navigated firm through SM&CR implementation with zero issues...'"
+          },
+          {
+            "id": "quantifiable_impact",
+            "question": "Quantifiable Results & Impact",
+            "description": "Share specific metrics that demonstrate your impact, such as regulatory outcomes, compliance improvements, or business outcomes you have delivered",
+            "type": "textarea",
+            "required": false,
+            "placeholder": "e.g., 'Reduced regulatory findings by 70% over 3 years; Achieved clean regulatory examination across all business lines; Implemented monitoring system detecting \u00a33M in potential consumer harm; Delivered AML transformation 20% under budget...'"
+          },
+          {
+            "id": "career_progression",
+            "question": "Career Progression & Promotions",
+            "description": "Describe your career trajectory, including promotions, expanded responsibilities, or recognition of your value by previous employers",
+            "type": "textarea",
+            "required": false,
+            "placeholder": "e.g., 'Promoted from Compliance Manager to Head of Compliance within 3 years; Expanded remit from conduct to enterprise-wide compliance; Headhunted by current employer to lead regulatory change programme...'"
+          },
+          {
+            "id": "unique_value_proposition",
+            "question": "Your Unique Value",
+            "description": "What makes you stand out from other compliance professionals? What unique combination of skills, experiences, or perspectives do you bring?",
+            "type": "textarea",
+            "required": false,
+            "placeholder": "e.g., 'Former regulator experience provides unique insight into supervisory expectations; Legal background combined with business acumen; Multi-jurisdictional experience across UK, EU, and US regulatory frameworks...'"
+          },
+          {
+            "id": "anything_else",
+            "question": "Anything Else?",
+            "description": "Is there anything else you would like us to know about your skills, experience, or candidacy that you haven't had the opportunity to share?",
+            "type": "textarea",
+            "required": false,
+            "placeholder": "Use this space to share any additional information that would help us understand your candidacy..."
+          }
+        ]
+      }
+    ],
+    "metadata": {
+      "totalQuestions": 170,
+      "totalSections": 22,
+      "estimatedCompletionMinutes": 28,
+      "lastUpdated": "2025-12-15"
+    }
+  }
+}

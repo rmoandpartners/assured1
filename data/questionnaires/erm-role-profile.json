@@ -1,0 +1,2584 @@
+{
+  "questionnaire": {
+    "id": "erm-role-profile",
+    "title": "Enterprise Risk Management Role Profile",
+    "description": "ERM-specific role requirements (complements general job-profile)",
+    "version": "1.2.1",
+    "createdAt": "2025-12-13",
+    "updatedAt": "2025-12-15",
+    "mirrorProfile": "erm-candidate-profile",
+    "parentProfile": "job-profile",
+    "importanceScale": {
+      "0": {
+        "label": "Not Required",
+        "description": "This skill/qualification is not needed for the role"
+      },
+      "1": {
+        "label": "Nice to Have",
+        "description": "Beneficial but not essential; would be a plus"
+      },
+      "2": {
+        "label": "Important",
+        "description": "Expected for the role; gaps would need development"
+      },
+      "3": {
+        "label": "Very Important",
+        "description": "Core requirement; strong competency expected"
+      },
+      "4": {
+        "label": "Essential",
+        "description": "Critical requirement; must have from day one"
+      }
+    },
+    "sections": [
+      {
+        "id": "erm_role_specifics",
+        "title": "ERM Role Specifics",
+        "description": "Enterprise Risk Management specific role characteristics",
+        "order": 1,
+        "questions": [
+          {
+            "id": "erm_role_level",
+            "question": "ERM Role Level",
+            "type": "select",
+            "required": true,
+            "options": [
+              {
+                "value": "analyst",
+                "label": "Risk Analyst / Associate"
+              },
+              {
+                "value": "senior_analyst",
+                "label": "Senior Risk Analyst / Senior Associate"
+              },
+              {
+                "value": "manager",
+                "label": "Risk Manager / AVP"
+              },
+              {
+                "value": "senior_manager",
+                "label": "Senior Risk Manager / VP"
+              },
+              {
+                "value": "director",
+                "label": "Risk Director / SVP"
+              },
+              {
+                "value": "head_of",
+                "label": "Head of ERM / MD"
+              },
+              {
+                "value": "cro",
+                "label": "CRO / Chief Risk Officer"
+              }
+            ],
+            "mirrorsCandidate": {
+              "questionId": "target_erm_level",
+              "matchType": "compatibility"
+            }
+          },
+          {
+            "id": "erm_function_scope",
+            "question": "ERM Function Scope",
+            "type": "select",
+            "required": true,
+            "options": [
+              {
+                "value": "group_enterprise",
+                "label": "Group / Enterprise-wide ERM"
+              },
+              {
+                "value": "divisional",
+                "label": "Divisional / Business Unit ERM"
+              },
+              {
+                "value": "regional",
+                "label": "Regional ERM"
+              },
+              {
+                "value": "entity",
+                "label": "Entity / Subsidiary ERM"
+              },
+              {
+                "value": "project_programme",
+                "label": "Project / Programme Risk"
+              }
+            ],
+            "mirrorsCandidate": {
+              "questionId": "erm_scope_experience",
+              "matchType": "compatibility"
+            }
+          },
+          {
+            "id": "erm_reporting_line",
+            "question": "ERM Function Reports To",
+            "type": "select",
+            "required": true,
+            "options": [
+              {
+                "value": "board_risk_committee",
+                "label": "Board / Risk Committee"
+              },
+              {
+                "value": "cro",
+                "label": "CRO / Chief Risk Officer"
+              },
+              {
+                "value": "cfo",
+                "label": "CFO / Finance Director"
+              },
+              {
+                "value": "coo",
+                "label": "COO / Operations Director"
+              },
+              {
+                "value": "head_of_risk",
+                "label": "Head of Risk / Risk Director"
+              },
+              {
+                "value": "other_c_suite",
+                "label": "Other C-Suite Executive"
+              }
+            ]
+          },
+          {
+            "id": "years_erm_required",
+            "question": "Minimum Years in Enterprise Risk Management",
+            "type": "number",
+            "required": true,
+            "min": 0,
+            "max": 20,
+            "helpText": "Years specifically in ERM roles or functions",
+            "mirrorsCandidate": {
+              "questionId": "years_in_erm",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "years_risk_required",
+            "question": "Minimum Years in Risk Management (broader)",
+            "type": "number",
+            "required": true,
+            "min": 0,
+            "max": 25,
+            "helpText": "Total years in any risk management discipline (operational, credit, market, IT risk, etc.)",
+            "mirrorsCandidate": {
+              "questionId": "years_in_risk_broad",
+              "matchType": "minimum"
+            }
+          }
+        ]
+      },
+      {
+        "id": "framework_requirements",
+        "title": "Risk Framework Knowledge",
+        "description": "Required familiarity with risk management frameworks and standards",
+        "order": 2,
+        "helpText": "Rate the importance of knowledge in each framework (0 = Not Required, 4 = Essential)",
+        "questions": [
+          {
+            "id": "framework_iso31000",
+            "question": "ISO 31000 (Risk Management)",
+            "description": "International standard for risk management principles and guidelines",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 2,
+            "proficiencyDefinitions": {
+              "1": "Aware of ISO 31000 principles; has read the standard",
+              "2": "Applied ISO 31000 principles in risk assessments; understands the framework structure",
+              "3": "Implemented ISO 31000 aligned risk frameworks; mapped organisational processes to standard",
+              "4": "Designed enterprise risk frameworks based on ISO 31000; led certification or alignment programs"
+            },
+            "mirrorsCandidate": {
+              "questionId": "framework_iso31000",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "framework_coso_erm",
+            "question": "COSO ERM Framework (2017)",
+            "description": "Committee of Sponsoring Organizations Enterprise Risk Management - Integrating with Strategy and Performance",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 2,
+            "proficiencyDefinitions": {
+              "1": "Familiar with COSO ERM components and principles; understands the cube/helix model",
+              "2": "Applied COSO ERM in risk assessments and reporting; integrated with strategy",
+              "3": "Implemented COSO ERM frameworks; designed risk appetite aligned to COSO principles",
+              "4": "Built enterprise risk programs based on COSO ERM; led COSO implementation transformations"
+            },
+            "mirrorsCandidate": {
+              "questionId": "framework_coso_erm",
+              "matchType": "minimum"
+            }
+          }
+        ]
+      },
+      {
+        "id": "systems_requirements",
+        "title": "GRC & Risk Systems Requirements",
+        "description": "Select which GRC platforms experience is required for this role",
+        "order": 3,
+        "questions": [
+          {
+            "id": "grc_systems_required",
+            "question": "Required GRC Systems Experience",
+            "description": "Select the GRC platforms where experience is required and specify the minimum proficiency level",
+            "type": "system_proficiency",
+            "required": false,
+            "proficiencyScale": {
+              "1": "Basic User - Can navigate and input data",
+              "2": "Proficient User - Runs reports, manages workflows",
+              "3": "Power User/Admin - Configures modules, designs workflows",
+              "4": "Implementation Lead - Designed and deployed the system"
+            },
+            "systems": [
+              {
+                "value": "metricstream",
+                "label": "MetricStream"
+              },
+              {
+                "value": "archer",
+                "label": "RSA Archer"
+              },
+              {
+                "value": "servicenow_grc",
+                "label": "ServiceNow GRC"
+              },
+              {
+                "value": "sai360",
+                "label": "SAI360 (BWise)"
+              },
+              {
+                "value": "ibm_openpages",
+                "label": "IBM OpenPages"
+              },
+              {
+                "value": "resolver",
+                "label": "Resolver (Kroll)"
+              },
+              {
+                "value": "onspring",
+                "label": "Onspring"
+              },
+              {
+                "value": "logicgate",
+                "label": "LogicGate"
+              },
+              {
+                "value": "diligent",
+                "label": "Diligent (HighBond)"
+              },
+              {
+                "value": "navex",
+                "label": "NAVEX Global"
+              },
+              {
+                "value": "riskonnect",
+                "label": "Riskonnect"
+              },
+              {
+                "value": "sas_risk",
+                "label": "SAS Risk Management"
+              },
+              {
+                "value": "workiva",
+                "label": "Workiva"
+              },
+              {
+                "value": "auditboard",
+                "label": "AuditBoard"
+              },
+              {
+                "value": "camms",
+                "label": "CAMMS"
+              }
+            ],
+            "mirrorsCandidate": {
+              "questionId": "grc_systems_experience",
+              "matchType": "overlap"
+            }
+          },
+          {
+            "id": "other_systems",
+            "question": "Other GRC/Risk Systems",
+            "description": "Specify any other GRC or risk management systems required",
+            "type": "textarea",
+            "required": false,
+            "mirrorsCandidate": {
+              "questionId": "other_systems",
+              "matchType": "compatibility"
+            }
+          },
+          {
+            "id": "grc_selection_implementation",
+            "question": "GRC System Selection & Implementation",
+            "description": "Leading GRC/ERM software selection, procurement, and implementation projects",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Understands GRC system landscape; participated in system demos or evaluations",
+              "2": "Contributed to RFP processes; participated in vendor evaluations; supported implementation workstreams",
+              "3": "Led GRC selection projects; designed evaluation criteria; managed implementation programmes; configured system modules",
+              "4": "Directed enterprise GRC implementations; established system governance; led multi-platform integration; designed GRC architecture"
+            },
+            "mirrorsCandidate": {
+              "questionId": "grc_selection_implementation",
+              "matchType": "minimum"
+            }
+          }
+        ]
+      },
+      {
+        "id": "risk_governance_strategy",
+        "title": "Risk Governance & Strategy",
+        "description": "Experience with risk governance structures and strategic risk management",
+        "order": 4,
+        "helpText": "Rate the importance of experience in each area (0 = Not Required, 4 = Essential)",
+        "questions": [
+          {
+            "id": "risk_governance_structures",
+            "question": "Risk Governance Structures",
+            "description": "Designing and operating board risk committees, executive risk forums, and governance hierarchies",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Understands governance hierarchy concepts; can interpret committee terms of reference and reporting lines",
+              "2": "Prepared board/committee papers; participated in risk committee meetings; maintained governance documentation",
+              "3": "Designed risk committee structures; drafted terms of reference; established reporting cadences",
+              "4": "Led enterprise governance transformation; designed multi-tier committee architecture; established delegated authority frameworks"
+            },
+            "mirrorsCandidate": {
+              "questionId": "risk_governance_structures",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "erm_strategy_alignment",
+            "question": "ERM Strategy Alignment",
+            "description": "Integrating risk management with corporate strategy and business objectives",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Understands link between risk and strategy; familiar with strategic risk concepts",
+              "2": "Mapped risks to strategic objectives; participated in strategy-risk integration workshops",
+              "3": "Embedded risk considerations into strategic planning cycles; designed risk-adjusted business cases",
+              "4": "Led enterprise strategy-risk integration; established risk as standing agenda item in strategy forums; designed risk-return optimisation frameworks"
+            },
+            "mirrorsCandidate": {
+              "questionId": "erm_strategy_alignment",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "risk_committee_structures",
+            "question": "Risk Committee Structures and Charters",
+            "description": "Designing and managing risk committees including terms of reference, agendas and effectiveness reviews",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Understands risk committee structures; familiar with typical committee terms of reference",
+              "2": "Supported risk committees; drafted agendas, minutes and action tracking; prepared committee papers",
+              "3": "Designed committee structures and charters; managed committee secretariat function; conducted effectiveness reviews",
+              "4": "Established board-level risk committee architecture; designed multi-tier committee frameworks; led governance transformations"
+            },
+            "mirrorsCandidate": {
+              "questionId": "risk_committee_structures",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "board_reporting",
+            "question": "Board-Level Risk Reporting",
+            "description": "Preparing and presenting risk information to board and executive committees",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Understands board reporting requirements; familiar with typical board pack content",
+              "2": "Contributed to board risk reports; prepared supporting analyses and appendices",
+              "3": "Authored board risk committee papers; designed executive dashboards; presented to senior management",
+              "4": "Presented directly to Board/Risk Committee; designed board risk reporting frameworks; established NED risk briefing programmes"
+            },
+            "mirrorsCandidate": {
+              "questionId": "board_reporting",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "risk_policy_development",
+            "question": "Risk Policy Development and Maintenance",
+            "description": "Developing, implementing and maintaining risk policies and standards",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Understands risk policy hierarchy and purpose; familiar with typical policy content",
+              "2": "Drafted risk policies and procedures; maintained policy documentation; supported policy reviews",
+              "3": "Developed risk policy frameworks; led policy approval processes; implemented policy governance mechanisms",
+              "4": "Designed enterprise policy architectures; established policy governance standards; led organisation-wide policy transformations"
+            },
+            "mirrorsCandidate": {
+              "questionId": "risk_policy_development",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "risk_operating_models",
+            "question": "Risk Operating Models",
+            "description": "Designing ERM operating models including centralised, federated, and hybrid structures",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Understands different operating model types; can describe centralised vs federated approaches",
+              "2": "Operated within defined risk operating model; documented roles and responsibilities",
+              "3": "Designed risk function operating model; established RACI matrices; defined 1st/2nd line interaction models",
+              "4": "Led operating model transformation; designed hybrid models balancing central oversight with business integration"
+            },
+            "mirrorsCandidate": {
+              "questionId": "risk_operating_models",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "risk_transformation",
+            "question": "Risk Transformation Programmes",
+            "description": "Leading or contributing to ERM transformation and maturity improvement initiatives",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Understands risk maturity concepts; familiar with transformation methodologies",
+              "2": "Contributed to transformation workstreams; conducted maturity assessments using frameworks (e.g., RIMS RMM)",
+              "3": "Led transformation workstreams; designed target operating models; managed transformation roadmaps",
+              "4": "Directed enterprise risk transformation programmes; established transformation governance; achieved measurable maturity improvements"
+            },
+            "mirrorsCandidate": {
+              "questionId": "risk_transformation",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "regulatory_engagement",
+            "question": "Regulatory Engagement & Relationship Management",
+            "description": "Managing relationships with regulators and supervisory bodies",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Understands regulatory landscape; familiar with relevant industry regulators and compliance requirements",
+              "2": "Supported regulatory interactions; prepared responses to information requests; tracked regulatory correspondence",
+              "3": "Led regulatory engagement; managed supervisory relationships; designed regulatory communication strategies",
+              "4": "Directed enterprise regulatory relationship management; established regulatory strategy; led interactions with senior regulators"
+            },
+            "mirrorsCandidate": {
+              "questionId": "regulatory_engagement",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "erm_maturity_assessment",
+            "question": "ERM Maturity Assessment",
+            "description": "Conducting ERM maturity assessments using established frameworks",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Understands maturity model concepts; familiar with frameworks (RIMS RMM, IRM Maturity Model)",
+              "2": "Participated in maturity assessments; gathered evidence; documented current state findings",
+              "3": "Led maturity assessments; designed assessment criteria; developed maturity improvement roadmaps",
+              "4": "Built enterprise maturity assessment programmes; designed bespoke maturity models; established continuous maturity monitoring"
+            },
+            "mirrorsCandidate": {
+              "questionId": "erm_maturity_assessment",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "erm_effectiveness_review",
+            "question": "ERM Effectiveness Reviews",
+            "description": "Designing and executing reviews of ERM programme effectiveness",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Understands ERM effectiveness concepts; familiar with review methodologies",
+              "2": "Contributed to effectiveness reviews; gathered stakeholder feedback; documented findings",
+              "3": "Led ERM effectiveness reviews; designed review frameworks; presented findings to senior management",
+              "4": "Established enterprise ERM effectiveness programmes; designed board-level effectiveness reporting; led remediation of effectiveness gaps"
+            },
+            "mirrorsCandidate": {
+              "questionId": "erm_effectiveness_review",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "erm_benchmarking",
+            "question": "ERM Benchmarking",
+            "description": "Benchmarking ERM capabilities against industry peers and standards",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Understands benchmarking concepts; familiar with industry ERM practices",
+              "2": "Participated in benchmarking exercises; gathered comparative data; documented peer practices",
+              "3": "Led benchmarking initiatives; established benchmarking partnerships; designed comparative analysis frameworks",
+              "4": "Built enterprise benchmarking programmes; established industry benchmarking consortia; led adoption of leading practices"
+            },
+            "mirrorsCandidate": {
+              "questionId": "erm_benchmarking",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "integrated_risk_framework",
+            "question": "Integrated Risk Framework Development",
+            "description": "Developing integrated frameworks spanning ERM, Compliance, BCM, Operational Resilience, and Insurance",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Understands relationships between risk disciplines; familiar with GRC convergence concepts",
+              "2": "Worked across multiple risk disciplines; contributed to framework alignment initiatives",
+              "3": "Designed integrated frameworks; harmonised taxonomies and processes across ERM, Compliance, BCM; established cross-functional governance",
+              "4": "Led enterprise GRC integration; built unified risk and control frameworks; established integrated assurance models"
+            },
+            "mirrorsCandidate": {
+              "questionId": "integrated_risk_framework",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "three_lines_coordination",
+            "question": "Three Lines Model Coordination",
+            "description": "Coordinating risk activities across first, second, and third lines of defence",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Understands three lines model; familiar with roles and responsibilities across lines",
+              "2": "Worked within defined three lines structure; participated in cross-line coordination",
+              "3": "Designed three lines interaction models; established combined assurance approaches; coordinated audit and risk activities",
+              "4": "Led enterprise three lines transformation; built integrated assurance frameworks; established line-of-defence governance"
+            },
+            "mirrorsCandidate": {
+              "questionId": "three_lines_coordination",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "erm_assurance_provision",
+            "question": "ERM Assurance Provision",
+            "description": "Providing second or third line assurance over ERM effectiveness",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Understands assurance concepts; familiar with assurance vs advisory distinction",
+              "2": "Supported ERM assurance activities; gathered evidence; documented control effectiveness",
+              "3": "Led ERM assurance reviews; designed assurance programmes; presented assurance opinions to committees",
+              "4": "Established enterprise ERM assurance frameworks; designed continuous assurance approaches; led external assurance engagements"
+            },
+            "mirrorsCandidate": {
+              "questionId": "erm_assurance_provision",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "committee_membership",
+            "question": "Risk/Audit Committee Membership",
+            "description": "Serving as member (not secretary) of risk, audit, or governance committees",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Attended committees as observer or presenter; understands committee dynamics",
+              "2": "Served as management committee member (operational risk committee, project risk committee)",
+              "3": "Served as executive committee member; contributed to strategic risk decisions; challenged management proposals",
+              "4": "Served as board committee member (Board Risk Committee, Audit Committee); provided independent oversight; influenced enterprise risk strategy"
+            },
+            "mirrorsCandidate": {
+              "questionId": "committee_membership",
+              "matchType": "minimum"
+            }
+          }
+        ]
+      },
+      {
+        "id": "risk_appetite_tolerance",
+        "title": "Risk Appetite & Tolerance",
+        "description": "Experience with risk appetite frameworks, statements and tolerance setting",
+        "order": 5,
+        "helpText": "Rate the importance of experience in each area (0 = Not Required, 4 = Essential)",
+        "questions": [
+          {
+            "id": "risk_appetite_framework",
+            "question": "Risk Appetite Framework Development",
+            "description": "Designing comprehensive risk appetite frameworks linking strategy, appetite, tolerance and limits",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Understands risk appetite concepts; familiar with appetite framework components (capacity, appetite, tolerance, limits)",
+              "2": "Operated within risk appetite frameworks; monitored appetite metrics; supported framework documentation",
+              "3": "Developed risk appetite frameworks for business units; designed appetite hierarchies linking group to entity level",
+              "4": "Designed enterprise risk appetite frameworks; established board-approved appetite architecture; integrated appetite with strategy and capital planning"
+            },
+            "mirrorsCandidate": {
+              "questionId": "risk_appetite_framework",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "risk_appetite_statements",
+            "question": "Risk Appetite Statement Formulation",
+            "description": "Drafting qualitative and quantitative risk appetite statements",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Understands risk appetite statement structure; can interpret qualitative statements (e.g., 'We have no appetite for regulatory breaches')",
+              "2": "Drafted supporting appetite documentation; translated qualitative statements into operational guidance",
+              "3": "Authored risk appetite statements; developed both qualitative (e.g., 'We accept moderate operational risk to support growth initiatives') and quantitative statements (e.g., 'Maximum annual risk event losses of \u00a35m')",
+              "4": "Designed enterprise appetite statement frameworks; led board appetite articulation workshops; established appetite statement governance and refresh cycles"
+            },
+            "mirrorsCandidate": {
+              "questionId": "risk_appetite_statements",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "risk_tolerance_thresholds",
+            "question": "Risk Tolerance Thresholds",
+            "description": "Setting and calibrating quantitative risk limits and thresholds",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Understands tolerance vs appetite distinction; can interpret threshold breach reports",
+              "2": "Monitored tolerance thresholds; escalated breaches; maintained threshold registers",
+              "3": "Calibrated risk thresholds (e.g., operational loss tolerance of \u00a35m per event); designed escalation triggers; established amber/red warning levels",
+              "4": "Designed enterprise tolerance framework; linked tolerances to business constraints and strategic objectives; established dynamic threshold adjustment mechanisms"
+            },
+            "mirrorsCandidate": {
+              "questionId": "risk_tolerance_thresholds",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "capacity_vs_appetite",
+            "question": "Risk Capacity vs Appetite Analysis",
+            "description": "Analysing relationship between risk capacity (maximum risk) and risk appetite (desired risk)",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Understands distinction between capacity and appetite; familiar with buffer concepts",
+              "2": "Documented capacity calculations; tracked appetite headroom; reported capacity utilisation",
+              "3": "Performed capacity analyses linking to resource constraints; designed appetite within capacity constraints; established management buffers",
+              "4": "Built enterprise capacity frameworks; designed stress-adjusted capacity models; established dynamic appetite allocation within capacity"
+            },
+            "mirrorsCandidate": {
+              "questionId": "capacity_vs_appetite",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "appetite_metrics",
+            "question": "Risk Appetite Metrics",
+            "description": "Defining and tracking metrics that measure appetite utilisation",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Understands appetite metric concepts; can interpret appetite dashboards",
+              "2": "Collected and reported appetite metrics; maintained metric definitions; tracked metric trends",
+              "3": "Designed appetite metrics (e.g., 'Operational losses <\u00a35m annually', 'Project delays <10% of portfolio'); established metric hierarchies",
+              "4": "Built enterprise appetite metric frameworks; designed leading indicator metrics; established metric governance and attestation processes"
+            },
+            "mirrorsCandidate": {
+              "questionId": "appetite_metrics",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "limit_monitoring",
+            "question": "Limit Monitoring & Breach Management",
+            "description": "Operating limit monitoring systems and managing threshold breaches",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Understands limit monitoring concepts; can interpret limit utilisation reports (e.g., 'Green <80%, Amber 80-95%, Red >95% of limit')",
+              "2": "Performed daily/weekly limit monitoring; escalated breaches; tracked breach remediation",
+              "3": "Designed limit monitoring frameworks; established breach escalation protocols; implemented automated alerting systems",
+              "4": "Built enterprise limit management infrastructure; designed real-time monitoring capabilities; established limit governance committees"
+            },
+            "mirrorsCandidate": {
+              "questionId": "limit_monitoring",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "appetite_governance",
+            "question": "Risk Appetite Governance",
+            "description": "Managing appetite approval, review and exception processes",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Understands appetite governance requirements; familiar with annual review cycles",
+              "2": "Supported appetite review processes; documented exception requests; tracked governance actions",
+              "3": "Managed appetite governance cycle; designed exception approval workflows; established temporary limit increase protocols",
+              "4": "Built enterprise appetite governance framework; established board appetite approval processes; designed appetite integration with strategic planning"
+            },
+            "mirrorsCandidate": {
+              "questionId": "appetite_governance",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "appetite_cascading",
+            "question": "Risk Appetite Cascading",
+            "description": "Translating enterprise risk appetite into divisional and functional limits",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Understands appetite cascading concepts; familiar with limit hierarchies",
+              "2": "Documented cascaded limits; tracked limit allocation across business units",
+              "3": "Designed appetite cascading frameworks; established allocation methodologies; managed limit distribution",
+              "4": "Built enterprise appetite cascading infrastructure; designed dynamic allocation mechanisms; established cascading governance"
+            },
+            "mirrorsCandidate": {
+              "questionId": "appetite_cascading",
+              "matchType": "minimum"
+            }
+          }
+        ]
+      },
+      {
+        "id": "risk_assessment_identification",
+        "title": "Risk Assessment & Identification",
+        "description": "Experience with risk assessment methodologies and identification techniques",
+        "order": 6,
+        "helpText": "Rate the importance of experience in each area (0 = Not Required, 4 = Essential)",
+        "questions": [
+          {
+            "id": "risk_scoring_methodologies",
+            "question": "Risk Scoring Methodologies",
+            "description": "Applying consistent approaches to risk scoring and prioritisation",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Understands risk scoring concepts; can interpret heat maps and risk matrices",
+              "2": "Applied scoring methodologies; participated in risk rating calibration; documented scoring rationale",
+              "3": "Designed scoring frameworks; established impact scales (e.g., '5=Catastrophic >\u00a350m, 4=Major \u00a310-50m, 3=Moderate \u00a31-10m'); led calibration exercises",
+              "4": "Built enterprise scoring methodologies; designed cross-risk-type comparability; established scoring governance and challenge processes"
+            },
+            "mirrorsCandidate": {
+              "questionId": "risk_scoring_methodologies",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "risk_identification_methods",
+            "question": "Risk Identification Methods",
+            "description": "Conducting risk identification through workshops, interviews, and process analysis",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Understands risk identification techniques; familiar with common methods (brainstorming, checklists, SWIFT)",
+              "2": "Participated in risk identification workshops; conducted interviews; documented identified risks",
+              "3": "Facilitated risk identification workshops; designed workshop methodologies; led cross-functional identification exercises",
+              "4": "Designed enterprise risk identification frameworks; established ongoing identification processes; built risk sensing capabilities"
+            },
+            "mirrorsCandidate": {
+              "questionId": "risk_identification_methods",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "risk_workshop_facilitation",
+            "question": "Risk Workshop Facilitation",
+            "description": "Planning and facilitating risk workshops with diverse stakeholder groups",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Understands risk workshop purposes; participated in risk workshops as attendee",
+              "2": "Supported workshop logistics and documentation; captured outputs; followed up on actions",
+              "3": "Facilitated risk workshops; designed agendas and materials; managed group dynamics; synthesised diverse perspectives",
+              "4": "Designed enterprise workshop programs; trained facilitators; established workshop methodologies for different contexts (strategy, projects, operations)"
+            },
+            "mirrorsCandidate": {
+              "questionId": "risk_workshop_facilitation",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "root_cause_analysis",
+            "question": "Root Cause Analysis",
+            "description": "Identifying underlying causes of risk events and control failures",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Understands root cause analysis concepts; familiar with '5 Whys' and fishbone diagrams",
+              "2": "Conducted root cause analyses for incidents; documented causal chains; identified contributing factors",
+              "3": "Led complex root cause investigations; applied multiple techniques (Ishikawa, fault tree, barrier analysis); designed corrective actions",
+              "4": "Established enterprise RCA capabilities; integrated RCA with incident management; drove systemic improvement from RCA insights"
+            },
+            "mirrorsCandidate": {
+              "questionId": "root_cause_analysis",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "risk_prioritisation",
+            "question": "Risk Prioritisation Frameworks",
+            "description": "Prioritising risks for management attention and resource allocation",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Understands risk prioritisation concepts; familiar with heat maps and ranking approaches",
+              "2": "Applied prioritisation criteria; ranked risks for reporting; supported prioritisation discussions",
+              "3": "Designed prioritisation frameworks; developed multi-criteria scoring (impact, velocity, controllability); led prioritisation reviews",
+              "4": "Built enterprise prioritisation capabilities; integrated with resource allocation and strategic planning; established dynamic reprioritisation processes"
+            },
+            "mirrorsCandidate": {
+              "questionId": "risk_prioritisation",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "inherent_residual_assessment",
+            "question": "Inherent and Residual Risk Assessment",
+            "description": "Assessing risks before and after control application",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Understands inherent vs residual concepts; can interpret risk assessment outputs",
+              "2": "Performed inherent/residual assessments; documented control effectiveness assumptions; calculated risk reduction",
+              "3": "Designed assessment methodologies; established scoring criteria (e.g., 5x5 matrix: Impact 1-5, Likelihood 1-5); calibrated assessment scales",
+              "4": "Built enterprise assessment frameworks; designed quantitative assessment approaches; established assessment quality assurance processes"
+            },
+            "mirrorsCandidate": {
+              "questionId": "inherent_residual_assessment",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "risk_taxonomy_development",
+            "question": "Risk Taxonomy Development",
+            "description": "Creating and maintaining risk classification structures",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Understands risk taxonomy concepts; familiar with standard classifications (operational, strategic, financial, etc.)",
+              "2": "Applied existing taxonomies; mapped risks to taxonomy categories; maintained taxonomy documentation",
+              "3": "Designed risk taxonomies; established category hierarchies; defined risk type attributes and metadata",
+              "4": "Built enterprise taxonomy frameworks; established cross-risk-type linkages; led taxonomy harmonisation programmes"
+            },
+            "mirrorsCandidate": {
+              "questionId": "risk_taxonomy_development",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "control_effectiveness",
+            "question": "Control Effectiveness Assessment",
+            "description": "Evaluating design and operating effectiveness of controls",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Understands control effectiveness concepts; familiar with design vs operating effectiveness",
+              "2": "Assessed control effectiveness; documented control ratings; tracked control gaps",
+              "3": "Designed control assessment frameworks; established effectiveness criteria; led control testing programmes",
+              "4": "Built enterprise control effectiveness infrastructure; established control governance; designed continuous control monitoring"
+            },
+            "mirrorsCandidate": {
+              "questionId": "control_effectiveness",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "rcsa_processes",
+            "question": "RCSA Processes",
+            "description": "Risk and Control Self-Assessment programme design and execution",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Understands RCSA concepts; familiar with self-assessment methodologies",
+              "2": "Participated in RCSA exercises; completed self-assessments; documented RCSA outputs",
+              "3": "Designed RCSA programmes; established RCSA governance; led RCSA implementation across business units",
+              "4": "Built enterprise RCSA frameworks; established RCSA quality assurance; designed RCSA integration with GRC systems"
+            },
+            "mirrorsCandidate": {
+              "questionId": "rcsa_processes",
+              "matchType": "minimum"
+            }
+          }
+        ]
+      },
+      {
+        "id": "risk_registers_documentation",
+        "title": "Risk Registers & Documentation",
+        "description": "Experience with risk register design, implementation and maintenance",
+        "order": 7,
+        "helpText": "Rate the importance of experience in each area (0 = Not Required, 4 = Essential)",
+        "questions": [
+          {
+            "id": "risk_register_management",
+            "question": "Risk Register Management",
+            "description": "Maintaining and operating enterprise and divisional risk registers",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Understands risk register purpose and structure; can interpret register entries",
+              "2": "Maintained risk registers; updated risk assessments; tracked risk status changes",
+              "3": "Designed risk register structures; established register hierarchies (entity > division > function); defined mandatory fields and data standards",
+              "4": "Built enterprise risk register architecture; designed aggregation methodologies; established register governance and quality standards"
+            },
+            "mirrorsCandidate": {
+              "questionId": "risk_register_management",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "risk_register_maintenance",
+            "question": "Risk Register Maintenance Protocols",
+            "description": "Establishing and operating risk register update and review processes",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Understands register maintenance requirements; familiar with update cycles",
+              "2": "Maintained register data; performed regular updates; tracked review completion",
+              "3": "Designed maintenance protocols; established review cycles and ownership; managed attestation processes",
+              "4": "Built enterprise register governance; established data quality controls; integrated register maintenance with risk management lifecycle"
+            },
+            "mirrorsCandidate": {
+              "questionId": "risk_register_maintenance",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "risk_data_quality",
+            "question": "Risk Data Quality Management",
+            "description": "Ensuring accuracy, completeness and consistency of risk data",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Understands risk data quality concepts; familiar with common data issues",
+              "2": "Performed data quality checks; identified and corrected data issues; validated data accuracy",
+              "3": "Designed data quality frameworks; established quality metrics and monitoring; led data remediation initiatives",
+              "4": "Built enterprise risk data governance; established data quality standards and controls; integrated with enterprise data management"
+            },
+            "mirrorsCandidate": {
+              "questionId": "risk_data_quality",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "risk_action_tracking",
+            "question": "Risk Action Tracking Mechanisms",
+            "description": "Tracking and managing risk mitigation actions to completion",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Understands action tracking requirements; familiar with action management workflows",
+              "2": "Tracked actions to completion; monitored due dates; followed up with action owners",
+              "3": "Designed action tracking frameworks; established escalation protocols; integrated with risk reporting",
+              "4": "Built enterprise action management capabilities; established action governance standards; integrated with issue and control remediation"
+            },
+            "mirrorsCandidate": {
+              "questionId": "risk_action_tracking",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "top_risk_reporting",
+            "question": "Top/Principal Risk Reporting",
+            "description": "Identifying and reporting on organisation's principal risks",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Understands top risk concepts; familiar with principal risk frameworks",
+              "2": "Contributed to top risk reporting; tracked principal risk movements; prepared supporting analyses",
+              "3": "Designed top risk reporting frameworks; established principal risk identification criteria; authored board top risk reports",
+              "4": "Built enterprise principal risk frameworks; established top risk governance; led annual report risk disclosure process"
+            },
+            "mirrorsCandidate": {
+              "questionId": "top_risk_reporting",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "risk_ownership_accountability",
+            "question": "Risk Ownership & Accountability",
+            "description": "Establishing clear risk ownership structures",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Understands risk ownership concepts; familiar with RACI frameworks",
+              "2": "Documented risk ownership; maintained ownership registers; tracked ownership changes",
+              "3": "Designed risk ownership frameworks; established escalation paths; defined accountability standards",
+              "4": "Built enterprise accountability frameworks; established senior leadership accountability; designed ownership governance"
+            },
+            "mirrorsCandidate": {
+              "questionId": "risk_ownership_accountability",
+              "matchType": "minimum"
+            }
+          }
+        ]
+      },
+      {
+        "id": "key_risk_indicators",
+        "title": "Key Risk Indicators (KRIs)",
+        "description": "Experience with KRI design, monitoring and reporting",
+        "order": 8,
+        "helpText": "Rate the importance of experience in each area (0 = Not Required, 4 = Essential)",
+        "questions": [
+          {
+            "id": "kri_design",
+            "question": "KRI Design & Selection",
+            "description": "Designing meaningful key risk indicators linked to risk appetite",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Understands KRI concepts; can distinguish KRIs from KPIs; familiar with leading vs lagging indicators",
+              "2": "Documented KRI definitions; collected KRI data; tracked KRI trends",
+              "3": "Designed KRIs linked to risk appetite; established threshold calibration (e.g., 'Staff turnover: Green <10%, Amber 10-15%, Red >15%'); built KRI hierarchies",
+              "4": "Built enterprise KRI frameworks; designed predictive KRI models; established KRI-appetite integration; led KRI automation initiatives"
+            },
+            "mirrorsCandidate": {
+              "questionId": "kri_design",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "kri_threshold_calibration",
+            "question": "KRI Threshold Calibration",
+            "description": "Setting and adjusting KRI thresholds based on risk appetite",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Understands threshold concepts; can interpret RAG status dashboards",
+              "2": "Monitored KRI breaches; documented threshold rationale; recommended threshold adjustments",
+              "3": "Calibrated thresholds using historical data and appetite; designed statistical threshold-setting approaches; established threshold review cycles",
+              "4": "Built enterprise threshold frameworks; designed dynamic threshold adjustment; established threshold governance and exception processes"
+            },
+            "mirrorsCandidate": {
+              "questionId": "kri_threshold_calibration",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "kri_monitoring_frameworks",
+            "question": "KRI Monitoring Frameworks",
+            "description": "Establishing systematic KRI collection, monitoring and escalation processes",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Understands KRI monitoring requirements; familiar with monitoring workflows",
+              "2": "Collected and reported KRI data; monitored trends; escalated breaches",
+              "3": "Designed monitoring frameworks; established collection processes and ownership; integrated with risk reporting cycles",
+              "4": "Built enterprise KRI monitoring capabilities; automated data collection; established real-time monitoring for critical KRIs"
+            },
+            "mirrorsCandidate": {
+              "questionId": "kri_monitoring_frameworks",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "kri_reporting_dashboards",
+            "question": "KRI Reporting & Dashboards",
+            "description": "Building risk dashboards and KRI reporting mechanisms",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Can interpret KRI dashboards; understands traffic-light reporting concepts",
+              "2": "Produced KRI reports; maintained dashboards; analysed KRI trends",
+              "3": "Designed KRI dashboards; built automated reporting; established commentary standards for threshold breaches",
+              "4": "Built enterprise KRI reporting infrastructure; designed real-time dashboards; established KRI data governance and quality assurance"
+            },
+            "mirrorsCandidate": {
+              "questionId": "kri_reporting_dashboards",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "leading_lagging_indicators",
+            "question": "Leading & Lagging Indicators",
+            "description": "Designing balanced suites of predictive and outcome indicators",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Understands leading vs lagging concepts; can classify indicators by type",
+              "2": "Identified leading and lagging indicators; documented indicator classifications",
+              "3": "Designed balanced indicator suites; established predictive indicator frameworks; validated leading indicator effectiveness",
+              "4": "Built enterprise indicator frameworks; designed predictive analytics for risk early warning; established indicator correlation analysis"
+            },
+            "mirrorsCandidate": {
+              "questionId": "leading_lagging_indicators",
+              "matchType": "minimum"
+            }
+          }
+        ]
+      },
+      {
+        "id": "risk_quantification_modeling",
+        "title": "Risk Quantification & Modeling",
+        "description": "Experience with quantitative risk analysis and modeling techniques",
+        "order": 9,
+        "helpText": "Rate the importance of experience in each area (0 = Not Required, 4 = Essential)",
+        "questions": [
+          {
+            "id": "risk_quantification_methods",
+            "question": "Risk Quantification Methods",
+            "description": "Using quantitative approaches to measure and express risk exposure",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Understands quantification concepts; familiar with loss distributions and expected value calculations",
+              "2": "Applied quantification methods; analysed historical loss data; calculated key risk metrics",
+              "3": "Designed quantification methodologies; selected statistical approaches; validated model outputs against actual experience",
+              "4": "Built enterprise quantification frameworks; established model governance; led quantification capability development across risk types"
+            },
+            "mirrorsCandidate": {
+              "questionId": "risk_quantification_methods",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "probabilistic_risk_modeling",
+            "question": "Probabilistic Risk Modeling",
+            "description": "Building and using probabilistic models to estimate risk",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Understands probabilistic concepts; familiar with probability distributions",
+              "2": "Used probabilistic models; interpreted model outputs; documented assumptions",
+              "3": "Built probabilistic risk models; selected and fitted distributions; conducted sensitivity analysis",
+              "4": "Designed enterprise modeling frameworks; established model validation standards; led advanced modeling initiatives"
+            },
+            "mirrorsCandidate": {
+              "questionId": "probabilistic_risk_modeling",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "monte_carlo_simulation",
+            "question": "Monte Carlo Simulation",
+            "description": "Using Monte Carlo simulation for risk analysis and decision support",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Understands Monte Carlo concepts; familiar with simulation principles",
+              "2": "Used Monte Carlo tools (e.g., @Risk, Crystal Ball); interpreted simulation outputs",
+              "3": "Built Monte Carlo models; designed correlation structures; conducted convergence analysis",
+              "4": "Designed enterprise simulation capabilities; established simulation standards; integrated with capital and planning models"
+            },
+            "mirrorsCandidate": {
+              "questionId": "monte_carlo_simulation",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "var_modeling",
+            "question": "Value at Risk (VaR) Modeling",
+            "description": "Calculating and interpreting Value at Risk measures (primarily relevant for organisations with market/trading risk exposure)",
+            "type": "slider",
+            "required": false,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "helpText": "Most relevant for organisations with significant market risk, trading operations, or investment portfolios. May be less applicable for non-trading organisations.",
+            "proficiencyDefinitions": {
+              "1": "Understands VaR concepts; familiar with parametric, historical and Monte Carlo VaR approaches",
+              "2": "Applied VaR in risk assessments; interpreted VaR reports; analysed threshold breaches",
+              "3": "Built VaR models; selected appropriate methodologies; conducted backtesting and validation",
+              "4": "Designed enterprise VaR frameworks; led VaR methodology development; integrated VaR with limit frameworks"
+            },
+            "mirrorsCandidate": {
+              "questionId": "var_modeling",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "loss_data_analysis",
+            "question": "Loss Data Collection & Analysis",
+            "description": "Collecting, categorising and analysing operational and risk loss data",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Understands loss data concepts; familiar with loss event categories",
+              "2": "Collected loss data; categorised events; maintained loss databases",
+              "3": "Designed loss data frameworks; established collection standards; analysed loss distributions and trends",
+              "4": "Built enterprise loss data infrastructure; established external loss data consortia; designed loss data modelling approaches"
+            },
+            "mirrorsCandidate": {
+              "questionId": "loss_data_analysis",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "ai_ml_erm_application",
+            "question": "AI/ML Application in ERM",
+            "description": "Applying artificial intelligence and machine learning to enhance risk management processes",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Understands AI/ML concepts; familiar with potential ERM applications (NLP for incidents, predictive analytics)",
+              "2": "Worked with AI/ML risk tools; interpreted model outputs; contributed to AI use case development",
+              "3": "Implemented AI/ML risk solutions; designed automated risk identification; built predictive risk models",
+              "4": "Led enterprise AI/ML risk programmes; established AI governance for risk; designed advanced analytics capabilities (NLP, anomaly detection, predictive modeling)"
+            },
+            "mirrorsCandidate": {
+              "questionId": "ai_ml_erm_application",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "advanced_risk_analytics",
+            "question": "Advanced Risk Analytics",
+            "description": "Applying advanced analytics including correlation analysis, network analysis, and statistical modeling",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Understands advanced analytics concepts; familiar with correlation and dependency analysis",
+              "2": "Applied correlation analysis; interpreted complex analytical outputs; used statistical tools (R, Python, SAS)",
+              "3": "Built advanced analytical models; designed correlation matrices; implemented network analysis for risk interdependencies",
+              "4": "Led enterprise risk analytics programmes; designed copula models; established advanced quantitative risk capabilities"
+            },
+            "mirrorsCandidate": {
+              "questionId": "advanced_risk_analytics",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "risk_data_engineering",
+            "question": "Risk Data Engineering",
+            "description": "Building risk data pipelines, establishing data quality frameworks, and integrating data sources",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Understands risk data concepts; familiar with data quality principles",
+              "2": "Worked with risk data systems; performed data quality checks; supported data integration initiatives",
+              "3": "Designed risk data models; built data pipelines; established data quality frameworks; integrated multiple data sources",
+              "4": "Led enterprise risk data programmes; designed risk data architecture; established data governance; built real-time risk data capabilities"
+            },
+            "mirrorsCandidate": {
+              "questionId": "risk_data_engineering",
+              "matchType": "minimum"
+            }
+          }
+        ]
+      },
+      {
+        "id": "scenario_stress_testing",
+        "title": "Scenario Analysis & Stress Testing",
+        "description": "Experience with scenario development and stress testing programs",
+        "order": 10,
+        "helpText": "Rate the importance of experience in each area (0 = Not Required, 4 = Essential)",
+        "questions": [
+          {
+            "id": "scenario_design",
+            "question": "Scenario Design & Development",
+            "description": "Designing plausible risk scenarios with defined narratives and impacts",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Understands scenario concepts; familiar with historical loss events as scenario inputs",
+              "2": "Contributed to scenario development; documented scenario narratives and assumptions; researched external events",
+              "3": "Designed scenarios for stress testing; developed scenario libraries; facilitated scenario workshops with business SMEs",
+              "4": "Built enterprise scenario frameworks; established scenario governance; designed scenarios for board and regulatory submissions"
+            },
+            "mirrorsCandidate": {
+              "questionId": "scenario_design",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "stress_testing_programmes",
+            "question": "Stress Testing Programmes",
+            "description": "Designing and executing stress testing programmes",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Understands stress testing concepts; familiar with industry stress testing practices",
+              "2": "Participated in stress testing exercises; collected and validated data; documented stress test results",
+              "3": "Designed stress testing programmes; established methodology and governance; coordinated cross-functional stress exercises",
+              "4": "Led enterprise stress testing programmes; designed board-level stress test reporting; established stress testing centres of excellence"
+            },
+            "mirrorsCandidate": {
+              "questionId": "stress_testing_programmes",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "reverse_stress_testing",
+            "question": "Reverse Stress Testing",
+            "description": "Identifying scenarios that could cause business failure",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Understands reverse stress testing concepts; familiar with business failure scenarios",
+              "2": "Participated in reverse stress testing; documented potential failure points",
+              "3": "Designed reverse stress testing approaches; identified business model vulnerabilities; linked to recovery planning",
+              "4": "Built enterprise reverse stress testing capabilities; established methodology standards; integrated with strategic planning"
+            },
+            "mirrorsCandidate": {
+              "questionId": "reverse_stress_testing",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "multi_factor_scenario",
+            "question": "Multi-Factor Scenario Analysis",
+            "description": "Developing scenarios with correlated risk factor movements",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Understands scenario correlation concepts; familiar with multi-factor approaches",
+              "2": "Analysed multi-factor scenarios; documented risk factor interactions",
+              "3": "Designed multi-factor scenarios; modeled correlations and contagion effects; assessed systemic impacts",
+              "4": "Built enterprise multi-factor capabilities; established correlation frameworks; led complex scenario modeling"
+            },
+            "mirrorsCandidate": {
+              "questionId": "multi_factor_scenario",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "sensitivity_analysis",
+            "question": "Sensitivity Analysis",
+            "description": "Analysing how changes in risk factors affect overall risk exposure",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Understands sensitivity analysis concepts; familiar with what-if analysis",
+              "2": "Performed sensitivity analyses; documented factor impacts; presented sensitivity results",
+              "3": "Designed sensitivity frameworks; built sensitivity models; established sensitivity reporting standards",
+              "4": "Built enterprise sensitivity capabilities; designed automated sensitivity testing; integrated with stress testing and capital planning"
+            },
+            "mirrorsCandidate": {
+              "questionId": "sensitivity_analysis",
+              "matchType": "minimum"
+            }
+          }
+        ]
+      },
+      {
+        "id": "emerging_risk_horizon_scanning",
+        "title": "Emerging Risk & Horizon Scanning",
+        "description": "Experience with emerging risk identification and forward-looking risk analysis",
+        "order": 11,
+        "helpText": "Rate the importance of experience in each area (0 = Not Required, 4 = Essential)",
+        "questions": [
+          {
+            "id": "emerging_risk_identification",
+            "question": "Emerging Risk Identification Methodologies",
+            "description": "Systematic approaches to identify emerging and evolving risks",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Understands emerging risk concepts; familiar with common emerging risk themes",
+              "2": "Monitored emerging risk sources; contributed to emerging risk discussions; documented potential impacts",
+              "3": "Designed emerging risk processes; led identification workshops; established monitoring and escalation frameworks",
+              "4": "Built enterprise emerging risk capabilities; established early warning systems; integrated with strategic planning"
+            },
+            "mirrorsCandidate": {
+              "questionId": "emerging_risk_identification",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "horizon_scanning_methods",
+            "question": "Horizon Scanning Methods",
+            "description": "Monitoring external environment for signals of emerging risks",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Understands horizon scanning concepts; familiar with external monitoring sources",
+              "2": "Monitored regulatory developments, industry trends, and market signals; summarised emerging themes",
+              "3": "Designed horizon scanning programmes; established monitoring networks; analysed weak signals and trend intersections",
+              "4": "Built enterprise horizon scanning capabilities; established strategic foresight processes; integrated scanning with strategy and risk appetite"
+            },
+            "mirrorsCandidate": {
+              "questionId": "horizon_scanning_methods",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "trend_analysis",
+            "question": "Trend Analysis for Risk Identification",
+            "description": "Analysing trends to identify emerging risk themes",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Understands trend analysis concepts; familiar with PESTLE and similar frameworks",
+              "2": "Analysed trends and their risk implications; documented trend-risk linkages",
+              "3": "Designed trend analysis approaches; established trend monitoring; linked trends to strategic risks",
+              "4": "Built enterprise trend analysis capabilities; established trend intelligence networks; integrated with strategic risk assessment"
+            },
+            "mirrorsCandidate": {
+              "questionId": "trend_analysis",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "emerging_risk_assessment",
+            "question": "Emerging Risk Assessment Frameworks",
+            "description": "Assessing and prioritising emerging risks with limited data",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Understands emerging risk assessment challenges; familiar with qualitative assessment approaches",
+              "2": "Assessed emerging risks using structured frameworks; documented velocity and uncertainty dimensions",
+              "3": "Designed emerging risk assessment methodologies; established assessment criteria (velocity, impact trajectory, uncertainty)",
+              "4": "Built enterprise emerging risk assessment capabilities; established emerging risk registers; integrated with principal risk framework"
+            },
+            "mirrorsCandidate": {
+              "questionId": "emerging_risk_assessment",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "emerging_risk_reporting",
+            "question": "Emerging Risk Reporting",
+            "description": "Communicating emerging risks to leadership and board",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Understands emerging risk reporting requirements; familiar with reporting formats",
+              "2": "Contributed to emerging risk reports; prepared content for leadership",
+              "3": "Designed emerging risk reporting; authored board-level emerging risk updates; visualised risk trajectories",
+              "4": "Established enterprise emerging risk reporting frameworks; shaped board emerging risk agenda; integrated with strategic reporting"
+            },
+            "mirrorsCandidate": {
+              "questionId": "emerging_risk_reporting",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "emerging_risk_response",
+            "question": "Emerging Risk Response Planning",
+            "description": "Developing response strategies for emerging risks",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Understands response planning concepts; familiar with options for emerging risks",
+              "2": "Contributed to response planning; documented potential actions and triggers",
+              "3": "Designed response frameworks for emerging risks; established action triggers and escalation points",
+              "4": "Built enterprise emerging risk response capabilities; established dynamic response frameworks; integrated with strategic planning"
+            },
+            "mirrorsCandidate": {
+              "questionId": "emerging_risk_response",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "interconnected_risk_analysis",
+            "question": "Interconnected Risk Analysis",
+            "description": "Analysing risk interdependencies and cascade effects",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Understands risk interconnection concepts; familiar with cascade effects",
+              "2": "Identified risk interdependencies; documented causal linkages; mapped risk relationships",
+              "3": "Designed interconnected risk frameworks; built risk network models; analysed systemic impacts",
+              "4": "Built enterprise interconnected risk capabilities; established risk network analytics; designed contagion modelling approaches"
+            },
+            "mirrorsCandidate": {
+              "questionId": "interconnected_risk_analysis",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "climate_risk_assessment",
+            "question": "Climate Risk Assessment",
+            "description": "Assessing physical and transition climate risks",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Understands climate risk concepts (physical, transition, liability); familiar with TCFD recommendations",
+              "2": "Contributed to climate risk assessments; documented climate scenarios; supported TCFD reporting",
+              "3": "Designed climate risk frameworks; led scenario analysis for climate; established climate risk metrics",
+              "4": "Built enterprise climate risk capabilities; led TCFD strategy; established net-zero risk integration"
+            },
+            "mirrorsCandidate": {
+              "questionId": "climate_risk_assessment",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "technology_risk_emergence",
+            "question": "Technology & Cyber Risk Emergence",
+            "description": "Monitoring and assessing emerging technology and cyber risks",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Understands technology risk concepts; familiar with cyber risk categories",
+              "2": "Monitored technology risk developments; documented emerging cyber threats; supported technology risk assessments",
+              "3": "Designed technology risk frameworks; established emerging tech risk monitoring (AI, quantum, etc.); led cyber risk scenario exercises",
+              "4": "Built enterprise technology risk capabilities; established tech risk horizon scanning; led AI risk governance programmes"
+            },
+            "mirrorsCandidate": {
+              "questionId": "technology_risk_emergence",
+              "matchType": "minimum"
+            }
+          }
+        ]
+      },
+      {
+        "id": "risk_mitigation_treatment",
+        "title": "Risk Mitigation & Treatment",
+        "description": "Experience with risk response strategy and treatment implementation",
+        "order": 12,
+        "helpText": "Rate the importance of experience in each area (0 = Not Required, 4 = Essential)",
+        "questions": [
+          {
+            "id": "risk_treatment_strategies",
+            "question": "Risk Treatment Strategies",
+            "description": "Selecting and implementing risk treatment options (avoid, mitigate, transfer, accept)",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Understands treatment options; familiar with the four Ts (treat, tolerate, transfer, terminate)",
+              "2": "Recommended treatment strategies; documented rationale; tracked treatment implementation",
+              "3": "Designed treatment frameworks; developed cost-benefit analysis for treatments; led cross-functional treatment planning",
+              "4": "Built enterprise treatment capability; established treatment governance; integrated treatment with strategic planning and capital allocation"
+            },
+            "mirrorsCandidate": {
+              "questionId": "risk_treatment_strategies",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "risk_treatment_prioritisation",
+            "question": "Risk Treatment Prioritisation",
+            "description": "Prioritising risk treatments based on effectiveness and resource constraints",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Understands prioritisation concepts; familiar with cost-effectiveness considerations",
+              "2": "Analysed treatment options; compared alternatives; supported prioritisation decisions",
+              "3": "Designed prioritisation frameworks; established scoring criteria; led treatment portfolio reviews",
+              "4": "Built enterprise treatment prioritisation capabilities; established resource allocation frameworks; integrated with strategic planning"
+            },
+            "mirrorsCandidate": {
+              "questionId": "risk_treatment_prioritisation",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "cost_benefit_analysis",
+            "question": "Cost-Benefit Analysis for Risk Treatments",
+            "description": "Evaluating risk treatments against cost and benefit considerations",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Understands cost-benefit concepts; familiar with treatment ROI considerations",
+              "2": "Conducted cost-benefit analyses; quantified treatment costs and risk reduction",
+              "3": "Designed cost-benefit frameworks; established evaluation criteria; led investment case development",
+              "4": "Built enterprise cost-benefit capabilities; established risk-adjusted investment frameworks; integrated with capital allocation"
+            },
+            "mirrorsCandidate": {
+              "questionId": "cost_benefit_analysis",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "control_design_implementation",
+            "question": "Control Design & Implementation",
+            "description": "Designing and implementing risk controls",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Understands control types (preventive, detective, corrective); familiar with control design principles",
+              "2": "Documented control requirements; supported control implementation; tracked control effectiveness",
+              "3": "Designed control frameworks; established control standards; led control implementation programmes",
+              "4": "Built enterprise control architectures; established control optimisation; led control transformation initiatives"
+            },
+            "mirrorsCandidate": {
+              "questionId": "control_design_implementation",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "risk_transfer_insurance",
+            "question": "Risk Transfer & Insurance",
+            "description": "Managing risk transfer through insurance and other mechanisms",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Understands risk transfer concepts; familiar with insurance as risk mitigation",
+              "2": "Supported insurance programme management; documented coverage requirements; tracked policy renewals",
+              "3": "Designed risk transfer strategies; managed insurance programmes; established hedging frameworks",
+              "4": "Built enterprise risk transfer capabilities; led captive insurance programmes; established alternative risk transfer mechanisms"
+            },
+            "mirrorsCandidate": {
+              "questionId": "risk_transfer_insurance",
+              "matchType": "minimum"
+            }
+          }
+        ]
+      },
+      {
+        "id": "risk_reporting_communication",
+        "title": "Risk Reporting & Communication",
+        "description": "Experience with risk reporting frameworks and stakeholder communication",
+        "order": 13,
+        "helpText": "Rate the importance of experience in each area (0 = Not Required, 4 = Essential)",
+        "questions": [
+          {
+            "id": "risk_report_design",
+            "question": "Risk Report Design",
+            "description": "Designing risk reports for different audiences and purposes",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Understands risk reporting principles; can interpret standard risk reports",
+              "2": "Produced risk reports; maintained report templates; ensured data accuracy and timeliness",
+              "3": "Designed risk report frameworks; established templates for different audiences (board, ExCo, business); defined report governance",
+              "4": "Built enterprise risk reporting architecture; established reporting standards; led reporting transformation programmes"
+            },
+            "mirrorsCandidate": {
+              "questionId": "risk_report_design",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "data_visualisation",
+            "question": "Risk Data Visualisation",
+            "description": "Creating dashboards and visual representations of risk information",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Understands data visualisation principles; can interpret risk dashboards and charts",
+              "2": "Created risk visualisations (heat maps, trend charts, KRI dashboards); maintained dashboard content",
+              "3": "Designed interactive dashboards; built visualisations using BI tools (Tableau, Power BI); established visualisation standards",
+              "4": "Led enterprise dashboard programmes; designed real-time risk monitoring solutions; established data visualisation centre of excellence"
+            },
+            "mirrorsCandidate": {
+              "questionId": "data_visualisation",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "risk_reporting_automation",
+            "question": "Risk Reporting Automation",
+            "description": "Automating risk reporting processes for efficiency and consistency",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Understands reporting automation concepts; familiar with automation benefits",
+              "2": "Used automated reporting tools; identified automation opportunities; documented requirements",
+              "3": "Implemented reporting automation; designed automated workflows; integrated data sources",
+              "4": "Built enterprise reporting automation capabilities; established automation standards; led reporting technology transformations"
+            },
+            "mirrorsCandidate": {
+              "questionId": "risk_reporting_automation",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "risk_aggregation",
+            "question": "Risk Aggregation Methodologies",
+            "description": "Aggregating risks across categories, entities and time horizons",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Understands risk aggregation concepts; familiar with aggregation challenges",
+              "2": "Applied aggregation methodologies; calculated aggregate risk metrics; identified concentration risks",
+              "3": "Designed aggregation frameworks; established aggregation rules and correlation assumptions; validated aggregation outputs",
+              "4": "Built enterprise aggregation capabilities; established aggregation standards; integrated with capital and exposure management"
+            },
+            "mirrorsCandidate": {
+              "questionId": "risk_aggregation",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "regulatory_reporting",
+            "question": "Regulatory Risk Reporting",
+            "description": "Preparing and submitting regulatory risk reports",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Understands regulatory reporting requirements; familiar with industry-specific regulatory returns",
+              "2": "Contributed to regulatory returns; prepared data submissions; tracked reporting deadlines",
+              "3": "Led regulatory reporting programmes; designed reporting frameworks; managed regulator relationships on reporting",
+              "4": "Built enterprise regulatory reporting infrastructure; established reporting governance; led regulatory reporting transformation"
+            },
+            "mirrorsCandidate": {
+              "questionId": "regulatory_reporting",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "external_disclosure",
+            "question": "External Risk Disclosure",
+            "description": "Preparing risk disclosures for annual reports and external stakeholders",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Understands external disclosure requirements; familiar with annual report risk sections",
+              "2": "Contributed to risk disclosure drafting; reviewed disclosure content; supported disclosure governance",
+              "3": "Authored principal risk disclosures; designed disclosure frameworks; managed disclosure review cycles",
+              "4": "Led enterprise disclosure strategy; established disclosure governance; designed integrated risk-financial reporting"
+            },
+            "mirrorsCandidate": {
+              "questionId": "external_disclosure",
+              "matchType": "minimum"
+            }
+          }
+        ]
+      },
+      {
+        "id": "risk_culture_awareness",
+        "title": "Risk Culture & Awareness",
+        "description": "Experience with risk culture development and awareness programs",
+        "order": 14,
+        "helpText": "Rate the importance of experience in each area (0 = Not Required, 4 = Essential)",
+        "questions": [
+          {
+            "id": "risk_culture_assessment",
+            "question": "Risk Culture Assessment",
+            "description": "Assessing organisational risk culture and identifying gaps",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Understands risk culture concepts; familiar with culture dimensions",
+              "2": "Participated in culture assessments; collected survey data; analysed culture indicators",
+              "3": "Designed culture assessment approaches; developed survey instruments; led assessment programs",
+              "4": "Built enterprise culture assessment capabilities; established culture frameworks; led culture diagnostic programs"
+            },
+            "mirrorsCandidate": {
+              "questionId": "risk_culture_assessment",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "risk_awareness_campaigns",
+            "question": "Risk Awareness Campaigns",
+            "description": "Designing and delivering risk awareness initiatives",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Understands risk awareness concepts; familiar with communication channels",
+              "2": "Delivered risk awareness content (newsletters, intranet articles); supported awareness campaigns",
+              "3": "Designed awareness campaigns; created risk communication calendars; measured awareness effectiveness",
+              "4": "Built enterprise awareness programmes; established risk communication strategy; led organisation-wide awareness transformations"
+            },
+            "mirrorsCandidate": {
+              "questionId": "risk_awareness_campaigns",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "risk_training_programmes",
+            "question": "Risk Training Programmes",
+            "description": "Designing and delivering risk training for different roles",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Understands adult learning principles; familiar with training delivery methods",
+              "2": "Delivered risk training sessions; supported training material development; gathered feedback",
+              "3": "Designed role-based training curricula; developed e-learning modules; established training effectiveness measures",
+              "4": "Built enterprise risk training academies; established certification programmes; led risk capability development initiatives"
+            },
+            "mirrorsCandidate": {
+              "questionId": "risk_training_programmes",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "risk_culture_transformation",
+            "question": "Risk Culture Transformation",
+            "description": "Leading initiatives to transform organisational risk culture",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Understands culture change concepts; familiar with transformation approaches",
+              "2": "Participated in culture initiatives; supported change activities; monitored progress",
+              "3": "Led culture transformation workstreams; designed intervention programs; measured culture shift",
+              "4": "Led enterprise culture transformations; established culture change frameworks; integrated with broader organisational change"
+            },
+            "mirrorsCandidate": {
+              "questionId": "risk_culture_transformation",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "risk_behavior_incentivisation",
+            "question": "Risk Behavior Incentivisation",
+            "description": "Aligning incentives and consequences to desired risk behaviors",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Understands risk-reward alignment concepts; familiar with behavioural risk",
+              "2": "Analysed incentive impacts on risk behaviour; supported incentive design review",
+              "3": "Designed risk-adjusted incentive frameworks; integrated risk metrics into performance management",
+              "4": "Built enterprise risk-reward alignment; established risk behaviour frameworks; led incentive transformation programs"
+            },
+            "mirrorsCandidate": {
+              "questionId": "risk_behavior_incentivisation",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "risk_culture_metrics",
+            "question": "Risk Culture Metrics",
+            "description": "Developing metrics to measure and monitor risk culture",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Understands culture measurement concepts; familiar with culture indicators",
+              "2": "Collected culture metrics; tracked culture indicators; analysed trends",
+              "3": "Designed culture metric frameworks; established leading and lagging indicators; developed culture dashboards",
+              "4": "Built enterprise culture measurement capabilities; established culture KRIs; integrated with risk appetite"
+            },
+            "mirrorsCandidate": {
+              "questionId": "risk_culture_metrics",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "first_line_engagement",
+            "question": "First Line Risk Engagement",
+            "description": "Building risk capability and engagement in first line business units",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Understands three lines model; familiar with first line risk responsibilities",
+              "2": "Supported first line risk activities; provided risk guidance to business teams; tracked first line engagement",
+              "3": "Designed first line engagement programmes; embedded risk advisors; established business risk champion networks",
+              "4": "Built enterprise first line capability; established first line risk communities; led first line risk upskilling programmes"
+            },
+            "mirrorsCandidate": {
+              "questionId": "first_line_engagement",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "conduct_ethics_integration",
+            "question": "Conduct & Ethics Integration",
+            "description": "Integrating conduct risk and ethical considerations into ERM",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Understands conduct risk concepts; familiar with ethical risk considerations",
+              "2": "Supported conduct risk assessments; documented ethical risk considerations; tracked conduct incidents",
+              "3": "Designed conduct risk frameworks; integrated ethics into risk assessment; established conduct monitoring",
+              "4": "Built enterprise conduct risk capability; led conduct programme implementation; established ethical decision-making frameworks"
+            },
+            "mirrorsCandidate": {
+              "questionId": "conduct_ethics_integration",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "speaking_up_culture",
+            "question": "Speaking Up & Psychological Safety",
+            "description": "Fostering a culture of speaking up and psychological safety around risk",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Understands psychological safety concepts; familiar with speak-up mechanisms",
+              "2": "Supported speak-up programmes; promoted safe escalation; tracked speaking-up metrics",
+              "3": "Designed speaking-up frameworks; established anonymous reporting channels; integrated with risk culture assessment",
+              "4": "Built enterprise speaking-up capability; led psychological safety transformation; established tone-from-the-top programmes"
+            },
+            "mirrorsCandidate": {
+              "questionId": "speaking_up_culture",
+              "matchType": "minimum"
+            }
+          }
+        ]
+      },
+      {
+        "id": "domain_requirements",
+        "title": "Domain-Specific Risk Requirements",
+        "description": "Required experience managing risks across specific business domains and risk categories",
+        "order": 15,
+        "helpText": "Rate the importance of experience in each risk domain (0 = Not Required, 4 = Essential)",
+        "questions": [
+          {
+            "id": "strategic_risk",
+            "question": "Strategic & Enterprise Risk",
+            "description": "Top-down risk management aligned to corporate strategy, business model risks, and long-term value creation",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Aware of strategic risk concepts; can interpret strategy-risk linkage",
+              "2": "Contributes to strategic risk assessments; maps risks to strategic objectives",
+              "3": "Leads strategic risk processes; integrates risk into strategy planning cycles",
+              "4": "Designs enterprise strategic risk frameworks; advises C-suite on strategic risk decisions"
+            },
+            "mirrorsCandidate": {
+              "questionId": "strategic_risk",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "reputational_risk",
+            "question": "Reputational Risk",
+            "description": "Managing risks to brand, public perception, stakeholder trust, and corporate reputation",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Understands reputational risk concepts; familiar with brand considerations",
+              "2": "Assesses reputational risks; contributes to reputation monitoring",
+              "3": "Leads reputational risk programmes; manages reputation incidents",
+              "4": "Builds enterprise reputation risk capabilities; advises boards on reputation strategy"
+            },
+            "mirrorsCandidate": {
+              "questionId": "reputational_risk",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "compliance_risk",
+            "question": "Compliance & Regulatory Risk",
+            "description": "Managing risks from regulatory requirements, legal obligations, and compliance failures",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Understands compliance risk concepts; familiar with regulatory landscape",
+              "2": "Conducts compliance risk assessments; monitors regulatory changes",
+              "3": "Leads compliance risk functions; manages regulatory relationships",
+              "4": "Builds enterprise compliance capabilities; establishes regulatory horizon scanning"
+            },
+            "mirrorsCandidate": {
+              "questionId": "compliance_risk",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "health_safety_risk",
+            "question": "Health & Safety Risk",
+            "description": "Managing occupational health, workplace safety, and employee wellbeing risks",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Understands H&S risk concepts; familiar with safety regulations",
+              "2": "Conducts H&S risk assessments; participates in incident investigations",
+              "3": "Leads H&S risk programmes; designs safety management systems",
+              "4": "Builds enterprise H&S capabilities; leads safety culture transformations"
+            },
+            "mirrorsCandidate": {
+              "questionId": "health_safety_risk",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "technology_risk",
+            "question": "Technology & Digital Risk",
+            "description": "Managing risks from IT systems, digital transformation, data management, and technology dependencies",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Understands technology risk concepts; familiar with IT risk categories",
+              "2": "Assesses technology risks; contributes to IT risk registers",
+              "3": "Leads technology risk functions; designs IT risk frameworks",
+              "4": "Builds enterprise technology risk capabilities; advises on digital transformation risks"
+            },
+            "mirrorsCandidate": {
+              "questionId": "technology_risk",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "cybersecurity_risk",
+            "question": "Cybersecurity Risk",
+            "description": "Managing cyber threats, information security, data breaches, and cyber resilience",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Understands cyber risk concepts; familiar with threat landscape",
+              "2": "Assesses cyber risks; participates in security assessments",
+              "3": "Leads cyber risk functions; manages cyber incidents and response",
+              "4": "Builds enterprise cyber risk capabilities; advises boards on cyber risk"
+            },
+            "mirrorsCandidate": {
+              "questionId": "cybersecurity_risk",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "people_risk",
+            "question": "People & Human Capital Risk",
+            "description": "Managing workforce risks including talent, succession, conduct, culture, and employee relations",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Understands people risk concepts; familiar with HR risk categories",
+              "2": "Assesses people risks; contributes to workforce risk monitoring",
+              "3": "Leads people risk programmes; manages conduct risk matters",
+              "4": "Builds enterprise people risk capabilities; advises on workforce transformation risks"
+            },
+            "mirrorsCandidate": {
+              "questionId": "people_risk",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "transformation_risk",
+            "question": "Business Transformation & Change Risk",
+            "description": "Managing risks from organisational change, transformation programmes, and business restructuring",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Understands change risk concepts; familiar with programme risks",
+              "2": "Assesses transformation risks; contributes to change programme risk management",
+              "3": "Leads transformation risk programmes; manages major programme risks",
+              "4": "Builds enterprise transformation risk capabilities; advises on strategic transformation"
+            },
+            "mirrorsCandidate": {
+              "questionId": "transformation_risk",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "ma_risk",
+            "question": "Merger & Acquisition Risk",
+            "description": "Managing risks in M&A transactions including due diligence, integration, and deal execution",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Understands M&A risk concepts; familiar with deal lifecycle risks",
+              "2": "Contributes to M&A risk assessments; supports due diligence processes",
+              "3": "Leads M&A risk workstreams; manages integration risk programmes",
+              "4": "Builds enterprise M&A risk capabilities; advises on strategic M&A decisions"
+            },
+            "mirrorsCandidate": {
+              "questionId": "ma_risk",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "third_party_risk",
+            "question": "Third-Party & Supply Chain Risk",
+            "description": "Managing risks from vendors, suppliers, outsourcing partners, and extended enterprise dependencies",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Understands third-party risk concepts; familiar with vendor risk categories",
+              "2": "Conducts third-party risk assessments; supports vendor due diligence",
+              "3": "Leads third-party risk programmes; manages critical vendor relationships",
+              "4": "Builds enterprise TPRM capabilities; advises on outsourcing risk decisions"
+            },
+            "mirrorsCandidate": {
+              "questionId": "third_party_risk",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "country_risk",
+            "question": "Country & Geopolitical Risk",
+            "description": "Managing risks from geographic exposure, political instability, sanctions, and cross-border operations",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Understands country risk concepts; familiar with geopolitical factors",
+              "2": "Assesses country risks; monitors geopolitical developments",
+              "3": "Leads country risk programmes; manages sanctions compliance",
+              "4": "Builds enterprise country risk capabilities; advises on international expansion"
+            },
+            "mirrorsCandidate": {
+              "questionId": "country_risk",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "environmental_risk",
+            "question": "Environmental Risk",
+            "description": "Managing environmental impacts, pollution, resource depletion, and ecological compliance",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Understands environmental risk concepts; familiar with environmental regulations",
+              "2": "Assesses environmental risks; supports environmental compliance",
+              "3": "Leads environmental risk programmes; manages environmental incidents",
+              "4": "Builds enterprise environmental risk capabilities; advises on sustainability transformation"
+            },
+            "mirrorsCandidate": {
+              "questionId": "environmental_risk",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "climate_risk",
+            "question": "Climate Change Risk (Physical & Transition)",
+            "description": "Managing physical climate risks (extreme weather, sea level) and transition risks (policy, technology, market shifts)",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Understands climate risk concepts; familiar with TCFD framework",
+              "2": "Assesses climate risks; contributes to climate scenario analysis",
+              "3": "Leads climate risk programmes; manages TCFD reporting",
+              "4": "Builds enterprise climate risk capabilities; advises on net-zero transition"
+            },
+            "mirrorsCandidate": {
+              "questionId": "climate_risk",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "social_risk",
+            "question": "Social Impact Risk",
+            "description": "Managing social risks including human rights, community relations, diversity, and social licence to operate",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Understands social risk concepts; familiar with human rights factors",
+              "2": "Assesses social risks; supports stakeholder engagement",
+              "3": "Leads social risk programmes; manages community relations",
+              "4": "Builds enterprise social risk capabilities; advises on social licence matters"
+            },
+            "mirrorsCandidate": {
+              "questionId": "social_risk",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "esg_disclosure_risk",
+            "question": "ESG Disclosure & Reporting Risk",
+            "description": "Managing risks from ESG reporting requirements including CSRD, SEC Climate Rule, and sustainability disclosures",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "1": "Understands ESG disclosure requirements; familiar with CSRD, SEC rules",
+              "2": "Supports ESG disclosures; contributes to sustainability reporting",
+              "3": "Leads ESG disclosure programmes; manages assurance processes",
+              "4": "Builds enterprise ESG disclosure capabilities; advises on sustainability compliance"
+            },
+            "mirrorsCandidate": {
+              "questionId": "esg_disclosure_risk",
+              "matchType": "minimum"
+            }
+          }
+        ]
+      }
+    ],
+    "metadata": {
+      "totalQuestions": 110,
+      "estimatedCompletionMinutes": 18,
+      "targetAudience": "Hiring Managers for ERM Roles",
+      "note": "Use alongside job-profile.json for complete role specification. This questionnaire captures ERM-specific requirements only.",
+      "additionalInfoFields": {
+        "enabled": true,
+        "label": "Additional Requirements (Optional)",
+        "placeholder": "Specify any additional requirements, preferences, or context for this competency...",
+        "description": "Use this field to clarify specific expectations, describe ideal experience, or note any flexibility in requirements.",
+        "maxLength": 500,
+        "appliesTo": "all",
+        "examples": [
+          "Must have experience specifically in manufacturing sector",
+          "Prefer candidates with Big 4 consulting background",
+          "Essential if candidate will lead team of 5+",
+          "Nice to have but not essential for this role"
+        ]
+      },
+      "matchingFields": [
+        "erm_role_level",
+        "erm_function_scope",
+        "erm_reporting_line",
+        "years_erm_required",
+        "years_risk_required",
+        "framework_iso31000",
+        "framework_coso_erm",
+        "grc_systems_required",
+        "other_systems",
+        "grc_selection_implementation",
+        "risk_governance_structures",
+        "erm_strategy_alignment",
+        "risk_committee_structures",
+        "board_reporting",
+        "risk_policy_development",
+        "risk_operating_models",
+        "risk_transformation",
+        "regulatory_engagement",
+        "erm_maturity_assessment",
+        "erm_effectiveness_review",
+        "erm_benchmarking",
+        "integrated_risk_framework",
+        "three_lines_coordination",
+        "erm_assurance_provision",
+        "committee_membership",
+        "risk_appetite_framework",
+        "risk_appetite_statements",
+        "risk_tolerance_thresholds",
+        "capacity_vs_appetite",
+        "appetite_metrics",
+        "limit_monitoring",
+        "appetite_governance",
+        "appetite_cascading",
+        "risk_scoring_methodologies",
+        "risk_identification_methods",
+        "risk_workshop_facilitation",
+        "root_cause_analysis",
+        "risk_prioritisation",
+        "inherent_residual_assessment",
+        "risk_taxonomy_development",
+        "control_effectiveness",
+        "rcsa_processes",
+        "risk_register_management",
+        "risk_register_maintenance",
+        "risk_data_quality",
+        "top_risk_reporting",
+        "risk_ownership_accountability",
+        "risk_action_tracking",
+        "kri_design",
+        "kri_threshold_calibration",
+        "kri_monitoring_frameworks",
+        "kri_reporting_dashboards",
+        "leading_lagging_indicators",
+        "risk_quantification_methods",
+        "probabilistic_risk_modeling",
+        "monte_carlo_simulation",
+        "var_modeling",
+        "loss_data_analysis",
+        "ai_ml_erm_application",
+        "advanced_risk_analytics",
+        "risk_data_engineering",
+        "scenario_design",
+        "stress_testing_programmes",
+        "reverse_stress_testing",
+        "multi_factor_scenario",
+        "sensitivity_analysis",
+        "emerging_risk_identification",
+        "horizon_scanning_methods",
+        "trend_analysis",
+        "emerging_risk_assessment",
+        "emerging_risk_reporting",
+        "emerging_risk_response",
+        "interconnected_risk_analysis",
+        "climate_risk_assessment",
+        "technology_risk_emergence",
+        "risk_treatment_strategies",
+        "risk_treatment_prioritisation",
+        "cost_benefit_analysis",
+        "control_design_implementation",
+        "risk_transfer_insurance",
+        "risk_report_design",
+        "data_visualisation",
+        "risk_reporting_automation",
+        "risk_aggregation",
+        "regulatory_reporting",
+        "external_disclosure",
+        "risk_culture_assessment",
+        "risk_awareness_campaigns",
+        "risk_training_programmes",
+        "risk_culture_transformation",
+        "risk_behavior_incentivisation",
+        "risk_culture_metrics",
+        "first_line_engagement",
+        "conduct_ethics_integration",
+        "speaking_up_culture",
+        "strategic_risk",
+        "reputational_risk",
+        "compliance_risk",
+        "health_safety_risk",
+        "technology_risk",
+        "cybersecurity_risk",
+        "people_risk",
+        "transformation_risk",
+        "ma_risk",
+        "third_party_risk",
+        "country_risk",
+        "environmental_risk",
+        "climate_risk",
+        "social_risk",
+        "esg_disclosure_risk"
+      ],
+      "totalSections": 15,
+      "lastUpdated": "2025-12-15"
+    }
+  }
+}

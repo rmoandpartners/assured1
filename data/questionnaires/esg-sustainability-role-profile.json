@@ -1,0 +1,3661 @@
+{
+  "questionnaire": {
+    "id": "esg-sustainability-role-profile",
+    "title": "ESG & Sustainability Leadership Role Profile",
+    "description": "Role requirements for sustainability and ESG leadership positions including CSOs, Heads of ESG, Sustainability Managers, and ESG Controllers across all sectors. Define required competencies for carbon management, climate risk, biodiversity, social impact, ESG governance, reporting frameworks, and stakeholder engagement. Sector-agnostic design for hiring managers.",
+    "version": "1.0.1",
+    "createdAt": "2025-12-15",
+    "updatedAt": "2025-12-15",
+    "mirrorProfile": "esg-sustainability-candidate-profile",
+    "parentProfile": "job-profile",
+    "importanceScale": {
+      "0": {
+        "label": "Not Required",
+        "description": "Not needed for this role"
+      },
+      "1": {
+        "label": "Nice to Have",
+        "description": "Beneficial but not essential; no gaps acceptable at interview"
+      },
+      "2": {
+        "label": "Important",
+        "description": "Expected competency; gaps need development plan"
+      },
+      "3": {
+        "label": "Very Important",
+        "description": "Core requirement; limited gaps acceptable"
+      },
+      "4": {
+        "label": "Essential",
+        "description": "Must have from day one; no gaps acceptable"
+      }
+    },
+    "sections": [
+      {
+        "id": "sustainability_experience_overview",
+        "title": "Sustainability Experience Requirements",
+        "description": "Required sustainability and ESG background, level, and scope",
+        "order": 1,
+        "questions": [
+          {
+            "id": "sustainability_role_level",
+            "question": "Target Sustainability Role Level",
+            "type": "select",
+            "required": true,
+            "options": [
+              {
+                "value": "analyst",
+                "label": "Sustainability Analyst / Coordinator"
+              },
+              {
+                "value": "senior_analyst",
+                "label": "Senior Sustainability Analyst / Specialist"
+              },
+              {
+                "value": "manager",
+                "label": "Sustainability Manager"
+              },
+              {
+                "value": "senior_manager",
+                "label": "Senior Sustainability Manager / Associate Director"
+              },
+              {
+                "value": "head_of",
+                "label": "Head of Sustainability / Director"
+              },
+              {
+                "value": "cso",
+                "label": "Chief Sustainability Officer (CSO)"
+              }
+            ],
+            "mirrorsCandidate": {
+              "questionId": "target_sustainability_level",
+              "matchType": "compatibility"
+            }
+          },
+          {
+            "id": "sustainability_scope_required",
+            "question": "Minimum Sustainability Scope Required",
+            "type": "select",
+            "required": true,
+            "options": [
+              {
+                "value": "site_facility",
+                "label": "Site / Facility Level"
+              },
+              {
+                "value": "business_unit",
+                "label": "Business Unit / Division"
+              },
+              {
+                "value": "regional",
+                "label": "Regional"
+              },
+              {
+                "value": "country",
+                "label": "Country"
+              },
+              {
+                "value": "group_enterprise",
+                "label": "Group / Enterprise"
+              }
+            ],
+            "mirrorsCandidate": {
+              "questionId": "sustainability_scope_experience",
+              "matchType": "compatibility"
+            }
+          },
+          {
+            "id": "years_sustainability_required",
+            "question": "Minimum Years in Sustainability/ESG Roles",
+            "type": "number",
+            "required": true,
+            "min": 0,
+            "max": 30,
+            "mirrorsCandidate": {
+              "questionId": "years_in_sustainability",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "years_related_functions_required",
+            "question": "Minimum Years in Related Functions (EHS, CSR, Communications)",
+            "type": "number",
+            "required": false,
+            "min": 0,
+            "max": 30,
+            "mirrorsCandidate": {
+              "questionId": "years_in_related_functions",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "team_size_required",
+            "question": "Minimum Sustainability Team Management Experience",
+            "type": "number",
+            "required": false,
+            "min": 0,
+            "max": 200,
+            "mirrorsCandidate": {
+              "questionId": "sustainability_team_size",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "primary_specialism_required",
+            "question": "Required Primary ESG Specialism",
+            "type": "select",
+            "required": false,
+            "options": [
+              {
+                "value": "esg_generalist",
+                "label": "ESG Strategy & Reporting (Generalist)"
+              },
+              {
+                "value": "carbon_climate",
+                "label": "Carbon & Climate"
+              },
+              {
+                "value": "circular_waste",
+                "label": "Circular Economy & Waste"
+              },
+              {
+                "value": "biodiversity_nature",
+                "label": "Biodiversity & Nature"
+              },
+              {
+                "value": "social_impact",
+                "label": "Social Impact & Human Rights"
+              },
+              {
+                "value": "supply_chain",
+                "label": "Supply Chain Sustainability"
+              },
+              {
+                "value": "sustainable_finance",
+                "label": "Sustainable Finance / Green Bonds"
+              },
+              {
+                "value": "environmental_ehs",
+                "label": "Environmental Management (EHS)"
+              },
+              {
+                "value": "any",
+                "label": "Any / No Preference"
+              }
+            ],
+            "mirrorsCandidate": {
+              "questionId": "primary_esg_specialism",
+              "matchType": "compatibility"
+            }
+          },
+          {
+            "id": "reporting_line_preference",
+            "question": "Expected Reporting Line",
+            "type": "select",
+            "required": false,
+            "options": [
+              {
+                "value": "ceo_board",
+                "label": "CEO / Board Direct"
+              },
+              {
+                "value": "cfo_finance",
+                "label": "CFO / Finance"
+              },
+              {
+                "value": "gc_legal",
+                "label": "General Counsel / Legal"
+              },
+              {
+                "value": "coo",
+                "label": "Chief Operating Officer"
+              },
+              {
+                "value": "cco_comms",
+                "label": "Chief Communications Officer"
+              },
+              {
+                "value": "cso_strategy",
+                "label": "Chief Strategy Officer"
+              },
+              {
+                "value": "chro_hr",
+                "label": "HR / People Director"
+              },
+              {
+                "value": "other_csuite",
+                "label": "Other C-Suite"
+              }
+            ],
+            "mirrorsCandidate": {
+              "questionId": "reporting_line",
+              "matchType": "compatibility"
+            }
+          }
+        ]
+      },
+      {
+        "id": "reporting_framework_knowledge",
+        "title": "Reporting Framework Requirements",
+        "description": "Required proficiency with sustainability reporting frameworks",
+        "order": 2,
+        "helpText": "0 = Not Required, 1 = Nice to Have, 2 = Important, 3 = Very Important, 4 = Essential",
+        "questions": [
+          {
+            "id": "framework_csrd_esrs",
+            "question": "How important is CSRD / ESRS expertise for this role?",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - beneficial for context but not core",
+              "2": "Important - expected competency with development support available",
+              "3": "Very important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            },
+            "mirrorsCandidate": {
+              "questionId": "framework_csrd_esrs",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "framework_issb",
+            "question": "How important is ISSB / IFRS S1 & S2 expertise for this role?",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - beneficial for context but not core",
+              "2": "Important - expected competency with development support available",
+              "3": "Very important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            },
+            "mirrorsCandidate": {
+              "questionId": "framework_issb",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "framework_gri",
+            "question": "How important is GRI Standards expertise for this role?",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - beneficial for context but not core",
+              "2": "Important - expected competency with development support available",
+              "3": "Very important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            },
+            "mirrorsCandidate": {
+              "questionId": "framework_gri",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "framework_tcfd",
+            "question": "How important is TCFD expertise for this role?",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - beneficial for context but not core",
+              "2": "Important - expected competency with development support available",
+              "3": "Very important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            },
+            "mirrorsCandidate": {
+              "questionId": "framework_tcfd",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "framework_tnfd",
+            "question": "How important is TNFD / LEAP expertise for this role?",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - beneficial for context but not core",
+              "2": "Important - expected competency with development support available",
+              "3": "Very important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            },
+            "mirrorsCandidate": {
+              "questionId": "framework_tnfd",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "framework_ghg_protocol",
+            "question": "How important is GHG Protocol expertise for this role?",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - beneficial for context but not core",
+              "2": "Important - expected competency with development support available",
+              "3": "Very important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            },
+            "mirrorsCandidate": {
+              "questionId": "framework_ghg_protocol",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "framework_sbti",
+            "question": "How important is SBTi expertise for this role?",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - beneficial for context but not core",
+              "2": "Important - expected competency with development support available",
+              "3": "Very important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            },
+            "mirrorsCandidate": {
+              "questionId": "framework_sbti",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "framework_eu_taxonomy",
+            "question": "How important is EU Taxonomy expertise for this role?",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - beneficial for context but not core",
+              "2": "Important - expected competency with development support available",
+              "3": "Very important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            },
+            "mirrorsCandidate": {
+              "questionId": "framework_eu_taxonomy",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "framework_un_sdgs",
+            "question": "How important is UN SDGs expertise for this role?",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - beneficial for context but not core",
+              "2": "Important - expected competency with development support available",
+              "3": "Very important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            },
+            "mirrorsCandidate": {
+              "questionId": "framework_un_sdgs",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "framework_cdp",
+            "question": "How important is CDP expertise for this role?",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - beneficial for context but not core",
+              "2": "Important - expected competency with development support available",
+              "3": "Very important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            },
+            "mirrorsCandidate": {
+              "questionId": "framework_cdp",
+              "matchType": "minimum"
+            }
+          }
+        ]
+      },
+      {
+        "id": "sustainability_reporting_disclosure",
+        "title": "Reporting & Disclosure Requirements",
+        "description": "Required proficiency in materiality assessment, report production, and regulatory filings",
+        "order": 3,
+        "helpText": "0 = Not Required, 1 = Nice to Have, 2 = Important, 3 = Very Important, 4 = Essential",
+        "questions": [
+          {
+            "id": "double_materiality",
+            "question": "How important is Double Materiality Assessment (DMA) expertise for this role?",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - beneficial for context but not core",
+              "2": "Important - expected competency with development support available",
+              "3": "Very important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            },
+            "mirrorsCandidate": {
+              "questionId": "double_materiality",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "impact_materiality",
+            "question": "How important is Impact Materiality (Inside-Out) expertise for this role?",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - beneficial for context but not core",
+              "2": "Important - expected competency with development support available",
+              "3": "Very important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            },
+            "mirrorsCandidate": {
+              "questionId": "impact_materiality",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "financial_materiality",
+            "question": "How important is Financial Materiality (Outside-In) expertise for this role?",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - beneficial for context but not core",
+              "2": "Important - expected competency with development support available",
+              "3": "Very important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            },
+            "mirrorsCandidate": {
+              "questionId": "financial_materiality",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "value_chain_mapping",
+            "question": "How important is Value Chain Mapping expertise for this role?",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - beneficial for context but not core",
+              "2": "Important - expected competency with development support available",
+              "3": "Very important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            },
+            "mirrorsCandidate": {
+              "questionId": "value_chain_mapping",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "iro_identification",
+            "question": "How important is IRO Identification expertise for this role?",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - beneficial for context but not core",
+              "2": "Important - expected competency with development support available",
+              "3": "Very important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            },
+            "mirrorsCandidate": {
+              "questionId": "iro_identification",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "sustainability_report_production",
+            "question": "How important is Annual Sustainability Report Production expertise for this role?",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - beneficial for context but not core",
+              "2": "Important - expected competency with development support available",
+              "3": "Very important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            },
+            "mirrorsCandidate": {
+              "questionId": "sustainability_report_production",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "integrated_reporting",
+            "question": "How important is Integrated Reporting expertise for this role?",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - beneficial for context but not core",
+              "2": "Important - expected competency with development support available",
+              "3": "Very important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            },
+            "mirrorsCandidate": {
+              "questionId": "integrated_reporting",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "regulatory_esg_filings",
+            "question": "How important is Regulatory ESG Filings expertise for this role?",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - beneficial for context but not core",
+              "2": "Important - expected competency with development support available",
+              "3": "Very important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            },
+            "mirrorsCandidate": {
+              "questionId": "regulatory_esg_filings",
+              "matchType": "minimum"
+            }
+          }
+        ]
+      },
+      {
+        "id": "assurance_internal_controls",
+        "title": "Assurance & Internal Controls Requirements",
+        "description": "Required proficiency in ESG assurance and data governance",
+        "order": 4,
+        "helpText": "0 = Not Required, 1 = Nice to Have, 2 = Important, 3 = Very Important, 4 = Essential",
+        "questions": [
+          {
+            "id": "esg_external_assurance",
+            "question": "How important is ESG External Assurance Management expertise for this role?",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - beneficial for context but not core",
+              "2": "Important - expected competency with development support available",
+              "3": "Very important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            },
+            "mirrorsCandidate": {
+              "questionId": "esg_external_assurance",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "limited_reasonable_assurance",
+            "question": "How important is Limited vs Reasonable Assurance understanding for this role?",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - beneficial for context but not core",
+              "2": "Important - expected competency with development support available",
+              "3": "Very important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            },
+            "mirrorsCandidate": {
+              "questionId": "limited_reasonable_assurance",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "internal_controls_nonfinancial",
+            "question": "How important is Internal Controls for Non-Financial Data expertise for this role?",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - beneficial for context but not core",
+              "2": "Important - expected competency with development support available",
+              "3": "Very important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            },
+            "mirrorsCandidate": {
+              "questionId": "internal_controls_nonfinancial",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "esg_data_governance",
+            "question": "How important is ESG Data Governance expertise for this role?",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - beneficial for context but not core",
+              "2": "Important - expected competency with development support available",
+              "3": "Very important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            },
+            "mirrorsCandidate": {
+              "questionId": "esg_data_governance",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "audit_readiness",
+            "question": "How important is Audit Readiness & Documentation expertise for this role?",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - beneficial for context but not core",
+              "2": "Important - expected competency with development support available",
+              "3": "Very important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            },
+            "mirrorsCandidate": {
+              "questionId": "audit_readiness",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "restatement_policies",
+            "question": "How important is Restatement & Correction Policies expertise for this role?",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - beneficial for context but not core",
+              "2": "Important - expected competency with development support available",
+              "3": "Very important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            },
+            "mirrorsCandidate": {
+              "questionId": "restatement_policies",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "control_testing",
+            "question": "How important is Control Testing & Evidence expertise for this role?",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - beneficial for context but not core",
+              "2": "Important - expected competency with development support available",
+              "3": "Very important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            },
+            "mirrorsCandidate": {
+              "questionId": "control_testing",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "auditor_liaison",
+            "question": "How important is External Auditor Liaison expertise for this role?",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - beneficial for context but not core",
+              "2": "Important - expected competency with development support available",
+              "3": "Very important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            },
+            "mirrorsCandidate": {
+              "questionId": "auditor_liaison",
+              "matchType": "minimum"
+            }
+          }
+        ]
+      },
+      {
+        "id": "carbon_ghg_management",
+        "title": "Carbon & GHG Management",
+        "description": "Greenhouse gas accounting, decarbonisation, and carbon management expertise",
+        "order": 5,
+        "helpText": "0 = Not Required, 1 = Nice to Have, 2 = Important, 3 = Very Important, 4 = Essential",
+        "questions": [
+          {
+            "id": "scope_1_2_accounting",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "question": "How important is Scope 1 & 2 GHG Accounting for this role?",
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - beneficial for context but not core",
+              "2": "Important - expected competency with development support available",
+              "3": "Very important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            },
+            "mirrorsCandidate": {
+              "questionId": "scope_1_2_accounting",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "scope_3_accounting",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "question": "How important is Scope 3 Value Chain Emissions for this role?",
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - beneficial for context but not core",
+              "2": "Important - expected competency with development support available",
+              "3": "Very important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            },
+            "mirrorsCandidate": {
+              "questionId": "scope_3_accounting",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "emission_factor_selection",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "question": "How important is Emission Factor Selection (DEFRA, EPA, Ecoinvent) for this role?",
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - beneficial for context but not core",
+              "2": "Important - expected competency with development support available",
+              "3": "Very important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            },
+            "mirrorsCandidate": {
+              "questionId": "emission_factor_selection",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "carbon_footprinting",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "question": "How important is Organisational Carbon Footprinting for this role?",
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - beneficial for context but not core",
+              "2": "Important - expected competency with development support available",
+              "3": "Very important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            },
+            "mirrorsCandidate": {
+              "questionId": "carbon_footprinting",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "product_carbon_footprint",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "question": "How important is Product Carbon Footprint (PCF) for this role?",
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - beneficial for context but not core",
+              "2": "Important - expected competency with development support available",
+              "3": "Very important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            },
+            "mirrorsCandidate": {
+              "questionId": "product_carbon_footprint",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "sbti_target_setting",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "question": "How important is SBTi Target Setting & Validation for this role?",
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - beneficial for context but not core",
+              "2": "Important - expected competency with development support available",
+              "3": "Very important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            },
+            "mirrorsCandidate": {
+              "questionId": "sbti_target_setting",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "decarbonisation_roadmaps",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "question": "How important is Decarbonisation Roadmap Development for this role?",
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - beneficial for context but not core",
+              "2": "Important - expected competency with development support available",
+              "3": "Very important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            },
+            "mirrorsCandidate": {
+              "questionId": "decarbonisation_roadmaps",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "internal_carbon_pricing",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "question": "How important is Internal Carbon Pricing for this role?",
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - beneficial for context but not core",
+              "2": "Important - expected competency with development support available",
+              "3": "Very important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            },
+            "mirrorsCandidate": {
+              "questionId": "internal_carbon_pricing",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "carbon_offsets",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "question": "How important is Carbon Offsets & Credits (VCM) for this role?",
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - beneficial for context but not core",
+              "2": "Important - expected competency with development support available",
+              "3": "Very important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            },
+            "mirrorsCandidate": {
+              "questionId": "carbon_offsets",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "supplier_emissions",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "question": "How important is Supplier Emissions Data Collection for this role?",
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - beneficial for context but not core",
+              "2": "Important - expected competency with development support available",
+              "3": "Very important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            },
+            "mirrorsCandidate": {
+              "questionId": "supplier_emissions",
+              "matchType": "minimum"
+            }
+          }
+        ]
+      },
+      {
+        "id": "climate_risk_tcfd",
+        "title": "Climate Risk & TCFD",
+        "description": "Climate risk assessment, scenario analysis, and TCFD disclosure",
+        "order": 6,
+        "helpText": "0 = Not Required, 1 = Nice to Have, 2 = Important, 3 = Very Important, 4 = Essential",
+        "questions": [
+          {
+            "id": "climate_scenario_analysis",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "question": "How important is Climate Scenario Analysis for this role?",
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - beneficial for context but not core",
+              "2": "Important - expected competency with development support available",
+              "3": "Very important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            },
+            "mirrorsCandidate": {
+              "questionId": "climate_scenario_analysis",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "physical_risk_assessment",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "question": "How important is Physical Risk Assessment (Floods, Heat, Storms) for this role?",
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - beneficial for context but not core",
+              "2": "Important - expected competency with development support available",
+              "3": "Very important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            },
+            "mirrorsCandidate": {
+              "questionId": "physical_risk_assessment",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "transition_risk_assessment",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "question": "How important is Transition Risk Assessment (Policy, Technology, Market) for this role?",
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - beneficial for context but not core",
+              "2": "Important - expected competency with development support available",
+              "3": "Very important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            },
+            "mirrorsCandidate": {
+              "questionId": "transition_risk_assessment",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "climate_financial_impact",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "question": "How important is Climate Risk Financial Quantification for this role?",
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - beneficial for context but not core",
+              "2": "Important - expected competency with development support available",
+              "3": "Very important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            },
+            "mirrorsCandidate": {
+              "questionId": "climate_financial_impact",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "tcfd_governance",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "question": "How important is TCFD Governance Pillar for this role?",
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - beneficial for context but not core",
+              "2": "Important - expected competency with development support available",
+              "3": "Very important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            },
+            "mirrorsCandidate": {
+              "questionId": "tcfd_governance",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "tcfd_strategy",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "question": "How important is TCFD Strategy Pillar for this role?",
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - beneficial for context but not core",
+              "2": "Important - expected competency with development support available",
+              "3": "Very important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            },
+            "mirrorsCandidate": {
+              "questionId": "tcfd_strategy",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "tcfd_risk_management",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "question": "How important is TCFD Risk Management Pillar for this role?",
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - beneficial for context but not core",
+              "2": "Important - expected competency with development support available",
+              "3": "Very important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            },
+            "mirrorsCandidate": {
+              "questionId": "tcfd_risk_management",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "tcfd_metrics_targets",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "question": "How important is TCFD Metrics & Targets Pillar for this role?",
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - beneficial for context but not core",
+              "2": "Important - expected competency with development support available",
+              "3": "Very important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            },
+            "mirrorsCandidate": {
+              "questionId": "tcfd_metrics_targets",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "ngfs_scenarios",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "question": "How important is NGFS Scenario Application for this role?",
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - beneficial for context but not core",
+              "2": "Important - expected competency with development support available",
+              "3": "Very important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            },
+            "mirrorsCandidate": {
+              "questionId": "ngfs_scenarios",
+              "matchType": "minimum"
+            }
+          }
+        ]
+      },
+      {
+        "id": "biodiversity_nature_circularity",
+        "title": "Biodiversity, Nature & Circularity",
+        "description": "Nature-related impacts, TNFD, circular economy, and resource management",
+        "order": 7,
+        "helpText": "0 = Not Required, 1 = Nice to Have, 2 = Important, 3 = Very Important, 4 = Essential",
+        "questions": [
+          {
+            "id": "tnfd_leap",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "question": "How important is TNFD LEAP Approach for this role?",
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - beneficial for context but not core",
+              "2": "Important - expected competency with development support available",
+              "3": "Very important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            },
+            "mirrorsCandidate": {
+              "questionId": "tnfd_leap",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "biodiversity_assessment",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "question": "How important is Biodiversity Impact Assessment for this role?",
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - beneficial for context but not core",
+              "2": "Important - expected competency with development support available",
+              "3": "Very important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            },
+            "mirrorsCandidate": {
+              "questionId": "biodiversity_assessment",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "nature_dependency",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "question": "How important is Nature Dependency Mapping for this role?",
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - beneficial for context but not core",
+              "2": "Important - expected competency with development support available",
+              "3": "Very important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            },
+            "mirrorsCandidate": {
+              "questionId": "nature_dependency",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "water_stewardship",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "question": "How important is Water Stewardship & Risk for this role?",
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - beneficial for context but not core",
+              "2": "Important - expected competency with development support available",
+              "3": "Very important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            },
+            "mirrorsCandidate": {
+              "questionId": "water_stewardship",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "land_use_change",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "question": "How important is Land Use & Deforestation Risk for this role?",
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - beneficial for context but not core",
+              "2": "Important - expected competency with development support available",
+              "3": "Very important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            },
+            "mirrorsCandidate": {
+              "questionId": "land_use_change",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "circular_economy",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "question": "How important is Circular Economy Strategy for this role?",
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - beneficial for context but not core",
+              "2": "Important - expected competency with development support available",
+              "3": "Very important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            },
+            "mirrorsCandidate": {
+              "questionId": "circular_economy",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "waste_management",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "question": "How important is Waste Management & Reduction for this role?",
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - beneficial for context but not core",
+              "2": "Important - expected competency with development support available",
+              "3": "Very important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            },
+            "mirrorsCandidate": {
+              "questionId": "waste_management",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "lca_methodology",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "question": "How important is Life Cycle Assessment (LCA) Methodology for this role?",
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - beneficial for context but not core",
+              "2": "Important - expected competency with development support available",
+              "3": "Very important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            },
+            "mirrorsCandidate": {
+              "questionId": "lca_methodology",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "embodied_carbon",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "question": "How important is Embodied Carbon Analysis for this role?",
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - beneficial for context but not core",
+              "2": "Important - expected competency with development support available",
+              "3": "Very important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            },
+            "mirrorsCandidate": {
+              "questionId": "embodied_carbon",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "geospatial_tools",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "question": "How important is Geospatial Tools (IBAT, ENCORE, GIS) for this role?",
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - beneficial for context but not core",
+              "2": "Important - expected competency with development support available",
+              "3": "Very important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            },
+            "mirrorsCandidate": {
+              "questionId": "geospatial_tools",
+              "matchType": "minimum"
+            }
+          }
+        ]
+      },
+      {
+        "id": "human_rights_labour",
+        "title": "Human Rights & Labour Standards",
+        "description": "Human rights due diligence, labour standards, and social impact",
+        "order": 8,
+        "helpText": "0 = Not Required, 1 = Nice to Have, 2 = Important, 3 = Very Important, 4 = Essential",
+        "questions": [
+          {
+            "id": "human_rights_dd",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "question": "How important is Human Rights Due Diligence (HRDD) for this role?",
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - beneficial for context but not core",
+              "2": "Important - expected competency with development support available",
+              "3": "Very important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            },
+            "mirrorsCandidate": {
+              "questionId": "human_rights_dd",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "modern_slavery",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "question": "How important is Modern Slavery Act Compliance for this role?",
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - beneficial for context but not core",
+              "2": "Important - expected competency with development support available",
+              "3": "Very important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            },
+            "mirrorsCandidate": {
+              "questionId": "modern_slavery",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "ungp_implementation",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "question": "How important is UN Guiding Principles on Business & Human Rights for this role?",
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - beneficial for context but not core",
+              "2": "Important - expected competency with development support available",
+              "3": "Very important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            },
+            "mirrorsCandidate": {
+              "questionId": "ungp_implementation",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "labour_standards",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "question": "How important is ILO Labour Standards for this role?",
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - beneficial for context but not core",
+              "2": "Important - expected competency with development support available",
+              "3": "Very important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            },
+            "mirrorsCandidate": {
+              "questionId": "labour_standards",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "living_wage",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "question": "How important is Living Wage Assessment for this role?",
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - beneficial for context but not core",
+              "2": "Important - expected competency with development support available",
+              "3": "Very important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            },
+            "mirrorsCandidate": {
+              "questionId": "living_wage",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "dei_strategy",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "question": "How important is Diversity, Equity & Inclusion Strategy for this role?",
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - beneficial for context but not core",
+              "2": "Important - expected competency with development support available",
+              "3": "Very important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            },
+            "mirrorsCandidate": {
+              "questionId": "dei_strategy",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "employee_wellbeing",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "question": "How important is Employee Health, Safety & Wellbeing for this role?",
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - beneficial for context but not core",
+              "2": "Important - expected competency with development support available",
+              "3": "Very important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            },
+            "mirrorsCandidate": {
+              "questionId": "employee_wellbeing",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "grievance_mechanisms",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "question": "How important is Grievance Mechanisms for this role?",
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - beneficial for context but not core",
+              "2": "Important - expected competency with development support available",
+              "3": "Very important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            },
+            "mirrorsCandidate": {
+              "questionId": "grievance_mechanisms",
+              "matchType": "minimum"
+            }
+          }
+        ]
+      },
+      {
+        "id": "supply_chain_sustainability",
+        "title": "Supply Chain Sustainability",
+        "description": "Sustainable procurement, supplier engagement, and due diligence",
+        "order": 9,
+        "helpText": "0 = Not Required, 1 = Nice to Have, 2 = Important, 3 = Very Important, 4 = Essential",
+        "questions": [
+          {
+            "id": "supply_chain_mapping",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "question": "How important is Supply Chain Sustainability Mapping for this role?",
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - beneficial for context but not core",
+              "2": "Important - expected competency with development support available",
+              "3": "Very important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            },
+            "mirrorsCandidate": {
+              "questionId": "supply_chain_mapping",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "supplier_assessment",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "question": "How important is Supplier ESG Assessment & Scoring for this role?",
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - beneficial for context but not core",
+              "2": "Important - expected competency with development support available",
+              "3": "Very important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            },
+            "mirrorsCandidate": {
+              "questionId": "supplier_assessment",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "supplier_engagement",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "question": "How important is Supplier Engagement & Capacity Building for this role?",
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - beneficial for context but not core",
+              "2": "Important - expected competency with development support available",
+              "3": "Very important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            },
+            "mirrorsCandidate": {
+              "questionId": "supplier_engagement",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "csddd_compliance",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "question": "How important is CSDDD (Corporate Sustainability Due Diligence) for this role?",
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - beneficial for context but not core",
+              "2": "Important - expected competency with development support available",
+              "3": "Very important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            },
+            "mirrorsCandidate": {
+              "questionId": "csddd_compliance",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "conflict_minerals",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "question": "How important is Conflict Minerals / Responsible Sourcing for this role?",
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - beneficial for context but not core",
+              "2": "Important - expected competency with development support available",
+              "3": "Very important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            },
+            "mirrorsCandidate": {
+              "questionId": "conflict_minerals",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "traceability_systems",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "question": "How important is Traceability & Transparency Systems for this role?",
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - beneficial for context but not core",
+              "2": "Important - expected competency with development support available",
+              "3": "Very important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            },
+            "mirrorsCandidate": {
+              "questionId": "traceability_systems",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "tier_n_visibility",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "question": "How important is Tier 2+ Supply Chain Visibility for this role?",
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - beneficial for context but not core",
+              "2": "Important - expected competency with development support available",
+              "3": "Very important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            },
+            "mirrorsCandidate": {
+              "questionId": "tier_n_visibility",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "supplier_codes",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "question": "How important is Supplier Code of Conduct Development for this role?",
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - beneficial for context but not core",
+              "2": "Important - expected competency with development support available",
+              "3": "Very important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            },
+            "mirrorsCandidate": {
+              "questionId": "supplier_codes",
+              "matchType": "minimum"
+            }
+          }
+        ]
+      },
+      {
+        "id": "social_value_community",
+        "title": "Social Value & Community",
+        "description": "Social impact measurement, community engagement, and stakeholder dialogue",
+        "order": 10,
+        "helpText": "0 = Not Required, 1 = Nice to Have, 2 = Important, 3 = Very Important, 4 = Essential",
+        "questions": [
+          {
+            "id": "sroi_methodology",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "question": "How important is Social Return on Investment (SROI) for this role?",
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - beneficial for context but not core",
+              "2": "Important - expected competency with development support available",
+              "3": "Very important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            },
+            "mirrorsCandidate": {
+              "questionId": "sroi_methodology",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "theory_of_change",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "question": "How important is Theory of Change Development for this role?",
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - beneficial for context but not core",
+              "2": "Important - expected competency with development support available",
+              "3": "Very important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            },
+            "mirrorsCandidate": {
+              "questionId": "theory_of_change",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "community_engagement",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "question": "How important is Community Engagement & Investment for this role?",
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - beneficial for context but not core",
+              "2": "Important - expected competency with development support available",
+              "3": "Very important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            },
+            "mirrorsCandidate": {
+              "questionId": "community_engagement",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "social_impact_measurement",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "question": "How important is Social Impact Measurement for this role?",
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - beneficial for context but not core",
+              "2": "Important - expected competency with development support available",
+              "3": "Very important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            },
+            "mirrorsCandidate": {
+              "questionId": "social_impact_measurement",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "just_transition",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "question": "How important is Just Transition Planning for this role?",
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - beneficial for context but not core",
+              "2": "Important - expected competency with development support available",
+              "3": "Very important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            },
+            "mirrorsCandidate": {
+              "questionId": "just_transition",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "stakeholder_dialogue",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "question": "How important is Stakeholder Dialogue & Panels for this role?",
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - beneficial for context but not core",
+              "2": "Important - expected competency with development support available",
+              "3": "Very important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            },
+            "mirrorsCandidate": {
+              "questionId": "stakeholder_dialogue",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "materiality_engagement",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "question": "How important is Materiality Stakeholder Engagement for this role?",
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - beneficial for context but not core",
+              "2": "Important - expected competency with development support available",
+              "3": "Very important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            },
+            "mirrorsCandidate": {
+              "questionId": "materiality_engagement",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "indigenous_rights",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "question": "How important is Indigenous Peoples & FPIC for this role?",
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - beneficial for context but not core",
+              "2": "Important - expected competency with development support available",
+              "3": "Very important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            },
+            "mirrorsCandidate": {
+              "questionId": "indigenous_rights",
+              "matchType": "minimum"
+            }
+          }
+        ]
+      },
+      {
+        "id": "esg_governance_integration",
+        "title": "ESG Governance & Integration",
+        "description": "ESG governance frameworks, board oversight, and strategic integration",
+        "order": 11,
+        "helpText": "0 = Not Required, 1 = Nice to Have, 2 = Important, 3 = Very Important, 4 = Essential",
+        "questions": [
+          {
+            "id": "esg_governance_framework",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "question": "How important is ESG Governance Framework Design for this role?",
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - beneficial for context but not core",
+              "2": "Important - expected competency with development support available",
+              "3": "Very important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            },
+            "mirrorsCandidate": {
+              "questionId": "esg_governance_framework",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "board_esg_oversight",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "question": "How important is Board-Level ESG Oversight for this role?",
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - beneficial for context but not core",
+              "2": "Important - expected competency with development support available",
+              "3": "Very important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            },
+            "mirrorsCandidate": {
+              "questionId": "board_esg_oversight",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "esg_steering_committee",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "question": "How important is ESG Steering Committee Management for this role?",
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - beneficial for context but not core",
+              "2": "Important - expected competency with development support available",
+              "3": "Very important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            },
+            "mirrorsCandidate": {
+              "questionId": "esg_steering_committee",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "esg_policies",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "question": "How important is ESG Policy Development for this role?",
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - beneficial for context but not core",
+              "2": "Important - expected competency with development support available",
+              "3": "Very important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            },
+            "mirrorsCandidate": {
+              "questionId": "esg_policies",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "executive_remuneration",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "question": "How important is ESG-Linked Executive Remuneration for this role?",
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - beneficial for context but not core",
+              "2": "Important - expected competency with development support available",
+              "3": "Very important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            },
+            "mirrorsCandidate": {
+              "questionId": "executive_remuneration",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "materiality_governance",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "question": "How important is Materiality Assessment Governance for this role?",
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - beneficial for context but not core",
+              "2": "Important - expected competency with development support available",
+              "3": "Very important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            },
+            "mirrorsCandidate": {
+              "questionId": "materiality_governance",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "risk_integration",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "question": "How important is ESG Risk Integration into ERM for this role?",
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - beneficial for context but not core",
+              "2": "Important - expected competency with development support available",
+              "3": "Very important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            },
+            "mirrorsCandidate": {
+              "questionId": "risk_integration",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "strategy_integration",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "question": "How important is ESG Strategy Integration into Business for this role?",
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - beneficial for context but not core",
+              "2": "Important - expected competency with development support available",
+              "3": "Very important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            },
+            "mirrorsCandidate": {
+              "questionId": "strategy_integration",
+              "matchType": "minimum"
+            }
+          }
+        ]
+      },
+      {
+        "id": "ratings_rankings_external",
+        "title": "Ratings, Rankings & External Engagement",
+        "description": "ESG ratings management, benchmarks, and external stakeholder engagement",
+        "order": 12,
+        "helpText": "0 = Not Required, 1 = Nice to Have, 2 = Important, 3 = Very Important, 4 = Essential",
+        "questions": [
+          {
+            "id": "esg_ratings",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "question": "How important is ESG Ratings Management (MSCI, Sustainalytics, ISS) for this role?",
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - beneficial for context but not core",
+              "2": "Important - expected competency with development support available",
+              "3": "Very important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            },
+            "mirrorsCandidate": {
+              "questionId": "esg_ratings",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "cdp_response",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "question": "How important is CDP Questionnaire Response for this role?",
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - beneficial for context but not core",
+              "2": "Important - expected competency with development support available",
+              "3": "Very important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            },
+            "mirrorsCandidate": {
+              "questionId": "cdp_response",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "benchmark_participation",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "question": "How important is Benchmark Participation (DJSI, FTSE4Good) for this role?",
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - beneficial for context but not core",
+              "2": "Important - expected competency with development support available",
+              "3": "Very important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            },
+            "mirrorsCandidate": {
+              "questionId": "benchmark_participation",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "investor_engagement",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "question": "How important is ESG Investor Engagement for this role?",
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - beneficial for context but not core",
+              "2": "Important - expected competency with development support available",
+              "3": "Very important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            },
+            "mirrorsCandidate": {
+              "questionId": "investor_engagement",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "regulatory_engagement",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "question": "How important is Regulatory & Policy Engagement for this role?",
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - beneficial for context but not core",
+              "2": "Important - expected competency with development support available",
+              "3": "Very important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            },
+            "mirrorsCandidate": {
+              "questionId": "regulatory_engagement",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "industry_collaboration",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "question": "How important is Industry Collaboration & Initiatives for this role?",
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - beneficial for context but not core",
+              "2": "Important - expected competency with development support available",
+              "3": "Very important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            },
+            "mirrorsCandidate": {
+              "questionId": "industry_collaboration",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "ngo_engagement",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "question": "How important is NGO & Civil Society Engagement for this role?",
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - beneficial for context but not core",
+              "2": "Important - expected competency with development support available",
+              "3": "Very important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            },
+            "mirrorsCandidate": {
+              "questionId": "ngo_engagement",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "greenwashing_defence",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "question": "How important is Greenwashing Risk & Defence for this role?",
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - beneficial for context but not core",
+              "2": "Important - expected competency with development support available",
+              "3": "Very important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            },
+            "mirrorsCandidate": {
+              "questionId": "greenwashing_defence",
+              "matchType": "minimum"
+            }
+          }
+        ]
+      },
+      {
+        "id": "esg_software_platforms",
+        "title": "ESG Software Platforms",
+        "description": "Required proficiency in ESG data management and reporting platforms",
+        "order": 13,
+        "helpText": "0 = Not Required, 1 = Nice to Have, 2 = Important, 3 = Very Important, 4 = Essential",
+        "questions": [
+          {
+            "id": "esg_software_experience",
+            "type": "system_proficiency",
+            "required": false,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "mirrorsCandidate": {
+              "questionId": "esg_software_experience",
+              "matchType": "compatibility"
+            }
+          },
+          {
+            "id": "platform_selection",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "question": "How important is ESG Platform Selection & Procurement for this role?",
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - beneficial for context but not core",
+              "2": "Important - expected competency with development support available",
+              "3": "Very important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            },
+            "mirrorsCandidate": {
+              "questionId": "platform_selection",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "platform_implementation",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "question": "How important is ESG Platform Implementation for this role?",
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - beneficial for context but not core",
+              "2": "Important - expected competency with development support available",
+              "3": "Very important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            },
+            "mirrorsCandidate": {
+              "questionId": "platform_implementation",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "erp_integration",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "question": "How important is ERP Integration (SAP, Oracle) for this role?",
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - beneficial for context but not core",
+              "2": "Important - expected competency with development support available",
+              "3": "Very important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            },
+            "mirrorsCandidate": {
+              "questionId": "erp_integration",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "data_automation",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "question": "How important is Data Collection Automation for this role?",
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - beneficial for context but not core",
+              "2": "Important - expected competency with development support available",
+              "3": "Very important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            },
+            "mirrorsCandidate": {
+              "questionId": "data_automation",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "supplier_portals",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "question": "How important is Supplier Data Portals for this role?",
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - beneficial for context but not core",
+              "2": "Important - expected competency with development support available",
+              "3": "Very important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            },
+            "mirrorsCandidate": {
+              "questionId": "supplier_portals",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "carbon_accounting_software",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "question": "How important is Carbon Accounting Software for this role?",
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - beneficial for context but not core",
+              "2": "Important - expected competency with development support available",
+              "3": "Very important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            },
+            "mirrorsCandidate": {
+              "questionId": "carbon_accounting_software",
+              "matchType": "minimum"
+            }
+          }
+        ]
+      },
+      {
+        "id": "data_analytics_technical",
+        "title": "Data Analytics & Technical Skills",
+        "description": "Technical data skills for ESG analysis and reporting",
+        "order": 14,
+        "helpText": "0 = Not Required, 1 = Nice to Have, 2 = Important, 3 = Very Important, 4 = Essential",
+        "questions": [
+          {
+            "id": "sql_proficiency",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "question": "How important is SQL Proficiency for this role?",
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - beneficial for context but not core",
+              "2": "Important - expected competency with development support available",
+              "3": "Very important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            },
+            "mirrorsCandidate": {
+              "questionId": "sql_proficiency",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "python_analytics",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "question": "How important is Python for ESG Analytics for this role?",
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - beneficial for context but not core",
+              "2": "Important - expected competency with development support available",
+              "3": "Very important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            },
+            "mirrorsCandidate": {
+              "questionId": "python_analytics",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "data_visualization",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "question": "How important is Data Visualization (PowerBI/Tableau) for this role?",
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - beneficial for context but not core",
+              "2": "Important - expected competency with development support available",
+              "3": "Very important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            },
+            "mirrorsCandidate": {
+              "questionId": "data_visualization",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "excel_advanced",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "question": "How important is Advanced Excel & Modeling for this role?",
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - beneficial for context but not core",
+              "2": "Important - expected competency with development support available",
+              "3": "Very important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            },
+            "mirrorsCandidate": {
+              "questionId": "excel_advanced",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "gis_tools",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "question": "How important is GIS & Geospatial Analysis for this role?",
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - beneficial for context but not core",
+              "2": "Important - expected competency with development support available",
+              "3": "Very important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            },
+            "mirrorsCandidate": {
+              "questionId": "gis_tools",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "dashboard_design",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "question": "How important is ESG Dashboard Design for this role?",
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - beneficial for context but not core",
+              "2": "Important - expected competency with development support available",
+              "3": "Very important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            },
+            "mirrorsCandidate": {
+              "questionId": "dashboard_design",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "data_quality_management",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "question": "How important is Data Quality Management for this role?",
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - beneficial for context but not core",
+              "2": "Important - expected competency with development support available",
+              "3": "Very important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            },
+            "mirrorsCandidate": {
+              "questionId": "data_quality_management",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "ai_esg_applications",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "question": "How important is AI Applications in ESG for this role?",
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - beneficial for context but not core",
+              "2": "Important - expected competency with development support available",
+              "3": "Very important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            },
+            "mirrorsCandidate": {
+              "questionId": "ai_esg_applications",
+              "matchType": "minimum"
+            }
+          }
+        ]
+      },
+      {
+        "id": "change_management_transformation",
+        "title": "Change Management & Transformation",
+        "description": "Leading sustainability transformation and organizational change",
+        "order": 15,
+        "helpText": "0 = Not Required, 1 = Nice to Have, 2 = Important, 3 = Very Important, 4 = Essential",
+        "questions": [
+          {
+            "id": "change_frameworks",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "question": "How important is Change Management Frameworks (Kotter, ADKAR) for this role?",
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - beneficial for context but not core",
+              "2": "Important - expected competency with development support available",
+              "3": "Very important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            },
+            "mirrorsCandidate": {
+              "questionId": "change_frameworks",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "culture_transformation",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "question": "How important is Sustainability Culture Transformation for this role?",
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - beneficial for context but not core",
+              "2": "Important - expected competency with development support available",
+              "3": "Very important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            },
+            "mirrorsCandidate": {
+              "questionId": "culture_transformation",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "ambassador_networks",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "question": "How important is Sustainability Ambassador Networks for this role?",
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - beneficial for context but not core",
+              "2": "Important - expected competency with development support available",
+              "3": "Very important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            },
+            "mirrorsCandidate": {
+              "questionId": "ambassador_networks",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "incentive_design",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "question": "How important is ESG Incentive & KPI Design for this role?",
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - beneficial for context but not core",
+              "2": "Important - expected competency with development support available",
+              "3": "Very important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            },
+            "mirrorsCandidate": {
+              "questionId": "incentive_design",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "business_case_development",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "question": "How important is Sustainability Business Case Development for this role?",
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - beneficial for context but not core",
+              "2": "Important - expected competency with development support available",
+              "3": "Very important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            },
+            "mirrorsCandidate": {
+              "questionId": "business_case_development",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "capex_business_cases",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "question": "How important is CapEx Business Cases for Decarbonisation for this role?",
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - beneficial for context but not core",
+              "2": "Important - expected competency with development support available",
+              "3": "Very important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            },
+            "mirrorsCandidate": {
+              "questionId": "capex_business_cases",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "barrier_removal",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "question": "How important is Structural Barrier Identification & Removal for this role?",
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - beneficial for context but not core",
+              "2": "Important - expected competency with development support available",
+              "3": "Very important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            },
+            "mirrorsCandidate": {
+              "questionId": "barrier_removal",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "systems_thinking",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "question": "How important is Systems Thinking & Integration for this role?",
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - beneficial for context but not core",
+              "2": "Important - expected competency with development support available",
+              "3": "Very important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            },
+            "mirrorsCandidate": {
+              "questionId": "systems_thinking",
+              "matchType": "minimum"
+            }
+          }
+        ]
+      },
+      {
+        "id": "stakeholder_management_influence",
+        "title": "Stakeholder Management & Influence",
+        "description": "Managing executive relationships and influencing without authority",
+        "order": 16,
+        "helpText": "0 = Not Required, 1 = Nice to Have, 2 = Important, 3 = Very Important, 4 = Essential",
+        "questions": [
+          {
+            "id": "board_presentation",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "question": "How important is Board & Committee Presentation for this role?",
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - beneficial for context but not core",
+              "2": "Important - expected competency with development support available",
+              "3": "Very important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            },
+            "mirrorsCandidate": {
+              "questionId": "board_presentation",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "executive_influence",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "question": "How important is Executive Stakeholder Influence for this role?",
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - beneficial for context but not core",
+              "2": "Important - expected competency with development support available",
+              "3": "Very important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            },
+            "mirrorsCandidate": {
+              "questionId": "executive_influence",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "cfo_partnership",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "question": "How important is CFO / Finance Partnership for this role?",
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - beneficial for context but not core",
+              "2": "Important - expected competency with development support available",
+              "3": "Very important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            },
+            "mirrorsCandidate": {
+              "questionId": "cfo_partnership",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "legal_partnership",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "question": "How important is Legal / General Counsel Partnership for this role?",
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - beneficial for context but not core",
+              "2": "Important - expected competency with development support available",
+              "3": "Very important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            },
+            "mirrorsCandidate": {
+              "questionId": "legal_partnership",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "operations_partnership",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "question": "How important is Operations Partnership for this role?",
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - beneficial for context but not core",
+              "2": "Important - expected competency with development support available",
+              "3": "Very important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            },
+            "mirrorsCandidate": {
+              "questionId": "operations_partnership",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "investor_roadshows",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "question": "How important is Investor ESG Roadshows for this role?",
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - beneficial for context but not core",
+              "2": "Important - expected competency with development support available",
+              "3": "Very important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            },
+            "mirrorsCandidate": {
+              "questionId": "investor_roadshows",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "crisis_management",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "question": "How important is ESG Crisis & Reputation Management for this role?",
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - beneficial for context but not core",
+              "2": "Important - expected competency with development support available",
+              "3": "Very important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            },
+            "mirrorsCandidate": {
+              "questionId": "crisis_management",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "corporate_chameleon",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "question": "How important is \"Corporate Chameleon\" - Stakeholder Language Adaptation for this role?",
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - beneficial for context but not core",
+              "2": "Important - expected competency with development support available",
+              "3": "Very important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            },
+            "mirrorsCandidate": {
+              "questionId": "corporate_chameleon",
+              "matchType": "minimum"
+            }
+          }
+        ]
+      },
+      {
+        "id": "behavioral_competencies",
+        "title": "Behavioral Competencies",
+        "description": "Personal effectiveness and leadership behaviors for sustainability roles",
+        "order": 17,
+        "helpText": "0 = Not Required, 1 = Nice to Have, 2 = Important, 3 = Very Important, 4 = Essential",
+        "questions": [
+          {
+            "id": "sense_making",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "question": "How important is \"Sense-Making\" - Interpreting External Signals for this role?",
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - beneficial for context but not core",
+              "2": "Important - expected competency with development support available",
+              "3": "Very important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            },
+            "mirrorsCandidate": {
+              "questionId": "sense_making",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "strategic_foresight",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "question": "How important is Strategic Foresight & Horizon Scanning for this role?",
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - beneficial for context but not core",
+              "2": "Important - expected competency with development support available",
+              "3": "Very important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            },
+            "mirrorsCandidate": {
+              "questionId": "strategic_foresight",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "resilience",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "question": "How important is Personal & Professional Resilience for this role?",
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - beneficial for context but not core",
+              "2": "Important - expected competency with development support available",
+              "3": "Very important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            },
+            "mirrorsCandidate": {
+              "questionId": "resilience",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "ethical_leadership",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "question": "How important is Ethical Leadership & Integrity for this role?",
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - beneficial for context but not core",
+              "2": "Important - expected competency with development support available",
+              "3": "Very important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            },
+            "mirrorsCandidate": {
+              "questionId": "ethical_leadership",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "storytelling",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "question": "How important is Sustainability Storytelling for this role?",
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - beneficial for context but not core",
+              "2": "Important - expected competency with development support available",
+              "3": "Very important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            },
+            "mirrorsCandidate": {
+              "questionId": "storytelling",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "persuasion_influence",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "question": "How important is Persuasion & Influence Without Authority for this role?",
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - beneficial for context but not core",
+              "2": "Important - expected competency with development support available",
+              "3": "Very important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            },
+            "mirrorsCandidate": {
+              "questionId": "persuasion_influence",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "commercial_awareness",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "question": "How important is Commercial & Business Awareness for this role?",
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - beneficial for context but not core",
+              "2": "Important - expected competency with development support available",
+              "3": "Very important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            },
+            "mirrorsCandidate": {
+              "questionId": "commercial_awareness",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "diplomatic_navigation",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "question": "How important is Diplomatic Navigation (Greenhushing, Political Sensitivity) for this role?",
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - beneficial for context but not core",
+              "2": "Important - expected competency with development support available",
+              "3": "Very important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            },
+            "mirrorsCandidate": {
+              "questionId": "diplomatic_navigation",
+              "matchType": "minimum"
+            }
+          }
+        ]
+      },
+      {
+        "id": "team_leadership_function",
+        "title": "Team Leadership & Function Building",
+        "description": "Leading sustainability teams and building organizational capability",
+        "order": 18,
+        "helpText": "0 = Not Required, 1 = Nice to Have, 2 = Important, 3 = Very Important, 4 = Essential",
+        "questions": [
+          {
+            "id": "function_design",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "question": "How important is Sustainability Function Design for this role?",
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - beneficial for context but not core",
+              "2": "Important - expected competency with development support available",
+              "3": "Very important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            },
+            "mirrorsCandidate": {
+              "questionId": "function_design",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "matrix_management",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "question": "How important is Matrix & Embedded Model Management for this role?",
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - beneficial for context but not core",
+              "2": "Important - expected competency with development support available",
+              "3": "Very important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            },
+            "mirrorsCandidate": {
+              "questionId": "matrix_management",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "budget_management",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "question": "How important is Sustainability Budget Management for this role?",
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - beneficial for context but not core",
+              "2": "Important - expected competency with development support available",
+              "3": "Very important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            },
+            "mirrorsCandidate": {
+              "questionId": "budget_management",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "vendor_management",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "question": "How important is Consultant & Vendor Management for this role?",
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - beneficial for context but not core",
+              "2": "Important - expected competency with development support available",
+              "3": "Very important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            },
+            "mirrorsCandidate": {
+              "questionId": "vendor_management",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "cross_functional_leadership",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "question": "How important is Cross-Functional Project Leadership for this role?",
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - beneficial for context but not core",
+              "2": "Important - expected competency with development support available",
+              "3": "Very important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            },
+            "mirrorsCandidate": {
+              "questionId": "cross_functional_leadership",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "capability_building",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "question": "How important is Organisation-Wide Capability Building for this role?",
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - beneficial for context but not core",
+              "2": "Important - expected competency with development support available",
+              "3": "Very important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            },
+            "mirrorsCandidate": {
+              "questionId": "capability_building",
+              "matchType": "minimum"
+            }
+          }
+        ]
+      },
+      {
+        "id": "sector_domain_experience",
+        "title": "Sector & Domain Experience",
+        "description": "Requirements across different industry sectors",
+        "order": 19,
+        "helpText": "0 = Not Required, 1 = Nice to Have, 2 = Important, 3 = Very Important, 4 = Essential",
+        "questions": [
+          {
+            "id": "sector_manufacturing",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "question": "How important is Manufacturing & Industrial for this role?",
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - beneficial for context but not core",
+              "2": "Important - expected competency with development support available",
+              "3": "Very important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            },
+            "mirrorsCandidate": {
+              "questionId": "sector_manufacturing",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "sector_retail_consumer",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "question": "How important is Retail & Consumer Goods for this role?",
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - beneficial for context but not core",
+              "2": "Important - expected competency with development support available",
+              "3": "Very important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            },
+            "mirrorsCandidate": {
+              "questionId": "sector_retail_consumer",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "sector_energy_utilities",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "question": "How important is Energy & Utilities for this role?",
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - beneficial for context but not core",
+              "2": "Important - expected competency with development support available",
+              "3": "Very important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            },
+            "mirrorsCandidate": {
+              "questionId": "sector_energy_utilities",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "sector_construction",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "question": "How important is Construction & Real Estate for this role?",
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - beneficial for context but not core",
+              "2": "Important - expected competency with development support available",
+              "3": "Very important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            },
+            "mirrorsCandidate": {
+              "questionId": "sector_construction",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "sector_technology",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "question": "How important is Technology & Telecommunications for this role?",
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - beneficial for context but not core",
+              "2": "Important - expected competency with development support available",
+              "3": "Very important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            },
+            "mirrorsCandidate": {
+              "questionId": "sector_technology",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "sector_healthcare",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "question": "How important is Healthcare & Pharmaceuticals for this role?",
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - beneficial for context but not core",
+              "2": "Important - expected competency with development support available",
+              "3": "Very important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            },
+            "mirrorsCandidate": {
+              "questionId": "sector_healthcare",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "sector_food_agriculture",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "question": "How important is Food, Beverage & Agriculture for this role?",
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - beneficial for context but not core",
+              "2": "Important - expected competency with development support available",
+              "3": "Very important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            },
+            "mirrorsCandidate": {
+              "questionId": "sector_food_agriculture",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "sector_transport_logistics",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "question": "How important is Transport & Logistics for this role?",
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - beneficial for context but not core",
+              "2": "Important - expected competency with development support available",
+              "3": "Very important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            },
+            "mirrorsCandidate": {
+              "questionId": "sector_transport_logistics",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "sector_financial_services",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "question": "How important is Financial Services for this role?",
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - beneficial for context but not core",
+              "2": "Important - expected competency with development support available",
+              "3": "Very important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            },
+            "mirrorsCandidate": {
+              "questionId": "sector_financial_services",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "sector_professional_services",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "question": "How important is Professional Services / Consulting for this role?",
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - beneficial for context but not core",
+              "2": "Important - expected competency with development support available",
+              "3": "Very important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            },
+            "mirrorsCandidate": {
+              "questionId": "sector_professional_services",
+              "matchType": "minimum"
+            }
+          }
+        ]
+      },
+      {
+        "id": "fs_topup",
+        "title": "Financial Services ESG & Sustainable Finance",
+        "description": "FS-specific sustainability regulations and sustainable finance. Only complete if hiring for roles in Financial Services.",
+        "order": 20,
+        "helpText": "0 = Not Required, 1 = Nice to Have, 2 = Important, 3 = Very Important, 4 = Essential",
+        "questions": [
+          {
+            "id": "fs_sustainable_finance",
+            "question": "How important is Sustainable Finance Strategy expertise for this role?",
+            "description": "Developing and implementing sustainable finance strategies in FS organisations",
+            "type": "slider",
+            "required": false,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - beneficial but not essential",
+              "2": "Important - expected competency with development support",
+              "3": "Very Important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            },
+            "mirrorsCandidate": {
+              "questionId": "fs_sustainable_finance",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "fs_green_bonds",
+            "question": "How important is Green Bonds & Sustainability-Linked Instruments expertise for this role?",
+            "description": "Issuing or investing in green bonds, sustainability-linked bonds, and similar instruments",
+            "type": "slider",
+            "required": false,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - beneficial but not essential",
+              "2": "Important - expected competency with development support",
+              "3": "Very Important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            },
+            "mirrorsCandidate": {
+              "questionId": "fs_green_bonds",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "fs_esg_product_development",
+            "question": "How important is ESG Product Development (FS) expertise for this role?",
+            "description": "Developing ESG-integrated financial products and services",
+            "type": "slider",
+            "required": false,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - beneficial but not essential",
+              "2": "Important - expected competency with development support",
+              "3": "Very Important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            },
+            "mirrorsCandidate": {
+              "questionId": "fs_esg_product_development",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "fs_sdr_labelling",
+            "question": "How important is FCA SDR & Investment Labels expertise for this role?",
+            "description": "FCA Sustainability Disclosure Requirements and investment labelling regime",
+            "type": "slider",
+            "required": false,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - beneficial but not essential",
+              "2": "Important - expected competency with development support",
+              "3": "Very Important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            },
+            "mirrorsCandidate": {
+              "questionId": "fs_sdr_labelling",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "fs_anti_greenwashing",
+            "question": "How important is FCA Anti-Greenwashing Rule expertise for this role?",
+            "description": "Compliance with FCA's anti-greenwashing rule and sustainability claims",
+            "type": "slider",
+            "required": false,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - beneficial but not essential",
+              "2": "Important - expected competency with development support",
+              "3": "Very Important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            },
+            "mirrorsCandidate": {
+              "questionId": "fs_anti_greenwashing",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "fs_sfdr",
+            "question": "How important is SFDR (EU Sustainable Finance Disclosure) expertise for this role?",
+            "description": "EU Sustainable Finance Disclosure Regulation compliance and Article 8/9 products",
+            "type": "slider",
+            "required": false,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - beneficial but not essential",
+              "2": "Important - expected competency with development support",
+              "3": "Very Important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            },
+            "mirrorsCandidate": {
+              "questionId": "fs_sfdr",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "fs_eu_taxonomy_alignment",
+            "question": "How important is EU Taxonomy Product Alignment (FS) expertise for this role?",
+            "description": "Assessing and reporting EU Taxonomy alignment for FS products and portfolios",
+            "type": "slider",
+            "required": false,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - beneficial but not essential",
+              "2": "Important - expected competency with development support",
+              "3": "Very Important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            },
+            "mirrorsCandidate": {
+              "questionId": "fs_eu_taxonomy_alignment",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "fs_net_zero_banking",
+            "question": "How important is Net Zero Banking Alliance / NZAOA expertise for this role?",
+            "description": "Net Zero Banking Alliance, Net Zero Asset Owner Alliance, and sector transition pathways",
+            "type": "slider",
+            "required": false,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - beneficial but not essential",
+              "2": "Important - expected competency with development support",
+              "3": "Very Important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            },
+            "mirrorsCandidate": {
+              "questionId": "fs_net_zero_banking",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "fs_climate_stress_testing",
+            "question": "How important is Climate Stress Testing (BoE/PRA) expertise for this role?",
+            "description": "Climate scenario analysis and stress testing for financial services (BoE CBES, PRA SS3/19)",
+            "type": "slider",
+            "required": false,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - beneficial but not essential",
+              "2": "Important - expected competency with development support",
+              "3": "Very Important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            },
+            "mirrorsCandidate": {
+              "questionId": "fs_climate_stress_testing",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "fs_esg_integration_lending",
+            "question": "How important is ESG Integration in Lending/Underwriting expertise for this role?",
+            "description": "Integrating ESG factors into credit decisions, underwriting, and lending criteria",
+            "type": "slider",
+            "required": false,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - beneficial but not essential",
+              "2": "Important - expected competency with development support",
+              "3": "Very Important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            },
+            "mirrorsCandidate": {
+              "questionId": "fs_esg_integration_lending",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "fs_esg_integration_investment",
+            "question": "How important is ESG Integration in Investment Management expertise for this role?",
+            "description": "Integrating ESG factors into investment analysis, portfolio construction, and stewardship",
+            "type": "slider",
+            "required": false,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - beneficial but not essential",
+              "2": "Important - expected competency with development support",
+              "3": "Very Important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            },
+            "mirrorsCandidate": {
+              "questionId": "fs_esg_integration_investment",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "fs_stewardship_code",
+            "question": "How important is UK Stewardship Code / Engagement expertise for this role?",
+            "description": "UK Stewardship Code compliance, engagement, and voting activities",
+            "type": "slider",
+            "required": false,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - beneficial but not essential",
+              "2": "Important - expected competency with development support",
+              "3": "Very Important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            },
+            "mirrorsCandidate": {
+              "questionId": "fs_stewardship_code",
+              "matchType": "minimum"
+            }
+          }
+        ]
+      }
+    ],
+    "metadata": {
+      "totalQuestions": 169,
+      "totalSections": 20,
+      "estimatedCompletionMinutes": 28,
+      "lastUpdated": "2025-12-15"
+    }
+  }
+}

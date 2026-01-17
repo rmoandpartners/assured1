@@ -1,0 +1,2863 @@
+{
+  "questionnaire": {
+    "id": "ic-candidate-profile",
+    "title": "Internal Control Candidate Profile",
+    "description": "Internal Control skills and experience (complements general candidate-profile)",
+    "version": "1.0.1",
+    "createdAt": "2025-12-15",
+    "updatedAt": "2025-12-15",
+    "mirrorProfile": "ic-role-profile",
+    "parentProfile": "candidate-profile",
+    "proficiencyScale": {
+      "0": {
+        "label": "No Experience",
+        "description": "No exposure or experience in this area"
+      },
+      "1": {
+        "label": "Awareness",
+        "description": "Understands concepts and can interpret outputs; works under supervision"
+      },
+      "2": {
+        "label": "Practical Application",
+        "description": "Can apply and operate established frameworks; works independently"
+      },
+      "3": {
+        "label": "Implementation & Management",
+        "description": "Can implement, adapt and manage frameworks; leads specific contexts"
+      },
+      "4": {
+        "label": "Strategic Leadership",
+        "description": "Can design from first principles; creates methodologies; enterprise-wide scope"
+      }
+    },
+    "interviewNote": "All self-assessed proficiency ratings are likely to be explored during interviews. Be prepared to provide specific examples demonstrating your claimed level of expertise.",
+    "sections": [
+      {
+        "id": "ic_experience_overview",
+        "title": "Internal Control Experience Overview",
+        "description": "Your Internal Control specific background and career level",
+        "order": 1,
+        "questions": [
+          {
+            "id": "target_ic_level",
+            "question": "Target Internal Control Role Level",
+            "type": "select",
+            "required": true,
+            "options": [
+              {
+                "value": "control_analyst",
+                "label": "Control Analyst / Associate"
+              },
+              {
+                "value": "senior_control_analyst",
+                "label": "Senior Control Analyst / Senior Associate"
+              },
+              {
+                "value": "control_manager",
+                "label": "Control Manager / AVP"
+              },
+              {
+                "value": "senior_control_manager",
+                "label": "Senior Control Manager / VP"
+              },
+              {
+                "value": "director_ic",
+                "label": "Director of Internal Control"
+              },
+              {
+                "value": "head_of_ic",
+                "label": "Head of Internal Control / Chief Control Officer"
+              }
+            ],
+            "mirrorsRole": {
+              "questionId": "ic_role_level",
+              "matchType": "compatibility"
+            }
+          },
+          {
+            "id": "ic_scope_experience",
+            "question": "Highest Level of Internal Control Scope You Have Worked At",
+            "type": "select",
+            "required": true,
+            "options": [
+              {
+                "value": "entity_subsidiary",
+                "label": "Entity / Subsidiary Controls"
+              },
+              {
+                "value": "business_unit",
+                "label": "Business Unit / Division Controls"
+              },
+              {
+                "value": "regional",
+                "label": "Regional Controls"
+              },
+              {
+                "value": "country",
+                "label": "Country / National Controls"
+              },
+              {
+                "value": "group_enterprise",
+                "label": "Group / Enterprise-wide Controls"
+              }
+            ],
+            "mirrorsRole": {
+              "questionId": "ic_function_scope",
+              "matchType": "compatibility"
+            }
+          },
+          {
+            "id": "years_in_ic",
+            "question": "Years in Internal Control",
+            "description": "Years spent specifically in Internal Control / Second Line roles",
+            "type": "number",
+            "required": true,
+            "min": 0,
+            "max": 40,
+            "helpText": "Include all internal control, SOX, ICFR, and second line assurance experience",
+            "mirrorsRole": {
+              "questionId": "years_ic_required",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "years_in_audit",
+            "question": "Years in Audit (External or Internal)",
+            "description": "Years spent in external audit (Big 4, mid-tier) or internal audit",
+            "type": "number",
+            "required": false,
+            "min": 0,
+            "max": 30,
+            "helpText": "Audit experience provides strong technical foundation for control roles",
+            "mirrorsRole": {
+              "questionId": "years_audit_preferred",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "ic_team_size",
+            "question": "Largest Internal Control Team Managed",
+            "description": "Maximum number of direct and indirect reports you have managed in an IC function",
+            "type": "number",
+            "required": false,
+            "min": 0,
+            "max": 200,
+            "helpText": "Include both direct reports and matrix/dotted-line resources",
+            "mirrorsRole": {
+              "questionId": "team_size_required",
+              "matchType": "minimum"
+            }
+          }
+        ]
+      },
+      {
+        "id": "framework_standards_knowledge",
+        "title": "Framework & Standards Knowledge",
+        "description": "Self-assess your familiarity with internal control standards and governance frameworks",
+        "order": 2,
+        "helpText": "0 = No Experience, 1 = Awareness, 2 = Practical Application, 3 = Implementation & Management, 4 = Strategic Leadership",
+        "interviewNote": "Be prepared to explain how you have applied these frameworks in practice.",
+        "questions": [
+          {
+            "id": "framework_coso_ic",
+            "question": "COSO Internal Control Framework (2013)",
+            "description": "Committee of Sponsoring Organizations Internal Control - Integrated Framework",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with COSO Internal Control",
+              "1": "Familiar with COSO IC structure; understand the 5 components and 17 principles",
+              "2": "Applied COSO IC in control assessments; mapped controls to COSO principles; evaluated control deficiencies",
+              "3": "Designed control frameworks based on COSO IC; led Provision 29/SOX programmes using COSO; assessed entity-level controls",
+              "4": "Built enterprise internal control programmes from COSO first principles; led COSO implementation transformations; designed integrated control-risk frameworks"
+            },
+            "mirrorsRole": {
+              "questionId": "framework_coso_ic",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "framework_coso_erm",
+            "question": "COSO ERM Framework (2017)",
+            "description": "COSO Enterprise Risk Management - Integrating with Strategy and Performance",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with COSO ERM",
+              "1": "Familiar with COSO ERM components and principles; understand risk appetite concepts",
+              "2": "Applied COSO ERM in risk-control mapping; integrated ERM with internal control activities",
+              "3": "Designed control programmes aligned to COSO ERM; linked control objectives to enterprise risks",
+              "4": "Led enterprise-wide integration of ERM and internal control; designed risk-based control frameworks"
+            },
+            "mirrorsRole": {
+              "questionId": "framework_coso_erm",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "framework_uk_cgc",
+            "question": "UK Corporate Governance Code",
+            "description": "FRC's UK Corporate Governance Code and related governance principles",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with UK Corporate Governance Code",
+              "1": "Aware of UK CGC principles; understand comply-or-explain regime; familiar with board responsibilities",
+              "2": "Applied UK CGC in control governance; supported board reporting on risk and internal control",
+              "3": "Designed governance frameworks aligned to UK CGC; led board declaration processes; advised Audit Committee",
+              "4": "Built enterprise governance programmes based on UK CGC; led Provision 29 implementation; designed board assurance frameworks"
+            },
+            "mirrorsRole": {
+              "questionId": "framework_uk_cgc",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "framework_provision_29",
+            "question": "Provision 29 Compliance",
+            "description": "UK CGC 2024 Provision 29 - Board declaration on internal control effectiveness",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with Provision 29",
+              "1": "Aware of Provision 29 requirements; understand board declaration obligations; familiar with timeline",
+              "2": "Applied Provision 29 in control design; supported materiality determination; participated in dry runs",
+              "3": "Designed Provision 29 compliance programmes; led effectiveness testing; developed board reporting frameworks",
+              "4": "Built enterprise Provision 29 frameworks; led first-year declarations; established ongoing assurance models"
+            },
+            "mirrorsRole": {
+              "questionId": "framework_provision_29",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "framework_sox_404",
+            "question": "US SOX Section 404",
+            "description": "Sarbanes-Oxley Act Section 404 - Management assessment of internal control",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with SOX 404",
+              "1": "Aware of SOX 404 requirements; understand management and auditor attestation requirements",
+              "2": "Applied SOX 404 in control testing; documented controls; evaluated deficiencies against materiality",
+              "3": "Designed SOX 404 compliance programmes; led scoping and risk assessment; coordinated with external auditors",
+              "4": "Built enterprise SOX programmes; led global ICFR initiatives; designed accelerated filer compliance frameworks"
+            },
+            "mirrorsRole": {
+              "questionId": "framework_sox_404",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "framework_jsox",
+            "question": "J-SOX (Japan SOX)",
+            "description": "Japanese Financial Instruments and Exchange Act - Internal control requirements",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with J-SOX",
+              "1": "Aware of J-SOX requirements; understand differences from US SOX",
+              "2": "Applied J-SOX in control documentation; supported compliance for Japanese-listed entities",
+              "3": "Designed J-SOX compliance programmes; managed dual SOX/J-SOX compliance",
+              "4": "Led enterprise J-SOX programmes; built integrated multi-jurisdictional control frameworks"
+            },
+            "mirrorsRole": {
+              "questionId": "framework_jsox",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "framework_three_lines",
+            "question": "Three Lines Model",
+            "description": "IIA's Three Lines Model for organisational governance and assurance",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with Three Lines Model",
+              "1": "Understand Three Lines concepts; familiar with first, second, and third line roles and responsibilities",
+              "2": "Applied Three Lines in control coordination; work effectively with first line control owners and third line auditors",
+              "3": "Designed Three Lines frameworks; established second line role clarity; built combined assurance approaches",
+              "4": "Led enterprise Three Lines implementation; designed integrated assurance models; established line accountability frameworks"
+            },
+            "mirrorsRole": {
+              "questionId": "framework_three_lines",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "framework_iso31000",
+            "question": "ISO 31000 (Risk Management)",
+            "description": "International standard for risk management principles and guidelines",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with ISO 31000",
+              "1": "Aware of ISO 31000 principles; understand risk management process and terminology",
+              "2": "Applied ISO 31000 in control risk assessments; integrated risk principles in control design",
+              "3": "Designed control frameworks incorporating ISO 31000 risk principles; led risk-based control prioritisation",
+              "4": "Built enterprise risk-control integration using ISO 31000; designed unified risk and control taxonomies"
+            },
+            "mirrorsRole": {
+              "questionId": "framework_iso31000",
+              "matchType": "minimum"
+            }
+          }
+        ]
+      },
+      {
+        "id": "coso_components_expertise",
+        "title": "COSO Components Expertise",
+        "description": "Your proficiency across the five COSO Internal Control components",
+        "order": 3,
+        "helpText": "0 = No Experience, 1 = Awareness, 2 = Practical Application, 3 = Implementation & Management, 4 = Strategic Leadership",
+        "interviewNote": "Be prepared to provide examples of how you have applied each COSO component in practice.",
+        "questions": [
+          {
+            "id": "coso_control_environment",
+            "question": "Control Environment (Tone at Top, Ethics, Structure)",
+            "description": "COSO Component 1: Organisational commitment to integrity, ethics, and competence",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience assessing control environment",
+              "1": "Understand control environment concepts; familiar with Principles 1-5 (integrity, board oversight, structure, competence, accountability)",
+              "2": "Assessed control environment factors; evaluated tone at top; reviewed organisational structure impacts on control",
+              "3": "Designed control environment assessments; led culture evaluations; developed control environment metrics",
+              "4": "Built enterprise control environment frameworks; led board-level culture programmes; designed comprehensive ethics and integrity systems"
+            },
+            "mirrorsRole": {
+              "questionId": "coso_control_environment",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "coso_risk_assessment",
+            "question": "Risk Assessment (Objective Setting, Risk Identification)",
+            "description": "COSO Component 2: Identification and analysis of risks to achieving objectives",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with COSO risk assessment",
+              "1": "Understand risk assessment principles; familiar with Principles 6-9 (objectives, risk identification, fraud risk, change analysis)",
+              "2": "Performed risk assessments; identified control objectives; assessed fraud risk and management override",
+              "3": "Designed risk assessment frameworks; led enterprise risk identification; integrated risk and control assessment processes",
+              "4": "Built enterprise risk-control alignment; led strategic risk assessment programmes; designed dynamic risk identification systems"
+            },
+            "mirrorsRole": {
+              "questionId": "coso_risk_assessment",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "coso_control_activities",
+            "question": "Control Activities (Preventive, Detective, Manual, Automated)",
+            "description": "COSO Component 3: Policies and procedures that help ensure management directives are carried out",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience designing or assessing control activities",
+              "1": "Understand control activity types; familiar with Principles 10-12 (select activities, technology controls, policies/procedures)",
+              "2": "Designed and documented control activities; balanced preventive/detective controls; implemented IT-dependent controls",
+              "3": "Led control design programmes; optimised control portfolios; established control standards and libraries",
+              "4": "Built enterprise control activity frameworks; led automation initiatives; designed intelligent control architectures"
+            },
+            "mirrorsRole": {
+              "questionId": "coso_control_activities",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "coso_info_communication",
+            "question": "Information & Communication (Data Quality, Reporting Lines)",
+            "description": "COSO Component 4: Systems to support identification, capture, and exchange of information",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with information and communication controls",
+              "1": "Understand I&C principles; familiar with Principles 13-15 (relevant information, internal communication, external communication)",
+              "2": "Assessed information quality controls; evaluated control reporting processes; reviewed communication channels",
+              "3": "Designed information control frameworks; established control reporting standards; built communication protocols",
+              "4": "Led enterprise information governance; designed integrated data quality frameworks; established board communication standards"
+            },
+            "mirrorsRole": {
+              "questionId": "coso_info_communication",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "coso_monitoring",
+            "question": "Monitoring Activities (Ongoing, Separate Evaluations)",
+            "description": "COSO Component 5: Processes that assess the quality of internal control over time",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with monitoring activities",
+              "1": "Understand monitoring concepts; familiar with Principles 16-17 (ongoing/separate evaluations, deficiency communication)",
+              "2": "Implemented monitoring processes; tracked control effectiveness; reported deficiencies to management",
+              "3": "Designed monitoring frameworks; established KRIs and control metrics; built deficiency escalation processes",
+              "4": "Led enterprise monitoring programmes; designed continuous control monitoring; established real-time assurance dashboards"
+            },
+            "mirrorsRole": {
+              "questionId": "coso_monitoring",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "coso_principles",
+            "question": "COSO 17 Principles Application",
+            "description": "Ability to apply all 17 COSO principles holistically across the framework",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience applying COSO principles holistically",
+              "1": "Familiar with all 17 principles; understand how they interrelate across components",
+              "2": "Applied principles in control assessments; mapped controls to specific principles; assessed principle presence and functioning",
+              "3": "Designed principle-based control frameworks; led comprehensive COSO assessments; trained others on principle application",
+              "4": "Built enterprise programmes applying all 17 principles; established principle-based maturity models; led COSO transformation initiatives"
+            },
+            "mirrorsRole": {
+              "questionId": "coso_principles",
+              "matchType": "minimum"
+            }
+          }
+        ]
+      },
+      {
+        "id": "provision_29_board_reporting",
+        "title": "Provision 29 & Board Reporting",
+        "description": "Your experience with UK Provision 29 compliance and board-level reporting",
+        "order": 4,
+        "helpText": "0 = No Experience, 1 = Awareness, 2 = Practical Application, 3 = Implementation & Management, 4 = Strategic Leadership",
+        "interviewNote": "Provision 29 experience is increasingly critical for UK-listed companies.",
+        "questions": [
+          {
+            "id": "materiality_determination",
+            "question": "Material Control Determination",
+            "description": "Identifying and documenting material controls for board declaration",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with materiality determination",
+              "1": "Understand materiality concepts; familiar with quantitative and qualitative factors",
+              "2": "Participated in materiality assessments; documented material controls; applied materiality thresholds",
+              "3": "Designed materiality determination frameworks; led scoping exercises; established material control criteria",
+              "4": "Built enterprise materiality frameworks; led board-level materiality discussions; designed dynamic scoping methodologies"
+            },
+            "mirrorsRole": {
+              "questionId": "materiality_determination",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "effectiveness_declaration",
+            "question": "Effectiveness Declaration Preparation",
+            "description": "Preparing evidence and narrative for board declaration on control effectiveness",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience preparing effectiveness declarations",
+              "1": "Understand declaration requirements; familiar with evidence standards and narrative expectations",
+              "2": "Supported declaration preparation; gathered evidence; contributed to narrative development",
+              "3": "Led declaration preparation; designed evidence frameworks; drafted board papers and narratives",
+              "4": "Built enterprise declaration programmes; led first-year Provision 29 declarations; established ongoing assurance models"
+            },
+            "mirrorsRole": {
+              "questionId": "effectiveness_declaration",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "dry_run_testing",
+            "question": "Dry Run / Pilot Declaration",
+            "description": "Conducting pilot or dry run declarations to prepare for formal compliance",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with dry runs",
+              "1": "Understand dry run concepts; familiar with pilot testing approaches",
+              "2": "Participated in dry run exercises; tested declaration processes; identified gaps",
+              "3": "Designed and led dry run programmes; evaluated readiness; developed remediation plans",
+              "4": "Built enterprise dry run frameworks; established continuous readiness assessment; designed staged implementation approaches"
+            },
+            "mirrorsRole": {
+              "questionId": "dry_run_testing",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "audit_committee_reporting",
+            "question": "Audit Committee Reporting",
+            "description": "Preparing and presenting control information to Audit Committee",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with Audit Committee reporting",
+              "1": "Understand Audit Committee role; familiar with reporting expectations and governance requirements",
+              "2": "Contributed to Audit Committee papers; supported meeting preparation; provided information on request",
+              "3": "Prepared Audit Committee papers; presented control matters; responded to committee questions",
+              "4": "Led Audit Committee relationships; designed committee reporting frameworks; established control agenda items"
+            },
+            "mirrorsRole": {
+              "questionId": "audit_committee_reporting",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "board_presentation",
+            "question": "Board / Executive Presentation",
+            "description": "Presenting control matters to Board of Directors or Executive Committee",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience presenting to Board or Executives",
+              "1": "Understand board dynamics; familiar with executive communication expectations",
+              "2": "Supported board presentations; prepared materials; attended meetings as subject matter expert",
+              "3": "Presented to Board/ExCo; led control discussions; managed executive stakeholder relationships",
+              "4": "Regular Board presenter; established executive reporting cadence; trusted advisor to Board on control matters"
+            },
+            "mirrorsRole": {
+              "questionId": "board_presentation",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "annual_report_drafting",
+            "question": "Annual Report Disclosure Drafting",
+            "description": "Drafting internal control disclosures for annual report and accounts",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with annual report disclosures",
+              "1": "Understand disclosure requirements; familiar with UK Companies Act and FRC expectations",
+              "2": "Contributed to disclosure drafting; reviewed control narratives; supported legal/company secretary",
+              "3": "Led disclosure drafting; coordinated with external auditors; ensured regulatory compliance",
+              "4": "Designed disclosure frameworks; led multi-jurisdictional reporting; established disclosure best practices"
+            },
+            "mirrorsRole": {
+              "questionId": "annual_report_drafting",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "evidence_strategy",
+            "question": "Evidence Strategy Design",
+            "description": "Designing evidence collection and retention strategies for control effectiveness",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with evidence strategy",
+              "1": "Understand evidence requirements; familiar with documentation standards and retention needs",
+              "2": "Collected and organised control evidence; maintained evidence libraries; supported external audit requests",
+              "3": "Designed evidence strategies; established documentation standards; built evidence repositories",
+              "4": "Led enterprise evidence programmes; designed automated evidence collection; established evidence governance frameworks"
+            },
+            "mirrorsRole": {
+              "questionId": "evidence_strategy",
+              "matchType": "minimum"
+            }
+          }
+        ]
+      },
+      {
+        "id": "control_design_documentation",
+        "title": "Control Design & Documentation",
+        "description": "Your experience designing, documenting, and managing internal controls",
+        "order": 5,
+        "helpText": "0 = No Experience, 1 = Awareness, 2 = Practical Application, 3 = Implementation & Management, 4 = Strategic Leadership",
+        "questions": [
+          {
+            "id": "process_flowcharting",
+            "question": "Process Flowcharting (BPMN)",
+            "description": "Creating process flow diagrams to document control points",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with process flowcharting",
+              "1": "Understand flowcharting concepts; can read and interpret process diagrams",
+              "2": "Create process flowcharts; document control points; use standard notation (BPMN, swimlanes)",
+              "3": "Design complex process maps; establish documentation standards; train others on flowcharting",
+              "4": "Lead enterprise process documentation; design process architecture; establish process governance"
+            },
+            "mirrorsRole": {
+              "questionId": "process_flowcharting",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "rcm_development",
+            "question": "Risk & Control Matrix (RCM) Development",
+            "description": "Creating and maintaining risk and control matrices",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with RCMs",
+              "1": "Understand RCM structure; can read and interpret risk-control mappings",
+              "2": "Develop RCMs for processes; link risks to controls; assess control coverage",
+              "3": "Design RCM templates and standards; establish risk-control taxonomies; lead RCM development programmes",
+              "4": "Build enterprise RCM frameworks; design dynamic risk-control mapping; establish RCM governance"
+            },
+            "mirrorsRole": {
+              "questionId": "rcm_development",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "control_narratives",
+            "question": "Control Narrative Writing",
+            "description": "Writing clear, complete control descriptions and documentation",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience writing control narratives",
+              "1": "Understand control narrative components; familiar with who/what/when/where/why/how structure",
+              "2": "Write clear control narratives; document control objectives, procedures, and evidence requirements",
+              "3": "Design control narrative standards; train control owners on documentation; review and improve narratives",
+              "4": "Establish enterprise control documentation standards; design control libraries; lead control documentation transformation"
+            },
+            "mirrorsRole": {
+              "questionId": "control_narratives",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "entity_level_controls",
+            "question": "Entity-Level Controls (ELCs)",
+            "description": "Designing and assessing pervasive controls at the entity level",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with entity-level controls",
+              "1": "Understand ELC concepts; familiar with control environment, risk assessment, and monitoring ELCs",
+              "2": "Assess entity-level controls; evaluate impact on transaction-level controls; document ELC effectiveness",
+              "3": "Design ELC frameworks; establish ELC assessment criteria; integrate ELCs into overall control assessment",
+              "4": "Build enterprise ELC programmes; design ELC-based audit scoping; establish ELC maturity models"
+            },
+            "mirrorsRole": {
+              "questionId": "entity_level_controls",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "control_library",
+            "question": "Control Library Management",
+            "description": "Building and maintaining standardised control libraries",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with control libraries",
+              "1": "Understand control library concepts; can navigate and search existing libraries",
+              "2": "Contribute to control library maintenance; update control descriptions; ensure consistency",
+              "3": "Design control library structures; establish naming conventions; lead library development",
+              "4": "Build enterprise control libraries; design taxonomy and architecture; establish control library governance"
+            },
+            "mirrorsRole": {
+              "questionId": "control_library",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "segregation_of_duties",
+            "question": "Segregation of Duties (SoD) Design",
+            "description": "Designing and assessing segregation of duties controls",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with SoD",
+              "1": "Understand SoD principles; familiar with incompatible duties and conflict types",
+              "2": "Assess SoD controls; identify conflicts; recommend compensating controls",
+              "3": "Design SoD matrices; establish conflict rules; implement SoD monitoring",
+              "4": "Build enterprise SoD frameworks; design automated SoD tools; establish cross-application SoD governance"
+            },
+            "mirrorsRole": {
+              "questionId": "segregation_of_duties",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "control_objectives",
+            "question": "Control Objectives (CAVR: Completeness, Accuracy, Validity, Restricted Access)",
+            "description": "Applying control objective frameworks to control design",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with control objectives",
+              "1": "Understand CAVR and other control objective frameworks; familiar with assertion-based control design",
+              "2": "Apply control objectives in control design; map controls to CAVR; assess objective coverage",
+              "3": "Design control objective frameworks; establish objective-based testing approaches; train on control objectives",
+              "4": "Build enterprise control objective architectures; integrate objectives across financial and operational controls"
+            },
+            "mirrorsRole": {
+              "questionId": "control_objectives",
+              "matchType": "minimum"
+            }
+          }
+        ]
+      },
+      {
+        "id": "control_testing_assurance",
+        "title": "Control Testing & Assurance",
+        "description": "Your experience testing control design and operating effectiveness",
+        "order": 6,
+        "helpText": "0 = No Experience, 1 = Awareness, 2 = Practical Application, 3 = Implementation & Management, 4 = Strategic Leadership",
+        "questions": [
+          {
+            "id": "design_effectiveness",
+            "question": "Design Effectiveness Testing",
+            "description": "Evaluating whether controls are suitably designed to mitigate risks",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with design effectiveness testing",
+              "1": "Understand design effectiveness concepts; familiar with suitability assessment criteria",
+              "2": "Perform design effectiveness assessments; evaluate control suitability; document design conclusions",
+              "3": "Design effectiveness testing frameworks; establish assessment criteria; lead design reviews",
+              "4": "Build enterprise design effectiveness programmes; establish control design standards; lead design transformation"
+            },
+            "mirrorsRole": {
+              "questionId": "design_effectiveness",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "operating_effectiveness",
+            "question": "Operating Effectiveness Testing",
+            "description": "Testing whether controls are operating as designed over a period",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with operating effectiveness testing",
+              "1": "Understand operating effectiveness concepts; familiar with test-of-one vs period testing",
+              "2": "Perform operating effectiveness tests; select and execute test samples; document test results",
+              "3": "Design operating effectiveness testing programmes; establish testing standards; lead testing teams",
+              "4": "Build enterprise testing frameworks; design continuous operating effectiveness monitoring; establish testing governance"
+            },
+            "mirrorsRole": {
+              "questionId": "operating_effectiveness",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "control_self_assessment",
+            "question": "Control Self-Assessment (CSA) Programmes",
+            "description": "Designing and managing control self-assessment programmes",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with CSA",
+              "1": "Understand CSA concepts; familiar with self-assessment approaches and limitations",
+              "2": "Administer CSA programmes; collect and analyse self-assessment responses; follow up on issues",
+              "3": "Design CSA programmes; establish assessment criteria; integrate CSA with independent testing",
+              "4": "Build enterprise CSA frameworks; design risk-based CSA approaches; establish CSA governance and quality assurance"
+            },
+            "mirrorsRole": {
+              "questionId": "control_self_assessment",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "independent_testing",
+            "question": "Independent Testing",
+            "description": "Conducting or coordinating independent control testing",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with independent testing",
+              "1": "Understand independent testing concepts; familiar with independence requirements and objectivity",
+              "2": "Perform independent control tests; maintain objectivity; document independent conclusions",
+              "3": "Design independent testing programmes; coordinate with internal audit; establish independence standards",
+              "4": "Build enterprise independent testing frameworks; design combined assurance testing; establish quality review processes"
+            },
+            "mirrorsRole": {
+              "questionId": "independent_testing",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "sampling_methodology",
+            "question": "Sampling Methodology (Statistical & Judgmental)",
+            "description": "Applying appropriate sampling methods to control testing",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with sampling methodology",
+              "1": "Understand sampling concepts; familiar with statistical vs judgmental sampling approaches",
+              "2": "Apply sampling methods; determine sample sizes; evaluate sample results appropriately",
+              "3": "Design sampling frameworks; establish sampling standards; train testers on sampling methodology",
+              "4": "Build enterprise sampling programmes; design risk-based sampling approaches; establish sampling governance"
+            },
+            "mirrorsRole": {
+              "questionId": "sampling_methodology",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "walkthrough_testing",
+            "question": "Process Walkthroughs",
+            "description": "Conducting end-to-end process walkthroughs to understand and test controls",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with process walkthroughs",
+              "1": "Understand walkthrough concepts; familiar with inquiry, observation, inspection, and reperformance",
+              "2": "Conduct process walkthroughs; trace transactions; identify control points and gaps",
+              "3": "Design walkthrough programmes; establish walkthrough standards; train others on walkthrough techniques",
+              "4": "Build enterprise walkthrough frameworks; design risk-based walkthrough selection; establish walkthrough quality standards"
+            },
+            "mirrorsRole": {
+              "questionId": "walkthrough_testing",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "evidence_collection",
+            "question": "Evidence Collection & Documentation",
+            "description": "Collecting and documenting control testing evidence",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with evidence collection",
+              "1": "Understand evidence requirements; familiar with sufficient and appropriate evidence standards",
+              "2": "Collect and organise control evidence; document test procedures and results; maintain evidence files",
+              "3": "Design evidence collection frameworks; establish documentation standards; review evidence quality",
+              "4": "Build enterprise evidence management programmes; design automated evidence collection; establish evidence governance"
+            },
+            "mirrorsRole": {
+              "questionId": "evidence_collection",
+              "matchType": "minimum"
+            }
+          }
+        ]
+      },
+      {
+        "id": "deficiency_management_remediation",
+        "title": "Deficiency Management & Remediation",
+        "description": "Your experience identifying, classifying, and remediating control deficiencies",
+        "order": 7,
+        "helpText": "0 = No Experience, 1 = Awareness, 2 = Practical Application, 3 = Implementation & Management, 4 = Strategic Leadership",
+        "questions": [
+          {
+            "id": "deficiency_classification",
+            "question": "Deficiency Classification (Minor, Significant, Material Weakness)",
+            "description": "Classifying control deficiencies by severity and impact",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with deficiency classification",
+              "1": "Understand deficiency classification criteria; familiar with minor issue, significant deficiency, and material weakness definitions",
+              "2": "Classify deficiencies appropriately; apply aggregation principles; document classification rationale",
+              "3": "Design deficiency classification frameworks; establish classification criteria; train others on deficiency evaluation",
+              "4": "Build enterprise deficiency classification programmes; design aggregation methodologies; establish classification governance"
+            },
+            "mirrorsRole": {
+              "questionId": "deficiency_classification",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "remediation_tracking",
+            "question": "Remediation Tracking & Project Management",
+            "description": "Managing remediation projects and tracking progress to closure",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with remediation tracking",
+              "1": "Understand remediation concepts; familiar with action tracking and closure requirements",
+              "2": "Track remediation progress; follow up with action owners; report on remediation status",
+              "3": "Design remediation tracking systems; manage complex remediation projects; establish closure criteria",
+              "4": "Build enterprise remediation programmes; design integrated tracking systems; establish remediation governance"
+            },
+            "mirrorsRole": {
+              "questionId": "remediation_tracking",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "root_cause_analysis",
+            "question": "Root Cause Analysis",
+            "description": "Identifying underlying causes of control failures",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with root cause analysis",
+              "1": "Understand root cause concepts; familiar with 5 Whys, fishbone diagrams, and other techniques",
+              "2": "Perform root cause analysis; identify systemic issues; document causal chains",
+              "3": "Design root cause analysis frameworks; train teams on techniques; integrate RCA into deficiency management",
+              "4": "Build enterprise RCA programmes; design predictive failure analysis; establish systemic issue identification"
+            },
+            "mirrorsRole": {
+              "questionId": "root_cause_analysis",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "compensating_controls",
+            "question": "Compensating Control Design",
+            "description": "Designing alternative controls when primary controls cannot be implemented",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with compensating controls",
+              "1": "Understand compensating control concepts; familiar with when they are appropriate",
+              "2": "Identify and document compensating controls; evaluate compensating control adequacy",
+              "3": "Design compensating control frameworks; establish approval criteria; integrate into control assessment",
+              "4": "Build enterprise compensating control governance; design risk-based acceptance criteria; establish compensating control limits"
+            },
+            "mirrorsRole": {
+              "questionId": "compensating_controls",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "management_action_plans",
+            "question": "Management Action Plan Development",
+            "description": "Developing actionable remediation plans with management",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with management action plans",
+              "1": "Understand action plan components; familiar with owner, action, and due date requirements",
+              "2": "Develop management action plans; ensure plans address root causes; establish realistic timelines",
+              "3": "Design action plan frameworks; establish quality criteria; facilitate plan development with management",
+              "4": "Build enterprise action plan governance; design plan quality assurance; establish escalation and accountability frameworks"
+            },
+            "mirrorsRole": {
+              "questionId": "management_action_plans",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "remediation_validation",
+            "question": "Remediation Validation Testing",
+            "description": "Testing to confirm deficiencies have been effectively remediated",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with remediation validation",
+              "1": "Understand validation concepts; familiar with closure testing requirements",
+              "2": "Perform remediation validation tests; document closure evidence; confirm deficiency resolution",
+              "3": "Design validation testing frameworks; establish closure criteria; manage validation programmes",
+              "4": "Build enterprise validation governance; design risk-based validation approaches; establish validation quality standards"
+            },
+            "mirrorsRole": {
+              "questionId": "remediation_validation",
+              "matchType": "minimum"
+            }
+          }
+        ]
+      },
+      {
+        "id": "grc_control_technology",
+        "title": "GRC & Control Technology",
+        "description": "Your experience with GRC platforms and control management systems",
+        "order": 8,
+        "helpText": "Select systems you have used and rate your proficiency level for each",
+        "interviewNote": "Be prepared to demonstrate your knowledge of systems you rate highly.",
+        "questions": [
+          {
+            "id": "grc_systems_experience",
+            "question": "GRC Platform Experience",
+            "description": "Select all GRC platforms you have experience with and rate your proficiency (1-4)",
+            "type": "system_proficiency",
+            "required": false,
+            "proficiencyScale": {
+              "1": "Basic User - Can navigate, create records, run standard reports",
+              "2": "Proficient User - Manages workflows, configures assessments, tracks issues",
+              "3": "Power User/Admin - Configures modules, designs templates, manages users",
+              "4": "Implementation Lead - Selected, designed and deployed the platform"
+            },
+            "systems": [
+              {
+                "value": "protecht",
+                "label": "Protecht"
+              },
+              {
+                "value": "auditboard",
+                "label": "AuditBoard"
+              },
+              {
+                "value": "diligent_highbond",
+                "label": "Diligent (HighBond)"
+              },
+              {
+                "value": "servicenow_grc",
+                "label": "ServiceNow GRC"
+              },
+              {
+                "value": "sai360_bwise",
+                "label": "SAI360 (BWise)"
+              },
+              {
+                "value": "metricstream",
+                "label": "MetricStream"
+              },
+              {
+                "value": "logicgate",
+                "label": "LogicGate"
+              },
+              {
+                "value": "workiva",
+                "label": "Workiva"
+              },
+              {
+                "value": "onetrust",
+                "label": "OneTrust"
+              },
+              {
+                "value": "archer",
+                "label": "RSA Archer"
+              }
+            ],
+            "mirrorsRole": {
+              "questionId": "grc_systems_required",
+              "matchType": "overlap"
+            }
+          },
+          {
+            "id": "erp_controls_knowledge",
+            "question": "ERP Control Knowledge",
+            "description": "Select ERP systems you have control experience with and rate your proficiency (1-4)",
+            "type": "system_proficiency",
+            "required": false,
+            "proficiencyScale": {
+              "1": "Basic - Understand navigation; can identify key control points",
+              "2": "Proficient - Configure controls; understand module structures; assess key risks",
+              "3": "Advanced - Design control configurations; implement SoD rules; assess system controls",
+              "4": "Expert - Deep technical knowledge; lead ERP control implementations; design automated controls"
+            },
+            "systems": [
+              {
+                "value": "sap_s4hana",
+                "label": "SAP S/4HANA"
+              },
+              {
+                "value": "sap_ecc",
+                "label": "SAP ECC"
+              },
+              {
+                "value": "oracle_erp",
+                "label": "Oracle ERP Cloud"
+              },
+              {
+                "value": "ms_dynamics",
+                "label": "Microsoft Dynamics 365"
+              },
+              {
+                "value": "netsuite",
+                "label": "NetSuite"
+              },
+              {
+                "value": "workday",
+                "label": "Workday"
+              }
+            ],
+            "mirrorsRole": {
+              "questionId": "erp_systems_required",
+              "matchType": "overlap"
+            }
+          },
+          {
+            "id": "grc_system_selection",
+            "question": "GRC System Selection & Implementation",
+            "description": "Leading GRC platform selection, procurement, and implementation",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with GRC system selection or implementation",
+              "1": "Participated in system demos; understand GRC platform landscape",
+              "2": "Contributed to RFP processes; participated in vendor evaluations; supported implementation",
+              "3": "Led GRC system selection; designed evaluation criteria; managed implementation programme",
+              "4": "Directed enterprise GRC implementations; designed system architecture; established GRC technology governance"
+            },
+            "mirrorsRole": {
+              "questionId": "grc_system_selection",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "dashboard_design",
+            "question": "Board-Ready Dashboard Design",
+            "description": "Creating executive dashboards and visualisations for control reporting",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with dashboard design",
+              "1": "Understand dashboard concepts; can navigate and interpret control dashboards",
+              "2": "Create dashboards using GRC tools; design control metrics visualisations",
+              "3": "Design board-ready dashboards; establish visualisation standards; create executive reporting frameworks",
+              "4": "Build enterprise dashboard programmes; design real-time control monitoring; establish board reporting governance"
+            },
+            "mirrorsRole": {
+              "questionId": "dashboard_design",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "workflow_automation",
+            "question": "Control Workflow Automation",
+            "description": "Automating control processes using GRC and workflow tools",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with workflow automation",
+              "1": "Understand workflow automation concepts; familiar with automation opportunities in control processes",
+              "2": "Implement automated workflows; configure assessment cycles; automate notifications and escalations",
+              "3": "Design workflow automation strategies; optimise control processes; integrate multiple systems",
+              "4": "Build enterprise control automation; design intelligent workflows; establish automation governance"
+            },
+            "mirrorsRole": {
+              "questionId": "workflow_automation",
+              "matchType": "minimum"
+            }
+          }
+        ]
+      },
+      {
+        "id": "data_analytics_continuous_monitoring",
+        "title": "Data Analytics & Continuous Monitoring",
+        "description": "Your experience with data analytics and continuous control monitoring",
+        "order": 9,
+        "helpText": "0 = No Experience, 1 = Awareness, 2 = Practical Application, 3 = Implementation & Management, 4 = Strategic Leadership",
+        "questions": [
+          {
+            "id": "data_literacy",
+            "question": "Data Literacy & Interpretation",
+            "description": "Ability to understand, interpret, and communicate data-driven insights",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with data analysis",
+              "1": "Can interpret data outputs; understand basic statistical concepts; read dashboards and reports",
+              "2": "Perform independent data analysis; identify trends and anomalies; create basic reports",
+              "3": "Design data analysis approaches; define control analytics strategy; train others on data interpretation",
+              "4": "Lead enterprise data literacy programmes; design data-driven control methodologies; establish analytics centres of excellence"
+            },
+            "mirrorsRole": {
+              "questionId": "data_literacy",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "analytics_tools",
+            "question": "Analytics Tools (SQL, Python, R)",
+            "description": "Experience with programming languages and databases for control data analysis",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with analytics tools",
+              "1": "Understand basic concepts; can interpret code outputs; familiar with tool capabilities",
+              "2": "Write basic SQL queries; perform data extraction; create simple scripts for control testing",
+              "3": "Design complex queries and scripts; automate control data extraction; develop reusable analytics",
+              "4": "Build enterprise analytics platforms; design control data lakes; develop advanced statistical models"
+            },
+            "mirrorsRole": {
+              "questionId": "analytics_tools",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "visualization_tools",
+            "question": "Data Visualization (Power BI, Tableau)",
+            "description": "Creating visual dashboards and reports for control monitoring",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with visualization tools",
+              "1": "Can navigate dashboards; interpret visualisations; understand chart types",
+              "2": "Create basic dashboards; connect data sources; design control monitoring reports",
+              "3": "Design advanced visualisations; create interactive control dashboards; establish visualisation standards",
+              "4": "Build enterprise visualisation programmes; design real-time control monitoring; establish BI governance"
+            },
+            "mirrorsRole": {
+              "questionId": "visualization_tools",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "full_population_testing",
+            "question": "Full Population Testing",
+            "description": "Testing 100% of transactions rather than sampling",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with full population testing",
+              "1": "Understand full population vs sampling concepts; familiar with benefits and limitations",
+              "2": "Perform full population tests; analyse complete datasets; identify exceptions systematically",
+              "3": "Design full population testing approaches; establish exception handling; develop test automation",
+              "4": "Build enterprise full population testing programmes; design real-time transaction monitoring; establish testing centres of excellence"
+            },
+            "mirrorsRole": {
+              "questionId": "full_population_testing",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "anomaly_detection",
+            "question": "Anomaly Detection & Red Flag Monitoring",
+            "description": "Identifying unusual patterns and potential control failures",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with anomaly detection",
+              "1": "Understand anomaly detection concepts; familiar with common red flags and indicators",
+              "2": "Implement anomaly detection rules; investigate flagged transactions; document findings",
+              "3": "Design anomaly detection frameworks; establish threshold criteria; build investigation protocols",
+              "4": "Build enterprise anomaly detection programmes; design machine learning-based detection; establish predictive monitoring"
+            },
+            "mirrorsRole": {
+              "questionId": "anomaly_detection",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "continuous_monitoring",
+            "question": "Continuous Monitoring Design",
+            "description": "Designing ongoing automated control monitoring processes",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with continuous monitoring",
+              "1": "Understand continuous monitoring concepts; familiar with difference vs periodic testing",
+              "2": "Support continuous monitoring programmes; monitor automated test results; investigate exceptions",
+              "3": "Design continuous monitoring frameworks; establish monitoring dashboards; define exception thresholds",
+              "4": "Build enterprise continuous monitoring programmes; integrate with business processes; design real-time assurance frameworks"
+            },
+            "mirrorsRole": {
+              "questionId": "continuous_monitoring",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "benfords_law",
+            "question": "Benford's Law & Statistical Analysis",
+            "description": "Applying statistical techniques to detect anomalies in financial data",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with Benford's Law or statistical analysis",
+              "1": "Understand Benford's Law concepts; familiar with digit distribution analysis",
+              "2": "Apply Benford's Law and other statistical tests; interpret results; identify anomalies",
+              "3": "Design statistical analysis programmes; establish investigation protocols; train others on techniques",
+              "4": "Build enterprise statistical analysis frameworks; design advanced detection methodologies; establish analytical governance"
+            },
+            "mirrorsRole": {
+              "questionId": "benfords_law",
+              "matchType": "minimum"
+            }
+          }
+        ]
+      },
+      {
+        "id": "it_controls_cybersecurity",
+        "title": "IT Controls & Cybersecurity",
+        "description": "Your experience with IT general controls, application controls, and cybersecurity",
+        "order": 10,
+        "helpText": "0 = No Experience, 1 = Awareness, 2 = Practical Application, 3 = Implementation & Management, 4 = Strategic Leadership",
+        "questions": [
+          {
+            "id": "it_general_controls",
+            "question": "IT General Controls (ITGCs)",
+            "description": "Designing and assessing access management, change management, operations, and program development controls",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with ITGCs",
+              "1": "Understand ITGC categories; familiar with common control objectives",
+              "2": "Design and test ITGC controls; evaluate control design and effectiveness; document deficiencies",
+              "3": "Build ITGC frameworks; design ITGC programmes across multiple applications; establish ITGC standards",
+              "4": "Lead enterprise ITGC programmes; design ITGC methodologies; establish IT control governance"
+            },
+            "mirrorsRole": {
+              "questionId": "it_general_controls",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "it_application_controls",
+            "question": "IT Application Controls (ITACs)",
+            "description": "Designing controls embedded within applications to ensure data integrity",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with ITACs",
+              "1": "Understand application control concepts; familiar with input, processing, and output controls",
+              "2": "Design and document application controls; assess control effectiveness; identify gaps",
+              "3": "Build ITAC frameworks; design application control standards; lead control implementations",
+              "4": "Lead enterprise application control programmes; design automated control architectures; establish ITAC governance"
+            },
+            "mirrorsRole": {
+              "questionId": "it_application_controls",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "automated_controls",
+            "question": "Automated Control Design (3-Way Match, Tolerance Limits)",
+            "description": "Designing automated controls such as matching, tolerance checks, and validations",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with automated control design",
+              "1": "Understand automated control concepts; familiar with common automated controls",
+              "2": "Design automated controls; configure matching rules and tolerances; document control logic",
+              "3": "Build automated control frameworks; optimise control configurations; establish automation standards",
+              "4": "Lead enterprise control automation; design intelligent automated controls; establish automation governance"
+            },
+            "mirrorsRole": {
+              "questionId": "automated_controls",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "access_controls",
+            "question": "Access Control & IAM",
+            "description": "Designing and assessing identity and access management controls",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with access controls",
+              "1": "Understand access control concepts; familiar with authentication, authorisation, and provisioning",
+              "2": "Design access control frameworks; implement role-based access; conduct access reviews",
+              "3": "Build IAM control programmes; design privileged access controls; establish access governance",
+              "4": "Lead enterprise IAM programmes; design identity governance architectures; establish access control standards"
+            },
+            "mirrorsRole": {
+              "questionId": "access_controls",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "change_management_controls",
+            "question": "Change Management Controls",
+            "description": "Designing controls over system and application changes",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with change management controls",
+              "1": "Understand change management concepts; familiar with SDLC and change control processes",
+              "2": "Design change management controls; implement approval workflows; conduct change testing",
+              "3": "Build change management frameworks; design DevOps controls; establish change governance",
+              "4": "Lead enterprise change management programmes; design CI/CD controls; establish change control standards"
+            },
+            "mirrorsRole": {
+              "questionId": "change_management_controls",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "iso27001",
+            "question": "ISO 27001 / Information Security",
+            "description": "Designing information security controls aligned to ISO 27001",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with ISO 27001",
+              "1": "Understand ISO 27001 structure; familiar with Annex A controls",
+              "2": "Design ISMS controls; implement security policies; support certification activities",
+              "3": "Build ISO 27001 control frameworks; lead certification readiness; design security programmes",
+              "4": "Lead enterprise ISMS programmes; design security control architectures; establish information security governance"
+            },
+            "mirrorsRole": {
+              "questionId": "iso27001",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "nist_csf",
+            "question": "NIST Cybersecurity Framework",
+            "description": "Applying NIST CSF (Identify, Protect, Detect, Respond, Recover) in control design",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with NIST CSF",
+              "1": "Understand NIST CSF functions and categories; familiar with framework structure",
+              "2": "Design controls against NIST CSF requirements; assess control maturity; benchmark security posture",
+              "3": "Build cybersecurity control programmes using NIST CSF; design security control frameworks; develop maturity roadmaps",
+              "4": "Lead enterprise security programmes using NIST CSF; design cyber control methodologies; establish security control standards"
+            },
+            "mirrorsRole": {
+              "questionId": "nist_csf",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "cloud_controls",
+            "question": "Cloud Security Controls (AWS, Azure, GCP)",
+            "description": "Designing controls for cloud infrastructure and services",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with cloud security controls",
+              "1": "Understand cloud service models (IaaS, PaaS, SaaS); familiar with shared responsibility model",
+              "2": "Design cloud controls; configure IAM policies; implement data protection controls",
+              "3": "Build cloud control frameworks; design multi-cloud governance; establish cloud security standards",
+              "4": "Lead enterprise cloud control programmes; design cloud-native control architectures; establish cloud governance"
+            },
+            "mirrorsRole": {
+              "questionId": "cloud_controls",
+              "matchType": "minimum"
+            }
+          }
+        ]
+      },
+      {
+        "id": "financial_controls_icfr",
+        "title": "Financial Controls & ICFR",
+        "description": "Your experience with financial reporting controls and ICFR",
+        "order": 11,
+        "helpText": "0 = No Experience, 1 = Awareness, 2 = Practical Application, 3 = Implementation & Management, 4 = Strategic Leadership",
+        "questions": [
+          {
+            "id": "icfr_framework",
+            "question": "ICFR Framework Design",
+            "description": "Designing Internal Control over Financial Reporting frameworks",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with ICFR",
+              "1": "Understand ICFR concepts; familiar with financial reporting control requirements",
+              "2": "Design ICFR controls; document control procedures; support SOX/Provision 29 compliance",
+              "3": "Build ICFR frameworks; lead scoping and risk assessment; establish ICFR governance",
+              "4": "Lead enterprise ICFR programmes; design global ICFR architectures; establish ICFR transformation"
+            },
+            "mirrorsRole": {
+              "questionId": "icfr_framework",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "financial_close_controls",
+            "question": "Financial Close Controls",
+            "description": "Designing controls over the financial close process",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with financial close controls",
+              "1": "Understand financial close process; familiar with close calendar and key controls",
+              "2": "Design close controls; implement close checklists; monitor close timelines",
+              "3": "Build close control frameworks; optimise close processes; establish close governance",
+              "4": "Lead enterprise close transformation; design accelerated close programmes; establish close control standards"
+            },
+            "mirrorsRole": {
+              "questionId": "financial_close_controls",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "revenue_controls",
+            "question": "Revenue Recognition Controls",
+            "description": "Designing controls over revenue recognition processes",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with revenue controls",
+              "1": "Understand revenue recognition concepts; familiar with IFRS 15/ASC 606 requirements",
+              "2": "Design revenue controls; implement contract review processes; assess revenue recognition timing",
+              "3": "Build revenue control frameworks; lead revenue compliance programmes; establish revenue governance",
+              "4": "Lead enterprise revenue control transformation; design complex revenue control architectures"
+            },
+            "mirrorsRole": {
+              "questionId": "revenue_controls",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "journal_entry_controls",
+            "question": "Journal Entry Controls",
+            "description": "Designing controls over manual and automated journal entries",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with journal entry controls",
+              "1": "Understand journal entry risks; familiar with approval and review requirements",
+              "2": "Design journal entry controls; implement approval workflows; conduct journal testing",
+              "3": "Build journal control frameworks; design automated journal monitoring; establish journal governance",
+              "4": "Lead enterprise journal control programmes; design AI-based journal anomaly detection"
+            },
+            "mirrorsRole": {
+              "questionId": "journal_entry_controls",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "management_override",
+            "question": "Management Override Controls",
+            "description": "Designing controls to prevent and detect management override of controls",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with management override controls",
+              "1": "Understand management override risks; familiar with fraud triangle and override indicators",
+              "2": "Design management override controls; implement monitoring procedures; assess tone at top",
+              "3": "Build management override frameworks; design override detection analytics; establish governance",
+              "4": "Lead enterprise fraud prevention programmes; design comprehensive override detection systems"
+            },
+            "mirrorsRole": {
+              "questionId": "management_override",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "reconciliation_controls",
+            "question": "Account Reconciliation Controls",
+            "description": "Designing controls over account reconciliation processes",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with reconciliation controls",
+              "1": "Understand reconciliation concepts; familiar with reconciliation types and requirements",
+              "2": "Design reconciliation controls; implement reconciliation templates; monitor completion",
+              "3": "Build reconciliation frameworks; design automated reconciliation tools; establish governance",
+              "4": "Lead enterprise reconciliation transformation; design continuous reconciliation monitoring"
+            },
+            "mirrorsRole": {
+              "questionId": "reconciliation_controls",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "external_audit_coordination",
+            "question": "External Auditor Coordination (ISA 720)",
+            "description": "Coordinating with external auditors on internal control matters",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience coordinating with external auditors",
+              "1": "Understand external audit process; familiar with auditor reliance on internal control",
+              "2": "Support external audit requests; provide documentation; respond to auditor inquiries",
+              "3": "Manage external auditor relationships; coordinate testing approaches; facilitate efficient audits",
+              "4": "Lead external audit coordination; design integrated assurance approaches; establish auditor relationship governance"
+            },
+            "mirrorsRole": {
+              "questionId": "external_audit_coordination",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "ifrs_uk_gaap",
+            "question": "IFRS / UK GAAP Knowledge",
+            "description": "Understanding accounting standards relevant to control design",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with IFRS or UK GAAP",
+              "1": "Understand basic accounting concepts; familiar with key standards",
+              "2": "Apply accounting knowledge to control design; understand financial statement assertions",
+              "3": "Design controls aligned to accounting requirements; advise on accounting control implications",
+              "4": "Lead accounting-integrated control programmes; design complex accounting controls"
+            },
+            "mirrorsRole": {
+              "questionId": "ifrs_uk_gaap",
+              "matchType": "minimum"
+            }
+          }
+        ]
+      },
+      {
+        "id": "esg_sustainability_controls",
+        "title": "ESG & Sustainability Controls (ICSR)",
+        "description": "Your experience with Internal Control over Sustainability Reporting",
+        "order": 12,
+        "helpText": "0 = No Experience, 1 = Awareness, 2 = Practical Application, 3 = Implementation & Management, 4 = Strategic Leadership",
+        "questions": [
+          {
+            "id": "coso_icsr",
+            "question": "COSO ICSR Framework",
+            "description": "Applying COSO guidance on Internal Control over Sustainability Reporting",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with COSO ICSR",
+              "1": "Aware of COSO ICSR guidance; understand how COSO applies to sustainability reporting",
+              "2": "Applied COSO ICSR in sustainability control design; mapped controls to ESG reporting processes",
+              "3": "Designed ICSR frameworks based on COSO guidance; led sustainability control implementations",
+              "4": "Built enterprise ICSR programmes; designed COSO-integrated sustainability control architectures"
+            },
+            "mirrorsRole": {
+              "questionId": "coso_icsr",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "esg_data_controls",
+            "question": "ESG Data Controls & Data Lineage",
+            "description": "Designing controls over ESG data collection, calculation, and reporting",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with ESG data controls",
+              "1": "Understand ESG data challenges; familiar with data quality and lineage concepts",
+              "2": "Design ESG data controls; implement data validation; document data lineage",
+              "3": "Build ESG data control frameworks; design data governance for sustainability; establish data quality standards",
+              "4": "Lead enterprise ESG data programmes; design end-to-end data control architectures"
+            },
+            "mirrorsRole": {
+              "questionId": "esg_data_controls",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "carbon_ghg_controls",
+            "question": "Carbon / GHG Emissions Controls (Scope 1-3)",
+            "description": "Designing controls over greenhouse gas emissions reporting",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with carbon/GHG controls",
+              "1": "Understand GHG Protocol; familiar with Scope 1, 2, and 3 emissions categories",
+              "2": "Design GHG data controls; implement emissions calculations; validate emission factors",
+              "3": "Build GHG control frameworks; design Scope 3 data collection controls; establish emissions governance",
+              "4": "Lead enterprise carbon control programmes; design comprehensive emissions control architectures"
+            },
+            "mirrorsRole": {
+              "questionId": "carbon_ghg_controls",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "sustainability_reporting",
+            "question": "Sustainability Reporting Controls",
+            "description": "Designing controls over sustainability report preparation",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with sustainability reporting controls",
+              "1": "Understand sustainability reporting requirements; familiar with report preparation processes",
+              "2": "Design sustainability reporting controls; implement review processes; support external assurance",
+              "3": "Build sustainability reporting frameworks; design integrated reporting controls; establish governance",
+              "4": "Lead enterprise sustainability reporting programmes; design global reporting control architectures"
+            },
+            "mirrorsRole": {
+              "questionId": "sustainability_reporting",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "greenwashing_prevention",
+            "question": "Greenwashing Prevention Controls",
+            "description": "Designing controls to prevent misleading sustainability claims",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with greenwashing prevention",
+              "1": "Understand greenwashing risks; familiar with regulatory expectations and reputational impacts",
+              "2": "Design greenwashing prevention controls; implement claim validation processes",
+              "3": "Build greenwashing prevention frameworks; design substantiation controls; establish governance",
+              "4": "Lead enterprise greenwashing prevention programmes; design comprehensive claim verification systems"
+            },
+            "mirrorsRole": {
+              "questionId": "greenwashing_prevention",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "csrd_compliance",
+            "question": "CSRD Compliance Controls",
+            "description": "Designing controls for EU Corporate Sustainability Reporting Directive compliance",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with CSRD",
+              "1": "Understand CSRD requirements; familiar with ESRS standards and double materiality",
+              "2": "Design CSRD compliance controls; implement ESRS data collection; support limited assurance",
+              "3": "Build CSRD control frameworks; design comprehensive ESRS controls; establish CSRD governance",
+              "4": "Lead enterprise CSRD programmes; design assurance-ready control architectures"
+            },
+            "mirrorsRole": {
+              "questionId": "csrd_compliance",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "esg_frameworks",
+            "question": "ESG Frameworks (GRI, SASB, TCFD)",
+            "description": "Knowledge of ESG reporting frameworks and standards",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with ESG frameworks",
+              "1": "Aware of major ESG frameworks; understand differences between GRI, SASB, TCFD, ISSB",
+              "2": "Apply ESG frameworks in control design; map controls to framework requirements",
+              "3": "Design framework-aligned control programmes; lead multi-framework compliance",
+              "4": "Build enterprise ESG framework programmes; design comprehensive framework-integrated controls"
+            },
+            "mirrorsRole": {
+              "questionId": "esg_frameworks",
+              "matchType": "minimum"
+            }
+          }
+        ]
+      },
+      {
+        "id": "third_party_operational_controls",
+        "title": "Third-Party & Operational Controls",
+        "description": "Your experience with vendor controls and operational resilience",
+        "order": 13,
+        "helpText": "0 = No Experience, 1 = Awareness, 2 = Practical Application, 3 = Implementation & Management, 4 = Strategic Leadership",
+        "questions": [
+          {
+            "id": "soc_report_review",
+            "question": "SOC 1 / SOC 2 Report Review",
+            "description": "Reviewing and relying on service organisation control reports",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with SOC reports",
+              "1": "Understand SOC report types; familiar with Type I vs Type II and scope",
+              "2": "Review SOC reports; assess complementary user entity controls; identify control gaps",
+              "3": "Design SOC review programmes; establish reliance criteria; manage vendor control assessment",
+              "4": "Lead enterprise SOC programmes; design integrated vendor assurance; establish SOC governance"
+            },
+            "mirrorsRole": {
+              "questionId": "soc_report_review",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "third_party_controls",
+            "question": "Third-Party / Vendor Control Assessment",
+            "description": "Assessing and monitoring controls at third-party service providers",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with third-party control assessment",
+              "1": "Understand third-party risks; familiar with vendor due diligence concepts",
+              "2": "Assess third-party controls; conduct vendor reviews; monitor ongoing control performance",
+              "3": "Design third-party control frameworks; establish vendor risk tiering; lead vendor assessments",
+              "4": "Lead enterprise third-party programmes; design comprehensive vendor control architectures"
+            },
+            "mirrorsRole": {
+              "questionId": "third_party_controls",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "bridging_letters",
+            "question": "Bridging Letters & Gap Analysis",
+            "description": "Managing SOC report period gaps through bridging controls",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with bridging letters",
+              "1": "Understand bridging concepts; familiar with period coverage requirements",
+              "2": "Request and review bridging letters; assess gap period controls; document reliance",
+              "3": "Design bridging letter programmes; establish gap control criteria; manage vendor communications",
+              "4": "Lead enterprise bridging governance; design comprehensive period coverage frameworks"
+            },
+            "mirrorsRole": {
+              "questionId": "bridging_letters",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "supply_chain_controls",
+            "question": "Supply Chain Controls",
+            "description": "Designing controls over supply chain processes and risks",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with supply chain controls",
+              "1": "Understand supply chain risks; familiar with procurement and logistics control points",
+              "2": "Design supply chain controls; implement vendor qualification; monitor supply chain performance",
+              "3": "Build supply chain control frameworks; design end-to-end supply chain governance",
+              "4": "Lead enterprise supply chain programmes; design comprehensive supply chain control architectures"
+            },
+            "mirrorsRole": {
+              "questionId": "supply_chain_controls",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "business_continuity_controls",
+            "question": "Business Continuity / DR Controls",
+            "description": "Designing controls for business continuity and disaster recovery",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with BC/DR controls",
+              "1": "Understand BC/DR concepts; familiar with BIA, RTO, and RPO requirements",
+              "2": "Design BC/DR controls; implement backup and recovery processes; support testing",
+              "3": "Build BC/DR control frameworks; design testing programmes; establish BC governance",
+              "4": "Lead enterprise BC/DR programmes; design comprehensive resilience control architectures"
+            },
+            "mirrorsRole": {
+              "questionId": "business_continuity_controls",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "operational_resilience",
+            "question": "Operational Resilience Controls",
+            "description": "Designing controls for operational resilience and important business services",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with operational resilience",
+              "1": "Understand operational resilience concepts; familiar with important business services and impact tolerances",
+              "2": "Design operational resilience controls; implement service mapping; support scenario testing",
+              "3": "Build operational resilience frameworks; design impact tolerance monitoring; establish governance",
+              "4": "Lead enterprise operational resilience programmes; design comprehensive resilience architectures"
+            },
+            "mirrorsRole": {
+              "questionId": "operational_resilience",
+              "matchType": "minimum"
+            }
+          }
+        ]
+      },
+      {
+        "id": "ai_governance_emerging_tech",
+        "title": "AI Governance & Emerging Technology",
+        "description": "Your experience with AI governance and emerging technology controls",
+        "order": 14,
+        "helpText": "0 = No Experience, 1 = Awareness, 2 = Practical Application, 3 = Implementation & Management, 4 = Strategic Leadership",
+        "questions": [
+          {
+            "id": "ai_governance",
+            "question": "AI Governance & Algorithm Assurance",
+            "description": "Designing governance and controls for AI systems and algorithmic decision-making",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with AI governance",
+              "1": "Understand AI governance concepts; familiar with AI risks and ethical considerations",
+              "2": "Design AI governance controls; implement model documentation; assess bias and fairness",
+              "3": "Build AI governance frameworks; design algorithm assurance programmes; establish AI ethics governance",
+              "4": "Lead enterprise AI governance; design comprehensive AI control architectures"
+            },
+            "mirrorsRole": {
+              "questionId": "ai_governance",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "ai_impact_assessment",
+            "question": "AI Impact Assessments",
+            "description": "Conducting impact assessments for AI implementations",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with AI impact assessments",
+              "1": "Understand AI impact assessment concepts; familiar with risk categories and stakeholder impacts",
+              "2": "Conduct AI impact assessments; evaluate risks and benefits; document assessment findings",
+              "3": "Design AI impact assessment frameworks; establish assessment criteria; lead assessment programmes",
+              "4": "Build enterprise AI assessment programmes; design comprehensive impact evaluation methodologies"
+            },
+            "mirrorsRole": {
+              "questionId": "ai_impact_assessment",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "model_controls",
+            "question": "Model Risk Controls",
+            "description": "Designing controls over model development, validation, and monitoring",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with model risk controls",
+              "1": "Understand model risk concepts; familiar with model lifecycle and validation requirements",
+              "2": "Design model controls; implement model inventory; support model validation",
+              "3": "Build model risk control frameworks; design validation programmes; establish model governance",
+              "4": "Lead enterprise model risk programmes; design comprehensive model control architectures"
+            },
+            "mirrorsRole": {
+              "questionId": "model_controls",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "agentic_ai_controls",
+            "question": "Agentic AI Controls (Human-in-the-Loop)",
+            "description": "Designing controls for autonomous AI agents and human oversight",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with agentic AI controls",
+              "1": "Understand agentic AI concepts; familiar with autonomy levels and human oversight needs",
+              "2": "Design human-in-the-loop controls; implement escalation triggers; document override procedures",
+              "3": "Build agentic AI control frameworks; design autonomy boundaries; establish human oversight governance",
+              "4": "Lead enterprise agentic AI programmes; design comprehensive autonomous system controls"
+            },
+            "mirrorsRole": {
+              "questionId": "agentic_ai_controls",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "genai_policies",
+            "question": "Generative AI Policies",
+            "description": "Designing policies and controls for generative AI usage",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with GenAI policies",
+              "1": "Understand GenAI risks; familiar with data leakage, IP, and quality concerns",
+              "2": "Design GenAI acceptable use policies; implement usage controls; monitor compliance",
+              "3": "Build GenAI policy frameworks; design usage governance; establish GenAI risk management",
+              "4": "Lead enterprise GenAI programmes; design comprehensive GenAI control architectures"
+            },
+            "mirrorsRole": {
+              "questionId": "genai_policies",
+              "matchType": "minimum"
+            }
+          }
+        ]
+      },
+      {
+        "id": "three_lines_coordination",
+        "title": "Three Lines Coordination & Assurance",
+        "description": "Your experience coordinating across the Three Lines Model",
+        "order": 15,
+        "helpText": "0 = No Experience, 1 = Awareness, 2 = Practical Application, 3 = Implementation & Management, 4 = Strategic Leadership",
+        "questions": [
+          {
+            "id": "first_line_engagement",
+            "question": "First Line Engagement & Training",
+            "description": "Engaging and training first line management on control responsibilities",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with first line engagement",
+              "1": "Understand first line responsibilities; familiar with control owner concepts",
+              "2": "Engage first line on control requirements; deliver training; support control implementation",
+              "3": "Design first line engagement programmes; establish training curricula; lead awareness initiatives",
+              "4": "Build enterprise first line programmes; design comprehensive control culture initiatives"
+            },
+            "mirrorsRole": {
+              "questionId": "first_line_engagement",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "control_owner_management",
+            "question": "Control Owner Management",
+            "description": "Managing relationships with control owners and ensuring accountability",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience managing control owners",
+              "1": "Understand control owner role; familiar with accountability frameworks",
+              "2": "Manage control owner relationships; ensure attestations; follow up on issues",
+              "3": "Design control owner programmes; establish accountability frameworks; lead owner engagement",
+              "4": "Build enterprise control owner governance; design comprehensive accountability architectures"
+            },
+            "mirrorsRole": {
+              "questionId": "control_owner_management",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "internal_audit_relationship",
+            "question": "Internal Audit Relationship",
+            "description": "Coordinating with internal audit as a second line function",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience coordinating with internal audit",
+              "1": "Understand internal audit role; familiar with third line independence requirements",
+              "2": "Coordinate with internal audit; share information; avoid duplication of effort",
+              "3": "Design IA coordination frameworks; establish assurance protocols; lead joint planning",
+              "4": "Build enterprise IA coordination; design integrated second/third line assurance"
+            },
+            "mirrorsRole": {
+              "questionId": "internal_audit_relationship",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "assurance_mapping",
+            "question": "Assurance Mapping",
+            "description": "Mapping assurance activities across all three lines",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with assurance mapping",
+              "1": "Understand assurance mapping concepts; familiar with coverage assessment",
+              "2": "Perform assurance mapping; identify gaps and overlaps; support assurance planning",
+              "3": "Design assurance mapping frameworks; establish mapping methodologies; lead coverage assessments",
+              "4": "Build enterprise assurance mapping; design comprehensive coverage architectures"
+            },
+            "mirrorsRole": {
+              "questionId": "assurance_mapping",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "combined_assurance",
+            "question": "Combined Assurance Reporting",
+            "description": "Producing integrated assurance reports across all lines",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with combined assurance",
+              "1": "Understand combined assurance concepts; familiar with integrated reporting",
+              "2": "Contribute to combined assurance reports; synthesise findings across lines",
+              "3": "Design combined assurance frameworks; establish reporting standards; lead integration",
+              "4": "Build enterprise combined assurance; design comprehensive integrated assurance architectures"
+            },
+            "mirrorsRole": {
+              "questionId": "combined_assurance",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "external_audit_interface",
+            "question": "External Audit Interface",
+            "description": "Managing the interface with external auditors on control matters",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with external audit interface",
+              "1": "Understand external audit reliance; familiar with auditor expectations",
+              "2": "Support external audit requests; provide control documentation; respond to queries",
+              "3": "Manage external audit relationships; coordinate testing approaches; lead audit readiness",
+              "4": "Build enterprise external audit governance; design efficient audit interfaces"
+            },
+            "mirrorsRole": {
+              "questionId": "external_audit_interface",
+              "matchType": "minimum"
+            }
+          }
+        ]
+      },
+      {
+        "id": "stakeholder_management_influence",
+        "title": "Stakeholder Management & Influence",
+        "description": "Your experience managing stakeholders and driving control culture",
+        "order": 16,
+        "helpText": "0 = No Experience, 1 = Awareness, 2 = Practical Application, 3 = Implementation & Management, 4 = Strategic Leadership",
+        "questions": [
+          {
+            "id": "boardroom_translation",
+            "question": "Boardroom Translation (Technical to Business)",
+            "description": "Translating technical control issues into business risk language",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with boardroom translation",
+              "1": "Understand the need to translate; familiar with business language expectations",
+              "2": "Translate technical findings into business terms; prepare executive summaries",
+              "3": "Design translation frameworks; establish communication standards; train teams",
+              "4": "Master boardroom communication; establish executive communication governance"
+            },
+            "mirrorsRole": {
+              "questionId": "boardroom_translation",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "diplomatic_truth_telling",
+            "question": "Diplomatic Truth-Telling",
+            "description": "Delivering difficult messages constructively and professionally",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience delivering difficult messages",
+              "1": "Understand the need for constructive feedback; familiar with diplomatic approaches",
+              "2": "Deliver difficult messages professionally; maintain relationships while being honest",
+              "3": "Master diplomatic truth-telling; navigate politically sensitive situations",
+              "4": "Exceptional at delivering difficult messages; trusted for honest, constructive counsel"
+            },
+            "mirrorsRole": {
+              "questionId": "diplomatic_truth_telling",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "negotiation_influence",
+            "question": "Negotiation & Influence (First Line)",
+            "description": "Negotiating with first line management on control requirements",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience negotiating control requirements",
+              "1": "Understand negotiation basics; familiar with balancing control and business needs",
+              "2": "Negotiate control requirements; find win-win solutions; maintain relationships",
+              "3": "Master control negotiation; influence without authority; achieve sustainable outcomes",
+              "4": "Exceptional negotiator; shapes organisational control expectations"
+            },
+            "mirrorsRole": {
+              "questionId": "negotiation_influence",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "control_culture",
+            "question": "Control Culture Assessment",
+            "description": "Assessing and shaping organisational control culture",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with control culture",
+              "1": "Understand control culture concepts; familiar with culture indicators",
+              "2": "Assess control culture; identify cultural barriers; recommend improvements",
+              "3": "Design culture assessment frameworks; lead culture initiatives; measure culture change",
+              "4": "Master control culture transformation; shape enterprise control mindset"
+            },
+            "mirrorsRole": {
+              "questionId": "control_culture",
+              "matchType": "minimum"
+            }
+          }
+        ]
+      },
+      {
+        "id": "ic_function_operations",
+        "title": "IC Function Operations & Domain Experience",
+        "description": "Your IC function management experience and sector expertise",
+        "order": 17,
+        "helpText": "0 = No Experience, 1 = Awareness, 2 = Practical Application, 3 = Implementation & Management, 4 = Strategic Leadership",
+        "questions": [
+          {
+            "id": "skills_development",
+            "question": "Skills Development & Training",
+            "description": "Developing IC team capabilities and delivering training",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with skills development",
+              "1": "Provided on-the-job coaching; supported individual development",
+              "2": "Designed and delivered training; established skill matrices; managed development plans",
+              "3": "Built training programmes; established competency frameworks; led capability uplift",
+              "4": "Designed enterprise IC capability programmes; established IC academies"
+            },
+            "mirrorsRole": {
+              "questionId": "skills_development",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "cosourcing_management",
+            "question": "Co-sourcing / Outsourcing Management",
+            "description": "Managing co-sourced or outsourced IC resources",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with co-sourcing",
+              "1": "Worked alongside co-sourced resources; understand co-sourcing models",
+              "2": "Managed co-sourced teams; coordinated delivery; ensured quality",
+              "3": "Designed co-sourcing programmes; managed vendor relationships; optimised resourcing",
+              "4": "Led enterprise co-sourcing strategy; established vendor governance"
+            },
+            "mirrorsRole": {
+              "questionId": "cosourcing_management",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "budget_management",
+            "question": "IC Budget Management",
+            "description": "Managing internal control function budgets",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No budget management experience",
+              "1": "Tracked project budgets; reported on expenditure",
+              "2": "Managed team budgets; forecasted resource needs; controlled costs",
+              "3": "Managed significant budgets; developed business cases; optimised investment",
+              "4": "Led enterprise IC budget strategy; established budget governance"
+            },
+            "mirrorsRole": {
+              "questionId": "budget_management",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "sector_manufacturing",
+            "question": "Manufacturing / Industrial",
+            "description": "Internal control experience in manufacturing and industrial sectors",
+            "type": "slider",
+            "required": false,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No manufacturing/industrial experience",
+              "1": "Some exposure to manufacturing controls; understand key industry risks",
+              "2": "Designed controls for manufacturing processes; implemented inventory and production controls",
+              "3": "Led IC programmes in manufacturing; deep understanding of sector-specific controls",
+              "4": "Expert in manufacturing control; led transformations; established sector best practices"
+            },
+            "mirrorsRole": {
+              "questionId": "sector_manufacturing",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "sector_retail",
+            "question": "Retail / Consumer",
+            "description": "Internal control experience in retail and consumer sectors",
+            "type": "slider",
+            "required": false,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No retail/consumer experience",
+              "1": "Some exposure to retail controls; understand key industry risks",
+              "2": "Designed controls for retail processes; implemented POS and inventory controls",
+              "3": "Led IC programmes in retail; deep understanding of sector-specific controls",
+              "4": "Expert in retail control; led transformations; established sector best practices"
+            },
+            "mirrorsRole": {
+              "questionId": "sector_retail",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "sector_technology",
+            "question": "Technology / Software",
+            "description": "Internal control experience in technology and software sectors",
+            "type": "slider",
+            "required": false,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No technology/software experience",
+              "1": "Some exposure to tech controls; understand key industry risks",
+              "2": "Designed controls for tech processes; implemented revenue recognition and SaaS controls",
+              "3": "Led IC programmes in technology; deep understanding of sector-specific controls",
+              "4": "Expert in technology control; led transformations; established sector best practices"
+            },
+            "mirrorsRole": {
+              "questionId": "sector_technology",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "sector_healthcare",
+            "question": "Healthcare / Life Sciences",
+            "description": "Internal control experience in healthcare and life sciences sectors",
+            "type": "slider",
+            "required": false,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No healthcare/life sciences experience",
+              "1": "Some exposure to healthcare controls; understand key industry risks",
+              "2": "Designed controls for healthcare processes; implemented compliance and quality controls",
+              "3": "Led IC programmes in healthcare; deep understanding of sector-specific controls",
+              "4": "Expert in healthcare control; led transformations; established sector best practices"
+            },
+            "mirrorsRole": {
+              "questionId": "sector_healthcare",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "sector_energy",
+            "question": "Energy / Utilities",
+            "description": "Internal control experience in energy and utilities sectors",
+            "type": "slider",
+            "required": false,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No energy/utilities experience",
+              "1": "Some exposure to energy controls; understand key industry risks",
+              "2": "Designed controls for energy processes; implemented operational and commodity controls",
+              "3": "Led IC programmes in energy; deep understanding of sector-specific controls",
+              "4": "Expert in energy control; led transformations; established sector best practices"
+            },
+            "mirrorsRole": {
+              "questionId": "sector_energy",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "sector_financial_services",
+            "question": "Financial Services",
+            "description": "Internal control experience in financial services sector",
+            "type": "slider",
+            "required": false,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No financial services experience",
+              "1": "Some exposure to FS controls; understand key industry risks and regulations",
+              "2": "Designed controls for FS processes; implemented regulatory and operational controls",
+              "3": "Led IC programmes in financial services; deep understanding of sector-specific controls",
+              "4": "Expert in FS control; led transformations; established sector best practices"
+            },
+            "mirrorsRole": {
+              "questionId": "sector_financial_services",
+              "matchType": "minimum"
+            }
+          }
+        ]
+      },
+      {
+        "id": "fs_topup",
+        "title": "Financial Services Internal Controls",
+        "description": "FS-specific internal control frameworks and regulatory requirements. Only complete if seeking/hiring for roles in Financial Services.",
+        "order": 18,
+        "helpText": "0 = No Experience, 1 = Awareness, 2 = Practical Application, 3 = Implementation & Management, 4 = Strategic Leadership",
+        "questions": [
+          {
+            "id": "fs_sox_controls",
+            "question": "SOX / Financial Reporting Controls (FS)",
+            "description": "SOX 404 and financial reporting controls in a financial services context",
+            "type": "slider",
+            "required": false,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No FS SOX experience",
+              "1": "Understand SOX requirements in FS context; familiar with key financial controls",
+              "2": "Designed and tested SOX controls for FS; managed walkthroughs; remediated deficiencies",
+              "3": "Led FS SOX programmes; designed control frameworks; managed external audit relationship",
+              "4": "Enterprise FS SOX strategy; regulatory financial reporting expertise; industry thought leadership"
+            },
+            "mirrorsRole": {
+              "questionId": "fs_sox_controls",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "fs_basel_controls",
+            "question": "Basel Operational Risk Controls",
+            "description": "Internal controls for Basel operational risk requirements",
+            "type": "slider",
+            "required": false,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No Basel controls experience",
+              "1": "Understand Basel OpRisk categories; familiar with control requirements",
+              "2": "Designed controls for Basel OpRisk; tested RCSA controls; managed loss data controls",
+              "3": "Led Basel OpRisk control programmes; designed control frameworks; managed regulatory submissions",
+              "4": "Enterprise Basel control architecture; PRA engagement; industry thought leadership"
+            },
+            "mirrorsRole": {
+              "questionId": "fs_basel_controls",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "fs_capital_controls",
+            "question": "Capital & Liquidity Controls",
+            "description": "Internal controls over capital adequacy and liquidity management",
+            "type": "slider",
+            "required": false,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No capital/liquidity controls experience",
+              "1": "Understand capital and liquidity concepts; familiar with control requirements",
+              "2": "Designed controls for capital calculations; tested liquidity controls; managed reporting controls",
+              "3": "Led capital/liquidity control programmes; designed ICAAP/ILAAP controls; managed governance",
+              "4": "Enterprise capital control architecture; regulatory capital engagement; industry expertise"
+            },
+            "mirrorsRole": {
+              "questionId": "fs_capital_controls",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "fs_conduct_controls",
+            "question": "Conduct Risk Controls",
+            "description": "Internal controls for conduct risk and customer outcomes",
+            "type": "slider",
+            "required": false,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No conduct controls experience",
+              "1": "Understand conduct risk concepts; familiar with FCA expectations",
+              "2": "Designed conduct controls; tested incentive controls; managed complaints controls",
+              "3": "Led conduct control programmes; designed culture controls; managed governance",
+              "4": "Enterprise conduct control architecture; FCA engagement; industry thought leadership"
+            },
+            "mirrorsRole": {
+              "questionId": "fs_conduct_controls",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "fs_aml_controls",
+            "question": "AML/KYC Control Environment",
+            "description": "Internal controls for AML, KYC, and financial crime prevention",
+            "type": "slider",
+            "required": false,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No AML/KYC controls experience",
+              "1": "Understand AML/KYC control requirements; familiar with MLR framework",
+              "2": "Designed AML controls; tested KYC processes; managed transaction monitoring controls",
+              "3": "Led AML/KYC control programmes; designed end-to-end control frameworks; managed governance",
+              "4": "Enterprise financial crime control architecture; regulatory engagement; industry expertise"
+            },
+            "mirrorsRole": {
+              "questionId": "fs_aml_controls",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "fs_market_abuse_controls",
+            "question": "Market Abuse Controls (MAR)",
+            "description": "Internal controls for market abuse prevention and surveillance",
+            "type": "slider",
+            "required": false,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No market abuse controls experience",
+              "1": "Understand MAR requirements; familiar with surveillance concepts",
+              "2": "Designed market abuse controls; tested surveillance systems; managed insider lists",
+              "3": "Led MAR control programmes; designed trade surveillance controls; managed governance",
+              "4": "Enterprise market abuse control architecture; FCA engagement; industry thought leadership"
+            },
+            "mirrorsRole": {
+              "questionId": "fs_market_abuse_controls",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "fs_smcr_controls",
+            "question": "SM&CR Governance Controls",
+            "description": "Internal controls for Senior Managers & Certification Regime compliance",
+            "type": "slider",
+            "required": false,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No SM&CR controls experience",
+              "1": "Understand SM&CR requirements; familiar with accountability frameworks",
+              "2": "Designed SM&CR controls; tested certification processes; managed fitness and propriety controls",
+              "3": "Led SM&CR control programmes; designed accountability mapping controls; managed governance",
+              "4": "Enterprise SM&CR control architecture; FCA/PRA engagement; industry thought leadership"
+            },
+            "mirrorsRole": {
+              "questionId": "fs_smcr_controls",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "fs_model_controls",
+            "question": "Model Risk Controls",
+            "description": "Internal controls over model development, validation, and governance",
+            "type": "slider",
+            "required": false,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No model controls experience",
+              "1": "Understand model risk concepts; familiar with MRM frameworks",
+              "2": "Designed model controls; tested validation processes; managed model inventory controls",
+              "3": "Led model risk control programmes; designed MRM frameworks; managed governance",
+              "4": "Enterprise model control architecture; PRA/ECB model engagement; industry expertise"
+            },
+            "mirrorsRole": {
+              "questionId": "fs_model_controls",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "fs_prudential_controls",
+            "question": "Prudential Controls (PRA Requirements)",
+            "description": "Internal controls for PRA prudential requirements and submissions",
+            "type": "slider",
+            "required": false,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No prudential controls experience",
+              "1": "Understand PRA prudential requirements; familiar with regulatory returns",
+              "2": "Designed controls for prudential reporting; tested data controls; managed submission controls",
+              "3": "Led prudential control programmes; designed regulatory reporting frameworks; managed governance",
+              "4": "Enterprise prudential control architecture; PRA engagement; industry thought leadership"
+            },
+            "mirrorsRole": {
+              "questionId": "fs_prudential_controls",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "fs_operational_resilience_controls",
+            "question": "Operational Resilience Controls (IBS/Impact Tolerance)",
+            "description": "Internal controls for PRA/FCA operational resilience requirements",
+            "type": "slider",
+            "required": false,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No operational resilience controls experience",
+              "1": "Understand IBS and impact tolerance concepts; familiar with OpRes requirements",
+              "2": "Designed OpRes controls; tested IBS mapping controls; managed tolerance monitoring controls",
+              "3": "Led OpRes control programmes; designed resilience testing controls; managed governance",
+              "4": "Enterprise OpRes control architecture; PRA/FCA engagement; industry thought leadership"
+            },
+            "mirrorsRole": {
+              "questionId": "fs_operational_resilience_controls",
+              "matchType": "minimum"
+            }
+          }
+        ]
+      },
+      {
+        "id": "additional_information",
+        "title": "Additional Information",
+        "description": "Share anything else that demonstrates your value as a candidate",
+        "order": 19,
+        "helpText": "This is your opportunity to highlight achievements, results, and career progression that haven't been captured elsewhere",
+        "questions": [
+          {
+            "id": "key_achievements",
+            "question": "Key Achievements & Exceeding Expectations",
+            "description": "Describe examples from previous roles where you exceeded expectations, met challenging targets, or took on responsibilities beyond your role",
+            "type": "textarea",
+            "required": false,
+            "placeholder": "e.g., 'Led SOX remediation programme that achieved clean audit opinion; Designed control framework adopted globally across 40+ entities; Selected to lead integration of acquired company controls...'"
+          },
+          {
+            "id": "quantifiable_impact",
+            "question": "Quantifiable Results & Impact",
+            "description": "Share specific metrics that demonstrate your impact, such as control effectiveness improvements, deficiency reductions, or business outcomes you have delivered",
+            "type": "textarea",
+            "required": false,
+            "placeholder": "e.g., 'Reduced SOX deficiencies by 60% year-over-year; Improved control test pass rate from 85% to 98%; Delivered controls automation saving 2,000 hours annually; Achieved zero material weaknesses for 5 consecutive years...'"
+          },
+          {
+            "id": "career_progression",
+            "question": "Career Progression & Promotions",
+            "description": "Describe your career trajectory, including promotions, expanded responsibilities, or recognition of your value by previous employers",
+            "type": "textarea",
+            "required": false,
+            "placeholder": "e.g., 'Promoted from Controls Analyst to Head of Internal Control within 4 years; Expanded remit from SOX to enterprise-wide controls; Headhunted by current employer to build their IC function from scratch...'"
+          },
+          {
+            "id": "unique_value_proposition",
+            "question": "Your Unique Value",
+            "description": "What makes you stand out from other internal controls professionals? What unique combination of skills, experiences, or perspectives do you bring?",
+            "type": "textarea",
+            "required": false,
+            "placeholder": "e.g., 'External audit background provides rigorous testing methodology; Technology expertise enables innovative controls automation; Experience across both SOX and UK Corporate Governance Code requirements...'"
+          },
+          {
+            "id": "anything_else",
+            "question": "Anything Else?",
+            "description": "Is there anything else you would like us to know about your skills, experience, or candidacy that you haven't had the opportunity to share?",
+            "type": "textarea",
+            "required": false,
+            "placeholder": "Use this space to share any additional information that would help us understand your candidacy..."
+          }
+        ]
+      }
+    ],
+    "metadata": {
+      "totalQuestions": 126,
+      "totalSections": 19,
+      "estimatedCompletionMinutes": 21,
+      "lastUpdated": "2025-12-15"
+    }
+  }
+}

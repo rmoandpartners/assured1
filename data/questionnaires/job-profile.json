@@ -1,0 +1,5149 @@
+{
+  "questionnaire": {
+    "id": "job-profile",
+    "title": "Job Profile Questionnaire",
+    "description": "Job specification for risk, audit and control roles",
+    "version": "1.9.1",
+    "createdAt": "2025-12-13",
+    "updatedAt": "2025-12-15",
+    "mirrorProfile": "candidate-profile",
+    "parentProfile": "client-profile",
+    "inheritedFromClient": [
+      "company_name",
+      "company_industry",
+      "company_size",
+      "employer_type",
+      "growth_stage",
+      "business_performance",
+      "visa_sponsorship",
+      "standard_benefits",
+      "pension_contribution",
+      "holiday_allowance",
+      "hybrid_remote_policy",
+      "work_pace",
+      "deadline_culture",
+      "overtime_expectations",
+      "team_structure_style",
+      "collaboration_style",
+      "average_tenure",
+      "annual_turnover_rate",
+      "notice_buyout_policy",
+      "relocation_support_offered",
+      "probation_period_length",
+      "training_programmes",
+      "professional_study_support"
+    ],
+    "sections": [
+      {
+        "id": "company_info",
+        "title": "Company Information",
+        "description": "About your organisation",
+        "order": 1,
+        "questions": [
+          {
+            "id": "company_name",
+            "question": "Company Name",
+            "type": "text",
+            "required": true,
+            "placeholder": "Enter your company name"
+          },
+          {
+            "id": "company_website",
+            "question": "Company Website",
+            "type": "url",
+            "required": false,
+            "placeholder": "https://www.yourcompany.com"
+          },
+          {
+            "id": "company_industry",
+            "question": "Industry Sector",
+            "type": "select",
+            "required": true,
+            "options": [
+              {
+                "value": "banking",
+                "label": "Banking"
+              },
+              {
+                "value": "insurance",
+                "label": "Insurance"
+              },
+              {
+                "value": "asset_management",
+                "label": "Asset Management"
+              },
+              {
+                "value": "private_equity",
+                "label": "Private Equity/Venture Capital"
+              },
+              {
+                "value": "fintech",
+                "label": "FinTech"
+              },
+              {
+                "value": "big4",
+                "label": "Big 4 Accounting Firm"
+              },
+              {
+                "value": "consulting",
+                "label": "Consulting"
+              },
+              {
+                "value": "corporate",
+                "label": "Corporate (Non-Financial)"
+              },
+              {
+                "value": "public_sector",
+                "label": "Public Sector/Government"
+              },
+              {
+                "value": "ngo",
+                "label": "NGO/Non-Profit"
+              },
+              {
+                "value": "other",
+                "label": "Other"
+              }
+            ],
+            "mirrorsCandidate": {
+              "questionId": "current_industry",
+              "matchType": "exact"
+            }
+          },
+          {
+            "id": "company_size",
+            "question": "Company Size (Number of Employees)",
+            "type": "select",
+            "required": true,
+            "options": [
+              {
+                "value": "startup",
+                "label": "Startup (<50 employees)"
+              },
+              {
+                "value": "sme",
+                "label": "SME (50-500 employees)"
+              },
+              {
+                "value": "large",
+                "label": "Large (500-5000 employees)"
+              },
+              {
+                "value": "enterprise",
+                "label": "Enterprise (5000+ employees)"
+              }
+            ],
+            "mirrorsCandidate": {
+              "questionId": "deal_breaker_team_size",
+              "matchType": "preference"
+            }
+          },
+          {
+            "id": "employer_type",
+            "question": "Employer Type",
+            "type": "select",
+            "required": true,
+            "options": [
+              {
+                "value": "inhouse_corporate",
+                "label": "In-house (corporate/financial services)"
+              },
+              {
+                "value": "inhouse_public",
+                "label": "In-house (public sector/government)"
+              },
+              {
+                "value": "inhouse_charity",
+                "label": "In-house (charity/NGO/non-profit)"
+              },
+              {
+                "value": "consulting_big4",
+                "label": "Consulting (Big 4)"
+              },
+              {
+                "value": "consulting_boutique",
+                "label": "Consulting (boutique/specialist firm)"
+              },
+              {
+                "value": "consulting_management",
+                "label": "Consulting (management consultancy)"
+              },
+              {
+                "value": "regulator",
+                "label": "Regulator (FCA, PRA, Bank of England, etc.)"
+              }
+            ],
+            "mirrorsCandidate": {
+              "questionId": "employer_type_preference",
+              "matchType": "overlap"
+            }
+          },
+          {
+            "id": "company_description",
+            "question": "Brief Company Description",
+            "type": "textarea",
+            "required": false,
+            "placeholder": "Tell candidates about your company culture, mission, and what makes it a great place to work",
+            "validation": {
+              "maxLength": 1000
+            }
+          }
+        ]
+      },
+      {
+        "id": "contact_info",
+        "title": "Hiring Contact",
+        "description": "Primary contact for this role",
+        "order": 2,
+        "questions": [
+          {
+            "id": "contact_name",
+            "question": "Contact Name",
+            "type": "text",
+            "required": true,
+            "placeholder": "Full name of hiring manager or HR contact"
+          },
+          {
+            "id": "contact_job_title",
+            "question": "Contact Job Title",
+            "type": "text",
+            "required": false,
+            "placeholder": "e.g., Head of Risk, HR Business Partner"
+          },
+          {
+            "id": "contact_email",
+            "question": "Contact Email",
+            "type": "email",
+            "required": true,
+            "placeholder": "hiring.manager@company.com"
+          },
+          {
+            "id": "contact_phone",
+            "question": "Contact Phone",
+            "type": "tel",
+            "required": false,
+            "placeholder": "+44 20 XXXX XXXX"
+          },
+          {
+            "id": "preferred_contact_method",
+            "question": "Preferred Contact Method",
+            "type": "select",
+            "required": true,
+            "options": [
+              {
+                "value": "email",
+                "label": "Email"
+              },
+              {
+                "value": "phone",
+                "label": "Phone Call"
+              },
+              {
+                "value": "either",
+                "label": "No preference"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "role_basics",
+        "title": "Role Overview",
+        "description": "Basic information about the position",
+        "order": 3,
+        "questions": [
+          {
+            "id": "job_title",
+            "question": "Job Title",
+            "type": "text",
+            "required": true,
+            "placeholder": "e.g., Senior Risk Manager, Internal Audit Manager"
+          },
+          {
+            "id": "job_reference",
+            "question": "Internal Job Reference (if applicable)",
+            "type": "text",
+            "required": false,
+            "placeholder": "e.g., REF-2025-001"
+          },
+          {
+            "id": "department",
+            "question": "Department/Function",
+            "type": "select",
+            "required": true,
+            "options": [
+              {
+                "value": "risk_management",
+                "label": "Risk Management / Enterprise Risk Management"
+              },
+              {
+                "value": "internal_audit",
+                "label": "Internal Audit"
+              },
+              {
+                "value": "internal_controls",
+                "label": "Internal Controls / SOX"
+              },
+              {
+                "value": "bcm_resilience",
+                "label": "Business Continuity Management / Business Resilience"
+              },
+              {
+                "value": "sustainability_esg",
+                "label": "Sustainability / ESG"
+              },
+              {
+                "value": "compliance",
+                "label": "Compliance"
+              },
+              {
+                "value": "regulatory",
+                "label": "Regulatory Affairs"
+              },
+              {
+                "value": "governance",
+                "label": "Governance"
+              },
+              {
+                "value": "finance",
+                "label": "Finance"
+              },
+              {
+                "value": "operations",
+                "label": "Operations"
+              },
+              {
+                "value": "it_risk",
+                "label": "IT Risk/Cyber"
+              },
+              {
+                "value": "other",
+                "label": "Other"
+              }
+            ],
+            "mirrorsCandidate": {
+              "questionId": "role_functions_sought",
+              "matchType": "overlap"
+            }
+          },
+          {
+            "id": "role_type",
+            "question": "Role Type",
+            "type": "select",
+            "required": true,
+            "options": [
+              {
+                "value": "new_role",
+                "label": "New role/headcount"
+              },
+              {
+                "value": "replacement",
+                "label": "Replacement"
+              },
+              {
+                "value": "expansion",
+                "label": "Team expansion"
+              },
+              {
+                "value": "restructure",
+                "label": "Restructure/redeployment"
+              }
+            ]
+          },
+          {
+            "id": "job_description",
+            "question": "Job Description/Summary",
+            "type": "textarea",
+            "required": true,
+            "placeholder": "Provide an overview of the role, key responsibilities, and what success looks like",
+            "validation": {
+              "minLength": 100,
+              "maxLength": 3000
+            }
+          },
+          {
+            "id": "key_responsibilities",
+            "question": "Key Responsibilities (one per line)",
+            "type": "textarea",
+            "required": true,
+            "placeholder": "\u2022 Lead the operational risk framework\n\u2022 Report to Board Risk Committee\n\u2022 Manage team of 5 analysts",
+            "validation": {
+              "maxLength": 2000
+            }
+          }
+        ]
+      },
+      {
+        "id": "role_nature_scope",
+        "title": "Role Nature, Variety & Scope",
+        "description": "The nature of the work, project types, and long-term value of the role",
+        "order": 4,
+        "questions": [
+          {
+            "id": "project_structure",
+            "question": "What type of work structure is typical for this role?",
+            "type": "select",
+            "required": true,
+            "options": [
+              {
+                "value": "long_term",
+                "label": "Long-term projects (6+ months) with deep focus"
+              },
+              {
+                "value": "short_term",
+                "label": "Short-term projects (1-3 months) with variety"
+              },
+              {
+                "value": "mixed",
+                "label": "Mix of ongoing responsibilities and project work"
+              },
+              {
+                "value": "crisis_urgent",
+                "label": "Crisis management and urgent problem-solving"
+              },
+              {
+                "value": "bau_operational",
+                "label": "Business-as-usual operational work"
+              },
+              {
+                "value": "cyclical",
+                "label": "Cyclical work (e.g., audit cycles, year-end)"
+              }
+            ],
+            "mirrorsCandidate": {
+              "questionId": "preferred_project_structure",
+              "matchType": "compatibility"
+            }
+          },
+          {
+            "id": "role_scope",
+            "question": "What type of role scope does this position have?",
+            "type": "select",
+            "required": true,
+            "options": [
+              {
+                "value": "specialist",
+                "label": "Specialist - Deep expertise in a specific area with focused responsibilities"
+              },
+              {
+                "value": "generalist",
+                "label": "Generalist - Broad range of responsibilities across multiple functions"
+              },
+              {
+                "value": "t_shaped",
+                "label": "T-Shaped - Deep expertise in one area with exposure to adjacent functions"
+              },
+              {
+                "value": "hybrid",
+                "label": "Hybrid - Mix of specialised and cross-functional work"
+              }
+            ],
+            "mirrorsCandidate": {
+              "questionId": "preferred_role_scope",
+              "matchType": "compatibility"
+            }
+          },
+          {
+            "id": "task_variety",
+            "question": "How much variety can be expected in day-to-day work?",
+            "type": "select",
+            "required": true,
+            "options": [
+              {
+                "value": "high",
+                "label": "High variety - different tasks and challenges each day"
+              },
+              {
+                "value": "moderate",
+                "label": "Moderate variety - some routine work mixed with new challenges"
+              },
+              {
+                "value": "low",
+                "label": "Low variety - consistent, predictable tasks and responsibilities"
+              },
+              {
+                "value": "project_based",
+                "label": "Project-based variety - different projects but similar types of work"
+              }
+            ],
+            "mirrorsCandidate": {
+              "questionId": "preferred_task_variety",
+              "matchType": "compatibility"
+            }
+          },
+          {
+            "id": "cross_functional_importance",
+            "question": "How much cross-functional collaboration is required?",
+            "type": "select",
+            "required": true,
+            "options": [
+              {
+                "value": "very_important",
+                "label": "Very important - regular collaboration with multiple teams"
+              },
+              {
+                "value": "somewhat_important",
+                "label": "Somewhat important - occasional cross-functional projects"
+              },
+              {
+                "value": "not_important",
+                "label": "Not important - focus is within the functional area"
+              },
+              {
+                "value": "situational",
+                "label": "Situational - depends on business needs and projects"
+              }
+            ],
+            "mirrorsCandidate": {
+              "questionId": "cross_functional_preference",
+              "matchType": "compatibility"
+            }
+          },
+          {
+            "id": "role_evolution",
+            "question": "How will the role likely develop over time?",
+            "type": "select",
+            "required": false,
+            "options": [
+              {
+                "value": "gradual_expansion",
+                "label": "Gradual expansion of responsibilities within the same function"
+              },
+              {
+                "value": "different_work",
+                "label": "Opportunity to take on completely different types of work"
+              },
+              {
+                "value": "rotation",
+                "label": "Rotation through different departments or business units"
+              },
+              {
+                "value": "consistent_core",
+                "label": "Consistent core responsibilities with occasional special projects"
+              },
+              {
+                "value": "leadership_track",
+                "label": "Clear path to leadership/management responsibilities"
+              },
+              {
+                "value": "undefined",
+                "label": "Undefined - depends on business needs and individual performance"
+              }
+            ],
+            "mirrorsCandidate": {
+              "questionId": "preferred_role_evolution",
+              "matchType": "compatibility"
+            }
+          },
+          {
+            "id": "long_term_career_offering",
+            "question": "What can this role offer to an individual's career over 3-5 years?",
+            "type": "multiselect",
+            "required": true,
+            "options": [
+              {
+                "value": "deep_expertise",
+                "label": "Develop deep expertise in a specialised area"
+              },
+              {
+                "value": "leadership_growth",
+                "label": "Grow into a leadership or management role"
+              },
+              {
+                "value": "broaden_skills",
+                "label": "Broaden skill set across different functions"
+              },
+              {
+                "value": "drive_innovation",
+                "label": "Drive innovation and implement new ideas"
+              },
+              {
+                "value": "senior_ic",
+                "label": "Achieve a senior or principal-level individual contributor role"
+              },
+              {
+                "value": "industry_recognition",
+                "label": "Build industry recognition and thought leadership"
+              },
+              {
+                "value": "commercial_exposure",
+                "label": "Gain commercial and business strategy exposure"
+              }
+            ],
+            "helpText": "Select all that apply",
+            "mirrorsCandidate": {
+              "questionId": "long_term_career_goals",
+              "matchType": "overlap"
+            }
+          },
+          {
+            "id": "role_impact",
+            "question": "What kind of impact will this role have?",
+            "type": "multiselect",
+            "required": true,
+            "options": [
+              {
+                "value": "mentoring",
+                "label": "Mentoring and developing others"
+              },
+              {
+                "value": "complex_challenges",
+                "label": "Solving complex, technical challenges"
+              },
+              {
+                "value": "process_improvement",
+                "label": "Improving processes and creating efficiency"
+              },
+              {
+                "value": "product_contribution",
+                "label": "Contributing to a product or service that helps people"
+              },
+              {
+                "value": "business_growth",
+                "label": "Driving business growth and achieving clear targets"
+              },
+              {
+                "value": "risk_protection",
+                "label": "Protecting the organisation from risk and compliance issues"
+              },
+              {
+                "value": "transformation",
+                "label": "Leading or contributing to organisational transformation"
+              },
+              {
+                "value": "stakeholder_influence",
+                "label": "Influencing senior stakeholders and decision-makers"
+              }
+            ],
+            "helpText": "Select all that apply",
+            "mirrorsCandidate": {
+              "questionId": "preferred_impact_type",
+              "matchType": "overlap"
+            }
+          },
+          {
+            "id": "career_benefits",
+            "question": "What can this role offer individuals as part of their career?",
+            "type": "multiselect",
+            "required": true,
+            "options": [
+              {
+                "value": "continuous_learning",
+                "label": "Continuous learning and personal development"
+              },
+              {
+                "value": "visible_impact",
+                "label": "Having a significant and visible impact on the business"
+              },
+              {
+                "value": "work_life_balance",
+                "label": "Achieving a strong work-life balance"
+              },
+              {
+                "value": "expert_recognition",
+                "label": "Being recognised as an expert in the field"
+              },
+              {
+                "value": "financial_security",
+                "label": "Financial security and high earning potential"
+              },
+              {
+                "value": "meaningful_work",
+                "label": "Working on projects that are personally meaningful"
+              },
+              {
+                "value": "network_building",
+                "label": "Building a strong professional network"
+              },
+              {
+                "value": "job_security",
+                "label": "Long-term job security and stability"
+              }
+            ],
+            "helpText": "Select up to three that best describe the role",
+            "validation": {
+              "minSelected": 1,
+              "maxSelected": 3
+            },
+            "mirrorsCandidate": {
+              "questionId": "career_success_priorities",
+              "matchType": "overlap"
+            }
+          }
+        ]
+      },
+      {
+        "id": "employment_terms",
+        "title": "Employment Terms",
+        "description": "Contract type, working arrangements and timing",
+        "order": 5,
+        "questions": [
+          {
+            "id": "job_type",
+            "question": "Employment Type",
+            "type": "multiselect",
+            "required": true,
+            "options": [
+              {
+                "value": "permanent",
+                "label": "Permanent"
+              },
+              {
+                "value": "contract",
+                "label": "Contract"
+              },
+              {
+                "value": "interim",
+                "label": "Interim"
+              },
+              {
+                "value": "part_time",
+                "label": "Part-time"
+              },
+              {
+                "value": "freelance",
+                "label": "Freelance/Consulting"
+              }
+            ],
+            "helpText": "Select all that apply if flexible",
+            "mirrorsCandidate": {
+              "questionId": "job_type_preference",
+              "matchType": "overlap"
+            }
+          },
+          {
+            "id": "contract_duration",
+            "question": "Contract Duration (if applicable)",
+            "type": "select",
+            "required": false,
+            "options": [
+              {
+                "value": "3_months",
+                "label": "3 months"
+              },
+              {
+                "value": "6_months",
+                "label": "6 months"
+              },
+              {
+                "value": "12_months",
+                "label": "12 months"
+              },
+              {
+                "value": "18_months_plus",
+                "label": "18+ months"
+              },
+              {
+                "value": "project_based",
+                "label": "Project-based (variable)"
+              },
+              {
+                "value": "temp_to_perm",
+                "label": "Temp-to-perm potential"
+              }
+            ],
+            "conditionalOn": {
+              "field": "job_type",
+              "contains": [
+                "contract",
+                "interim",
+                "freelance"
+              ]
+            },
+            "mirrorsCandidate": {
+              "questionId": "preferred_contract_duration",
+              "matchType": "compatibility"
+            }
+          },
+          {
+            "id": "ir35_status",
+            "question": "IR35 Status (if contract)",
+            "type": "select",
+            "required": false,
+            "options": [
+              {
+                "value": "inside_ir35",
+                "label": "Inside IR35"
+              },
+              {
+                "value": "outside_ir35",
+                "label": "Outside IR35"
+              },
+              {
+                "value": "to_be_determined",
+                "label": "To be determined"
+              }
+            ],
+            "conditionalOn": {
+              "field": "job_type",
+              "contains": [
+                "contract",
+                "interim",
+                "freelance"
+              ]
+            },
+            "mirrorsCandidate": {
+              "questionId": "contract_preference_ir35",
+              "matchType": "exact"
+            }
+          },
+          {
+            "id": "working_hours",
+            "question": "Working Hours",
+            "type": "select",
+            "required": true,
+            "options": [
+              {
+                "value": "full_time",
+                "label": "Full-time (35-40 hours/week)"
+              },
+              {
+                "value": "part_time_4_days",
+                "label": "Part-time (4 days/week)"
+              },
+              {
+                "value": "part_time_3_days",
+                "label": "Part-time (3 days/week)"
+              },
+              {
+                "value": "part_time_other",
+                "label": "Part-time (other arrangement)"
+              },
+              {
+                "value": "flexible",
+                "label": "Flexible/negotiable"
+              }
+            ]
+          },
+          {
+            "id": "work_location",
+            "question": "Work Location Model",
+            "type": "select",
+            "required": true,
+            "options": [
+              {
+                "value": "office",
+                "label": "Office-based (5 days)"
+              },
+              {
+                "value": "hybrid_4",
+                "label": "Hybrid (4 days office)"
+              },
+              {
+                "value": "hybrid_3",
+                "label": "Hybrid (3 days office)"
+              },
+              {
+                "value": "hybrid_2",
+                "label": "Hybrid (2 days office)"
+              },
+              {
+                "value": "hybrid_1",
+                "label": "Hybrid (1 day office)"
+              },
+              {
+                "value": "remote",
+                "label": "Fully Remote"
+              },
+              {
+                "value": "flexible",
+                "label": "Flexible/negotiable"
+              }
+            ],
+            "mirrorsCandidate": {
+              "questionId": "work_location_preference",
+              "matchType": "compatibility"
+            }
+          },
+          {
+            "id": "office_location_city",
+            "question": "Office Location (City)",
+            "type": "text",
+            "required": true,
+            "placeholder": "e.g., London"
+          },
+          {
+            "id": "office_location_postcode",
+            "question": "Office Postcode",
+            "type": "text",
+            "required": false,
+            "placeholder": "e.g., EC2A 1NT",
+            "helpText": "For commute distance matching",
+            "mirrorsCandidate": {
+              "questionId": "postcode",
+              "matchType": "distance"
+            }
+          },
+          {
+            "id": "travel_required",
+            "question": "Travel Requirements",
+            "type": "select",
+            "required": true,
+            "options": [
+              {
+                "value": "none",
+                "label": "No travel required"
+              },
+              {
+                "value": "occasional",
+                "label": "Occasional (up to 10%)"
+              },
+              {
+                "value": "moderate",
+                "label": "Moderate (10-25%)"
+              },
+              {
+                "value": "frequent",
+                "label": "Frequent (25-50%)"
+              },
+              {
+                "value": "extensive",
+                "label": "Extensive (50%+)"
+              }
+            ],
+            "mirrorsCandidate": {
+              "questionId": "travel_willingness",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "travel_details",
+            "question": "Travel Details (if applicable)",
+            "type": "textarea",
+            "required": false,
+            "placeholder": "e.g., Monthly visits to European offices, quarterly travel to US headquarters",
+            "conditionalOn": {
+              "field": "travel_required",
+              "values": [
+                "occasional",
+                "moderate",
+                "frequent",
+                "extensive"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "id": "requirements",
+        "title": "Candidate Requirements",
+        "description": "What you're looking for in candidates",
+        "order": 6,
+        "questions": [
+          {
+            "id": "experience_years_min",
+            "question": "Minimum Years of Experience",
+            "type": "select",
+            "required": true,
+            "options": [
+              {
+                "value": "0",
+                "label": "Entry level (0-1 years)"
+              },
+              {
+                "value": "2",
+                "label": "2+ years"
+              },
+              {
+                "value": "3",
+                "label": "3+ years"
+              },
+              {
+                "value": "5",
+                "label": "5+ years"
+              },
+              {
+                "value": "7",
+                "label": "7+ years"
+              },
+              {
+                "value": "10",
+                "label": "10+ years"
+              },
+              {
+                "value": "15",
+                "label": "15+ years"
+              }
+            ],
+            "mirrorsCandidate": {
+              "questionId": "total_years_experience",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "experience_years_ideal",
+            "question": "Ideal Years of Experience",
+            "type": "select",
+            "required": false,
+            "options": [
+              {
+                "value": "2",
+                "label": "2-3 years"
+              },
+              {
+                "value": "3",
+                "label": "3-5 years"
+              },
+              {
+                "value": "5",
+                "label": "5-7 years"
+              },
+              {
+                "value": "7",
+                "label": "7-10 years"
+              },
+              {
+                "value": "10",
+                "label": "10-15 years"
+              },
+              {
+                "value": "15",
+                "label": "15+ years"
+              }
+            ],
+            "mirrorsCandidate": {
+              "questionId": "years_in_risk_audit_control",
+              "matchType": "range"
+            }
+          },
+          {
+            "id": "required_qualifications",
+            "question": "Required Educational Qualifications",
+            "type": "multiselect",
+            "required": false,
+            "options": [
+              {
+                "value": "degree",
+                "label": "Bachelor's Degree"
+              },
+              {
+                "value": "masters",
+                "label": "Master's Degree"
+              },
+              {
+                "value": "mba",
+                "label": "MBA"
+              },
+              {
+                "value": "phd",
+                "label": "PhD"
+              },
+              {
+                "value": "professional_cert",
+                "label": "Professional Certification"
+              },
+              {
+                "value": "none_required",
+                "label": "No formal requirements"
+              }
+            ],
+            "mirrorsCandidate": {
+              "questionId": "highest_qualification",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "required_certifications_erm",
+            "question": "Required ERM Certifications",
+            "description": "Enterprise Risk Management certifications that are required for this role",
+            "type": "multiselect",
+            "required": false,
+            "options": [
+              {
+                "value": "irm_cert",
+                "label": "IRM Certificate in Risk Management"
+              },
+              {
+                "value": "irm_dip",
+                "label": "IRM Diploma in Risk Management"
+              },
+              {
+                "value": "irm_fellow",
+                "label": "IRM Fellowship (CFIRM/FIRP)"
+              },
+              {
+                "value": "frm",
+                "label": "FRM (Financial Risk Manager - GARP)"
+              },
+              {
+                "value": "prm",
+                "label": "PRM (Professional Risk Manager - PRMIA)"
+              },
+              {
+                "value": "crma",
+                "label": "CRMA (Certification in Risk Management Assurance - IIA)"
+              },
+              {
+                "value": "crisc",
+                "label": "CRISC (Certified in Risk and Information Systems Control - ISACA)"
+              },
+              {
+                "value": "rims_crmp",
+                "label": "RIMS-CRMP (Certified Risk Management Professional)"
+              },
+              {
+                "value": "arm",
+                "label": "ARM (Associate in Risk Management)"
+              },
+              {
+                "value": "cfa",
+                "label": "CFA (Chartered Financial Analyst)"
+              }
+            ],
+            "mirrorsCandidate": {
+              "questionId": "certs_erm",
+              "matchType": "overlap"
+            }
+          },
+          {
+            "id": "required_certifications_audit",
+            "question": "Required Internal Audit Certifications",
+            "description": "Internal Audit certifications that are required for this role",
+            "type": "multiselect",
+            "required": false,
+            "options": [
+              {
+                "value": "cia",
+                "label": "CIA (Certified Internal Auditor - IIA)"
+              },
+              {
+                "value": "qial",
+                "label": "QIAL (Qualification in Internal Audit Leadership - IIA)"
+              },
+              {
+                "value": "cfsa",
+                "label": "CFSA (Certified Financial Services Auditor - IIA)"
+              },
+              {
+                "value": "cgap",
+                "label": "CGAP (Certified Government Auditing Professional - IIA)"
+              },
+              {
+                "value": "ccsa",
+                "label": "CCSA (Certification in Control Self-Assessment - IIA)"
+              },
+              {
+                "value": "cisa",
+                "label": "CISA (Certified Information Systems Auditor - ISACA)"
+              },
+              {
+                "value": "aca",
+                "label": "ACA (ICAEW Chartered Accountant)"
+              },
+              {
+                "value": "acca",
+                "label": "ACCA (Association of Chartered Certified Accountants)"
+              },
+              {
+                "value": "cpa",
+                "label": "CPA (Certified Public Accountant)"
+              }
+            ],
+            "mirrorsCandidate": {
+              "questionId": "certs_internal_audit",
+              "matchType": "overlap"
+            }
+          },
+          {
+            "id": "required_certifications_controls",
+            "question": "Required Internal Controls Certifications",
+            "description": "Internal Controls/SOX certifications that are required for this role",
+            "type": "multiselect",
+            "required": false,
+            "options": [
+              {
+                "value": "cima",
+                "label": "CIMA (Chartered Institute of Management Accountants)"
+              },
+              {
+                "value": "cgma",
+                "label": "CGMA (Chartered Global Management Accountant)"
+              },
+              {
+                "value": "cica",
+                "label": "CICA (Certified Internal Controls Auditor)"
+              },
+              {
+                "value": "six_sigma_green",
+                "label": "Six Sigma Green Belt"
+              },
+              {
+                "value": "six_sigma_black",
+                "label": "Six Sigma Black Belt"
+              },
+              {
+                "value": "cobit",
+                "label": "COBIT Certification (ISACA)"
+              }
+            ],
+            "mirrorsCandidate": {
+              "questionId": "certs_internal_controls",
+              "matchType": "overlap"
+            }
+          },
+          {
+            "id": "required_certifications_bcm",
+            "question": "Required BCM & Resilience Certifications",
+            "description": "Business Continuity, Crisis Management or Resilience certifications that are required",
+            "type": "multiselect",
+            "required": false,
+            "options": [
+              {
+                "value": "cbcp",
+                "label": "CBCP (Certified Business Continuity Professional - DRI)"
+              },
+              {
+                "value": "cbci",
+                "label": "CBCI (Certificate of the BCI)"
+              },
+              {
+                "value": "mbci",
+                "label": "MBCI (Member of the BCI)"
+              },
+              {
+                "value": "fbci",
+                "label": "FBCI (Fellow of the BCI)"
+              },
+              {
+                "value": "abcp",
+                "label": "ABCP (Associate Business Continuity Professional - DRI)"
+              },
+              {
+                "value": "mbcp",
+                "label": "MBCP (Master Business Continuity Professional - DRI)"
+              },
+              {
+                "value": "iso22301_la",
+                "label": "ISO 22301 Lead Auditor"
+              },
+              {
+                "value": "iso22301_li",
+                "label": "ISO 22301 Lead Implementer"
+              }
+            ],
+            "mirrorsCandidate": {
+              "questionId": "certs_bcm_resilience",
+              "matchType": "overlap"
+            }
+          },
+          {
+            "id": "required_certifications_esg",
+            "question": "Required Sustainability & ESG Certifications",
+            "description": "Sustainability or ESG certifications that are required for this role",
+            "type": "multiselect",
+            "required": false,
+            "options": [
+              {
+                "value": "cfa_esg",
+                "label": "CFA Certificate in ESG Investing"
+              },
+              {
+                "value": "gri",
+                "label": "GRI Certified Sustainability Professional"
+              },
+              {
+                "value": "sasb_fsa",
+                "label": "SASB FSA Credential"
+              },
+              {
+                "value": "tcfd",
+                "label": "TCFD Knowledge Hub Certificate"
+              },
+              {
+                "value": "iema",
+                "label": "IEMA (Institute of Environmental Management & Assessment)"
+              },
+              {
+                "value": "csrd",
+                "label": "CSRD/ESRS Training Certification"
+              }
+            ],
+            "mirrorsCandidate": {
+              "questionId": "certs_sustainability_esg",
+              "matchType": "overlap"
+            }
+          },
+          {
+            "id": "required_certifications_cyber",
+            "question": "Required Cybersecurity Certifications",
+            "description": "Cybersecurity or Information Security certifications that are required",
+            "type": "multiselect",
+            "required": false,
+            "options": [
+              {
+                "value": "cissp",
+                "label": "CISSP (Certified Information Systems Security Professional)"
+              },
+              {
+                "value": "cism",
+                "label": "CISM (Certified Information Security Manager - ISACA)"
+              },
+              {
+                "value": "cisa",
+                "label": "CISA (Certified Information Systems Auditor - ISACA)"
+              },
+              {
+                "value": "crisc",
+                "label": "CRISC (Certified in Risk and Information Systems Control - ISACA)"
+              },
+              {
+                "value": "ccsp",
+                "label": "CCSP (Certified Cloud Security Professional)"
+              },
+              {
+                "value": "iso27001_la",
+                "label": "ISO 27001 Lead Auditor"
+              },
+              {
+                "value": "iso27001_li",
+                "label": "ISO 27001 Lead Implementer"
+              }
+            ],
+            "mirrorsCandidate": {
+              "questionId": "certs_cyber_infosec",
+              "matchType": "overlap"
+            }
+          },
+          {
+            "id": "required_certifications_compliance",
+            "question": "Required Compliance & AML Certifications",
+            "description": "Compliance or AML certifications that are required for this role",
+            "type": "multiselect",
+            "required": false,
+            "options": [
+              {
+                "value": "ica_cert",
+                "label": "ICA Certificate (International Compliance Association)"
+              },
+              {
+                "value": "ica_dip",
+                "label": "ICA Diploma"
+              },
+              {
+                "value": "cams",
+                "label": "CAMS (Certified Anti-Money Laundering Specialist - ACAMS)"
+              },
+              {
+                "value": "cgss",
+                "label": "CGSS (Certified Global Sanctions Specialist - ACAMS)"
+              },
+              {
+                "value": "cfcs",
+                "label": "CFCS (Certified Financial Crime Specialist)"
+              }
+            ],
+            "mirrorsCandidate": {
+              "questionId": "certs_compliance_aml",
+              "matchType": "overlap"
+            }
+          },
+          {
+            "id": "required_certifications_other",
+            "question": "Required Other Certifications",
+            "description": "Other professional certifications required for this role",
+            "type": "multiselect",
+            "required": false,
+            "options": [
+              {
+                "value": "prince2_f",
+                "label": "PRINCE2 Foundation"
+              },
+              {
+                "value": "prince2_p",
+                "label": "PRINCE2 Practitioner"
+              },
+              {
+                "value": "pmp",
+                "label": "PMP (Project Management Professional - PMI)"
+              },
+              {
+                "value": "agile",
+                "label": "Agile/Scrum Certifications (CSM, PSM, SAFe)"
+              },
+              {
+                "value": "togaf",
+                "label": "TOGAF (Enterprise Architecture)"
+              },
+              {
+                "value": "itil",
+                "label": "ITIL Certification"
+              },
+              {
+                "value": "mba",
+                "label": "MBA"
+              },
+              {
+                "value": "masters",
+                "label": "Master's degree (relevant field)"
+              },
+              {
+                "value": "phd",
+                "label": "PhD/Doctorate (relevant field)"
+              }
+            ],
+            "mirrorsCandidate": {
+              "questionId": "certs_project_other",
+              "matchType": "overlap"
+            }
+          },
+          {
+            "id": "certification_requirements_notes",
+            "question": "Certification Requirements Notes",
+            "description": "Any additional notes about certification requirements (e.g., 'Working towards CIA acceptable', 'Any IIA qualification preferred')",
+            "type": "textarea",
+            "required": false,
+            "placeholder": "e.g., 'CRISC or equivalent cyber risk certification required. Working towards FRM would be acceptable for strong candidates.'"
+          },
+          {
+            "id": "industry_experience_required",
+            "question": "Required Industry Experience",
+            "type": "multiselect",
+            "required": false,
+            "options": [
+              {
+                "value": "banking",
+                "label": "Banking"
+              },
+              {
+                "value": "insurance",
+                "label": "Insurance"
+              },
+              {
+                "value": "asset_management",
+                "label": "Asset Management"
+              },
+              {
+                "value": "private_equity",
+                "label": "Private Equity/VC"
+              },
+              {
+                "value": "fintech",
+                "label": "FinTech"
+              },
+              {
+                "value": "big4",
+                "label": "Big 4 Accounting"
+              },
+              {
+                "value": "consulting",
+                "label": "Consulting"
+              },
+              {
+                "value": "financial_services",
+                "label": "Any Financial Services"
+              },
+              {
+                "value": "regulated",
+                "label": "Any Regulated Industry"
+              },
+              {
+                "value": "none_specific",
+                "label": "No specific industry required"
+              }
+            ],
+            "mirrorsCandidate": [
+              {
+                "questionId": "current_industry",
+                "matchType": "overlap"
+              },
+              {
+                "questionId": "industries_worked",
+                "matchType": "overlap"
+              }
+            ]
+          },
+          {
+            "id": "preferred_candidate_sources",
+            "question": "Preferred Candidate Sources/Backgrounds",
+            "type": "multiselect",
+            "required": false,
+            "options": [
+              {
+                "value": "big4",
+                "label": "Big 4 (Deloitte, PwC, EY, KPMG)"
+              },
+              {
+                "value": "top10_accounting",
+                "label": "Top 10-20 accounting firms"
+              },
+              {
+                "value": "investment_banks",
+                "label": "Investment banks"
+              },
+              {
+                "value": "retail_banks",
+                "label": "Retail/commercial banks"
+              },
+              {
+                "value": "insurers",
+                "label": "Insurance companies"
+              },
+              {
+                "value": "asset_managers",
+                "label": "Asset managers/hedge funds"
+              },
+              {
+                "value": "fintechs",
+                "label": "FinTechs"
+              },
+              {
+                "value": "consultancies",
+                "label": "Management consultancies"
+              },
+              {
+                "value": "regulators",
+                "label": "Regulators (FCA, PRA, etc.)"
+              },
+              {
+                "value": "industry_bodies",
+                "label": "Industry bodies"
+              },
+              {
+                "value": "competitors",
+                "label": "Direct competitors"
+              },
+              {
+                "value": "internal",
+                "label": "Internal candidates welcome"
+              },
+              {
+                "value": "no_preference",
+                "label": "No specific preference"
+              }
+            ],
+            "helpText": "Where should we focus our candidate search?"
+          },
+          {
+            "id": "candidate_source_priorities",
+            "question": "Any specific companies or backgrounds to prioritise?",
+            "type": "textarea",
+            "required": false,
+            "placeholder": "e.g., Prefer candidates from Tier 1 banks, or specifically looking for Big 4 trained auditors"
+          },
+          {
+            "id": "candidate_sources_to_avoid",
+            "question": "Any sources or companies to avoid?",
+            "type": "textarea",
+            "required": false,
+            "placeholder": "e.g., No approaches to direct competitors, or avoid candidates from Company X",
+            "helpText": "Helps us respect client relationships and non-compete situations"
+          },
+          {
+            "id": "technical_skills_required",
+            "question": "Required Technical Skills",
+            "type": "textarea",
+            "required": false,
+            "placeholder": "e.g., Risk modelling, SQL, Tableau, GRC platforms (Archer, ServiceNow), Basel regulations"
+          },
+          {
+            "id": "soft_skills_required",
+            "question": "Key Soft Skills/Competencies",
+            "type": "multiselect",
+            "required": false,
+            "options": [
+              {
+                "value": "leadership",
+                "label": "Leadership"
+              },
+              {
+                "value": "stakeholder_management",
+                "label": "Stakeholder Management"
+              },
+              {
+                "value": "communication",
+                "label": "Communication (written/verbal)"
+              },
+              {
+                "value": "presentation",
+                "label": "Presentation Skills"
+              },
+              {
+                "value": "analytical",
+                "label": "Analytical Thinking"
+              },
+              {
+                "value": "problem_solving",
+                "label": "Problem Solving"
+              },
+              {
+                "value": "attention_detail",
+                "label": "Attention to Detail"
+              },
+              {
+                "value": "project_management",
+                "label": "Project Management"
+              },
+              {
+                "value": "team_player",
+                "label": "Team Collaboration"
+              },
+              {
+                "value": "adaptability",
+                "label": "Adaptability"
+              },
+              {
+                "value": "commercial_acumen",
+                "label": "Commercial Acumen"
+              }
+            ]
+          },
+          {
+            "id": "languages_required",
+            "question": "Language Requirements",
+            "type": "text",
+            "required": false,
+            "placeholder": "e.g., English (fluent), German (conversational)",
+            "mirrorsCandidate": [
+              {
+                "questionId": "english_proficiency",
+                "matchType": "language_match"
+              },
+              {
+                "questionId": "additional_languages",
+                "matchType": "language_match"
+              },
+              {
+                "questionId": "languages_list",
+                "matchType": "overlap"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "management_scope",
+        "title": "Management & Reporting",
+        "description": "Team structure and responsibilities",
+        "order": 7,
+        "questions": [
+          {
+            "id": "reports_to",
+            "question": "Reports To (Job Title)",
+            "type": "text",
+            "required": true,
+            "placeholder": "e.g., Chief Risk Officer, Head of Internal Audit"
+          },
+          {
+            "id": "management_responsibility",
+            "question": "People Management Responsibility",
+            "type": "select",
+            "required": true,
+            "options": [
+              {
+                "value": "none",
+                "label": "Individual contributor (no direct reports)"
+              },
+              {
+                "value": "small_team",
+                "label": "Small team (1-3 direct reports)"
+              },
+              {
+                "value": "medium_team",
+                "label": "Medium team (4-10 direct reports)"
+              },
+              {
+                "value": "large_team",
+                "label": "Large team (10+ direct reports)"
+              },
+              {
+                "value": "matrix",
+                "label": "Matrix management/dotted lines"
+              },
+              {
+                "value": "future_growth",
+                "label": "None now, but team growth planned"
+              }
+            ],
+            "mirrorsCandidate": {
+              "questionId": "deal_breaker_management",
+              "matchType": "compatibility"
+            }
+          },
+          {
+            "id": "direct_reports_count",
+            "question": "Number of Direct Reports",
+            "type": "number",
+            "required": false,
+            "placeholder": "e.g., 5",
+            "conditionalOn": {
+              "field": "management_responsibility",
+              "values": [
+                "small_team",
+                "medium_team",
+                "large_team"
+              ]
+            }
+          },
+          {
+            "id": "team_size_total",
+            "question": "Total Team Size (including indirect)",
+            "type": "number",
+            "required": false,
+            "placeholder": "e.g., 15"
+          },
+          {
+            "id": "team_composition",
+            "question": "Team Composition/Structure",
+            "type": "textarea",
+            "required": false,
+            "placeholder": "e.g., 2 Managers, 5 Senior Analysts, 3 Analysts. Team split between London and Manchester.",
+            "helpText": "Describe the existing team structure this role will join or lead"
+          },
+          {
+            "id": "team_tenure",
+            "question": "Average Tenure in This Team",
+            "type": "select",
+            "required": false,
+            "options": [
+              {
+                "value": "new_team",
+                "label": "Newly formed team"
+              },
+              {
+                "value": "under_1_year",
+                "label": "Under 1 year"
+              },
+              {
+                "value": "1_2_years",
+                "label": "1-2 years"
+              },
+              {
+                "value": "2_3_years",
+                "label": "2-3 years"
+              },
+              {
+                "value": "3_5_years",
+                "label": "3-5 years"
+              },
+              {
+                "value": "5_plus_years",
+                "label": "5+ years"
+              }
+            ],
+            "helpText": "How long team members typically stay"
+          },
+          {
+            "id": "team_turnover",
+            "question": "Team Turnover (past 12 months)",
+            "type": "select",
+            "required": false,
+            "options": [
+              {
+                "value": "none",
+                "label": "No leavers"
+              },
+              {
+                "value": "low",
+                "label": "Low (1-2 people)"
+              },
+              {
+                "value": "moderate",
+                "label": "Moderate (3-5 people)"
+              },
+              {
+                "value": "high",
+                "label": "High (5+ people)"
+              },
+              {
+                "value": "new_team",
+                "label": "New team (N/A)"
+              }
+            ],
+            "helpText": "Context for candidate questions about team stability"
+          },
+          {
+            "id": "role_retention_history",
+            "question": "Has this specific role had retention issues?",
+            "type": "select",
+            "required": false,
+            "options": [
+              {
+                "value": "new_role",
+                "label": "New role (no history)"
+              },
+              {
+                "value": "no_issues",
+                "label": "No - good retention"
+              },
+              {
+                "value": "some_turnover",
+                "label": "Some turnover (1-2 predecessors in 3 years)"
+              },
+              {
+                "value": "higher_turnover",
+                "label": "Higher turnover (3+ predecessors in 3 years)"
+              }
+            ],
+            "helpText": "Helps set realistic expectations with candidates"
+          },
+          {
+            "id": "predecessor_departure_reason",
+            "question": "Why did the previous incumbent leave?",
+            "type": "select",
+            "required": false,
+            "options": [
+              {
+                "value": "new_role",
+                "label": "New role (no predecessor)"
+              },
+              {
+                "value": "promotion",
+                "label": "Internal promotion"
+              },
+              {
+                "value": "external_opportunity",
+                "label": "External opportunity"
+              },
+              {
+                "value": "relocation",
+                "label": "Relocation"
+              },
+              {
+                "value": "retirement",
+                "label": "Retirement"
+              },
+              {
+                "value": "performance",
+                "label": "Performance-related"
+              },
+              {
+                "value": "restructure",
+                "label": "Restructure"
+              },
+              {
+                "value": "prefer_not_to_say",
+                "label": "Prefer not to disclose"
+              }
+            ],
+            "conditionalOn": {
+              "field": "role_type",
+              "values": [
+                "replacement"
+              ]
+            }
+          },
+          {
+            "id": "budget_responsibility",
+            "question": "Budget Responsibility",
+            "type": "select",
+            "required": false,
+            "options": [
+              {
+                "value": "none",
+                "label": "No budget responsibility"
+              },
+              {
+                "value": "small",
+                "label": "Small (<\u00a3100k)"
+              },
+              {
+                "value": "medium",
+                "label": "Medium (\u00a3100k-\u00a31m)"
+              },
+              {
+                "value": "large",
+                "label": "Large (\u00a31m-\u00a310m)"
+              },
+              {
+                "value": "significant",
+                "label": "Significant (\u00a310m+)"
+              }
+            ]
+          },
+          {
+            "id": "stakeholder_exposure",
+            "question": "Stakeholder Exposure",
+            "type": "multiselect",
+            "required": false,
+            "options": [
+              {
+                "value": "team",
+                "label": "Team/peers"
+              },
+              {
+                "value": "department",
+                "label": "Department heads"
+              },
+              {
+                "value": "senior_management",
+                "label": "Senior management"
+              },
+              {
+                "value": "c_suite",
+                "label": "C-Suite/ExCo"
+              },
+              {
+                "value": "board",
+                "label": "Board/Committees"
+              },
+              {
+                "value": "regulators",
+                "label": "Regulators"
+              },
+              {
+                "value": "external_audit",
+                "label": "External auditors"
+              },
+              {
+                "value": "clients",
+                "label": "Clients/customers"
+              }
+            ],
+            "mirrorsCandidate": {
+              "questionId": "c_suite_visibility_preference",
+              "matchType": "compatibility"
+            }
+          },
+          {
+            "id": "function_size",
+            "question": "Total Function/Department Size",
+            "type": "select",
+            "required": false,
+            "options": [
+              {
+                "value": "very_small",
+                "label": "Very small (1-5 people)"
+              },
+              {
+                "value": "small",
+                "label": "Small (6-15 people)"
+              },
+              {
+                "value": "medium",
+                "label": "Medium (16-50 people)"
+              },
+              {
+                "value": "large",
+                "label": "Large (51-100 people)"
+              },
+              {
+                "value": "very_large",
+                "label": "Very large (100+ people)"
+              }
+            ],
+            "helpText": "Size of the broader function this role sits within",
+            "mirrorsCandidate": {
+              "questionId": "preferred_function_size",
+              "matchType": "compatibility"
+            }
+          },
+          {
+            "id": "reporting_levels_to_ceo",
+            "question": "Reporting Levels to CEO/MD",
+            "type": "select",
+            "required": false,
+            "options": [
+              {
+                "value": "1",
+                "label": "1 level (reports to CEO/MD directly)"
+              },
+              {
+                "value": "2",
+                "label": "2 levels (reports to C-suite member)"
+              },
+              {
+                "value": "3",
+                "label": "3 levels (reports to senior management)"
+              },
+              {
+                "value": "4",
+                "label": "4 levels"
+              },
+              {
+                "value": "5_plus",
+                "label": "5+ levels"
+              }
+            ],
+            "helpText": "How many reporting levels between this role and the CEO/MD?",
+            "mirrorsCandidate": {
+              "questionId": "preferred_reporting_distance",
+              "matchType": "compatibility"
+            }
+          },
+          {
+            "id": "c_suite_interaction_frequency",
+            "question": "C-Suite/ExCo Interaction Frequency",
+            "type": "select",
+            "required": false,
+            "options": [
+              {
+                "value": "daily",
+                "label": "Daily interaction"
+              },
+              {
+                "value": "weekly",
+                "label": "Weekly interaction"
+              },
+              {
+                "value": "monthly",
+                "label": "Monthly (committee meetings, updates)"
+              },
+              {
+                "value": "quarterly",
+                "label": "Quarterly"
+              },
+              {
+                "value": "rarely",
+                "label": "Rarely/ad-hoc"
+              },
+              {
+                "value": "none",
+                "label": "No direct C-suite interaction"
+              }
+            ],
+            "mirrorsCandidate": {
+              "questionId": "c_suite_visibility_preference",
+              "matchType": "compatibility"
+            }
+          },
+          {
+            "id": "board_committee_interaction",
+            "question": "Board/Committee Interaction",
+            "type": "select",
+            "required": false,
+            "options": [
+              {
+                "value": "presents_regularly",
+                "label": "Presents to board/committees regularly"
+              },
+              {
+                "value": "attends_regularly",
+                "label": "Attends board/committees (observer/support)"
+              },
+              {
+                "value": "occasional",
+                "label": "Occasional attendance/support"
+              },
+              {
+                "value": "prepares_packs",
+                "label": "Prepares board packs but doesn't attend"
+              },
+              {
+                "value": "none",
+                "label": "No board/committee interaction"
+              }
+            ],
+            "mirrorsCandidate": {
+              "questionId": "board_exposure_preference",
+              "matchType": "compatibility"
+            }
+          },
+          {
+            "id": "subordinates_experience_levels",
+            "question": "Experience Levels of Direct Reports",
+            "type": "multiselect",
+            "required": false,
+            "options": [
+              {
+                "value": "graduate",
+                "label": "Graduate/Entry level"
+              },
+              {
+                "value": "analyst",
+                "label": "Analyst (1-3 years)"
+              },
+              {
+                "value": "senior_analyst",
+                "label": "Senior Analyst (3-5 years)"
+              },
+              {
+                "value": "manager",
+                "label": "Manager (5-8 years)"
+              },
+              {
+                "value": "senior_manager",
+                "label": "Senior Manager (8+ years)"
+              },
+              {
+                "value": "mixed",
+                "label": "Mixed levels"
+              }
+            ],
+            "conditionalOn": {
+              "field": "management_responsibility",
+              "values": [
+                "small_team",
+                "medium_team",
+                "large_team",
+                "future_growth"
+              ]
+            },
+            "helpText": "What experience levels will the direct reports be?",
+            "mirrorsCandidate": {
+              "questionId": "preferred_subordinate_experience",
+              "matchType": "compatibility"
+            }
+          },
+          {
+            "id": "team_growth_plans",
+            "question": "Team Growth Plans",
+            "type": "select",
+            "required": false,
+            "options": [
+              {
+                "value": "significant_growth",
+                "label": "Significant growth planned (double or more)"
+              },
+              {
+                "value": "moderate_growth",
+                "label": "Moderate growth (1-3 additional hires)"
+              },
+              {
+                "value": "stable",
+                "label": "Stable - no planned changes"
+              },
+              {
+                "value": "restructuring",
+                "label": "Restructuring - team changes expected"
+              },
+              {
+                "value": "reduction",
+                "label": "Potential reduction"
+              }
+            ],
+            "helpText": "Is the team expected to grow, stay stable, or change?"
+          },
+          {
+            "id": "line_manager_time_dedication",
+            "question": "What % of the Line Manager's Time is Dedicated to This Function?",
+            "type": "select",
+            "required": false,
+            "options": [
+              {
+                "value": "100",
+                "label": "100% - Full-time focus on this function"
+              },
+              {
+                "value": "75_99",
+                "label": "75-99% - Primary responsibility with minor other duties"
+              },
+              {
+                "value": "50_74",
+                "label": "50-74% - Significant but shared responsibilities"
+              },
+              {
+                "value": "25_49",
+                "label": "25-49% - Split focus across multiple functions"
+              },
+              {
+                "value": "10_24",
+                "label": "10-24% - Part of broader portfolio"
+              },
+              {
+                "value": "under_10",
+                "label": "Under 10% - Oversight role only (e.g., CFO with ERM responsibility)"
+              }
+            ],
+            "helpText": "A CFO responsible for ERM may only dedicate 5% of their time. This affects support and mentorship available to the candidate.",
+            "mirrorsCandidate": {
+              "questionId": "preferred_manager_availability",
+              "matchType": "compatibility"
+            }
+          }
+        ]
+      },
+      {
+        "id": "strategic_context",
+        "title": "Strategic Context & Investment",
+        "description": "Senior support, sponsorship, and investment for this function",
+        "order": 8,
+        "questions": [
+          {
+            "id": "executive_sponsorship",
+            "question": "Executive Sponsorship Level",
+            "type": "select",
+            "required": false,
+            "options": [
+              {
+                "value": "board_champion",
+                "label": "Board-level champion - NED or Board member actively sponsors"
+              },
+              {
+                "value": "ceo_priority",
+                "label": "CEO priority - direct CEO attention and support"
+              },
+              {
+                "value": "c_suite_sponsor",
+                "label": "C-Suite sponsor - ExCo member actively champions the function"
+              },
+              {
+                "value": "senior_management",
+                "label": "Senior management support - below C-suite"
+              },
+              {
+                "value": "limited",
+                "label": "Limited - function operates with minimal senior visibility"
+              }
+            ],
+            "helpText": "Who champions this function at the senior level? Strong sponsorship = better air cover and resources.",
+            "mirrorsCandidate": {
+              "questionId": "preferred_sponsorship_level",
+              "matchType": "compatibility"
+            }
+          },
+          {
+            "id": "board_risk_committee",
+            "question": "Board/Risk Committee Engagement",
+            "type": "select",
+            "required": false,
+            "options": [
+              {
+                "value": "standing_agenda",
+                "label": "Standing agenda item - regular board/committee focus"
+              },
+              {
+                "value": "quarterly_updates",
+                "label": "Quarterly updates to board/risk committee"
+              },
+              {
+                "value": "annual_review",
+                "label": "Annual review only"
+              },
+              {
+                "value": "ad_hoc",
+                "label": "Ad-hoc when issues arise"
+              },
+              {
+                "value": "none",
+                "label": "No direct board/committee engagement"
+              }
+            ],
+            "helpText": "How often does this function get board/committee attention?"
+          },
+          {
+            "id": "function_budget_trend",
+            "question": "Function Budget Trend",
+            "type": "select",
+            "required": false,
+            "options": [
+              {
+                "value": "significant_increase",
+                "label": "Significant increase planned (20%+ growth)"
+              },
+              {
+                "value": "moderate_increase",
+                "label": "Moderate increase (5-20% growth)"
+              },
+              {
+                "value": "stable",
+                "label": "Stable - maintaining current investment"
+              },
+              {
+                "value": "efficiency_focus",
+                "label": "Efficiency focus - do more with same/less"
+              },
+              {
+                "value": "reduction",
+                "label": "Budget reduction expected"
+              }
+            ],
+            "helpText": "Is investment in this function growing, stable, or declining?",
+            "mirrorsCandidate": {
+              "questionId": "preferred_investment_context",
+              "matchType": "compatibility"
+            }
+          },
+          {
+            "id": "headcount_budget",
+            "question": "Headcount Investment",
+            "type": "select",
+            "required": false,
+            "options": [
+              {
+                "value": "aggressive_hiring",
+                "label": "Aggressive hiring - building a larger team"
+              },
+              {
+                "value": "selective_growth",
+                "label": "Selective growth - adding key roles"
+              },
+              {
+                "value": "replacement_only",
+                "label": "Replacement only - backfilling attrition"
+              },
+              {
+                "value": "freeze",
+                "label": "Hiring freeze - no new headcount"
+              },
+              {
+                "value": "reduction",
+                "label": "Headcount reduction planned"
+              }
+            ]
+          },
+          {
+            "id": "technology_systems_investment",
+            "question": "Technology & Systems Investment",
+            "type": "select",
+            "required": false,
+            "options": [
+              {
+                "value": "major_transformation",
+                "label": "Major transformation - new platforms/systems being implemented"
+              },
+              {
+                "value": "modernisation",
+                "label": "Modernisation - upgrading existing systems"
+              },
+              {
+                "value": "incremental",
+                "label": "Incremental - minor enhancements"
+              },
+              {
+                "value": "maintain",
+                "label": "Maintain - keeping current systems"
+              },
+              {
+                "value": "legacy_constraints",
+                "label": "Legacy constraints - limited by outdated systems"
+              }
+            ],
+            "helpText": "Is there investment in tools, GRC systems, or technology for this function?"
+          },
+          {
+            "id": "mandate_clarity",
+            "question": "Mandate & Authority",
+            "type": "select",
+            "required": false,
+            "options": [
+              {
+                "value": "strong_mandate",
+                "label": "Strong mandate - clear authority, empowered to make changes"
+              },
+              {
+                "value": "developing_mandate",
+                "label": "Developing mandate - building influence and authority"
+              },
+              {
+                "value": "advisory",
+                "label": "Advisory - recommends but doesn't enforce"
+              },
+              {
+                "value": "limited",
+                "label": "Limited mandate - constrained authority"
+              },
+              {
+                "value": "new_function",
+                "label": "New function - mandate being established"
+              }
+            ],
+            "helpText": "Does this role/function have clear authority to drive change?",
+            "mirrorsCandidate": {
+              "questionId": "preferred_mandate_level",
+              "matchType": "compatibility"
+            }
+          },
+          {
+            "id": "air_cover",
+            "question": "Senior 'Air Cover' Available",
+            "type": "select",
+            "required": false,
+            "options": [
+              {
+                "value": "strong",
+                "label": "Strong - senior leaders actively back decisions and protect the function"
+              },
+              {
+                "value": "good",
+                "label": "Good - generally supported when escalations occur"
+              },
+              {
+                "value": "moderate",
+                "label": "Moderate - some support but must build own credibility"
+              },
+              {
+                "value": "limited",
+                "label": "Limited - often left to defend position alone"
+              },
+              {
+                "value": "political",
+                "label": "Challenging - function faces political headwinds"
+              }
+            ],
+            "helpText": "Will senior leadership back this person's decisions and provide protection?",
+            "mirrorsCandidate": {
+              "questionId": "preferred_air_cover",
+              "matchType": "compatibility"
+            }
+          },
+          {
+            "id": "function_maturity",
+            "question": "Current Function Maturity",
+            "type": "select",
+            "required": false,
+            "options": [
+              {
+                "value": "nascent",
+                "label": "Nascent - just being established, greenfield"
+              },
+              {
+                "value": "developing",
+                "label": "Developing - basic framework in place, needs building"
+              },
+              {
+                "value": "established",
+                "label": "Established - solid foundation, optimisation opportunities"
+              },
+              {
+                "value": "mature",
+                "label": "Mature - well-developed, focus on maintaining excellence"
+              },
+              {
+                "value": "leading",
+                "label": "Leading - best-in-class, innovating"
+              }
+            ],
+            "helpText": "Where is this function on the maturity curve?",
+            "mirrorsCandidate": {
+              "questionId": "preferred_function_maturity",
+              "matchType": "compatibility"
+            }
+          },
+          {
+            "id": "transformation_agenda",
+            "question": "Transformation/Change Agenda",
+            "type": "select",
+            "required": false,
+            "options": [
+              {
+                "value": "major_transformation",
+                "label": "Major transformation - significant change programme"
+              },
+              {
+                "value": "evolution",
+                "label": "Evolution - continuous improvement focus"
+              },
+              {
+                "value": "stabilisation",
+                "label": "Stabilisation - bedding in recent changes"
+              },
+              {
+                "value": "steady_state",
+                "label": "Steady state - business as usual"
+              },
+              {
+                "value": "remediation",
+                "label": "Remediation - fixing issues/audit findings"
+              }
+            ],
+            "helpText": "What's the change agenda for this function?"
+          },
+          {
+            "id": "function_vision_1_3_years",
+            "question": "Vision for the Function (1-3 Years)",
+            "type": "textarea",
+            "required": false,
+            "placeholder": "e.g., Build out ERM framework, achieve regulatory approval, implement new GRC platform, expand team from 5 to 12, establish risk culture programme...",
+            "helpText": "What's the ambition for this function? Where should it be in 1-3 years?",
+            "validation": {
+              "maxLength": 1000
+            }
+          },
+          {
+            "id": "key_initiatives",
+            "question": "Key Initiatives/Projects This Role Will Lead",
+            "type": "textarea",
+            "required": false,
+            "placeholder": "e.g., ICAAP enhancement, climate risk framework, third-party risk programme, controls automation, operational resilience...",
+            "helpText": "Major projects or initiatives the successful candidate will own",
+            "validation": {
+              "maxLength": 1000
+            }
+          }
+        ]
+      },
+      {
+        "id": "role_work_environment",
+        "title": "Role Work Environment",
+        "description": "Work environment specifics for this role (can differ from company-wide settings)",
+        "order": 9,
+        "questions": [
+          {
+            "id": "role_work_pace",
+            "question": "Work Pace for This Role",
+            "type": "select",
+            "required": false,
+            "options": [
+              {
+                "value": "inherit",
+                "label": "Same as company-wide setting"
+              },
+              {
+                "value": "very_fast",
+                "label": "Very fast-paced - constant deadlines, high intensity"
+              },
+              {
+                "value": "fast",
+                "label": "Fast-paced - busy but manageable"
+              },
+              {
+                "value": "moderate",
+                "label": "Moderate - steady workflow with occasional peaks"
+              },
+              {
+                "value": "measured",
+                "label": "Measured - structured, predictable workload"
+              }
+            ],
+            "helpText": "Leave as 'inherit' if this role matches the company-wide work pace",
+            "inheritedFromClient": "work_pace",
+            "mirrorsCandidate": {
+              "questionId": "preferred_work_pace",
+              "matchType": "compatibility"
+            }
+          },
+          {
+            "id": "role_deadline_culture",
+            "question": "Deadline Culture for This Role",
+            "type": "select",
+            "required": false,
+            "options": [
+              {
+                "value": "inherit",
+                "label": "Same as company-wide setting"
+              },
+              {
+                "value": "strict",
+                "label": "Strict - deadlines are non-negotiable"
+              },
+              {
+                "value": "firm_flexible",
+                "label": "Firm but with some flexibility"
+              },
+              {
+                "value": "collaborative",
+                "label": "Collaborative - deadlines set together"
+              },
+              {
+                "value": "relaxed",
+                "label": "Relaxed - quality over speed"
+              }
+            ],
+            "inheritedFromClient": "deadline_culture",
+            "mirrorsCandidate": {
+              "questionId": "deadline_preference",
+              "matchType": "compatibility"
+            }
+          },
+          {
+            "id": "role_overtime_expectations",
+            "question": "Overtime Expectations for This Role",
+            "type": "select",
+            "required": false,
+            "options": [
+              {
+                "value": "inherit",
+                "label": "Same as company-wide setting"
+              },
+              {
+                "value": "regular",
+                "label": "Regular overtime expected (weekly)"
+              },
+              {
+                "value": "periodic",
+                "label": "Periodic overtime (month-end, quarter-end, audit cycles)"
+              },
+              {
+                "value": "occasional",
+                "label": "Occasional (project deadlines, emergencies)"
+              },
+              {
+                "value": "rare",
+                "label": "Rare - good work-life boundaries"
+              },
+              {
+                "value": "never",
+                "label": "Never - strict working hours"
+              }
+            ],
+            "helpText": "Be specific - some risk/audit roles have cyclical peaks",
+            "inheritedFromClient": "overtime_expectations",
+            "mirrorsCandidate": {
+              "questionId": "overtime_willingness",
+              "matchType": "compatibility"
+            }
+          },
+          {
+            "id": "role_team_structure",
+            "question": "Team Structure for This Role",
+            "type": "select",
+            "required": false,
+            "options": [
+              {
+                "value": "inherit",
+                "label": "Same as company-wide setting"
+              },
+              {
+                "value": "hierarchical",
+                "label": "Hierarchical - clear reporting lines and levels"
+              },
+              {
+                "value": "matrix",
+                "label": "Matrix - multiple reporting lines"
+              },
+              {
+                "value": "flat",
+                "label": "Flat - minimal hierarchy, direct access to leadership"
+              },
+              {
+                "value": "pod_based",
+                "label": "Pod/Squad based - small autonomous teams"
+              }
+            ],
+            "inheritedFromClient": "team_structure_style",
+            "mirrorsCandidate": {
+              "questionId": "preferred_team_structure",
+              "matchType": "compatibility"
+            }
+          },
+          {
+            "id": "role_autonomy_level",
+            "question": "Level of Autonomy in This Role",
+            "type": "select",
+            "required": false,
+            "options": [
+              {
+                "value": "high",
+                "label": "High - self-directed, minimal supervision"
+              },
+              {
+                "value": "moderate",
+                "label": "Moderate - guidance available but independent working expected"
+              },
+              {
+                "value": "structured",
+                "label": "Structured - regular check-ins and oversight"
+              },
+              {
+                "value": "supervised",
+                "label": "Supervised - close support and direction"
+              }
+            ],
+            "mirrorsCandidate": {
+              "questionId": "preferred_autonomy_level",
+              "matchType": "compatibility"
+            }
+          },
+          {
+            "id": "role_collaboration_style",
+            "question": "Collaboration Style for This Role",
+            "type": "select",
+            "required": false,
+            "options": [
+              {
+                "value": "inherit",
+                "label": "Same as company-wide setting"
+              },
+              {
+                "value": "highly_collaborative",
+                "label": "Highly collaborative - constant teamwork"
+              },
+              {
+                "value": "balanced",
+                "label": "Balanced - mix of collaboration and independent work"
+              },
+              {
+                "value": "independent",
+                "label": "Independent - mostly individual contributor"
+              },
+              {
+                "value": "cross_functional",
+                "label": "Cross-functional - heavy interaction across teams"
+              }
+            ],
+            "inheritedFromClient": "collaboration_style",
+            "mirrorsCandidate": {
+              "questionId": "collaboration_preference",
+              "matchType": "compatibility"
+            }
+          },
+          {
+            "id": "peak_periods",
+            "question": "Peak/Busy Periods for This Role",
+            "type": "multiselect",
+            "required": false,
+            "options": [
+              {
+                "value": "month_end",
+                "label": "Month-end close"
+              },
+              {
+                "value": "quarter_end",
+                "label": "Quarter-end/reporting cycles"
+              },
+              {
+                "value": "year_end",
+                "label": "Year-end/annual reporting"
+              },
+              {
+                "value": "audit_season",
+                "label": "Audit season"
+              },
+              {
+                "value": "budget_cycle",
+                "label": "Budget/planning cycle"
+              },
+              {
+                "value": "regulatory_deadlines",
+                "label": "Regulatory submission deadlines"
+              },
+              {
+                "value": "no_specific_peaks",
+                "label": "No specific peak periods"
+              }
+            ],
+            "helpText": "When should candidates expect heavier workloads?"
+          }
+        ]
+      },
+      {
+        "id": "compensation",
+        "title": "Compensation & Benefits",
+        "description": "Salary range and benefits offered",
+        "order": 10,
+        "questions": [
+          {
+            "id": "salary_range_min",
+            "question": "Salary Range - Minimum (\u00a3 per annum)",
+            "type": "number",
+            "required": true,
+            "placeholder": "e.g., 70000",
+            "helpText": "Base salary floor",
+            "mirrorsCandidate": {
+              "questionId": "salary_expectation_min",
+              "matchType": "range_overlap"
+            }
+          },
+          {
+            "id": "salary_range_max",
+            "question": "Salary Range - Maximum (\u00a3 per annum)",
+            "type": "number",
+            "required": true,
+            "placeholder": "e.g., 90000",
+            "helpText": "Base salary ceiling",
+            "mirrorsCandidate": {
+              "questionId": "salary_expectation_ideal",
+              "matchType": "range_overlap"
+            }
+          },
+          {
+            "id": "salary_flexibility",
+            "question": "Is the salary range flexible for exceptional candidates?",
+            "type": "select",
+            "required": true,
+            "options": [
+              {
+                "value": "firm",
+                "label": "Firm - no flexibility"
+              },
+              {
+                "value": "slight",
+                "label": "Slight flexibility (up to 10%)"
+              },
+              {
+                "value": "flexible",
+                "label": "Flexible for the right candidate"
+              }
+            ]
+          },
+          {
+            "id": "day_rate_budget",
+            "question": "Day Rate Budget (if contract, \u00a3 per day)",
+            "type": "number",
+            "required": false,
+            "placeholder": "e.g., 650",
+            "conditionalOn": {
+              "field": "job_type",
+              "contains": [
+                "contract",
+                "interim",
+                "freelance"
+              ]
+            },
+            "mirrorsCandidate": {
+              "questionId": "contract_day_rate",
+              "matchType": "range"
+            }
+          },
+          {
+            "id": "bonus_scheme",
+            "question": "Bonus/Variable Compensation",
+            "type": "select",
+            "required": false,
+            "options": [
+              {
+                "value": "none",
+                "label": "No bonus"
+              },
+              {
+                "value": "discretionary",
+                "label": "Discretionary bonus"
+              },
+              {
+                "value": "up_to_10",
+                "label": "Up to 10% of salary"
+              },
+              {
+                "value": "10_to_20",
+                "label": "10-20% of salary"
+              },
+              {
+                "value": "20_to_30",
+                "label": "20-30% of salary"
+              },
+              {
+                "value": "30_plus",
+                "label": "30%+ of salary"
+              }
+            ]
+          },
+          {
+            "id": "benefits_offered",
+            "question": "Benefits Package",
+            "type": "multiselect",
+            "required": false,
+            "options": [
+              {
+                "value": "pension",
+                "label": "Pension (employer contribution)"
+              },
+              {
+                "value": "health_insurance",
+                "label": "Private Health Insurance"
+              },
+              {
+                "value": "life_insurance",
+                "label": "Life Insurance"
+              },
+              {
+                "value": "income_protection",
+                "label": "Income Protection"
+              },
+              {
+                "value": "car_allowance",
+                "label": "Car Allowance"
+              },
+              {
+                "value": "gym_membership",
+                "label": "Gym/Wellness Benefit"
+              },
+              {
+                "value": "share_options",
+                "label": "Share Options/Equity"
+              },
+              {
+                "value": "flexible_working",
+                "label": "Flexible Working"
+              },
+              {
+                "value": "training_budget",
+                "label": "Training/Development Budget"
+              },
+              {
+                "value": "study_support",
+                "label": "Professional Study Support"
+              },
+              {
+                "value": "enhanced_parental",
+                "label": "Enhanced Parental Leave"
+              },
+              {
+                "value": "sabbatical",
+                "label": "Sabbatical Options"
+              }
+            ],
+            "helpText": "Select all benefits included",
+            "mirrorsCandidate": {
+              "questionId": "deal_breaker_benefits",
+              "matchType": "overlap"
+            }
+          },
+          {
+            "id": "pension_contribution",
+            "question": "Employer Pension Contribution (%)",
+            "type": "select",
+            "required": false,
+            "options": [
+              {
+                "value": "3",
+                "label": "3% (statutory minimum)"
+              },
+              {
+                "value": "5",
+                "label": "5%"
+              },
+              {
+                "value": "6",
+                "label": "6%"
+              },
+              {
+                "value": "8",
+                "label": "8%"
+              },
+              {
+                "value": "10",
+                "label": "10%"
+              },
+              {
+                "value": "10_plus",
+                "label": "10%+"
+              },
+              {
+                "value": "matching",
+                "label": "Matching scheme"
+              }
+            ]
+          },
+          {
+            "id": "holiday_allowance",
+            "question": "Annual Holiday Allowance (days)",
+            "type": "number",
+            "required": false,
+            "placeholder": "e.g., 25",
+            "helpText": "Excluding bank holidays"
+          }
+        ]
+      },
+      {
+        "id": "hiring_process",
+        "title": "Hiring Process & Timeline",
+        "description": "How and when you plan to hire",
+        "order": 11,
+        "questions": [
+          {
+            "id": "urgency",
+            "question": "How urgent is this hire?",
+            "type": "select",
+            "required": true,
+            "options": [
+              {
+                "value": "immediate",
+                "label": "Immediate (ASAP)"
+              },
+              {
+                "value": "urgent",
+                "label": "Urgent (within 1 month)"
+              },
+              {
+                "value": "standard",
+                "label": "Standard (1-3 months)"
+              },
+              {
+                "value": "planning",
+                "label": "Planning ahead (3+ months)"
+              }
+            ],
+            "mirrorsCandidate": {
+              "questionId": "notice_period",
+              "matchType": "timeline"
+            }
+          },
+          {
+            "id": "ideal_start_date",
+            "question": "Ideal Start Date",
+            "type": "date",
+            "required": false,
+            "mirrorsCandidate": {
+              "questionId": "available_from",
+              "matchType": "date_compatibility"
+            }
+          },
+          {
+            "id": "interview_stages",
+            "question": "Number of Interview Stages",
+            "type": "select",
+            "required": true,
+            "options": [
+              {
+                "value": "1",
+                "label": "1 stage"
+              },
+              {
+                "value": "2",
+                "label": "2 stages"
+              },
+              {
+                "value": "3",
+                "label": "3 stages"
+              },
+              {
+                "value": "4",
+                "label": "4 stages"
+              },
+              {
+                "value": "5_plus",
+                "label": "5+ stages"
+              }
+            ]
+          },
+          {
+            "id": "interview_process_description",
+            "question": "Interview Process Description",
+            "type": "textarea",
+            "required": false,
+            "placeholder": "e.g., 1) Phone screen with HR, 2) Video interview with hiring manager, 3) Case study presentation, 4) Final panel with CRO"
+          },
+          {
+            "id": "assessment_required",
+            "question": "Assessment/Tests Required",
+            "type": "multiselect",
+            "required": false,
+            "options": [
+              {
+                "value": "none",
+                "label": "None"
+              },
+              {
+                "value": "technical_test",
+                "label": "Technical/skills test"
+              },
+              {
+                "value": "case_study",
+                "label": "Case study"
+              },
+              {
+                "value": "presentation",
+                "label": "Presentation"
+              },
+              {
+                "value": "psychometric",
+                "label": "Psychometric testing"
+              },
+              {
+                "value": "personality",
+                "label": "Personality assessment"
+              }
+            ]
+          },
+          {
+            "id": "decision_makers",
+            "question": "Key Decision Makers",
+            "type": "text",
+            "required": false,
+            "placeholder": "e.g., CRO, Head of Risk, HR Director"
+          },
+          {
+            "id": "interview_availability",
+            "question": "Interviewer Availability",
+            "type": "multiselect",
+            "required": false,
+            "options": [
+              {
+                "value": "business_hours",
+                "label": "Standard business hours"
+              },
+              {
+                "value": "early_morning",
+                "label": "Early morning (before 9am)"
+              },
+              {
+                "value": "evening",
+                "label": "Evening slots available"
+              },
+              {
+                "value": "flexible",
+                "label": "Flexible to candidate needs"
+              }
+            ],
+            "mirrorsCandidate": {
+              "questionId": "interview_availability",
+              "matchType": "overlap"
+            }
+          },
+          {
+            "id": "interview_format",
+            "question": "Interview Format",
+            "type": "multiselect",
+            "required": false,
+            "options": [
+              {
+                "value": "video",
+                "label": "Video call"
+              },
+              {
+                "value": "phone",
+                "label": "Phone"
+              },
+              {
+                "value": "in_person",
+                "label": "In-person"
+              }
+            ],
+            "mirrorsCandidate": {
+              "questionId": "preferred_interview_format",
+              "matchType": "overlap"
+            }
+          }
+        ]
+      },
+      {
+        "id": "visa_requirements",
+        "title": "Visa & Work Authorisation",
+        "description": "Work eligibility requirements",
+        "order": 12,
+        "questions": [
+          {
+            "id": "visa_sponsorship",
+            "question": "Can you sponsor work visas?",
+            "type": "select",
+            "required": true,
+            "options": [
+              {
+                "value": "yes",
+                "label": "Yes - we sponsor visas"
+              },
+              {
+                "value": "case_by_case",
+                "label": "Case by case basis"
+              },
+              {
+                "value": "no",
+                "label": "No - must have right to work"
+              }
+            ],
+            "mirrorsCandidate": {
+              "questionId": "right_to_work",
+              "matchType": "eligibility"
+            }
+          },
+          {
+            "id": "security_clearance",
+            "question": "Security Clearance Required",
+            "type": "select",
+            "required": false,
+            "options": [
+              {
+                "value": "none",
+                "label": "None required"
+              },
+              {
+                "value": "basic",
+                "label": "Basic DBS"
+              },
+              {
+                "value": "standard",
+                "label": "Standard DBS"
+              },
+              {
+                "value": "enhanced",
+                "label": "Enhanced DBS"
+              },
+              {
+                "value": "sc",
+                "label": "Security Clearance (SC)"
+              },
+              {
+                "value": "dv",
+                "label": "Developed Vetting (DV)"
+              }
+            ],
+            "mirrorsCandidate": {
+              "questionId": "dbs_check",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "background_checks",
+            "question": "Background Checks Required",
+            "type": "multiselect",
+            "required": false,
+            "options": [
+              {
+                "value": "references",
+                "label": "Employment references"
+              },
+              {
+                "value": "education",
+                "label": "Education verification"
+              },
+              {
+                "value": "credit",
+                "label": "Credit check"
+              },
+              {
+                "value": "criminal",
+                "label": "Criminal record check"
+              },
+              {
+                "value": "social_media",
+                "label": "Social media screening"
+              },
+              {
+                "value": "fca",
+                "label": "FCA register check"
+              }
+            ],
+            "mirrorsCandidate": {
+              "questionId": "background_check_consent",
+              "matchType": "requirements"
+            }
+          }
+        ]
+      },
+      {
+        "id": "additional_info",
+        "title": "Additional Information",
+        "description": "Anything else candidates should know",
+        "order": 13,
+        "questions": [
+          {
+            "id": "selling_points",
+            "question": "Key Selling Points for Candidates",
+            "type": "textarea",
+            "required": false,
+            "placeholder": "What makes this role and your company attractive? e.g., Career progression, exciting projects, great culture, market leader",
+            "mirrorsCandidate": {
+              "questionId": "nice_to_haves",
+              "matchType": "appeal"
+            }
+          },
+          {
+            "id": "challenges",
+            "question": "Key Challenges/What's Hard About This Role",
+            "type": "textarea",
+            "required": false,
+            "placeholder": "Be honest about challenges - helps attract candidates who thrive in these situations"
+          },
+          {
+            "id": "growth_opportunities",
+            "question": "Growth & Development Opportunities",
+            "type": "textarea",
+            "required": false,
+            "placeholder": "e.g., Clear path to Director, international exposure, opportunity to build a team"
+          },
+          {
+            "id": "exclusivity",
+            "question": "Are you working with other agencies on this role?",
+            "type": "select",
+            "required": true,
+            "options": [
+              {
+                "value": "exclusive",
+                "label": "Exclusive to Assured Recruitment"
+              },
+              {
+                "value": "preferred",
+                "label": "Preferred supplier (limited agencies)"
+              },
+              {
+                "value": "contingent",
+                "label": "Contingent (multiple agencies)"
+              }
+            ]
+          },
+          {
+            "id": "additional_notes",
+            "question": "Any Additional Notes or Requirements",
+            "type": "textarea",
+            "required": false,
+            "placeholder": "Anything else we should know about this role or ideal candidate"
+          }
+        ]
+      },
+      {
+        "id": "weighting",
+        "title": "Matching Criteria Weighting",
+        "description": "How important is each factor when matching candidates?",
+        "order": 14,
+        "helpText": "These weights will be used by our matching algorithm to find the best candidates",
+        "questions": [
+          {
+            "id": "weight_experience",
+            "question": "Years of Experience",
+            "type": "slider",
+            "required": true,
+            "min": 1,
+            "max": 10,
+            "defaultValue": 7,
+            "helpText": "1 = Nice to have, 10 = Essential"
+          },
+          {
+            "id": "weight_industry",
+            "question": "Industry Experience",
+            "type": "slider",
+            "required": true,
+            "min": 1,
+            "max": 10,
+            "defaultValue": 6,
+            "helpText": "1 = Nice to have, 10 = Essential"
+          },
+          {
+            "id": "weight_certifications",
+            "question": "Professional Certifications",
+            "type": "slider",
+            "required": true,
+            "min": 1,
+            "max": 10,
+            "defaultValue": 5,
+            "helpText": "1 = Nice to have, 10 = Essential"
+          },
+          {
+            "id": "weight_technical_skills",
+            "question": "Technical Skills",
+            "type": "slider",
+            "required": true,
+            "min": 1,
+            "max": 10,
+            "defaultValue": 7,
+            "helpText": "1 = Nice to have, 10 = Essential"
+          },
+          {
+            "id": "weight_management",
+            "question": "Management Experience",
+            "type": "slider",
+            "required": true,
+            "min": 1,
+            "max": 10,
+            "defaultValue": 5,
+            "helpText": "1 = Nice to have, 10 = Essential"
+          },
+          {
+            "id": "weight_location",
+            "question": "Location/Commute",
+            "type": "slider",
+            "required": true,
+            "min": 1,
+            "max": 10,
+            "defaultValue": 6,
+            "helpText": "1 = Flexible, 10 = Must be local"
+          },
+          {
+            "id": "weight_salary",
+            "question": "Salary Expectations",
+            "type": "slider",
+            "required": true,
+            "min": 1,
+            "max": 10,
+            "defaultValue": 8,
+            "helpText": "1 = Very flexible, 10 = Fixed budget"
+          },
+          {
+            "id": "weight_availability",
+            "question": "Availability/Start Date",
+            "type": "slider",
+            "required": true,
+            "min": 1,
+            "max": 10,
+            "defaultValue": 5,
+            "helpText": "1 = Flexible, 10 = Urgent start needed"
+          },
+          {
+            "id": "weight_culture_fit",
+            "question": "Culture Fit",
+            "type": "slider",
+            "required": true,
+            "min": 1,
+            "max": 10,
+            "defaultValue": 7,
+            "helpText": "1 = Less important, 10 = Critical"
+          }
+        ]
+      },
+      {
+        "id": "skills_strategic_commercial",
+        "title": "Skills: Strategic & Commercial Acumen",
+        "description": "Rate the importance of each skill for this role",
+        "order": 15,
+        "helpText": "0 = Not Required, 1 = Nice to Have, 2 = Important, 3 = Very Important, 4 = Essential",
+        "sectionNote": "Focuses on understanding the broader business context and thinking strategically to drive sustainable growth.",
+        "questions": [
+          {
+            "id": "skill_strategic_vision",
+            "question": "Strategic Vision",
+            "description": "Developing and articulating long-term vision",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceLevels": {
+              "0": "Not Required",
+              "1": "Nice to Have",
+              "2": "Important",
+              "3": "Very Important",
+              "4": "Essential"
+            },
+            "proficiencyDefinitions": {
+              "1": "Can articulate basic goals and contribute to team objectives",
+              "2": "Develops clear vision for own area; aligns work to broader strategy",
+              "3": "Creates compelling vision across functions; influences strategic direction",
+              "4": "Shapes organisational strategy; inspires others with transformative vision"
+            },
+            "mirrorsCandidate": {
+              "questionId": "skill_strategic_vision",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "skill_long_term_planning",
+            "question": "Long-Term Planning",
+            "description": "Creating and executing strategic plans",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceLevels": {
+              "0": "Not Required",
+              "1": "Nice to Have",
+              "2": "Important",
+              "3": "Very Important",
+              "4": "Essential"
+            },
+            "proficiencyDefinitions": {
+              "1": "Contributes to planning activities; understands planning frameworks",
+              "2": "Creates detailed plans for projects; monitors progress effectively",
+              "3": "Develops multi-year strategic plans; adapts plans to changing conditions",
+              "4": "Drives enterprise-wide strategic planning; balances competing priorities masterfully"
+            },
+            "mirrorsCandidate": {
+              "questionId": "skill_long_term_planning",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "skill_market_analysis",
+            "question": "Market Analysis",
+            "description": "Understanding market dynamics and the competitive landscape",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceLevels": {
+              "0": "Not Required",
+              "1": "Nice to Have",
+              "2": "Important",
+              "3": "Very Important",
+              "4": "Essential"
+            },
+            "proficiencyDefinitions": {
+              "1": "Aware of key competitors and market trends relevant to role",
+              "2": "Conducts structured analysis of market segments and competitors",
+              "3": "Synthesises complex market data to inform strategic decisions",
+              "4": "Anticipates market shifts; recognised as authority on competitive dynamics"
+            },
+            "mirrorsCandidate": {
+              "questionId": "skill_market_analysis",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "skill_business_model",
+            "question": "Business Model Comprehension",
+            "description": "Analysing and evaluating business models",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceLevels": {
+              "0": "Not Required",
+              "1": "Nice to Have",
+              "2": "Important",
+              "3": "Very Important",
+              "4": "Essential"
+            },
+            "proficiencyDefinitions": {
+              "1": "Understands own organisation's business model and revenue drivers",
+              "2": "Analyses business model components; identifies strengths and weaknesses",
+              "3": "Evaluates and recommends business model improvements",
+              "4": "Designs innovative business models; advises on strategic transformations"
+            },
+            "mirrorsCandidate": {
+              "questionId": "skill_business_model",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "skill_financial_acumen",
+            "question": "Financial Acumen",
+            "description": "Interpreting financial statements and key performance metrics",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceLevels": {
+              "0": "Not Required",
+              "1": "Nice to Have",
+              "2": "Important",
+              "3": "Very Important",
+              "4": "Essential"
+            },
+            "proficiencyDefinitions": {
+              "1": "Reads basic financial reports; understands key metrics for own area",
+              "2": "Interprets financial statements; manages budgets and tracks KPIs",
+              "3": "Conducts detailed financial analysis; identifies trends and anomalies",
+              "4": "Provides strategic financial insights; influences investment decisions"
+            },
+            "mirrorsCandidate": {
+              "questionId": "skill_financial_acumen",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "skill_identifying_trends",
+            "question": "Identifying Trends",
+            "description": "Recognising and assessing disruptive innovations and industry shifts",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceLevels": {
+              "0": "Not Required",
+              "1": "Nice to Have",
+              "2": "Important",
+              "3": "Very Important",
+              "4": "Essential"
+            },
+            "proficiencyDefinitions": {
+              "1": "Stays informed about industry news and emerging developments",
+              "2": "Identifies relevant trends; assesses potential impact on organisation",
+              "3": "Predicts industry shifts; develops proactive response strategies",
+              "4": "Shapes industry thinking; positions organisation ahead of disruption"
+            },
+            "mirrorsCandidate": {
+              "questionId": "skill_identifying_trends",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "skill_strategic_evaluation",
+            "question": "Strategic Evaluation",
+            "description": "Assessing strategic options and identifying when a pivot is needed",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceLevels": {
+              "0": "Not Required",
+              "1": "Nice to Have",
+              "2": "Important",
+              "3": "Very Important",
+              "4": "Essential"
+            },
+            "proficiencyDefinitions": {
+              "1": "Evaluates options within defined criteria; flags concerns appropriately",
+              "2": "Applies frameworks to assess strategic alternatives systematically",
+              "3": "Synthesises complex factors to recommend strategic direction changes",
+              "4": "Makes high-stakes strategic calls; navigates organisational pivots successfully"
+            },
+            "mirrorsCandidate": {
+              "questionId": "skill_strategic_evaluation",
+              "matchType": "minimum"
+            }
+          }
+        ]
+      },
+      {
+        "id": "skills_leadership_talent",
+        "title": "Skills: Leadership & Talent Management",
+        "description": "Rate the importance of each skill for this role",
+        "order": 16,
+        "helpText": "0 = Not Required, 1 = Nice to Have, 2 = Important, 3 = Very Important, 4 = Essential",
+        "sectionNote": "Focuses on guiding, motivating, and developing individuals and teams to achieve collective goals.",
+        "questions": [
+          {
+            "id": "skill_team_building",
+            "question": "Team Building & Motivation",
+            "description": "Creating cohesive, high-performing, and motivated teams",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceLevels": {
+              "0": "Not Required",
+              "1": "Nice to Have",
+              "2": "Important",
+              "3": "Very Important",
+              "4": "Essential"
+            },
+            "proficiencyDefinitions": {
+              "1": "Contributes positively to team dynamics; supports colleagues",
+              "2": "Builds rapport within teams; motivates others through enthusiasm (e.g., audit teams, risk teams, compliance functions)",
+              "3": "Creates high-performing teams; fosters strong team culture (e.g., building specialist risk/audit/controls teams)",
+              "4": "Transforms team dynamics organisation-wide; inspires exceptional performance"
+            },
+            "mirrorsCandidate": {
+              "questionId": "skill_team_building",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "skill_performance_management",
+            "question": "Performance Management",
+            "description": "Setting clear goals and managing team performance",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceLevels": {
+              "0": "Not Required",
+              "1": "Nice to Have",
+              "2": "Important",
+              "3": "Very Important",
+              "4": "Essential"
+            },
+            "proficiencyDefinitions": {
+              "1": "Sets own goals aligned to objectives; tracks personal performance",
+              "2": "Sets clear goals for others; conducts effective performance conversations",
+              "3": "Designs performance frameworks; handles complex performance issues",
+              "4": "Shapes performance culture; creates systems that drive excellence"
+            },
+            "mirrorsCandidate": {
+              "questionId": "skill_performance_management",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "skill_coaching_mentoring",
+            "question": "Coaching & Mentoring",
+            "description": "Developing individual capabilities through effective coaching",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceLevels": {
+              "0": "Not Required",
+              "1": "Nice to Have",
+              "2": "Important",
+              "3": "Very Important",
+              "4": "Essential"
+            },
+            "proficiencyDefinitions": {
+              "1": "Shares knowledge willingly; helps colleagues when asked",
+              "2": "Provides regular coaching; helps others develop specific skills",
+              "3": "Uses varied coaching techniques; develops others systematically",
+              "4": "Transforms careers through coaching; develops coaching capability in others"
+            },
+            "mirrorsCandidate": {
+              "questionId": "skill_coaching_mentoring",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "skill_talent_development",
+            "question": "Talent Development",
+            "description": "Identifying skill gaps and creating development plans",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceLevels": {
+              "0": "Not Required",
+              "1": "Nice to Have",
+              "2": "Important",
+              "3": "Very Important",
+              "4": "Essential"
+            },
+            "proficiencyDefinitions": {
+              "1": "Identifies own development needs; pursues learning opportunities",
+              "2": "Assesses team capabilities; creates individual development plans",
+              "3": "Builds talent pipelines; implements structured development programmes (e.g., specialist development in risk, audit, compliance domains)",
+              "4": "Shapes organisational talent strategy; creates learning cultures"
+            },
+            "mirrorsCandidate": {
+              "questionId": "skill_talent_development",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "skill_delegation",
+            "question": "Delegation & Empowerment",
+            "description": "Assigning responsibility effectively to foster growth",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceLevels": {
+              "0": "Not Required",
+              "1": "Nice to Have",
+              "2": "Important",
+              "3": "Very Important",
+              "4": "Essential"
+            },
+            "proficiencyDefinitions": {
+              "1": "Takes on delegated tasks; understands accountability",
+              "2": "Delegates appropriately; provides clear direction and support",
+              "3": "Empowers others with significant responsibility; balances oversight",
+              "4": "Creates empowered cultures; enables autonomous high-performing teams"
+            },
+            "mirrorsCandidate": {
+              "questionId": "skill_delegation",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "skill_change_leadership",
+            "question": "Change Leadership",
+            "description": "Guiding teams effectively through periods of change",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceLevels": {
+              "0": "Not Required",
+              "1": "Nice to Have",
+              "2": "Important",
+              "3": "Very Important",
+              "4": "Essential"
+            },
+            "proficiencyDefinitions": {
+              "1": "Adapts to change positively; supports others through transitions",
+              "2": "Communicates change effectively; helps team navigate uncertainty (e.g., control transformation, audit methodology changes, BCM adoption)",
+              "3": "Leads significant change initiatives; builds change readiness (e.g., risk framework transformation, compliance programme rollout)",
+              "4": "Drives transformational change; creates change-capable organisations"
+            },
+            "mirrorsCandidate": {
+              "questionId": "skill_change_leadership",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "skill_conflict_resolution",
+            "question": "Conflict Resolution",
+            "description": "Mediating and resolving interpersonal and team conflicts",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceLevels": {
+              "0": "Not Required",
+              "1": "Nice to Have",
+              "2": "Important",
+              "3": "Very Important",
+              "4": "Essential"
+            },
+            "proficiencyDefinitions": {
+              "1": "Addresses minor disagreements constructively; seeks help when needed",
+              "2": "Mediates team conflicts; finds mutually acceptable solutions",
+              "3": "Resolves complex multi-party disputes; prevents conflict escalation",
+              "4": "Transforms conflict into opportunity; builds conflict-resilient cultures"
+            },
+            "mirrorsCandidate": {
+              "questionId": "skill_conflict_resolution",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "skill_remote_cross_cultural",
+            "question": "Remote & Cross-Cultural Leadership",
+            "description": "Managing diverse and distributed teams effectively",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceLevels": {
+              "0": "Not Required",
+              "1": "Nice to Have",
+              "2": "Important",
+              "3": "Very Important",
+              "4": "Essential"
+            },
+            "proficiencyDefinitions": {
+              "1": "Works effectively with remote colleagues; respects cultural differences",
+              "2": "Manages remote team members; adapts communication across cultures",
+              "3": "Leads geographically dispersed teams; builds inclusive remote cultures",
+              "4": "Creates global team frameworks; champions diversity and inclusion"
+            },
+            "mirrorsCandidate": {
+              "questionId": "skill_remote_cross_cultural",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "skill_succession_planning",
+            "question": "Succession Planning",
+            "description": "Identifying and nurturing future leaders",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceLevels": {
+              "0": "Not Required",
+              "1": "Nice to Have",
+              "2": "Important",
+              "3": "Very Important",
+              "4": "Essential"
+            },
+            "proficiencyDefinitions": {
+              "1": "Identifies potential in colleagues; supports their development",
+              "2": "Develops successors for key roles; creates development opportunities",
+              "3": "Builds leadership pipelines; implements succession frameworks",
+              "4": "Shapes organisational leadership capability; ensures continuity at all levels"
+            },
+            "mirrorsCandidate": {
+              "questionId": "skill_succession_planning",
+              "matchType": "minimum"
+            }
+          }
+        ]
+      },
+      {
+        "id": "skills_stakeholder_influence",
+        "title": "Skills: Stakeholder Engagement & Influence",
+        "description": "Rate the importance of each skill for this role",
+        "order": 17,
+        "helpText": "0 = Not Required, 1 = Nice to Have, 2 = Important, 3 = Very Important, 4 = Essential",
+        "sectionNote": "Focuses on building relationships, communicating effectively, and gaining buy-in to drive outcomes.",
+        "questions": [
+          {
+            "id": "skill_executive_communication",
+            "question": "Executive Communication",
+            "description": "Engaging effectively with C-suite and Board-level stakeholders",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceLevels": {
+              "0": "Not Required",
+              "1": "Nice to Have",
+              "2": "Important",
+              "3": "Very Important",
+              "4": "Essential"
+            },
+            "proficiencyDefinitions": {
+              "1": "Communicates clearly to senior stakeholders when required",
+              "2": "Prepares effective executive summaries; presents confidently to leaders",
+              "3": "Influences executive decisions; builds credibility at senior levels (e.g., presenting to Audit Committee, Risk Committee, Board)",
+              "4": "Trusted advisor to C-suite; shapes executive thinking and decisions"
+            },
+            "mirrorsCandidate": {
+              "questionId": "skill_executive_communication",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "skill_cross_functional_collab",
+            "question": "Cross-Functional Collaboration",
+            "description": "Building strong partnerships across different business units",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceLevels": {
+              "0": "Not Required",
+              "1": "Nice to Have",
+              "2": "Important",
+              "3": "Very Important",
+              "4": "Essential"
+            },
+            "proficiencyDefinitions": {
+              "1": "Works cooperatively with other teams when required",
+              "2": "Builds working relationships across functions; coordinates effectively",
+              "3": "Creates strategic partnerships; drives cross-functional initiatives",
+              "4": "Breaks down silos; creates collaborative cultures across organisations"
+            },
+            "mirrorsCandidate": {
+              "questionId": "skill_cross_functional_collab",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "skill_stakeholder_analysis",
+            "question": "Stakeholder Analysis",
+            "description": "Mapping and analysing stakeholder needs and influence",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceLevels": {
+              "0": "Not Required",
+              "1": "Nice to Have",
+              "2": "Important",
+              "3": "Very Important",
+              "4": "Essential"
+            },
+            "proficiencyDefinitions": {
+              "1": "Identifies key stakeholders for own work; understands their basic needs",
+              "2": "Maps stakeholder landscape; develops engagement strategies",
+              "3": "Conducts sophisticated stakeholder analysis; anticipates concerns",
+              "4": "Masters complex stakeholder ecosystems; navigates competing interests"
+            },
+            "mirrorsCandidate": {
+              "questionId": "skill_stakeholder_analysis",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "skill_negotiation",
+            "question": "Negotiation & Persuasion",
+            "description": "Utilising effective strategies to achieve desired outcomes",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceLevels": {
+              "0": "Not Required",
+              "1": "Nice to Have",
+              "2": "Important",
+              "3": "Very Important",
+              "4": "Essential"
+            },
+            "proficiencyDefinitions": {
+              "1": "Makes reasonable requests; finds basic compromises",
+              "2": "Negotiates effectively in standard situations; presents persuasive arguments",
+              "3": "Handles complex negotiations; influences without authority",
+              "4": "Achieves breakthrough outcomes; masters high-stakes negotiations"
+            },
+            "mirrorsCandidate": {
+              "questionId": "skill_negotiation",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "skill_consensus_building",
+            "question": "Consensus Building",
+            "description": "Facilitating dialogue to create shared agreement and alignment",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceLevels": {
+              "0": "Not Required",
+              "1": "Nice to Have",
+              "2": "Important",
+              "3": "Very Important",
+              "4": "Essential"
+            },
+            "proficiencyDefinitions": {
+              "1": "Contributes constructively to group discussions; seeks common ground",
+              "2": "Facilitates team alignment; brings diverse views together",
+              "3": "Builds consensus across functions; resolves competing priorities",
+              "4": "Aligns organisations around shared vision; unifies disparate groups"
+            },
+            "mirrorsCandidate": {
+              "questionId": "skill_consensus_building",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "skill_presenting",
+            "question": "Presenting & Public Speaking",
+            "description": "Delivering clear and impactful presentations",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceLevels": {
+              "0": "Not Required",
+              "1": "Nice to Have",
+              "2": "Important",
+              "3": "Very Important",
+              "4": "Essential"
+            },
+            "proficiencyDefinitions": {
+              "1": "Presents information clearly to small groups; manages basic Q&A",
+              "2": "Delivers engaging presentations; handles challenging questions well",
+              "3": "Commands large audiences; creates memorable presentations",
+              "4": "Inspires through presenting; sought after as keynote speaker"
+            },
+            "mirrorsCandidate": {
+              "questionId": "skill_presenting",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "skill_translating_complexity",
+            "question": "Translating Complexity",
+            "description": "Communicating technical information clearly to non-technical audiences",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceLevels": {
+              "0": "Not Required",
+              "1": "Nice to Have",
+              "2": "Important",
+              "3": "Very Important",
+              "4": "Essential"
+            },
+            "proficiencyDefinitions": {
+              "1": "Explains technical concepts in simpler terms when asked",
+              "2": "Adapts communication style for different audiences consistently",
+              "3": "Makes complex topics accessible; creates understanding across levels",
+              "4": "Transforms complexity into clarity; enables organisation-wide understanding"
+            },
+            "mirrorsCandidate": {
+              "questionId": "skill_translating_complexity",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "skill_data_storytelling",
+            "question": "Data Storytelling",
+            "description": "Developing compelling narratives from data to drive decisions",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceLevels": {
+              "0": "Not Required",
+              "1": "Nice to Have",
+              "2": "Important",
+              "3": "Very Important",
+              "4": "Essential"
+            },
+            "proficiencyDefinitions": {
+              "1": "Presents data clearly with basic visualisations",
+              "2": "Creates compelling charts and graphs; highlights key insights (e.g., audit findings, risk dashboards, compliance metrics)",
+              "3": "Crafts data narratives that drive action; influences through analytics (e.g., board risk reports, audit committee presentations)",
+              "4": "Transforms data into strategic stories; shapes decisions through insight"
+            },
+            "mirrorsCandidate": {
+              "questionId": "skill_data_storytelling",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "skill_organisational_awareness",
+            "question": "Organisational Awareness",
+            "description": "Navigating internal politics and informal structures effectively",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceLevels": {
+              "0": "Not Required",
+              "1": "Nice to Have",
+              "2": "Important",
+              "3": "Very Important",
+              "4": "Essential"
+            },
+            "proficiencyDefinitions": {
+              "1": "Understands formal reporting structures; follows proper channels",
+              "2": "Reads organisational dynamics; navigates processes effectively",
+              "3": "Maps informal power structures; works effectively within politics",
+              "4": "Masters organisational dynamics; achieves outcomes through influence"
+            },
+            "mirrorsCandidate": {
+              "questionId": "skill_organisational_awareness",
+              "matchType": "minimum"
+            }
+          }
+        ]
+      },
+      {
+        "id": "skills_problem_solving",
+        "title": "Skills: Problem Solving & Execution",
+        "description": "Rate the importance of each skill for this role",
+        "order": 18,
+        "helpText": "0 = Not Required, 1 = Nice to Have, 2 = Important, 3 = Very Important, 4 = Essential",
+        "sectionNote": "Focuses on analysing issues, making sound decisions, and managing work effectively to deliver results.",
+        "questions": [
+          {
+            "id": "skill_critical_thinking",
+            "question": "Critical Thinking",
+            "description": "Applying analytical frameworks to break down complex problems",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceLevels": {
+              "0": "Not Required",
+              "1": "Nice to Have",
+              "2": "Important",
+              "3": "Very Important",
+              "4": "Essential"
+            },
+            "proficiencyDefinitions": {
+              "1": "Analyses straightforward problems logically; questions assumptions",
+              "2": "Applies structured frameworks; breaks down complex issues systematically",
+              "3": "Synthesises multiple perspectives; identifies non-obvious solutions",
+              "4": "Tackles unprecedented challenges; creates new analytical frameworks"
+            },
+            "mirrorsCandidate": {
+              "questionId": "skill_critical_thinking",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "skill_root_cause_analysis",
+            "question": "Root Cause Analysis",
+            "description": "Identifying the underlying causes of issues, not just symptoms",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceLevels": {
+              "0": "Not Required",
+              "1": "Nice to Have",
+              "2": "Important",
+              "3": "Very Important",
+              "4": "Essential"
+            },
+            "proficiencyDefinitions": {
+              "1": "Investigates issues beyond surface level; asks probing questions",
+              "2": "Applies root cause techniques; identifies underlying factors",
+              "3": "Uncovers systemic issues; addresses fundamental causes",
+              "4": "Diagnoses complex organisational problems; prevents recurrence"
+            },
+            "mirrorsCandidate": {
+              "questionId": "skill_root_cause_analysis",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "skill_decision_making_uncertainty",
+            "question": "Decision Making under Uncertainty",
+            "description": "Making sound judgments with incomplete information",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceLevels": {
+              "0": "Not Required",
+              "1": "Nice to Have",
+              "2": "Important",
+              "3": "Very Important",
+              "4": "Essential"
+            },
+            "proficiencyDefinitions": {
+              "1": "Makes decisions within defined parameters; escalates appropriately",
+              "2": "Decides with incomplete data; balances analysis with action",
+              "3": "Makes high-stakes decisions under ambiguity; manages risk effectively",
+              "4": "Excels in uncertainty; makes transformational decisions with confidence"
+            },
+            "mirrorsCandidate": {
+              "questionId": "skill_decision_making_uncertainty",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "skill_project_management",
+            "question": "Project & Program Management",
+            "description": "Applying methodologies to manage projects effectively",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceLevels": {
+              "0": "Not Required",
+              "1": "Nice to Have",
+              "2": "Important",
+              "3": "Very Important",
+              "4": "Essential"
+            },
+            "proficiencyDefinitions": {
+              "1": "Contributes to projects; follows project processes and timelines",
+              "2": "Manages projects end-to-end; applies appropriate methodologies",
+              "3": "Leads complex programmes; coordinates multiple workstreams",
+              "4": "Delivers strategic transformations; creates project management excellence"
+            },
+            "mirrorsCandidate": {
+              "questionId": "skill_project_management",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "skill_resource_management",
+            "question": "Resource Management",
+            "description": "Planning and controlling budgets, timelines, and resources",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceLevels": {
+              "0": "Not Required",
+              "1": "Nice to Have",
+              "2": "Important",
+              "3": "Very Important",
+              "4": "Essential"
+            },
+            "proficiencyDefinitions": {
+              "1": "Works within allocated resources; flags constraints early",
+              "2": "Plans and tracks resource usage; optimises within constraints",
+              "3": "Manages complex resource portfolios; makes trade-off decisions",
+              "4": "Optimises enterprise resources; creates resource management frameworks"
+            },
+            "mirrorsCandidate": {
+              "questionId": "skill_resource_management",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "skill_scope_quality",
+            "question": "Scope & Quality Management",
+            "description": "Defining project scope and ensuring quality standards are met",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceLevels": {
+              "0": "Not Required",
+              "1": "Nice to Have",
+              "2": "Important",
+              "3": "Very Important",
+              "4": "Essential"
+            },
+            "proficiencyDefinitions": {
+              "1": "Understands scope boundaries; maintains quality in own work",
+              "2": "Defines clear scope; implements quality controls",
+              "3": "Manages scope creep; establishes quality frameworks",
+              "4": "Sets enterprise quality standards; balances scope and value masterfully"
+            },
+            "mirrorsCandidate": {
+              "questionId": "skill_scope_quality",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "skill_change_control",
+            "question": "Change Control",
+            "description": "Managing changes to project scope and plans systematically",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceLevels": {
+              "0": "Not Required",
+              "1": "Nice to Have",
+              "2": "Important",
+              "3": "Very Important",
+              "4": "Essential"
+            },
+            "proficiencyDefinitions": {
+              "1": "Follows change control processes; documents changes accurately",
+              "2": "Manages change requests; assesses impact and obtains approvals",
+              "3": "Designs change control frameworks; balances flexibility and control",
+              "4": "Creates enterprise change governance; enables agility within control"
+            },
+            "mirrorsCandidate": {
+              "questionId": "skill_change_control",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "skill_solution_implementation",
+            "question": "Solution Implementation",
+            "description": "Developing and executing clear implementation plans",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceLevels": {
+              "0": "Not Required",
+              "1": "Nice to Have",
+              "2": "Important",
+              "3": "Very Important",
+              "4": "Essential"
+            },
+            "proficiencyDefinitions": {
+              "1": "Executes assigned implementation tasks; follows plans accurately",
+              "2": "Creates implementation plans; manages deployment effectively",
+              "3": "Orchestrates complex implementations; handles dependencies",
+              "4": "Delivers strategic transformations; creates implementation excellence"
+            },
+            "mirrorsCandidate": {
+              "questionId": "skill_solution_implementation",
+              "matchType": "minimum"
+            }
+          }
+        ]
+      },
+      {
+        "id": "skills_personal_effectiveness",
+        "title": "Skills: Personal Effectiveness & Resilience",
+        "description": "Rate the importance of each skill for this role",
+        "order": 19,
+        "helpText": "0 = Not Required, 1 = Nice to Have, 2 = Important, 3 = Very Important, 4 = Essential",
+        "sectionNote": "Focuses on self-management, adaptability, and the ability to thrive in a dynamic environment.",
+        "questions": [
+          {
+            "id": "skill_adaptability",
+            "question": "Adaptability & Flexibility",
+            "description": "Adjusting effectively to changing priorities and conditions",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceLevels": {
+              "0": "Not Required",
+              "1": "Nice to Have",
+              "2": "Important",
+              "3": "Very Important",
+              "4": "Essential"
+            },
+            "proficiencyDefinitions": {
+              "1": "Accepts change when required; adjusts approach with guidance",
+              "2": "Embraces change proactively; adjusts quickly to new situations",
+              "3": "Thrives in dynamic environments; helps others adapt",
+              "4": "Drives beneficial change; creates adaptive cultures"
+            },
+            "mirrorsCandidate": {
+              "questionId": "skill_adaptability",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "skill_managing_ambiguity",
+            "question": "Managing Ambiguity",
+            "description": "Maintaining performance and focus when direction is unclear",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceLevels": {
+              "0": "Not Required",
+              "1": "Nice to Have",
+              "2": "Important",
+              "3": "Very Important",
+              "4": "Essential"
+            },
+            "proficiencyDefinitions": {
+              "1": "Copes with some uncertainty; seeks clarification proactively",
+              "2": "Operates effectively without complete clarity; makes progress",
+              "3": "Excels in ambiguous situations; creates clarity for others",
+              "4": "Transforms ambiguity into opportunity; leads through uncertainty"
+            },
+            "mirrorsCandidate": {
+              "questionId": "skill_managing_ambiguity",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "skill_resilience",
+            "question": "Resilience",
+            "description": "Recovering from setbacks and managing pressure constructively",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceLevels": {
+              "0": "Not Required",
+              "1": "Nice to Have",
+              "2": "Important",
+              "3": "Very Important",
+              "4": "Essential"
+            },
+            "proficiencyDefinitions": {
+              "1": "Recovers from minor setbacks; maintains composure under normal pressure",
+              "2": "Bounces back from difficulties; stays productive under pressure",
+              "3": "Thrives under pressure; supports team resilience during challenges",
+              "4": "Transforms adversity into growth; builds resilient teams and cultures"
+            },
+            "mirrorsCandidate": {
+              "questionId": "skill_resilience",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "skill_growth_mindset",
+            "question": "Growth Mindset",
+            "description": "Actively seeking feedback and embracing continuous learning",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceLevels": {
+              "0": "Not Required",
+              "1": "Nice to Have",
+              "2": "Important",
+              "3": "Very Important",
+              "4": "Essential"
+            },
+            "proficiencyDefinitions": {
+              "1": "Accepts feedback; participates in required training",
+              "2": "Seeks feedback proactively; pursues learning opportunities",
+              "3": "Models continuous improvement; inspires learning in others",
+              "4": "Champions growth culture; transforms organisational learning"
+            },
+            "mirrorsCandidate": {
+              "questionId": "skill_growth_mindset",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "skill_active_listening",
+            "question": "Active Listening",
+            "description": "Hearing and interpreting the full meaning behind communication",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceLevels": {
+              "0": "Not Required",
+              "1": "Nice to Have",
+              "2": "Important",
+              "3": "Very Important",
+              "4": "Essential"
+            },
+            "proficiencyDefinitions": {
+              "1": "Listens attentively; asks clarifying questions",
+              "2": "Demonstrates understanding; captures key points accurately",
+              "3": "Reads between the lines; picks up unspoken concerns",
+              "4": "Creates psychological safety through listening; masters difficult conversations"
+            },
+            "mirrorsCandidate": {
+              "questionId": "skill_active_listening",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "skill_delivering_feedback",
+            "question": "Delivering Feedback",
+            "description": "Providing constructive feedback in a way that can be received",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceLevels": {
+              "0": "Not Required",
+              "1": "Nice to Have",
+              "2": "Important",
+              "3": "Very Important",
+              "4": "Essential"
+            },
+            "proficiencyDefinitions": {
+              "1": "Gives basic feedback when required; focuses on facts",
+              "2": "Delivers constructive feedback; balances positive and developmental",
+              "3": "Handles difficult feedback conversations; drives improvement",
+              "4": "Creates feedback-rich cultures; transforms performance through feedback"
+            },
+            "mirrorsCandidate": {
+              "questionId": "skill_delivering_feedback",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "skill_emotional_intelligence",
+            "question": "Emotional Intelligence",
+            "description": "Recognising and managing one's own and others' emotions",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceLevels": {
+              "0": "Not Required",
+              "1": "Nice to Have",
+              "2": "Important",
+              "3": "Very Important",
+              "4": "Essential"
+            },
+            "proficiencyDefinitions": {
+              "1": "Aware of own emotions; maintains professional composure",
+              "2": "Reads emotional cues; responds appropriately to others' feelings",
+              "3": "Navigates emotional complexity; builds strong relationships",
+              "4": "Masters emotional dynamics; creates emotionally intelligent cultures"
+            },
+            "mirrorsCandidate": {
+              "questionId": "skill_emotional_intelligence",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "skill_energy_stress_management",
+            "question": "Personal Energy & Stress Management",
+            "description": "Maintaining personal well-being and effectiveness",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceLevels": {
+              "0": "Not Required",
+              "1": "Nice to Have",
+              "2": "Important",
+              "3": "Very Important",
+              "4": "Essential"
+            },
+            "proficiencyDefinitions": {
+              "1": "Manages basic workload; recognises when stressed",
+              "2": "Maintains energy levels; applies stress management techniques",
+              "3": "Sustains high performance; models healthy work practices",
+              "4": "Optimises personal effectiveness; promotes wellbeing culture"
+            },
+            "mirrorsCandidate": {
+              "questionId": "skill_energy_stress_management",
+              "matchType": "minimum"
+            }
+          }
+        ]
+      }
+    ],
+    "metadata": {
+      "totalQuestions": 163,
+      "estimatedCompletionMinutes": 27,
+      "targetAudience": "Hiring Managers and HR Professionals",
+      "additionalInfoFields": {
+        "enabled": true,
+        "label": "Additional Requirements (Optional)",
+        "placeholder": "Specify any additional requirements, preferences, or context for this field...",
+        "description": "Use this field to clarify specific expectations, describe ideal experience, or note any flexibility in requirements.",
+        "maxLength": 500,
+        "appliesTo": "all",
+        "examples": [
+          "Must have experience specifically in our industry",
+          "Prefer candidates with consulting background",
+          "Essential for senior hires only",
+          "Nice to have but not essential"
+        ]
+      },
+      "matchingFields": [
+        "company_industry",
+        "company_size",
+        "employer_type",
+        "department",
+        "job_type",
+        "ir35_status",
+        "work_location",
+        "travel_required",
+        "salary_range_min",
+        "salary_range_max",
+        "day_rate_budget",
+        "management_responsibility",
+        "industry_experience_required",
+        "visa_sponsorship",
+        "urgency",
+        "role_work_pace",
+        "role_overtime_expectations",
+        "role_team_structure",
+        "role_autonomy_level",
+        "role_collaboration_style",
+        "function_size",
+        "reporting_levels_to_ceo",
+        "c_suite_interaction_frequency",
+        "board_committee_interaction",
+        "subordinates_experience_levels",
+        "line_manager_time_dedication",
+        "executive_sponsorship",
+        "function_budget_trend",
+        "mandate_clarity",
+        "air_cover",
+        "function_maturity",
+        "project_structure",
+        "role_scope",
+        "task_variety",
+        "cross_functional_importance",
+        "role_evolution",
+        "long_term_career_offering",
+        "role_impact",
+        "career_benefits",
+        "skill_strategic_vision",
+        "skill_long_term_planning",
+        "skill_market_analysis",
+        "skill_business_model",
+        "skill_financial_acumen",
+        "skill_identifying_trends",
+        "skill_strategic_evaluation",
+        "skill_team_building",
+        "skill_performance_management",
+        "skill_coaching_mentoring",
+        "skill_talent_development",
+        "skill_delegation",
+        "skill_change_leadership",
+        "skill_conflict_resolution",
+        "skill_remote_cross_cultural",
+        "skill_succession_planning",
+        "skill_executive_communication",
+        "skill_cross_functional_collab",
+        "skill_stakeholder_analysis",
+        "skill_negotiation",
+        "skill_consensus_building",
+        "skill_presenting",
+        "skill_translating_complexity",
+        "skill_data_storytelling",
+        "skill_organisational_awareness",
+        "skill_critical_thinking",
+        "skill_root_cause_analysis",
+        "skill_decision_making_uncertainty",
+        "skill_project_management",
+        "skill_resource_management",
+        "skill_scope_quality",
+        "skill_change_control",
+        "skill_solution_implementation",
+        "skill_adaptability",
+        "skill_managing_ambiguity",
+        "skill_resilience",
+        "skill_growth_mindset",
+        "skill_active_listening",
+        "skill_delivering_feedback",
+        "skill_emotional_intelligence",
+        "skill_energy_stress_management",
+        "background_checks",
+        "benefits_offered",
+        "contract_duration",
+        "experience_years_ideal",
+        "experience_years_min",
+        "ideal_start_date",
+        "interview_availability",
+        "interview_format",
+        "languages_required",
+        "office_location_postcode",
+        "preferred_certifications",
+        "required_certifications",
+        "required_qualifications",
+        "role_deadline_culture",
+        "security_clearance",
+        "selling_points",
+        "stakeholder_exposure"
+      ],
+      "weightingFields": [
+        "weight_experience",
+        "weight_industry",
+        "weight_certifications",
+        "weight_technical_skills",
+        "weight_management",
+        "weight_location",
+        "weight_salary",
+        "weight_availability",
+        "weight_culture_fit"
+      ],
+      "candidateMirrorFields": [
+        {
+          "jobField": "employer_type",
+          "candidateField": "employer_type_preference",
+          "matchType": "overlap"
+        },
+        {
+          "jobField": "department",
+          "candidateField": "role_functions_sought",
+          "matchType": "overlap"
+        },
+        {
+          "jobField": "company_industry",
+          "candidateField": "current_industry",
+          "matchType": "exact"
+        },
+        {
+          "jobField": "company_industry",
+          "candidateField": "desired_industries",
+          "matchType": "overlap"
+        },
+        {
+          "jobField": "company_industry",
+          "candidateField": "excluded_industries",
+          "matchType": "exclusion"
+        },
+        {
+          "jobField": "company_size",
+          "candidateField": "deal_breaker_team_size",
+          "matchType": "preference"
+        },
+        {
+          "jobField": "job_type",
+          "candidateField": "job_type_preference",
+          "matchType": "overlap"
+        },
+        {
+          "jobField": "ir35_status",
+          "candidateField": "contract_preference_ir35",
+          "matchType": "exact"
+        },
+        {
+          "jobField": "work_location",
+          "candidateField": "work_location_preference",
+          "matchType": "compatibility"
+        },
+        {
+          "jobField": "office_location_postcode",
+          "candidateField": "postcode",
+          "matchType": "distance"
+        },
+        {
+          "jobField": "travel_required",
+          "candidateField": "travel_willingness",
+          "matchType": "minimum"
+        },
+        {
+          "jobField": "management_responsibility",
+          "candidateField": "deal_breaker_management",
+          "matchType": "compatibility"
+        },
+        {
+          "jobField": "salary_range_min",
+          "candidateField": "salary_expectation_min",
+          "matchType": "range_overlap"
+        },
+        {
+          "jobField": "salary_range_max",
+          "candidateField": "salary_expectation_ideal",
+          "matchType": "range_overlap"
+        },
+        {
+          "jobField": "day_rate_budget",
+          "candidateField": "contract_day_rate",
+          "matchType": "range"
+        },
+        {
+          "jobField": "benefits_offered",
+          "candidateField": "deal_breaker_benefits",
+          "matchType": "overlap"
+        },
+        {
+          "jobField": "urgency",
+          "candidateField": "notice_period",
+          "matchType": "timeline"
+        },
+        {
+          "jobField": "ideal_start_date",
+          "candidateField": "available_from",
+          "matchType": "date_compatibility"
+        },
+        {
+          "jobField": "interview_availability",
+          "candidateField": "interview_availability",
+          "matchType": "overlap"
+        },
+        {
+          "jobField": "interview_format",
+          "candidateField": "preferred_interview_format",
+          "matchType": "overlap"
+        },
+        {
+          "jobField": "visa_sponsorship",
+          "candidateField": "right_to_work",
+          "matchType": "eligibility"
+        },
+        {
+          "jobField": "security_clearance",
+          "candidateField": "dbs_check",
+          "matchType": "minimum"
+        },
+        {
+          "jobField": "background_checks",
+          "candidateField": "background_check_consent",
+          "matchType": "requirements"
+        },
+        {
+          "jobField": "industry_experience_required",
+          "candidateField": "current_industry",
+          "matchType": "overlap"
+        },
+        {
+          "jobField": "selling_points",
+          "candidateField": "nice_to_haves",
+          "matchType": "appeal"
+        },
+        {
+          "jobField": "role_work_pace",
+          "candidateField": "preferred_work_pace",
+          "matchType": "compatibility"
+        },
+        {
+          "jobField": "role_deadline_culture",
+          "candidateField": "deadline_preference",
+          "matchType": "compatibility"
+        },
+        {
+          "jobField": "role_overtime_expectations",
+          "candidateField": "overtime_willingness",
+          "matchType": "compatibility"
+        },
+        {
+          "jobField": "role_team_structure",
+          "candidateField": "preferred_team_structure",
+          "matchType": "compatibility"
+        },
+        {
+          "jobField": "role_autonomy_level",
+          "candidateField": "preferred_autonomy_level",
+          "matchType": "compatibility"
+        },
+        {
+          "jobField": "role_collaboration_style",
+          "candidateField": "collaboration_preference",
+          "matchType": "compatibility"
+        },
+        {
+          "jobField": "function_size",
+          "candidateField": "preferred_function_size",
+          "matchType": "compatibility"
+        },
+        {
+          "jobField": "reporting_levels_to_ceo",
+          "candidateField": "preferred_reporting_distance",
+          "matchType": "compatibility"
+        },
+        {
+          "jobField": "c_suite_interaction_frequency",
+          "candidateField": "c_suite_visibility_preference",
+          "matchType": "compatibility"
+        },
+        {
+          "jobField": "stakeholder_exposure",
+          "candidateField": "c_suite_visibility_preference",
+          "matchType": "compatibility"
+        },
+        {
+          "jobField": "board_committee_interaction",
+          "candidateField": "board_exposure_preference",
+          "matchType": "compatibility"
+        },
+        {
+          "jobField": "subordinates_experience_levels",
+          "candidateField": "preferred_subordinate_experience",
+          "matchType": "compatibility"
+        },
+        {
+          "jobField": "management_responsibility",
+          "candidateField": "preferred_direct_reports",
+          "matchType": "compatibility"
+        },
+        {
+          "jobField": "line_manager_time_dedication",
+          "candidateField": "preferred_manager_availability",
+          "matchType": "compatibility"
+        },
+        {
+          "jobField": "executive_sponsorship",
+          "candidateField": "preferred_sponsorship_level",
+          "matchType": "compatibility"
+        },
+        {
+          "jobField": "function_budget_trend",
+          "candidateField": "preferred_investment_context",
+          "matchType": "compatibility"
+        },
+        {
+          "jobField": "mandate_clarity",
+          "candidateField": "preferred_mandate_level",
+          "matchType": "compatibility"
+        },
+        {
+          "jobField": "air_cover",
+          "candidateField": "preferred_air_cover",
+          "matchType": "compatibility"
+        },
+        {
+          "jobField": "function_maturity",
+          "candidateField": "preferred_function_maturity",
+          "matchType": "compatibility"
+        },
+        {
+          "jobField": "project_structure",
+          "candidateField": "preferred_project_structure",
+          "matchType": "compatibility"
+        },
+        {
+          "jobField": "role_scope",
+          "candidateField": "preferred_role_scope",
+          "matchType": "compatibility"
+        },
+        {
+          "jobField": "task_variety",
+          "candidateField": "preferred_task_variety",
+          "matchType": "compatibility"
+        },
+        {
+          "jobField": "cross_functional_importance",
+          "candidateField": "cross_functional_preference",
+          "matchType": "compatibility"
+        },
+        {
+          "jobField": "role_evolution",
+          "candidateField": "preferred_role_evolution",
+          "matchType": "compatibility"
+        },
+        {
+          "jobField": "long_term_career_offering",
+          "candidateField": "long_term_career_goals",
+          "matchType": "overlap"
+        },
+        {
+          "jobField": "role_impact",
+          "candidateField": "preferred_impact_type",
+          "matchType": "overlap"
+        },
+        {
+          "jobField": "career_benefits",
+          "candidateField": "career_success_priorities",
+          "matchType": "overlap"
+        },
+        {
+          "jobField": "contract_duration",
+          "candidateField": "preferred_contract_duration",
+          "matchType": "compatibility"
+        },
+        {
+          "jobField": "experience_years_ideal",
+          "candidateField": "years_in_risk_audit_control",
+          "matchType": "range"
+        },
+        {
+          "jobField": "experience_years_min",
+          "candidateField": "total_years_experience",
+          "matchType": "minimum"
+        },
+        {
+          "jobField": "industry_experience_required",
+          "candidateField": "industries_worked",
+          "matchType": "overlap"
+        },
+        {
+          "jobField": "languages_required",
+          "candidateField": "additional_languages",
+          "matchType": "language_match"
+        },
+        {
+          "jobField": "languages_required",
+          "candidateField": "english_proficiency",
+          "matchType": "language_match"
+        },
+        {
+          "jobField": "languages_required",
+          "candidateField": "languages_list",
+          "matchType": "overlap"
+        },
+        {
+          "jobField": "preferred_certifications",
+          "candidateField": "professional_certifications",
+          "matchType": "overlap"
+        },
+        {
+          "jobField": "required_certifications",
+          "candidateField": "professional_certifications",
+          "matchType": "overlap"
+        },
+        {
+          "jobField": "required_qualifications",
+          "candidateField": "highest_qualification",
+          "matchType": "minimum"
+        },
+        {
+          "jobField": "skill_active_listening",
+          "candidateField": "skill_active_listening",
+          "matchType": "minimum"
+        },
+        {
+          "jobField": "skill_adaptability",
+          "candidateField": "skill_adaptability",
+          "matchType": "minimum"
+        },
+        {
+          "jobField": "skill_business_model",
+          "candidateField": "skill_business_model",
+          "matchType": "minimum"
+        },
+        {
+          "jobField": "skill_change_control",
+          "candidateField": "skill_change_control",
+          "matchType": "minimum"
+        },
+        {
+          "jobField": "skill_change_leadership",
+          "candidateField": "skill_change_leadership",
+          "matchType": "minimum"
+        },
+        {
+          "jobField": "skill_coaching_mentoring",
+          "candidateField": "skill_coaching_mentoring",
+          "matchType": "minimum"
+        },
+        {
+          "jobField": "skill_conflict_resolution",
+          "candidateField": "skill_conflict_resolution",
+          "matchType": "minimum"
+        },
+        {
+          "jobField": "skill_consensus_building",
+          "candidateField": "skill_consensus_building",
+          "matchType": "minimum"
+        },
+        {
+          "jobField": "skill_critical_thinking",
+          "candidateField": "skill_critical_thinking",
+          "matchType": "minimum"
+        },
+        {
+          "jobField": "skill_cross_functional_collab",
+          "candidateField": "skill_cross_functional_collab",
+          "matchType": "minimum"
+        },
+        {
+          "jobField": "skill_data_storytelling",
+          "candidateField": "skill_data_storytelling",
+          "matchType": "minimum"
+        },
+        {
+          "jobField": "skill_decision_making_uncertainty",
+          "candidateField": "skill_decision_making_uncertainty",
+          "matchType": "minimum"
+        },
+        {
+          "jobField": "skill_delegation",
+          "candidateField": "skill_delegation",
+          "matchType": "minimum"
+        },
+        {
+          "jobField": "skill_delivering_feedback",
+          "candidateField": "skill_delivering_feedback",
+          "matchType": "minimum"
+        },
+        {
+          "jobField": "skill_emotional_intelligence",
+          "candidateField": "skill_emotional_intelligence",
+          "matchType": "minimum"
+        },
+        {
+          "jobField": "skill_energy_stress_management",
+          "candidateField": "skill_energy_stress_management",
+          "matchType": "minimum"
+        },
+        {
+          "jobField": "skill_executive_communication",
+          "candidateField": "skill_executive_communication",
+          "matchType": "minimum"
+        },
+        {
+          "jobField": "skill_financial_acumen",
+          "candidateField": "skill_financial_acumen",
+          "matchType": "minimum"
+        },
+        {
+          "jobField": "skill_growth_mindset",
+          "candidateField": "skill_growth_mindset",
+          "matchType": "minimum"
+        },
+        {
+          "jobField": "skill_identifying_trends",
+          "candidateField": "skill_identifying_trends",
+          "matchType": "minimum"
+        },
+        {
+          "jobField": "skill_long_term_planning",
+          "candidateField": "skill_long_term_planning",
+          "matchType": "minimum"
+        },
+        {
+          "jobField": "skill_managing_ambiguity",
+          "candidateField": "skill_managing_ambiguity",
+          "matchType": "minimum"
+        },
+        {
+          "jobField": "skill_market_analysis",
+          "candidateField": "skill_market_analysis",
+          "matchType": "minimum"
+        },
+        {
+          "jobField": "skill_negotiation",
+          "candidateField": "skill_negotiation",
+          "matchType": "minimum"
+        },
+        {
+          "jobField": "skill_organisational_awareness",
+          "candidateField": "skill_organisational_awareness",
+          "matchType": "minimum"
+        },
+        {
+          "jobField": "skill_performance_management",
+          "candidateField": "skill_performance_management",
+          "matchType": "minimum"
+        },
+        {
+          "jobField": "skill_presenting",
+          "candidateField": "skill_presenting",
+          "matchType": "minimum"
+        },
+        {
+          "jobField": "skill_project_management",
+          "candidateField": "skill_project_management",
+          "matchType": "minimum"
+        },
+        {
+          "jobField": "skill_remote_cross_cultural",
+          "candidateField": "skill_remote_cross_cultural",
+          "matchType": "minimum"
+        },
+        {
+          "jobField": "skill_resilience",
+          "candidateField": "skill_resilience",
+          "matchType": "minimum"
+        },
+        {
+          "jobField": "skill_resource_management",
+          "candidateField": "skill_resource_management",
+          "matchType": "minimum"
+        },
+        {
+          "jobField": "skill_root_cause_analysis",
+          "candidateField": "skill_root_cause_analysis",
+          "matchType": "minimum"
+        },
+        {
+          "jobField": "skill_scope_quality",
+          "candidateField": "skill_scope_quality",
+          "matchType": "minimum"
+        },
+        {
+          "jobField": "skill_solution_implementation",
+          "candidateField": "skill_solution_implementation",
+          "matchType": "minimum"
+        },
+        {
+          "jobField": "skill_stakeholder_analysis",
+          "candidateField": "skill_stakeholder_analysis",
+          "matchType": "minimum"
+        },
+        {
+          "jobField": "skill_strategic_evaluation",
+          "candidateField": "skill_strategic_evaluation",
+          "matchType": "minimum"
+        },
+        {
+          "jobField": "skill_strategic_vision",
+          "candidateField": "skill_strategic_vision",
+          "matchType": "minimum"
+        },
+        {
+          "jobField": "skill_succession_planning",
+          "candidateField": "skill_succession_planning",
+          "matchType": "minimum"
+        },
+        {
+          "jobField": "skill_talent_development",
+          "candidateField": "skill_talent_development",
+          "matchType": "minimum"
+        },
+        {
+          "jobField": "skill_team_building",
+          "candidateField": "skill_team_building",
+          "matchType": "minimum"
+        },
+        {
+          "jobField": "skill_translating_complexity",
+          "candidateField": "skill_translating_complexity",
+          "matchType": "minimum"
+        }
+      ],
+      "totalSections": 19,
+      "lastUpdated": "2025-12-15"
+    }
+  }
+}

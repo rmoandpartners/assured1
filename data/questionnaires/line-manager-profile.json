@@ -1,0 +1,2944 @@
+{
+  "questionnaire": {
+    "id": "line-manager-profile",
+    "title": "Line Manager Profile",
+    "description": "Profile of the hiring manager/direct line manager for the role",
+    "version": "1.2.1",
+    "createdAt": "2025-12-13",
+    "updatedAt": "2025-12-15",
+    "mirrorProfile": "candidate-profile",
+    "parentProfile": "job-profile",
+    "sections": [
+      {
+        "id": "basic_info",
+        "title": "Basic Information",
+        "description": "About the line manager",
+        "order": 1,
+        "questions": [
+          {
+            "id": "first_name",
+            "question": "First Name",
+            "type": "text",
+            "required": true,
+            "placeholder": "e.g., Sarah"
+          },
+          {
+            "id": "last_name",
+            "question": "Last Name",
+            "type": "text",
+            "required": true,
+            "placeholder": "e.g., Thompson"
+          },
+          {
+            "id": "job_title",
+            "question": "Job Title",
+            "type": "text",
+            "required": true,
+            "placeholder": "e.g., Head of Internal Audit, Chief Risk Officer"
+          },
+          {
+            "id": "department",
+            "question": "Department/Function",
+            "type": "select",
+            "required": true,
+            "options": [
+              {
+                "value": "risk_management",
+                "label": "Risk Management / Enterprise Risk Management"
+              },
+              {
+                "value": "internal_audit",
+                "label": "Internal Audit"
+              },
+              {
+                "value": "internal_controls",
+                "label": "Internal Controls / SOX"
+              },
+              {
+                "value": "bcm_resilience",
+                "label": "Business Continuity Management / Business Resilience"
+              },
+              {
+                "value": "sustainability_esg",
+                "label": "Sustainability / ESG"
+              },
+              {
+                "value": "compliance",
+                "label": "Compliance"
+              },
+              {
+                "value": "regulatory",
+                "label": "Regulatory Affairs"
+              },
+              {
+                "value": "governance",
+                "label": "Governance"
+              },
+              {
+                "value": "finance",
+                "label": "Finance"
+              },
+              {
+                "value": "operations",
+                "label": "Operations"
+              },
+              {
+                "value": "it_risk",
+                "label": "IT Risk/Cyber"
+              },
+              {
+                "value": "other",
+                "label": "Other"
+              }
+            ],
+            "mirrorsCandidate": {
+              "questionId": "role_functions_sought",
+              "matchType": "overlap"
+            }
+          },
+          {
+            "id": "seniority_level",
+            "question": "Seniority Level",
+            "type": "select",
+            "required": true,
+            "options": [
+              {
+                "value": "manager",
+                "label": "Manager"
+              },
+              {
+                "value": "senior_manager",
+                "label": "Senior Manager"
+              },
+              {
+                "value": "associate_director",
+                "label": "Associate Director/AVP"
+              },
+              {
+                "value": "director",
+                "label": "Director/VP"
+              },
+              {
+                "value": "senior_director",
+                "label": "Senior Director/SVP"
+              },
+              {
+                "value": "head_of",
+                "label": "Head of Function"
+              },
+              {
+                "value": "c_suite",
+                "label": "C-Suite/Executive"
+              },
+              {
+                "value": "partner",
+                "label": "Partner"
+              }
+            ]
+          },
+          {
+            "id": "time_in_role",
+            "question": "Time in Current Role",
+            "type": "select",
+            "required": false,
+            "options": [
+              {
+                "value": "under_6_months",
+                "label": "Under 6 months"
+              },
+              {
+                "value": "6_12_months",
+                "label": "6-12 months"
+              },
+              {
+                "value": "1_2_years",
+                "label": "1-2 years"
+              },
+              {
+                "value": "2_3_years",
+                "label": "2-3 years"
+              },
+              {
+                "value": "3_5_years",
+                "label": "3-5 years"
+              },
+              {
+                "value": "5_plus_years",
+                "label": "5+ years"
+              }
+            ],
+            "helpText": "How long has the line manager been in this specific role?"
+          },
+          {
+            "id": "time_at_company",
+            "question": "Time at Company",
+            "type": "select",
+            "required": false,
+            "options": [
+              {
+                "value": "under_1_year",
+                "label": "Under 1 year"
+              },
+              {
+                "value": "1_2_years",
+                "label": "1-2 years"
+              },
+              {
+                "value": "2_5_years",
+                "label": "2-5 years"
+              },
+              {
+                "value": "5_10_years",
+                "label": "5-10 years"
+              },
+              {
+                "value": "10_plus_years",
+                "label": "10+ years"
+              }
+            ]
+          },
+          {
+            "id": "email",
+            "question": "Email Address",
+            "type": "email",
+            "required": false,
+            "placeholder": "manager@company.com",
+            "helpText": "For interview scheduling and coordination"
+          },
+          {
+            "id": "phone",
+            "question": "Phone Number",
+            "type": "tel",
+            "required": false,
+            "placeholder": "+44 20 XXXX XXXX"
+          },
+          {
+            "id": "linkedin_url",
+            "question": "LinkedIn Profile URL",
+            "type": "url",
+            "required": false,
+            "placeholder": "https://www.linkedin.com/in/profile",
+            "helpText": "Candidates often research their potential manager"
+          }
+        ]
+      },
+      {
+        "id": "location",
+        "title": "Location & Working Arrangements",
+        "description": "Where the line manager is based",
+        "order": 2,
+        "questions": [
+          {
+            "id": "office_location_city",
+            "question": "Primary Office Location (City)",
+            "type": "text",
+            "required": true,
+            "placeholder": "e.g., London",
+            "mirrorsCandidate": {
+              "questionId": "current_city",
+              "matchType": "location"
+            }
+          },
+          {
+            "id": "office_location_postcode",
+            "question": "Office Postcode",
+            "type": "text",
+            "required": false,
+            "placeholder": "e.g., EC2A 1NT",
+            "helpText": "For proximity matching with candidates",
+            "mirrorsCandidate": {
+              "questionId": "postcode",
+              "matchType": "distance"
+            }
+          },
+          {
+            "id": "office_location_country",
+            "question": "Country",
+            "type": "text",
+            "required": true,
+            "placeholder": "e.g., United Kingdom",
+            "mirrorsCandidate": {
+              "questionId": "current_country",
+              "matchType": "exact"
+            }
+          },
+          {
+            "id": "work_pattern",
+            "question": "Line Manager's Work Pattern",
+            "type": "select",
+            "required": true,
+            "options": [
+              {
+                "value": "office_full",
+                "label": "Fully office-based (5 days)"
+              },
+              {
+                "value": "hybrid_4",
+                "label": "Hybrid - 4 days office"
+              },
+              {
+                "value": "hybrid_3",
+                "label": "Hybrid - 3 days office"
+              },
+              {
+                "value": "hybrid_2",
+                "label": "Hybrid - 2 days office"
+              },
+              {
+                "value": "remote_first",
+                "label": "Remote-first (occasional office)"
+              },
+              {
+                "value": "fully_remote",
+                "label": "Fully remote"
+              }
+            ],
+            "helpText": "How often is the line manager typically in the office?",
+            "mirrorsCandidate": {
+              "questionId": "work_location_preference",
+              "matchType": "compatibility"
+            }
+          },
+          {
+            "id": "timezone",
+            "question": "Primary Time Zone",
+            "type": "select",
+            "required": false,
+            "options": [
+              {
+                "value": "gmt",
+                "label": "GMT/UTC (UK winter)"
+              },
+              {
+                "value": "bst",
+                "label": "BST/UTC+1 (UK summer)"
+              },
+              {
+                "value": "cet",
+                "label": "CET/UTC+1 (Central Europe)"
+              },
+              {
+                "value": "est",
+                "label": "EST/UTC-5 (US East Coast)"
+              },
+              {
+                "value": "pst",
+                "label": "PST/UTC-8 (US West Coast)"
+              },
+              {
+                "value": "ist",
+                "label": "IST/UTC+5:30 (India)"
+              },
+              {
+                "value": "hkt",
+                "label": "HKT/UTC+8 (Hong Kong/Singapore)"
+              },
+              {
+                "value": "other",
+                "label": "Other"
+              }
+            ],
+            "helpText": "Important for remote/hybrid teams"
+          },
+          {
+            "id": "travel_frequency",
+            "question": "How often does the line manager travel?",
+            "type": "select",
+            "required": false,
+            "options": [
+              {
+                "value": "never",
+                "label": "Never/rarely"
+              },
+              {
+                "value": "occasional",
+                "label": "Occasionally (monthly or less)"
+              },
+              {
+                "value": "regular",
+                "label": "Regularly (weekly)"
+              },
+              {
+                "value": "frequent",
+                "label": "Frequently (multiple times per week)"
+              }
+            ],
+            "helpText": "This affects availability for the direct report"
+          }
+        ]
+      },
+      {
+        "id": "languages",
+        "title": "Languages",
+        "description": "Languages spoken by the line manager",
+        "order": 3,
+        "questions": [
+          {
+            "id": "native_language",
+            "question": "Native/Primary Language",
+            "type": "text",
+            "required": true,
+            "placeholder": "e.g., English",
+            "mirrorsCandidate": {
+              "questionId": "native_language",
+              "matchType": "language_match"
+            }
+          },
+          {
+            "id": "english_proficiency",
+            "question": "English Proficiency Level",
+            "type": "select",
+            "required": true,
+            "options": [
+              {
+                "value": "native",
+                "label": "Native speaker"
+              },
+              {
+                "value": "fluent",
+                "label": "Fluent (full professional proficiency)"
+              },
+              {
+                "value": "advanced",
+                "label": "Advanced (can work independently in English)"
+              },
+              {
+                "value": "intermediate",
+                "label": "Intermediate (can communicate effectively)"
+              },
+              {
+                "value": "basic",
+                "label": "Basic (limited working proficiency)"
+              }
+            ],
+            "mirrorsCandidate": {
+              "questionId": "english_proficiency",
+              "matchType": "language_match"
+            }
+          },
+          {
+            "id": "additional_languages",
+            "question": "Additional Languages Spoken",
+            "type": "multiselect",
+            "required": false,
+            "options": [
+              {
+                "value": "french",
+                "label": "French"
+              },
+              {
+                "value": "german",
+                "label": "German"
+              },
+              {
+                "value": "spanish",
+                "label": "Spanish"
+              },
+              {
+                "value": "italian",
+                "label": "Italian"
+              },
+              {
+                "value": "portuguese",
+                "label": "Portuguese"
+              },
+              {
+                "value": "dutch",
+                "label": "Dutch"
+              },
+              {
+                "value": "polish",
+                "label": "Polish"
+              },
+              {
+                "value": "russian",
+                "label": "Russian"
+              },
+              {
+                "value": "mandarin",
+                "label": "Mandarin Chinese"
+              },
+              {
+                "value": "cantonese",
+                "label": "Cantonese"
+              },
+              {
+                "value": "japanese",
+                "label": "Japanese"
+              },
+              {
+                "value": "korean",
+                "label": "Korean"
+              },
+              {
+                "value": "arabic",
+                "label": "Arabic"
+              },
+              {
+                "value": "hindi",
+                "label": "Hindi"
+              },
+              {
+                "value": "urdu",
+                "label": "Urdu"
+              },
+              {
+                "value": "other",
+                "label": "Other"
+              }
+            ],
+            "mirrorsCandidate": {
+              "questionId": "languages_list",
+              "matchType": "overlap"
+            }
+          },
+          {
+            "id": "team_working_language",
+            "question": "Primary Working Language of the Team",
+            "type": "select",
+            "required": true,
+            "options": [
+              {
+                "value": "english",
+                "label": "English"
+              },
+              {
+                "value": "french",
+                "label": "French"
+              },
+              {
+                "value": "german",
+                "label": "German"
+              },
+              {
+                "value": "spanish",
+                "label": "Spanish"
+              },
+              {
+                "value": "other",
+                "label": "Other"
+              }
+            ],
+            "helpText": "What language does the team primarily communicate in?",
+            "mirrorsCandidate": {
+              "questionId": "english_proficiency",
+              "matchType": "language_match"
+            }
+          },
+          {
+            "id": "language_requirements_for_role",
+            "question": "Language Requirements for Direct Reports",
+            "type": "select",
+            "required": true,
+            "options": [
+              {
+                "value": "english_native",
+                "label": "Native-level English required"
+              },
+              {
+                "value": "english_fluent",
+                "label": "Fluent English required"
+              },
+              {
+                "value": "english_advanced",
+                "label": "Advanced English sufficient"
+              },
+              {
+                "value": "english_intermediate",
+                "label": "Intermediate English acceptable"
+              },
+              {
+                "value": "other_language",
+                "label": "Other language more important than English"
+              }
+            ],
+            "mirrorsCandidate": {
+              "questionId": "english_proficiency",
+              "matchType": "minimum"
+            }
+          }
+        ]
+      },
+      {
+        "id": "professional_background",
+        "title": "Professional Background",
+        "description": "The line manager's career background and experience",
+        "order": 4,
+        "questions": [
+          {
+            "id": "total_years_experience",
+            "question": "Total Years of Professional Experience",
+            "type": "select",
+            "required": true,
+            "options": [
+              {
+                "value": "5_7",
+                "label": "5-7 years"
+              },
+              {
+                "value": "7_10",
+                "label": "7-10 years"
+              },
+              {
+                "value": "10_15",
+                "label": "10-15 years"
+              },
+              {
+                "value": "15_20",
+                "label": "15-20 years"
+              },
+              {
+                "value": "20_plus",
+                "label": "20+ years"
+              }
+            ]
+          },
+          {
+            "id": "years_in_risk_audit_control",
+            "question": "Years in Risk, Audit or Control Functions",
+            "type": "select",
+            "required": true,
+            "options": [
+              {
+                "value": "3_5",
+                "label": "3-5 years"
+              },
+              {
+                "value": "5_7",
+                "label": "5-7 years"
+              },
+              {
+                "value": "7_10",
+                "label": "7-10 years"
+              },
+              {
+                "value": "10_15",
+                "label": "10-15 years"
+              },
+              {
+                "value": "15_plus",
+                "label": "15+ years"
+              }
+            ]
+          },
+          {
+            "id": "career_background",
+            "question": "Career Background",
+            "type": "multiselect",
+            "required": true,
+            "options": [
+              {
+                "value": "big4",
+                "label": "Big 4 (Deloitte, PwC, EY, KPMG)"
+              },
+              {
+                "value": "top10_accounting",
+                "label": "Top 10-20 accounting firms"
+              },
+              {
+                "value": "investment_bank",
+                "label": "Investment bank"
+              },
+              {
+                "value": "retail_bank",
+                "label": "Retail/commercial bank"
+              },
+              {
+                "value": "insurance",
+                "label": "Insurance company"
+              },
+              {
+                "value": "asset_management",
+                "label": "Asset management/hedge fund"
+              },
+              {
+                "value": "fintech",
+                "label": "FinTech"
+              },
+              {
+                "value": "consulting",
+                "label": "Management consultancy"
+              },
+              {
+                "value": "regulator",
+                "label": "Regulator (FCA, PRA, etc.)"
+              },
+              {
+                "value": "corporate",
+                "label": "Corporate (non-financial)"
+              },
+              {
+                "value": "public_sector",
+                "label": "Public sector/Government"
+              },
+              {
+                "value": "other",
+                "label": "Other"
+              }
+            ],
+            "helpText": "Select all that apply - where has the manager worked previously?"
+          },
+          {
+            "id": "current_industry",
+            "question": "Current Industry",
+            "type": "select",
+            "required": true,
+            "options": [
+              {
+                "value": "banking",
+                "label": "Banking"
+              },
+              {
+                "value": "insurance",
+                "label": "Insurance"
+              },
+              {
+                "value": "asset_management",
+                "label": "Asset Management"
+              },
+              {
+                "value": "private_equity",
+                "label": "Private Equity/Venture Capital"
+              },
+              {
+                "value": "fintech",
+                "label": "FinTech"
+              },
+              {
+                "value": "big4",
+                "label": "Big 4 Accounting Firm"
+              },
+              {
+                "value": "consulting",
+                "label": "Consulting"
+              },
+              {
+                "value": "corporate",
+                "label": "Corporate (Non-Financial)"
+              },
+              {
+                "value": "public_sector",
+                "label": "Public Sector/Government"
+              },
+              {
+                "value": "ngo",
+                "label": "NGO/Non-Profit"
+              },
+              {
+                "value": "other",
+                "label": "Other"
+              }
+            ],
+            "mirrorsCandidate": [
+              {
+                "questionId": "current_industry",
+                "matchType": "exact"
+              },
+              {
+                "questionId": "desired_industries",
+                "matchType": "overlap"
+              }
+            ]
+          },
+          {
+            "id": "industries_worked",
+            "question": "Industries the Line Manager Has Worked In",
+            "type": "multiselect",
+            "required": false,
+            "options": [
+              {
+                "value": "banking",
+                "label": "Banking"
+              },
+              {
+                "value": "insurance",
+                "label": "Insurance"
+              },
+              {
+                "value": "asset_management",
+                "label": "Asset Management"
+              },
+              {
+                "value": "private_equity",
+                "label": "Private Equity/Venture Capital"
+              },
+              {
+                "value": "fintech",
+                "label": "FinTech"
+              },
+              {
+                "value": "big4",
+                "label": "Big 4 Accounting Firm"
+              },
+              {
+                "value": "consulting",
+                "label": "Consulting"
+              },
+              {
+                "value": "corporate",
+                "label": "Corporate (Non-Financial)"
+              },
+              {
+                "value": "public_sector",
+                "label": "Public Sector/Government"
+              },
+              {
+                "value": "ngo",
+                "label": "NGO/Non-Profit"
+              },
+              {
+                "value": "other",
+                "label": "Other"
+              }
+            ],
+            "helpText": "Understanding the manager's background helps match candidates",
+            "mirrorsCandidate": {
+              "questionId": "industries_worked",
+              "matchType": "overlap"
+            }
+          }
+        ]
+      },
+      {
+        "id": "qualifications",
+        "title": "Qualifications & Certifications",
+        "description": "Educational and professional qualifications",
+        "order": 5,
+        "questions": [
+          {
+            "id": "highest_qualification",
+            "question": "Highest Educational Qualification",
+            "type": "select",
+            "required": false,
+            "options": [
+              {
+                "value": "secondary",
+                "label": "Secondary School"
+              },
+              {
+                "value": "diploma",
+                "label": "Diploma/Foundation Degree"
+              },
+              {
+                "value": "bachelors",
+                "label": "Bachelor's Degree"
+              },
+              {
+                "value": "masters",
+                "label": "Master's Degree"
+              },
+              {
+                "value": "mba",
+                "label": "MBA"
+              },
+              {
+                "value": "phd",
+                "label": "PhD/Doctorate"
+              },
+              {
+                "value": "other",
+                "label": "Other"
+              }
+            ]
+          },
+          {
+            "id": "professional_certifications",
+            "question": "Professional Certifications Held",
+            "type": "multiselect",
+            "required": false,
+            "options": [
+              {
+                "value": "aca",
+                "label": "ACA (ICAEW Chartered Accountant)"
+              },
+              {
+                "value": "acca",
+                "label": "ACCA"
+              },
+              {
+                "value": "cima",
+                "label": "CIMA"
+              },
+              {
+                "value": "cia",
+                "label": "CIA (Certified Internal Auditor)"
+              },
+              {
+                "value": "cisa",
+                "label": "CISA"
+              },
+              {
+                "value": "cissp",
+                "label": "CISSP"
+              },
+              {
+                "value": "cism",
+                "label": "CISM"
+              },
+              {
+                "value": "frm",
+                "label": "FRM (Financial Risk Manager)"
+              },
+              {
+                "value": "prm",
+                "label": "PRM (Professional Risk Manager)"
+              },
+              {
+                "value": "cfa",
+                "label": "CFA (Chartered Financial Analyst)"
+              },
+              {
+                "value": "iia",
+                "label": "IIA Qualifications (QIAL, CRMA)"
+              },
+              {
+                "value": "prince2",
+                "label": "PRINCE2"
+              },
+              {
+                "value": "other",
+                "label": "Other"
+              }
+            ],
+            "helpText": "Professional qualifications the line manager holds",
+            "mirrorsCandidate": {
+              "questionId": "professional_certifications",
+              "matchType": "overlap"
+            }
+          }
+        ]
+      },
+      {
+        "id": "management_experience",
+        "title": "Management Experience",
+        "description": "People management background",
+        "order": 6,
+        "questions": [
+          {
+            "id": "years_managing_people",
+            "question": "Years of People Management Experience",
+            "type": "select",
+            "required": true,
+            "options": [
+              {
+                "value": "under_1",
+                "label": "Under 1 year"
+              },
+              {
+                "value": "1_3",
+                "label": "1-3 years"
+              },
+              {
+                "value": "3_5",
+                "label": "3-5 years"
+              },
+              {
+                "value": "5_10",
+                "label": "5-10 years"
+              },
+              {
+                "value": "10_plus",
+                "label": "10+ years"
+              }
+            ]
+          },
+          {
+            "id": "current_team_size",
+            "question": "Current Team Size (Direct Reports)",
+            "type": "select",
+            "required": true,
+            "options": [
+              {
+                "value": "1_3",
+                "label": "1-3 direct reports"
+              },
+              {
+                "value": "4_7",
+                "label": "4-7 direct reports"
+              },
+              {
+                "value": "8_12",
+                "label": "8-12 direct reports"
+              },
+              {
+                "value": "13_plus",
+                "label": "13+ direct reports"
+              }
+            ],
+            "mirrorsCandidate": {
+              "questionId": "preferred_function_size",
+              "matchType": "compatibility"
+            }
+          },
+          {
+            "id": "total_team_size",
+            "question": "Total Team Size (Including Indirect Reports)",
+            "type": "number",
+            "required": false,
+            "placeholder": "e.g., 25"
+          },
+          {
+            "id": "team_experience_levels",
+            "question": "Current Team Experience Levels",
+            "type": "multiselect",
+            "required": false,
+            "options": [
+              {
+                "value": "graduate",
+                "label": "Graduate/Entry level"
+              },
+              {
+                "value": "analyst",
+                "label": "Analyst (1-3 years)"
+              },
+              {
+                "value": "senior_analyst",
+                "label": "Senior Analyst (3-5 years)"
+              },
+              {
+                "value": "manager",
+                "label": "Manager (5-8 years)"
+              },
+              {
+                "value": "senior_manager",
+                "label": "Senior Manager (8+ years)"
+              }
+            ],
+            "helpText": "What experience levels are currently in the team?"
+          },
+          {
+            "id": "hiring_track_record",
+            "question": "How many people has this manager hired in the past 2 years?",
+            "type": "select",
+            "required": false,
+            "options": [
+              {
+                "value": "none",
+                "label": "None"
+              },
+              {
+                "value": "1_2",
+                "label": "1-2 people"
+              },
+              {
+                "value": "3_5",
+                "label": "3-5 people"
+              },
+              {
+                "value": "6_10",
+                "label": "6-10 people"
+              },
+              {
+                "value": "10_plus",
+                "label": "10+ people"
+              }
+            ],
+            "helpText": "Indicates experience with recruitment and onboarding"
+          }
+        ]
+      },
+      {
+        "id": "availability",
+        "title": "Interview Availability",
+        "description": "When the line manager can interview candidates",
+        "order": 7,
+        "questions": [
+          {
+            "id": "interview_availability",
+            "question": "General Interview Availability",
+            "type": "multiselect",
+            "required": true,
+            "options": [
+              {
+                "value": "business_hours",
+                "label": "Standard business hours (9am-5pm)"
+              },
+              {
+                "value": "early_morning",
+                "label": "Early morning (before 9am)"
+              },
+              {
+                "value": "lunch",
+                "label": "Lunch hours (12pm-2pm)"
+              },
+              {
+                "value": "evening",
+                "label": "Evening (after 5pm)"
+              },
+              {
+                "value": "flexible",
+                "label": "Flexible to candidate needs"
+              }
+            ],
+            "mirrorsCandidate": {
+              "questionId": "interview_availability",
+              "matchType": "overlap"
+            }
+          },
+          {
+            "id": "interview_lead_time",
+            "question": "Typical Lead Time Required for Interviews",
+            "type": "select",
+            "required": false,
+            "options": [
+              {
+                "value": "same_day",
+                "label": "Can do same-day"
+              },
+              {
+                "value": "1_2_days",
+                "label": "1-2 days notice"
+              },
+              {
+                "value": "3_5_days",
+                "label": "3-5 days notice"
+              },
+              {
+                "value": "1_week",
+                "label": "1 week notice"
+              },
+              {
+                "value": "2_weeks",
+                "label": "2+ weeks notice"
+              }
+            ]
+          },
+          {
+            "id": "preferred_interview_format",
+            "question": "Preferred Interview Format",
+            "type": "multiselect",
+            "required": false,
+            "options": [
+              {
+                "value": "video",
+                "label": "Video call (Teams, Zoom)"
+              },
+              {
+                "value": "phone",
+                "label": "Phone call"
+              },
+              {
+                "value": "in_person",
+                "label": "In-person"
+              }
+            ],
+            "mirrorsCandidate": {
+              "questionId": "preferred_interview_format",
+              "matchType": "overlap"
+            }
+          },
+          {
+            "id": "upcoming_availability_constraints",
+            "question": "Any Upcoming Availability Constraints?",
+            "type": "textarea",
+            "required": false,
+            "placeholder": "e.g., Travelling 15-22 Dec, on leave first week of January",
+            "helpText": "Key dates when the manager is unavailable"
+          }
+        ]
+      },
+      {
+        "id": "additional_info",
+        "title": "Additional Information",
+        "description": "Other relevant details",
+        "order": 8,
+        "questions": [
+          {
+            "id": "bio_summary",
+            "question": "Brief Bio/Background Summary",
+            "type": "textarea",
+            "required": false,
+            "placeholder": "2-3 sentences about the line manager's background that can be shared with candidates",
+            "helpText": "This may be shared with candidates to help them prepare",
+            "validation": {
+              "maxLength": 500
+            }
+          },
+          {
+            "id": "reason_for_hiring",
+            "question": "Why is this role being hired?",
+            "type": "textarea",
+            "required": false,
+            "placeholder": "e.g., Team growth to support new regulatory requirements, replacement for internal promotion",
+            "validation": {
+              "maxLength": 500
+            }
+          },
+          {
+            "id": "what_makes_successful",
+            "question": "What makes someone successful working for this manager?",
+            "type": "textarea",
+            "required": false,
+            "placeholder": "e.g., Self-starters who take initiative, strong communicators, detail-oriented",
+            "helpText": "Helps match candidates to the manager's style"
+          },
+          {
+            "id": "additional_notes",
+            "question": "Any Other Notes",
+            "type": "textarea",
+            "required": false,
+            "placeholder": "Anything else relevant about the line manager that would help with candidate matching"
+          }
+        ]
+      },
+      {
+        "id": "leadership_style",
+        "title": "Leadership & Management Style",
+        "description": "How the line manager leads and manages their team",
+        "order": 9,
+        "questions": [
+          {
+            "id": "primary_leadership_style",
+            "question": "Primary Leadership Style",
+            "type": "select",
+            "required": true,
+            "options": [
+              {
+                "value": "mentor_coach",
+                "label": "Mentor/Coach - focuses on developing team members through guidance and support"
+              },
+              {
+                "value": "delegator",
+                "label": "Delegator - trusts team with autonomy and empowers independent decision-making"
+              },
+              {
+                "value": "directive",
+                "label": "Directive - provides clear instructions and closely guides execution"
+              },
+              {
+                "value": "collaborative",
+                "label": "Collaborative - works alongside the team as a partner"
+              },
+              {
+                "value": "visionary",
+                "label": "Visionary - sets direction and inspires through big-picture thinking"
+              },
+              {
+                "value": "servant_leader",
+                "label": "Servant Leader - prioritises team needs and removes obstacles"
+              },
+              {
+                "value": "situational",
+                "label": "Situational - adapts style based on person and context"
+              }
+            ],
+            "helpText": "How would you characterise this manager's predominant leadership approach?",
+            "mirrorsCandidate": {
+              "questionId": "preferred_leadership_style",
+              "matchType": "compatibility"
+            }
+          },
+          {
+            "id": "secondary_leadership_style",
+            "question": "Secondary Leadership Style",
+            "type": "select",
+            "required": false,
+            "options": [
+              {
+                "value": "mentor_coach",
+                "label": "Mentor/Coach"
+              },
+              {
+                "value": "delegator",
+                "label": "Delegator"
+              },
+              {
+                "value": "directive",
+                "label": "Directive"
+              },
+              {
+                "value": "collaborative",
+                "label": "Collaborative"
+              },
+              {
+                "value": "visionary",
+                "label": "Visionary"
+              },
+              {
+                "value": "servant_leader",
+                "label": "Servant Leader"
+              },
+              {
+                "value": "none",
+                "label": "No secondary style - consistent approach"
+              }
+            ],
+            "helpText": "Does this manager have a secondary style they use in certain situations?"
+          },
+          {
+            "id": "management_involvement",
+            "question": "Level of Day-to-Day Involvement",
+            "type": "select",
+            "required": true,
+            "options": [
+              {
+                "value": "hands_on",
+                "label": "Hands-on - closely involved in day-to-day work and decisions"
+              },
+              {
+                "value": "available",
+                "label": "Available - accessible when needed but not constantly present"
+              },
+              {
+                "value": "periodic",
+                "label": "Periodic - scheduled check-ins with autonomy between"
+              },
+              {
+                "value": "strategic",
+                "label": "Strategic - focuses on direction, delegates execution entirely"
+              },
+              {
+                "value": "hands_off",
+                "label": "Hands-off - trusts team to manage themselves"
+              }
+            ],
+            "mirrorsCandidate": {
+              "questionId": "preferred_management_involvement",
+              "matchType": "compatibility"
+            }
+          },
+          {
+            "id": "decision_making_approach",
+            "question": "Decision-Making Approach",
+            "type": "select",
+            "required": true,
+            "options": [
+              {
+                "value": "consultative",
+                "label": "Consultative - seeks input from team before deciding"
+              },
+              {
+                "value": "consensus",
+                "label": "Consensus-driven - decisions made collectively"
+              },
+              {
+                "value": "decisive",
+                "label": "Decisive - makes quick decisions independently"
+              },
+              {
+                "value": "data_driven",
+                "label": "Data-driven - decisions based on analysis and evidence"
+              },
+              {
+                "value": "delegated",
+                "label": "Delegated - empowers team to make most decisions"
+              },
+              {
+                "value": "hierarchical",
+                "label": "Hierarchical - follows chain of command"
+              }
+            ],
+            "mirrorsCandidate": {
+              "questionId": "preferred_decision_making_style",
+              "matchType": "compatibility"
+            }
+          },
+          {
+            "id": "autonomy_granted",
+            "question": "Level of Autonomy Typically Granted",
+            "type": "select",
+            "required": true,
+            "options": [
+              {
+                "value": "full",
+                "label": "Full autonomy - team sets own priorities and methods"
+              },
+              {
+                "value": "high",
+                "label": "High autonomy - guidance on goals, flexibility on approach"
+              },
+              {
+                "value": "moderate",
+                "label": "Moderate autonomy - clear parameters with room for judgment"
+              },
+              {
+                "value": "structured",
+                "label": "Structured - defined processes and regular check-ins"
+              },
+              {
+                "value": "directed",
+                "label": "Directed - close oversight and detailed guidance"
+              }
+            ],
+            "mirrorsCandidate": {
+              "questionId": "preferred_autonomy_level",
+              "matchType": "compatibility"
+            }
+          },
+          {
+            "id": "team_structure_preference",
+            "question": "Preferred Team Structure",
+            "type": "select",
+            "required": false,
+            "options": [
+              {
+                "value": "hierarchical",
+                "label": "Hierarchical - clear levels and reporting lines"
+              },
+              {
+                "value": "flat",
+                "label": "Flat - minimal hierarchy, open communication"
+              },
+              {
+                "value": "matrix",
+                "label": "Matrix - flexible reporting depending on project"
+              },
+              {
+                "value": "pod_based",
+                "label": "Pod/Squad based - small autonomous groups"
+              },
+              {
+                "value": "specialist",
+                "label": "Specialist - organised by expertise area"
+              }
+            ],
+            "mirrorsCandidate": {
+              "questionId": "preferred_team_structure",
+              "matchType": "compatibility"
+            }
+          },
+          {
+            "id": "expectations_of_team",
+            "question": "Primary Expectation of Team Members",
+            "type": "select",
+            "required": true,
+            "options": [
+              {
+                "value": "initiative",
+                "label": "Initiative - expects proactive problem-solving and self-starting"
+              },
+              {
+                "value": "reliability",
+                "label": "Reliability - values consistent delivery and dependability"
+              },
+              {
+                "value": "excellence",
+                "label": "Excellence - prioritises quality and high standards"
+              },
+              {
+                "value": "collaboration",
+                "label": "Collaboration - emphasises teamwork and support"
+              },
+              {
+                "value": "growth",
+                "label": "Growth - focuses on learning and development"
+              },
+              {
+                "value": "results",
+                "label": "Results - outcome-focused above all else"
+              }
+            ],
+            "mirrorsCandidate": {
+              "questionId": "primary_work_strength",
+              "matchType": "compatibility"
+            }
+          },
+          {
+            "id": "conflict_resolution_style",
+            "question": "Approach to Conflict Resolution",
+            "type": "select",
+            "required": false,
+            "options": [
+              {
+                "value": "direct",
+                "label": "Direct - addresses issues head-on immediately"
+              },
+              {
+                "value": "mediated",
+                "label": "Mediated - facilitates discussion between parties"
+              },
+              {
+                "value": "collaborative",
+                "label": "Collaborative - works to find win-win solutions"
+              },
+              {
+                "value": "avoidant",
+                "label": "Avoidant - prefers to let issues resolve naturally"
+              },
+              {
+                "value": "escalating",
+                "label": "Escalating - involves senior leadership when needed"
+              }
+            ],
+            "mirrorsCandidate": {
+              "questionId": "conflict_handling_preference",
+              "matchType": "compatibility"
+            }
+          }
+        ]
+      },
+      {
+        "id": "communication_collaboration",
+        "title": "Communication & Collaboration",
+        "description": "How the line manager prefers to communicate and work with their team",
+        "order": 10,
+        "questions": [
+          {
+            "id": "communication_style",
+            "question": "Primary Communication Style",
+            "type": "select",
+            "required": true,
+            "options": [
+              {
+                "value": "formal",
+                "label": "Formal - structured, professional communication"
+              },
+              {
+                "value": "informal",
+                "label": "Informal - relaxed, conversational approach"
+              },
+              {
+                "value": "direct",
+                "label": "Direct - concise, to-the-point communication"
+              },
+              {
+                "value": "detailed",
+                "label": "Detailed - thorough, comprehensive explanations"
+              },
+              {
+                "value": "adaptive",
+                "label": "Adaptive - adjusts style to audience and situation"
+              }
+            ],
+            "mirrorsCandidate": {
+              "questionId": "preferred_communication_style",
+              "matchType": "compatibility"
+            }
+          },
+          {
+            "id": "preferred_communication_channel",
+            "question": "Preferred Communication Channels",
+            "type": "multiselect",
+            "required": true,
+            "options": [
+              {
+                "value": "face_to_face",
+                "label": "Face-to-face meetings"
+              },
+              {
+                "value": "video_call",
+                "label": "Video calls"
+              },
+              {
+                "value": "phone",
+                "label": "Phone calls"
+              },
+              {
+                "value": "email",
+                "label": "Email"
+              },
+              {
+                "value": "instant_message",
+                "label": "Instant messaging (Teams, Slack)"
+              },
+              {
+                "value": "scheduled_meetings",
+                "label": "Scheduled meetings only"
+              }
+            ],
+            "mirrorsCandidate": {
+              "questionId": "preferred_communication_channel",
+              "matchType": "overlap"
+            }
+          },
+          {
+            "id": "one_to_one_frequency",
+            "question": "Typical 1:1 Meeting Frequency",
+            "type": "select",
+            "required": true,
+            "options": [
+              {
+                "value": "daily",
+                "label": "Daily check-ins"
+              },
+              {
+                "value": "several_weekly",
+                "label": "Several times per week"
+              },
+              {
+                "value": "weekly",
+                "label": "Weekly"
+              },
+              {
+                "value": "fortnightly",
+                "label": "Fortnightly"
+              },
+              {
+                "value": "monthly",
+                "label": "Monthly"
+              },
+              {
+                "value": "as_needed",
+                "label": "As needed/ad-hoc"
+              }
+            ],
+            "mirrorsCandidate": {
+              "questionId": "preferred_one_to_one_frequency",
+              "matchType": "compatibility"
+            }
+          },
+          {
+            "id": "one_to_one_style",
+            "question": "1:1 Meeting Style",
+            "type": "select",
+            "required": false,
+            "options": [
+              {
+                "value": "structured",
+                "label": "Structured - set agenda and action tracking"
+              },
+              {
+                "value": "flexible",
+                "label": "Flexible - mix of topics as needed"
+              },
+              {
+                "value": "coaching",
+                "label": "Coaching-focused - development conversations"
+              },
+              {
+                "value": "operational",
+                "label": "Operational - task and project focused"
+              },
+              {
+                "value": "relationship",
+                "label": "Relationship-building - broader career and wellbeing focus"
+              }
+            ],
+            "mirrorsCandidate": {
+              "questionId": "preferred_one_to_one_style",
+              "matchType": "compatibility"
+            }
+          },
+          {
+            "id": "team_meeting_approach",
+            "question": "Approach to Team Meetings",
+            "type": "select",
+            "required": false,
+            "options": [
+              {
+                "value": "regular_formal",
+                "label": "Regular formal meetings with set agendas"
+              },
+              {
+                "value": "regular_informal",
+                "label": "Regular informal catch-ups"
+              },
+              {
+                "value": "minimal",
+                "label": "Minimal meetings - prefers async communication"
+              },
+              {
+                "value": "stand_ups",
+                "label": "Daily stand-ups/huddles"
+              },
+              {
+                "value": "project_based",
+                "label": "Project-based meetings as needed"
+              }
+            ],
+            "mirrorsCandidate": {
+              "questionId": "preferred_meeting_approach",
+              "matchType": "compatibility"
+            }
+          },
+          {
+            "id": "availability_responsiveness",
+            "question": "Typical Responsiveness/Availability",
+            "type": "select",
+            "required": true,
+            "options": [
+              {
+                "value": "always_available",
+                "label": "Always available - open door policy, responds quickly"
+              },
+              {
+                "value": "highly_responsive",
+                "label": "Highly responsive - usually responds same day"
+              },
+              {
+                "value": "scheduled_availability",
+                "label": "Scheduled availability - office hours or set times"
+              },
+              {
+                "value": "batched",
+                "label": "Batched - responds in dedicated time blocks"
+              },
+              {
+                "value": "limited",
+                "label": "Limited - often unavailable due to other commitments"
+              }
+            ],
+            "mirrorsCandidate": {
+              "questionId": "preferred_manager_responsiveness",
+              "matchType": "compatibility"
+            }
+          },
+          {
+            "id": "problem_solving_approach",
+            "question": "Approach When Team Members Bring Problems",
+            "type": "select",
+            "required": true,
+            "options": [
+              {
+                "value": "guide_solution",
+                "label": "Guide to solution - asks questions to help them find answers"
+              },
+              {
+                "value": "provide_solution",
+                "label": "Provide solution - gives direct answers and instructions"
+              },
+              {
+                "value": "collaborative_solve",
+                "label": "Collaborative solving - works through problems together"
+              },
+              {
+                "value": "delegate_back",
+                "label": "Delegate back - expects them to come with proposed solutions"
+              },
+              {
+                "value": "resource_connect",
+                "label": "Resource connector - points to people/resources who can help"
+              }
+            ],
+            "mirrorsCandidate": {
+              "questionId": "preferred_problem_solving_support",
+              "matchType": "compatibility"
+            }
+          },
+          {
+            "id": "information_sharing",
+            "question": "Approach to Information Sharing",
+            "type": "select",
+            "required": false,
+            "options": [
+              {
+                "value": "transparent",
+                "label": "Highly transparent - shares broadly including context and rationale"
+              },
+              {
+                "value": "open",
+                "label": "Open - shares relevant information proactively"
+              },
+              {
+                "value": "need_to_know",
+                "label": "Need-to-know - shares information relevant to specific tasks"
+              },
+              {
+                "value": "reserved",
+                "label": "Reserved - selective about what is shared"
+              }
+            ],
+            "mirrorsCandidate": {
+              "questionId": "information_sharing_preference",
+              "matchType": "compatibility"
+            }
+          }
+        ]
+      },
+      {
+        "id": "growth_development",
+        "title": "Growth & Development",
+        "description": "How the line manager supports team development and provides feedback",
+        "order": 11,
+        "questions": [
+          {
+            "id": "feedback_style",
+            "question": "Feedback Delivery Style",
+            "type": "select",
+            "required": true,
+            "options": [
+              {
+                "value": "direct_immediate",
+                "label": "Direct and immediate - addresses issues as they arise"
+              },
+              {
+                "value": "scheduled_formal",
+                "label": "Scheduled and formal - saves feedback for 1:1s or reviews"
+              },
+              {
+                "value": "balanced_sandwich",
+                "label": "Balanced approach - positive framing with constructive points"
+              },
+              {
+                "value": "coaching_questions",
+                "label": "Coaching style - uses questions to prompt self-reflection"
+              },
+              {
+                "value": "written_detailed",
+                "label": "Written and detailed - provides thorough documented feedback"
+              }
+            ],
+            "mirrorsCandidate": {
+              "questionId": "preferred_feedback_style",
+              "matchType": "compatibility"
+            }
+          },
+          {
+            "id": "feedback_frequency",
+            "question": "Typical Feedback Frequency",
+            "type": "select",
+            "required": true,
+            "options": [
+              {
+                "value": "continuous",
+                "label": "Continuous - ongoing real-time feedback"
+              },
+              {
+                "value": "regular",
+                "label": "Regular - weekly or fortnightly"
+              },
+              {
+                "value": "periodic",
+                "label": "Periodic - monthly check-ins"
+              },
+              {
+                "value": "formal_only",
+                "label": "Formal only - quarterly/annual reviews"
+              },
+              {
+                "value": "when_needed",
+                "label": "When needed - only when something requires addressing"
+              }
+            ],
+            "mirrorsCandidate": {
+              "questionId": "preferred_feedback_frequency",
+              "matchType": "compatibility"
+            }
+          },
+          {
+            "id": "recognition_approach",
+            "question": "Approach to Recognition and Praise",
+            "type": "select",
+            "required": true,
+            "options": [
+              {
+                "value": "public_frequent",
+                "label": "Public and frequent - celebrates wins openly and often"
+              },
+              {
+                "value": "private_meaningful",
+                "label": "Private and meaningful - personal acknowledgment"
+              },
+              {
+                "value": "formal_rewards",
+                "label": "Formal rewards - uses official recognition programmes"
+              },
+              {
+                "value": "understated",
+                "label": "Understated - assumes good work is expected, highlights exceptional only"
+              },
+              {
+                "value": "team_focused",
+                "label": "Team-focused - emphasises collective achievements"
+              }
+            ],
+            "mirrorsCandidate": {
+              "questionId": "preferred_recognition_style",
+              "matchType": "compatibility"
+            }
+          },
+          {
+            "id": "development_focus",
+            "question": "Primary Focus for Team Development",
+            "type": "select",
+            "required": true,
+            "options": [
+              {
+                "value": "stretch_assignments",
+                "label": "Stretch assignments - growth through challenging work"
+              },
+              {
+                "value": "formal_training",
+                "label": "Formal training - courses, certifications, programmes"
+              },
+              {
+                "value": "mentoring",
+                "label": "Mentoring - ongoing guidance and career coaching"
+              },
+              {
+                "value": "exposure",
+                "label": "Exposure - visibility to senior stakeholders and new areas"
+              },
+              {
+                "value": "autonomy",
+                "label": "Autonomy - learning through independence and ownership"
+              },
+              {
+                "value": "varied",
+                "label": "Varied - mix of approaches based on individual needs"
+              }
+            ],
+            "mirrorsCandidate": {
+              "questionId": "preferred_development_approach",
+              "matchType": "compatibility"
+            }
+          },
+          {
+            "id": "career_conversation_frequency",
+            "question": "Frequency of Career Development Conversations",
+            "type": "select",
+            "required": false,
+            "options": [
+              {
+                "value": "regular",
+                "label": "Regular - built into ongoing 1:1s"
+              },
+              {
+                "value": "quarterly",
+                "label": "Quarterly - dedicated career discussions"
+              },
+              {
+                "value": "annual",
+                "label": "Annual - part of formal review process"
+              },
+              {
+                "value": "as_requested",
+                "label": "As requested - when team member initiates"
+              },
+              {
+                "value": "informal",
+                "label": "Informal - ad-hoc conversations as opportunities arise"
+              }
+            ],
+            "mirrorsCandidate": {
+              "questionId": "preferred_career_discussion_frequency",
+              "matchType": "compatibility"
+            }
+          },
+          {
+            "id": "mistake_handling",
+            "question": "Approach to Mistakes and Failures",
+            "type": "select",
+            "required": true,
+            "options": [
+              {
+                "value": "learning_focused",
+                "label": "Learning-focused - treats mistakes as growth opportunities"
+              },
+              {
+                "value": "root_cause",
+                "label": "Root cause analysis - focuses on preventing recurrence"
+              },
+              {
+                "value": "supportive",
+                "label": "Supportive - helps recover while maintaining confidence"
+              },
+              {
+                "value": "accountability",
+                "label": "Accountability-focused - expects ownership and remediation"
+              },
+              {
+                "value": "protective",
+                "label": "Protective - shields team while addressing privately"
+              }
+            ],
+            "mirrorsCandidate": {
+              "questionId": "preferred_mistake_handling",
+              "matchType": "compatibility"
+            }
+          },
+          {
+            "id": "coaching_investment",
+            "question": "Investment in Coaching/Developing Team",
+            "type": "select",
+            "required": false,
+            "options": [
+              {
+                "value": "high",
+                "label": "High - dedicates significant time to team development"
+              },
+              {
+                "value": "moderate",
+                "label": "Moderate - balances development with operational needs"
+              },
+              {
+                "value": "opportunistic",
+                "label": "Opportunistic - coaches when situations arise"
+              },
+              {
+                "value": "delegated",
+                "label": "Delegated - relies on formal programmes and others"
+              },
+              {
+                "value": "limited",
+                "label": "Limited - focuses primarily on delivery"
+              }
+            ],
+            "mirrorsCandidate": {
+              "questionId": "coaching_importance",
+              "matchType": "compatibility"
+            }
+          }
+        ]
+      },
+      {
+        "id": "values_philosophy",
+        "title": "Values & Work Philosophy",
+        "description": "Core values and approach to work",
+        "order": 12,
+        "questions": [
+          {
+            "id": "core_professional_values",
+            "question": "Core Professional Values (Top 3)",
+            "type": "multiselect",
+            "required": true,
+            "options": [
+              {
+                "value": "integrity",
+                "label": "Integrity - honesty and ethical behaviour"
+              },
+              {
+                "value": "excellence",
+                "label": "Excellence - high standards and quality"
+              },
+              {
+                "value": "collaboration",
+                "label": "Collaboration - teamwork and partnership"
+              },
+              {
+                "value": "innovation",
+                "label": "Innovation - creativity and new approaches"
+              },
+              {
+                "value": "accountability",
+                "label": "Accountability - ownership and responsibility"
+              },
+              {
+                "value": "transparency",
+                "label": "Transparency - openness and honesty"
+              },
+              {
+                "value": "respect",
+                "label": "Respect - valuing others' contributions"
+              },
+              {
+                "value": "efficiency",
+                "label": "Efficiency - doing more with less"
+              },
+              {
+                "value": "development",
+                "label": "Development - growth and learning"
+              },
+              {
+                "value": "balance",
+                "label": "Work-life balance"
+              },
+              {
+                "value": "impact",
+                "label": "Impact - making a difference"
+              },
+              {
+                "value": "pragmatism",
+                "label": "Pragmatism - practical, realistic approach"
+              }
+            ],
+            "helpText": "Select the top 3 values this manager prioritises",
+            "validation": {
+              "minSelected": 1,
+              "maxSelected": 3
+            },
+            "mirrorsCandidate": {
+              "questionId": "core_professional_values",
+              "matchType": "overlap"
+            }
+          },
+          {
+            "id": "risk_tolerance",
+            "question": "Risk Tolerance in Decision-Making",
+            "type": "select",
+            "required": true,
+            "options": [
+              {
+                "value": "risk_taker",
+                "label": "Risk taker - comfortable with bold decisions and uncertainty"
+              },
+              {
+                "value": "calculated",
+                "label": "Calculated - takes considered risks with analysis"
+              },
+              {
+                "value": "balanced",
+                "label": "Balanced - weighs risk vs reward carefully"
+              },
+              {
+                "value": "cautious",
+                "label": "Cautious - prefers proven approaches"
+              },
+              {
+                "value": "risk_averse",
+                "label": "Risk averse - prioritises safety and certainty"
+              }
+            ],
+            "mirrorsCandidate": {
+              "questionId": "risk_tolerance_preference",
+              "matchType": "compatibility"
+            }
+          },
+          {
+            "id": "work_life_philosophy",
+            "question": "Work-Life Balance Philosophy",
+            "type": "select",
+            "required": true,
+            "options": [
+              {
+                "value": "integration",
+                "label": "Integration - work and life blend together"
+              },
+              {
+                "value": "boundaries",
+                "label": "Boundaries - clear separation between work and personal"
+              },
+              {
+                "value": "flexibility",
+                "label": "Flexibility - output matters more than hours"
+              },
+              {
+                "value": "high_commitment",
+                "label": "High commitment - work takes priority when needed"
+              },
+              {
+                "value": "sustainable",
+                "label": "Sustainable pace - consistent, predictable commitment"
+              }
+            ],
+            "mirrorsCandidate": {
+              "questionId": "work_life_philosophy_preference",
+              "matchType": "compatibility"
+            }
+          },
+          {
+            "id": "pace_under_pressure",
+            "question": "Approach Under Pressure",
+            "type": "select",
+            "required": false,
+            "options": [
+              {
+                "value": "thrives",
+                "label": "Thrives - energised by high-pressure situations"
+              },
+              {
+                "value": "calm",
+                "label": "Calm - maintains composure and steadiness"
+              },
+              {
+                "value": "focused",
+                "label": "Focused - narrows in on priorities"
+              },
+              {
+                "value": "rallying",
+                "label": "Rallying - brings team together to push through"
+              },
+              {
+                "value": "process_driven",
+                "label": "Process-driven - relies on systems and structure"
+              }
+            ],
+            "mirrorsCandidate": {
+              "questionId": "pressure_handling_preference",
+              "matchType": "compatibility"
+            }
+          },
+          {
+            "id": "change_adaptability",
+            "question": "Attitude Toward Change",
+            "type": "select",
+            "required": false,
+            "options": [
+              {
+                "value": "change_driver",
+                "label": "Change driver - actively initiates and champions change"
+              },
+              {
+                "value": "early_adopter",
+                "label": "Early adopter - embraces new approaches quickly"
+              },
+              {
+                "value": "pragmatic",
+                "label": "Pragmatic - adapts when benefits are clear"
+              },
+              {
+                "value": "measured",
+                "label": "Measured - prefers gradual, considered change"
+              },
+              {
+                "value": "stability_focused",
+                "label": "Stability-focused - values consistency and proven methods"
+              }
+            ],
+            "mirrorsCandidate": {
+              "questionId": "change_adaptability_preference",
+              "matchType": "compatibility"
+            }
+          },
+          {
+            "id": "perfectionism_pragmatism",
+            "question": "Perfectionism vs Pragmatism",
+            "type": "select",
+            "required": false,
+            "options": [
+              {
+                "value": "perfectionist",
+                "label": "Perfectionist - quality must be exceptional before delivering"
+              },
+              {
+                "value": "high_standards",
+                "label": "High standards - excellence with realistic timelines"
+              },
+              {
+                "value": "balanced",
+                "label": "Balanced - right quality for the situation"
+              },
+              {
+                "value": "pragmatic",
+                "label": "Pragmatic - good enough for purpose, iterate later"
+              },
+              {
+                "value": "speed_focused",
+                "label": "Speed-focused - deliver fast, refine as needed"
+              }
+            ],
+            "mirrorsCandidate": {
+              "questionId": "quality_speed_preference",
+              "matchType": "compatibility"
+            }
+          },
+          {
+            "id": "success_motivation",
+            "question": "Primary Success Motivation",
+            "type": "select",
+            "required": false,
+            "options": [
+              {
+                "value": "team_success",
+                "label": "Team success - motivated by team achievements"
+              },
+              {
+                "value": "organisational_impact",
+                "label": "Organisational impact - driven by business outcomes"
+              },
+              {
+                "value": "individual_growth",
+                "label": "Individual growth - developing team members"
+              },
+              {
+                "value": "recognition",
+                "label": "Recognition - acknowledgment of achievements"
+              },
+              {
+                "value": "problem_solving",
+                "label": "Problem solving - tackling challenges"
+              },
+              {
+                "value": "excellence",
+                "label": "Excellence - achieving high standards"
+              }
+            ],
+            "mirrorsCandidate": {
+              "questionId": "primary_motivation",
+              "matchType": "compatibility"
+            }
+          }
+        ]
+      },
+      {
+        "id": "workplace_styles",
+        "title": "Workplace Styles Assessment",
+        "description": "Understanding natural approaches and preferences in workplace scenarios",
+        "order": 13,
+        "instructions": "For each scenario, indicate which approach more closely describes the manager's typical response. 1 = Strongly align with statement A, 2 = Mostly align with statement A, 3 = Mostly align with statement B, 4 = Strongly align with statement B.",
+        "questions": [
+          {
+            "id": "leadership_influence_intro",
+            "question": "Section 1: Approach to Leadership and Influence",
+            "type": "heading",
+            "description": "This section explores the manager's style in guiding projects, managing tasks, and influencing outcomes."
+          },
+          {
+            "id": "leadership_influence_general",
+            "question": "General Leadership Approach",
+            "type": "slider",
+            "required": true,
+            "min": 1,
+            "max": 4,
+            "leftLabel": "I tend to lean towards a more structured and direct approach",
+            "rightLabel": "I tend to lean towards a more adaptable and indirect approach",
+            "assessmentDimension": {
+              "id": "leadership_influence",
+              "leftPole": "structured_direct",
+              "rightPole": "adaptable_indirect",
+              "archetypeMapping": {
+                "leftArchetype": "gorilla",
+                "rightArchetype": "fox"
+              }
+            },
+            "mirrorsCandidate": {
+              "questionId": "leadership_influence_general",
+              "matchType": "compatibility"
+            }
+          },
+          {
+            "id": "leadership_influence_1",
+            "question": "Scenario: Leading a project that faces internal resistance to the planned approach",
+            "type": "slider",
+            "required": true,
+            "min": 1,
+            "max": 4,
+            "leftLabel": "Reinforce the established plan, emphasising structure and reliability to ensure a clear path forward. A grounded, proven approach demonstrates competence.",
+            "rightLabel": "Find a creative or adaptable way around resistance, using strategic communication and indirect influence to maintain momentum without forcing confrontation.",
+            "assessmentDimension": {
+              "id": "leadership_influence",
+              "leftPole": "structured_direct",
+              "rightPole": "adaptable_indirect",
+              "archetypeMapping": {
+                "leftArchetype": "gorilla",
+                "rightArchetype": "fox"
+              }
+            },
+            "mirrorsCandidate": {
+              "questionId": "leadership_influence_1",
+              "matchType": "compatibility"
+            }
+          },
+          {
+            "id": "leadership_influence_2",
+            "question": "Scenario: Ensuring a task is completed correctly and efficiently by the team",
+            "type": "slider",
+            "required": true,
+            "min": 1,
+            "max": 4,
+            "leftLabel": "Provide clear, direct oversight and set firm expectations. Focus on bringing order and calm through structure.",
+            "rightLabel": "Use subtle guidance and strategic influence to empower the team. Work behind the scenes to steer progress without micromanaging.",
+            "assessmentDimension": {
+              "id": "leadership_influence",
+              "leftPole": "structured_direct",
+              "rightPole": "adaptable_indirect",
+              "archetypeMapping": {
+                "leftArchetype": "gorilla",
+                "rightArchetype": "fox"
+              }
+            },
+            "mirrorsCandidate": {
+              "questionId": "leadership_influence_2",
+              "matchType": "compatibility"
+            }
+          },
+          {
+            "id": "leadership_influence_3",
+            "question": "Scenario: A decision made is challenged by a colleague",
+            "type": "slider",
+            "required": true,
+            "min": 1,
+            "max": 4,
+            "leftLabel": "Defend the decision by explaining the rationale and structure behind it. Challenges may be seen as disruption to an established plan.",
+            "rightLabel": "Manage the challenge diplomatically, potentially deflecting direct confrontation while seeking to understand the other perspective.",
+            "assessmentDimension": {
+              "id": "leadership_influence",
+              "leftPole": "structured_direct",
+              "rightPole": "adaptable_indirect",
+              "archetypeMapping": {
+                "leftArchetype": "gorilla",
+                "rightArchetype": "fox"
+              }
+            },
+            "mirrorsCandidate": {
+              "questionId": "leadership_influence_3",
+              "matchType": "compatibility"
+            }
+          },
+          {
+            "id": "leadership_influence_4",
+            "question": "Scenario: Working towards improving a situation for the team or department",
+            "type": "slider",
+            "required": true,
+            "min": 1,
+            "max": 4,
+            "leftLabel": "Focus on establishing stability, order, and clear systems the team can rely on. Show care by ensuring processes are robust and predictable.",
+            "rightLabel": "Focus on introducing creativity, growth, and transformation. Seek to enhance systems through innovation and exploring novel possibilities.",
+            "assessmentDimension": {
+              "id": "leadership_influence",
+              "leftPole": "structured_direct",
+              "rightPole": "adaptable_indirect",
+              "archetypeMapping": {
+                "leftArchetype": "gorilla",
+                "rightArchetype": "fox"
+              }
+            },
+            "mirrorsCandidate": {
+              "questionId": "leadership_influence_4",
+              "matchType": "compatibility"
+            }
+          },
+          {
+            "id": "leadership_influence_5",
+            "question": "Scenario: Confronted with an unexpected problem requiring an immediate solution",
+            "type": "slider",
+            "required": true,
+            "min": 1,
+            "max": 4,
+            "leftLabel": "Rely on proven procedures or quickly establish a clear, structured plan. Apply a reliable framework to bring the situation under control.",
+            "rightLabel": "See it as a challenge to be solved creatively. Enjoy finding innovative solutions and feel comfortable with ambiguity while exploring new angles.",
+            "assessmentDimension": {
+              "id": "leadership_influence",
+              "leftPole": "structured_direct",
+              "rightPole": "adaptable_indirect",
+              "archetypeMapping": {
+                "leftArchetype": "gorilla",
+                "rightArchetype": "fox"
+              }
+            },
+            "mirrorsCandidate": {
+              "questionId": "leadership_influence_5",
+              "matchType": "compatibility"
+            }
+          },
+          {
+            "id": "conflict_collaboration_intro",
+            "question": "Section 2: Approach to Conflict and Collaboration",
+            "type": "heading",
+            "description": "This section explores the manager's style in handling disagreements, communicating needs, and managing interpersonal dynamics."
+          },
+          {
+            "id": "conflict_collaboration_general",
+            "question": "General Conflict Approach",
+            "type": "slider",
+            "required": true,
+            "min": 1,
+            "max": 4,
+            "leftLabel": "I tend to lean towards a more direct and action-oriented approach",
+            "rightLabel": "I tend to lean towards a more consensus-seeking and harmonious approach",
+            "assessmentDimension": {
+              "id": "conflict_collaboration",
+              "leftPole": "direct_action",
+              "rightPole": "consensus_harmony",
+              "archetypeMapping": {
+                "leftArchetype": "wolf",
+                "rightArchetype": "sheep"
+              }
+            },
+            "mirrorsCandidate": {
+              "questionId": "conflict_collaboration_general",
+              "matchType": "compatibility"
+            }
+          },
+          {
+            "id": "conflict_collaboration_1",
+            "question": "Scenario: Witnessing a colleague being treated unfairly",
+            "type": "slider",
+            "required": true,
+            "min": 1,
+            "max": 4,
+            "leftLabel": "Feel compelled to intervene directly and assertively. Priority is protecting the person and correcting the wrong, even if it creates friction.",
+            "rightLabel": "Priority is to de-escalate tension and promote emotional safety. More likely to support privately or use indirect methods rather than direct confrontation.",
+            "assessmentDimension": {
+              "id": "conflict_collaboration",
+              "leftPole": "direct_action",
+              "rightPole": "consensus_harmony",
+              "archetypeMapping": {
+                "leftArchetype": "wolf",
+                "rightArchetype": "sheep"
+              }
+            },
+            "mirrorsCandidate": {
+              "questionId": "conflict_collaboration_1",
+              "matchType": "compatibility"
+            }
+          },
+          {
+            "id": "conflict_collaboration_2",
+            "question": "Scenario: A professional boundary that was clearly communicated is crossed",
+            "type": "slider",
+            "required": true,
+            "min": 1,
+            "max": 4,
+            "leftLabel": "Address the issue directly and explicitly with the person involved. Focus on re-establishing the boundary, able to move on quickly once resolved.",
+            "rightLabel": "May feel uncomfortable with potential conflict and address the issue less directly. May find it difficult to let go without full relational repair.",
+            "assessmentDimension": {
+              "id": "conflict_collaboration",
+              "leftPole": "direct_action",
+              "rightPole": "consensus_harmony",
+              "archetypeMapping": {
+                "leftArchetype": "wolf",
+                "rightArchetype": "sheep"
+              }
+            },
+            "mirrorsCandidate": {
+              "questionId": "conflict_collaboration_2",
+              "matchType": "compatibility"
+            }
+          },
+          {
+            "id": "conflict_collaboration_3",
+            "question": "Scenario: Needing to express needs or advocate for a specific outcome in a group meeting",
+            "type": "slider",
+            "required": true,
+            "min": 1,
+            "max": 4,
+            "leftLabel": "Comfortable being direct about wants and stating the case clearly. Focus on the issue and willing to be assertive to ensure the point is considered.",
+            "rightLabel": "Highly attuned to the group's emotional state and others' needs. May hesitate to voice own needs if they risk disrupting harmony.",
+            "assessmentDimension": {
+              "id": "conflict_collaboration",
+              "leftPole": "direct_action",
+              "rightPole": "consensus_harmony",
+              "archetypeMapping": {
+                "leftArchetype": "wolf",
+                "rightArchetype": "sheep"
+              }
+            },
+            "mirrorsCandidate": {
+              "questionId": "conflict_collaboration_3",
+              "matchType": "compatibility"
+            }
+          },
+          {
+            "id": "conflict_collaboration_4",
+            "question": "Scenario: A disagreement arises that affects personally",
+            "type": "slider",
+            "required": true,
+            "min": 1,
+            "max": 4,
+            "leftLabel": "Focus on the practical issue and take responsibility, expecting others to do the same. Aim for rational discussion to solve the problem efficiently.",
+            "rightLabel": "More focused on the emotional impact and state of the relationship. May find unresolved conflict draining and prioritise feeling understood.",
+            "assessmentDimension": {
+              "id": "conflict_collaboration",
+              "leftPole": "direct_action",
+              "rightPole": "consensus_harmony",
+              "archetypeMapping": {
+                "leftArchetype": "wolf",
+                "rightArchetype": "sheep"
+              }
+            },
+            "mirrorsCandidate": {
+              "questionId": "conflict_collaboration_4",
+              "matchType": "compatibility"
+            }
+          },
+          {
+            "id": "conflict_collaboration_5",
+            "question": "Scenario: Navigating working relationships where tension is present",
+            "type": "slider",
+            "required": true,
+            "min": 1,
+            "max": 4,
+            "leftLabel": "Believe open and direct conversation is most effective. Comfortable with constructive conflict and prefer to address issues head-on to clear the air.",
+            "rightLabel": "Prioritise maintaining peaceful and kind interactions. May avoid raising sensitive issues if they could upset the relationship or create negativity.",
+            "assessmentDimension": {
+              "id": "conflict_collaboration",
+              "leftPole": "direct_action",
+              "rightPole": "consensus_harmony",
+              "archetypeMapping": {
+                "leftArchetype": "wolf",
+                "rightArchetype": "sheep"
+              }
+            },
+            "mirrorsCandidate": {
+              "questionId": "conflict_collaboration_5",
+              "matchType": "compatibility"
+            }
+          }
+        ]
+      }
+    ],
+    "metadata": {
+      "totalQuestions": 85,
+      "estimatedCompletionMinutes": 14,
+      "targetAudience": "HR/Talent Acquisition completing on behalf of hiring managers",
+      "matchingFields": [
+        "department",
+        "office_location_city",
+        "office_location_country",
+        "work_pattern",
+        "native_language",
+        "english_proficiency",
+        "additional_languages",
+        "team_working_language",
+        "language_requirements_for_role",
+        "current_industry",
+        "industries_worked",
+        "interview_availability",
+        "primary_leadership_style",
+        "management_involvement",
+        "decision_making_approach",
+        "autonomy_granted",
+        "team_structure_preference",
+        "expectations_of_team",
+        "conflict_resolution_style",
+        "communication_style",
+        "preferred_communication_channel",
+        "one_to_one_frequency",
+        "one_to_one_style",
+        "team_meeting_approach",
+        "availability_responsiveness",
+        "problem_solving_approach",
+        "information_sharing",
+        "feedback_style",
+        "feedback_frequency",
+        "recognition_approach",
+        "development_focus",
+        "career_conversation_frequency",
+        "mistake_handling",
+        "coaching_investment",
+        "core_professional_values",
+        "risk_tolerance",
+        "work_life_philosophy",
+        "pace_under_pressure",
+        "change_adaptability",
+        "perfectionism_pragmatism",
+        "success_motivation",
+        "leadership_influence_general",
+        "leadership_influence_1",
+        "leadership_influence_2",
+        "leadership_influence_3",
+        "leadership_influence_4",
+        "leadership_influence_5",
+        "conflict_collaboration_general",
+        "conflict_collaboration_1",
+        "conflict_collaboration_2",
+        "conflict_collaboration_3",
+        "conflict_collaboration_4",
+        "conflict_collaboration_5"
+      ],
+      "assessmentDimensions": [
+        {
+          "id": "leadership_influence",
+          "name": "Leadership & Influence Style",
+          "description": "Approach to guiding projects, managing tasks, and influencing outcomes",
+          "leftPole": {
+            "id": "structured_direct",
+            "label": "Structured & Direct",
+            "archetype": "gorilla"
+          },
+          "rightPole": {
+            "id": "adaptable_indirect",
+            "label": "Adaptable & Indirect",
+            "archetype": "fox"
+          },
+          "questions": [
+            "leadership_influence_general",
+            "leadership_influence_1",
+            "leadership_influence_2",
+            "leadership_influence_3",
+            "leadership_influence_4",
+            "leadership_influence_5"
+          ]
+        },
+        {
+          "id": "conflict_collaboration",
+          "name": "Conflict & Collaboration Style",
+          "description": "Approach to handling disagreements, communicating needs, and managing interpersonal dynamics",
+          "leftPole": {
+            "id": "direct_action",
+            "label": "Direct & Action-Oriented",
+            "archetype": "wolf"
+          },
+          "rightPole": {
+            "id": "consensus_harmony",
+            "label": "Consensus-Seeking & Harmonious",
+            "archetype": "sheep"
+          },
+          "questions": [
+            "conflict_collaboration_general",
+            "conflict_collaboration_1",
+            "conflict_collaboration_2",
+            "conflict_collaboration_3",
+            "conflict_collaboration_4",
+            "conflict_collaboration_5"
+          ]
+        }
+      ],
+      "candidateMirrorFields": [
+        {
+          "managerField": "department",
+          "candidateField": "role_functions_sought",
+          "matchType": "overlap"
+        },
+        {
+          "managerField": "office_location_city",
+          "candidateField": "current_city",
+          "matchType": "location"
+        },
+        {
+          "managerField": "office_location_postcode",
+          "candidateField": "postcode",
+          "matchType": "distance"
+        },
+        {
+          "managerField": "office_location_country",
+          "candidateField": "current_country",
+          "matchType": "exact"
+        },
+        {
+          "managerField": "work_pattern",
+          "candidateField": "work_location_preference",
+          "matchType": "compatibility"
+        },
+        {
+          "managerField": "native_language",
+          "candidateField": "native_language",
+          "matchType": "language_match"
+        },
+        {
+          "managerField": "english_proficiency",
+          "candidateField": "english_proficiency",
+          "matchType": "language_match"
+        },
+        {
+          "managerField": "additional_languages",
+          "candidateField": "languages_list",
+          "matchType": "overlap"
+        },
+        {
+          "managerField": "team_working_language",
+          "candidateField": "english_proficiency",
+          "matchType": "language_match"
+        },
+        {
+          "managerField": "language_requirements_for_role",
+          "candidateField": "english_proficiency",
+          "matchType": "minimum"
+        },
+        {
+          "managerField": "current_industry",
+          "candidateField": "current_industry",
+          "matchType": "exact"
+        },
+        {
+          "managerField": "current_industry",
+          "candidateField": "desired_industries",
+          "matchType": "overlap"
+        },
+        {
+          "managerField": "industries_worked",
+          "candidateField": "industries_worked",
+          "matchType": "overlap"
+        },
+        {
+          "managerField": "professional_certifications",
+          "candidateField": "professional_certifications",
+          "matchType": "overlap"
+        },
+        {
+          "managerField": "current_team_size",
+          "candidateField": "preferred_function_size",
+          "matchType": "compatibility"
+        },
+        {
+          "managerField": "interview_availability",
+          "candidateField": "interview_availability",
+          "matchType": "overlap"
+        },
+        {
+          "managerField": "preferred_interview_format",
+          "candidateField": "preferred_interview_format",
+          "matchType": "overlap"
+        },
+        {
+          "managerField": "primary_leadership_style",
+          "candidateField": "preferred_leadership_style",
+          "matchType": "compatibility"
+        },
+        {
+          "managerField": "management_involvement",
+          "candidateField": "preferred_management_involvement",
+          "matchType": "compatibility"
+        },
+        {
+          "managerField": "decision_making_approach",
+          "candidateField": "preferred_decision_making_style",
+          "matchType": "compatibility"
+        },
+        {
+          "managerField": "autonomy_granted",
+          "candidateField": "preferred_autonomy_level",
+          "matchType": "compatibility"
+        },
+        {
+          "managerField": "team_structure_preference",
+          "candidateField": "preferred_team_structure",
+          "matchType": "compatibility"
+        },
+        {
+          "managerField": "expectations_of_team",
+          "candidateField": "primary_work_strength",
+          "matchType": "compatibility"
+        },
+        {
+          "managerField": "conflict_resolution_style",
+          "candidateField": "conflict_handling_preference",
+          "matchType": "compatibility"
+        },
+        {
+          "managerField": "communication_style",
+          "candidateField": "preferred_communication_style",
+          "matchType": "compatibility"
+        },
+        {
+          "managerField": "preferred_communication_channel",
+          "candidateField": "preferred_communication_channel",
+          "matchType": "overlap"
+        },
+        {
+          "managerField": "one_to_one_frequency",
+          "candidateField": "preferred_one_to_one_frequency",
+          "matchType": "compatibility"
+        },
+        {
+          "managerField": "one_to_one_style",
+          "candidateField": "preferred_one_to_one_style",
+          "matchType": "compatibility"
+        },
+        {
+          "managerField": "team_meeting_approach",
+          "candidateField": "preferred_meeting_approach",
+          "matchType": "compatibility"
+        },
+        {
+          "managerField": "availability_responsiveness",
+          "candidateField": "preferred_manager_responsiveness",
+          "matchType": "compatibility"
+        },
+        {
+          "managerField": "problem_solving_approach",
+          "candidateField": "preferred_problem_solving_support",
+          "matchType": "compatibility"
+        },
+        {
+          "managerField": "information_sharing",
+          "candidateField": "information_sharing_preference",
+          "matchType": "compatibility"
+        },
+        {
+          "managerField": "feedback_style",
+          "candidateField": "preferred_feedback_style",
+          "matchType": "compatibility"
+        },
+        {
+          "managerField": "feedback_frequency",
+          "candidateField": "preferred_feedback_frequency",
+          "matchType": "compatibility"
+        },
+        {
+          "managerField": "recognition_approach",
+          "candidateField": "preferred_recognition_style",
+          "matchType": "compatibility"
+        },
+        {
+          "managerField": "development_focus",
+          "candidateField": "preferred_development_approach",
+          "matchType": "compatibility"
+        },
+        {
+          "managerField": "career_conversation_frequency",
+          "candidateField": "preferred_career_discussion_frequency",
+          "matchType": "compatibility"
+        },
+        {
+          "managerField": "mistake_handling",
+          "candidateField": "preferred_mistake_handling",
+          "matchType": "compatibility"
+        },
+        {
+          "managerField": "coaching_investment",
+          "candidateField": "coaching_importance",
+          "matchType": "compatibility"
+        },
+        {
+          "managerField": "core_professional_values",
+          "candidateField": "core_professional_values",
+          "matchType": "overlap"
+        },
+        {
+          "managerField": "risk_tolerance",
+          "candidateField": "risk_tolerance_preference",
+          "matchType": "compatibility"
+        },
+        {
+          "managerField": "work_life_philosophy",
+          "candidateField": "work_life_philosophy_preference",
+          "matchType": "compatibility"
+        },
+        {
+          "managerField": "pace_under_pressure",
+          "candidateField": "pressure_handling_preference",
+          "matchType": "compatibility"
+        },
+        {
+          "managerField": "change_adaptability",
+          "candidateField": "change_adaptability_preference",
+          "matchType": "compatibility"
+        },
+        {
+          "managerField": "perfectionism_pragmatism",
+          "candidateField": "quality_speed_preference",
+          "matchType": "compatibility"
+        },
+        {
+          "managerField": "success_motivation",
+          "candidateField": "primary_motivation",
+          "matchType": "compatibility"
+        },
+        {
+          "managerField": "leadership_influence_general",
+          "candidateField": "leadership_influence_general",
+          "matchType": "compatibility"
+        },
+        {
+          "managerField": "leadership_influence_1",
+          "candidateField": "leadership_influence_1",
+          "matchType": "compatibility"
+        },
+        {
+          "managerField": "leadership_influence_2",
+          "candidateField": "leadership_influence_2",
+          "matchType": "compatibility"
+        },
+        {
+          "managerField": "leadership_influence_3",
+          "candidateField": "leadership_influence_3",
+          "matchType": "compatibility"
+        },
+        {
+          "managerField": "leadership_influence_4",
+          "candidateField": "leadership_influence_4",
+          "matchType": "compatibility"
+        },
+        {
+          "managerField": "leadership_influence_5",
+          "candidateField": "leadership_influence_5",
+          "matchType": "compatibility"
+        },
+        {
+          "managerField": "conflict_collaboration_general",
+          "candidateField": "conflict_collaboration_general",
+          "matchType": "compatibility"
+        },
+        {
+          "managerField": "conflict_collaboration_1",
+          "candidateField": "conflict_collaboration_1",
+          "matchType": "compatibility"
+        },
+        {
+          "managerField": "conflict_collaboration_2",
+          "candidateField": "conflict_collaboration_2",
+          "matchType": "compatibility"
+        },
+        {
+          "managerField": "conflict_collaboration_3",
+          "candidateField": "conflict_collaboration_3",
+          "matchType": "compatibility"
+        },
+        {
+          "managerField": "conflict_collaboration_4",
+          "candidateField": "conflict_collaboration_4",
+          "matchType": "compatibility"
+        },
+        {
+          "managerField": "conflict_collaboration_5",
+          "candidateField": "conflict_collaboration_5",
+          "matchType": "compatibility"
+        }
+      ],
+      "totalSections": 13,
+      "lastUpdated": "2025-12-15"
+    }
+  }
+}

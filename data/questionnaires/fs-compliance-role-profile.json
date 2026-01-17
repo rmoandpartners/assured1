@@ -1,0 +1,3297 @@
+{
+  "questionnaire": {
+    "id": "fs-compliance-role-profile",
+    "title": "Financial Services Compliance Role Profile",
+    "description": "FS Compliance-specific role requirements for conduct risk, financial crime, regulatory compliance, and consumer protection roles in UK regulated firms. Covers SM&CR, AML/Financial Crime, Consumer Duty, Market Abuse, Product Governance, and RegTech. Excludes quantitative risk (separate FS Risk domain).",
+    "version": "1.0.1",
+    "createdAt": "2025-12-15",
+    "updatedAt": "2025-12-15",
+    "mirrorProfile": "fs-compliance-candidate-profile",
+    "parentProfile": "job-profile",
+    "importanceScale": {
+      "0": {
+        "label": "Not Required",
+        "description": "This skill/qualification is not needed for the role"
+      },
+      "1": {
+        "label": "Nice to Have",
+        "description": "Beneficial but not essential; would be a plus"
+      },
+      "2": {
+        "label": "Important",
+        "description": "Expected for the role; gaps would need development plan"
+      },
+      "3": {
+        "label": "Very Important",
+        "description": "Core requirement; strong competency expected"
+      },
+      "4": {
+        "label": "Essential",
+        "description": "Critical requirement; must have from day one"
+      }
+    },
+    "sections": [
+      {
+        "id": "compliance_experience_overview",
+        "title": "Compliance Experience Overview",
+        "description": "Required Financial Services Compliance background and career level",
+        "order": 1,
+        "questions": [
+          {
+            "id": "compliance_role_level",
+            "question": "Compliance Role Level",
+            "type": "select",
+            "required": true,
+            "options": [
+              {
+                "value": "analyst",
+                "label": "Compliance Analyst / Associate"
+              },
+              {
+                "value": "senior_analyst",
+                "label": "Senior Compliance Analyst / AVP"
+              },
+              {
+                "value": "manager",
+                "label": "Compliance Manager / VP"
+              },
+              {
+                "value": "senior_manager",
+                "label": "Senior Compliance Manager / Director"
+              },
+              {
+                "value": "head_of",
+                "label": "Head of Compliance / MD"
+              },
+              {
+                "value": "cco",
+                "label": "Chief Compliance Officer (CCO)"
+              }
+            ],
+            "mirrorsCandidate": {
+              "questionId": "target_compliance_level",
+              "matchType": "compatibility"
+            }
+          },
+          {
+            "id": "compliance_scope_required",
+            "question": "Required Compliance Scope",
+            "type": "select",
+            "required": true,
+            "options": [
+              {
+                "value": "product_desk",
+                "label": "Product / Desk Level Compliance"
+              },
+              {
+                "value": "business_unit",
+                "label": "Business Unit / Division Compliance"
+              },
+              {
+                "value": "regional",
+                "label": "Regional Compliance"
+              },
+              {
+                "value": "country_entity",
+                "label": "Country / Legal Entity Compliance"
+              },
+              {
+                "value": "group_enterprise",
+                "label": "Group / Enterprise Compliance"
+              }
+            ],
+            "mirrorsCandidate": {
+              "questionId": "compliance_scope_experience",
+              "matchType": "compatibility"
+            }
+          },
+          {
+            "id": "years_fs_compliance_required",
+            "question": "Minimum Years in Financial Services Compliance",
+            "description": "Minimum years required specifically in FS compliance roles",
+            "type": "number",
+            "required": true,
+            "min": 0,
+            "max": 40,
+            "mirrorsCandidate": {
+              "questionId": "years_in_fs_compliance",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "years_compliance_broad_required",
+            "question": "Minimum Years in Compliance (Any Sector)",
+            "description": "Minimum total years in any compliance discipline",
+            "type": "number",
+            "required": true,
+            "min": 0,
+            "max": 45,
+            "mirrorsCandidate": {
+              "questionId": "years_in_compliance_broad",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "team_size_required",
+            "question": "Minimum Team Size Management Experience",
+            "description": "Minimum number of direct/indirect reports candidate should have managed",
+            "type": "number",
+            "required": false,
+            "min": 0,
+            "max": 500,
+            "mirrorsCandidate": {
+              "questionId": "compliance_team_size",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "primary_specialism_required",
+            "question": "Required Primary Compliance Specialism",
+            "description": "Required dominant area of expertise",
+            "type": "select",
+            "required": true,
+            "options": [
+              {
+                "value": "conduct_regulatory",
+                "label": "Conduct & Regulatory Compliance (Generalist)"
+              },
+              {
+                "value": "financial_crime",
+                "label": "Financial Crime / AML"
+              },
+              {
+                "value": "market_abuse",
+                "label": "Market Abuse & Surveillance"
+              },
+              {
+                "value": "product_governance",
+                "label": "Product Governance"
+              },
+              {
+                "value": "consumer_protection",
+                "label": "Consumer Protection"
+              },
+              {
+                "value": "prudential",
+                "label": "Prudential Compliance"
+              },
+              {
+                "value": "data_protection",
+                "label": "Data Protection / Privacy"
+              },
+              {
+                "value": "any",
+                "label": "Any Specialism Acceptable"
+              }
+            ],
+            "mirrorsCandidate": {
+              "questionId": "primary_compliance_specialism",
+              "matchType": "compatibility"
+            }
+          },
+          {
+            "id": "smf_required",
+            "question": "SMF Holder Status Required",
+            "description": "Senior Manager Function requirement for the role",
+            "type": "select",
+            "required": true,
+            "options": [
+              {
+                "value": "smf16",
+                "label": "Must hold/have held SMF16 (Compliance Oversight)"
+              },
+              {
+                "value": "smf17",
+                "label": "Must hold/have held SMF17 (MLRO)"
+              },
+              {
+                "value": "smf16_smf17",
+                "label": "Must hold/have held both SMF16 and SMF17"
+              },
+              {
+                "value": "any_smf",
+                "label": "Any SMF/Prescribed Responsibility experience"
+              },
+              {
+                "value": "preferred",
+                "label": "SMF experience preferred but not required"
+              },
+              {
+                "value": "not_required",
+                "label": "No SMF experience required"
+              }
+            ],
+            "mirrorsCandidate": {
+              "questionId": "smf_holder",
+              "matchType": "compatibility"
+            }
+          }
+        ]
+      },
+      {
+        "id": "regulatory_framework_knowledge",
+        "title": "Regulatory Framework Knowledge",
+        "description": "Required knowledge of UK and international regulatory frameworks",
+        "order": 2,
+        "helpText": "Rate the importance of each regulatory framework for this role (0=Not Required, 4=Essential)",
+        "questions": [
+          {
+            "id": "framework_fca_handbook",
+            "question": "How important is FCA Handbook (PRIN, SYSC, COBS, MCOB) knowledge for this role?",
+            "type": "slider",
+            "min": 0,
+            "max": 4,
+            "mirrorsCandidate": {
+              "questionId": "framework_fca_handbook",
+              "matchType": "importance"
+            },
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - helpful background context",
+              "2": "Important - expected competency with support available",
+              "3": "Very Important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            }
+          },
+          {
+            "id": "framework_pra_rulebook",
+            "question": "How important is PRA Rulebook knowledge for this role?",
+            "type": "slider",
+            "min": 0,
+            "max": 4,
+            "mirrorsCandidate": {
+              "questionId": "framework_pra_rulebook",
+              "matchType": "importance"
+            },
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - helpful background context",
+              "2": "Important - expected competency with support available",
+              "3": "Very Important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            }
+          },
+          {
+            "id": "framework_mifid_ii",
+            "question": "How important is MiFID II / MiFIR knowledge for this role?",
+            "type": "slider",
+            "min": 0,
+            "max": 4,
+            "mirrorsCandidate": {
+              "questionId": "framework_mifid_ii",
+              "matchType": "importance"
+            },
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - helpful background context",
+              "2": "Important - expected competency with support available",
+              "3": "Very Important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            }
+          },
+          {
+            "id": "framework_mar",
+            "question": "How important is Market Abuse Regulation (MAR) knowledge for this role?",
+            "type": "slider",
+            "min": 0,
+            "max": 4,
+            "mirrorsCandidate": {
+              "questionId": "framework_mar",
+              "matchType": "importance"
+            },
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - helpful background context",
+              "2": "Important - expected competency with support available",
+              "3": "Very Important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            }
+          },
+          {
+            "id": "framework_consumer_duty",
+            "question": "How important is FCA Consumer Duty knowledge for this role?",
+            "type": "slider",
+            "min": 0,
+            "max": 4,
+            "mirrorsCandidate": {
+              "questionId": "framework_consumer_duty",
+              "matchType": "importance"
+            },
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - helpful background context",
+              "2": "Important - expected competency with support available",
+              "3": "Very Important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            }
+          },
+          {
+            "id": "framework_aml_regs",
+            "question": "How important is UK Money Laundering Regulations knowledge for this role?",
+            "type": "slider",
+            "min": 0,
+            "max": 4,
+            "mirrorsCandidate": {
+              "questionId": "framework_aml_regs",
+              "matchType": "importance"
+            },
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - helpful background context",
+              "2": "Important - expected competency with support available",
+              "3": "Very Important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            }
+          },
+          {
+            "id": "framework_gdpr",
+            "question": "How important is UK GDPR / Data Protection Act knowledge for this role?",
+            "type": "slider",
+            "min": 0,
+            "max": 4,
+            "mirrorsCandidate": {
+              "questionId": "framework_gdpr",
+              "matchType": "importance"
+            },
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - helpful background context",
+              "2": "Important - expected competency with support available",
+              "3": "Very Important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            }
+          },
+          {
+            "id": "framework_solvency_ii",
+            "question": "How important is Solvency II (Insurance) knowledge for this role?",
+            "type": "slider",
+            "min": 0,
+            "max": 4,
+            "mirrorsCandidate": {
+              "questionId": "framework_solvency_ii",
+              "matchType": "importance"
+            },
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - helpful background context",
+              "2": "Important - expected competency with support available",
+              "3": "Very Important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            }
+          }
+        ]
+      },
+      {
+        "id": "senior_managers_regime",
+        "title": "Senior Managers Regime",
+        "description": "Required SM&CR framework and individual accountability expertise",
+        "order": 3,
+        "helpText": "Rate the importance of SM&CR competencies for this role (0=Not Required, 4=Essential)",
+        "questions": [
+          {
+            "id": "smcr_framework",
+            "question": "How important is SM&CR Framework expertise for this role?",
+            "type": "slider",
+            "min": 0,
+            "max": 4,
+            "mirrorsCandidate": {
+              "questionId": "smcr_framework",
+              "matchType": "importance"
+            },
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - general awareness helpful",
+              "2": "Important - expected to understand and apply framework",
+              "3": "Very Important - core requirement; leads SM&CR activities",
+              "4": "Essential - strategic accountability for SM&CR implementation"
+            }
+          },
+          {
+            "id": "smf_applications",
+            "question": "How important is SMF Application & Approval Process expertise for this role?",
+            "type": "slider",
+            "min": 0,
+            "max": 4,
+            "mirrorsCandidate": {
+              "questionId": "smf_applications",
+              "matchType": "importance"
+            },
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - general awareness helpful",
+              "2": "Important - expected to support SMF applications",
+              "3": "Very Important - core requirement; manages application process",
+              "4": "Essential - strategic ownership of SMF pipeline and governance"
+            }
+          },
+          {
+            "id": "statements_responsibility",
+            "question": "How important is Statements of Responsibilities (SoR) expertise for this role?",
+            "type": "slider",
+            "min": 0,
+            "max": 4,
+            "mirrorsCandidate": {
+              "questionId": "statements_responsibility",
+              "matchType": "importance"
+            },
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - awareness of SoR structure helpful",
+              "2": "Important - expected to draft and review SoRs",
+              "3": "Very Important - core requirement; owns SoR framework",
+              "4": "Essential - enterprise-wide accountability for SoR governance"
+            }
+          },
+          {
+            "id": "management_resp_maps",
+            "question": "How important is Management Responsibilities Maps expertise for this role?",
+            "type": "slider",
+            "min": 0,
+            "max": 4,
+            "mirrorsCandidate": {
+              "questionId": "management_resp_maps",
+              "matchType": "importance"
+            },
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - awareness helpful",
+              "2": "Important - expected to maintain and update maps",
+              "3": "Very Important - core requirement; owns mapping framework",
+              "4": "Essential - enterprise-wide accountability for responsibility mapping"
+            }
+          },
+          {
+            "id": "reasonable_steps",
+            "question": "How important is 'Reasonable Steps' Defence Documentation expertise for this role?",
+            "type": "slider",
+            "min": 0,
+            "max": 4,
+            "mirrorsCandidate": {
+              "questionId": "reasonable_steps",
+              "matchType": "importance"
+            },
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - general understanding helpful",
+              "2": "Important - expected to support documentation efforts",
+              "3": "Very Important - core requirement; designs reasonable steps frameworks",
+              "4": "Essential - strategic accountability for defence documentation"
+            }
+          },
+          {
+            "id": "handover_procedures",
+            "question": "How important is SMF Handover Procedures expertise for this role?",
+            "type": "slider",
+            "min": 0,
+            "max": 4,
+            "mirrorsCandidate": {
+              "questionId": "handover_procedures",
+              "matchType": "importance"
+            },
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - awareness helpful",
+              "2": "Important - expected to support handover processes",
+              "3": "Very Important - core requirement; manages handover framework",
+              "4": "Essential - strategic ownership of handover governance"
+            }
+          },
+          {
+            "id": "prescribed_responsibilities",
+            "question": "How important is Prescribed Responsibilities Allocation expertise for this role?",
+            "type": "slider",
+            "min": 0,
+            "max": 4,
+            "mirrorsCandidate": {
+              "questionId": "prescribed_responsibilities",
+              "matchType": "importance"
+            },
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - awareness helpful",
+              "2": "Important - expected to track and maintain allocations",
+              "3": "Very Important - core requirement; manages allocation framework",
+              "4": "Essential - strategic accountability for PR governance"
+            }
+          },
+          {
+            "id": "directory_persons",
+            "question": "How important is Directory Persons Management expertise for this role?",
+            "type": "slider",
+            "min": 0,
+            "max": 4,
+            "mirrorsCandidate": {
+              "questionId": "directory_persons",
+              "matchType": "importance"
+            },
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - awareness helpful",
+              "2": "Important - expected to support directory maintenance",
+              "3": "Very Important - core requirement; owns directory framework",
+              "4": "Essential - strategic accountability for directory governance"
+            }
+          }
+        ]
+      },
+      {
+        "id": "conduct_rules_accountability",
+        "title": "Conduct Rules & Accountability",
+        "description": "Required conduct rules and individual accountability competencies",
+        "order": 4,
+        "helpText": "Rate the importance of conduct and accountability competencies for this role (0=Not Required, 4=Essential)",
+        "questions": [
+          {
+            "id": "conduct_rules",
+            "question": "How important is FCA/PRA Conduct Rules expertise for this role?",
+            "type": "slider",
+            "min": 0,
+            "max": 4,
+            "mirrorsCandidate": {
+              "questionId": "conduct_rules",
+              "matchType": "importance"
+            },
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - general awareness helpful",
+              "2": "Important - expected to understand and apply rules",
+              "3": "Very Important - core requirement; interprets and advises on rules",
+              "4": "Essential - strategic accountability for conduct rules framework"
+            }
+          },
+          {
+            "id": "conduct_training",
+            "question": "How important is Conduct Rules Training Design expertise for this role?",
+            "type": "slider",
+            "min": 0,
+            "max": 4,
+            "mirrorsCandidate": {
+              "questionId": "conduct_training",
+              "matchType": "importance"
+            },
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - awareness helpful",
+              "2": "Important - expected to deliver training",
+              "3": "Very Important - core requirement; designs training programmes",
+              "4": "Essential - strategic ownership of conduct training framework"
+            }
+          },
+          {
+            "id": "breach_investigation",
+            "question": "How important is Conduct Breach Investigation expertise for this role?",
+            "type": "slider",
+            "min": 0,
+            "max": 4,
+            "mirrorsCandidate": {
+              "questionId": "breach_investigation",
+              "matchType": "importance"
+            },
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - awareness helpful",
+              "2": "Important - expected to support investigations",
+              "3": "Very Important - core requirement; leads complex investigations",
+              "4": "Essential - strategic accountability for breach investigation framework"
+            }
+          },
+          {
+            "id": "fitness_propriety",
+            "question": "How important is Fitness & Propriety Assessments expertise for this role?",
+            "type": "slider",
+            "min": 0,
+            "max": 4,
+            "mirrorsCandidate": {
+              "questionId": "fitness_propriety",
+              "matchType": "importance"
+            },
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - awareness helpful",
+              "2": "Important - expected to conduct F&P assessments",
+              "3": "Very Important - core requirement; owns F&P framework",
+              "4": "Essential - strategic accountability for F&P governance"
+            }
+          },
+          {
+            "id": "reference_requests",
+            "question": "How important is Regulatory Reference Requests expertise for this role?",
+            "type": "slider",
+            "min": 0,
+            "max": 4,
+            "mirrorsCandidate": {
+              "questionId": "reference_requests",
+              "matchType": "importance"
+            },
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - awareness helpful",
+              "2": "Important - expected to handle reference requests",
+              "3": "Very Important - core requirement; manages reference process",
+              "4": "Essential - strategic accountability for reference governance"
+            }
+          },
+          {
+            "id": "enforcement_liaison",
+            "question": "How important is Enforcement Liaison expertise for this role?",
+            "type": "slider",
+            "min": 0,
+            "max": 4,
+            "mirrorsCandidate": {
+              "questionId": "enforcement_liaison",
+              "matchType": "importance"
+            },
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - awareness helpful",
+              "2": "Important - expected to support enforcement matters",
+              "3": "Very Important - core requirement; manages enforcement liaison",
+              "4": "Essential - strategic leadership of enforcement relationship"
+            }
+          },
+          {
+            "id": "individual_accountability_culture",
+            "question": "How important is Individual Accountability Culture expertise for this role?",
+            "type": "slider",
+            "min": 0,
+            "max": 4,
+            "mirrorsCandidate": {
+              "questionId": "individual_accountability_culture",
+              "matchType": "importance"
+            },
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - awareness helpful",
+              "2": "Important - expected to embed accountability mindset",
+              "3": "Very Important - core requirement; drives accountability culture",
+              "4": "Essential - strategic leadership of accountability transformation"
+            }
+          }
+        ]
+      },
+      {
+        "id": "aml_framework_governance",
+        "title": "AML Framework & Governance",
+        "description": "Required AML/CTF framework and MLRO capabilities",
+        "order": 5,
+        "helpText": "Rate the importance of AML governance competencies for this role (0=Not Required, 4=Essential)",
+        "questions": [
+          {
+            "id": "aml_framework",
+            "question": "How important is AML/CTF Framework Design expertise for this role?",
+            "type": "slider",
+            "min": 0,
+            "max": 4,
+            "mirrorsCandidate": {
+              "questionId": "aml_framework",
+              "matchType": "importance"
+            },
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - general awareness helpful",
+              "2": "Important - expected to apply AML frameworks",
+              "3": "Very Important - core requirement; leads AML framework development",
+              "4": "Essential - strategic accountability for AML/CTF architecture"
+            }
+          },
+          {
+            "id": "mlro_responsibilities",
+            "question": "How important is MLRO Responsibilities expertise for this role?",
+            "type": "slider",
+            "min": 0,
+            "max": 4,
+            "mirrorsCandidate": {
+              "questionId": "mlro_responsibilities",
+              "matchType": "importance"
+            },
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - awareness helpful",
+              "2": "Important - expected to support MLRO function",
+              "3": "Very Important - core requirement; deputy MLRO capability",
+              "4": "Essential - must be MLRO-capable or current MLRO"
+            }
+          },
+          {
+            "id": "ewra",
+            "question": "How important is Enterprise-Wide Risk Assessment (EWRA) expertise for this role?",
+            "type": "slider",
+            "min": 0,
+            "max": 4,
+            "mirrorsCandidate": {
+              "questionId": "ewra",
+              "matchType": "importance"
+            },
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - awareness helpful",
+              "2": "Important - expected to contribute to EWRA",
+              "3": "Very Important - core requirement; leads EWRA development",
+              "4": "Essential - strategic ownership of EWRA methodology"
+            }
+          },
+          {
+            "id": "bsa_crmp",
+            "question": "How important is Business/Customer Risk Assessment expertise for this role?",
+            "type": "slider",
+            "min": 0,
+            "max": 4,
+            "mirrorsCandidate": {
+              "questionId": "bsa_crmp",
+              "matchType": "importance"
+            },
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - awareness helpful",
+              "2": "Important - expected to conduct risk assessments",
+              "3": "Very Important - core requirement; owns risk assessment framework",
+              "4": "Essential - strategic accountability for risk methodology"
+            }
+          },
+          {
+            "id": "aml_policy",
+            "question": "How important is AML Policy Development expertise for this role?",
+            "type": "slider",
+            "min": 0,
+            "max": 4,
+            "mirrorsCandidate": {
+              "questionId": "aml_policy",
+              "matchType": "importance"
+            },
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - awareness helpful",
+              "2": "Important - expected to apply and interpret policies",
+              "3": "Very Important - core requirement; develops policies",
+              "4": "Essential - strategic ownership of AML policy framework"
+            }
+          },
+          {
+            "id": "aml_governance",
+            "question": "How important is AML Governance Committees expertise for this role?",
+            "type": "slider",
+            "min": 0,
+            "max": 4,
+            "mirrorsCandidate": {
+              "questionId": "aml_governance",
+              "matchType": "importance"
+            },
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - awareness helpful",
+              "2": "Important - expected to support committee activities",
+              "3": "Very Important - core requirement; presents to committees",
+              "4": "Essential - strategic leadership of AML governance"
+            }
+          },
+          {
+            "id": "jmlsg_guidance",
+            "question": "How important is JMLSG Guidance Application expertise for this role?",
+            "type": "slider",
+            "min": 0,
+            "max": 4,
+            "mirrorsCandidate": {
+              "questionId": "jmlsg_guidance",
+              "matchType": "importance"
+            },
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - awareness helpful",
+              "2": "Important - expected to apply JMLSG guidance",
+              "3": "Very Important - core requirement; interprets guidance",
+              "4": "Essential - thought leader on JMLSG application"
+            }
+          },
+          {
+            "id": "nca_engagement",
+            "question": "How important is NCA Engagement & Liaison expertise for this role?",
+            "type": "slider",
+            "min": 0,
+            "max": 4,
+            "mirrorsCandidate": {
+              "questionId": "nca_engagement",
+              "matchType": "importance"
+            },
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - awareness helpful",
+              "2": "Important - expected to support NCA interactions",
+              "3": "Very Important - core requirement; manages NCA relationship",
+              "4": "Essential - strategic leadership of law enforcement liaison"
+            }
+          }
+        ]
+      },
+      {
+        "id": "customer_due_diligence",
+        "title": "Customer Due Diligence",
+        "description": "Required CDD/KYC framework and execution capabilities",
+        "order": 6,
+        "helpText": "Rate the importance of CDD competencies for this role (0=Not Required, 4=Essential)",
+        "questions": [
+          {
+            "id": "cdd_framework",
+            "question": "How important is CDD/KYC Framework expertise for this role?",
+            "type": "slider",
+            "min": 0,
+            "max": 4,
+            "mirrorsCandidate": {
+              "questionId": "cdd_framework",
+              "matchType": "importance"
+            },
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - awareness helpful",
+              "2": "Important - expected to apply CDD frameworks",
+              "3": "Very Important - core requirement; leads CDD framework design",
+              "4": "Essential - strategic ownership of CDD/KYC architecture"
+            }
+          },
+          {
+            "id": "edd_pep",
+            "question": "How important is Enhanced Due Diligence (EDD) & PEPs expertise for this role?",
+            "type": "slider",
+            "min": 0,
+            "max": 4,
+            "mirrorsCandidate": {
+              "questionId": "edd_pep",
+              "matchType": "importance"
+            },
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - awareness helpful",
+              "2": "Important - expected to conduct EDD reviews",
+              "3": "Very Important - core requirement; leads complex EDD cases",
+              "4": "Essential - strategic ownership of EDD/PEP framework"
+            }
+          },
+          {
+            "id": "beneficial_ownership",
+            "question": "How important is Beneficial Ownership Identification expertise for this role?",
+            "type": "slider",
+            "min": 0,
+            "max": 4,
+            "mirrorsCandidate": {
+              "questionId": "beneficial_ownership",
+              "matchType": "importance"
+            },
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - awareness helpful",
+              "2": "Important - expected to identify beneficial owners",
+              "3": "Very Important - core requirement; resolves complex ownership structures",
+              "4": "Essential - strategic ownership of UBO methodology"
+            }
+          },
+          {
+            "id": "ongoing_monitoring",
+            "question": "How important is Ongoing CDD/Periodic Reviews expertise for this role?",
+            "type": "slider",
+            "min": 0,
+            "max": 4,
+            "mirrorsCandidate": {
+              "questionId": "ongoing_monitoring",
+              "matchType": "importance"
+            },
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - awareness helpful",
+              "2": "Important - expected to conduct periodic reviews",
+              "3": "Very Important - core requirement; designs review programmes",
+              "4": "Essential - strategic ownership of ongoing monitoring framework"
+            }
+          },
+          {
+            "id": "correspondent_banking",
+            "question": "How important is Correspondent Banking Due Diligence expertise for this role?",
+            "type": "slider",
+            "min": 0,
+            "max": 4,
+            "mirrorsCandidate": {
+              "questionId": "correspondent_banking",
+              "matchType": "importance"
+            },
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - awareness helpful",
+              "2": "Important - expected to support correspondent banking CDD",
+              "3": "Very Important - core requirement; leads correspondent banking reviews",
+              "4": "Essential - strategic ownership of correspondent banking framework"
+            }
+          },
+          {
+            "id": "corporate_kyc",
+            "question": "How important is Corporate/Institutional KYC expertise for this role?",
+            "type": "slider",
+            "min": 0,
+            "max": 4,
+            "mirrorsCandidate": {
+              "questionId": "corporate_kyc",
+              "matchType": "importance"
+            },
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - awareness helpful",
+              "2": "Important - expected to conduct corporate KYC",
+              "3": "Very Important - core requirement; leads complex corporate structures",
+              "4": "Essential - strategic ownership of institutional KYC framework"
+            }
+          },
+          {
+            "id": "pep_screening",
+            "question": "How important is PEP & Adverse Media Screening expertise for this role?",
+            "type": "slider",
+            "min": 0,
+            "max": 4,
+            "mirrorsCandidate": {
+              "questionId": "pep_screening",
+              "matchType": "importance"
+            },
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - awareness helpful",
+              "2": "Important - expected to analyse screening results",
+              "3": "Very Important - core requirement; manages screening framework",
+              "4": "Essential - strategic ownership of screening programme"
+            }
+          },
+          {
+            "id": "high_risk_jurisdictions",
+            "question": "How important is High-Risk Jurisdiction Assessment expertise for this role?",
+            "type": "slider",
+            "min": 0,
+            "max": 4,
+            "mirrorsCandidate": {
+              "questionId": "high_risk_jurisdictions",
+              "matchType": "importance"
+            },
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - awareness helpful",
+              "2": "Important - expected to apply jurisdiction risk ratings",
+              "3": "Very Important - core requirement; develops jurisdiction methodology",
+              "4": "Essential - strategic ownership of jurisdiction risk framework"
+            }
+          }
+        ]
+      },
+      {
+        "id": "transaction_monitoring_sar",
+        "title": "Transaction Monitoring & SAR",
+        "description": "Required transaction monitoring and suspicious activity reporting capabilities",
+        "order": 7,
+        "helpText": "Rate the importance of TM/SAR competencies for this role (0=Not Required, 4=Essential)",
+        "questions": [
+          {
+            "id": "tm_framework",
+            "question": "How important is Transaction Monitoring Framework expertise for this role?",
+            "type": "slider",
+            "min": 0,
+            "max": 4,
+            "mirrorsCandidate": {
+              "questionId": "tm_framework",
+              "matchType": "importance"
+            },
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - awareness helpful",
+              "2": "Important - expected to work within TM framework",
+              "3": "Very Important - core requirement; designs TM framework",
+              "4": "Essential - strategic ownership of TM architecture"
+            }
+          },
+          {
+            "id": "tm_rules_tuning",
+            "question": "How important is TM Rules Design & Tuning expertise for this role?",
+            "type": "slider",
+            "min": 0,
+            "max": 4,
+            "mirrorsCandidate": {
+              "questionId": "tm_rules_tuning",
+              "matchType": "importance"
+            },
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - awareness helpful",
+              "2": "Important - expected to support rule tuning",
+              "3": "Very Important - core requirement; leads rule design",
+              "4": "Essential - strategic ownership of TM rules framework"
+            }
+          },
+          {
+            "id": "alert_investigation",
+            "question": "How important is Alert Investigation & Disposition expertise for this role?",
+            "type": "slider",
+            "min": 0,
+            "max": 4,
+            "mirrorsCandidate": {
+              "questionId": "alert_investigation",
+              "matchType": "importance"
+            },
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - awareness helpful",
+              "2": "Important - expected to investigate alerts",
+              "3": "Very Important - core requirement; leads complex investigations",
+              "4": "Essential - strategic ownership of investigation methodology"
+            }
+          },
+          {
+            "id": "sar_preparation",
+            "question": "How important is SAR Preparation & Filing expertise for this role?",
+            "type": "slider",
+            "min": 0,
+            "max": 4,
+            "mirrorsCandidate": {
+              "questionId": "sar_preparation",
+              "matchType": "importance"
+            },
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - awareness helpful",
+              "2": "Important - expected to prepare SAR narratives",
+              "3": "Very Important - core requirement; authorises SAR filings",
+              "4": "Essential - strategic accountability for SAR quality"
+            }
+          },
+          {
+            "id": "daml_requests",
+            "question": "How important is DAML (Defence Against Money Laundering) Requests expertise for this role?",
+            "type": "slider",
+            "min": 0,
+            "max": 4,
+            "mirrorsCandidate": {
+              "questionId": "daml_requests",
+              "matchType": "importance"
+            },
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - awareness helpful",
+              "2": "Important - expected to support DAML process",
+              "3": "Very Important - core requirement; manages DAML requests",
+              "4": "Essential - strategic accountability for consent regime"
+            }
+          },
+          {
+            "id": "tipping_off",
+            "question": "How important is Tipping Off Prevention expertise for this role?",
+            "type": "slider",
+            "min": 0,
+            "max": 4,
+            "mirrorsCandidate": {
+              "questionId": "tipping_off",
+              "matchType": "importance"
+            },
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - awareness helpful",
+              "2": "Important - expected to understand tipping off risks",
+              "3": "Very Important - core requirement; trains on tipping off",
+              "4": "Essential - strategic accountability for tipping off controls"
+            }
+          },
+          {
+            "id": "suspicious_activity",
+            "question": "How important is Suspicious Activity Recognition expertise for this role?",
+            "type": "slider",
+            "min": 0,
+            "max": 4,
+            "mirrorsCandidate": {
+              "questionId": "suspicious_activity",
+              "matchType": "importance"
+            },
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - awareness helpful",
+              "2": "Important - expected to identify suspicious patterns",
+              "3": "Very Important - core requirement; develops red flag guidance",
+              "4": "Essential - strategic ownership of typologies framework"
+            }
+          },
+          {
+            "id": "tm_model_validation",
+            "question": "How important is TM Model Validation expertise for this role?",
+            "type": "slider",
+            "min": 0,
+            "max": 4,
+            "mirrorsCandidate": {
+              "questionId": "tm_model_validation",
+              "matchType": "importance"
+            },
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - awareness helpful",
+              "2": "Important - expected to support validation",
+              "3": "Very Important - core requirement; leads model validation",
+              "4": "Essential - strategic ownership of TM model governance"
+            }
+          }
+        ]
+      },
+      {
+        "id": "sanctions_financial_crime_emerging",
+        "title": "Sanctions & Financial Crime Emerging",
+        "description": "Required sanctions compliance and emerging financial crime capabilities",
+        "order": 8,
+        "helpText": "Rate the importance of sanctions and emerging FC competencies for this role (0=Not Required, 4=Essential)",
+        "questions": [
+          {
+            "id": "sanctions_screening",
+            "question": "How important is Sanctions Screening Programmes expertise for this role?",
+            "type": "slider",
+            "min": 0,
+            "max": 4,
+            "mirrorsCandidate": {
+              "questionId": "sanctions_screening",
+              "matchType": "importance"
+            },
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - awareness helpful",
+              "2": "Important - expected to review screening matches",
+              "3": "Very Important - core requirement; manages screening programme",
+              "4": "Essential - strategic ownership of sanctions screening"
+            }
+          },
+          {
+            "id": "ofsi_compliance",
+            "question": "How important is OFSI Sanctions Compliance expertise for this role?",
+            "type": "slider",
+            "min": 0,
+            "max": 4,
+            "mirrorsCandidate": {
+              "questionId": "ofsi_compliance",
+              "matchType": "importance"
+            },
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - awareness helpful",
+              "2": "Important - expected to apply UK sanctions",
+              "3": "Very Important - core requirement; interprets OFSI requirements",
+              "4": "Essential - strategic ownership of UK sanctions compliance"
+            }
+          },
+          {
+            "id": "ofac_sdns",
+            "question": "How important is OFAC/SDN List Management expertise for this role?",
+            "type": "slider",
+            "min": 0,
+            "max": 4,
+            "mirrorsCandidate": {
+              "questionId": "ofac_sdns",
+              "matchType": "importance"
+            },
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - awareness helpful",
+              "2": "Important - expected to understand OFAC requirements",
+              "3": "Very Important - core requirement; manages OFAC compliance",
+              "4": "Essential - strategic ownership of US sanctions exposure"
+            }
+          },
+          {
+            "id": "sanctions_investigations",
+            "question": "How important is Sanctions Match Investigation expertise for this role?",
+            "type": "slider",
+            "min": 0,
+            "max": 4,
+            "mirrorsCandidate": {
+              "questionId": "sanctions_investigations",
+              "matchType": "importance"
+            },
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - awareness helpful",
+              "2": "Important - expected to investigate sanctions matches",
+              "3": "Very Important - core requirement; leads complex investigations",
+              "4": "Essential - strategic ownership of investigation methodology"
+            }
+          },
+          {
+            "id": "licence_applications",
+            "question": "How important is Sanctions Licence Applications expertise for this role?",
+            "type": "slider",
+            "min": 0,
+            "max": 4,
+            "mirrorsCandidate": {
+              "questionId": "licence_applications",
+              "matchType": "importance"
+            },
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - awareness helpful",
+              "2": "Important - expected to support licence applications",
+              "3": "Very Important - core requirement; manages licence process",
+              "4": "Essential - strategic ownership of licensing framework"
+            }
+          },
+          {
+            "id": "proliferation_financing",
+            "question": "How important is Proliferation Financing Risk expertise for this role?",
+            "type": "slider",
+            "min": 0,
+            "max": 4,
+            "mirrorsCandidate": {
+              "questionId": "proliferation_financing",
+              "matchType": "importance"
+            },
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - awareness helpful",
+              "2": "Important - expected to understand PF risks",
+              "3": "Very Important - core requirement; develops PF controls",
+              "4": "Essential - strategic ownership of PF framework"
+            }
+          },
+          {
+            "id": "cryptoasset_compliance",
+            "question": "How important is Cryptoasset/Virtual Asset Compliance expertise for this role?",
+            "type": "slider",
+            "min": 0,
+            "max": 4,
+            "mirrorsCandidate": {
+              "questionId": "cryptoasset_compliance",
+              "matchType": "importance"
+            },
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - awareness helpful",
+              "2": "Important - expected to understand crypto risks",
+              "3": "Very Important - core requirement; develops crypto controls",
+              "4": "Essential - strategic ownership of digital asset compliance"
+            }
+          },
+          {
+            "id": "trade_based_ml",
+            "question": "How important is Trade-Based Money Laundering expertise for this role?",
+            "type": "slider",
+            "min": 0,
+            "max": 4,
+            "mirrorsCandidate": {
+              "questionId": "trade_based_ml",
+              "matchType": "importance"
+            },
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - awareness helpful",
+              "2": "Important - expected to identify TBML red flags",
+              "3": "Very Important - core requirement; develops TBML controls",
+              "4": "Essential - strategic ownership of TBML framework"
+            }
+          },
+          {
+            "id": "fraud_prevention",
+            "question": "How important is Fraud Prevention & Detection expertise for this role?",
+            "type": "slider",
+            "min": 0,
+            "max": 4,
+            "mirrorsCandidate": {
+              "questionId": "fraud_prevention",
+              "matchType": "importance"
+            },
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - awareness helpful",
+              "2": "Important - expected to support fraud controls",
+              "3": "Very Important - core requirement; leads fraud prevention",
+              "4": "Essential - strategic ownership of fraud framework"
+            }
+          }
+        ]
+      },
+      {
+        "id": "consumer_duty",
+        "title": "Consumer Duty",
+        "description": "Required FCA Consumer Duty framework and outcomes capabilities",
+        "order": 9,
+        "helpText": "Rate the importance of Consumer Duty competencies for this role (0=Not Required, 4=Essential)",
+        "questions": [
+          {
+            "id": "consumer_duty_framework",
+            "question": "How important is Consumer Duty Framework expertise for this role?",
+            "type": "slider",
+            "min": 0,
+            "max": 4,
+            "mirrorsCandidate": {
+              "questionId": "consumer_duty_framework",
+              "matchType": "importance"
+            },
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - awareness helpful",
+              "2": "Important - expected to apply Consumer Duty principles",
+              "3": "Very Important - core requirement; leads Consumer Duty implementation",
+              "4": "Essential - strategic ownership of Consumer Duty programme"
+            }
+          },
+          {
+            "id": "cross_cutting_rules",
+            "question": "How important is Cross-Cutting Rules Implementation expertise for this role?",
+            "type": "slider",
+            "min": 0,
+            "max": 4,
+            "mirrorsCandidate": {
+              "questionId": "cross_cutting_rules",
+              "matchType": "importance"
+            },
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - awareness helpful",
+              "2": "Important - expected to apply cross-cutting rules",
+              "3": "Very Important - core requirement; leads rule implementation",
+              "4": "Essential - strategic ownership of cross-cutting framework"
+            }
+          },
+          {
+            "id": "consumer_understanding",
+            "question": "How important is Consumer Understanding Outcome expertise for this role?",
+            "type": "slider",
+            "min": 0,
+            "max": 4,
+            "mirrorsCandidate": {
+              "questionId": "consumer_understanding",
+              "matchType": "importance"
+            },
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - awareness helpful",
+              "2": "Important - expected to assess communications",
+              "3": "Very Important - core requirement; leads outcome monitoring",
+              "4": "Essential - strategic ownership of understanding outcome"
+            }
+          },
+          {
+            "id": "price_value",
+            "question": "How important is Price & Value Outcome expertise for this role?",
+            "type": "slider",
+            "min": 0,
+            "max": 4,
+            "mirrorsCandidate": {
+              "questionId": "price_value",
+              "matchType": "importance"
+            },
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - awareness helpful",
+              "2": "Important - expected to support value assessments",
+              "3": "Very Important - core requirement; leads fair value framework",
+              "4": "Essential - strategic ownership of price/value outcome"
+            }
+          },
+          {
+            "id": "consumer_support",
+            "question": "How important is Consumer Support Outcome expertise for this role?",
+            "type": "slider",
+            "min": 0,
+            "max": 4,
+            "mirrorsCandidate": {
+              "questionId": "consumer_support",
+              "matchType": "importance"
+            },
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - awareness helpful",
+              "2": "Important - expected to assess support standards",
+              "3": "Very Important - core requirement; leads support monitoring",
+              "4": "Essential - strategic ownership of consumer support outcome"
+            }
+          },
+          {
+            "id": "products_services",
+            "question": "How important is Products & Services Outcome expertise for this role?",
+            "type": "slider",
+            "min": 0,
+            "max": 4,
+            "mirrorsCandidate": {
+              "questionId": "products_services",
+              "matchType": "importance"
+            },
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - awareness helpful",
+              "2": "Important - expected to review product design",
+              "3": "Very Important - core requirement; leads product outcome assessment",
+              "4": "Essential - strategic ownership of products/services outcome"
+            }
+          },
+          {
+            "id": "fair_value_assessment",
+            "question": "How important is Fair Value Assessment expertise for this role?",
+            "type": "slider",
+            "min": 0,
+            "max": 4,
+            "mirrorsCandidate": {
+              "questionId": "fair_value_assessment",
+              "matchType": "importance"
+            },
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - awareness helpful",
+              "2": "Important - expected to conduct value assessments",
+              "3": "Very Important - core requirement; designs assessment methodology",
+              "4": "Essential - strategic ownership of fair value framework"
+            }
+          },
+          {
+            "id": "vulnerable_customers",
+            "question": "How important is Vulnerable Customer Framework expertise for this role?",
+            "type": "slider",
+            "min": 0,
+            "max": 4,
+            "mirrorsCandidate": {
+              "questionId": "vulnerable_customers",
+              "matchType": "importance"
+            },
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - awareness helpful",
+              "2": "Important - expected to apply vulnerability frameworks",
+              "3": "Very Important - core requirement; leads vulnerability approach",
+              "4": "Essential - strategic ownership of vulnerable customer strategy"
+            }
+          },
+          {
+            "id": "outcomes_monitoring",
+            "question": "How important is Outcomes-Based Monitoring expertise for this role?",
+            "type": "slider",
+            "min": 0,
+            "max": 4,
+            "mirrorsCandidate": {
+              "questionId": "outcomes_monitoring",
+              "matchType": "importance"
+            },
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - awareness helpful",
+              "2": "Important - expected to track outcomes metrics",
+              "3": "Very Important - core requirement; designs monitoring framework",
+              "4": "Essential - strategic ownership of outcomes-based approach"
+            }
+          }
+        ]
+      },
+      {
+        "id": "market_conduct_surveillance",
+        "title": "Market Conduct & Surveillance",
+        "description": "Required market abuse prevention and surveillance capabilities",
+        "order": 10,
+        "helpText": "Rate the importance of market conduct competencies for this role (0=Not Required, 4=Essential)",
+        "questions": [
+          {
+            "id": "mar_compliance",
+            "question": "How important is Market Abuse Regulation (MAR) Compliance expertise for this role?",
+            "type": "slider",
+            "min": 0,
+            "max": 4,
+            "mirrorsCandidate": {
+              "questionId": "mar_compliance",
+              "matchType": "importance"
+            },
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - awareness helpful",
+              "2": "Important - expected to apply MAR requirements",
+              "3": "Very Important - core requirement; leads MAR compliance",
+              "4": "Essential - strategic ownership of MAR programme"
+            }
+          },
+          {
+            "id": "insider_dealing",
+            "question": "How important is Insider Dealing Prevention expertise for this role?",
+            "type": "slider",
+            "min": 0,
+            "max": 4,
+            "mirrorsCandidate": {
+              "questionId": "insider_dealing",
+              "matchType": "importance"
+            },
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - awareness helpful",
+              "2": "Important - expected to support insider dealing controls",
+              "3": "Very Important - core requirement; leads prevention programme",
+              "4": "Essential - strategic ownership of insider dealing framework"
+            }
+          },
+          {
+            "id": "market_manipulation",
+            "question": "How important is Market Manipulation Detection expertise for this role?",
+            "type": "slider",
+            "min": 0,
+            "max": 4,
+            "mirrorsCandidate": {
+              "questionId": "market_manipulation",
+              "matchType": "importance"
+            },
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - awareness helpful",
+              "2": "Important - expected to identify manipulation risks",
+              "3": "Very Important - core requirement; leads detection programme",
+              "4": "Essential - strategic ownership of manipulation controls"
+            }
+          },
+          {
+            "id": "insider_lists",
+            "question": "How important is Insider Lists Management expertise for this role?",
+            "type": "slider",
+            "min": 0,
+            "max": 4,
+            "mirrorsCandidate": {
+              "questionId": "insider_lists",
+              "matchType": "importance"
+            },
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - awareness helpful",
+              "2": "Important - expected to maintain insider lists",
+              "3": "Very Important - core requirement; owns list management",
+              "4": "Essential - strategic ownership of insider list governance"
+            }
+          },
+          {
+            "id": "pdmr_notifications",
+            "question": "How important is PDMR Notifications expertise for this role?",
+            "type": "slider",
+            "min": 0,
+            "max": 4,
+            "mirrorsCandidate": {
+              "questionId": "pdmr_notifications",
+              "matchType": "importance"
+            },
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - awareness helpful",
+              "2": "Important - expected to process PDMR notifications",
+              "3": "Very Important - core requirement; manages PDMR programme",
+              "4": "Essential - strategic ownership of PDMR framework"
+            }
+          },
+          {
+            "id": "trade_surveillance",
+            "question": "How important is Trade Surveillance Systems expertise for this role?",
+            "type": "slider",
+            "min": 0,
+            "max": 4,
+            "mirrorsCandidate": {
+              "questionId": "trade_surveillance",
+              "matchType": "importance"
+            },
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - awareness helpful",
+              "2": "Important - expected to review surveillance alerts",
+              "3": "Very Important - core requirement; manages surveillance programme",
+              "4": "Essential - strategic ownership of trade surveillance"
+            }
+          },
+          {
+            "id": "communications_surveillance",
+            "question": "How important is Communications Surveillance expertise for this role?",
+            "type": "slider",
+            "min": 0,
+            "max": 4,
+            "mirrorsCandidate": {
+              "questionId": "communications_surveillance",
+              "matchType": "importance"
+            },
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - awareness helpful",
+              "2": "Important - expected to review communications",
+              "3": "Very Important - core requirement; leads e-comms surveillance",
+              "4": "Essential - strategic ownership of comms surveillance"
+            }
+          },
+          {
+            "id": "stor_filing",
+            "question": "How important is STOR Filing (Suspicious Transaction Reports) expertise for this role?",
+            "type": "slider",
+            "min": 0,
+            "max": 4,
+            "mirrorsCandidate": {
+              "questionId": "stor_filing",
+              "matchType": "importance"
+            },
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - awareness helpful",
+              "2": "Important - expected to support STOR preparation",
+              "3": "Very Important - core requirement; manages STOR process",
+              "4": "Essential - strategic accountability for STOR quality"
+            }
+          },
+          {
+            "id": "conflicts_management",
+            "question": "How important is Conflicts of Interest Management expertise for this role?",
+            "type": "slider",
+            "min": 0,
+            "max": 4,
+            "mirrorsCandidate": {
+              "questionId": "conflicts_management",
+              "matchType": "importance"
+            },
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - awareness helpful",
+              "2": "Important - expected to identify and manage conflicts",
+              "3": "Very Important - core requirement; designs conflicts framework",
+              "4": "Essential - strategic ownership of conflicts management"
+            }
+          }
+        ]
+      },
+      {
+        "id": "product_governance",
+        "title": "Product Governance",
+        "description": "Required product governance and distribution capabilities",
+        "order": 11,
+        "helpText": "Rate the importance of product governance competencies for this role (0=Not Required, 4=Essential)",
+        "questions": [
+          {
+            "id": "prod_gov_framework",
+            "question": "How important is Product Governance Framework expertise for this role?",
+            "type": "slider",
+            "min": 0,
+            "max": 4,
+            "mirrorsCandidate": {
+              "questionId": "prod_gov_framework",
+              "matchType": "importance"
+            },
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - awareness helpful",
+              "2": "Important - expected to apply governance framework",
+              "3": "Very Important - core requirement; leads product governance",
+              "4": "Essential - strategic ownership of product governance programme"
+            }
+          },
+          {
+            "id": "target_market",
+            "question": "How important is Target Market Definition expertise for this role?",
+            "type": "slider",
+            "min": 0,
+            "max": 4,
+            "mirrorsCandidate": {
+              "questionId": "target_market",
+              "matchType": "importance"
+            },
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - awareness helpful",
+              "2": "Important - expected to review target market definitions",
+              "3": "Very Important - core requirement; leads target market methodology",
+              "4": "Essential - strategic ownership of target market framework"
+            }
+          },
+          {
+            "id": "product_approval",
+            "question": "How important is Product Approval Process (NPAP) expertise for this role?",
+            "type": "slider",
+            "min": 0,
+            "max": 4,
+            "mirrorsCandidate": {
+              "questionId": "product_approval",
+              "matchType": "importance"
+            },
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - awareness helpful",
+              "2": "Important - expected to support product approvals",
+              "3": "Very Important - core requirement; manages approval process",
+              "4": "Essential - strategic ownership of NPAP governance"
+            }
+          },
+          {
+            "id": "distribution_strategy",
+            "question": "How important is Distribution Strategy Assessment expertise for this role?",
+            "type": "slider",
+            "min": 0,
+            "max": 4,
+            "mirrorsCandidate": {
+              "questionId": "distribution_strategy",
+              "matchType": "importance"
+            },
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - awareness helpful",
+              "2": "Important - expected to review distribution arrangements",
+              "3": "Very Important - core requirement; leads distribution assessment",
+              "4": "Essential - strategic ownership of distribution governance"
+            }
+          },
+          {
+            "id": "product_reviews",
+            "question": "How important is Product Reviews & Monitoring expertise for this role?",
+            "type": "slider",
+            "min": 0,
+            "max": 4,
+            "mirrorsCandidate": {
+              "questionId": "product_reviews",
+              "matchType": "importance"
+            },
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - awareness helpful",
+              "2": "Important - expected to conduct product reviews",
+              "3": "Very Important - core requirement; owns review programme",
+              "4": "Essential - strategic ownership of product monitoring"
+            }
+          },
+          {
+            "id": "manufacturer_distributor",
+            "question": "How important is Manufacturer/Distributor Obligations expertise for this role?",
+            "type": "slider",
+            "min": 0,
+            "max": 4,
+            "mirrorsCandidate": {
+              "questionId": "manufacturer_distributor",
+              "matchType": "importance"
+            },
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - awareness helpful",
+              "2": "Important - expected to understand both roles",
+              "3": "Very Important - core requirement; advises on obligations",
+              "4": "Essential - strategic ownership of manufacturer/distributor framework"
+            }
+          },
+          {
+            "id": "priips_kid",
+            "question": "How important is PRIIPs KID Compliance expertise for this role?",
+            "type": "slider",
+            "min": 0,
+            "max": 4,
+            "mirrorsCandidate": {
+              "questionId": "priips_kid",
+              "matchType": "importance"
+            },
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - awareness helpful",
+              "2": "Important - expected to review KID documents",
+              "3": "Very Important - core requirement; leads KID compliance",
+              "4": "Essential - strategic ownership of PRIIPs programme"
+            }
+          },
+          {
+            "id": "suitability_appropriateness",
+            "question": "How important is Suitability & Appropriateness expertise for this role?",
+            "type": "slider",
+            "min": 0,
+            "max": 4,
+            "mirrorsCandidate": {
+              "questionId": "suitability_appropriateness",
+              "matchType": "importance"
+            },
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - awareness helpful",
+              "2": "Important - expected to apply suitability frameworks",
+              "3": "Very Important - core requirement; leads suitability monitoring",
+              "4": "Essential - strategic ownership of suitability framework"
+            }
+          }
+        ]
+      },
+      {
+        "id": "compliance_monitoring_plan",
+        "title": "Compliance Monitoring Plan (CMP)",
+        "description": "Required compliance monitoring and testing capabilities",
+        "order": 12,
+        "helpText": "Rate the importance of CMP competencies for this role (0=Not Required, 4=Essential)",
+        "questions": [
+          {
+            "id": "cmp_design",
+            "question": "How important is CMP Design & Methodology expertise for this role?",
+            "type": "slider",
+            "min": 0,
+            "max": 4,
+            "mirrorsCandidate": {
+              "questionId": "cmp_design",
+              "matchType": "importance"
+            },
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - awareness helpful",
+              "2": "Important - expected to work within CMP framework",
+              "3": "Very Important - core requirement; designs CMP methodology",
+              "4": "Essential - strategic ownership of CMP architecture"
+            }
+          },
+          {
+            "id": "risk_based_planning",
+            "question": "How important is Risk-Based Monitoring Planning expertise for this role?",
+            "type": "slider",
+            "min": 0,
+            "max": 4,
+            "mirrorsCandidate": {
+              "questionId": "risk_based_planning",
+              "matchType": "importance"
+            },
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - awareness helpful",
+              "2": "Important - expected to apply risk-based approach",
+              "3": "Very Important - core requirement; leads planning process",
+              "4": "Essential - strategic ownership of risk-based methodology"
+            }
+          },
+          {
+            "id": "thematic_reviews",
+            "question": "How important is Thematic Review Design expertise for this role?",
+            "type": "slider",
+            "min": 0,
+            "max": 4,
+            "mirrorsCandidate": {
+              "questionId": "thematic_reviews",
+              "matchType": "importance"
+            },
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - awareness helpful",
+              "2": "Important - expected to execute thematic reviews",
+              "3": "Very Important - core requirement; designs thematic programmes",
+              "4": "Essential - strategic ownership of thematic review framework"
+            }
+          },
+          {
+            "id": "monitoring_testing",
+            "question": "How important is Compliance Testing Execution expertise for this role?",
+            "type": "slider",
+            "min": 0,
+            "max": 4,
+            "mirrorsCandidate": {
+              "questionId": "monitoring_testing",
+              "matchType": "importance"
+            },
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - awareness helpful",
+              "2": "Important - expected to execute testing",
+              "3": "Very Important - core requirement; leads testing programmes",
+              "4": "Essential - strategic ownership of testing methodology"
+            }
+          },
+          {
+            "id": "issue_tracking",
+            "question": "How important is Issue & Action Tracking expertise for this role?",
+            "type": "slider",
+            "min": 0,
+            "max": 4,
+            "mirrorsCandidate": {
+              "questionId": "issue_tracking",
+              "matchType": "importance"
+            },
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - awareness helpful",
+              "2": "Important - expected to track and follow up issues",
+              "3": "Very Important - core requirement; manages issue framework",
+              "4": "Essential - strategic ownership of issue governance"
+            }
+          },
+          {
+            "id": "findings_reporting",
+            "question": "How important is Findings Reporting & Escalation expertise for this role?",
+            "type": "slider",
+            "min": 0,
+            "max": 4,
+            "mirrorsCandidate": {
+              "questionId": "findings_reporting",
+              "matchType": "importance"
+            },
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - awareness helpful",
+              "2": "Important - expected to report findings",
+              "3": "Very Important - core requirement; designs reporting framework",
+              "4": "Essential - strategic ownership of escalation governance"
+            }
+          },
+          {
+            "id": "cmp_governance",
+            "question": "How important is CMP Governance & Oversight expertise for this role?",
+            "type": "slider",
+            "min": 0,
+            "max": 4,
+            "mirrorsCandidate": {
+              "questionId": "cmp_governance",
+              "matchType": "importance"
+            },
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - awareness helpful",
+              "2": "Important - expected to support CMP governance",
+              "3": "Very Important - core requirement; manages governance forums",
+              "4": "Essential - strategic ownership of CMP governance"
+            }
+          },
+          {
+            "id": "quality_assurance",
+            "question": "How important is QA of Monitoring Work expertise for this role?",
+            "type": "slider",
+            "min": 0,
+            "max": 4,
+            "mirrorsCandidate": {
+              "questionId": "quality_assurance",
+              "matchType": "importance"
+            },
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - awareness helpful",
+              "2": "Important - expected to participate in QA",
+              "3": "Very Important - core requirement; leads QA programme",
+              "4": "Essential - strategic ownership of quality framework"
+            }
+          }
+        ]
+      },
+      {
+        "id": "breach_management_incidents",
+        "title": "Breach Management & Incidents",
+        "description": "Required breach identification, investigation and remediation capabilities",
+        "order": 13,
+        "helpText": "Rate the importance of breach management competencies for this role (0=Not Required, 4=Essential)",
+        "questions": [
+          {
+            "id": "breach_identification",
+            "question": "How important is Breach Identification & Classification expertise for this role?",
+            "type": "slider",
+            "min": 0,
+            "max": 4,
+            "mirrorsCandidate": {
+              "questionId": "breach_identification",
+              "matchType": "importance"
+            },
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - awareness helpful",
+              "2": "Important - expected to identify and classify breaches",
+              "3": "Very Important - core requirement; designs classification framework",
+              "4": "Essential - strategic ownership of breach identification"
+            }
+          },
+          {
+            "id": "breach_investigation_conduct",
+            "question": "How important is Breach Investigation expertise for this role?",
+            "type": "slider",
+            "min": 0,
+            "max": 4,
+            "mirrorsCandidate": {
+              "questionId": "breach_investigation_conduct",
+              "matchType": "importance"
+            },
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - awareness helpful",
+              "2": "Important - expected to conduct investigations",
+              "3": "Very Important - core requirement; leads complex investigations",
+              "4": "Essential - strategic ownership of investigation methodology"
+            }
+          },
+          {
+            "id": "root_cause_analysis",
+            "question": "How important is Root Cause Analysis expertise for this role?",
+            "type": "slider",
+            "min": 0,
+            "max": 4,
+            "mirrorsCandidate": {
+              "questionId": "root_cause_analysis",
+              "matchType": "importance"
+            },
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - awareness helpful",
+              "2": "Important - expected to conduct RCA",
+              "3": "Very Important - core requirement; leads RCA methodology",
+              "4": "Essential - strategic ownership of root cause framework"
+            }
+          },
+          {
+            "id": "remediation_oversight",
+            "question": "How important is Remediation Oversight expertise for this role?",
+            "type": "slider",
+            "min": 0,
+            "max": 4,
+            "mirrorsCandidate": {
+              "questionId": "remediation_oversight",
+              "matchType": "importance"
+            },
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - awareness helpful",
+              "2": "Important - expected to track remediation",
+              "3": "Very Important - core requirement; manages remediation programmes",
+              "4": "Essential - strategic ownership of remediation governance"
+            }
+          },
+          {
+            "id": "regulatory_notifications",
+            "question": "How important is Regulatory Breach Notifications expertise for this role?",
+            "type": "slider",
+            "min": 0,
+            "max": 4,
+            "mirrorsCandidate": {
+              "questionId": "regulatory_notifications",
+              "matchType": "importance"
+            },
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - awareness helpful",
+              "2": "Important - expected to support notification process",
+              "3": "Very Important - core requirement; manages notification framework",
+              "4": "Essential - strategic accountability for regulatory notifications"
+            }
+          },
+          {
+            "id": "lessons_learned",
+            "question": "How important is Lessons Learned Process expertise for this role?",
+            "type": "slider",
+            "min": 0,
+            "max": 4,
+            "mirrorsCandidate": {
+              "questionId": "lessons_learned",
+              "matchType": "importance"
+            },
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - awareness helpful",
+              "2": "Important - expected to contribute to lessons learned",
+              "3": "Very Important - core requirement; leads LL process",
+              "4": "Essential - strategic ownership of continuous improvement"
+            }
+          },
+          {
+            "id": "breach_reporting",
+            "question": "How important is Breach Reporting to Board/Committees expertise for this role?",
+            "type": "slider",
+            "min": 0,
+            "max": 4,
+            "mirrorsCandidate": {
+              "questionId": "breach_reporting",
+              "matchType": "importance"
+            },
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - awareness helpful",
+              "2": "Important - expected to prepare breach reports",
+              "3": "Very Important - core requirement; presents to committees",
+              "4": "Essential - strategic ownership of breach MI"
+            }
+          },
+          {
+            "id": "customer_redress",
+            "question": "How important is Customer Redress Programmes expertise for this role?",
+            "type": "slider",
+            "min": 0,
+            "max": 4,
+            "mirrorsCandidate": {
+              "questionId": "customer_redress",
+              "matchType": "importance"
+            },
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - awareness helpful",
+              "2": "Important - expected to support redress activities",
+              "3": "Very Important - core requirement; designs redress programmes",
+              "4": "Essential - strategic ownership of redress framework"
+            }
+          }
+        ]
+      },
+      {
+        "id": "regulatory_change_horizon",
+        "title": "Regulatory Change & Horizon Scanning",
+        "description": "Required regulatory change management and business advisory capabilities",
+        "order": 14,
+        "helpText": "Rate the importance of regulatory change competencies for this role (0=Not Required, 4=Essential)",
+        "questions": [
+          {
+            "id": "horizon_scanning",
+            "question": "How important is Regulatory Horizon Scanning expertise for this role?",
+            "type": "slider",
+            "min": 0,
+            "max": 4,
+            "mirrorsCandidate": {
+              "questionId": "horizon_scanning",
+              "matchType": "importance"
+            },
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - awareness helpful",
+              "2": "Important - expected to monitor regulatory developments",
+              "3": "Very Important - core requirement; leads horizon scanning",
+              "4": "Essential - strategic ownership of regulatory intelligence"
+            }
+          },
+          {
+            "id": "reg_change_assessment",
+            "question": "How important is Regulatory Change Impact Assessment expertise for this role?",
+            "type": "slider",
+            "min": 0,
+            "max": 4,
+            "mirrorsCandidate": {
+              "questionId": "reg_change_assessment",
+              "matchType": "importance"
+            },
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - awareness helpful",
+              "2": "Important - expected to conduct impact assessments",
+              "3": "Very Important - core requirement; leads assessment methodology",
+              "4": "Essential - strategic ownership of change impact framework"
+            }
+          },
+          {
+            "id": "implementation_projects",
+            "question": "How important is Implementation Project Management expertise for this role?",
+            "type": "slider",
+            "min": 0,
+            "max": 4,
+            "mirrorsCandidate": {
+              "questionId": "implementation_projects",
+              "matchType": "importance"
+            },
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - awareness helpful",
+              "2": "Important - expected to support implementation",
+              "3": "Very Important - core requirement; leads reg change projects",
+              "4": "Essential - strategic ownership of implementation programmes"
+            }
+          },
+          {
+            "id": "consultation_responses",
+            "question": "How important is Consultation Responses expertise for this role?",
+            "type": "slider",
+            "min": 0,
+            "max": 4,
+            "mirrorsCandidate": {
+              "questionId": "consultation_responses",
+              "matchType": "importance"
+            },
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - awareness helpful",
+              "2": "Important - expected to contribute to responses",
+              "3": "Very Important - core requirement; leads consultation process",
+              "4": "Essential - strategic ownership of industry engagement"
+            }
+          },
+          {
+            "id": "policy_updates",
+            "question": "How important is Policy & Procedure Updates expertise for this role?",
+            "type": "slider",
+            "min": 0,
+            "max": 4,
+            "mirrorsCandidate": {
+              "questionId": "policy_updates",
+              "matchType": "importance"
+            },
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - awareness helpful",
+              "2": "Important - expected to update policies",
+              "3": "Very Important - core requirement; owns policy framework",
+              "4": "Essential - strategic ownership of policy governance"
+            }
+          },
+          {
+            "id": "business_partnering_leadership",
+            "question": "How important is Business Advisory & Partnering expertise for this role?",
+            "type": "slider",
+            "min": 0,
+            "max": 4,
+            "mirrorsCandidate": {
+              "questionId": "business_partnering_leadership",
+              "matchType": "importance"
+            },
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - awareness helpful",
+              "2": "Important - expected to advise business",
+              "3": "Very Important - core requirement; leads business partnering",
+              "4": "Essential - strategic ownership of advisory model"
+            }
+          },
+          {
+            "id": "training_design",
+            "question": "How important is Compliance Training Design expertise for this role?",
+            "type": "slider",
+            "min": 0,
+            "max": 4,
+            "mirrorsCandidate": {
+              "questionId": "training_design",
+              "matchType": "importance"
+            },
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - awareness helpful",
+              "2": "Important - expected to deliver training",
+              "3": "Very Important - core requirement; designs training programmes",
+              "4": "Essential - strategic ownership of training framework"
+            }
+          },
+          {
+            "id": "regulatory_relationships",
+            "question": "How important is Regulatory Relationship Management expertise for this role?",
+            "type": "slider",
+            "min": 0,
+            "max": 4,
+            "mirrorsCandidate": {
+              "questionId": "regulatory_relationships",
+              "matchType": "importance"
+            },
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - awareness helpful",
+              "2": "Important - expected to support regulatory interactions",
+              "3": "Very Important - core requirement; manages regulatory dialogue",
+              "4": "Essential - strategic ownership of regulatory relationships"
+            }
+          }
+        ]
+      },
+      {
+        "id": "regtech_platforms",
+        "title": "RegTech Platforms",
+        "description": "Required RegTech platform experience and implementation capabilities",
+        "order": 15,
+        "helpText": "Rate the importance of RegTech competencies for this role (0=Not Required, 4=Essential)",
+        "questions": [
+          {
+            "id": "regtech_experience",
+            "question": "RegTech Platform Experience Requirements",
+            "description": "Select which RegTech platforms are required for this role",
+            "type": "system_proficiency",
+            "systems": [
+              {
+                "id": "fenergo",
+                "name": "Fenergo (CLM/KYC)"
+              },
+              {
+                "id": "encompass",
+                "name": "Encompass (KYC)"
+              },
+              {
+                "id": "nice_actimize",
+                "name": "Nice Actimize (AML/TM)"
+              },
+              {
+                "id": "napier",
+                "name": "Napier (AML)"
+              },
+              {
+                "id": "quantexa",
+                "name": "Quantexa (Entity Resolution)"
+              },
+              {
+                "id": "axiomsL",
+                "name": "AxiomSL (Regulatory Reporting)"
+              },
+              {
+                "id": "workiva",
+                "name": "Workiva (Compliance Reporting)"
+              },
+              {
+                "id": "cube",
+                "name": "CUBE (Regulatory Intelligence)"
+              },
+              {
+                "id": "complyadvantage",
+                "name": "ComplyAdvantage (Screening)"
+              },
+              {
+                "id": "world_check",
+                "name": "World-Check (Screening)"
+              }
+            ],
+            "mirrorsCandidate": {
+              "questionId": "regtech_experience",
+              "matchType": "system_proficiency"
+            }
+          },
+          {
+            "id": "regtech_selection",
+            "question": "How important is RegTech Vendor Selection expertise for this role?",
+            "type": "slider",
+            "min": 0,
+            "max": 4,
+            "mirrorsCandidate": {
+              "questionId": "regtech_selection",
+              "matchType": "importance"
+            },
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - awareness helpful",
+              "2": "Important - expected to support vendor evaluation",
+              "3": "Very Important - core requirement; leads vendor selection",
+              "4": "Essential - strategic ownership of RegTech strategy"
+            }
+          },
+          {
+            "id": "regtech_implementation",
+            "question": "How important is RegTech Implementation expertise for this role?",
+            "type": "slider",
+            "min": 0,
+            "max": 4,
+            "mirrorsCandidate": {
+              "questionId": "regtech_implementation",
+              "matchType": "importance"
+            },
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - awareness helpful",
+              "2": "Important - expected to support implementations",
+              "3": "Very Important - core requirement; leads implementation projects",
+              "4": "Essential - strategic ownership of RegTech transformation"
+            }
+          },
+          {
+            "id": "workflow_automation",
+            "question": "How important is Compliance Workflow Automation expertise for this role?",
+            "type": "slider",
+            "min": 0,
+            "max": 4,
+            "mirrorsCandidate": {
+              "questionId": "workflow_automation",
+              "matchType": "importance"
+            },
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - awareness helpful",
+              "2": "Important - expected to use automated workflows",
+              "3": "Very Important - core requirement; designs automation solutions",
+              "4": "Essential - strategic ownership of automation strategy"
+            }
+          },
+          {
+            "id": "case_management",
+            "question": "How important is Case Management Systems expertise for this role?",
+            "type": "slider",
+            "min": 0,
+            "max": 4,
+            "mirrorsCandidate": {
+              "questionId": "case_management",
+              "matchType": "importance"
+            },
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - awareness helpful",
+              "2": "Important - expected to use case management systems",
+              "3": "Very Important - core requirement; optimises case management",
+              "4": "Essential - strategic ownership of case management strategy"
+            }
+          },
+          {
+            "id": "regulatory_reporting_tech",
+            "question": "How important is Regulatory Reporting Technology expertise for this role?",
+            "type": "slider",
+            "min": 0,
+            "max": 4,
+            "mirrorsCandidate": {
+              "questionId": "regulatory_reporting_tech",
+              "matchType": "importance"
+            },
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - awareness helpful",
+              "2": "Important - expected to use reporting platforms",
+              "3": "Very Important - core requirement; leads reporting technology",
+              "4": "Essential - strategic ownership of reporting infrastructure"
+            }
+          },
+          {
+            "id": "api_integration",
+            "question": "How important is API Integration & Data Feeds expertise for this role?",
+            "type": "slider",
+            "min": 0,
+            "max": 4,
+            "mirrorsCandidate": {
+              "questionId": "api_integration",
+              "matchType": "importance"
+            },
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - awareness helpful",
+              "2": "Important - expected to understand API integrations",
+              "3": "Very Important - core requirement; designs integration architecture",
+              "4": "Essential - strategic ownership of data integration strategy"
+            }
+          }
+        ]
+      },
+      {
+        "id": "data_analytics_technical",
+        "title": "Data Analytics & Technical Skills",
+        "description": "Required data analytics and technical capabilities for compliance",
+        "order": 16,
+        "helpText": "Rate the importance of technical competencies for this role (0=Not Required, 4=Essential)",
+        "questions": [
+          {
+            "id": "sql_proficiency",
+            "question": "How important is SQL Proficiency for this role?",
+            "type": "slider",
+            "min": 0,
+            "max": 4,
+            "mirrorsCandidate": {
+              "questionId": "sql_proficiency",
+              "matchType": "importance"
+            },
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - basic querying helpful",
+              "2": "Important - expected to write and analyse queries",
+              "3": "Very Important - core requirement; complex analysis expected",
+              "4": "Essential - advanced SQL required from day one"
+            }
+          },
+          {
+            "id": "python_analytics",
+            "question": "How important is Python for Compliance Analytics for this role?",
+            "type": "slider",
+            "min": 0,
+            "max": 4,
+            "mirrorsCandidate": {
+              "questionId": "python_analytics",
+              "matchType": "importance"
+            },
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - basic awareness helpful",
+              "2": "Important - expected to use Python for analysis",
+              "3": "Very Important - core requirement; develops Python solutions",
+              "4": "Essential - advanced Python required from day one"
+            }
+          },
+          {
+            "id": "data_visualization",
+            "question": "How important is Data Visualization (Tableau/PowerBI) for this role?",
+            "type": "slider",
+            "min": 0,
+            "max": 4,
+            "mirrorsCandidate": {
+              "questionId": "data_visualization",
+              "matchType": "importance"
+            },
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - basic awareness helpful",
+              "2": "Important - expected to create dashboards",
+              "3": "Very Important - core requirement; designs MI frameworks",
+              "4": "Essential - advanced visualization required from day one"
+            }
+          },
+          {
+            "id": "excel_advanced",
+            "question": "How important is Advanced Excel & VBA for this role?",
+            "type": "slider",
+            "min": 0,
+            "max": 4,
+            "mirrorsCandidate": {
+              "questionId": "excel_advanced",
+              "matchType": "importance"
+            },
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - intermediate Excel helpful",
+              "2": "Important - expected advanced Excel capability",
+              "3": "Very Important - core requirement; develops Excel solutions",
+              "4": "Essential - expert Excel/VBA required from day one"
+            }
+          },
+          {
+            "id": "data_quality",
+            "question": "How important is Data Quality Assessment for this role?",
+            "type": "slider",
+            "min": 0,
+            "max": 4,
+            "mirrorsCandidate": {
+              "questionId": "data_quality",
+              "matchType": "importance"
+            },
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - awareness helpful",
+              "2": "Important - expected to assess data quality",
+              "3": "Very Important - core requirement; leads data quality initiatives",
+              "4": "Essential - strategic ownership of data quality"
+            }
+          },
+          {
+            "id": "dashboard_design",
+            "question": "How important is Compliance Dashboard Design for this role?",
+            "type": "slider",
+            "min": 0,
+            "max": 4,
+            "mirrorsCandidate": {
+              "questionId": "dashboard_design",
+              "matchType": "importance"
+            },
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - awareness helpful",
+              "2": "Important - expected to design dashboards",
+              "3": "Very Important - core requirement; owns MI framework",
+              "4": "Essential - strategic ownership of compliance MI"
+            }
+          },
+          {
+            "id": "data_extraction",
+            "question": "How important is Data Extraction & Analysis for this role?",
+            "type": "slider",
+            "min": 0,
+            "max": 4,
+            "mirrorsCandidate": {
+              "questionId": "data_extraction",
+              "matchType": "importance"
+            },
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - awareness helpful",
+              "2": "Important - expected to extract and analyse data",
+              "3": "Very Important - core requirement; leads data initiatives",
+              "4": "Essential - strategic ownership of data analytics"
+            }
+          },
+          {
+            "id": "automation_scripting",
+            "question": "How important is Process Automation & Scripting for this role?",
+            "type": "slider",
+            "min": 0,
+            "max": 4,
+            "mirrorsCandidate": {
+              "questionId": "automation_scripting",
+              "matchType": "importance"
+            },
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - awareness helpful",
+              "2": "Important - expected to automate processes",
+              "3": "Very Important - core requirement; develops automation",
+              "4": "Essential - strategic ownership of automation programme"
+            }
+          }
+        ]
+      },
+      {
+        "id": "ai_algorithm_governance",
+        "title": "AI & Algorithm Governance",
+        "description": "Required AI governance and emerging technology risk capabilities",
+        "order": 17,
+        "helpText": "Rate the importance of AI governance competencies for this role (0=Not Required, 4=Essential)",
+        "questions": [
+          {
+            "id": "ai_governance_framework",
+            "question": "How important is AI Governance Framework expertise for this role?",
+            "type": "slider",
+            "min": 0,
+            "max": 4,
+            "mirrorsCandidate": {
+              "questionId": "ai_governance_framework",
+              "matchType": "importance"
+            },
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - awareness helpful",
+              "2": "Important - expected to understand AI governance",
+              "3": "Very Important - core requirement; develops AI governance",
+              "4": "Essential - strategic ownership of AI governance"
+            }
+          },
+          {
+            "id": "genai_risk",
+            "question": "How important is Generative AI Compliance Governance expertise for this role?",
+            "type": "slider",
+            "min": 0,
+            "max": 4,
+            "mirrorsCandidate": {
+              "questionId": "genai_risk",
+              "matchType": "importance"
+            },
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - awareness helpful",
+              "2": "Important - expected to understand GenAI risks",
+              "3": "Very Important - core requirement; develops GenAI controls",
+              "4": "Essential - strategic ownership of GenAI compliance"
+            }
+          },
+          {
+            "id": "algorithmic_bias",
+            "question": "How important is Algorithmic Bias & Fairness expertise for this role?",
+            "type": "slider",
+            "min": 0,
+            "max": 4,
+            "mirrorsCandidate": {
+              "questionId": "algorithmic_bias",
+              "matchType": "importance"
+            },
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - awareness helpful",
+              "2": "Important - expected to assess bias risks",
+              "3": "Very Important - core requirement; develops fairness frameworks",
+              "4": "Essential - strategic ownership of algorithmic fairness"
+            }
+          },
+          {
+            "id": "model_explainability",
+            "question": "How important is Model Explainability Requirements expertise for this role?",
+            "type": "slider",
+            "min": 0,
+            "max": 4,
+            "mirrorsCandidate": {
+              "questionId": "model_explainability",
+              "matchType": "importance"
+            },
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - awareness helpful",
+              "2": "Important - expected to assess explainability",
+              "3": "Very Important - core requirement; defines requirements",
+              "4": "Essential - strategic ownership of explainability standards"
+            }
+          },
+          {
+            "id": "eu_ai_act",
+            "question": "How important is EU AI Act Compliance expertise for this role?",
+            "type": "slider",
+            "min": 0,
+            "max": 4,
+            "mirrorsCandidate": {
+              "questionId": "eu_ai_act",
+              "matchType": "importance"
+            },
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - awareness helpful",
+              "2": "Important - expected to understand EU AI Act",
+              "3": "Very Important - core requirement; leads EU AI Act compliance",
+              "4": "Essential - strategic ownership of AI Act implementation"
+            }
+          },
+          {
+            "id": "ai_use_cases",
+            "question": "How important is AI Use Case Assessment expertise for this role?",
+            "type": "slider",
+            "min": 0,
+            "max": 4,
+            "mirrorsCandidate": {
+              "questionId": "ai_use_cases",
+              "matchType": "importance"
+            },
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - awareness helpful",
+              "2": "Important - expected to assess AI use cases",
+              "3": "Very Important - core requirement; designs assessment framework",
+              "4": "Essential - strategic ownership of AI use case governance"
+            }
+          },
+          {
+            "id": "hallucination_risk",
+            "question": "How important is AI Hallucination Risk Management expertise for this role?",
+            "type": "slider",
+            "min": 0,
+            "max": 4,
+            "mirrorsCandidate": {
+              "questionId": "hallucination_risk",
+              "matchType": "importance"
+            },
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - awareness helpful",
+              "2": "Important - expected to understand hallucination risks",
+              "3": "Very Important - core requirement; develops mitigation controls",
+              "4": "Essential - strategic ownership of output validation"
+            }
+          },
+          {
+            "id": "model_drift",
+            "question": "How important is Model Drift & Performance Monitoring expertise for this role?",
+            "type": "slider",
+            "min": 0,
+            "max": 4,
+            "mirrorsCandidate": {
+              "questionId": "model_drift",
+              "matchType": "importance"
+            },
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - awareness helpful",
+              "2": "Important - expected to support model monitoring",
+              "3": "Very Important - core requirement; leads model monitoring",
+              "4": "Essential - strategic ownership of model performance"
+            }
+          }
+        ]
+      },
+      {
+        "id": "esg_climate_compliance",
+        "title": "ESG & Climate Compliance",
+        "description": "Required ESG and sustainable finance compliance capabilities",
+        "order": 18,
+        "helpText": "Rate the importance of ESG compliance competencies for this role (0=Not Required, 4=Essential)",
+        "questions": [
+          {
+            "id": "esg_compliance",
+            "question": "How important is ESG Compliance Framework expertise for this role?",
+            "type": "slider",
+            "min": 0,
+            "max": 4,
+            "mirrorsCandidate": {
+              "questionId": "esg_compliance",
+              "matchType": "importance"
+            },
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - awareness helpful",
+              "2": "Important - expected to understand ESG frameworks",
+              "3": "Very Important - core requirement; develops ESG compliance",
+              "4": "Essential - strategic ownership of ESG programme"
+            }
+          },
+          {
+            "id": "greenwashing_risk",
+            "question": "How important is Greenwashing Prevention & Compliance expertise for this role?",
+            "type": "slider",
+            "min": 0,
+            "max": 4,
+            "mirrorsCandidate": {
+              "questionId": "greenwashing_risk",
+              "matchType": "importance"
+            },
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - awareness helpful",
+              "2": "Important - expected to identify greenwashing risks",
+              "3": "Very Important - core requirement; develops anti-greenwashing",
+              "4": "Essential - strategic ownership of greenwashing controls"
+            }
+          },
+          {
+            "id": "sfdr",
+            "question": "How important is SFDR (Sustainable Finance Disclosure) expertise for this role?",
+            "type": "slider",
+            "min": 0,
+            "max": 4,
+            "mirrorsCandidate": {
+              "questionId": "sfdr",
+              "matchType": "importance"
+            },
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - awareness helpful",
+              "2": "Important - expected to understand SFDR",
+              "3": "Very Important - core requirement; leads SFDR compliance",
+              "4": "Essential - strategic ownership of SFDR programme"
+            }
+          },
+          {
+            "id": "esg_labelling",
+            "question": "How important is ESG Fund Labelling Rules expertise for this role?",
+            "type": "slider",
+            "min": 0,
+            "max": 4,
+            "mirrorsCandidate": {
+              "questionId": "esg_labelling",
+              "matchType": "importance"
+            },
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - awareness helpful",
+              "2": "Important - expected to understand labelling rules",
+              "3": "Very Important - core requirement; leads labelling compliance",
+              "4": "Essential - strategic ownership of ESG labelling"
+            }
+          },
+          {
+            "id": "climate_disclosures",
+            "question": "How important is Climate-Related Disclosures expertise for this role?",
+            "type": "slider",
+            "min": 0,
+            "max": 4,
+            "mirrorsCandidate": {
+              "questionId": "climate_disclosures",
+              "matchType": "importance"
+            },
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - awareness helpful",
+              "2": "Important - expected to support climate disclosures",
+              "3": "Very Important - core requirement; leads disclosure framework",
+              "4": "Essential - strategic ownership of climate disclosures"
+            }
+          },
+          {
+            "id": "tcfd_compliance",
+            "question": "How important is TCFD Compliance expertise for this role?",
+            "type": "slider",
+            "min": 0,
+            "max": 4,
+            "mirrorsCandidate": {
+              "questionId": "tcfd_compliance",
+              "matchType": "importance"
+            },
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - awareness helpful",
+              "2": "Important - expected to understand TCFD",
+              "3": "Very Important - core requirement; leads TCFD compliance",
+              "4": "Essential - strategic ownership of TCFD programme"
+            }
+          },
+          {
+            "id": "esg_data_verification",
+            "question": "How important is ESG Data Verification expertise for this role?",
+            "type": "slider",
+            "min": 0,
+            "max": 4,
+            "mirrorsCandidate": {
+              "questionId": "esg_data_verification",
+              "matchType": "importance"
+            },
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - awareness helpful",
+              "2": "Important - expected to verify ESG data",
+              "3": "Very Important - core requirement; leads data verification",
+              "4": "Essential - strategic ownership of ESG data quality"
+            }
+          },
+          {
+            "id": "anti_greenwashing",
+            "question": "How important is FCA Anti-Greenwashing Rule expertise for this role?",
+            "type": "slider",
+            "min": 0,
+            "max": 4,
+            "mirrorsCandidate": {
+              "questionId": "anti_greenwashing",
+              "matchType": "importance"
+            },
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - awareness helpful",
+              "2": "Important - expected to apply anti-greenwashing rule",
+              "3": "Very Important - core requirement; leads compliance",
+              "4": "Essential - strategic ownership of anti-greenwashing"
+            }
+          }
+        ]
+      },
+      {
+        "id": "behavioral_competencies",
+        "title": "Behavioral Competencies",
+        "description": "Required leadership behaviors and soft skills",
+        "order": 19,
+        "helpText": "Rate the importance of behavioral competencies for this role (0=Not Required, 4=Essential)",
+        "questions": [
+          {
+            "id": "psychological_safety",
+            "question": "How important is Psychological Safety Culture expertise for this role?",
+            "type": "slider",
+            "min": 0,
+            "max": 4,
+            "mirrorsCandidate": {
+              "questionId": "psychological_safety",
+              "matchType": "importance"
+            },
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - awareness helpful",
+              "2": "Important - expected to support safe environment",
+              "3": "Very Important - core requirement; builds psychological safety",
+              "4": "Essential - strategic leadership of safety culture"
+            }
+          },
+          {
+            "id": "ethical_leadership",
+            "question": "How important is Ethical Leadership for this role?",
+            "type": "slider",
+            "min": 0,
+            "max": 4,
+            "mirrorsCandidate": {
+              "questionId": "ethical_leadership",
+              "matchType": "importance"
+            },
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - awareness helpful",
+              "2": "Important - expected to demonstrate ethics",
+              "3": "Very Important - core requirement; role models ethics",
+              "4": "Essential - strategic leadership of ethical culture"
+            }
+          },
+          {
+            "id": "speak_up_culture",
+            "question": "How important is Speak Up / Whistleblowing Culture expertise for this role?",
+            "type": "slider",
+            "min": 0,
+            "max": 4,
+            "mirrorsCandidate": {
+              "questionId": "speak_up_culture",
+              "matchType": "importance"
+            },
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - awareness helpful",
+              "2": "Important - expected to encourage speaking up",
+              "3": "Very Important - core requirement; builds speak up culture",
+              "4": "Essential - strategic ownership of speak up framework"
+            }
+          },
+          {
+            "id": "challenger_mindset",
+            "question": "How important is Constructive Challenge for this role?",
+            "type": "slider",
+            "min": 0,
+            "max": 4,
+            "mirrorsCandidate": {
+              "questionId": "challenger_mindset",
+              "matchType": "importance"
+            },
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - awareness helpful",
+              "2": "Important - expected to challenge appropriately",
+              "3": "Very Important - core requirement; leads challenge culture",
+              "4": "Essential - strategic leadership of constructive challenge"
+            }
+          },
+          {
+            "id": "commercial_awareness",
+            "question": "How important is Commercial Awareness for this role?",
+            "type": "slider",
+            "min": 0,
+            "max": 4,
+            "mirrorsCandidate": {
+              "questionId": "commercial_awareness",
+              "matchType": "importance"
+            },
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - awareness helpful",
+              "2": "Important - expected to understand business context",
+              "3": "Very Important - core requirement; balances risk and commercial",
+              "4": "Essential - strategic commercial partner"
+            }
+          },
+          {
+            "id": "change_leadership",
+            "question": "How important is Change Leadership for this role?",
+            "type": "slider",
+            "min": 0,
+            "max": 4,
+            "mirrorsCandidate": {
+              "questionId": "change_leadership",
+              "matchType": "importance"
+            },
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - awareness helpful",
+              "2": "Important - expected to support change",
+              "3": "Very Important - core requirement; leads change initiatives",
+              "4": "Essential - strategic transformation leader"
+            }
+          },
+          {
+            "id": "resilience_pressure",
+            "question": "How important is Resilience Under Pressure for this role?",
+            "type": "slider",
+            "min": 0,
+            "max": 4,
+            "mirrorsCandidate": {
+              "questionId": "resilience_pressure",
+              "matchType": "importance"
+            },
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - awareness helpful",
+              "2": "Important - expected to handle pressure",
+              "3": "Very Important - core requirement; thrives under pressure",
+              "4": "Essential - exceptional resilience required"
+            }
+          },
+          {
+            "id": "integrity_courage",
+            "question": "How important is Integrity & Moral Courage for this role?",
+            "type": "slider",
+            "min": 0,
+            "max": 4,
+            "mirrorsCandidate": {
+              "questionId": "integrity_courage",
+              "matchType": "importance"
+            },
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - awareness helpful",
+              "2": "Important - expected to act with integrity",
+              "3": "Very Important - core requirement; demonstrates courage",
+              "4": "Essential - exemplary integrity required"
+            }
+          }
+        ]
+      },
+      {
+        "id": "stakeholder_management_influence",
+        "title": "Stakeholder Management & Influence",
+        "description": "Required stakeholder engagement and influence capabilities",
+        "order": 20,
+        "helpText": "Rate the importance of stakeholder management competencies for this role (0=Not Required, 4=Essential)",
+        "questions": [
+          {
+            "id": "board_presentation",
+            "question": "How important is Board & Committee Presentation for this role?",
+            "type": "slider",
+            "min": 0,
+            "max": 4,
+            "mirrorsCandidate": {
+              "questionId": "board_presentation",
+              "matchType": "importance"
+            },
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - awareness helpful",
+              "2": "Important - expected to prepare board materials",
+              "3": "Very Important - core requirement; presents to committees",
+              "4": "Essential - regular board/ExCo presentations expected"
+            }
+          },
+          {
+            "id": "executive_influence",
+            "question": "How important is Executive Stakeholder Influence for this role?",
+            "type": "slider",
+            "min": 0,
+            "max": 4,
+            "mirrorsCandidate": {
+              "questionId": "executive_influence",
+              "matchType": "importance"
+            },
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - awareness helpful",
+              "2": "Important - expected to engage executives",
+              "3": "Very Important - core requirement; influences executives",
+              "4": "Essential - strategic executive partner"
+            }
+          },
+          {
+            "id": "regulatory_engagement",
+            "question": "How important is Regulatory Engagement for this role?",
+            "type": "slider",
+            "min": 0,
+            "max": 4,
+            "mirrorsCandidate": {
+              "questionId": "regulatory_engagement",
+              "matchType": "importance"
+            },
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - awareness helpful",
+              "2": "Important - expected to support regulatory meetings",
+              "3": "Very Important - core requirement; leads regulatory dialogue",
+              "4": "Essential - strategic regulatory relationship owner"
+            }
+          },
+          {
+            "id": "first_line_engagement",
+            "question": "How important is First Line Engagement for this role?",
+            "type": "slider",
+            "min": 0,
+            "max": 4,
+            "mirrorsCandidate": {
+              "questionId": "first_line_engagement",
+              "matchType": "importance"
+            },
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - awareness helpful",
+              "2": "Important - expected to work with first line",
+              "3": "Very Important - core requirement; strong 1LoD relationships",
+              "4": "Essential - strategic 1LoD partnership"
+            }
+          },
+          {
+            "id": "audit_liaison",
+            "question": "How important is Internal/External Audit Liaison for this role?",
+            "type": "slider",
+            "min": 0,
+            "max": 4,
+            "mirrorsCandidate": {
+              "questionId": "audit_liaison",
+              "matchType": "importance"
+            },
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - awareness helpful",
+              "2": "Important - expected to support audit activities",
+              "3": "Very Important - core requirement; manages audit relationship",
+              "4": "Essential - strategic audit partnership"
+            }
+          }
+        ]
+      },
+      {
+        "id": "fs_subsector_experience",
+        "title": "FS Sub-Sector Experience",
+        "description": "Required financial services sub-sector experience",
+        "order": 21,
+        "helpText": "Rate the importance of specific FS sub-sector experience for this role (0=Not Required, 4=Essential)",
+        "questions": [
+          {
+            "id": "sector_banking",
+            "question": "How important is Banking (Retail/Commercial/Investment) experience for this role?",
+            "type": "slider",
+            "min": 0,
+            "max": 4,
+            "mirrorsCandidate": {
+              "questionId": "sector_banking",
+              "matchType": "importance"
+            },
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - some exposure helpful",
+              "2": "Important - banking experience expected",
+              "3": "Very Important - strong banking background required",
+              "4": "Essential - deep banking expertise required"
+            }
+          },
+          {
+            "id": "sector_insurance",
+            "question": "How important is Insurance (Life/General/Reinsurance) experience for this role?",
+            "type": "slider",
+            "min": 0,
+            "max": 4,
+            "mirrorsCandidate": {
+              "questionId": "sector_insurance",
+              "matchType": "importance"
+            },
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - some exposure helpful",
+              "2": "Important - insurance experience expected",
+              "3": "Very Important - strong insurance background required",
+              "4": "Essential - deep insurance expertise required"
+            }
+          },
+          {
+            "id": "sector_asset_management",
+            "question": "How important is Asset Management experience for this role?",
+            "type": "slider",
+            "min": 0,
+            "max": 4,
+            "mirrorsCandidate": {
+              "questionId": "sector_asset_management",
+              "matchType": "importance"
+            },
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - some exposure helpful",
+              "2": "Important - asset management experience expected",
+              "3": "Very Important - strong AM background required",
+              "4": "Essential - deep asset management expertise required"
+            }
+          },
+          {
+            "id": "sector_wealth",
+            "question": "How important is Wealth Management / Private Banking experience for this role?",
+            "type": "slider",
+            "min": 0,
+            "max": 4,
+            "mirrorsCandidate": {
+              "questionId": "sector_wealth",
+              "matchType": "importance"
+            },
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - some exposure helpful",
+              "2": "Important - wealth management experience expected",
+              "3": "Very Important - strong WM background required",
+              "4": "Essential - deep wealth management expertise required"
+            }
+          },
+          {
+            "id": "sector_payments",
+            "question": "How important is Payments / Fintech experience for this role?",
+            "type": "slider",
+            "min": 0,
+            "max": 4,
+            "mirrorsCandidate": {
+              "questionId": "sector_payments",
+              "matchType": "importance"
+            },
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - some exposure helpful",
+              "2": "Important - payments/fintech experience expected",
+              "3": "Very Important - strong payments background required",
+              "4": "Essential - deep payments/fintech expertise required"
+            }
+          },
+          {
+            "id": "sector_capital_markets",
+            "question": "How important is Capital Markets / Trading experience for this role?",
+            "type": "slider",
+            "min": 0,
+            "max": 4,
+            "mirrorsCandidate": {
+              "questionId": "sector_capital_markets",
+              "matchType": "importance"
+            },
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - some exposure helpful",
+              "2": "Important - capital markets experience expected",
+              "3": "Very Important - strong markets background required",
+              "4": "Essential - deep capital markets expertise required"
+            }
+          },
+          {
+            "id": "sector_consumer_credit",
+            "question": "How important is Consumer Credit / Lending experience for this role?",
+            "type": "slider",
+            "min": 0,
+            "max": 4,
+            "mirrorsCandidate": {
+              "questionId": "sector_consumer_credit",
+              "matchType": "importance"
+            },
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - some exposure helpful",
+              "2": "Important - consumer credit experience expected",
+              "3": "Very Important - strong lending background required",
+              "4": "Essential - deep consumer credit expertise required"
+            }
+          },
+          {
+            "id": "sector_crypto",
+            "question": "How important is Cryptoasset / Digital Assets experience for this role?",
+            "type": "slider",
+            "min": 0,
+            "max": 4,
+            "mirrorsCandidate": {
+              "questionId": "sector_crypto",
+              "matchType": "importance"
+            },
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - some exposure helpful",
+              "2": "Important - crypto experience expected",
+              "3": "Very Important - strong digital assets background required",
+              "4": "Essential - deep cryptoasset expertise required"
+            }
+          }
+        ]
+      }
+    ],
+    "metadata": {
+      "totalQuestions": 165,
+      "totalSections": 21,
+      "estimatedCompletionMinutes": 28,
+      "lastUpdated": "2025-12-15"
+    }
+  }
+}

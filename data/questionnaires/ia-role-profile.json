@@ -1,0 +1,2727 @@
+{
+  "questionnaire": {
+    "id": "ia-role-profile",
+    "title": "Internal Audit Role Profile",
+    "description": "Internal Audit skills and experience requirements (complements general job-profile)",
+    "version": "1.0.1",
+    "createdAt": "2025-12-15",
+    "updatedAt": "2025-12-15",
+    "mirrorProfile": "ia-candidate-profile",
+    "parentProfile": "job-profile",
+    "importanceScale": {
+      "0": {
+        "label": "Not Required",
+        "description": "Not needed for this role"
+      },
+      "1": {
+        "label": "Nice to Have",
+        "description": "Beneficial but not essential; gaps acceptable"
+      },
+      "2": {
+        "label": "Important",
+        "description": "Expected capability; gaps need development plan"
+      },
+      "3": {
+        "label": "Very Important",
+        "description": "Core requirement; limited gaps acceptable"
+      },
+      "4": {
+        "label": "Essential",
+        "description": "Must have from day one; no gaps acceptable"
+      }
+    },
+    "sections": [
+      {
+        "id": "ia_role_requirements",
+        "title": "Internal Audit Role Requirements",
+        "description": "Define the level and scope of the Internal Audit role",
+        "order": 1,
+        "questions": [
+          {
+            "id": "ia_role_level",
+            "question": "Internal Audit Role Level",
+            "type": "select",
+            "required": true,
+            "options": [
+              {
+                "value": "staff_auditor",
+                "label": "Internal Auditor / Staff Auditor"
+              },
+              {
+                "value": "senior_auditor",
+                "label": "Senior Internal Auditor"
+              },
+              {
+                "value": "audit_manager",
+                "label": "Audit Manager / Lead Auditor"
+              },
+              {
+                "value": "senior_audit_manager",
+                "label": "Senior Audit Manager / Director"
+              },
+              {
+                "value": "head_of_ia",
+                "label": "Head of Internal Audit / VP Audit"
+              },
+              {
+                "value": "cae",
+                "label": "Chief Audit Executive (CAE)"
+              }
+            ],
+            "mirrorsCandidate": {
+              "questionId": "target_ia_level",
+              "matchType": "compatibility"
+            }
+          },
+          {
+            "id": "ia_function_scope",
+            "question": "Internal Audit Function Scope",
+            "type": "select",
+            "required": true,
+            "options": [
+              {
+                "value": "site_entity",
+                "label": "Site / Entity Audit"
+              },
+              {
+                "value": "business_unit",
+                "label": "Business Unit / Division Audit"
+              },
+              {
+                "value": "regional",
+                "label": "Regional Audit"
+              },
+              {
+                "value": "country",
+                "label": "Country / National Audit"
+              },
+              {
+                "value": "group_enterprise",
+                "label": "Group / Enterprise-wide Audit"
+              }
+            ],
+            "mirrorsCandidate": {
+              "questionId": "ia_scope_experience",
+              "matchType": "compatibility"
+            }
+          },
+          {
+            "id": "years_ia_required",
+            "question": "Minimum Years Internal Audit Experience Required",
+            "description": "Minimum years of internal audit experience expected",
+            "type": "number",
+            "required": true,
+            "min": 0,
+            "max": 25,
+            "mirrorsCandidate": {
+              "questionId": "years_in_ia",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "years_external_audit_preferred",
+            "question": "Preferred Years External Audit / Big 4 Experience",
+            "description": "Preferred years of external audit experience (0 if not required)",
+            "type": "number",
+            "required": false,
+            "min": 0,
+            "max": 20,
+            "mirrorsCandidate": {
+              "questionId": "years_in_external_audit",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "team_size_required",
+            "question": "Minimum Team Size Management Experience",
+            "description": "Minimum team size the candidate should have managed (0 if not required)",
+            "type": "number",
+            "required": false,
+            "min": 0,
+            "max": 200,
+            "mirrorsCandidate": {
+              "questionId": "audit_team_size",
+              "matchType": "minimum"
+            }
+          }
+        ]
+      },
+      {
+        "id": "standards_framework_requirements",
+        "title": "Standards & Framework Requirements",
+        "description": "Required knowledge of internal audit standards and governance frameworks",
+        "order": 2,
+        "helpText": "0 = Not Required, 1 = Nice to Have, 2 = Important, 3 = Very Important, 4 = Essential",
+        "questions": [
+          {
+            "id": "framework_gias_2024",
+            "question": "2024 Global Internal Audit Standards (GIAS)",
+            "description": "New IIA standards effective January 2025 replacing IPPF",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "GIAS knowledge not required",
+              "1": "Basic GIAS awareness beneficial",
+              "2": "Working knowledge of GIAS expected; training can be provided",
+              "3": "Strong GIAS knowledge required; ability to apply standards independently",
+              "4": "Expert GIAS knowledge essential; must lead conformance activities"
+            },
+            "mirrorsCandidate": {
+              "questionId": "framework_gias_2024",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "framework_ippf",
+            "question": "IIA International Professional Practices Framework (IPPF)",
+            "description": "Legacy IIA framework including Standards, Code of Ethics, and Practice Guides",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "IPPF knowledge not required",
+              "1": "Basic IPPF awareness beneficial for context",
+              "2": "Working knowledge of IPPF expected",
+              "3": "Strong IPPF knowledge required; practical application experience",
+              "4": "Expert IPPF knowledge essential; transitioning to GIAS"
+            },
+            "mirrorsCandidate": {
+              "questionId": "framework_ippf",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "framework_coso_ic",
+            "question": "COSO Internal Control Framework (2013)",
+            "description": "Committee of Sponsoring Organizations Internal Control - Integrated Framework",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "COSO IC knowledge not required",
+              "1": "Basic COSO IC awareness beneficial",
+              "2": "Working knowledge of COSO IC expected for control assessments",
+              "3": "Strong COSO IC knowledge required; must apply in SOX/control work",
+              "4": "Expert COSO IC knowledge essential; must lead control framework design"
+            },
+            "mirrorsCandidate": {
+              "questionId": "framework_coso_ic",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "framework_coso_erm",
+            "question": "COSO ERM Framework (2017)",
+            "description": "COSO Enterprise Risk Management - Integrating with Strategy and Performance",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "COSO ERM knowledge not required",
+              "1": "Basic COSO ERM awareness beneficial",
+              "2": "Working knowledge of COSO ERM expected for risk assessments",
+              "3": "Strong COSO ERM knowledge required; must audit ERM processes",
+              "4": "Expert COSO ERM knowledge essential; must lead ERM assurance"
+            },
+            "mirrorsCandidate": {
+              "questionId": "framework_coso_erm",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "framework_cobit",
+            "question": "COBIT (IT Governance)",
+            "description": "Control Objectives for Information and Related Technologies framework",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "COBIT knowledge not required",
+              "1": "Basic COBIT awareness beneficial for IT audits",
+              "2": "Working knowledge of COBIT expected for IT governance audits",
+              "3": "Strong COBIT knowledge required; must lead IT audits",
+              "4": "Expert COBIT knowledge essential; must design IT audit programmes"
+            },
+            "mirrorsCandidate": {
+              "questionId": "framework_cobit",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "framework_iso31000",
+            "question": "ISO 31000 (Risk Management)",
+            "description": "International standard for risk management principles and guidelines",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "ISO 31000 knowledge not required",
+              "1": "Basic ISO 31000 awareness beneficial",
+              "2": "Working knowledge expected for risk-based planning",
+              "3": "Strong ISO 31000 knowledge required; must apply in audit planning",
+              "4": "Expert ISO 31000 knowledge essential; must audit risk frameworks"
+            },
+            "mirrorsCandidate": {
+              "questionId": "framework_iso31000",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "framework_three_lines",
+            "question": "Three Lines Model",
+            "description": "IIA's Three Lines Model for organisational governance and assurance",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Three Lines knowledge not required",
+              "1": "Basic Three Lines awareness beneficial",
+              "2": "Working knowledge expected for coordination activities",
+              "3": "Strong knowledge required; must lead three lines coordination",
+              "4": "Expert knowledge essential; must design integrated assurance"
+            },
+            "mirrorsCandidate": {
+              "questionId": "framework_three_lines",
+              "matchType": "minimum"
+            }
+          }
+        ]
+      },
+      {
+        "id": "audit_technology_requirements",
+        "title": "Audit Technology & Systems Requirements",
+        "description": "Required experience with audit management systems and ERP platforms",
+        "order": 3,
+        "questions": [
+          {
+            "id": "audit_systems_required",
+            "question": "Required Audit Management Systems Experience",
+            "description": "Select systems where experience is required or strongly preferred",
+            "type": "system_proficiency",
+            "required": false,
+            "proficiencyScale": {
+              "1": "Basic User - Navigation and data entry capability",
+              "2": "Proficient User - Report running and workflow management",
+              "3": "Power User/Admin - Configuration and template design",
+              "4": "Implementation Lead - System selection and deployment"
+            },
+            "systems": [
+              {
+                "value": "teammate_plus",
+                "label": "TeamMate+"
+              },
+              {
+                "value": "auditboard",
+                "label": "AuditBoard"
+              },
+              {
+                "value": "workiva",
+                "label": "Workiva"
+              },
+              {
+                "value": "galvanize_diligent",
+                "label": "Galvanize (Diligent)"
+              },
+              {
+                "value": "sap_audit",
+                "label": "SAP Audit Management"
+              },
+              {
+                "value": "servicenow_grc",
+                "label": "ServiceNow GRC"
+              },
+              {
+                "value": "wolters_kluwer",
+                "label": "Wolters Kluwer"
+              },
+              {
+                "value": "mkinsight",
+                "label": "MKInsight"
+              },
+              {
+                "value": "pentana",
+                "label": "Pentana"
+              },
+              {
+                "value": "highbond",
+                "label": "HighBond (ACL)"
+              },
+              {
+                "value": "archer",
+                "label": "RSA Archer"
+              }
+            ],
+            "mirrorsCandidate": {
+              "questionId": "audit_systems_experience",
+              "matchType": "overlap"
+            }
+          },
+          {
+            "id": "erp_systems_required",
+            "question": "Required ERP System Knowledge",
+            "description": "Select ERP systems where audit experience is required",
+            "type": "system_proficiency",
+            "required": false,
+            "proficiencyScale": {
+              "1": "Basic - Navigation and standard reports",
+              "2": "Proficient - Data extraction and module understanding",
+              "3": "Advanced - Audit test design and SoD assessment",
+              "4": "Expert - Implementation audit and continuous controls"
+            },
+            "systems": [
+              {
+                "value": "sap_s4hana",
+                "label": "SAP S/4HANA"
+              },
+              {
+                "value": "sap_ecc",
+                "label": "SAP ECC"
+              },
+              {
+                "value": "oracle_erp",
+                "label": "Oracle ERP Cloud"
+              },
+              {
+                "value": "oracle_ebusiness",
+                "label": "Oracle E-Business Suite"
+              },
+              {
+                "value": "ms_dynamics",
+                "label": "Microsoft Dynamics 365"
+              },
+              {
+                "value": "netsuite",
+                "label": "NetSuite"
+              },
+              {
+                "value": "workday",
+                "label": "Workday"
+              },
+              {
+                "value": "jd_edwards",
+                "label": "JD Edwards"
+              },
+              {
+                "value": "infor",
+                "label": "Infor"
+              }
+            ],
+            "mirrorsCandidate": {
+              "questionId": "erp_systems_knowledge",
+              "matchType": "overlap"
+            }
+          },
+          {
+            "id": "audit_system_selection",
+            "question": "Audit System Selection & Implementation Experience",
+            "description": "Required level of audit system selection and implementation experience",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "System selection experience not required",
+              "1": "Participation in system evaluations beneficial",
+              "2": "Experience contributing to system selection expected",
+              "3": "Experience leading system selection required",
+              "4": "Enterprise system implementation leadership essential"
+            },
+            "mirrorsCandidate": {
+              "questionId": "audit_system_selection",
+              "matchType": "minimum"
+            }
+          }
+        ]
+      },
+      {
+        "id": "data_analytics_requirements",
+        "title": "Data Analytics & Continuous Auditing Requirements",
+        "description": "Required analytics, CAATs, and continuous auditing capabilities",
+        "order": 4,
+        "helpText": "0 = Not Required, 1 = Nice to Have, 2 = Important, 3 = Very Important, 4 = Essential",
+        "questions": [
+          {
+            "id": "data_literacy",
+            "question": "Data Literacy & Interpretation",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Data literacy not required",
+              "1": "Basic data interpretation skills beneficial",
+              "2": "Ability to perform independent data analysis expected",
+              "3": "Strong data analysis skills required; must design analytics approaches",
+              "4": "Expert data literacy essential; must lead analytics strategy"
+            },
+            "mirrorsCandidate": {
+              "questionId": "data_literacy",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "analytics_tools",
+            "question": "Analytics Tools (SQL, Python, R)",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Programming skills not required",
+              "1": "Basic SQL or scripting awareness beneficial",
+              "2": "Working SQL and basic scripting expected",
+              "3": "Strong programming skills required; must develop analytics",
+              "4": "Expert programming essential; must build analytics platforms"
+            },
+            "mirrorsCandidate": {
+              "questionId": "analytics_tools",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "visualization_tools",
+            "question": "Data Visualization (Power BI, Tableau)",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Visualization skills not required",
+              "1": "Basic dashboard navigation beneficial",
+              "2": "Dashboard creation capability expected",
+              "3": "Advanced visualization skills required",
+              "4": "Expert visualization essential; must establish BI standards"
+            },
+            "mirrorsCandidate": {
+              "questionId": "visualization_tools",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "caat_tools",
+            "question": "CAATs (ACL, IDEA, Arbutus)",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "CAAT experience not required",
+              "1": "Basic CAAT awareness beneficial",
+              "2": "Working CAAT skills expected",
+              "3": "Strong CAAT skills required; must design test scripts",
+              "4": "Expert CAAT skills essential; must build analytics libraries"
+            },
+            "mirrorsCandidate": {
+              "questionId": "caat_tools",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "continuous_auditing",
+            "question": "Continuous Auditing / Monitoring Design",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Continuous auditing experience not required",
+              "1": "Awareness of continuous auditing beneficial",
+              "2": "Experience supporting continuous auditing expected",
+              "3": "Experience designing continuous auditing required",
+              "4": "Enterprise continuous auditing leadership essential"
+            },
+            "mirrorsCandidate": {
+              "questionId": "continuous_auditing",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "full_population_testing",
+            "question": "Full Population Testing",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Full population testing experience not required",
+              "1": "Awareness of full population testing beneficial",
+              "2": "Experience performing full population tests expected",
+              "3": "Experience designing full population approaches required",
+              "4": "Enterprise full population testing leadership essential"
+            },
+            "mirrorsCandidate": {
+              "questionId": "full_population_testing",
+              "matchType": "minimum"
+            }
+          }
+        ]
+      },
+      {
+        "id": "ai_emerging_tech_requirements",
+        "title": "AI & Emerging Technology Requirements",
+        "description": "Required capabilities for auditing AI and emerging technologies",
+        "order": 5,
+        "helpText": "0 = Not Required, 1 = Nice to Have, 2 = Important, 3 = Very Important, 4 = Essential",
+        "questions": [
+          {
+            "id": "ai_governance",
+            "question": "AI Governance & Risk Assessment",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "AI audit experience not required",
+              "1": "Basic AI awareness beneficial",
+              "2": "AI governance audit experience expected",
+              "3": "Strong AI audit experience required",
+              "4": "Enterprise AI assurance leadership essential"
+            },
+            "mirrorsCandidate": {
+              "questionId": "ai_governance",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "model_risk_management",
+            "question": "Model Risk Management",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Model risk experience not required",
+              "1": "Basic model risk awareness beneficial",
+              "2": "Model governance audit experience expected",
+              "3": "Strong model risk audit experience required",
+              "4": "Enterprise model risk assurance leadership essential"
+            },
+            "mirrorsCandidate": {
+              "questionId": "model_risk_management",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "rpa_auditing",
+            "question": "RPA / Automation Auditing",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "RPA audit experience not required",
+              "1": "Basic RPA awareness beneficial",
+              "2": "RPA audit experience expected",
+              "3": "Strong RPA audit experience required",
+              "4": "Enterprise automation assurance leadership essential"
+            },
+            "mirrorsCandidate": {
+              "questionId": "rpa_auditing",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "emerging_tech_awareness",
+            "question": "Emerging Technology Awareness",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Emerging tech awareness not required",
+              "1": "General technology awareness beneficial",
+              "2": "Proactive emerging tech monitoring expected",
+              "3": "Strong emerging tech audit capability required",
+              "4": "Enterprise emerging tech assurance leadership essential"
+            },
+            "mirrorsCandidate": {
+              "questionId": "emerging_tech_awareness",
+              "matchType": "minimum"
+            }
+          }
+        ]
+      },
+      {
+        "id": "it_audit_cyber_requirements",
+        "title": "IT Audit & Cybersecurity Requirements",
+        "description": "Required IT audit and cybersecurity capabilities",
+        "order": 6,
+        "helpText": "0 = Not Required, 1 = Nice to Have, 2 = Important, 3 = Very Important, 4 = Essential",
+        "questions": [
+          {
+            "id": "it_general_controls",
+            "question": "IT General Controls (ITGCs)",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "ITGC experience not required",
+              "1": "Basic ITGC awareness beneficial",
+              "2": "ITGC testing experience expected",
+              "3": "Strong ITGC experience required; must lead IT audits",
+              "4": "Enterprise ITGC programme leadership essential"
+            },
+            "mirrorsCandidate": {
+              "questionId": "it_general_controls",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "nist_csf",
+            "question": "NIST Cybersecurity Framework",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "NIST CSF experience not required",
+              "1": "Basic NIST CSF awareness beneficial",
+              "2": "NIST CSF audit experience expected",
+              "3": "Strong NIST CSF experience required",
+              "4": "Enterprise cyber assurance using NIST essential"
+            },
+            "mirrorsCandidate": {
+              "questionId": "nist_csf",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "iso27001",
+            "question": "ISO 27001 / Information Security",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "ISO 27001 experience not required",
+              "1": "Basic ISO 27001 awareness beneficial",
+              "2": "ISO 27001 audit experience expected",
+              "3": "Strong ISO 27001 experience required",
+              "4": "Enterprise ISMS assurance leadership essential"
+            },
+            "mirrorsCandidate": {
+              "questionId": "iso27001",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "cloud_security",
+            "question": "Cloud Security (AWS, Azure, GCP)",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Cloud security audit experience not required",
+              "1": "Basic cloud awareness beneficial",
+              "2": "Cloud security audit experience expected",
+              "3": "Strong cloud security experience required",
+              "4": "Enterprise cloud assurance leadership essential"
+            },
+            "mirrorsCandidate": {
+              "questionId": "cloud_security",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "identity_access",
+            "question": "Identity & Access Management (IAM) Auditing",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "IAM audit experience not required",
+              "1": "Basic IAM awareness beneficial",
+              "2": "IAM audit experience expected",
+              "3": "Strong IAM audit experience required",
+              "4": "Enterprise IAM assurance leadership essential"
+            },
+            "mirrorsCandidate": {
+              "questionId": "identity_access",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "ransomware_resilience",
+            "question": "Ransomware / Cyber Resilience Auditing",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Cyber resilience audit experience not required",
+              "1": "Basic cyber resilience awareness beneficial",
+              "2": "Cyber resilience audit experience expected",
+              "3": "Strong cyber resilience experience required",
+              "4": "Enterprise resilience assurance leadership essential"
+            },
+            "mirrorsCandidate": {
+              "questionId": "ransomware_resilience",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "penetration_testing",
+            "question": "Penetration Testing Oversight",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Pen test oversight experience not required",
+              "1": "Basic pen test awareness beneficial",
+              "2": "Pen test review experience expected",
+              "3": "Pen test programme oversight required",
+              "4": "Enterprise vulnerability assurance leadership essential"
+            },
+            "mirrorsCandidate": {
+              "questionId": "penetration_testing",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "third_party_cyber",
+            "question": "Third-Party Cyber Risk Assessment",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Third-party cyber experience not required",
+              "1": "Basic third-party risk awareness beneficial",
+              "2": "Third-party cyber audit experience expected",
+              "3": "Strong third-party cyber experience required",
+              "4": "Enterprise supply chain cyber assurance essential"
+            },
+            "mirrorsCandidate": {
+              "questionId": "third_party_cyber",
+              "matchType": "minimum"
+            }
+          }
+        ]
+      },
+      {
+        "id": "financial_controls_requirements",
+        "title": "Financial Controls & SOX Requirements",
+        "description": "Required ICFR and financial controls audit capabilities",
+        "order": 7,
+        "helpText": "0 = Not Required, 1 = Nice to Have, 2 = Important, 3 = Very Important, 4 = Essential",
+        "questions": [
+          {
+            "id": "sox_icfr",
+            "question": "SOX / ICFR Testing",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "SOX experience not required",
+              "1": "Basic SOX awareness beneficial",
+              "2": "SOX testing experience expected",
+              "3": "Strong SOX experience required; must lead audits",
+              "4": "Enterprise SOX programme leadership essential"
+            },
+            "mirrorsCandidate": {
+              "questionId": "sox_icfr",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "jsox",
+            "question": "J-SOX (Japan SOX)",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "J-SOX experience not required",
+              "1": "Basic J-SOX awareness beneficial",
+              "2": "J-SOX testing experience expected",
+              "3": "Strong J-SOX experience required",
+              "4": "Enterprise J-SOX programme leadership essential"
+            },
+            "mirrorsCandidate": {
+              "questionId": "jsox",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "financial_statement_audit",
+            "question": "Financial Statement Audit Support",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "FS audit support not required",
+              "1": "Basic FS audit awareness beneficial",
+              "2": "FS audit support experience expected",
+              "3": "Strong FS audit coordination required",
+              "4": "Enterprise external audit relationship essential"
+            },
+            "mirrorsCandidate": {
+              "questionId": "financial_statement_audit",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "revenue_recognition",
+            "question": "Revenue Recognition Controls",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Revenue recognition audit not required",
+              "1": "Basic revenue recognition awareness beneficial",
+              "2": "Revenue control audit experience expected",
+              "3": "Strong revenue recognition experience required",
+              "4": "Enterprise revenue assurance leadership essential"
+            },
+            "mirrorsCandidate": {
+              "questionId": "revenue_recognition",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "management_override",
+            "question": "Management Override Controls",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Management override testing not required",
+              "1": "Basic awareness of override risks beneficial",
+              "2": "Management override testing experience expected",
+              "3": "Strong override controls experience required",
+              "4": "Enterprise anti-fraud programme leadership essential"
+            },
+            "mirrorsCandidate": {
+              "questionId": "management_override",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "journal_entry_testing",
+            "question": "Journal Entry Testing",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "JE testing experience not required",
+              "1": "Basic JE testing awareness beneficial",
+              "2": "JE testing experience expected",
+              "3": "Strong JE testing experience required; analytics capability",
+              "4": "Enterprise JE assurance leadership essential"
+            },
+            "mirrorsCandidate": {
+              "questionId": "journal_entry_testing",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "external_audit_coordination",
+            "question": "External Auditor Coordination",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "External audit coordination not required",
+              "1": "Basic coordination experience beneficial",
+              "2": "External audit coordination experience expected",
+              "3": "Strong coordination experience required; must lead relationship",
+              "4": "Enterprise external audit relationship leadership essential"
+            },
+            "mirrorsCandidate": {
+              "questionId": "external_audit_coordination",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "ifrs_gaap",
+            "question": "IFRS / GAAP Knowledge",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Accounting standards knowledge not required",
+              "1": "Basic accounting awareness beneficial",
+              "2": "Working accounting knowledge expected",
+              "3": "Strong accounting knowledge required",
+              "4": "Expert accounting knowledge essential"
+            },
+            "mirrorsCandidate": {
+              "questionId": "ifrs_gaap",
+              "matchType": "minimum"
+            }
+          }
+        ]
+      },
+      {
+        "id": "fraud_forensic_requirements",
+        "title": "Fraud & Forensic Auditing Requirements",
+        "description": "Required fraud and investigation capabilities",
+        "order": 8,
+        "helpText": "0 = Not Required, 1 = Nice to Have, 2 = Important, 3 = Very Important, 4 = Essential",
+        "questions": [
+          {
+            "id": "fraud_risk_assessment",
+            "question": "Fraud Risk Assessment",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Fraud risk assessment not required",
+              "1": "Basic fraud awareness beneficial",
+              "2": "Fraud risk assessment experience expected",
+              "3": "Strong fraud risk experience required",
+              "4": "Enterprise fraud risk programme leadership essential"
+            },
+            "mirrorsCandidate": {
+              "questionId": "fraud_risk_assessment",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "fraud_triangle",
+            "question": "Fraud Triangle Application",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Fraud triangle knowledge not required",
+              "1": "Basic fraud triangle awareness beneficial",
+              "2": "Fraud triangle application expected",
+              "3": "Strong fraud triangle application required",
+              "4": "Enterprise anti-fraud framework leadership essential"
+            },
+            "mirrorsCandidate": {
+              "questionId": "fraud_triangle",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "forensic_data_analysis",
+            "question": "Forensic Data Analysis",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Forensic data analysis not required",
+              "1": "Basic forensic awareness beneficial",
+              "2": "Forensic data analysis experience expected",
+              "3": "Strong forensic analytics experience required",
+              "4": "Enterprise forensic analytics leadership essential"
+            },
+            "mirrorsCandidate": {
+              "questionId": "forensic_data_analysis",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "red_flag_monitoring",
+            "question": "Red Flag / Anomaly Monitoring",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Red flag monitoring not required",
+              "1": "Basic red flag awareness beneficial",
+              "2": "Red flag monitoring experience expected",
+              "3": "Strong red flag programme experience required",
+              "4": "Enterprise fraud monitoring leadership essential"
+            },
+            "mirrorsCandidate": {
+              "questionId": "red_flag_monitoring",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "investigation_management",
+            "question": "Investigation Management",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Investigation experience not required",
+              "1": "Basic investigation awareness beneficial",
+              "2": "Investigation support experience expected",
+              "3": "Investigation leadership experience required",
+              "4": "Enterprise investigation function leadership essential"
+            },
+            "mirrorsCandidate": {
+              "questionId": "investigation_management",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "interview_techniques",
+            "question": "Interview & Interrogation Techniques",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Interview skills not required beyond standard",
+              "1": "Basic interview skills beneficial",
+              "2": "Audit interview experience expected",
+              "3": "Investigative interview skills required",
+              "4": "Expert interview capability essential"
+            },
+            "mirrorsCandidate": {
+              "questionId": "interview_techniques",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "evidence_handling",
+            "question": "Evidence Handling & Chain of Custody",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Evidence handling skills not required",
+              "1": "Basic evidence awareness beneficial",
+              "2": "Evidence handling experience expected",
+              "3": "Strong evidence management experience required",
+              "4": "Enterprise evidence governance leadership essential"
+            },
+            "mirrorsCandidate": {
+              "questionId": "evidence_handling",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "whistleblower_programmes",
+            "question": "Whistleblower Programme Oversight",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Whistleblower oversight not required",
+              "1": "Basic whistleblower awareness beneficial",
+              "2": "Whistleblower audit experience expected",
+              "3": "Whistleblower programme oversight required",
+              "4": "Enterprise whistleblower function leadership essential"
+            },
+            "mirrorsCandidate": {
+              "questionId": "whistleblower_programmes",
+              "matchType": "minimum"
+            }
+          }
+        ]
+      },
+      {
+        "id": "risk_planning_requirements",
+        "title": "Risk Assessment & Audit Planning Requirements",
+        "description": "Required audit planning and risk assessment capabilities",
+        "order": 9,
+        "helpText": "0 = Not Required, 1 = Nice to Have, 2 = Important, 3 = Very Important, 4 = Essential",
+        "questions": [
+          {
+            "id": "audit_universe",
+            "question": "Audit Universe Development",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Audit universe experience not required",
+              "1": "Basic universe awareness beneficial",
+              "2": "Universe contribution experience expected",
+              "3": "Universe design experience required",
+              "4": "Enterprise universe leadership essential"
+            },
+            "mirrorsCandidate": {
+              "questionId": "audit_universe",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "risk_based_planning",
+            "question": "Risk-Based Audit Planning",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Risk-based planning experience not required",
+              "1": "Basic planning awareness beneficial",
+              "2": "Planning contribution experience expected",
+              "3": "Planning leadership experience required",
+              "4": "Enterprise planning leadership essential"
+            },
+            "mirrorsCandidate": {
+              "questionId": "risk_based_planning",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "dynamic_risk_assessment",
+            "question": "Dynamic / Continuous Risk Assessment",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Dynamic assessment not required",
+              "1": "Basic dynamic assessment awareness beneficial",
+              "2": "Dynamic assessment contribution expected",
+              "3": "Dynamic assessment design required",
+              "4": "Enterprise dynamic assessment leadership essential"
+            },
+            "mirrorsCandidate": {
+              "questionId": "dynamic_risk_assessment",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "horizon_scanning",
+            "question": "Horizon Scanning & Emerging Risk",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Horizon scanning not required",
+              "1": "Basic emerging risk awareness beneficial",
+              "2": "Horizon scanning contribution expected",
+              "3": "Horizon scanning leadership required",
+              "4": "Enterprise strategic foresight leadership essential"
+            },
+            "mirrorsCandidate": {
+              "questionId": "horizon_scanning",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "strategic_alignment",
+            "question": "Strategic Plan Alignment",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Strategic alignment not required",
+              "1": "Basic strategic awareness beneficial",
+              "2": "Strategic alignment contribution expected",
+              "3": "Strategic alignment design required",
+              "4": "Enterprise strategic partnership leadership essential"
+            },
+            "mirrorsCandidate": {
+              "questionId": "strategic_alignment",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "resource_allocation",
+            "question": "Audit Resource Allocation",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Resource allocation not required",
+              "1": "Basic resource awareness beneficial",
+              "2": "Resource planning support expected",
+              "3": "Resource allocation leadership required",
+              "4": "Enterprise workforce planning leadership essential"
+            },
+            "mirrorsCandidate": {
+              "questionId": "resource_allocation",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "audit_plan_flexibility",
+            "question": "Audit Plan Agility / Pivoting",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Plan agility not required",
+              "1": "Basic flexibility awareness beneficial",
+              "2": "Plan change support expected",
+              "3": "Plan pivot leadership required",
+              "4": "Enterprise agile planning leadership essential"
+            },
+            "mirrorsCandidate": {
+              "questionId": "audit_plan_flexibility",
+              "matchType": "minimum"
+            }
+          }
+        ]
+      },
+      {
+        "id": "audit_execution_requirements",
+        "title": "Audit Execution & Methodology Requirements",
+        "description": "Required audit execution and methodology capabilities",
+        "order": 10,
+        "helpText": "0 = Not Required, 1 = Nice to Have, 2 = Important, 3 = Very Important, 4 = Essential",
+        "questions": [
+          {
+            "id": "audit_programme_design",
+            "question": "Audit Programme Design",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Programme design not required",
+              "1": "Basic programme awareness beneficial",
+              "2": "Programme execution experience expected",
+              "3": "Programme design experience required",
+              "4": "Enterprise methodology leadership essential"
+            },
+            "mirrorsCandidate": {
+              "questionId": "audit_programme_design",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "sampling_methodology",
+            "question": "Statistical & Judgmental Sampling",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Sampling expertise not required",
+              "1": "Basic sampling awareness beneficial",
+              "2": "Sampling application experience expected",
+              "3": "Sampling methodology design required",
+              "4": "Enterprise sampling standards leadership essential"
+            },
+            "mirrorsCandidate": {
+              "questionId": "sampling_methodology",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "evidence_collection",
+            "question": "Audit Evidence Collection & Documentation",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Evidence standards not a focus",
+              "1": "Basic evidence skills beneficial",
+              "2": "Strong evidence practices expected",
+              "3": "Evidence standards leadership required",
+              "4": "Enterprise quality standards leadership essential"
+            },
+            "mirrorsCandidate": {
+              "questionId": "evidence_collection",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "root_cause_analysis",
+            "question": "Root Cause Analysis (5 Whys, Fishbone)",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Root cause skills not required",
+              "1": "Basic root cause awareness beneficial",
+              "2": "Root cause application experience expected",
+              "3": "Root cause leadership required",
+              "4": "Enterprise root cause capability leadership essential"
+            },
+            "mirrorsCandidate": {
+              "questionId": "root_cause_analysis",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "agile_auditing",
+            "question": "Agile Auditing (Scrum, Sprints)",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Agile auditing not required",
+              "1": "Basic agile awareness beneficial",
+              "2": "Agile participation experience expected",
+              "3": "Agile leadership experience required",
+              "4": "Enterprise agile transformation leadership essential"
+            },
+            "mirrorsCandidate": {
+              "questionId": "agile_auditing",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "audit_findings",
+            "question": "Finding Development & Rating",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Finding skills not a focus",
+              "1": "Basic finding skills beneficial",
+              "2": "Strong finding skills expected",
+              "3": "Finding leadership and calibration required",
+              "4": "Enterprise finding standards leadership essential"
+            },
+            "mirrorsCandidate": {
+              "questionId": "audit_findings",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "audit_report_writing",
+            "question": "Audit Report Writing",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Report writing not a primary focus",
+              "1": "Basic report writing beneficial",
+              "2": "Strong report writing expected",
+              "3": "Report leadership and standards required",
+              "4": "Enterprise reporting standards leadership essential"
+            },
+            "mirrorsCandidate": {
+              "questionId": "audit_report_writing",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "issue_tracking",
+            "question": "Issue Tracking & Remediation Monitoring",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Issue tracking not required",
+              "1": "Basic issue tracking beneficial",
+              "2": "Issue tracking experience expected",
+              "3": "Issue management leadership required",
+              "4": "Enterprise issue governance leadership essential"
+            },
+            "mirrorsCandidate": {
+              "questionId": "issue_tracking",
+              "matchType": "minimum"
+            }
+          }
+        ]
+      },
+      {
+        "id": "integrated_assurance_requirements",
+        "title": "Integrated Assurance & Coordination Requirements",
+        "description": "Required combined assurance and coordination capabilities",
+        "order": 11,
+        "helpText": "0 = Not Required, 1 = Nice to Have, 2 = Important, 3 = Very Important, 4 = Essential",
+        "questions": [
+          {
+            "id": "assurance_mapping",
+            "question": "Assurance Mapping",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Assurance mapping not required",
+              "1": "Basic assurance mapping awareness beneficial",
+              "2": "Assurance mapping contribution expected",
+              "3": "Assurance mapping leadership required",
+              "4": "Enterprise assurance mapping leadership essential"
+            },
+            "mirrorsCandidate": {
+              "questionId": "assurance_mapping",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "three_lines_coordination",
+            "question": "Three Lines Coordination",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Three lines coordination not required",
+              "1": "Basic coordination awareness beneficial",
+              "2": "Coordination experience expected",
+              "3": "Coordination leadership required",
+              "4": "Enterprise three lines framework leadership essential"
+            },
+            "mirrorsCandidate": {
+              "questionId": "three_lines_coordination",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "risk_function_liaison",
+            "question": "Risk Function Liaison",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Risk liaison not required",
+              "1": "Basic risk liaison beneficial",
+              "2": "Risk liaison experience expected",
+              "3": "Risk partnership leadership required",
+              "4": "Enterprise risk-audit partnership leadership essential"
+            },
+            "mirrorsCandidate": {
+              "questionId": "risk_function_liaison",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "compliance_coordination",
+            "question": "Compliance Function Coordination",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Compliance coordination not required",
+              "1": "Basic compliance liaison beneficial",
+              "2": "Compliance coordination experience expected",
+              "3": "Compliance partnership leadership required",
+              "4": "Enterprise compliance-audit partnership leadership essential"
+            },
+            "mirrorsCandidate": {
+              "questionId": "compliance_coordination",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "external_audit_reliance",
+            "question": "External Audit Reliance",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "External reliance not required",
+              "1": "Basic reliance awareness beneficial",
+              "2": "Reliance support experience expected",
+              "3": "Reliance programme leadership required",
+              "4": "Enterprise reliance framework leadership essential"
+            },
+            "mirrorsCandidate": {
+              "questionId": "external_audit_reliance",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "combined_assurance",
+            "question": "Combined Assurance Reporting",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Combined assurance not required",
+              "1": "Basic combined assurance awareness beneficial",
+              "2": "Combined assurance contribution expected",
+              "3": "Combined assurance leadership required",
+              "4": "Enterprise combined assurance leadership essential"
+            },
+            "mirrorsCandidate": {
+              "questionId": "combined_assurance",
+              "matchType": "minimum"
+            }
+          }
+        ]
+      },
+      {
+        "id": "esg_requirements",
+        "title": "ESG & Non-Financial Assurance Requirements",
+        "description": "Required ESG and sustainability audit capabilities",
+        "order": 12,
+        "helpText": "0 = Not Required, 1 = Nice to Have, 2 = Important, 3 = Very Important, 4 = Essential",
+        "questions": [
+          {
+            "id": "esg_audit_strategy",
+            "question": "ESG Audit Strategy",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "ESG audit experience not required",
+              "1": "Basic ESG awareness beneficial",
+              "2": "ESG audit experience expected",
+              "3": "ESG audit leadership required",
+              "4": "Enterprise ESG assurance leadership essential"
+            },
+            "mirrorsCandidate": {
+              "questionId": "esg_audit_strategy",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "carbon_emissions",
+            "question": "Carbon / GHG Emissions Auditing (Scope 1-3)",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Carbon audit experience not required",
+              "1": "Basic GHG awareness beneficial",
+              "2": "Carbon audit experience expected",
+              "3": "Carbon audit leadership required",
+              "4": "Enterprise carbon assurance leadership essential"
+            },
+            "mirrorsCandidate": {
+              "questionId": "carbon_emissions",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "sustainability_data",
+            "question": "Sustainability Data Verification",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Sustainability data verification not required",
+              "1": "Basic sustainability awareness beneficial",
+              "2": "Sustainability data verification expected",
+              "3": "Sustainability verification leadership required",
+              "4": "Enterprise sustainability assurance leadership essential"
+            },
+            "mirrorsCandidate": {
+              "questionId": "sustainability_data",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "culture_auditing",
+            "question": "Culture & Soft Controls Auditing",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Culture audit experience not required",
+              "1": "Basic culture awareness beneficial",
+              "2": "Culture audit experience expected",
+              "3": "Culture audit leadership required",
+              "4": "Enterprise culture assurance leadership essential"
+            },
+            "mirrorsCandidate": {
+              "questionId": "culture_auditing",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "dei_auditing",
+            "question": "DEI Metrics Auditing",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "DEI audit experience not required",
+              "1": "Basic DEI awareness beneficial",
+              "2": "DEI audit experience expected",
+              "3": "DEI audit leadership required",
+              "4": "Enterprise DEI assurance leadership essential"
+            },
+            "mirrorsCandidate": {
+              "questionId": "dei_auditing",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "supply_chain_ethics",
+            "question": "Supply Chain Ethics / Human Rights",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Supply chain ethics audit not required",
+              "1": "Basic supply chain ethics awareness beneficial",
+              "2": "Supply chain ethics audit expected",
+              "3": "Supply chain ethics leadership required",
+              "4": "Enterprise supply chain assurance leadership essential"
+            },
+            "mirrorsCandidate": {
+              "questionId": "supply_chain_ethics",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "esg_frameworks",
+            "question": "ESG Frameworks (GRI, SASB, TCFD, CSRD)",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "ESG framework knowledge not required",
+              "1": "Basic framework awareness beneficial",
+              "2": "Framework audit experience expected",
+              "3": "Framework implementation experience required",
+              "4": "Enterprise ESG framework leadership essential"
+            },
+            "mirrorsCandidate": {
+              "questionId": "esg_frameworks",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "greenwashing_detection",
+            "question": "Greenwashing Detection",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Greenwashing detection not required",
+              "1": "Basic greenwashing awareness beneficial",
+              "2": "Greenwashing detection experience expected",
+              "3": "Greenwashing detection leadership required",
+              "4": "Enterprise greenwashing assurance leadership essential"
+            },
+            "mirrorsCandidate": {
+              "questionId": "greenwashing_detection",
+              "matchType": "minimum"
+            }
+          }
+        ]
+      },
+      {
+        "id": "governance_board_requirements",
+        "title": "Governance & Board Engagement Requirements",
+        "description": "Required governance and board-level engagement capabilities",
+        "order": 13,
+        "helpText": "0 = Not Required, 1 = Nice to Have, 2 = Important, 3 = Very Important, 4 = Essential",
+        "questions": [
+          {
+            "id": "audit_charter",
+            "question": "Audit Charter Development",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Charter development not required",
+              "1": "Basic charter awareness beneficial",
+              "2": "Charter contribution experience expected",
+              "3": "Charter development leadership required",
+              "4": "Enterprise charter governance leadership essential"
+            },
+            "mirrorsCandidate": {
+              "questionId": "audit_charter",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "essential_conditions",
+            "question": "Essential Conditions Negotiation",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Essential Conditions experience not required",
+              "1": "Basic Essential Conditions awareness beneficial",
+              "2": "Essential Conditions assessment expected",
+              "3": "Essential Conditions negotiation required",
+              "4": "Enterprise Essential Conditions leadership essential"
+            },
+            "mirrorsCandidate": {
+              "questionId": "essential_conditions",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "audit_committee_reporting",
+            "question": "Audit Committee Reporting",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Audit committee reporting not required",
+              "1": "Basic committee awareness beneficial",
+              "2": "Committee reporting contribution expected",
+              "3": "Committee reporting leadership required",
+              "4": "Enterprise audit committee engagement leadership essential"
+            },
+            "mirrorsCandidate": {
+              "questionId": "audit_committee_reporting",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "board_presentation",
+            "question": "Board / Executive Presentation",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Board presentation not required",
+              "1": "Executive meeting participation beneficial",
+              "2": "Executive presentation experience expected",
+              "3": "Board presentation experience required",
+              "4": "Direct board engagement essential"
+            },
+            "mirrorsCandidate": {
+              "questionId": "board_presentation",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "independence_safeguarding",
+            "question": "Independence Safeguarding",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Independence leadership not required",
+              "1": "Personal independence expected",
+              "2": "Independence safeguard implementation expected",
+              "3": "Independence protocol leadership required",
+              "4": "Enterprise independence governance leadership essential"
+            },
+            "mirrorsCandidate": {
+              "questionId": "independence_safeguarding",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "governance_advisory",
+            "question": "Governance Advisory",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Governance advisory not required",
+              "1": "Basic governance awareness beneficial",
+              "2": "Governance assessment experience expected",
+              "3": "Governance advisory leadership required",
+              "4": "Enterprise governance advisory leadership essential"
+            },
+            "mirrorsCandidate": {
+              "questionId": "governance_advisory",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "regulatory_engagement",
+            "question": "Regulatory Engagement",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Regulatory engagement not required",
+              "1": "Basic regulatory awareness beneficial",
+              "2": "Regulatory support experience expected",
+              "3": "Regulatory engagement leadership required",
+              "4": "Enterprise regulatory relationship leadership essential"
+            },
+            "mirrorsCandidate": {
+              "questionId": "regulatory_engagement",
+              "matchType": "minimum"
+            }
+          }
+        ]
+      },
+      {
+        "id": "advisory_services_requirements",
+        "title": "Advisory Services Requirements",
+        "description": "Required audit advisory and consulting capabilities",
+        "order": 14,
+        "helpText": "0 = Not Required, 1 = Nice to Have, 2 = Important, 3 = Very Important, 4 = Essential",
+        "questions": [
+          {
+            "id": "consultative_auditing",
+            "question": "Consultative / Advisory Auditing",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Advisory services not required",
+              "1": "Basic advisory awareness beneficial",
+              "2": "Advisory engagement experience expected",
+              "3": "Advisory services leadership required",
+              "4": "Enterprise advisory capability leadership essential"
+            },
+            "mirrorsCandidate": {
+              "questionId": "consultative_auditing",
+              "matchType": "minimum"
+            }
+          }
+        ]
+      },
+      {
+        "id": "quality_assurance_requirements",
+        "title": "Quality Assurance & Improvement Requirements",
+        "description": "Required QAIP and continuous improvement capabilities",
+        "order": 15,
+        "helpText": "0 = Not Required, 1 = Nice to Have, 2 = Important, 3 = Very Important, 4 = Essential",
+        "questions": [
+          {
+            "id": "qaip_design",
+            "question": "QAIP Design & Oversight",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "QAIP design not required",
+              "1": "Basic QAIP awareness beneficial",
+              "2": "QAIP participation expected",
+              "3": "QAIP design leadership required",
+              "4": "Enterprise QAIP leadership essential"
+            },
+            "mirrorsCandidate": {
+              "questionId": "qaip_design",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "internal_assessments",
+            "question": "Internal Quality Assessments",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Internal assessment experience not required",
+              "1": "Basic assessment awareness beneficial",
+              "2": "Assessment participation expected",
+              "3": "Assessment leadership required",
+              "4": "Enterprise assessment programme leadership essential"
+            },
+            "mirrorsCandidate": {
+              "questionId": "internal_assessments",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "external_assessments",
+            "question": "External Quality Assessments (EQA)",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "EQA experience not required",
+              "1": "Basic EQA awareness beneficial",
+              "2": "EQA support experience expected",
+              "3": "EQA coordination leadership required",
+              "4": "Enterprise EQA programme leadership essential"
+            },
+            "mirrorsCandidate": {
+              "questionId": "external_assessments",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "conformance_gias",
+            "question": "GIAS Conformance Assessment",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Conformance assessment not required",
+              "1": "Basic conformance awareness beneficial",
+              "2": "Conformance assessment expected",
+              "3": "Conformance leadership required",
+              "4": "Enterprise conformance programme leadership essential"
+            },
+            "mirrorsCandidate": {
+              "questionId": "conformance_gias",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "continuous_improvement",
+            "question": "Continuous Improvement Programmes",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Improvement focus not required",
+              "1": "Basic improvement mindset beneficial",
+              "2": "Improvement implementation expected",
+              "3": "Improvement programme leadership required",
+              "4": "Enterprise improvement capability leadership essential"
+            },
+            "mirrorsCandidate": {
+              "questionId": "continuous_improvement",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "audit_methodology",
+            "question": "Audit Methodology Development",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Methodology development not required",
+              "1": "Basic methodology awareness beneficial",
+              "2": "Methodology contribution expected",
+              "3": "Methodology development leadership required",
+              "4": "Enterprise methodology leadership essential"
+            },
+            "mirrorsCandidate": {
+              "questionId": "audit_methodology",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "kpi_design",
+            "question": "Audit KPI Design & Reporting",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "KPI design not required",
+              "1": "Basic KPI awareness beneficial",
+              "2": "KPI tracking experience expected",
+              "3": "KPI design leadership required",
+              "4": "Enterprise performance measurement leadership essential"
+            },
+            "mirrorsCandidate": {
+              "questionId": "kpi_design",
+              "matchType": "minimum"
+            }
+          }
+        ]
+      },
+      {
+        "id": "audit_function_operations_requirements",
+        "title": "Audit Function Operations Requirements",
+        "description": "Required audit function operations and resource management capabilities",
+        "order": 16,
+        "helpText": "0 = Not Required, 1 = Nice to Have, 2 = Important, 3 = Very Important, 4 = Essential",
+        "questions": [
+          {
+            "id": "skills_gap_analysis",
+            "question": "Skills Gap Analysis",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Skills gap analysis not required",
+              "1": "Personal development awareness beneficial",
+              "2": "Team capability assessment expected",
+              "3": "Skills gap programme leadership required",
+              "4": "Enterprise skills strategy leadership essential"
+            },
+            "mirrorsCandidate": {
+              "questionId": "skills_gap_analysis",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "non_traditional_hiring",
+            "question": "Non-Traditional Hiring (Data Scientists, Engineers)",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Non-traditional hiring not required",
+              "1": "Openness to diverse skills beneficial",
+              "2": "Working with specialists expected",
+              "3": "Specialist recruitment leadership required",
+              "4": "Enterprise talent diversification leadership essential"
+            },
+            "mirrorsCandidate": {
+              "questionId": "non_traditional_hiring",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "guest_auditor_programmes",
+            "question": "Guest Auditor / Rotation Programmes",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Rotation programme experience not required",
+              "1": "Basic rotation awareness beneficial",
+              "2": "Guest auditor support expected",
+              "3": "Rotation programme leadership required",
+              "4": "Enterprise rotation strategy leadership essential"
+            },
+            "mirrorsCandidate": {
+              "questionId": "guest_auditor_programmes",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "budget_management",
+            "question": "Audit Budget Management",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Budget management not required",
+              "1": "Budget awareness beneficial",
+              "2": "Engagement budget tracking expected",
+              "3": "Function budget management required",
+              "4": "Enterprise budget leadership essential"
+            },
+            "mirrorsCandidate": {
+              "questionId": "budget_management",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "cosourcing_management",
+            "question": "Co-sourcing / Outsourcing Management",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Co-sourcing management not required",
+              "1": "Co-sourcing awareness beneficial",
+              "2": "Co-sourced engagement supervision expected",
+              "3": "Co-sourcing programme leadership required",
+              "4": "Enterprise sourcing strategy leadership essential"
+            },
+            "mirrorsCandidate": {
+              "questionId": "cosourcing_management",
+              "matchType": "minimum"
+            }
+          }
+        ]
+      },
+      {
+        "id": "domain_sector_requirements",
+        "title": "Domain & Sector Experience Requirements",
+        "description": "Required sector and audit domain expertise",
+        "order": 17,
+        "helpText": "0 = Not Required, 1 = Nice to Have, 2 = Important, 3 = Very Important, 4 = Essential",
+        "questions": [
+          {
+            "id": "sector_manufacturing",
+            "question": "Manufacturing / Industrial",
+            "type": "slider",
+            "required": false,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Manufacturing experience not required",
+              "1": "Basic manufacturing awareness beneficial",
+              "2": "Manufacturing audit experience expected",
+              "3": "Strong manufacturing expertise required",
+              "4": "Manufacturing sector leadership essential"
+            },
+            "mirrorsCandidate": {
+              "questionId": "sector_manufacturing",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "sector_retail",
+            "question": "Retail / Consumer",
+            "type": "slider",
+            "required": false,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Retail experience not required",
+              "1": "Basic retail awareness beneficial",
+              "2": "Retail audit experience expected",
+              "3": "Strong retail expertise required",
+              "4": "Retail sector leadership essential"
+            },
+            "mirrorsCandidate": {
+              "questionId": "sector_retail",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "sector_technology",
+            "question": "Technology / Software",
+            "type": "slider",
+            "required": false,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Technology sector experience not required",
+              "1": "Basic technology awareness beneficial",
+              "2": "Technology audit experience expected",
+              "3": "Strong technology expertise required",
+              "4": "Technology sector leadership essential"
+            },
+            "mirrorsCandidate": {
+              "questionId": "sector_technology",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "sector_healthcare",
+            "question": "Healthcare / Life Sciences",
+            "type": "slider",
+            "required": false,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Healthcare experience not required",
+              "1": "Basic healthcare awareness beneficial",
+              "2": "Healthcare audit experience expected",
+              "3": "Strong healthcare expertise required",
+              "4": "Healthcare sector leadership essential"
+            },
+            "mirrorsCandidate": {
+              "questionId": "sector_healthcare",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "sector_energy",
+            "question": "Energy / Utilities",
+            "type": "slider",
+            "required": false,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Energy sector experience not required",
+              "1": "Basic energy awareness beneficial",
+              "2": "Energy audit experience expected",
+              "3": "Strong energy expertise required",
+              "4": "Energy sector leadership essential"
+            },
+            "mirrorsCandidate": {
+              "questionId": "sector_energy",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "sector_public",
+            "question": "Public Sector / Government",
+            "type": "slider",
+            "required": false,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Public sector experience not required",
+              "1": "Basic public sector awareness beneficial",
+              "2": "Public sector audit experience expected",
+              "3": "Strong public sector expertise required",
+              "4": "Public sector leadership essential"
+            },
+            "mirrorsCandidate": {
+              "questionId": "sector_public",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "sector_nfp",
+            "question": "Not-for-Profit / Charities",
+            "type": "slider",
+            "required": false,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "NFP experience not required",
+              "1": "Basic NFP awareness beneficial",
+              "2": "NFP audit experience expected",
+              "3": "Strong NFP expertise required",
+              "4": "NFP sector leadership essential"
+            },
+            "mirrorsCandidate": {
+              "questionId": "sector_nfp",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "sector_financial_services",
+            "question": "Financial Services",
+            "type": "slider",
+            "required": false,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Financial services experience not required",
+              "1": "Basic FS awareness beneficial",
+              "2": "FS audit experience expected",
+              "3": "Strong FS expertise required",
+              "4": "FS sector leadership essential"
+            },
+            "mirrorsCandidate": {
+              "questionId": "sector_financial_services",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "operational_audit",
+            "question": "Operational Auditing",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Operational audit not required",
+              "1": "Basic operational awareness beneficial",
+              "2": "Operational audit experience expected",
+              "3": "Strong operational audit expertise required",
+              "4": "Enterprise operational assurance leadership essential"
+            },
+            "mirrorsCandidate": {
+              "questionId": "operational_audit",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "compliance_audit",
+            "question": "Compliance Auditing",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Compliance audit not required",
+              "1": "Basic compliance awareness beneficial",
+              "2": "Compliance audit experience expected",
+              "3": "Strong compliance audit expertise required",
+              "4": "Enterprise compliance assurance leadership essential"
+            },
+            "mirrorsCandidate": {
+              "questionId": "compliance_audit",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "project_audit",
+            "question": "Project / Programme Auditing",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Project audit not required",
+              "1": "Basic project awareness beneficial",
+              "2": "Project audit experience expected",
+              "3": "Strong project audit expertise required",
+              "4": "Enterprise project assurance leadership essential"
+            },
+            "mirrorsCandidate": {
+              "questionId": "project_audit",
+              "matchType": "minimum"
+            }
+          }
+        ]
+      },
+      {
+        "id": "fs_topup",
+        "title": "Financial Services Internal Audit",
+        "description": "FS-specific audit areas and regulatory requirements. Only complete if hiring for roles in Financial Services.",
+        "order": 18,
+        "helpText": "0 = Not Required, 1 = Nice to Have, 2 = Important, 3 = Very Important, 4 = Essential",
+        "questions": [
+          {
+            "id": "fs_audit_basel",
+            "question": "How important is Basel Framework Audit expertise for this role?",
+            "description": "Auditing Basel III/IV capital, liquidity, and risk-weighted asset calculations",
+            "type": "slider",
+            "required": false,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - beneficial but not essential",
+              "2": "Important - expected competency with development support",
+              "3": "Very Important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            },
+            "mirrorsCandidate": {
+              "questionId": "fs_audit_basel",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "fs_audit_solvency",
+            "question": "How important is Solvency II Audit (Insurance) expertise for this role?",
+            "description": "Auditing Solvency II compliance including SCR, MCR, ORSA, and governance",
+            "type": "slider",
+            "required": false,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - beneficial but not essential",
+              "2": "Important - expected competency with development support",
+              "3": "Very Important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            },
+            "mirrorsCandidate": {
+              "questionId": "fs_audit_solvency",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "fs_audit_smcr",
+            "question": "How important is SM&CR / Accountability Regime Audit expertise for this role?",
+            "description": "Auditing Senior Managers & Certification Regime compliance and governance",
+            "type": "slider",
+            "required": false,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - beneficial but not essential",
+              "2": "Important - expected competency with development support",
+              "3": "Very Important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            },
+            "mirrorsCandidate": {
+              "questionId": "fs_audit_smcr",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "fs_audit_consumer_duty",
+            "question": "How important is FCA Consumer Duty Audit expertise for this role?",
+            "description": "Auditing Consumer Duty compliance including outcomes, fair value, and vulnerability",
+            "type": "slider",
+            "required": false,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - beneficial but not essential",
+              "2": "Important - expected competency with development support",
+              "3": "Very Important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            },
+            "mirrorsCandidate": {
+              "questionId": "fs_audit_consumer_duty",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "fs_audit_aml_fc",
+            "question": "How important is AML/Financial Crime Audit expertise for this role?",
+            "description": "Auditing AML/CTF compliance, sanctions, and financial crime controls",
+            "type": "slider",
+            "required": false,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - beneficial but not essential",
+              "2": "Important - expected competency with development support",
+              "3": "Very Important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            },
+            "mirrorsCandidate": {
+              "questionId": "fs_audit_aml_fc",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "fs_audit_conduct_risk",
+            "question": "How important is Conduct Risk Audit expertise for this role?",
+            "description": "Auditing conduct risk frameworks, culture, and customer outcomes",
+            "type": "slider",
+            "required": false,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - beneficial but not essential",
+              "2": "Important - expected competency with development support",
+              "3": "Very Important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            },
+            "mirrorsCandidate": {
+              "questionId": "fs_audit_conduct_risk",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "fs_audit_credit_risk",
+            "question": "How important is Credit Risk Audit expertise for this role?",
+            "description": "Auditing credit risk management, underwriting, and provisioning",
+            "type": "slider",
+            "required": false,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - beneficial but not essential",
+              "2": "Important - expected competency with development support",
+              "3": "Very Important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            },
+            "mirrorsCandidate": {
+              "questionId": "fs_audit_credit_risk",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "fs_audit_market_risk",
+            "question": "How important is Market Risk Audit expertise for this role?",
+            "description": "Auditing market risk management, VaR models, and trading controls",
+            "type": "slider",
+            "required": false,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - beneficial but not essential",
+              "2": "Important - expected competency with development support",
+              "3": "Very Important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            },
+            "mirrorsCandidate": {
+              "questionId": "fs_audit_market_risk",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "fs_audit_operational_risk",
+            "question": "How important is Operational Risk Audit (FS) expertise for this role?",
+            "description": "Auditing FS operational risk frameworks, RCSA, and loss data collection",
+            "type": "slider",
+            "required": false,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - beneficial but not essential",
+              "2": "Important - expected competency with development support",
+              "3": "Very Important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            },
+            "mirrorsCandidate": {
+              "questionId": "fs_audit_operational_risk",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "fs_audit_model_validation",
+            "question": "How important is Model Risk / Validation Audit expertise for this role?",
+            "description": "Auditing model risk management and model validation processes",
+            "type": "slider",
+            "required": false,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - beneficial but not essential",
+              "2": "Important - expected competency with development support",
+              "3": "Very Important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            },
+            "mirrorsCandidate": {
+              "questionId": "fs_audit_model_validation",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "fs_pra_fca_engagement",
+            "question": "How important is PRA/FCA Regulatory Engagement experience for this role?",
+            "description": "Experience engaging with PRA/FCA supervisors on audit matters",
+            "type": "slider",
+            "required": false,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - beneficial but not essential",
+              "2": "Important - expected competency with development support",
+              "3": "Very Important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            },
+            "mirrorsCandidate": {
+              "questionId": "fs_pra_fca_engagement",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "fs_s166_experience",
+            "question": "How important is Section 166 (Skilled Person Review) experience for this role?",
+            "description": "Experience with s166 skilled person reviews, either conducting or responding",
+            "type": "slider",
+            "required": false,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "importanceDefinitions": {
+              "0": "Not required for this role",
+              "1": "Nice to have - beneficial but not essential",
+              "2": "Important - expected competency with development support",
+              "3": "Very Important - core requirement with limited gaps acceptable",
+              "4": "Essential - must have from day one; no gaps acceptable"
+            },
+            "mirrorsCandidate": {
+              "questionId": "fs_s166_experience",
+              "matchType": "minimum"
+            }
+          }
+        ]
+      }
+    ],
+    "metadata": {
+      "totalQuestions": 121,
+      "totalSections": 18,
+      "estimatedCompletionMinutes": 20,
+      "lastUpdated": "2025-12-15"
+    }
+  }
+}

@@ -1,0 +1,2877 @@
+{
+  "questionnaire": {
+    "id": "ia-candidate-profile",
+    "title": "Internal Audit Candidate Profile",
+    "description": "Internal Audit skills and experience (complements general candidate-profile)",
+    "version": "1.0.1",
+    "createdAt": "2025-12-15",
+    "updatedAt": "2025-12-15",
+    "mirrorProfile": "ia-role-profile",
+    "parentProfile": "candidate-profile",
+    "proficiencyScale": {
+      "0": {
+        "label": "No Experience",
+        "description": "No exposure or experience in this area"
+      },
+      "1": {
+        "label": "Awareness",
+        "description": "Understands concepts and can interpret outputs; works under supervision"
+      },
+      "2": {
+        "label": "Practical Application",
+        "description": "Can apply and operate established frameworks; works independently"
+      },
+      "3": {
+        "label": "Implementation & Management",
+        "description": "Can implement, adapt and manage frameworks; leads specific contexts"
+      },
+      "4": {
+        "label": "Strategic Leadership",
+        "description": "Can design from first principles; creates methodologies; enterprise-wide scope"
+      }
+    },
+    "interviewNote": "All self-assessed proficiency ratings are likely to be explored during interviews. Be prepared to provide specific examples demonstrating your claimed level of expertise.",
+    "sections": [
+      {
+        "id": "ia_experience_overview",
+        "title": "Internal Audit Experience Overview",
+        "description": "Your Internal Audit specific background and career level",
+        "order": 1,
+        "questions": [
+          {
+            "id": "target_ia_level",
+            "question": "Target Internal Audit Role Level",
+            "type": "select",
+            "required": true,
+            "options": [
+              {
+                "value": "staff_auditor",
+                "label": "Internal Auditor / Staff Auditor"
+              },
+              {
+                "value": "senior_auditor",
+                "label": "Senior Internal Auditor"
+              },
+              {
+                "value": "audit_manager",
+                "label": "Audit Manager / Lead Auditor"
+              },
+              {
+                "value": "senior_audit_manager",
+                "label": "Senior Audit Manager / Director"
+              },
+              {
+                "value": "head_of_ia",
+                "label": "Head of Internal Audit / VP Audit"
+              },
+              {
+                "value": "cae",
+                "label": "Chief Audit Executive (CAE)"
+              }
+            ],
+            "mirrorsRole": {
+              "questionId": "ia_role_level",
+              "matchType": "compatibility"
+            }
+          },
+          {
+            "id": "ia_scope_experience",
+            "question": "Highest Level of Internal Audit Scope You Have Worked At",
+            "type": "select",
+            "required": true,
+            "options": [
+              {
+                "value": "site_entity",
+                "label": "Site / Entity Audit"
+              },
+              {
+                "value": "business_unit",
+                "label": "Business Unit / Division Audit"
+              },
+              {
+                "value": "regional",
+                "label": "Regional Audit"
+              },
+              {
+                "value": "country",
+                "label": "Country / National Audit"
+              },
+              {
+                "value": "group_enterprise",
+                "label": "Group / Enterprise-wide Audit"
+              }
+            ],
+            "mirrorsRole": {
+              "questionId": "ia_function_scope",
+              "matchType": "compatibility"
+            }
+          },
+          {
+            "id": "years_in_ia",
+            "question": "Years in Internal Audit",
+            "description": "Years spent specifically in Internal Audit roles (in-house or co-sourced)",
+            "type": "number",
+            "required": true,
+            "min": 0,
+            "max": 40,
+            "helpText": "Include all internal audit experience across different organisations",
+            "mirrorsRole": {
+              "questionId": "years_ia_required",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "years_in_external_audit",
+            "question": "Years in External Audit / Big 4",
+            "description": "Years spent in external audit (Big 4, mid-tier firms, or boutique practices)",
+            "type": "number",
+            "required": false,
+            "min": 0,
+            "max": 30,
+            "helpText": "External audit experience provides strong technical foundation",
+            "mirrorsRole": {
+              "questionId": "years_external_audit_preferred",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "audit_team_size",
+            "question": "Largest Internal Audit Team Managed",
+            "description": "Maximum number of direct and indirect reports you have managed in an IA function",
+            "type": "number",
+            "required": false,
+            "min": 0,
+            "max": 500,
+            "helpText": "Include both direct reports and matrix/dotted-line resources",
+            "mirrorsRole": {
+              "questionId": "team_size_required",
+              "matchType": "minimum"
+            }
+          }
+        ]
+      },
+      {
+        "id": "standards_framework_knowledge",
+        "title": "Standards & Framework Knowledge",
+        "description": "Self-assess your familiarity with internal audit standards and governance frameworks",
+        "order": 2,
+        "helpText": "0 = No Experience, 1 = Awareness, 2 = Practical Application, 3 = Implementation & Management, 4 = Strategic Leadership",
+        "interviewNote": "Be prepared to explain how you have applied these frameworks in practice.",
+        "questions": [
+          {
+            "id": "framework_gias_2024",
+            "question": "2024 Global Internal Audit Standards (GIAS)",
+            "description": "New IIA standards effective January 2025 replacing IPPF",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with 2024 GIAS",
+              "1": "Aware of GIAS structure; understand the 5 Domains (Purpose, Ethics, Governance, Managing, Performing)",
+              "2": "Applied GIAS requirements in audit methodology; understand conformance requirements",
+              "3": "Implemented GIAS-aligned audit methodologies; led transition from IPPF; designed conformance monitoring",
+              "4": "Designed enterprise audit programmes based on GIAS; led external quality assessments against GIAS; contributed to IIA guidance"
+            },
+            "mirrorsRole": {
+              "questionId": "framework_gias_2024",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "framework_ippf",
+            "question": "IIA International Professional Practices Framework (IPPF)",
+            "description": "Legacy IIA framework including Standards, Code of Ethics, and Practice Guides",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with IPPF",
+              "1": "Familiar with IPPF components; understand Attribute and Performance Standards",
+              "2": "Applied IPPF Standards in audit work; used Practice Guides and Implementation Guides",
+              "3": "Designed audit methodologies aligned to IPPF; led conformance assessments; implemented Practice Advisories",
+              "4": "Built enterprise audit frameworks based on IPPF; led quality assessments; contributed to IIA standards development"
+            },
+            "mirrorsRole": {
+              "questionId": "framework_ippf",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "framework_coso_ic",
+            "question": "COSO Internal Control Framework (2013)",
+            "description": "Committee of Sponsoring Organizations Internal Control - Integrated Framework",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with COSO Internal Control",
+              "1": "Familiar with COSO IC components (Control Environment, Risk Assessment, Control Activities, Information & Communication, Monitoring)",
+              "2": "Applied COSO IC in control assessments; mapped controls to COSO principles; evaluated control deficiencies",
+              "3": "Designed control frameworks based on COSO IC; led SOX/ICFR programmes using COSO; assessed management override controls",
+              "4": "Built enterprise internal control programmes based on COSO; led COSO implementation transformations; designed integrated control-risk frameworks"
+            },
+            "mirrorsRole": {
+              "questionId": "framework_coso_ic",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "framework_coso_erm",
+            "question": "COSO ERM Framework (2017)",
+            "description": "COSO Enterprise Risk Management - Integrating with Strategy and Performance",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with COSO ERM",
+              "1": "Familiar with COSO ERM components and principles; understand risk appetite concepts",
+              "2": "Applied COSO ERM in risk assessments; audited ERM processes against COSO principles",
+              "3": "Designed audit programmes to assess COSO ERM implementation; evaluated risk culture and governance",
+              "4": "Led enterprise-wide audits of ERM effectiveness; designed COSO-aligned risk assessment methodologies"
+            },
+            "mirrorsRole": {
+              "questionId": "framework_coso_erm",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "framework_cobit",
+            "question": "COBIT (IT Governance)",
+            "description": "Control Objectives for Information and Related Technologies framework",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with COBIT",
+              "1": "Aware of COBIT structure; understand IT governance and management objectives",
+              "2": "Applied COBIT in IT audits; assessed IT controls against COBIT objectives",
+              "3": "Designed IT audit programmes based on COBIT; led IT governance assessments; mapped COBIT to other frameworks",
+              "4": "Built enterprise IT audit methodologies based on COBIT; led COBIT maturity assessments; designed IT control frameworks"
+            },
+            "mirrorsRole": {
+              "questionId": "framework_cobit",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "framework_iso31000",
+            "question": "ISO 31000 (Risk Management)",
+            "description": "International standard for risk management principles and guidelines",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with ISO 31000",
+              "1": "Aware of ISO 31000 principles; understand risk management process",
+              "2": "Applied ISO 31000 in risk-based audit planning; assessed organisational risk processes against ISO 31000",
+              "3": "Designed audit methodologies incorporating ISO 31000 risk principles; evaluated ERM frameworks against the standard",
+              "4": "Led enterprise risk management audits using ISO 31000; designed integrated audit-risk approaches"
+            },
+            "mirrorsRole": {
+              "questionId": "framework_iso31000",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "framework_three_lines",
+            "question": "Three Lines Model",
+            "description": "IIA's Three Lines Model for organisational governance and assurance",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with Three Lines Model",
+              "1": "Understand Three Lines concepts; familiar with first, second, and third line roles",
+              "2": "Applied Three Lines in assurance planning; coordinated with second line functions; avoided duplication of effort",
+              "3": "Designed Three Lines coordination frameworks; established combined assurance approaches; mapped assurance coverage",
+              "4": "Led enterprise Three Lines implementation; designed integrated assurance models; established line accountability frameworks"
+            },
+            "mirrorsRole": {
+              "questionId": "framework_three_lines",
+              "matchType": "minimum"
+            }
+          }
+        ]
+      },
+      {
+        "id": "audit_technology_systems",
+        "title": "Audit Technology & Systems",
+        "description": "Your experience with audit management systems and ERP platforms",
+        "order": 3,
+        "helpText": "Select systems you have used and rate your proficiency level for each",
+        "interviewNote": "Be prepared to demonstrate your knowledge of systems you rate highly.",
+        "questions": [
+          {
+            "id": "audit_systems_experience",
+            "question": "Audit Management Systems Experience",
+            "description": "Select all audit management systems you have experience with and rate your proficiency (1-4)",
+            "type": "system_proficiency",
+            "required": false,
+            "proficiencyScale": {
+              "1": "Basic User - Can navigate, create workpapers, input findings",
+              "2": "Proficient User - Runs reports, manages workflows, tracks issues",
+              "3": "Power User/Admin - Configures modules, designs templates, manages users",
+              "4": "Implementation Lead - Selected, designed and deployed the system"
+            },
+            "systems": [
+              {
+                "value": "teammate_plus",
+                "label": "TeamMate+"
+              },
+              {
+                "value": "auditboard",
+                "label": "AuditBoard"
+              },
+              {
+                "value": "workiva",
+                "label": "Workiva"
+              },
+              {
+                "value": "galvanize_diligent",
+                "label": "Galvanize (Diligent)"
+              },
+              {
+                "value": "sap_audit",
+                "label": "SAP Audit Management"
+              },
+              {
+                "value": "servicenow_grc",
+                "label": "ServiceNow GRC"
+              },
+              {
+                "value": "wolters_kluwer",
+                "label": "Wolters Kluwer"
+              },
+              {
+                "value": "mkinsight",
+                "label": "MKInsight"
+              },
+              {
+                "value": "pentana",
+                "label": "Pentana"
+              },
+              {
+                "value": "highbond",
+                "label": "HighBond (ACL)"
+              },
+              {
+                "value": "archer",
+                "label": "RSA Archer"
+              }
+            ],
+            "mirrorsRole": {
+              "questionId": "audit_systems_required",
+              "matchType": "overlap"
+            }
+          },
+          {
+            "id": "erp_systems_knowledge",
+            "question": "ERP System Knowledge",
+            "description": "Select ERP systems you have audit experience with and rate your proficiency (1-4)",
+            "type": "system_proficiency",
+            "required": false,
+            "proficiencyScale": {
+              "1": "Basic - Understand navigation; can run standard reports",
+              "2": "Proficient - Extract data; understand module structures; test key controls",
+              "3": "Advanced - Design audit tests; understand configuration; assess segregation of duties",
+              "4": "Expert - Deep technical knowledge; assess system implementations; design continuous controls"
+            },
+            "systems": [
+              {
+                "value": "sap_s4hana",
+                "label": "SAP S/4HANA"
+              },
+              {
+                "value": "sap_ecc",
+                "label": "SAP ECC"
+              },
+              {
+                "value": "oracle_erp",
+                "label": "Oracle ERP Cloud"
+              },
+              {
+                "value": "oracle_ebusiness",
+                "label": "Oracle E-Business Suite"
+              },
+              {
+                "value": "ms_dynamics",
+                "label": "Microsoft Dynamics 365"
+              },
+              {
+                "value": "netsuite",
+                "label": "NetSuite"
+              },
+              {
+                "value": "workday",
+                "label": "Workday"
+              },
+              {
+                "value": "jd_edwards",
+                "label": "JD Edwards"
+              },
+              {
+                "value": "infor",
+                "label": "Infor"
+              }
+            ],
+            "mirrorsRole": {
+              "questionId": "erp_systems_required",
+              "matchType": "overlap"
+            }
+          },
+          {
+            "id": "audit_system_selection",
+            "question": "Audit System Selection & Implementation",
+            "description": "Leading audit management software selection, procurement, and implementation",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with audit system selection or implementation",
+              "1": "Participated in system demos; understand audit system landscape",
+              "2": "Contributed to RFP processes; participated in vendor evaluations; supported implementation",
+              "3": "Led audit system selection; designed evaluation criteria; managed implementation programme",
+              "4": "Directed enterprise audit system implementations; designed system architecture; established system governance"
+            },
+            "mirrorsRole": {
+              "questionId": "audit_system_selection",
+              "matchType": "minimum"
+            }
+          }
+        ]
+      },
+      {
+        "id": "data_analytics_continuous_auditing",
+        "title": "Data Analytics & Continuous Auditing",
+        "description": "Your experience with data analytics, CAATs, and continuous auditing techniques",
+        "order": 4,
+        "helpText": "0 = No Experience, 1 = Awareness, 2 = Practical Application, 3 = Implementation & Management, 4 = Strategic Leadership",
+        "questions": [
+          {
+            "id": "data_literacy",
+            "question": "Data Literacy & Interpretation",
+            "description": "Ability to understand, interpret, and communicate data-driven insights",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with data analysis",
+              "1": "Can interpret data outputs; understand basic statistical concepts; read dashboards",
+              "2": "Perform independent data analysis; identify trends and anomalies; create basic reports",
+              "3": "Design data analysis approaches; define audit analytics strategy; train others on data interpretation",
+              "4": "Lead enterprise data literacy programmes; design data-driven audit methodologies; establish analytics centres of excellence"
+            },
+            "mirrorsRole": {
+              "questionId": "data_literacy",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "analytics_tools",
+            "question": "Analytics Tools (SQL, Python, R)",
+            "description": "Experience with programming languages and databases for audit data analysis",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with analytics tools",
+              "1": "Understand basic concepts; can interpret code outputs; familiar with tool capabilities",
+              "2": "Write basic SQL queries; perform data extraction; create simple scripts",
+              "3": "Design complex queries and scripts; automate data extraction; develop reusable analytics",
+              "4": "Build enterprise analytics platforms; design audit data lakes; develop advanced statistical models"
+            },
+            "mirrorsRole": {
+              "questionId": "analytics_tools",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "visualization_tools",
+            "question": "Data Visualization (Power BI, Tableau)",
+            "description": "Creating visual dashboards and reports for audit findings and analytics",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with visualization tools",
+              "1": "Can navigate dashboards; interpret visualizations; understand chart types",
+              "2": "Create basic dashboards; connect data sources; design audit reports",
+              "3": "Design advanced visualizations; create interactive dashboards; establish visualization standards",
+              "4": "Build enterprise visualization programmes; design real-time audit dashboards; establish BI governance"
+            },
+            "mirrorsRole": {
+              "questionId": "visualization_tools",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "caat_tools",
+            "question": "CAATs (ACL, IDEA, Arbutus)",
+            "description": "Computer-Assisted Audit Techniques for data analysis and testing",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with CAATs",
+              "1": "Understand CAAT concepts; familiar with common tools; can interpret CAAT outputs",
+              "2": "Perform CAAT procedures; extract and analyse data; document CAAT test results",
+              "3": "Design CAAT test scripts; develop reusable analytics; train others on CAAT usage",
+              "4": "Build enterprise CAAT programmes; design standardised analytics libraries; establish CAAT governance"
+            },
+            "mirrorsRole": {
+              "questionId": "caat_tools",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "continuous_auditing",
+            "question": "Continuous Auditing / Monitoring Design",
+            "description": "Designing and implementing ongoing automated audit procedures",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with continuous auditing",
+              "1": "Understand continuous auditing concepts; familiar with difference vs traditional auditing",
+              "2": "Support continuous auditing programmes; monitor automated test results; investigate exceptions",
+              "3": "Design continuous auditing tests; establish monitoring dashboards; define exception thresholds",
+              "4": "Build enterprise continuous auditing programmes; integrate with business processes; design real-time assurance frameworks"
+            },
+            "mirrorsRole": {
+              "questionId": "continuous_auditing",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "full_population_testing",
+            "question": "Full Population Testing",
+            "description": "Testing 100% of transactions rather than sampling",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with full population testing",
+              "1": "Understand full population vs sampling concepts; familiar with benefits and limitations",
+              "2": "Perform full population tests; analyse complete datasets; identify exceptions",
+              "3": "Design full population testing approaches; establish exception handling; develop test automation",
+              "4": "Build enterprise full population testing programmes; design real-time transaction monitoring; establish analytics centres of excellence"
+            },
+            "mirrorsRole": {
+              "questionId": "full_population_testing",
+              "matchType": "minimum"
+            }
+          }
+        ]
+      },
+      {
+        "id": "ai_emerging_technology",
+        "title": "AI & Emerging Technology Auditing",
+        "description": "Your experience auditing AI, automation, and emerging technologies",
+        "order": 5,
+        "helpText": "0 = No Experience, 1 = Awareness, 2 = Practical Application, 3 = Implementation & Management, 4 = Strategic Leadership",
+        "questions": [
+          {
+            "id": "ai_governance",
+            "question": "AI Governance & Risk Assessment",
+            "description": "Auditing AI systems, machine learning models, and algorithmic decision-making",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience auditing AI systems",
+              "1": "Understand AI/ML concepts; familiar with AI governance frameworks; aware of AI risks",
+              "2": "Audit AI governance controls; assess model documentation; evaluate bias and fairness controls",
+              "3": "Design AI audit programmes; assess model risk management frameworks; evaluate AI ethics governance",
+              "4": "Lead enterprise AI assurance programmes; design AI audit methodologies; establish AI governance standards"
+            },
+            "mirrorsRole": {
+              "questionId": "ai_governance",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "model_risk_management",
+            "question": "Model Risk Management",
+            "description": "Auditing model development, validation, and ongoing monitoring processes",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with model risk management",
+              "1": "Understand model risk concepts; familiar with model lifecycle; aware of validation requirements",
+              "2": "Audit model governance controls; assess model inventories; evaluate validation processes",
+              "3": "Design model risk audit programmes; assess independent validation functions; evaluate model performance monitoring",
+              "4": "Lead enterprise model risk assurance; design model audit methodologies; establish model governance standards"
+            },
+            "mirrorsRole": {
+              "questionId": "model_risk_management",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "rpa_auditing",
+            "question": "RPA / Automation Auditing",
+            "description": "Auditing robotic process automation and intelligent automation solutions",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience auditing RPA",
+              "1": "Understand RPA concepts; familiar with common platforms (UiPath, Blue Prism, Automation Anywhere)",
+              "2": "Audit RPA controls; assess bot access and security; evaluate change management processes",
+              "3": "Design RPA audit programmes; assess RPA governance; evaluate bot exception handling and monitoring",
+              "4": "Lead enterprise automation assurance; design RPA audit methodologies; establish automation governance standards"
+            },
+            "mirrorsRole": {
+              "questionId": "rpa_auditing",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "emerging_tech_awareness",
+            "question": "Emerging Technology Awareness",
+            "description": "Staying current with blockchain, IoT, quantum computing, and other emerging technologies",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No focus on emerging technologies",
+              "1": "General awareness of emerging tech trends; understand potential audit implications",
+              "2": "Assess emerging technology risks; evaluate pilot implementations; identify control requirements",
+              "3": "Design audit approaches for emerging technologies; advise on governance frameworks; develop audit skills",
+              "4": "Lead emerging technology assurance programmes; establish horizon scanning; contribute to industry guidance"
+            },
+            "mirrorsRole": {
+              "questionId": "emerging_tech_awareness",
+              "matchType": "minimum"
+            }
+          }
+        ]
+      },
+      {
+        "id": "it_audit_cybersecurity",
+        "title": "IT Audit & Cybersecurity",
+        "description": "Your experience with IT general controls, cybersecurity, and technology auditing",
+        "order": 6,
+        "helpText": "0 = No Experience, 1 = Awareness, 2 = Practical Application, 3 = Implementation & Management, 4 = Strategic Leadership",
+        "questions": [
+          {
+            "id": "it_general_controls",
+            "question": "IT General Controls (ITGCs)",
+            "description": "Auditing access management, change management, operations, and program development",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with ITGCs",
+              "1": "Understand ITGC categories; familiar with common control objectives",
+              "2": "Test ITGC controls; evaluate control design and effectiveness; document deficiencies",
+              "3": "Design ITGC audit programmes; assess ITGC frameworks; lead ITGC audits across multiple applications",
+              "4": "Build enterprise ITGC assurance programmes; design ITGC methodologies; establish IT control standards"
+            },
+            "mirrorsRole": {
+              "questionId": "it_general_controls",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "nist_csf",
+            "question": "NIST Cybersecurity Framework",
+            "description": "Applying NIST CSF (Identify, Protect, Detect, Respond, Recover) in audits",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with NIST CSF",
+              "1": "Understand NIST CSF functions and categories; familiar with framework structure",
+              "2": "Audit against NIST CSF requirements; assess control maturity; benchmark security posture",
+              "3": "Design cybersecurity audits using NIST CSF; assess organisational security programmes; develop maturity roadmaps",
+              "4": "Lead enterprise security assurance using NIST CSF; design cyber audit methodologies; establish security audit standards"
+            },
+            "mirrorsRole": {
+              "questionId": "nist_csf",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "iso27001",
+            "question": "ISO 27001 / Information Security",
+            "description": "Auditing information security management systems against ISO 27001",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with ISO 27001",
+              "1": "Understand ISO 27001 structure; familiar with Annex A controls",
+              "2": "Audit ISMS controls; assess control implementation; evaluate security policies",
+              "3": "Design ISO 27001 audit programmes; lead certification readiness assessments; develop remediation roadmaps",
+              "4": "Lead enterprise ISMS assurance; design security audit frameworks; support certification programmes"
+            },
+            "mirrorsRole": {
+              "questionId": "iso27001",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "cloud_security",
+            "question": "Cloud Security (AWS, Azure, GCP)",
+            "description": "Auditing cloud infrastructure, configurations, and security controls",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with cloud security auditing",
+              "1": "Understand cloud service models (IaaS, PaaS, SaaS); familiar with shared responsibility model",
+              "2": "Audit cloud configurations; assess IAM controls; evaluate data protection in cloud",
+              "3": "Design cloud security audits; assess cloud architecture; evaluate multi-cloud governance",
+              "4": "Lead enterprise cloud assurance programmes; design cloud audit methodologies; establish cloud security standards"
+            },
+            "mirrorsRole": {
+              "questionId": "cloud_security",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "identity_access",
+            "question": "Identity & Access Management (IAM) Auditing",
+            "description": "Auditing user access, privileged access, and identity governance",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with IAM auditing",
+              "1": "Understand IAM concepts; familiar with access control models; aware of PAM requirements",
+              "2": "Audit user access reviews; assess privileged access controls; evaluate joiner-mover-leaver processes",
+              "3": "Design IAM audit programmes; assess identity governance; evaluate role-based access control implementations",
+              "4": "Lead enterprise IAM assurance; design IAM audit methodologies; establish identity governance standards"
+            },
+            "mirrorsRole": {
+              "questionId": "identity_access",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "ransomware_resilience",
+            "question": "Ransomware / Cyber Resilience Auditing",
+            "description": "Assessing organisational resilience against cyber threats and ransomware",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with cyber resilience auditing",
+              "1": "Understand ransomware threats; familiar with resilience concepts; aware of recovery requirements",
+              "2": "Audit backup and recovery controls; assess incident response procedures; evaluate security awareness",
+              "3": "Design cyber resilience audits; assess detection and response capabilities; evaluate business continuity integration",
+              "4": "Lead enterprise cyber resilience assurance; design resilience audit frameworks; establish cyber recovery standards"
+            },
+            "mirrorsRole": {
+              "questionId": "ransomware_resilience",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "penetration_testing",
+            "question": "Penetration Testing Oversight",
+            "description": "Overseeing or reviewing penetration testing and vulnerability assessments",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with penetration testing oversight",
+              "1": "Understand penetration testing concepts; can interpret pen test reports; familiar with vulnerability ratings",
+              "2": "Review pen test scope and results; assess remediation progress; evaluate vulnerability management",
+              "3": "Oversee penetration testing programmes; design testing strategies; evaluate red team exercises",
+              "4": "Lead enterprise vulnerability assurance; design pen test governance; establish security testing standards"
+            },
+            "mirrorsRole": {
+              "questionId": "penetration_testing",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "third_party_cyber",
+            "question": "Third-Party Cyber Risk Assessment",
+            "description": "Assessing cyber risks from vendors, suppliers, and third parties",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with third-party cyber risk",
+              "1": "Understand third-party cyber risks; familiar with vendor security questionnaires",
+              "2": "Audit vendor security assessments; evaluate SOC reports; assess supply chain risks",
+              "3": "Design third-party cyber audit programmes; assess vendor risk management; evaluate continuous monitoring",
+              "4": "Lead enterprise third-party cyber assurance; design vendor audit frameworks; establish supply chain security standards"
+            },
+            "mirrorsRole": {
+              "questionId": "third_party_cyber",
+              "matchType": "minimum"
+            }
+          }
+        ]
+      },
+      {
+        "id": "financial_controls_sox",
+        "title": "Financial Controls & SOX",
+        "description": "Your experience with internal controls over financial reporting and SOX compliance",
+        "order": 7,
+        "helpText": "0 = No Experience, 1 = Awareness, 2 = Practical Application, 3 = Implementation & Management, 4 = Strategic Leadership",
+        "questions": [
+          {
+            "id": "sox_icfr",
+            "question": "SOX / ICFR Testing",
+            "description": "Testing internal controls over financial reporting for Sarbanes-Oxley compliance",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with SOX/ICFR",
+              "1": "Understand SOX requirements; familiar with Section 404 testing concepts",
+              "2": "Test SOX controls; evaluate control design and operating effectiveness; document exceptions",
+              "3": "Lead SOX audits; design testing programmes; manage external auditor coordination; assess deficiency significance",
+              "4": "Direct enterprise SOX programmes; establish SOX governance; design ICFR frameworks; lead SOX transformations"
+            },
+            "mirrorsRole": {
+              "questionId": "sox_icfr",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "jsox",
+            "question": "J-SOX (Japan SOX)",
+            "description": "Testing internal controls for Japanese Financial Instruments and Exchange Act",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with J-SOX",
+              "1": "Understand J-SOX requirements; familiar with differences from US SOX",
+              "2": "Test J-SOX controls; evaluate company-level and process-level controls; document findings",
+              "3": "Lead J-SOX audits; design testing approaches; coordinate with Japanese subsidiaries",
+              "4": "Direct enterprise J-SOX programmes; establish J-SOX governance; coordinate global ICFR compliance"
+            },
+            "mirrorsRole": {
+              "questionId": "jsox",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "financial_statement_audit",
+            "question": "Financial Statement Audit Support",
+            "description": "Supporting external auditors with financial statement audit procedures",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with financial statement audit support",
+              "1": "Understand financial statement audit process; familiar with audit assertions",
+              "2": "Support external audit requests; coordinate testing schedules; provide documentation",
+              "3": "Lead internal audit financial reviews; design testing to support external reliance; manage audit coordination",
+              "4": "Direct enterprise external audit relationship; establish coordination frameworks; negotiate reliance arrangements"
+            },
+            "mirrorsRole": {
+              "questionId": "financial_statement_audit",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "revenue_recognition",
+            "question": "Revenue Recognition Controls",
+            "description": "Auditing controls over revenue recognition under IFRS 15 / ASC 606",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with revenue recognition auditing",
+              "1": "Understand revenue recognition principles (5-step model); familiar with key risks",
+              "2": "Test revenue controls; evaluate contract review processes; assess variable consideration estimates",
+              "3": "Design revenue audit programmes; assess complex arrangements (multiple performance obligations, licensing); lead remediation",
+              "4": "Direct enterprise revenue assurance; establish revenue control frameworks; lead IFRS 15/ASC 606 implementations"
+            },
+            "mirrorsRole": {
+              "questionId": "revenue_recognition",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "management_override",
+            "question": "Management Override Controls",
+            "description": "Assessing controls to prevent and detect management override of controls",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with management override testing",
+              "1": "Understand management override risks; familiar with fraud triangle concepts",
+              "2": "Test management override controls; review journal entries; assess tone at the top",
+              "3": "Design management override audit programmes; lead journal entry testing; assess governance controls",
+              "4": "Direct enterprise anti-fraud programmes; establish management override frameworks; design continuous monitoring"
+            },
+            "mirrorsRole": {
+              "questionId": "management_override",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "journal_entry_testing",
+            "question": "Journal Entry Testing",
+            "description": "Testing non-standard journal entries and estimates",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with journal entry testing",
+              "1": "Understand journal entry risks; familiar with testing approaches",
+              "2": "Test journal entries; identify unusual entries; evaluate supporting documentation",
+              "3": "Design journal entry testing programmes; develop data analytics for JE testing; lead period-end close audits",
+              "4": "Direct enterprise journal entry assurance; establish continuous JE monitoring; design automated testing frameworks"
+            },
+            "mirrorsRole": {
+              "questionId": "journal_entry_testing",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "external_audit_coordination",
+            "question": "External Auditor Coordination",
+            "description": "Managing relationship and coordination with external auditors",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with external auditor coordination",
+              "1": "Understand external audit process; familiar with reliance concepts",
+              "2": "Coordinate with external auditors; share workpapers; align testing schedules",
+              "3": "Lead external audit coordination; negotiate scope and reliance; manage audit relationship",
+              "4": "Direct enterprise external audit relationship; establish coordination frameworks; optimise combined assurance"
+            },
+            "mirrorsRole": {
+              "questionId": "external_audit_coordination",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "ifrs_gaap",
+            "question": "IFRS / GAAP Knowledge",
+            "description": "Knowledge of international and local accounting standards",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No accounting standards knowledge",
+              "1": "Understand basic accounting concepts; familiar with key standards",
+              "2": "Apply accounting standards in audits; evaluate management's accounting judgments",
+              "3": "Lead audits of complex accounting areas; assess new standard implementations; advise on accounting treatments",
+              "4": "Direct enterprise accounting assurance; lead standard transition audits; establish accounting control frameworks"
+            },
+            "mirrorsRole": {
+              "questionId": "ifrs_gaap",
+              "matchType": "minimum"
+            }
+          }
+        ]
+      },
+      {
+        "id": "fraud_forensic_auditing",
+        "title": "Fraud & Forensic Auditing",
+        "description": "Your experience with fraud risk assessment, investigation, and forensic techniques",
+        "order": 8,
+        "helpText": "0 = No Experience, 1 = Awareness, 2 = Practical Application, 3 = Implementation & Management, 4 = Strategic Leadership",
+        "questions": [
+          {
+            "id": "fraud_risk_assessment",
+            "question": "Fraud Risk Assessment",
+            "description": "Identifying and assessing fraud risks across the organisation",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with fraud risk assessment",
+              "1": "Understand fraud risk concepts; familiar with common fraud schemes",
+              "2": "Conduct fraud risk assessments; identify fraud risks in audit planning; design fraud-focused tests",
+              "3": "Lead enterprise fraud risk assessments; design fraud risk frameworks; develop fraud risk registers",
+              "4": "Direct enterprise fraud risk programmes; establish fraud risk governance; design continuous fraud monitoring"
+            },
+            "mirrorsRole": {
+              "questionId": "fraud_risk_assessment",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "fraud_triangle",
+            "question": "Fraud Triangle Application",
+            "description": "Applying pressure, opportunity, and rationalization framework in audits",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with fraud triangle",
+              "1": "Understand fraud triangle concept; familiar with pressure, opportunity, rationalization",
+              "2": "Apply fraud triangle in risk assessment; identify control gaps; assess fraud enablers",
+              "3": "Design fraud-focused audits using fraud triangle; train auditors; develop anti-fraud frameworks",
+              "4": "Direct enterprise anti-fraud programmes; establish fraud prevention governance; design control environments to address fraud triangle"
+            },
+            "mirrorsRole": {
+              "questionId": "fraud_triangle",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "forensic_data_analysis",
+            "question": "Forensic Data Analysis",
+            "description": "Using data analytics techniques for fraud detection and investigation",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with forensic data analysis",
+              "1": "Understand forensic data concepts; familiar with Benford's Law and anomaly detection",
+              "2": "Perform forensic data analysis; identify anomalies; support investigations with data",
+              "3": "Design forensic analytics programmes; develop detection algorithms; lead data-driven investigations",
+              "4": "Direct enterprise forensic analytics; establish continuous fraud monitoring; design predictive fraud models"
+            },
+            "mirrorsRole": {
+              "questionId": "forensic_data_analysis",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "red_flag_monitoring",
+            "question": "Red Flag / Anomaly Monitoring",
+            "description": "Implementing and monitoring fraud red flags and warning indicators",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with red flag monitoring",
+              "1": "Understand fraud red flag concepts; familiar with common indicators",
+              "2": "Monitor red flags during audits; investigate anomalies; escalate concerns",
+              "3": "Design red flag monitoring programmes; establish alert thresholds; develop investigation protocols",
+              "4": "Direct enterprise red flag programmes; establish continuous monitoring; design automated detection systems"
+            },
+            "mirrorsRole": {
+              "questionId": "red_flag_monitoring",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "investigation_management",
+            "question": "Investigation Management",
+            "description": "Managing fraud investigations from allegation to resolution",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with investigation management",
+              "1": "Understand investigation process; familiar with evidence handling requirements",
+              "2": "Support fraud investigations; gather evidence; document findings",
+              "3": "Lead fraud investigations; manage investigation teams; coordinate with legal and HR",
+              "4": "Direct enterprise investigation function; establish investigation governance; manage complex multi-jurisdictional cases"
+            },
+            "mirrorsRole": {
+              "questionId": "investigation_management",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "interview_techniques",
+            "question": "Interview & Interrogation Techniques",
+            "description": "Conducting interviews in fraud investigations and audits",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with investigative interviews",
+              "1": "Understand interview techniques; familiar with questioning approaches",
+              "2": "Conduct audit interviews; gather information through questioning; document responses",
+              "3": "Lead investigative interviews; apply cognitive interview techniques; manage difficult interviews",
+              "4": "Direct enterprise interview programmes; establish interview protocols; train investigators on techniques"
+            },
+            "mirrorsRole": {
+              "questionId": "interview_techniques",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "evidence_handling",
+            "question": "Evidence Handling & Chain of Custody",
+            "description": "Preserving and managing evidence in investigations",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with evidence handling",
+              "1": "Understand chain of custody concepts; familiar with evidence preservation requirements",
+              "2": "Handle evidence appropriately; maintain documentation; support evidence collection",
+              "3": "Lead evidence management; establish handling protocols; coordinate with legal on preservation",
+              "4": "Direct enterprise evidence management; establish e-discovery capabilities; design evidence governance frameworks"
+            },
+            "mirrorsRole": {
+              "questionId": "evidence_handling",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "whistleblower_programmes",
+            "question": "Whistleblower Programme Oversight",
+            "description": "Overseeing or auditing whistleblower hotlines and speak-up programmes",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with whistleblower programmes",
+              "1": "Understand whistleblower programme requirements; familiar with hotline operations",
+              "2": "Audit whistleblower controls; assess hotline effectiveness; review case management",
+              "3": "Oversee whistleblower programmes; design effectiveness metrics; manage programme governance",
+              "4": "Direct enterprise whistleblower function; establish programme governance; design continuous improvement"
+            },
+            "mirrorsRole": {
+              "questionId": "whistleblower_programmes",
+              "matchType": "minimum"
+            }
+          }
+        ]
+      },
+      {
+        "id": "risk_assessment_planning",
+        "title": "Risk Assessment & Audit Planning",
+        "description": "Your experience with risk-based audit planning and strategic alignment",
+        "order": 9,
+        "helpText": "0 = No Experience, 1 = Awareness, 2 = Practical Application, 3 = Implementation & Management, 4 = Strategic Leadership",
+        "questions": [
+          {
+            "id": "audit_universe",
+            "question": "Audit Universe Development",
+            "description": "Defining and maintaining the audit universe of auditable entities",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with audit universe development",
+              "1": "Understand audit universe concepts; familiar with entity identification approaches",
+              "2": "Contribute to audit universe maintenance; map auditable entities; identify coverage gaps",
+              "3": "Design audit universe methodology; establish entity hierarchy; develop universe governance",
+              "4": "Direct enterprise audit universe; establish dynamic universe management; integrate with strategic planning"
+            },
+            "mirrorsRole": {
+              "questionId": "audit_universe",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "risk_based_planning",
+            "question": "Risk-Based Audit Planning",
+            "description": "Developing annual audit plans based on risk assessment",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with risk-based planning",
+              "1": "Understand risk-based planning concepts; familiar with prioritization approaches",
+              "2": "Contribute to annual planning; assess entity risks; support plan development",
+              "3": "Lead annual planning process; design risk assessment methodology; present plans to stakeholders",
+              "4": "Direct enterprise audit planning; establish planning governance; design dynamic risk-based approaches"
+            },
+            "mirrorsRole": {
+              "questionId": "risk_based_planning",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "dynamic_risk_assessment",
+            "question": "Dynamic / Continuous Risk Assessment",
+            "description": "Continuously monitoring and updating risk assessments throughout the year",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with dynamic risk assessment",
+              "1": "Understand continuous risk monitoring concepts; familiar with key risk indicators",
+              "2": "Monitor risk changes; update assessments; support plan adjustments",
+              "3": "Design continuous risk monitoring; establish trigger-based assessments; lead plan pivots",
+              "4": "Direct enterprise dynamic risk assessment; establish real-time risk sensing; design agile planning frameworks"
+            },
+            "mirrorsRole": {
+              "questionId": "dynamic_risk_assessment",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "horizon_scanning",
+            "question": "Horizon Scanning & Emerging Risk",
+            "description": "Identifying emerging risks and incorporating into audit planning",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with horizon scanning",
+              "1": "Understand emerging risk concepts; stay informed on industry trends",
+              "2": "Identify emerging risks; incorporate into planning discussions; monitor external developments",
+              "3": "Lead horizon scanning initiatives; design emerging risk frameworks; establish stakeholder engagement",
+              "4": "Direct enterprise horizon scanning; establish strategic foresight capabilities; design early warning systems"
+            },
+            "mirrorsRole": {
+              "questionId": "horizon_scanning",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "strategic_alignment",
+            "question": "Strategic Plan Alignment",
+            "description": "Aligning audit plan with organisational strategy and objectives",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with strategic alignment",
+              "1": "Understand importance of strategy alignment; familiar with strategic planning concepts",
+              "2": "Map audits to strategic objectives; incorporate strategic risks; support alignment discussions",
+              "3": "Design strategically-aligned audit plans; engage with strategy function; demonstrate strategic value",
+              "4": "Direct enterprise strategic alignment; establish audit as strategic partner; design value-based audit planning"
+            },
+            "mirrorsRole": {
+              "questionId": "strategic_alignment",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "resource_allocation",
+            "question": "Audit Resource Allocation",
+            "description": "Allocating audit resources across the plan based on risk and coverage needs",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with resource allocation",
+              "1": "Understand resource planning concepts; familiar with capacity constraints",
+              "2": "Support resource planning; track utilisation; identify resourcing gaps",
+              "3": "Lead resource allocation; balance competing priorities; optimise team utilisation",
+              "4": "Direct enterprise resource management; establish workforce planning; design flexible resourcing models"
+            },
+            "mirrorsRole": {
+              "questionId": "resource_allocation",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "audit_plan_flexibility",
+            "question": "Audit Plan Agility / Pivoting",
+            "description": "Adapting audit plans in response to changing risks and priorities",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with plan agility",
+              "1": "Understand need for plan flexibility; familiar with change management concepts",
+              "2": "Support plan adjustments; document changes; communicate impacts",
+              "3": "Lead plan pivots; design change governance; balance agility with coverage commitments",
+              "4": "Direct enterprise agile audit planning; establish adaptive planning frameworks; design rapid response capabilities"
+            },
+            "mirrorsRole": {
+              "questionId": "audit_plan_flexibility",
+              "matchType": "minimum"
+            }
+          }
+        ]
+      },
+      {
+        "id": "audit_execution_methodology",
+        "title": "Audit Execution & Methodology",
+        "description": "Your experience with audit execution, fieldwork, and reporting",
+        "order": 10,
+        "helpText": "0 = No Experience, 1 = Awareness, 2 = Practical Application, 3 = Implementation & Management, 4 = Strategic Leadership",
+        "questions": [
+          {
+            "id": "audit_programme_design",
+            "question": "Audit Programme Design",
+            "description": "Designing detailed audit programmes and test procedures",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with audit programme design",
+              "1": "Understand audit programme concepts; familiar with test procedure structure",
+              "2": "Execute existing audit programmes; suggest improvements; document results",
+              "3": "Design audit programmes; develop test procedures; create reusable templates",
+              "4": "Direct enterprise audit methodology; establish programme governance; design continuous improvement"
+            },
+            "mirrorsRole": {
+              "questionId": "audit_programme_design",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "sampling_methodology",
+            "question": "Statistical & Judgmental Sampling",
+            "description": "Applying sampling techniques for audit testing",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with audit sampling",
+              "1": "Understand sampling concepts; familiar with statistical vs judgmental approaches",
+              "2": "Apply sampling techniques; determine sample sizes; document sampling rationale",
+              "3": "Design sampling methodologies; evaluate sample results; train auditors on techniques",
+              "4": "Direct enterprise sampling standards; establish statistical frameworks; design risk-based sampling approaches"
+            },
+            "mirrorsRole": {
+              "questionId": "sampling_methodology",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "evidence_collection",
+            "question": "Audit Evidence Collection & Documentation",
+            "description": "Gathering sufficient, reliable audit evidence and maintaining workpapers",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with evidence collection",
+              "1": "Understand evidence requirements; familiar with documentation standards",
+              "2": "Collect audit evidence; maintain workpapers; apply evidence evaluation",
+              "3": "Design evidence collection approaches; establish documentation standards; review workpaper quality",
+              "4": "Direct enterprise evidence standards; establish quality frameworks; design workpaper governance"
+            },
+            "mirrorsRole": {
+              "questionId": "evidence_collection",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "root_cause_analysis",
+            "question": "Root Cause Analysis (5 Whys, Fishbone)",
+            "description": "Identifying underlying causes of control failures and audit findings",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with root cause analysis",
+              "1": "Understand root cause concepts; familiar with 5 Whys and Ishikawa diagrams",
+              "2": "Apply root cause techniques; identify underlying issues; document analysis",
+              "3": "Lead root cause analysis; design investigation approaches; train teams on techniques",
+              "4": "Direct enterprise root cause capability; establish analysis governance; design systemic issue identification"
+            },
+            "mirrorsRole": {
+              "questionId": "root_cause_analysis",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "agile_auditing",
+            "question": "Agile Auditing (Scrum, Sprints)",
+            "description": "Applying agile methodologies to internal audit execution",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with agile auditing",
+              "1": "Understand agile concepts; familiar with sprints and standups",
+              "2": "Participate in agile audits; contribute to sprints; use agile tools",
+              "3": "Lead agile audits; design sprint-based approaches; coach teams on agile techniques",
+              "4": "Direct enterprise agile transformation; establish agile audit governance; design hybrid methodologies"
+            },
+            "mirrorsRole": {
+              "questionId": "agile_auditing",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "audit_findings",
+            "question": "Finding Development & Rating",
+            "description": "Developing well-structured findings with appropriate risk ratings",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with finding development",
+              "1": "Understand finding structure (condition, criteria, cause, effect); familiar with rating scales",
+              "2": "Draft audit findings; apply rating methodology; develop recommendations",
+              "3": "Lead finding development; calibrate ratings; challenge and refine team findings",
+              "4": "Direct enterprise finding standards; establish rating governance; design impact-based methodologies"
+            },
+            "mirrorsRole": {
+              "questionId": "audit_findings",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "audit_report_writing",
+            "question": "Audit Report Writing",
+            "description": "Writing clear, concise, and actionable audit reports",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with audit report writing",
+              "1": "Understand report structure; familiar with effective writing techniques",
+              "2": "Draft audit reports; write clearly and concisely; incorporate feedback",
+              "3": "Lead report development; establish writing standards; mentor report writing skills",
+              "4": "Direct enterprise reporting standards; design report governance; establish stakeholder-focused communication"
+            },
+            "mirrorsRole": {
+              "questionId": "audit_report_writing",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "issue_tracking",
+            "question": "Issue Tracking & Remediation Monitoring",
+            "description": "Tracking audit findings and monitoring management remediation",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with issue tracking",
+              "1": "Understand issue management concepts; familiar with tracking systems",
+              "2": "Track issues; monitor remediation progress; validate closures",
+              "3": "Lead issue management; design tracking approaches; report on remediation trends",
+              "4": "Direct enterprise issue governance; establish escalation frameworks; design predictive tracking"
+            },
+            "mirrorsRole": {
+              "questionId": "issue_tracking",
+              "matchType": "minimum"
+            }
+          }
+        ]
+      },
+      {
+        "id": "integrated_assurance_coordination",
+        "title": "Integrated Assurance & Coordination",
+        "description": "Your experience with combined assurance and cross-functional coordination",
+        "order": 11,
+        "helpText": "0 = No Experience, 1 = Awareness, 2 = Practical Application, 3 = Implementation & Management, 4 = Strategic Leadership",
+        "questions": [
+          {
+            "id": "assurance_mapping",
+            "question": "Assurance Mapping",
+            "description": "Mapping assurance activities across the organisation to identify coverage and gaps",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with assurance mapping",
+              "1": "Understand assurance mapping concepts; familiar with coverage analysis",
+              "2": "Contribute to assurance mapping; identify assurance providers; document coverage",
+              "3": "Lead assurance mapping exercises; design mapping methodology; report on coverage gaps",
+              "4": "Direct enterprise assurance mapping; establish mapping governance; design continuous assurance monitoring"
+            },
+            "mirrorsRole": {
+              "questionId": "assurance_mapping",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "three_lines_coordination",
+            "question": "Three Lines Coordination",
+            "description": "Coordinating audit activities with first and second line functions",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with three lines coordination",
+              "1": "Understand three lines roles; familiar with coordination benefits",
+              "2": "Coordinate with risk and compliance; avoid duplication; share information",
+              "3": "Lead three lines coordination; establish protocols; design joint assurance activities",
+              "4": "Direct enterprise three lines framework; establish coordination governance; design integrated assurance models"
+            },
+            "mirrorsRole": {
+              "questionId": "three_lines_coordination",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "risk_function_liaison",
+            "question": "Risk Function Liaison",
+            "description": "Working with enterprise risk management and operational risk functions",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with risk function liaison",
+              "1": "Understand risk function role; familiar with ERM and operational risk",
+              "2": "Liaise with risk function; incorporate risk assessments; align on coverage",
+              "3": "Lead risk function engagement; design joint activities; establish regular coordination",
+              "4": "Direct enterprise risk-audit relationship; establish strategic partnership; design combined risk-audit approach"
+            },
+            "mirrorsRole": {
+              "questionId": "risk_function_liaison",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "compliance_coordination",
+            "question": "Compliance Function Coordination",
+            "description": "Working with compliance and legal functions on assurance activities",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with compliance coordination",
+              "1": "Understand compliance function role; familiar with regulatory requirements",
+              "2": "Coordinate with compliance; share findings; align testing coverage",
+              "3": "Lead compliance coordination; design joint programmes; establish regular engagement",
+              "4": "Direct enterprise compliance-audit relationship; establish strategic partnership; design integrated compliance assurance"
+            },
+            "mirrorsRole": {
+              "questionId": "compliance_coordination",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "external_audit_reliance",
+            "question": "External Audit Reliance",
+            "description": "Enabling external auditor reliance on internal audit work",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with external audit reliance",
+              "1": "Understand reliance concepts; familiar with ISA 610 requirements",
+              "2": "Support reliance arrangements; provide workpapers; participate in coordination meetings",
+              "3": "Lead reliance programmes; negotiate scope alignment; design reliance-ready audits",
+              "4": "Direct enterprise reliance framework; establish reliance governance; optimise combined audit efficiency"
+            },
+            "mirrorsRole": {
+              "questionId": "external_audit_reliance",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "combined_assurance",
+            "question": "Combined Assurance Reporting",
+            "description": "Producing integrated assurance reports across all lines",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with combined assurance reporting",
+              "1": "Understand combined assurance concepts; familiar with integrated reporting",
+              "2": "Contribute to combined assurance reports; aggregate findings; support coordination",
+              "3": "Lead combined assurance reporting; design report formats; coordinate across functions",
+              "4": "Direct enterprise combined assurance; establish reporting governance; design continuous assurance dashboards"
+            },
+            "mirrorsRole": {
+              "questionId": "combined_assurance",
+              "matchType": "minimum"
+            }
+          }
+        ]
+      },
+      {
+        "id": "esg_nonfinancial_assurance",
+        "title": "ESG & Non-Financial Assurance",
+        "description": "Your experience auditing environmental, social, and governance matters",
+        "order": 12,
+        "helpText": "0 = No Experience, 1 = Awareness, 2 = Practical Application, 3 = Implementation & Management, 4 = Strategic Leadership",
+        "questions": [
+          {
+            "id": "esg_audit_strategy",
+            "question": "ESG Audit Strategy",
+            "description": "Developing audit approaches for environmental, social, and governance risks",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with ESG auditing",
+              "1": "Understand ESG concepts; familiar with ESG risks and reporting requirements",
+              "2": "Incorporate ESG into audits; assess ESG governance; audit specific ESG controls",
+              "3": "Design ESG audit programmes; develop ESG risk frameworks; lead ESG-focused audits",
+              "4": "Direct enterprise ESG assurance; establish ESG audit governance; design integrated ESG-financial auditing"
+            },
+            "mirrorsRole": {
+              "questionId": "esg_audit_strategy",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "carbon_emissions",
+            "question": "Carbon / GHG Emissions Auditing (Scope 1-3)",
+            "description": "Auditing greenhouse gas emissions data and net zero commitments",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with carbon auditing",
+              "1": "Understand GHG Protocol; familiar with Scope 1, 2, 3 emissions categories",
+              "2": "Audit emissions data; assess calculation methodologies; verify source data",
+              "3": "Design carbon audit programmes; assess net zero strategies; audit Scope 3 supply chain emissions",
+              "4": "Direct enterprise carbon assurance; establish emissions audit governance; design limited/reasonable assurance approaches"
+            },
+            "mirrorsRole": {
+              "questionId": "carbon_emissions",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "sustainability_data",
+            "question": "Sustainability Data Verification",
+            "description": "Verifying non-financial sustainability metrics and disclosures",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with sustainability data verification",
+              "1": "Understand sustainability reporting requirements; familiar with key metrics",
+              "2": "Verify sustainability data; assess data collection processes; test calculations",
+              "3": "Design sustainability data audits; establish verification methodologies; assess data governance",
+              "4": "Direct enterprise sustainability assurance; establish data verification governance; design assurance-ready processes"
+            },
+            "mirrorsRole": {
+              "questionId": "sustainability_data",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "culture_auditing",
+            "question": "Culture & Soft Controls Auditing",
+            "description": "Assessing organisational culture, ethics, and behavioural controls",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with culture auditing",
+              "1": "Understand culture audit concepts; familiar with culture indicators",
+              "2": "Assess culture indicators; review ethics programmes; evaluate tone at the top",
+              "3": "Design culture audit approaches; develop culture assessment frameworks; lead culture reviews",
+              "4": "Direct enterprise culture assurance; establish culture audit governance; design continuous culture monitoring"
+            },
+            "mirrorsRole": {
+              "questionId": "culture_auditing",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "dei_auditing",
+            "question": "DEI Metrics Auditing",
+            "description": "Auditing diversity, equity, and inclusion data and programmes",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with DEI auditing",
+              "1": "Understand DEI concepts; familiar with common metrics and reporting",
+              "2": "Audit DEI data; assess programme effectiveness; verify metrics calculations",
+              "3": "Design DEI audit programmes; assess governance; evaluate strategy implementation",
+              "4": "Direct enterprise DEI assurance; establish audit governance; design integrated DEI-culture reviews"
+            },
+            "mirrorsRole": {
+              "questionId": "dei_auditing",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "supply_chain_ethics",
+            "question": "Supply Chain Ethics / Human Rights",
+            "description": "Auditing supply chain for ethical sourcing and human rights compliance",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with supply chain ethics auditing",
+              "1": "Understand supply chain ethics risks; familiar with Modern Slavery Act requirements",
+              "2": "Audit supplier due diligence; assess ethical sourcing controls; review compliance",
+              "3": "Design supply chain ethics audits; assess human rights governance; evaluate monitoring programmes",
+              "4": "Direct enterprise supply chain assurance; establish ethics audit governance; design supply chain transparency frameworks"
+            },
+            "mirrorsRole": {
+              "questionId": "supply_chain_ethics",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "esg_frameworks",
+            "question": "ESG Frameworks (GRI, SASB, TCFD, CSRD)",
+            "description": "Knowledge of ESG reporting frameworks and standards",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No knowledge of ESG frameworks",
+              "1": "Understand major ESG frameworks; familiar with GRI, SASB, TCFD, CSRD requirements",
+              "2": "Audit against ESG frameworks; assess framework compliance; evaluate disclosure adequacy",
+              "3": "Design framework-aligned audits; assess implementation; advise on framework selection",
+              "4": "Direct enterprise ESG framework assurance; establish framework governance; lead CSRD readiness programmes"
+            },
+            "mirrorsRole": {
+              "questionId": "esg_frameworks",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "greenwashing_detection",
+            "question": "Greenwashing Detection",
+            "description": "Identifying misleading environmental claims and disclosures",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with greenwashing detection",
+              "1": "Understand greenwashing risks; familiar with common misleading claims",
+              "2": "Assess environmental claims; verify supporting evidence; identify potential greenwashing",
+              "3": "Design greenwashing detection approaches; establish review frameworks; train teams on indicators",
+              "4": "Direct enterprise greenwashing assurance; establish detection governance; design continuous monitoring"
+            },
+            "mirrorsRole": {
+              "questionId": "greenwashing_detection",
+              "matchType": "minimum"
+            }
+          }
+        ]
+      },
+      {
+        "id": "governance_board_engagement",
+        "title": "Governance & Board Engagement",
+        "description": "Your experience with audit governance, charter development, and board interaction",
+        "order": 13,
+        "helpText": "0 = No Experience, 1 = Awareness, 2 = Practical Application, 3 = Implementation & Management, 4 = Strategic Leadership",
+        "questions": [
+          {
+            "id": "audit_charter",
+            "question": "Audit Charter Development",
+            "description": "Drafting and maintaining the internal audit charter",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with audit charter development",
+              "1": "Understand charter purpose and requirements; familiar with IIA Standards on charter",
+              "2": "Contribute to charter reviews; document charter requirements; support annual updates",
+              "3": "Draft audit charters; lead charter reviews; present to audit committee for approval",
+              "4": "Design enterprise charter governance; establish charter best practices; lead charter transformation"
+            },
+            "mirrorsRole": {
+              "questionId": "audit_charter",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "essential_conditions",
+            "question": "Essential Conditions Negotiation",
+            "description": "Securing organisational positioning, authority, and resources per GIAS Domain III",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with Essential Conditions",
+              "1": "Understand GIAS Domain III requirements; familiar with organisational positioning needs",
+              "2": "Assess Essential Conditions compliance; identify gaps; support improvement initiatives",
+              "3": "Lead Essential Conditions negotiation; secure appropriate positioning and authority; establish resource frameworks",
+              "4": "Direct enterprise Essential Conditions governance; establish board-level commitments; design continuous monitoring"
+            },
+            "mirrorsRole": {
+              "questionId": "essential_conditions",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "audit_committee_reporting",
+            "question": "Audit Committee Reporting",
+            "description": "Preparing and presenting reports to the audit committee",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with audit committee reporting",
+              "1": "Understand audit committee requirements; familiar with typical report content",
+              "2": "Contribute to committee reports; prepare supporting materials; attend committee meetings",
+              "3": "Lead audit committee reporting; design report formats; present key messages effectively",
+              "4": "Direct enterprise audit committee engagement; establish reporting governance; shape committee agenda"
+            },
+            "mirrorsRole": {
+              "questionId": "audit_committee_reporting",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "board_presentation",
+            "question": "Board / Executive Presentation",
+            "description": "Presenting audit matters to board and executive leadership",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No board/executive presentation experience",
+              "1": "Understand board dynamics; familiar with executive communication requirements",
+              "2": "Support board presentations; prepare materials; participate in executive meetings",
+              "3": "Present to executives and committees; communicate complex issues clearly; handle challenging questions",
+              "4": "Present to full board; shape board perception of audit; establish trusted advisor relationships"
+            },
+            "mirrorsRole": {
+              "questionId": "board_presentation",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "independence_safeguarding",
+            "question": "Independence Safeguarding",
+            "description": "Protecting internal audit independence and objectivity",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with independence safeguarding",
+              "1": "Understand independence requirements; familiar with objectivity threats",
+              "2": "Maintain personal independence; identify and disclose threats; implement safeguards",
+              "3": "Establish independence protocols; monitor threats across function; design safeguard frameworks",
+              "4": "Direct enterprise independence governance; establish board-level independence reporting; design structural safeguards"
+            },
+            "mirrorsRole": {
+              "questionId": "independence_safeguarding",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "governance_advisory",
+            "question": "Governance Advisory",
+            "description": "Advising on governance structures, processes, and effectiveness",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with governance advisory",
+              "1": "Understand governance concepts; familiar with governance frameworks",
+              "2": "Assess governance controls; identify weaknesses; recommend improvements",
+              "3": "Lead governance reviews; advise on governance design; support governance transformation",
+              "4": "Direct enterprise governance advisory; establish governance standards; influence board-level governance"
+            },
+            "mirrorsRole": {
+              "questionId": "governance_advisory",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "regulatory_engagement",
+            "question": "Regulatory Engagement",
+            "description": "Managing relationships with regulators on audit matters",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with regulatory engagement",
+              "1": "Understand regulatory landscape; familiar with regulatory expectations of internal audit",
+              "2": "Support regulatory examinations; prepare materials; participate in regulatory meetings",
+              "3": "Lead regulatory engagement; manage examination workstreams; coordinate remediation",
+              "4": "Direct enterprise regulatory relationship; establish regulatory engagement framework; shape regulatory perception"
+            },
+            "mirrorsRole": {
+              "questionId": "regulatory_engagement",
+              "matchType": "minimum"
+            }
+          }
+        ]
+      },
+      {
+        "id": "advisory_services",
+        "title": "Advisory Services",
+        "description": "Your experience with audit advisory and consulting services",
+        "order": 14,
+        "helpText": "0 = No Experience, 1 = Awareness, 2 = Practical Application, 3 = Implementation & Management, 4 = Strategic Leadership",
+        "questions": [
+          {
+            "id": "consultative_auditing",
+            "question": "Consultative / Advisory Auditing",
+            "description": "Providing advisory services beyond traditional assurance",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with advisory services",
+              "1": "Understand advisory vs assurance distinction; familiar with consulting engagement types",
+              "2": "Deliver advisory engagements; provide recommendations; support change initiatives",
+              "3": "Lead advisory services; design consulting approaches; balance advisory and assurance",
+              "4": "Direct enterprise advisory capability; establish advisory governance; position audit as strategic partner"
+            },
+            "mirrorsRole": {
+              "questionId": "consultative_auditing",
+              "matchType": "minimum"
+            }
+          }
+        ]
+      },
+      {
+        "id": "quality_assurance_improvement",
+        "title": "Quality Assurance & Improvement",
+        "description": "Your experience with audit quality programmes and continuous improvement",
+        "order": 15,
+        "helpText": "0 = No Experience, 1 = Awareness, 2 = Practical Application, 3 = Implementation & Management, 4 = Strategic Leadership",
+        "questions": [
+          {
+            "id": "qaip_design",
+            "question": "QAIP Design & Oversight",
+            "description": "Designing and managing Quality Assurance and Improvement Programme",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with QAIP",
+              "1": "Understand QAIP requirements under GIAS; familiar with quality components",
+              "2": "Operate within QAIP framework; participate in quality activities; apply quality standards",
+              "3": "Design QAIP components; lead quality initiatives; manage improvement programmes",
+              "4": "Direct enterprise QAIP; establish quality governance; design continuous improvement frameworks"
+            },
+            "mirrorsRole": {
+              "questionId": "qaip_design",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "internal_assessments",
+            "question": "Internal Quality Assessments",
+            "description": "Conducting ongoing and periodic internal quality reviews",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with internal assessments",
+              "1": "Understand internal assessment requirements; familiar with review approaches",
+              "2": "Participate in quality reviews; assess engagement quality; document findings",
+              "3": "Lead internal assessments; design review methodology; report on quality trends",
+              "4": "Direct enterprise internal assessment programme; establish assessment governance; design continuous quality monitoring"
+            },
+            "mirrorsRole": {
+              "questionId": "internal_assessments",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "external_assessments",
+            "question": "External Quality Assessments (EQA)",
+            "description": "Managing or participating in external quality assessments",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with EQAs",
+              "1": "Understand EQA requirements; familiar with assessment process",
+              "2": "Support EQA preparation; provide evidence; participate in interviews",
+              "3": "Lead EQA coordination; manage assessment process; implement recommendations",
+              "4": "Direct enterprise EQA programme; conduct EQAs for other organisations; shape IIA guidance"
+            },
+            "mirrorsRole": {
+              "questionId": "external_assessments",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "conformance_gias",
+            "question": "GIAS Conformance Assessment",
+            "description": "Assessing and demonstrating conformance with Global Internal Audit Standards",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with conformance assessment",
+              "1": "Understand GIAS conformance requirements; familiar with General and Specific requirements",
+              "2": "Assess conformance with specific standards; document compliance; identify gaps",
+              "3": "Lead conformance assessments; design assessment approaches; develop remediation plans",
+              "4": "Direct enterprise conformance programme; establish conformance governance; advise on GIAS interpretation"
+            },
+            "mirrorsRole": {
+              "questionId": "conformance_gias",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "continuous_improvement",
+            "question": "Continuous Improvement Programmes",
+            "description": "Driving ongoing improvement of audit processes and capabilities",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with continuous improvement",
+              "1": "Understand improvement concepts; contribute improvement suggestions",
+              "2": "Implement improvements; measure results; support improvement initiatives",
+              "3": "Lead improvement programmes; design improvement frameworks; drive cultural change",
+              "4": "Direct enterprise improvement capability; establish improvement governance; transform audit function"
+            },
+            "mirrorsRole": {
+              "questionId": "continuous_improvement",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "audit_methodology",
+            "question": "Audit Methodology Development",
+            "description": "Developing and maintaining internal audit methodology and procedures",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with methodology development",
+              "1": "Understand audit methodology requirements; work within established procedures",
+              "2": "Contribute to methodology updates; document procedures; suggest improvements",
+              "3": "Lead methodology development; design audit procedures; establish methodology governance",
+              "4": "Direct enterprise methodology; establish methodology standards; innovate audit approaches"
+            },
+            "mirrorsRole": {
+              "questionId": "audit_methodology",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "kpi_design",
+            "question": "Audit KPI Design & Reporting",
+            "description": "Developing key performance indicators for internal audit",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with audit KPIs",
+              "1": "Understand KPI concepts; familiar with common audit metrics",
+              "2": "Track and report KPIs; analyse performance trends; support KPI reviews",
+              "3": "Design KPI frameworks; establish meaningful metrics; lead performance reporting",
+              "4": "Direct enterprise performance measurement; establish KPI governance; design value demonstration frameworks"
+            },
+            "mirrorsRole": {
+              "questionId": "kpi_design",
+              "matchType": "minimum"
+            }
+          }
+        ]
+      },
+      {
+        "id": "audit_function_operations",
+        "title": "Audit Function Operations",
+        "description": "Your experience managing audit function operations and resources",
+        "order": 16,
+        "helpText": "0 = No Experience, 1 = Awareness, 2 = Practical Application, 3 = Implementation & Management, 4 = Strategic Leadership",
+        "questions": [
+          {
+            "id": "skills_gap_analysis",
+            "question": "Skills Gap Analysis",
+            "description": "Identifying and addressing capability gaps in the audit function",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with skills gap analysis",
+              "1": "Understand skills assessment concepts; identify personal development needs",
+              "2": "Assess team capabilities; identify gaps; contribute to development planning",
+              "3": "Lead skills assessments; design competency frameworks; develop gap remediation plans",
+              "4": "Direct enterprise skills strategy; establish capability governance; design future skills roadmaps"
+            },
+            "mirrorsRole": {
+              "questionId": "skills_gap_analysis",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "non_traditional_hiring",
+            "question": "Non-Traditional Hiring (Data Scientists, Engineers)",
+            "description": "Recruiting specialists from outside traditional audit backgrounds",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with non-traditional hiring",
+              "1": "Understand value of diverse skill sets; support integration of specialists",
+              "2": "Work effectively with specialists; support recruitment efforts",
+              "3": "Lead specialist recruitment; design integration approaches; develop hybrid teams",
+              "4": "Direct enterprise talent diversification; establish specialist hiring programmes; build multi-disciplinary function"
+            },
+            "mirrorsRole": {
+              "questionId": "non_traditional_hiring",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "guest_auditor_programmes",
+            "question": "Guest Auditor / Rotation Programmes",
+            "description": "Managing programmes to rotate business staff through internal audit",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with rotation programmes",
+              "1": "Understand rotation programme benefits; work alongside guest auditors",
+              "2": "Support guest auditor integration; supervise rotational staff; provide development feedback",
+              "3": "Design rotation programmes; establish selection criteria; manage programme governance",
+              "4": "Direct enterprise rotation strategy; establish career pathways; position audit as leadership development"
+            },
+            "mirrorsRole": {
+              "questionId": "guest_auditor_programmes",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "budget_management",
+            "question": "Audit Budget Management",
+            "description": "Managing internal audit budgets and financial resources",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No budget management experience",
+              "1": "Understand audit budgeting; work within budget constraints",
+              "2": "Monitor engagement budgets; track costs; report variances",
+              "3": "Manage function budgets; develop business cases; optimise resource allocation",
+              "4": "Direct enterprise audit budget; establish financial governance; negotiate resources with board"
+            },
+            "mirrorsRole": {
+              "questionId": "budget_management",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "cosourcing_management",
+            "question": "Co-sourcing / Outsourcing Management",
+            "description": "Managing relationships with external audit service providers",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No co-sourcing experience",
+              "1": "Work alongside co-sourced staff; understand co-sourcing arrangements",
+              "2": "Supervise co-sourced engagements; manage provider relationships; review deliverables",
+              "3": "Lead co-sourcing programmes; select providers; negotiate contracts; manage performance",
+              "4": "Direct enterprise sourcing strategy; establish provider governance; optimise make vs buy decisions"
+            },
+            "mirrorsRole": {
+              "questionId": "cosourcing_management",
+              "matchType": "minimum"
+            }
+          }
+        ]
+      },
+      {
+        "id": "domain_sector_experience",
+        "title": "Domain & Sector Experience",
+        "description": "Your experience across different sectors and audit domains",
+        "order": 17,
+        "helpText": "0 = No Experience, 1 = Awareness, 2 = Practical Application, 3 = Implementation & Management, 4 = Strategic Leadership",
+        "questions": [
+          {
+            "id": "sector_manufacturing",
+            "question": "Manufacturing / Industrial",
+            "description": "Internal audit experience in manufacturing, industrial, or production environments",
+            "type": "slider",
+            "required": false,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No manufacturing sector experience",
+              "1": "General awareness of manufacturing risks; familiar with industry basics",
+              "2": "Audited manufacturing processes; understand supply chain, production, quality risks",
+              "3": "Led manufacturing audits; deep sector expertise; understand operational technology",
+              "4": "Enterprise-wide manufacturing assurance; recognised sector expert; shape industry standards"
+            },
+            "mirrorsRole": {
+              "questionId": "sector_manufacturing",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "sector_retail",
+            "question": "Retail / Consumer",
+            "description": "Internal audit experience in retail, consumer goods, or e-commerce",
+            "type": "slider",
+            "required": false,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No retail sector experience",
+              "1": "General awareness of retail risks; familiar with industry basics",
+              "2": "Audited retail operations; understand inventory, POS, e-commerce risks",
+              "3": "Led retail audits; deep sector expertise; understand omnichannel risks",
+              "4": "Enterprise-wide retail assurance; recognised sector expert; shape industry standards"
+            },
+            "mirrorsRole": {
+              "questionId": "sector_retail",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "sector_technology",
+            "question": "Technology / Software",
+            "description": "Internal audit experience in technology, software, or digital companies",
+            "type": "slider",
+            "required": false,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No technology sector experience",
+              "1": "General awareness of tech sector risks; familiar with industry basics",
+              "2": "Audited technology companies; understand SaaS, development, data privacy risks",
+              "3": "Led technology audits; deep sector expertise; understand agile, DevOps environments",
+              "4": "Enterprise-wide technology assurance; recognised sector expert; shape industry standards"
+            },
+            "mirrorsRole": {
+              "questionId": "sector_technology",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "sector_healthcare",
+            "question": "Healthcare / Life Sciences",
+            "description": "Internal audit experience in healthcare, pharma, or life sciences",
+            "type": "slider",
+            "required": false,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No healthcare sector experience",
+              "1": "General awareness of healthcare risks; familiar with industry basics",
+              "2": "Audited healthcare operations; understand clinical, compliance, patient safety risks",
+              "3": "Led healthcare audits; deep sector expertise; understand regulatory requirements (FDA, EMA)",
+              "4": "Enterprise-wide healthcare assurance; recognised sector expert; shape industry standards"
+            },
+            "mirrorsRole": {
+              "questionId": "sector_healthcare",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "sector_energy",
+            "question": "Energy / Utilities",
+            "description": "Internal audit experience in energy, utilities, or resources",
+            "type": "slider",
+            "required": false,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No energy sector experience",
+              "1": "General awareness of energy sector risks; familiar with industry basics",
+              "2": "Audited energy operations; understand operational, environmental, regulatory risks",
+              "3": "Led energy audits; deep sector expertise; understand critical infrastructure",
+              "4": "Enterprise-wide energy assurance; recognised sector expert; shape industry standards"
+            },
+            "mirrorsRole": {
+              "questionId": "sector_energy",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "sector_public",
+            "question": "Public Sector / Government",
+            "description": "Internal audit experience in government, public sector, or NGOs",
+            "type": "slider",
+            "required": false,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No public sector experience",
+              "1": "General awareness of public sector risks; familiar with government audit requirements",
+              "2": "Audited public sector entities; understand accountability, value-for-money, compliance risks",
+              "3": "Led public sector audits; deep sector expertise; understand NAO/GAO requirements",
+              "4": "Enterprise-wide public sector assurance; recognised sector expert; shape industry standards"
+            },
+            "mirrorsRole": {
+              "questionId": "sector_public",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "sector_nfp",
+            "question": "Not-for-Profit / Charities",
+            "description": "Internal audit experience in charities, foundations, or NFP organisations",
+            "type": "slider",
+            "required": false,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No NFP sector experience",
+              "1": "General awareness of NFP sector risks; familiar with charity governance",
+              "2": "Audited NFP organisations; understand fundraising, programme, safeguarding risks",
+              "3": "Led NFP audits; deep sector expertise; understand Charity Commission requirements",
+              "4": "Enterprise-wide NFP assurance; recognised sector expert; shape industry standards"
+            },
+            "mirrorsRole": {
+              "questionId": "sector_nfp",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "sector_financial_services",
+            "question": "Financial Services",
+            "description": "Internal audit experience in banking, insurance, or asset management",
+            "type": "slider",
+            "required": false,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No financial services experience",
+              "1": "General awareness of FS risks; familiar with industry basics",
+              "2": "Audited FS operations; understand credit, market, operational, regulatory risks",
+              "3": "Led FS audits; deep sector expertise; understand regulatory requirements",
+              "4": "Enterprise-wide FS assurance; recognised sector expert; shape industry standards"
+            },
+            "mirrorsRole": {
+              "questionId": "sector_financial_services",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "operational_audit",
+            "question": "Operational Auditing",
+            "description": "Auditing operational efficiency, effectiveness, and economy",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No operational audit experience",
+              "1": "Understand operational audit concepts; familiar with 3Es (efficiency, effectiveness, economy)",
+              "2": "Conduct operational audits; assess process effectiveness; identify improvement opportunities",
+              "3": "Lead operational audit programmes; design methodologies; drive operational improvements",
+              "4": "Direct enterprise operational assurance; establish operational audit governance; shape organisational efficiency"
+            },
+            "mirrorsRole": {
+              "questionId": "operational_audit",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "compliance_audit",
+            "question": "Compliance Auditing",
+            "description": "Auditing regulatory and policy compliance",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No compliance audit experience",
+              "1": "Understand compliance audit concepts; familiar with regulatory requirements",
+              "2": "Conduct compliance audits; assess regulatory adherence; identify compliance gaps",
+              "3": "Lead compliance audit programmes; design methodologies; coordinate with compliance function",
+              "4": "Direct enterprise compliance assurance; establish compliance audit governance; shape compliance culture"
+            },
+            "mirrorsRole": {
+              "questionId": "compliance_audit",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "project_audit",
+            "question": "Project / Programme Auditing",
+            "description": "Auditing major projects, programmes, and capital investments",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No project audit experience",
+              "1": "Understand project audit concepts; familiar with project management frameworks",
+              "2": "Audit projects; assess governance, risk, delivery controls; identify project risks",
+              "3": "Lead project audit programmes; design methodologies; embed audit in project governance",
+              "4": "Direct enterprise project assurance; establish project audit governance; shape project delivery standards"
+            },
+            "mirrorsRole": {
+              "questionId": "project_audit",
+              "matchType": "minimum"
+            }
+          }
+        ]
+      },
+      {
+        "id": "fs_topup",
+        "title": "Financial Services Internal Audit",
+        "description": "FS-specific audit areas and regulatory requirements. Only complete if seeking/hiring for roles in Financial Services.",
+        "order": 18,
+        "helpText": "0 = No Experience, 1 = Awareness, 2 = Practical Application, 3 = Implementation & Management, 4 = Strategic Leadership",
+        "questions": [
+          {
+            "id": "fs_audit_basel",
+            "question": "Basel Framework Audit",
+            "description": "Auditing Basel III/IV capital, liquidity, and risk-weighted asset calculations",
+            "type": "slider",
+            "required": false,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No Basel audit experience",
+              "1": "Understand Basel framework; familiar with key audit areas",
+              "2": "Audited Basel calculations; tested RWA methodology; reviewed capital adequacy",
+              "3": "Led Basel audits; designed audit programs for Pillar 1/2/3; managed ICAAP/ILAAP audits",
+              "4": "Enterprise Basel audit strategy; regulatory audit dialogue; industry thought leadership"
+            },
+            "mirrorsRole": {
+              "questionId": "fs_audit_basel",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "fs_audit_solvency",
+            "question": "Solvency II Audit (Insurance)",
+            "description": "Auditing Solvency II compliance including SCR, MCR, ORSA, and governance",
+            "type": "slider",
+            "required": false,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No Solvency II audit experience",
+              "1": "Understand Solvency II framework; familiar with three pillars",
+              "2": "Audited Solvency II compliance; tested capital calculations; reviewed governance",
+              "3": "Led Solvency II audits; designed ORSA audit programs; managed internal model audits",
+              "4": "Enterprise Solvency II audit strategy; regulatory audit engagement; industry expertise"
+            },
+            "mirrorsRole": {
+              "questionId": "fs_audit_solvency",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "fs_audit_smcr",
+            "question": "SM&CR / Accountability Regime Audit",
+            "description": "Auditing Senior Managers & Certification Regime compliance and governance",
+            "type": "slider",
+            "required": false,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No SM&CR audit experience",
+              "1": "Understand SM&CR framework; familiar with regulatory requirements",
+              "2": "Audited SM&CR compliance; tested certification processes; reviewed fitness and propriety",
+              "3": "Led SM&CR audits; designed audit programs for accountability mapping; managed conduct rule audits",
+              "4": "Enterprise SM&CR audit strategy; FCA/PRA audit engagement; industry thought leadership"
+            },
+            "mirrorsRole": {
+              "questionId": "fs_audit_smcr",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "fs_audit_consumer_duty",
+            "question": "FCA Consumer Duty Audit",
+            "description": "Auditing Consumer Duty compliance including outcomes, fair value, and vulnerability",
+            "type": "slider",
+            "required": false,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No Consumer Duty audit experience",
+              "1": "Understand Consumer Duty requirements; familiar with four outcomes",
+              "2": "Audited Consumer Duty compliance; tested fair value assessments; reviewed customer communications",
+              "3": "Led Consumer Duty audits; designed audit programs for all outcomes; managed governance audits",
+              "4": "Enterprise Consumer Duty audit strategy; FCA engagement; industry thought leadership"
+            },
+            "mirrorsRole": {
+              "questionId": "fs_audit_consumer_duty",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "fs_audit_aml_fc",
+            "question": "AML/Financial Crime Audit",
+            "description": "Auditing AML/CTF compliance, sanctions, and financial crime controls",
+            "type": "slider",
+            "required": false,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No AML/financial crime audit experience",
+              "1": "Understand AML frameworks; familiar with MLR requirements",
+              "2": "Audited AML controls; tested transaction monitoring; reviewed KYC/CDD processes",
+              "3": "Led AML/financial crime audits; designed audit programs; managed sanctions audit",
+              "4": "Enterprise financial crime audit strategy; regulatory audit engagement; industry expertise"
+            },
+            "mirrorsRole": {
+              "questionId": "fs_audit_aml_fc",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "fs_audit_conduct_risk",
+            "question": "Conduct Risk Audit",
+            "description": "Auditing conduct risk frameworks, culture, and customer outcomes",
+            "type": "slider",
+            "required": false,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No conduct risk audit experience",
+              "1": "Understand conduct risk concepts; familiar with FCA expectations",
+              "2": "Audited conduct frameworks; tested incentive schemes; reviewed complaints handling",
+              "3": "Led conduct risk audits; designed culture audit programs; managed thematic reviews",
+              "4": "Enterprise conduct audit strategy; FCA conduct engagement; industry thought leadership"
+            },
+            "mirrorsRole": {
+              "questionId": "fs_audit_conduct_risk",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "fs_audit_credit_risk",
+            "question": "Credit Risk Audit",
+            "description": "Auditing credit risk management, underwriting, and provisioning",
+            "type": "slider",
+            "required": false,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No credit risk audit experience",
+              "1": "Understand credit risk concepts; familiar with underwriting processes",
+              "2": "Audited credit processes; tested underwriting controls; reviewed provisioning methodology",
+              "3": "Led credit risk audits; designed IRB audit programs; managed IFRS 9 audits",
+              "4": "Enterprise credit audit strategy; regulatory credit engagement; industry expertise"
+            },
+            "mirrorsRole": {
+              "questionId": "fs_audit_credit_risk",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "fs_audit_market_risk",
+            "question": "Market Risk Audit",
+            "description": "Auditing market risk management, VaR models, and trading controls",
+            "type": "slider",
+            "required": false,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No market risk audit experience",
+              "1": "Understand market risk concepts; familiar with VaR methodologies",
+              "2": "Audited market risk controls; tested VaR calculations; reviewed limit monitoring",
+              "3": "Led market risk audits; designed FRTB audit programs; managed trading desk audits",
+              "4": "Enterprise market risk audit strategy; regulatory engagement; industry expertise"
+            },
+            "mirrorsRole": {
+              "questionId": "fs_audit_market_risk",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "fs_audit_operational_risk",
+            "question": "Operational Risk Audit (FS)",
+            "description": "Auditing FS operational risk frameworks, RCSA, and loss data collection",
+            "type": "slider",
+            "required": false,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No FS operational risk audit experience",
+              "1": "Understand Basel operational risk categories; familiar with RCSA",
+              "2": "Audited operational risk frameworks; tested RCSA processes; reviewed loss data",
+              "3": "Led operational risk audits; designed scenario analysis audits; managed OpRisk capital audits",
+              "4": "Enterprise OpRisk audit strategy; regulatory engagement; industry thought leadership"
+            },
+            "mirrorsRole": {
+              "questionId": "fs_audit_operational_risk",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "fs_audit_model_validation",
+            "question": "Model Risk / Validation Audit",
+            "description": "Auditing model risk management and model validation processes",
+            "type": "slider",
+            "required": false,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No model risk audit experience",
+              "1": "Understand model risk concepts; familiar with validation requirements",
+              "2": "Audited model governance; tested validation processes; reviewed model inventory",
+              "3": "Led model risk audits; designed validation audit programs; managed regulatory model audits",
+              "4": "Enterprise model audit strategy; PRA/ECB model engagement; industry expertise"
+            },
+            "mirrorsRole": {
+              "questionId": "fs_audit_model_validation",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "fs_pra_fca_engagement",
+            "question": "PRA/FCA Regulatory Engagement",
+            "description": "Experience engaging with PRA/FCA supervisors on audit matters",
+            "type": "slider",
+            "required": false,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No regulatory engagement experience",
+              "1": "Understand PRA/FCA supervisory approach; observed regulatory meetings",
+              "2": "Prepared materials for regulatory meetings; responded to information requests",
+              "3": "Led regulatory engagement; presented to supervisors; managed thematic requests",
+              "4": "Strategic regulatory relationship; CAO-level engagement; industry regulatory dialogue"
+            },
+            "mirrorsRole": {
+              "questionId": "fs_pra_fca_engagement",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "fs_s166_experience",
+            "question": "Section 166 (Skilled Person Review)",
+            "description": "Experience with s166 skilled person reviews, either conducting or responding",
+            "type": "slider",
+            "required": false,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No s166 experience",
+              "1": "Understand s166 process; familiar with skilled person requirements",
+              "2": "Supported s166 review; provided data and documentation; assisted remediation",
+              "3": "Led s166 response; managed skilled person relationship; implemented remediation",
+              "4": "Conducted s166 reviews as skilled person; strategic regulatory risk management"
+            },
+            "mirrorsRole": {
+              "questionId": "fs_s166_experience",
+              "matchType": "minimum"
+            }
+          }
+        ]
+      },
+      {
+        "id": "additional_information",
+        "title": "Additional Information",
+        "description": "Share anything else that demonstrates your value as a candidate",
+        "order": 19,
+        "helpText": "This is your opportunity to highlight achievements, results, and career progression that haven't been captured elsewhere",
+        "questions": [
+          {
+            "id": "key_achievements",
+            "question": "Key Achievements & Exceeding Expectations",
+            "description": "Describe examples from previous roles where you exceeded expectations, met challenging targets, or took on responsibilities beyond your role",
+            "type": "textarea",
+            "required": false,
+            "placeholder": "e.g., 'Led special investigation that uncovered \u00a35M fraud scheme; Transformed audit methodology reducing cycle time by 40%; Selected to lead global audit transformation over more senior candidates...'"
+          },
+          {
+            "id": "quantifiable_impact",
+            "question": "Quantifiable Results & Impact",
+            "description": "Share specific metrics that demonstrate your impact, such as audit plan delivery, issue identification, cost savings, or business outcomes you have delivered",
+            "type": "textarea",
+            "required": false,
+            "placeholder": "e.g., 'Delivered 100% of audit plan for 3 consecutive years; Identified control weaknesses that prevented \u00a32M potential loss; Reduced average audit cycle time from 8 weeks to 5 weeks; Achieved 95% stakeholder satisfaction scores...'"
+          },
+          {
+            "id": "career_progression",
+            "question": "Career Progression & Promotions",
+            "description": "Describe your career trajectory, including promotions, expanded responsibilities, or recognition of your value by previous employers",
+            "type": "textarea",
+            "required": false,
+            "placeholder": "e.g., 'Promoted from Senior Auditor to Audit Manager within 2 years; Appointed to lead new Technology Audit team; Headhunted by current employer to establish their internal audit function...'"
+          },
+          {
+            "id": "unique_value_proposition",
+            "question": "Your Unique Value",
+            "description": "What makes you stand out from other internal audit professionals? What unique combination of skills, experiences, or perspectives do you bring?",
+            "type": "textarea",
+            "required": false,
+            "placeholder": "e.g., 'Big 4 background combined with industry experience gives both rigour and commercial awareness; Data analytics expertise enables innovative continuous auditing approaches; Multi-sector experience across FS, healthcare, and manufacturing...'"
+          },
+          {
+            "id": "anything_else",
+            "question": "Anything Else?",
+            "description": "Is there anything else you would like us to know about your skills, experience, or candidacy that you haven't had the opportunity to share?",
+            "type": "textarea",
+            "required": false,
+            "placeholder": "Use this space to share any additional information that would help us understand your candidacy..."
+          }
+        ]
+      }
+    ],
+    "metadata": {
+      "totalQuestions": 126,
+      "totalSections": 19,
+      "estimatedCompletionMinutes": 21,
+      "lastUpdated": "2025-12-15"
+    }
+  }
+}

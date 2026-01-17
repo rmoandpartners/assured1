@@ -1,0 +1,3340 @@
+{
+  "questionnaire": {
+    "id": "client-profile",
+    "title": "Client Profile Questionnaire",
+    "description": "Company onboarding and relationship information for Assured Recruitment clients",
+    "version": "1.3.1",
+    "createdAt": "2025-12-13",
+    "mirrorProfile": "candidate-profile",
+    "relatedProfiles": [
+      "job-profile"
+    ],
+    "sections": [
+      {
+        "id": "company_details",
+        "title": "Company & Legal Details",
+        "description": "Official company information",
+        "order": 1,
+        "questions": [
+          {
+            "id": "legal_entity_name",
+            "question": "Legal Entity Name",
+            "type": "text",
+            "required": true,
+            "placeholder": "e.g., Acme Financial Services Ltd",
+            "helpText": "Full registered company name"
+          },
+          {
+            "id": "trading_name",
+            "question": "Trading Name (if different)",
+            "type": "text",
+            "required": false,
+            "placeholder": "e.g., Acme Finance"
+          },
+          {
+            "id": "company_registration_number",
+            "question": "Company Registration Number",
+            "type": "text",
+            "required": false,
+            "placeholder": "e.g., 12345678"
+          },
+          {
+            "id": "vat_number",
+            "question": "VAT Number (if applicable)",
+            "type": "text",
+            "required": false,
+            "placeholder": "e.g., GB123456789"
+          },
+          {
+            "id": "headquarters_address",
+            "question": "Headquarters Address",
+            "type": "textarea",
+            "required": true,
+            "placeholder": "Full registered address including postcode"
+          },
+          {
+            "id": "other_office_locations",
+            "question": "Other Office Locations",
+            "type": "textarea",
+            "required": false,
+            "placeholder": "List any other UK or international offices where roles may be based",
+            "helpText": "One location per line"
+          },
+          {
+            "id": "company_website",
+            "question": "Company Website",
+            "type": "url",
+            "required": false,
+            "placeholder": "https://www.yourcompany.com"
+          },
+          {
+            "id": "careers_page_url",
+            "question": "Careers Page URL",
+            "type": "url",
+            "required": false,
+            "placeholder": "https://www.yourcompany.com/careers"
+          },
+          {
+            "id": "linkedin_company_page",
+            "question": "LinkedIn Company Page",
+            "type": "url",
+            "required": false,
+            "placeholder": "https://www.linkedin.com/company/yourcompany"
+          }
+        ]
+      },
+      {
+        "id": "company_overview",
+        "title": "Company Overview",
+        "description": "About your organisation",
+        "order": 2,
+        "questions": [
+          {
+            "id": "company_industry",
+            "question": "Primary Industry Sector",
+            "type": "select",
+            "required": true,
+            "options": [
+              {
+                "value": "banking",
+                "label": "Banking"
+              },
+              {
+                "value": "insurance",
+                "label": "Insurance"
+              },
+              {
+                "value": "asset_management",
+                "label": "Asset Management"
+              },
+              {
+                "value": "private_equity",
+                "label": "Private Equity/Venture Capital"
+              },
+              {
+                "value": "fintech",
+                "label": "FinTech"
+              },
+              {
+                "value": "big4",
+                "label": "Big 4 Accounting Firm"
+              },
+              {
+                "value": "consulting",
+                "label": "Consulting"
+              },
+              {
+                "value": "corporate",
+                "label": "Corporate (Non-Financial)"
+              },
+              {
+                "value": "public_sector",
+                "label": "Public Sector/Government"
+              },
+              {
+                "value": "ngo",
+                "label": "NGO/Non-Profit"
+              },
+              {
+                "value": "other",
+                "label": "Other"
+              }
+            ],
+            "mirrorsCandidate": {
+              "questionId": "current_industry",
+              "matchType": "exact"
+            }
+          },
+          {
+            "id": "employer_type",
+            "question": "Organisation Type",
+            "type": "select",
+            "required": true,
+            "options": [
+              {
+                "value": "inhouse_corporate",
+                "label": "In-house (corporate/financial services)"
+              },
+              {
+                "value": "inhouse_public",
+                "label": "In-house (public sector/government)"
+              },
+              {
+                "value": "inhouse_charity",
+                "label": "In-house (charity/NGO/non-profit)"
+              },
+              {
+                "value": "consulting_big4",
+                "label": "Consulting (Big 4)"
+              },
+              {
+                "value": "consulting_boutique",
+                "label": "Consulting (boutique/specialist firm)"
+              },
+              {
+                "value": "consulting_management",
+                "label": "Consulting (management consultancy)"
+              },
+              {
+                "value": "regulator",
+                "label": "Regulator (FCA, PRA, Bank of England, etc.)"
+              }
+            ],
+            "helpText": "This helps us match candidates seeking specific work environments",
+            "mirrorsCandidate": {
+              "questionId": "employer_type_preference",
+              "matchType": "overlap"
+            }
+          },
+          {
+            "id": "company_sub_sector",
+            "question": "Sub-sector/Specialism",
+            "type": "text",
+            "required": false,
+            "placeholder": "e.g., Retail Banking, Life Insurance, Hedge Funds"
+          },
+          {
+            "id": "company_size",
+            "question": "Company Size (Global Employees)",
+            "type": "select",
+            "required": true,
+            "options": [
+              {
+                "value": "startup",
+                "label": "Startup (<50 employees)"
+              },
+              {
+                "value": "sme",
+                "label": "SME (50-500 employees)"
+              },
+              {
+                "value": "large",
+                "label": "Large (500-5000 employees)"
+              },
+              {
+                "value": "enterprise",
+                "label": "Enterprise (5000+ employees)"
+              }
+            ],
+            "mirrorsCandidate": {
+              "questionId": "deal_breaker_team_size",
+              "matchType": "preference"
+            }
+          },
+          {
+            "id": "uk_employee_count",
+            "question": "UK Employee Count",
+            "type": "number",
+            "required": false,
+            "placeholder": "e.g., 500"
+          },
+          {
+            "id": "year_established",
+            "question": "Year Established",
+            "type": "number",
+            "required": false,
+            "placeholder": "e.g., 1985",
+            "validation": {
+              "min": 1800,
+              "max": 2025
+            }
+          },
+          {
+            "id": "ownership_structure",
+            "question": "Ownership Structure",
+            "type": "select",
+            "required": false,
+            "options": [
+              {
+                "value": "public_listed",
+                "label": "Publicly Listed"
+              },
+              {
+                "value": "private",
+                "label": "Privately Owned"
+              },
+              {
+                "value": "pe_backed",
+                "label": "Private Equity Backed"
+              },
+              {
+                "value": "vc_backed",
+                "label": "Venture Capital Backed"
+              },
+              {
+                "value": "partnership",
+                "label": "Partnership"
+              },
+              {
+                "value": "mutual",
+                "label": "Mutual/Member-owned"
+              },
+              {
+                "value": "government",
+                "label": "Government/Public Sector"
+              },
+              {
+                "value": "ngo",
+                "label": "Non-profit/Charity"
+              }
+            ]
+          },
+          {
+            "id": "growth_stage",
+            "question": "Company Growth Stage",
+            "type": "select",
+            "required": true,
+            "options": [
+              {
+                "value": "pre_revenue",
+                "label": "Pre-revenue / Seed stage"
+              },
+              {
+                "value": "early_stage",
+                "label": "Early stage / Series A-B"
+              },
+              {
+                "value": "scale_up",
+                "label": "Scale-up / Series C+"
+              },
+              {
+                "value": "growth",
+                "label": "Growth phase (profitable, expanding)"
+              },
+              {
+                "value": "established",
+                "label": "Established / Mature business"
+              },
+              {
+                "value": "market_leader",
+                "label": "Market leader / Blue chip"
+              },
+              {
+                "value": "turnaround",
+                "label": "Turnaround / Restructuring"
+              },
+              {
+                "value": "public_sector",
+                "label": "Public sector / Government body"
+              }
+            ],
+            "helpText": "What stage of growth is the organisation at?",
+            "mirrorsCandidate": {
+              "questionId": "preferred_company_stage",
+              "matchType": "overlap"
+            }
+          },
+          {
+            "id": "funding_status",
+            "question": "Current Funding Status",
+            "type": "select",
+            "required": false,
+            "options": [
+              {
+                "value": "bootstrapped",
+                "label": "Bootstrapped / Self-funded"
+              },
+              {
+                "value": "angel_funded",
+                "label": "Angel funded"
+              },
+              {
+                "value": "seed",
+                "label": "Seed funding"
+              },
+              {
+                "value": "series_a",
+                "label": "Series A"
+              },
+              {
+                "value": "series_b",
+                "label": "Series B"
+              },
+              {
+                "value": "series_c_plus",
+                "label": "Series C or later"
+              },
+              {
+                "value": "pe_backed",
+                "label": "Private equity backed"
+              },
+              {
+                "value": "public",
+                "label": "Publicly traded"
+              },
+              {
+                "value": "not_applicable",
+                "label": "Not applicable (public sector/charity)"
+              }
+            ],
+            "conditionalOn": {
+              "field": "growth_stage",
+              "values": [
+                "pre_revenue",
+                "early_stage",
+                "scale_up",
+                "growth"
+              ]
+            }
+          },
+          {
+            "id": "business_performance",
+            "question": "Current Business Performance Context",
+            "type": "select",
+            "required": false,
+            "options": [
+              {
+                "value": "rapid_growth",
+                "label": "Rapid growth - actively scaling"
+              },
+              {
+                "value": "steady_growth",
+                "label": "Steady, sustainable growth"
+              },
+              {
+                "value": "stable",
+                "label": "Stable - maintaining market position"
+              },
+              {
+                "value": "strategic_investment",
+                "label": "Strategic investment phase"
+              },
+              {
+                "value": "restructuring",
+                "label": "Restructuring / Cost optimisation"
+              },
+              {
+                "value": "market_challenges",
+                "label": "Facing market challenges"
+              },
+              {
+                "value": "acquisition_integration",
+                "label": "Post-acquisition / Integration"
+              },
+              {
+                "value": "preparing_exit",
+                "label": "Preparing for exit / IPO"
+              }
+            ],
+            "helpText": "This context helps candidates understand the environment they'd be joining",
+            "mirrorsCandidate": {
+              "questionId": "preferred_business_context",
+              "matchType": "compatibility"
+            }
+          },
+          {
+            "id": "parent_company",
+            "question": "Parent Company (if applicable)",
+            "type": "text",
+            "required": false,
+            "placeholder": "Name of parent organisation"
+          },
+          {
+            "id": "company_description",
+            "question": "Company Description",
+            "type": "textarea",
+            "required": true,
+            "placeholder": "Brief overview of what the company does, its market position, and key services/products",
+            "validation": {
+              "minLength": 50,
+              "maxLength": 1500
+            }
+          },
+          {
+            "id": "regulatory_status",
+            "question": "Regulatory Status",
+            "type": "multiselect",
+            "required": false,
+            "options": [
+              {
+                "value": "fca_authorised",
+                "label": "FCA Authorised"
+              },
+              {
+                "value": "pra_regulated",
+                "label": "PRA Regulated"
+              },
+              {
+                "value": "bank_of_england",
+                "label": "Bank of England Supervised"
+              },
+              {
+                "value": "other_uk_regulator",
+                "label": "Other UK Regulator"
+              },
+              {
+                "value": "eu_regulated",
+                "label": "EU Regulated"
+              },
+              {
+                "value": "us_regulated",
+                "label": "US Regulated (SEC/Fed)"
+              },
+              {
+                "value": "not_regulated",
+                "label": "Not Regulated"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "primary_contacts",
+        "title": "Primary Contacts",
+        "description": "Key contacts for the recruitment relationship",
+        "order": 3,
+        "questions": [
+          {
+            "id": "primary_contact_name",
+            "question": "Primary Contact Name",
+            "type": "text",
+            "required": true,
+            "placeholder": "Full name"
+          },
+          {
+            "id": "primary_contact_title",
+            "question": "Primary Contact Job Title",
+            "type": "text",
+            "required": true,
+            "placeholder": "e.g., Talent Acquisition Manager, HR Business Partner"
+          },
+          {
+            "id": "primary_contact_department",
+            "question": "Primary Contact Department",
+            "type": "text",
+            "required": false,
+            "placeholder": "e.g., Human Resources, Talent Acquisition"
+          },
+          {
+            "id": "primary_contact_email",
+            "question": "Primary Contact Email",
+            "type": "email",
+            "required": true,
+            "placeholder": "email@company.com"
+          },
+          {
+            "id": "primary_contact_phone",
+            "question": "Primary Contact Phone",
+            "type": "tel",
+            "required": false,
+            "placeholder": "+44 20 XXXX XXXX"
+          },
+          {
+            "id": "primary_contact_method",
+            "question": "Preferred Contact Method",
+            "type": "select",
+            "required": true,
+            "options": [
+              {
+                "value": "email",
+                "label": "Email"
+              },
+              {
+                "value": "phone",
+                "label": "Phone"
+              },
+              {
+                "value": "teams",
+                "label": "Microsoft Teams"
+              },
+              {
+                "value": "whatsapp",
+                "label": "WhatsApp"
+              },
+              {
+                "value": "any",
+                "label": "Any/No preference"
+              }
+            ]
+          },
+          {
+            "id": "best_contact_times",
+            "question": "Best Times to Contact",
+            "type": "multiselect",
+            "required": false,
+            "options": [
+              {
+                "value": "morning",
+                "label": "Morning (9am-12pm)"
+              },
+              {
+                "value": "afternoon",
+                "label": "Afternoon (12pm-5pm)"
+              },
+              {
+                "value": "evening",
+                "label": "Evening (5pm-7pm)"
+              },
+              {
+                "value": "any",
+                "label": "Any time"
+              }
+            ]
+          },
+          {
+            "id": "secondary_contact_name",
+            "question": "Secondary/Backup Contact Name",
+            "type": "text",
+            "required": false,
+            "placeholder": "Full name"
+          },
+          {
+            "id": "secondary_contact_email",
+            "question": "Secondary Contact Email",
+            "type": "email",
+            "required": false,
+            "placeholder": "email@company.com"
+          },
+          {
+            "id": "secondary_contact_phone",
+            "question": "Secondary Contact Phone",
+            "type": "tel",
+            "required": false,
+            "placeholder": "+44 20 XXXX XXXX"
+          }
+        ]
+      },
+      {
+        "id": "decision_makers",
+        "title": "Decision-Makers & Approvers",
+        "description": "Who is involved in hiring decisions",
+        "order": 4,
+        "questions": [
+          {
+            "id": "offer_signoff_authority",
+            "question": "Who signs off on final offers?",
+            "type": "text",
+            "required": true,
+            "placeholder": "e.g., Hiring Manager + HR Director, Department Head",
+            "helpText": "List roles/titles involved in offer approval"
+          },
+          {
+            "id": "budget_approval_authority",
+            "question": "Who approves salary/rate budgets?",
+            "type": "text",
+            "required": false,
+            "placeholder": "e.g., Finance Director, HR VP"
+          },
+          {
+            "id": "escalation_contact",
+            "question": "Escalation Contact for Issues/Disputes",
+            "type": "text",
+            "required": false,
+            "placeholder": "Name and role for escalation situations"
+          },
+          {
+            "id": "invoice_contact",
+            "question": "Invoicing/Accounts Payable Contact",
+            "type": "text",
+            "required": false,
+            "placeholder": "Name and email for invoicing"
+          },
+          {
+            "id": "procurement_involved",
+            "question": "Is Procurement/Vendor Management involved?",
+            "type": "select",
+            "required": false,
+            "options": [
+              {
+                "value": "no",
+                "label": "No"
+              },
+              {
+                "value": "yes_initial",
+                "label": "Yes - for initial setup only"
+              },
+              {
+                "value": "yes_ongoing",
+                "label": "Yes - ongoing involvement"
+              },
+              {
+                "value": "psa",
+                "label": "Via PSA/MSP arrangement"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "culture_values",
+        "title": "Culture & Values",
+        "description": "What makes your organisation unique",
+        "order": 5,
+        "questions": [
+          {
+            "id": "mission_statement",
+            "question": "Mission Statement",
+            "type": "textarea",
+            "required": false,
+            "placeholder": "What is your company's mission?",
+            "validation": {
+              "maxLength": 500
+            }
+          },
+          {
+            "id": "vision_statement",
+            "question": "Vision Statement",
+            "type": "textarea",
+            "required": false,
+            "placeholder": "What is your company's long-term vision?",
+            "validation": {
+              "maxLength": 500
+            }
+          },
+          {
+            "id": "core_values",
+            "question": "Core Values",
+            "type": "textarea",
+            "required": false,
+            "placeholder": "List your company's core values (e.g., Integrity, Innovation, Collaboration)",
+            "helpText": "One value per line, or comma-separated"
+          },
+          {
+            "id": "culture_description",
+            "question": "How would you describe your company culture?",
+            "type": "textarea",
+            "required": false,
+            "placeholder": "Describe the working environment, team dynamics, and what it's like to work there",
+            "mirrorsCandidate": {
+              "questionId": "nice_to_haves",
+              "matchType": "appeal"
+            }
+          },
+          {
+            "id": "work_style",
+            "question": "Predominant Work Style",
+            "type": "multiselect",
+            "required": false,
+            "options": [
+              {
+                "value": "collaborative",
+                "label": "Collaborative/Team-oriented"
+              },
+              {
+                "value": "autonomous",
+                "label": "Autonomous/Independent"
+              },
+              {
+                "value": "fast_paced",
+                "label": "Fast-paced/Dynamic"
+              },
+              {
+                "value": "structured",
+                "label": "Structured/Process-driven"
+              },
+              {
+                "value": "innovative",
+                "label": "Innovative/Entrepreneurial"
+              },
+              {
+                "value": "traditional",
+                "label": "Traditional/Established"
+              },
+              {
+                "value": "flexible",
+                "label": "Flexible/Agile"
+              },
+              {
+                "value": "results_focused",
+                "label": "Results-focused"
+              }
+            ]
+          },
+          {
+            "id": "dress_code",
+            "question": "Dress Code",
+            "type": "select",
+            "required": false,
+            "options": [
+              {
+                "value": "formal",
+                "label": "Formal (suit and tie)"
+              },
+              {
+                "value": "business",
+                "label": "Business (smart, no tie)"
+              },
+              {
+                "value": "smart_casual",
+                "label": "Smart Casual"
+              },
+              {
+                "value": "casual",
+                "label": "Casual"
+              },
+              {
+                "value": "varies",
+                "label": "Varies by role/client"
+              }
+            ]
+          },
+          {
+            "id": "work_pace",
+            "question": "Typical Work Pace",
+            "type": "select",
+            "required": true,
+            "options": [
+              {
+                "value": "very_fast",
+                "label": "Very fast-paced - constant deadlines, high intensity"
+              },
+              {
+                "value": "fast",
+                "label": "Fast-paced - busy but manageable"
+              },
+              {
+                "value": "moderate",
+                "label": "Moderate - steady workflow with occasional peaks"
+              },
+              {
+                "value": "measured",
+                "label": "Measured - structured, predictable workload"
+              },
+              {
+                "value": "varies_by_team",
+                "label": "Varies significantly by team/department"
+              }
+            ],
+            "helpText": "What's the typical intensity of work across the organisation?",
+            "mirrorsCandidate": {
+              "questionId": "preferred_work_pace",
+              "matchType": "compatibility"
+            }
+          },
+          {
+            "id": "deadline_culture",
+            "question": "Deadline Culture",
+            "type": "select",
+            "required": false,
+            "options": [
+              {
+                "value": "strict",
+                "label": "Strict - deadlines are non-negotiable"
+              },
+              {
+                "value": "firm_flexible",
+                "label": "Firm but with some flexibility"
+              },
+              {
+                "value": "collaborative",
+                "label": "Collaborative - deadlines set together"
+              },
+              {
+                "value": "relaxed",
+                "label": "Relaxed - quality over speed"
+              }
+            ],
+            "mirrorsCandidate": {
+              "questionId": "deadline_preference",
+              "matchType": "compatibility"
+            }
+          },
+          {
+            "id": "overtime_expectations",
+            "question": "Typical Overtime/Out-of-Hours Expectations",
+            "type": "select",
+            "required": false,
+            "options": [
+              {
+                "value": "regular",
+                "label": "Regular overtime expected (weekly)"
+              },
+              {
+                "value": "periodic",
+                "label": "Periodic overtime (month-end, quarter-end)"
+              },
+              {
+                "value": "occasional",
+                "label": "Occasional (project deadlines, emergencies)"
+              },
+              {
+                "value": "rare",
+                "label": "Rare - good work-life boundaries"
+              },
+              {
+                "value": "never",
+                "label": "Never - strict working hours"
+              }
+            ],
+            "helpText": "Be honest - candidates appreciate transparency",
+            "mirrorsCandidate": {
+              "questionId": "overtime_willingness",
+              "matchType": "compatibility"
+            }
+          },
+          {
+            "id": "team_structure_style",
+            "question": "Typical Team Structure",
+            "type": "select",
+            "required": true,
+            "options": [
+              {
+                "value": "hierarchical",
+                "label": "Hierarchical - clear reporting lines and levels"
+              },
+              {
+                "value": "matrix",
+                "label": "Matrix - multiple reporting lines"
+              },
+              {
+                "value": "flat",
+                "label": "Flat - minimal hierarchy, direct access to leadership"
+              },
+              {
+                "value": "pod_based",
+                "label": "Pod/Squad based - small autonomous teams"
+              },
+              {
+                "value": "hybrid",
+                "label": "Hybrid - varies by function"
+              }
+            ],
+            "helpText": "How is the organisation typically structured?",
+            "mirrorsCandidate": {
+              "questionId": "preferred_team_structure",
+              "matchType": "compatibility"
+            }
+          },
+          {
+            "id": "decision_making_style",
+            "question": "Decision-Making Style",
+            "type": "select",
+            "required": false,
+            "options": [
+              {
+                "value": "top_down",
+                "label": "Top-down - decisions made by leadership"
+              },
+              {
+                "value": "consultative",
+                "label": "Consultative - input gathered, leadership decides"
+              },
+              {
+                "value": "consensus",
+                "label": "Consensus-driven - team agreement sought"
+              },
+              {
+                "value": "autonomous",
+                "label": "Autonomous - individuals/teams decide within scope"
+              },
+              {
+                "value": "mixed",
+                "label": "Mixed depending on decision type"
+              }
+            ],
+            "mirrorsCandidate": {
+              "questionId": "preferred_autonomy_level",
+              "matchType": "compatibility"
+            }
+          },
+          {
+            "id": "collaboration_style",
+            "question": "Collaboration Style",
+            "type": "select",
+            "required": false,
+            "options": [
+              {
+                "value": "highly_collaborative",
+                "label": "Highly collaborative - constant teamwork"
+              },
+              {
+                "value": "balanced",
+                "label": "Balanced - mix of collaboration and independent work"
+              },
+              {
+                "value": "independent",
+                "label": "Independent - mostly individual contributors"
+              },
+              {
+                "value": "cross_functional",
+                "label": "Cross-functional - heavy interaction across teams"
+              }
+            ],
+            "mirrorsCandidate": {
+              "questionId": "collaboration_preference",
+              "matchType": "compatibility"
+            }
+          },
+          {
+            "id": "meeting_culture",
+            "question": "Meeting Culture",
+            "type": "select",
+            "required": false,
+            "options": [
+              {
+                "value": "meeting_heavy",
+                "label": "Meeting-heavy - significant time in meetings"
+              },
+              {
+                "value": "moderate",
+                "label": "Moderate - regular but balanced"
+              },
+              {
+                "value": "meeting_light",
+                "label": "Meeting-light - preference for async communication"
+              },
+              {
+                "value": "varies",
+                "label": "Varies by team/role"
+              }
+            ]
+          },
+          {
+            "id": "feedback_culture",
+            "question": "Feedback & Performance Culture",
+            "type": "select",
+            "required": false,
+            "options": [
+              {
+                "value": "continuous",
+                "label": "Continuous feedback - regular check-ins"
+              },
+              {
+                "value": "formal_reviews",
+                "label": "Formal reviews - annual/bi-annual"
+              },
+              {
+                "value": "informal",
+                "label": "Informal - as and when needed"
+              },
+              {
+                "value": "data_driven",
+                "label": "Data-driven - metrics and KPI focused"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "dei_initiatives",
+        "title": "Diversity, Equity & Inclusion",
+        "description": "DE&I commitments and goals",
+        "order": 6,
+        "questions": [
+          {
+            "id": "dei_commitment",
+            "question": "Does your organisation have formal DE&I commitments or initiatives?",
+            "type": "select",
+            "required": true,
+            "options": [
+              {
+                "value": "formal_programme",
+                "label": "Yes - formal programme with targets"
+              },
+              {
+                "value": "initiatives",
+                "label": "Yes - initiatives but no formal targets"
+              },
+              {
+                "value": "developing",
+                "label": "Currently developing our approach"
+              },
+              {
+                "value": "informal",
+                "label": "Informal commitment only"
+              },
+              {
+                "value": "no",
+                "label": "No specific DE&I focus"
+              }
+            ]
+          },
+          {
+            "id": "dei_targets",
+            "question": "Specific DE&I Targets or Goals",
+            "type": "textarea",
+            "required": false,
+            "placeholder": "e.g., 50% gender balance in senior roles by 2025, increase ethnic minority representation",
+            "helpText": "Any formal targets we should be aware of when sourcing candidates",
+            "conditionalOn": {
+              "field": "dei_commitment",
+              "values": [
+                "formal_programme",
+                "initiatives"
+              ]
+            }
+          },
+          {
+            "id": "dei_policies",
+            "question": "Key DE&I Policies or Certifications",
+            "type": "multiselect",
+            "required": false,
+            "options": [
+              {
+                "value": "gender_pay_reporting",
+                "label": "Gender Pay Gap Reporting"
+              },
+              {
+                "value": "disability_confident",
+                "label": "Disability Confident Employer"
+              },
+              {
+                "value": "stonewall",
+                "label": "Stonewall Workplace Equality Index"
+              },
+              {
+                "value": "race_at_work",
+                "label": "Race at Work Charter"
+              },
+              {
+                "value": "women_in_finance",
+                "label": "Women in Finance Charter"
+              },
+              {
+                "value": "armed_forces",
+                "label": "Armed Forces Covenant"
+              },
+              {
+                "value": "social_mobility",
+                "label": "Social Mobility Pledge/Index"
+              },
+              {
+                "value": "other",
+                "label": "Other"
+              }
+            ]
+          },
+          {
+            "id": "dei_considerations_hiring",
+            "question": "Any specific DE&I considerations for hiring?",
+            "type": "textarea",
+            "required": false,
+            "placeholder": "e.g., Preference for diverse shortlists, blind CV review process, specific outreach requirements"
+          },
+          {
+            "id": "employee_resource_groups",
+            "question": "Employee Resource Groups/Networks",
+            "type": "textarea",
+            "required": false,
+            "placeholder": "e.g., Women's Network, LGBTQ+ Allies, BAME Network, Working Parents",
+            "helpText": "These can be selling points for candidates"
+          }
+        ]
+      },
+      {
+        "id": "employer_brand",
+        "title": "Employer Brand & EVP",
+        "description": "Your value proposition to candidates",
+        "order": 7,
+        "questions": [
+          {
+            "id": "evp_summary",
+            "question": "Employer Value Proposition (EVP)",
+            "type": "textarea",
+            "required": true,
+            "placeholder": "What's the 'elevator pitch' for why a candidate should join your company? What makes you an employer of choice?",
+            "helpText": "This will be used to pitch roles to candidates",
+            "validation": {
+              "minLength": 50,
+              "maxLength": 1000
+            },
+            "mirrorsCandidate": {
+              "questionId": "nice_to_haves",
+              "matchType": "appeal"
+            }
+          },
+          {
+            "id": "key_selling_points",
+            "question": "Top 5 Reasons to Join",
+            "type": "textarea",
+            "required": false,
+            "placeholder": "1. Market leader in...\n2. Excellent career progression\n3. Industry-leading benefits\n4. Innovative projects\n5. Great work-life balance",
+            "mirrorsCandidate": {
+              "questionId": "nice_to_haves",
+              "matchType": "appeal"
+            }
+          },
+          {
+            "id": "recent_achievements",
+            "question": "Recent Company Achievements/News",
+            "type": "textarea",
+            "required": false,
+            "placeholder": "e.g., Awards won, major deals, growth milestones, positive press coverage",
+            "helpText": "Useful for candidate pitches"
+          },
+          {
+            "id": "growth_trajectory",
+            "question": "Company Growth Trajectory",
+            "type": "select",
+            "required": false,
+            "options": [
+              {
+                "value": "rapid_growth",
+                "label": "Rapid growth (20%+ annually)"
+              },
+              {
+                "value": "steady_growth",
+                "label": "Steady growth (5-20% annually)"
+              },
+              {
+                "value": "stable",
+                "label": "Stable/mature business"
+              },
+              {
+                "value": "transformation",
+                "label": "Undergoing transformation"
+              },
+              {
+                "value": "turnaround",
+                "label": "Turnaround situation"
+              },
+              {
+                "value": "startup",
+                "label": "Early-stage startup"
+              }
+            ]
+          },
+          {
+            "id": "marketing_collateral",
+            "question": "Employer Brand Collateral",
+            "type": "textarea",
+            "required": false,
+            "placeholder": "Links to recruitment videos, employer brand materials, culture decks, or Glassdoor profile"
+          },
+          {
+            "id": "glassdoor_rating",
+            "question": "Glassdoor Rating (if known)",
+            "type": "select",
+            "required": false,
+            "options": [
+              {
+                "value": "4.5_plus",
+                "label": "4.5+ stars"
+              },
+              {
+                "value": "4_4.5",
+                "label": "4.0-4.4 stars"
+              },
+              {
+                "value": "3.5_4",
+                "label": "3.5-3.9 stars"
+              },
+              {
+                "value": "3_3.5",
+                "label": "3.0-3.4 stars"
+              },
+              {
+                "value": "below_3",
+                "label": "Below 3.0 stars"
+              },
+              {
+                "value": "not_listed",
+                "label": "Not on Glassdoor"
+              },
+              {
+                "value": "unknown",
+                "label": "Unknown"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "standard_benefits",
+        "title": "Standard Benefits Package",
+        "description": "Benefits typically offered to employees",
+        "order": 8,
+        "questions": [
+          {
+            "id": "standard_benefits_offered",
+            "question": "Standard Benefits Package",
+            "type": "multiselect",
+            "required": true,
+            "options": [
+              {
+                "value": "pension",
+                "label": "Pension (employer contribution)"
+              },
+              {
+                "value": "health_insurance",
+                "label": "Private Health Insurance"
+              },
+              {
+                "value": "dental",
+                "label": "Dental Insurance"
+              },
+              {
+                "value": "life_insurance",
+                "label": "Life Insurance"
+              },
+              {
+                "value": "income_protection",
+                "label": "Income Protection"
+              },
+              {
+                "value": "critical_illness",
+                "label": "Critical Illness Cover"
+              },
+              {
+                "value": "car_allowance",
+                "label": "Car Allowance"
+              },
+              {
+                "value": "gym_membership",
+                "label": "Gym/Wellness Benefit"
+              },
+              {
+                "value": "share_options",
+                "label": "Share Options/Equity"
+              },
+              {
+                "value": "share_save",
+                "label": "ShareSave/SAYE Scheme"
+              },
+              {
+                "value": "bonus",
+                "label": "Bonus Scheme"
+              },
+              {
+                "value": "flexible_working",
+                "label": "Flexible Working"
+              },
+              {
+                "value": "training_budget",
+                "label": "Training/Development Budget"
+              },
+              {
+                "value": "study_support",
+                "label": "Professional Study Support"
+              },
+              {
+                "value": "enhanced_parental",
+                "label": "Enhanced Parental Leave"
+              },
+              {
+                "value": "sabbatical",
+                "label": "Sabbatical Options"
+              },
+              {
+                "value": "cycle_to_work",
+                "label": "Cycle to Work Scheme"
+              },
+              {
+                "value": "season_ticket",
+                "label": "Season Ticket Loan"
+              },
+              {
+                "value": "employee_assistance",
+                "label": "Employee Assistance Programme"
+              }
+            ],
+            "mirrorsCandidate": {
+              "questionId": "deal_breaker_benefits",
+              "matchType": "overlap"
+            }
+          },
+          {
+            "id": "pension_contribution",
+            "question": "Standard Employer Pension Contribution",
+            "type": "select",
+            "required": false,
+            "options": [
+              {
+                "value": "3",
+                "label": "3% (statutory minimum)"
+              },
+              {
+                "value": "5",
+                "label": "5%"
+              },
+              {
+                "value": "6",
+                "label": "6%"
+              },
+              {
+                "value": "8",
+                "label": "8%"
+              },
+              {
+                "value": "10",
+                "label": "10%"
+              },
+              {
+                "value": "10_plus",
+                "label": "10%+"
+              },
+              {
+                "value": "matching",
+                "label": "Matching scheme (varies)"
+              },
+              {
+                "value": "varies",
+                "label": "Varies by level"
+              }
+            ]
+          },
+          {
+            "id": "holiday_allowance",
+            "question": "Standard Holiday Allowance (days)",
+            "type": "number",
+            "required": false,
+            "placeholder": "e.g., 25",
+            "helpText": "Excluding bank holidays"
+          },
+          {
+            "id": "hybrid_remote_policy",
+            "question": "Standard Hybrid/Remote Working Policy",
+            "type": "select",
+            "required": true,
+            "options": [
+              {
+                "value": "office_full",
+                "label": "Fully office-based (5 days)"
+              },
+              {
+                "value": "hybrid_4",
+                "label": "Hybrid - 4 days office, 1 remote"
+              },
+              {
+                "value": "hybrid_3",
+                "label": "Hybrid - 3 days office, 2 remote"
+              },
+              {
+                "value": "hybrid_2",
+                "label": "Hybrid - 2 days office, 3 remote"
+              },
+              {
+                "value": "remote_first",
+                "label": "Remote-first (occasional office)"
+              },
+              {
+                "value": "fully_remote",
+                "label": "Fully remote"
+              },
+              {
+                "value": "flexible",
+                "label": "Flexible/role-dependent"
+              }
+            ],
+            "mirrorsCandidate": {
+              "questionId": "work_location_preference",
+              "matchType": "compatibility"
+            }
+          },
+          {
+            "id": "flexible_hours",
+            "question": "Flexible Working Hours Policy",
+            "type": "select",
+            "required": false,
+            "options": [
+              {
+                "value": "fixed",
+                "label": "Fixed hours (e.g., 9-5)"
+              },
+              {
+                "value": "core_hours",
+                "label": "Core hours with flexibility"
+              },
+              {
+                "value": "fully_flexible",
+                "label": "Fully flexible"
+              },
+              {
+                "value": "varies",
+                "label": "Varies by role/team"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "recruitment_process",
+        "title": "Standard Recruitment Process",
+        "description": "Your typical hiring approach",
+        "order": 9,
+        "questions": [
+          {
+            "id": "typical_interview_stages",
+            "question": "Typical Interview Stages",
+            "type": "select",
+            "required": true,
+            "options": [
+              {
+                "value": "1",
+                "label": "1 stage"
+              },
+              {
+                "value": "2",
+                "label": "2 stages"
+              },
+              {
+                "value": "3",
+                "label": "3 stages"
+              },
+              {
+                "value": "4",
+                "label": "4 stages"
+              },
+              {
+                "value": "5_plus",
+                "label": "5+ stages"
+              },
+              {
+                "value": "varies",
+                "label": "Varies by role seniority"
+              }
+            ]
+          },
+          {
+            "id": "standard_process_description",
+            "question": "Describe Your Standard Interview Process",
+            "type": "textarea",
+            "required": false,
+            "placeholder": "e.g., 1) Phone screen with HR, 2) Hiring manager interview, 3) Panel interview, 4) Final with senior stakeholder",
+            "helpText": "This may vary by role but give us a typical example"
+          },
+          {
+            "id": "typical_time_to_hire",
+            "question": "Typical Time from Application to Offer",
+            "type": "select",
+            "required": false,
+            "options": [
+              {
+                "value": "1_week",
+                "label": "1 week"
+              },
+              {
+                "value": "2_weeks",
+                "label": "2 weeks"
+              },
+              {
+                "value": "3_4_weeks",
+                "label": "3-4 weeks"
+              },
+              {
+                "value": "5_6_weeks",
+                "label": "5-6 weeks"
+              },
+              {
+                "value": "7_8_weeks",
+                "label": "7-8 weeks"
+              },
+              {
+                "value": "8_plus_weeks",
+                "label": "8+ weeks"
+              },
+              {
+                "value": "varies",
+                "label": "Varies significantly"
+              }
+            ]
+          },
+          {
+            "id": "assessment_tools_used",
+            "question": "Assessment Tools Typically Used",
+            "type": "multiselect",
+            "required": false,
+            "options": [
+              {
+                "value": "none",
+                "label": "None typically used"
+              },
+              {
+                "value": "technical_test",
+                "label": "Technical/skills test"
+              },
+              {
+                "value": "case_study",
+                "label": "Case study"
+              },
+              {
+                "value": "presentation",
+                "label": "Presentation"
+              },
+              {
+                "value": "psychometric",
+                "label": "Psychometric testing"
+              },
+              {
+                "value": "personality",
+                "label": "Personality assessment (e.g., MBTI, Hogan)"
+              },
+              {
+                "value": "situational",
+                "label": "Situational Judgement Test"
+              },
+              {
+                "value": "assessment_centre",
+                "label": "Assessment centre"
+              },
+              {
+                "value": "other",
+                "label": "Other"
+              }
+            ]
+          },
+          {
+            "id": "interview_format_preference",
+            "question": "Preferred Interview Format",
+            "type": "multiselect",
+            "required": false,
+            "options": [
+              {
+                "value": "in_person",
+                "label": "In-person"
+              },
+              {
+                "value": "video",
+                "label": "Video (Teams/Zoom)"
+              },
+              {
+                "value": "phone",
+                "label": "Phone"
+              },
+              {
+                "value": "mixed",
+                "label": "Mix depending on stage"
+              }
+            ],
+            "mirrorsCandidate": {
+              "questionId": "preferred_interview_format",
+              "matchType": "overlap"
+            }
+          },
+          {
+            "id": "interviewer_availability",
+            "question": "Typical Interviewer Availability",
+            "type": "multiselect",
+            "required": false,
+            "options": [
+              {
+                "value": "business_hours",
+                "label": "Standard business hours only"
+              },
+              {
+                "value": "early_morning",
+                "label": "Early morning (before 9am) possible"
+              },
+              {
+                "value": "evening",
+                "label": "Evening slots possible"
+              },
+              {
+                "value": "flexible",
+                "label": "Very flexible to candidate needs"
+              }
+            ],
+            "mirrorsCandidate": {
+              "questionId": "interview_availability",
+              "matchType": "overlap"
+            }
+          }
+        ]
+      },
+      {
+        "id": "feedback_communication",
+        "title": "Feedback & Communication Preferences",
+        "description": "How you want us to communicate",
+        "order": 10,
+        "questions": [
+          {
+            "id": "update_frequency",
+            "question": "Preferred Frequency for Candidate Updates",
+            "type": "select",
+            "required": true,
+            "options": [
+              {
+                "value": "real_time",
+                "label": "Real-time (as things happen)"
+              },
+              {
+                "value": "daily",
+                "label": "Daily summary"
+              },
+              {
+                "value": "twice_weekly",
+                "label": "Twice weekly"
+              },
+              {
+                "value": "weekly",
+                "label": "Weekly"
+              },
+              {
+                "value": "as_needed",
+                "label": "Only when there's something significant"
+              }
+            ]
+          },
+          {
+            "id": "update_method",
+            "question": "Preferred Method for Updates",
+            "type": "select",
+            "required": true,
+            "options": [
+              {
+                "value": "email",
+                "label": "Email"
+              },
+              {
+                "value": "phone",
+                "label": "Phone call"
+              },
+              {
+                "value": "portal",
+                "label": "Client portal/system"
+              },
+              {
+                "value": "teams",
+                "label": "Microsoft Teams/Slack"
+              },
+              {
+                "value": "mixed",
+                "label": "Mix depending on urgency"
+              }
+            ]
+          },
+          {
+            "id": "scheduling_contact",
+            "question": "Who should we contact for interview scheduling?",
+            "type": "select",
+            "required": true,
+            "options": [
+              {
+                "value": "primary_contact",
+                "label": "Primary contact listed above"
+              },
+              {
+                "value": "hiring_manager",
+                "label": "Hiring manager directly"
+              },
+              {
+                "value": "coordinator",
+                "label": "Dedicated interview coordinator"
+              },
+              {
+                "value": "ea_pa",
+                "label": "EA/PA to hiring manager"
+              },
+              {
+                "value": "varies",
+                "label": "Varies by role"
+              }
+            ]
+          },
+          {
+            "id": "feedback_turnaround",
+            "question": "Typical Turnaround for Interview Feedback",
+            "type": "select",
+            "required": false,
+            "options": [
+              {
+                "value": "same_day",
+                "label": "Same day"
+              },
+              {
+                "value": "24_hours",
+                "label": "Within 24 hours"
+              },
+              {
+                "value": "48_hours",
+                "label": "Within 48 hours"
+              },
+              {
+                "value": "1_week",
+                "label": "Within 1 week"
+              },
+              {
+                "value": "longer",
+                "label": "Can take longer"
+              }
+            ]
+          },
+          {
+            "id": "cv_format_preference",
+            "question": "CV Format Preference",
+            "type": "select",
+            "required": false,
+            "options": [
+              {
+                "value": "original",
+                "label": "Original candidate CV only"
+              },
+              {
+                "value": "agency_branded",
+                "label": "Agency-branded format preferred"
+              },
+              {
+                "value": "either",
+                "label": "Either is fine"
+              },
+              {
+                "value": "both",
+                "label": "Both original and agency format"
+              }
+            ]
+          },
+          {
+            "id": "cv_submission_method",
+            "question": "CV Submission Method",
+            "type": "select",
+            "required": false,
+            "options": [
+              {
+                "value": "email",
+                "label": "Email to contact"
+              },
+              {
+                "value": "portal",
+                "label": "Upload to your ATS/portal"
+              },
+              {
+                "value": "either",
+                "label": "Either method"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "legal_compliance",
+        "title": "Legal & Compliance",
+        "description": "Background checks and compliance requirements",
+        "order": 11,
+        "questions": [
+          {
+            "id": "background_checks_conducted",
+            "question": "Do you conduct background checks?",
+            "type": "select",
+            "required": true,
+            "options": [
+              {
+                "value": "yes_all",
+                "label": "Yes - for all roles"
+              },
+              {
+                "value": "yes_some",
+                "label": "Yes - for certain roles only"
+              },
+              {
+                "value": "no",
+                "label": "No"
+              }
+            ],
+            "mirrorsCandidate": {
+              "questionId": "background_check_consent",
+              "matchType": "requirements"
+            }
+          },
+          {
+            "id": "background_check_types",
+            "question": "Types of Background Checks Performed",
+            "type": "multiselect",
+            "required": false,
+            "options": [
+              {
+                "value": "employment",
+                "label": "Employment history verification"
+              },
+              {
+                "value": "education",
+                "label": "Education verification"
+              },
+              {
+                "value": "credit",
+                "label": "Credit check"
+              },
+              {
+                "value": "criminal_basic",
+                "label": "Basic criminal record (DBS)"
+              },
+              {
+                "value": "criminal_standard",
+                "label": "Standard DBS"
+              },
+              {
+                "value": "criminal_enhanced",
+                "label": "Enhanced DBS"
+              },
+              {
+                "value": "fca",
+                "label": "FCA register check"
+              },
+              {
+                "value": "sanctions",
+                "label": "Sanctions/PEP screening"
+              },
+              {
+                "value": "social_media",
+                "label": "Social media screening"
+              },
+              {
+                "value": "drug_testing",
+                "label": "Drug testing"
+              }
+            ],
+            "conditionalOn": {
+              "field": "background_checks_conducted",
+              "values": [
+                "yes_all",
+                "yes_some"
+              ]
+            }
+          },
+          {
+            "id": "background_check_provider",
+            "question": "Background Check Provider",
+            "type": "text",
+            "required": false,
+            "placeholder": "e.g., Sterling, Experian, HireRight",
+            "conditionalOn": {
+              "field": "background_checks_conducted",
+              "values": [
+                "yes_all",
+                "yes_some"
+              ]
+            }
+          },
+          {
+            "id": "references_required",
+            "question": "Professional References Required?",
+            "type": "select",
+            "required": true,
+            "options": [
+              {
+                "value": "yes_2",
+                "label": "Yes - 2 references"
+              },
+              {
+                "value": "yes_3",
+                "label": "Yes - 3 references"
+              },
+              {
+                "value": "yes_varies",
+                "label": "Yes - number varies"
+              },
+              {
+                "value": "no",
+                "label": "No references required"
+              }
+            ],
+            "mirrorsCandidate": {
+              "questionId": "references_available",
+              "matchType": "requirements"
+            }
+          },
+          {
+            "id": "reference_timing",
+            "question": "When are references taken?",
+            "type": "select",
+            "required": false,
+            "options": [
+              {
+                "value": "pre_interview",
+                "label": "Before interviews"
+              },
+              {
+                "value": "post_final",
+                "label": "After final interview"
+              },
+              {
+                "value": "pre_offer",
+                "label": "Before making offer"
+              },
+              {
+                "value": "post_offer",
+                "label": "After verbal offer"
+              },
+              {
+                "value": "post_acceptance",
+                "label": "After offer accepted"
+              }
+            ]
+          },
+          {
+            "id": "visa_sponsorship_capability",
+            "question": "Can you sponsor work visas?",
+            "type": "select",
+            "required": true,
+            "options": [
+              {
+                "value": "yes",
+                "label": "Yes - we are a licensed sponsor"
+              },
+              {
+                "value": "case_by_case",
+                "label": "Case by case basis"
+              },
+              {
+                "value": "no",
+                "label": "No - candidates must have right to work"
+              },
+              {
+                "value": "in_process",
+                "label": "Currently applying for sponsor licence"
+              }
+            ],
+            "mirrorsCandidate": {
+              "questionId": "right_to_work",
+              "matchType": "eligibility"
+            }
+          },
+          {
+            "id": "data_protection_requirements",
+            "question": "Any specific data protection/GDPR requirements?",
+            "type": "textarea",
+            "required": false,
+            "placeholder": "e.g., Specific data handling requirements, candidate data retention policies"
+          }
+        ]
+      },
+      {
+        "id": "commercial_terms",
+        "title": "Commercial & Budget",
+        "description": "Budget and commercial parameters",
+        "order": 12,
+        "questions": [
+          {
+            "id": "salary_benchmarks",
+            "question": "General Salary Benchmarking Approach",
+            "type": "select",
+            "required": false,
+            "options": [
+              {
+                "value": "above_market",
+                "label": "Above market (75th percentile+)"
+              },
+              {
+                "value": "market_rate",
+                "label": "Market rate (50th percentile)"
+              },
+              {
+                "value": "below_market",
+                "label": "Below market (compensated by benefits/culture)"
+              },
+              {
+                "value": "varies",
+                "label": "Varies by role/level"
+              }
+            ]
+          },
+          {
+            "id": "budget_flexibility",
+            "question": "Budget Flexibility for Exceptional Candidates",
+            "type": "select",
+            "required": false,
+            "options": [
+              {
+                "value": "strict",
+                "label": "Budgets are strict"
+              },
+              {
+                "value": "some_flex",
+                "label": "Some flexibility (5-10%)"
+              },
+              {
+                "value": "flexible",
+                "label": "Flexible for the right person"
+              },
+              {
+                "value": "case_by_case",
+                "label": "Case by case approval required"
+              }
+            ]
+          },
+          {
+            "id": "sign_on_bonus",
+            "question": "Are sign-on bonuses available?",
+            "type": "select",
+            "required": false,
+            "options": [
+              {
+                "value": "yes",
+                "label": "Yes - commonly offered"
+              },
+              {
+                "value": "sometimes",
+                "label": "Sometimes - for hard-to-fill roles"
+              },
+              {
+                "value": "rarely",
+                "label": "Rarely"
+              },
+              {
+                "value": "no",
+                "label": "No"
+              }
+            ]
+          },
+          {
+            "id": "counter_offer_policy",
+            "question": "Counter-offer Approach",
+            "type": "select",
+            "required": false,
+            "options": [
+              {
+                "value": "will_match",
+                "label": "Will match/exceed competitor offers"
+              },
+              {
+                "value": "may_increase",
+                "label": "May increase initial offer"
+              },
+              {
+                "value": "firm",
+                "label": "Offers are generally firm"
+              }
+            ]
+          },
+          {
+            "id": "agency_terms",
+            "question": "Standard Agency Terms",
+            "type": "select",
+            "required": false,
+            "options": [
+              {
+                "value": "standard",
+                "label": "Standard market terms"
+              },
+              {
+                "value": "psa",
+                "label": "Via PSA/Preferred Supplier Agreement"
+              },
+              {
+                "value": "negotiate",
+                "label": "Negotiated per role/mandate"
+              },
+              {
+                "value": "msp",
+                "label": "Via MSP/Neutral Vendor"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "success_metrics",
+        "title": "Success Metrics & Reporting",
+        "description": "How you measure recruitment success",
+        "order": 13,
+        "questions": [
+          {
+            "id": "key_kpis",
+            "question": "Key Recruitment KPIs You Track",
+            "type": "multiselect",
+            "required": false,
+            "options": [
+              {
+                "value": "time_to_hire",
+                "label": "Time to hire"
+              },
+              {
+                "value": "time_to_fill",
+                "label": "Time to fill"
+              },
+              {
+                "value": "quality_of_hire",
+                "label": "Quality of hire"
+              },
+              {
+                "value": "retention",
+                "label": "Retention rates"
+              },
+              {
+                "value": "cost_per_hire",
+                "label": "Cost per hire"
+              },
+              {
+                "value": "offer_acceptance",
+                "label": "Offer acceptance rate"
+              },
+              {
+                "value": "candidate_satisfaction",
+                "label": "Candidate satisfaction"
+              },
+              {
+                "value": "diversity",
+                "label": "Diversity metrics"
+              },
+              {
+                "value": "none_formal",
+                "label": "No formal KPIs tracked"
+              }
+            ]
+          },
+          {
+            "id": "reporting_requirements",
+            "question": "Reporting Requirements from Agency",
+            "type": "multiselect",
+            "required": false,
+            "options": [
+              {
+                "value": "none",
+                "label": "No formal reporting required"
+              },
+              {
+                "value": "weekly_pipeline",
+                "label": "Weekly pipeline update"
+              },
+              {
+                "value": "monthly_summary",
+                "label": "Monthly summary report"
+              },
+              {
+                "value": "quarterly_review",
+                "label": "Quarterly business review"
+              },
+              {
+                "value": "diversity_reporting",
+                "label": "Diversity/D&I reporting"
+              },
+              {
+                "value": "activity_metrics",
+                "label": "Activity metrics (CVs, interviews)"
+              },
+              {
+                "value": "custom",
+                "label": "Custom reporting format"
+              }
+            ]
+          },
+          {
+            "id": "ats_system",
+            "question": "ATS/Recruitment System Used",
+            "type": "text",
+            "required": false,
+            "placeholder": "e.g., Workday, SAP SuccessFactors, Greenhouse, Lever"
+          }
+        ]
+      },
+      {
+        "id": "previous_experience",
+        "title": "Previous Recruitment Experience",
+        "description": "What's worked and what hasn't",
+        "order": 14,
+        "questions": [
+          {
+            "id": "previous_agencies",
+            "question": "Have you worked with recruitment agencies before?",
+            "type": "select",
+            "required": true,
+            "options": [
+              {
+                "value": "yes_many",
+                "label": "Yes - extensively"
+              },
+              {
+                "value": "yes_some",
+                "label": "Yes - occasionally"
+              },
+              {
+                "value": "yes_few",
+                "label": "Yes - limited experience"
+              },
+              {
+                "value": "no",
+                "label": "No - this is our first time"
+              }
+            ]
+          },
+          {
+            "id": "what_worked_well",
+            "question": "What's Worked Well with Agencies in the Past?",
+            "type": "textarea",
+            "required": false,
+            "placeholder": "e.g., Proactive communication, quality over quantity, deep sector knowledge",
+            "conditionalOn": {
+              "field": "previous_agencies",
+              "values": [
+                "yes_many",
+                "yes_some",
+                "yes_few"
+              ]
+            }
+          },
+          {
+            "id": "what_didnt_work",
+            "question": "What Hasn't Worked Well?",
+            "type": "textarea",
+            "required": false,
+            "placeholder": "e.g., Too many irrelevant CVs, lack of market insight, slow response times",
+            "conditionalOn": {
+              "field": "previous_agencies",
+              "values": [
+                "yes_many",
+                "yes_some",
+                "yes_few"
+              ]
+            }
+          },
+          {
+            "id": "recruitment_challenges",
+            "question": "Current Recruitment Challenges",
+            "type": "multiselect",
+            "required": false,
+            "options": [
+              {
+                "value": "candidate_shortage",
+                "label": "Shortage of qualified candidates"
+              },
+              {
+                "value": "salary_competition",
+                "label": "Salary competition/market rates"
+              },
+              {
+                "value": "employer_brand",
+                "label": "Employer brand awareness"
+              },
+              {
+                "value": "time_to_hire",
+                "label": "Slow internal process"
+              },
+              {
+                "value": "retention",
+                "label": "Retention/counter-offers"
+              },
+              {
+                "value": "diversity",
+                "label": "Diversity targets"
+              },
+              {
+                "value": "remote_competition",
+                "label": "Remote role competition"
+              },
+              {
+                "value": "niche_skills",
+                "label": "Niche/specialist skills"
+              }
+            ]
+          },
+          {
+            "id": "additional_info",
+            "question": "Anything Else We Should Know?",
+            "type": "textarea",
+            "required": false,
+            "placeholder": "Any other context about your company, hiring needs, or preferences that would help us serve you better"
+          }
+        ]
+      },
+      {
+        "id": "learning_development",
+        "title": "Learning & Development",
+        "description": "Training and career development opportunities",
+        "order": 15,
+        "questions": [
+          {
+            "id": "training_programmes",
+            "question": "What training programmes do you offer?",
+            "type": "multiselect",
+            "required": false,
+            "options": [
+              {
+                "value": "onboarding",
+                "label": "Structured onboarding programme"
+              },
+              {
+                "value": "technical",
+                "label": "Technical/skills training"
+              },
+              {
+                "value": "leadership",
+                "label": "Leadership development"
+              },
+              {
+                "value": "management",
+                "label": "Management training"
+              },
+              {
+                "value": "professional_certs",
+                "label": "Professional certification support"
+              },
+              {
+                "value": "mentoring",
+                "label": "Mentoring programme"
+              },
+              {
+                "value": "coaching",
+                "label": "Executive/career coaching"
+              },
+              {
+                "value": "secondments",
+                "label": "Secondments/rotations"
+              },
+              {
+                "value": "conferences",
+                "label": "Conference attendance"
+              },
+              {
+                "value": "e_learning",
+                "label": "E-learning platform access"
+              },
+              {
+                "value": "external_courses",
+                "label": "External course funding"
+              }
+            ],
+            "helpText": "Select all training options available to employees",
+            "mirrorsCandidate": {
+              "questionId": "nice_to_haves",
+              "matchType": "appeal"
+            }
+          },
+          {
+            "id": "professional_study_support",
+            "question": "Do you provide professional study support?",
+            "type": "select",
+            "required": false,
+            "options": [
+              {
+                "value": "full_support",
+                "label": "Yes - full support (fees, study leave, bonus)"
+              },
+              {
+                "value": "fees_only",
+                "label": "Yes - exam fees covered"
+              },
+              {
+                "value": "partial",
+                "label": "Yes - partial support"
+              },
+              {
+                "value": "study_leave",
+                "label": "Study leave only"
+              },
+              {
+                "value": "case_by_case",
+                "label": "Case by case basis"
+              },
+              {
+                "value": "no",
+                "label": "No formal support"
+              }
+            ]
+          },
+          {
+            "id": "study_leave_days",
+            "question": "Study Leave Allowance (days per year)",
+            "type": "number",
+            "required": false,
+            "placeholder": "e.g., 10",
+            "conditionalOn": {
+              "field": "professional_study_support",
+              "values": [
+                "full_support",
+                "study_leave",
+                "partial"
+              ]
+            }
+          },
+          {
+            "id": "career_paths",
+            "question": "Are there defined career paths/progression frameworks?",
+            "type": "select",
+            "required": false,
+            "options": [
+              {
+                "value": "formal_framework",
+                "label": "Yes - formal career framework with levels"
+              },
+              {
+                "value": "informal",
+                "label": "Informal progression paths"
+              },
+              {
+                "value": "developing",
+                "label": "Currently developing frameworks"
+              },
+              {
+                "value": "no",
+                "label": "No formal career paths"
+              }
+            ],
+            "mirrorsCandidate": {
+              "questionId": "nice_to_haves",
+              "matchType": "appeal"
+            }
+          },
+          {
+            "id": "promotion_frequency",
+            "question": "Typical Promotion Cycle",
+            "type": "select",
+            "required": false,
+            "options": [
+              {
+                "value": "annual",
+                "label": "Annual promotion cycle"
+              },
+              {
+                "value": "biannual",
+                "label": "Twice yearly"
+              },
+              {
+                "value": "as_merited",
+                "label": "As and when merited"
+              },
+              {
+                "value": "no_fixed",
+                "label": "No fixed cycle"
+              }
+            ]
+          },
+          {
+            "id": "mentoring_programme",
+            "question": "Do you have a formal mentoring programme?",
+            "type": "select",
+            "required": false,
+            "options": [
+              {
+                "value": "formal_all",
+                "label": "Yes - available to all employees"
+              },
+              {
+                "value": "formal_selected",
+                "label": "Yes - for selected employees/high potentials"
+              },
+              {
+                "value": "informal",
+                "label": "Informal mentoring only"
+              },
+              {
+                "value": "no",
+                "label": "No mentoring programme"
+              }
+            ],
+            "mirrorsCandidate": {
+              "questionId": "nice_to_haves",
+              "matchType": "appeal"
+            }
+          },
+          {
+            "id": "training_budget",
+            "question": "Annual Training Budget per Employee",
+            "type": "select",
+            "required": false,
+            "options": [
+              {
+                "value": "none_fixed",
+                "label": "No fixed budget"
+              },
+              {
+                "value": "up_to_1000",
+                "label": "Up to \u00a31,000"
+              },
+              {
+                "value": "1000_2500",
+                "label": "\u00a31,000 - \u00a32,500"
+              },
+              {
+                "value": "2500_5000",
+                "label": "\u00a32,500 - \u00a35,000"
+              },
+              {
+                "value": "5000_plus",
+                "label": "\u00a35,000+"
+              },
+              {
+                "value": "unlimited",
+                "label": "No cap/unlimited"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "retention_data",
+        "title": "Employee Retention",
+        "description": "Staff tenure and turnover information",
+        "order": 16,
+        "questions": [
+          {
+            "id": "average_tenure",
+            "question": "Average Employee Tenure",
+            "type": "select",
+            "required": false,
+            "options": [
+              {
+                "value": "under_1_year",
+                "label": "Under 1 year"
+              },
+              {
+                "value": "1_2_years",
+                "label": "1-2 years"
+              },
+              {
+                "value": "2_3_years",
+                "label": "2-3 years"
+              },
+              {
+                "value": "3_5_years",
+                "label": "3-5 years"
+              },
+              {
+                "value": "5_10_years",
+                "label": "5-10 years"
+              },
+              {
+                "value": "10_plus_years",
+                "label": "10+ years"
+              }
+            ],
+            "helpText": "Average length of service across the organisation"
+          },
+          {
+            "id": "annual_turnover_rate",
+            "question": "Annual Staff Turnover Rate",
+            "type": "select",
+            "required": false,
+            "options": [
+              {
+                "value": "under_5",
+                "label": "Under 5%"
+              },
+              {
+                "value": "5_10",
+                "label": "5-10%"
+              },
+              {
+                "value": "10_15",
+                "label": "10-15%"
+              },
+              {
+                "value": "15_20",
+                "label": "15-20%"
+              },
+              {
+                "value": "20_25",
+                "label": "20-25%"
+              },
+              {
+                "value": "over_25",
+                "label": "Over 25%"
+              },
+              {
+                "value": "unknown",
+                "label": "Unknown/not tracked"
+              }
+            ],
+            "helpText": "Percentage of employees leaving annually (voluntary + involuntary)"
+          },
+          {
+            "id": "turnover_voluntary",
+            "question": "Voluntary Turnover Rate (if known)",
+            "type": "select",
+            "required": false,
+            "options": [
+              {
+                "value": "under_5",
+                "label": "Under 5%"
+              },
+              {
+                "value": "5_10",
+                "label": "5-10%"
+              },
+              {
+                "value": "10_15",
+                "label": "10-15%"
+              },
+              {
+                "value": "15_20",
+                "label": "15-20%"
+              },
+              {
+                "value": "over_20",
+                "label": "Over 20%"
+              },
+              {
+                "value": "unknown",
+                "label": "Unknown"
+              }
+            ],
+            "helpText": "Percentage of employees who resign voluntarily"
+          },
+          {
+            "id": "retention_initiatives",
+            "question": "Employee Retention Initiatives",
+            "type": "multiselect",
+            "required": false,
+            "options": [
+              {
+                "value": "retention_bonus",
+                "label": "Retention bonuses"
+              },
+              {
+                "value": "career_development",
+                "label": "Career development programmes"
+              },
+              {
+                "value": "flexible_working",
+                "label": "Flexible working arrangements"
+              },
+              {
+                "value": "wellbeing",
+                "label": "Wellbeing programmes"
+              },
+              {
+                "value": "engagement_surveys",
+                "label": "Regular engagement surveys"
+              },
+              {
+                "value": "stay_interviews",
+                "label": "Stay interviews"
+              },
+              {
+                "value": "recognition_programmes",
+                "label": "Recognition/reward programmes"
+              },
+              {
+                "value": "none_formal",
+                "label": "No formal retention initiatives"
+              }
+            ]
+          },
+          {
+            "id": "exit_interview_process",
+            "question": "Do you conduct exit interviews?",
+            "type": "select",
+            "required": false,
+            "options": [
+              {
+                "value": "yes_all",
+                "label": "Yes - for all leavers"
+              },
+              {
+                "value": "yes_some",
+                "label": "Yes - for voluntary leavers only"
+              },
+              {
+                "value": "sometimes",
+                "label": "Sometimes/ad-hoc"
+              },
+              {
+                "value": "no",
+                "label": "No"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "notice_buyout",
+        "title": "Notice Period & Buyout Policy",
+        "description": "Policy on notice periods and buyouts for new hires",
+        "order": 17,
+        "questions": [
+          {
+            "id": "standard_notice_period",
+            "question": "Standard Notice Period for New Hires",
+            "type": "select",
+            "required": false,
+            "options": [
+              {
+                "value": "1_week",
+                "label": "1 week"
+              },
+              {
+                "value": "2_weeks",
+                "label": "2 weeks"
+              },
+              {
+                "value": "1_month",
+                "label": "1 month"
+              },
+              {
+                "value": "2_months",
+                "label": "2 months"
+              },
+              {
+                "value": "3_months",
+                "label": "3 months"
+              },
+              {
+                "value": "varies_by_level",
+                "label": "Varies by seniority level"
+              }
+            ],
+            "helpText": "Notice period typically applied to new hires"
+          },
+          {
+            "id": "notice_buyout_policy",
+            "question": "Do you offer notice period buyouts for candidates?",
+            "type": "select",
+            "required": true,
+            "options": [
+              {
+                "value": "yes_standard",
+                "label": "Yes - standard policy for all hires"
+              },
+              {
+                "value": "yes_senior_only",
+                "label": "Yes - for senior/critical hires only"
+              },
+              {
+                "value": "case_by_case",
+                "label": "Case by case basis"
+              },
+              {
+                "value": "rarely",
+                "label": "Rarely/exceptional circumstances only"
+              },
+              {
+                "value": "no",
+                "label": "No - we do not buy out notice periods"
+              }
+            ],
+            "helpText": "Whether you pay for candidates to leave their current role early",
+            "mirrorsCandidate": {
+              "questionId": "notice_period",
+              "matchType": "flexibility"
+            }
+          },
+          {
+            "id": "buyout_maximum",
+            "question": "Maximum Notice Period Buyout",
+            "type": "select",
+            "required": false,
+            "options": [
+              {
+                "value": "1_month",
+                "label": "Up to 1 month"
+              },
+              {
+                "value": "2_months",
+                "label": "Up to 2 months"
+              },
+              {
+                "value": "3_months",
+                "label": "Up to 3 months"
+              },
+              {
+                "value": "no_limit",
+                "label": "No set limit"
+              },
+              {
+                "value": "varies",
+                "label": "Varies by role/candidate"
+              }
+            ],
+            "conditionalOn": {
+              "field": "notice_buyout_policy",
+              "values": [
+                "yes_standard",
+                "yes_senior_only",
+                "case_by_case"
+              ]
+            }
+          },
+          {
+            "id": "gardening_leave_acceptance",
+            "question": "Are you willing to wait for candidates on gardening leave?",
+            "type": "select",
+            "required": false,
+            "options": [
+              {
+                "value": "yes",
+                "label": "Yes - we can wait"
+              },
+              {
+                "value": "depends_on_length",
+                "label": "Depends on the length"
+              },
+              {
+                "value": "prefer_not",
+                "label": "Prefer candidates who can start sooner"
+              },
+              {
+                "value": "no",
+                "label": "No - need immediate starters only"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "relocation_support",
+        "title": "Relocation Support",
+        "description": "Support offered to relocating candidates",
+        "order": 18,
+        "questions": [
+          {
+            "id": "relocation_support_offered",
+            "question": "Do you offer relocation support packages?",
+            "type": "select",
+            "required": true,
+            "options": [
+              {
+                "value": "comprehensive",
+                "label": "Yes - comprehensive package"
+              },
+              {
+                "value": "partial",
+                "label": "Yes - partial support"
+              },
+              {
+                "value": "senior_only",
+                "label": "Yes - for senior roles only"
+              },
+              {
+                "value": "case_by_case",
+                "label": "Case by case basis"
+              },
+              {
+                "value": "no",
+                "label": "No relocation support offered"
+              }
+            ],
+            "mirrorsCandidate": {
+              "questionId": "willing_to_relocate",
+              "matchType": "eligibility"
+            }
+          },
+          {
+            "id": "relocation_package_includes",
+            "question": "What does your relocation package include?",
+            "type": "multiselect",
+            "required": false,
+            "options": [
+              {
+                "value": "moving_costs",
+                "label": "Moving/shipping costs"
+              },
+              {
+                "value": "temporary_housing",
+                "label": "Temporary accommodation"
+              },
+              {
+                "value": "house_hunting",
+                "label": "House hunting trips"
+              },
+              {
+                "value": "legal_fees",
+                "label": "Legal/estate agent fees"
+              },
+              {
+                "value": "settling_in",
+                "label": "Settling-in allowance"
+              },
+              {
+                "value": "spouse_support",
+                "label": "Spouse/partner career support"
+              },
+              {
+                "value": "school_search",
+                "label": "School search assistance"
+              },
+              {
+                "value": "tax_advice",
+                "label": "Tax/financial advice"
+              },
+              {
+                "value": "language_training",
+                "label": "Language training"
+              },
+              {
+                "value": "cultural_training",
+                "label": "Cultural orientation"
+              }
+            ],
+            "conditionalOn": {
+              "field": "relocation_support_offered",
+              "values": [
+                "comprehensive",
+                "partial",
+                "senior_only",
+                "case_by_case"
+              ]
+            }
+          },
+          {
+            "id": "relocation_budget",
+            "question": "Typical Relocation Budget",
+            "type": "select",
+            "required": false,
+            "options": [
+              {
+                "value": "up_to_5k",
+                "label": "Up to \u00a35,000"
+              },
+              {
+                "value": "5k_10k",
+                "label": "\u00a35,000 - \u00a310,000"
+              },
+              {
+                "value": "10k_25k",
+                "label": "\u00a310,000 - \u00a325,000"
+              },
+              {
+                "value": "25k_50k",
+                "label": "\u00a325,000 - \u00a350,000"
+              },
+              {
+                "value": "50k_plus",
+                "label": "\u00a350,000+"
+              },
+              {
+                "value": "varies",
+                "label": "Varies by circumstances"
+              }
+            ],
+            "conditionalOn": {
+              "field": "relocation_support_offered",
+              "values": [
+                "comprehensive",
+                "partial",
+                "senior_only",
+                "case_by_case"
+              ]
+            }
+          },
+          {
+            "id": "international_relocation",
+            "question": "Do you support international relocation?",
+            "type": "select",
+            "required": false,
+            "options": [
+              {
+                "value": "yes",
+                "label": "Yes - regularly relocate international candidates"
+              },
+              {
+                "value": "sometimes",
+                "label": "Sometimes - for exceptional candidates"
+              },
+              {
+                "value": "uk_only",
+                "label": "UK relocations only"
+              },
+              {
+                "value": "no",
+                "label": "No international relocations"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "probation_terms",
+        "title": "Probation Terms",
+        "description": "Standard probationary period terms",
+        "order": 19,
+        "questions": [
+          {
+            "id": "probation_period_length",
+            "question": "Standard Probation Period",
+            "type": "select",
+            "required": true,
+            "options": [
+              {
+                "value": "none",
+                "label": "No probation period"
+              },
+              {
+                "value": "1_month",
+                "label": "1 month"
+              },
+              {
+                "value": "3_months",
+                "label": "3 months"
+              },
+              {
+                "value": "6_months",
+                "label": "6 months"
+              },
+              {
+                "value": "9_months",
+                "label": "9 months"
+              },
+              {
+                "value": "12_months",
+                "label": "12 months"
+              },
+              {
+                "value": "varies",
+                "label": "Varies by role/level"
+              }
+            ]
+          },
+          {
+            "id": "probation_notice_period",
+            "question": "Notice Period During Probation",
+            "type": "select",
+            "required": false,
+            "options": [
+              {
+                "value": "1_week",
+                "label": "1 week"
+              },
+              {
+                "value": "2_weeks",
+                "label": "2 weeks"
+              },
+              {
+                "value": "1_month",
+                "label": "1 month"
+              },
+              {
+                "value": "same_as_contract",
+                "label": "Same as post-probation"
+              }
+            ]
+          },
+          {
+            "id": "probation_review_process",
+            "question": "Probation Review Process",
+            "type": "select",
+            "required": false,
+            "options": [
+              {
+                "value": "formal_reviews",
+                "label": "Formal reviews at set intervals"
+              },
+              {
+                "value": "final_review",
+                "label": "Final review at end of probation"
+              },
+              {
+                "value": "informal",
+                "label": "Informal ongoing assessment"
+              },
+              {
+                "value": "none_formal",
+                "label": "No formal review process"
+              }
+            ]
+          },
+          {
+            "id": "probation_extension_policy",
+            "question": "Can probation be extended?",
+            "type": "select",
+            "required": false,
+            "options": [
+              {
+                "value": "yes",
+                "label": "Yes - commonly extended if needed"
+              },
+              {
+                "value": "exceptional",
+                "label": "In exceptional circumstances only"
+              },
+              {
+                "value": "no",
+                "label": "No - pass or fail at end of period"
+              }
+            ]
+          },
+          {
+            "id": "benefits_during_probation",
+            "question": "Are all benefits available during probation?",
+            "type": "select",
+            "required": false,
+            "options": [
+              {
+                "value": "all_from_day_1",
+                "label": "Yes - all benefits from day 1"
+              },
+              {
+                "value": "most",
+                "label": "Most benefits (some deferred)"
+              },
+              {
+                "value": "limited",
+                "label": "Limited benefits during probation"
+              },
+              {
+                "value": "statutory_only",
+                "label": "Statutory benefits only"
+              }
+            ],
+            "helpText": "Candidates often ask about benefits timing"
+          }
+        ]
+      },
+      {
+        "id": "terms_consent",
+        "title": "Terms & Consent",
+        "description": "Agreement and data processing",
+        "order": 20,
+        "questions": [
+          {
+            "id": "terms_agreement",
+            "question": "I agree to Assured Recruitment's Terms of Business",
+            "type": "checkbox",
+            "required": true,
+            "defaultValue": false
+          },
+          {
+            "id": "data_processing_consent",
+            "question": "I consent to Assured Recruitment processing company and contact data as described in the Privacy Policy",
+            "type": "checkbox",
+            "required": true,
+            "defaultValue": false
+          },
+          {
+            "id": "marketing_consent",
+            "question": "I would like to receive market insights, salary surveys, and industry updates",
+            "type": "checkbox",
+            "required": false,
+            "defaultValue": true
+          }
+        ]
+      }
+    ],
+    "metadata": {
+      "totalQuestions": 127,
+      "estimatedCompletionMinutes": 21,
+      "targetAudience": "HR Leaders, Talent Acquisition Managers, Hiring Managers",
+      "candidateMirrorFields": [
+        {
+          "clientField": "employer_type",
+          "candidateField": "employer_type_preference",
+          "matchType": "overlap"
+        },
+        {
+          "clientField": "company_industry",
+          "candidateField": "current_industry",
+          "matchType": "exact"
+        },
+        {
+          "clientField": "company_size",
+          "candidateField": "deal_breaker_team_size",
+          "matchType": "preference"
+        },
+        {
+          "clientField": "culture_description",
+          "candidateField": "nice_to_haves",
+          "matchType": "appeal"
+        },
+        {
+          "clientField": "evp_summary",
+          "candidateField": "nice_to_haves",
+          "matchType": "appeal"
+        },
+        {
+          "clientField": "key_selling_points",
+          "candidateField": "nice_to_haves",
+          "matchType": "appeal"
+        },
+        {
+          "clientField": "standard_benefits_offered",
+          "candidateField": "deal_breaker_benefits",
+          "matchType": "overlap"
+        },
+        {
+          "clientField": "hybrid_remote_policy",
+          "candidateField": "work_location_preference",
+          "matchType": "compatibility"
+        },
+        {
+          "clientField": "interview_format_preference",
+          "candidateField": "preferred_interview_format",
+          "matchType": "overlap"
+        },
+        {
+          "clientField": "interviewer_availability",
+          "candidateField": "interview_availability",
+          "matchType": "overlap"
+        },
+        {
+          "clientField": "background_checks_conducted",
+          "candidateField": "background_check_consent",
+          "matchType": "requirements"
+        },
+        {
+          "clientField": "references_required",
+          "candidateField": "references_available",
+          "matchType": "requirements"
+        },
+        {
+          "clientField": "visa_sponsorship_capability",
+          "candidateField": "right_to_work",
+          "matchType": "eligibility"
+        },
+        {
+          "clientField": "training_programmes",
+          "candidateField": "nice_to_haves",
+          "matchType": "appeal"
+        },
+        {
+          "clientField": "career_paths",
+          "candidateField": "nice_to_haves",
+          "matchType": "appeal"
+        },
+        {
+          "clientField": "mentoring_programme",
+          "candidateField": "nice_to_haves",
+          "matchType": "appeal"
+        },
+        {
+          "clientField": "notice_buyout_policy",
+          "candidateField": "notice_period",
+          "matchType": "flexibility"
+        },
+        {
+          "clientField": "relocation_support_offered",
+          "candidateField": "willing_to_relocate",
+          "matchType": "eligibility"
+        },
+        {
+          "clientField": "growth_stage",
+          "candidateField": "preferred_company_stage",
+          "matchType": "overlap"
+        },
+        {
+          "clientField": "business_performance",
+          "candidateField": "preferred_business_context",
+          "matchType": "compatibility"
+        },
+        {
+          "clientField": "work_pace",
+          "candidateField": "preferred_work_pace",
+          "matchType": "compatibility"
+        },
+        {
+          "clientField": "deadline_culture",
+          "candidateField": "deadline_preference",
+          "matchType": "compatibility"
+        },
+        {
+          "clientField": "overtime_expectations",
+          "candidateField": "overtime_willingness",
+          "matchType": "compatibility"
+        },
+        {
+          "clientField": "team_structure_style",
+          "candidateField": "preferred_team_structure",
+          "matchType": "compatibility"
+        },
+        {
+          "clientField": "decision_making_style",
+          "candidateField": "preferred_autonomy_level",
+          "matchType": "compatibility"
+        },
+        {
+          "clientField": "collaboration_style",
+          "candidateField": "collaboration_preference",
+          "matchType": "compatibility"
+        }
+      ],
+      "jobProfileInheritedFields": [
+        "company_industry",
+        "company_size",
+        "employer_type",
+        "growth_stage",
+        "business_performance",
+        "standard_benefits_offered",
+        "pension_contribution",
+        "holiday_allowance",
+        "hybrid_remote_policy",
+        "work_pace",
+        "deadline_culture",
+        "overtime_expectations",
+        "team_structure_style",
+        "decision_making_style",
+        "collaboration_style",
+        "typical_interview_stages",
+        "assessment_tools_used",
+        "background_check_types",
+        "references_required",
+        "visa_sponsorship_capability",
+        "average_tenure",
+        "annual_turnover_rate",
+        "notice_buyout_policy",
+        "relocation_support_offered",
+        "probation_period_length",
+        "training_programmes",
+        "professional_study_support"
+      ],
+      "totalSections": 20,
+      "lastUpdated": "2025-12-15"
+    },
+    "updatedAt": "2025-12-15"
+  }
+}

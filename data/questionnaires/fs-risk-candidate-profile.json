@@ -1,0 +1,3447 @@
+{
+  "questionnaire": {
+    "id": "fs-risk-candidate-profile",
+    "title": "Financial Services Risk Candidate Profile",
+    "description": "FS Risk-specific skills and experience for banking, insurance, asset management, and fintech risk roles. Covers credit, market, liquidity, operational risk, and operational resilience. Excludes compliance risk (separate domain).",
+    "version": "1.0.1",
+    "createdAt": "2025-12-15",
+    "updatedAt": "2025-12-15",
+    "mirrorProfile": "fs-risk-role-profile",
+    "parentProfile": "candidate-profile",
+    "proficiencyScale": {
+      "0": {
+        "label": "No Experience",
+        "description": "No exposure or experience in this area"
+      },
+      "1": {
+        "label": "Awareness",
+        "description": "Understands concepts; can interpret outputs; works under supervision"
+      },
+      "2": {
+        "label": "Practical Application",
+        "description": "Can apply frameworks independently; works autonomously on standard tasks"
+      },
+      "3": {
+        "label": "Implementation & Management",
+        "description": "Can implement, adapt and lead frameworks; manages specific contexts"
+      },
+      "4": {
+        "label": "Strategic Leadership",
+        "description": "Can design from first principles; creates methodologies; enterprise-wide scope"
+      }
+    },
+    "interviewNote": "All self-assessed proficiency ratings will be explored during interviews. Be prepared to provide specific examples demonstrating your claimed level of expertise, particularly for regulatory frameworks and quantitative methods.",
+    "sections": [
+      {
+        "id": "fs_risk_experience_overview",
+        "title": "FS Risk Experience Overview",
+        "description": "Your Financial Services Risk Management background and career level",
+        "order": 1,
+        "questions": [
+          {
+            "id": "target_fs_risk_level",
+            "question": "Target FS Risk Role Level",
+            "type": "select",
+            "required": true,
+            "options": [
+              {
+                "value": "analyst",
+                "label": "Risk Analyst / Associate"
+              },
+              {
+                "value": "senior_analyst",
+                "label": "Senior Risk Analyst / AVP"
+              },
+              {
+                "value": "manager",
+                "label": "Risk Manager / VP"
+              },
+              {
+                "value": "senior_manager",
+                "label": "Senior Risk Manager / Director"
+              },
+              {
+                "value": "head_of",
+                "label": "Head of Risk / MD"
+              },
+              {
+                "value": "cro",
+                "label": "Chief Risk Officer (CRO)"
+              }
+            ],
+            "mirrorsRole": {
+              "questionId": "fs_risk_role_level",
+              "matchType": "compatibility"
+            }
+          },
+          {
+            "id": "fs_risk_scope_experience",
+            "question": "Highest Level of Risk Scope You Have Worked At",
+            "type": "select",
+            "required": true,
+            "options": [
+              {
+                "value": "product_desk",
+                "label": "Product / Desk Level Risk"
+              },
+              {
+                "value": "business_unit",
+                "label": "Business Unit / Division Risk"
+              },
+              {
+                "value": "regional",
+                "label": "Regional Risk"
+              },
+              {
+                "value": "country_entity",
+                "label": "Country / Legal Entity Risk"
+              },
+              {
+                "value": "group_enterprise",
+                "label": "Group / Enterprise Risk"
+              }
+            ],
+            "mirrorsRole": {
+              "questionId": "fs_risk_scope_required",
+              "matchType": "compatibility"
+            }
+          },
+          {
+            "id": "years_in_fs_risk",
+            "question": "Years in Financial Services Risk",
+            "description": "Years spent specifically in FS risk roles (banking, insurance, asset management, fintech)",
+            "type": "number",
+            "required": true,
+            "min": 0,
+            "max": 40,
+            "helpText": "Count only dedicated FS risk roles, not general corporate risk positions",
+            "mirrorsRole": {
+              "questionId": "years_fs_risk_required",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "years_in_risk_broad",
+            "question": "Years in Risk Management (Any Sector)",
+            "description": "Total years in any risk management discipline across all sectors",
+            "type": "number",
+            "required": true,
+            "min": 0,
+            "max": 45,
+            "helpText": "This should include your FS risk years plus any other risk experience",
+            "mirrorsRole": {
+              "questionId": "years_risk_broad_required",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "fs_risk_team_size",
+            "question": "Largest Risk Team Managed",
+            "description": "Maximum number of direct and indirect reports you have managed in a risk function",
+            "type": "number",
+            "required": false,
+            "min": 0,
+            "max": 500,
+            "helpText": "Include both direct reports and matrix/dotted-line reports",
+            "mirrorsRole": {
+              "questionId": "team_size_required",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "primary_risk_specialism",
+            "question": "Primary Risk Specialism",
+            "description": "Your dominant area of expertise within FS risk",
+            "type": "select",
+            "required": true,
+            "options": [
+              {
+                "value": "erm_generalist",
+                "label": "Enterprise Risk Management (Generalist)"
+              },
+              {
+                "value": "credit_risk",
+                "label": "Credit Risk"
+              },
+              {
+                "value": "market_risk",
+                "label": "Market Risk"
+              },
+              {
+                "value": "liquidity_risk",
+                "label": "Liquidity Risk"
+              },
+              {
+                "value": "operational_risk",
+                "label": "Operational Risk"
+              },
+              {
+                "value": "operational_resilience",
+                "label": "Operational Resilience"
+              },
+              {
+                "value": "model_risk",
+                "label": "Model Risk"
+              },
+              {
+                "value": "climate_esg_risk",
+                "label": "Climate / ESG Risk"
+              }
+            ],
+            "mirrorsRole": {
+              "questionId": "primary_specialism_required",
+              "matchType": "compatibility"
+            }
+          }
+        ]
+      },
+      {
+        "id": "risk_framework_knowledge",
+        "title": "Risk Framework Knowledge",
+        "description": "Self-assess your familiarity with key risk management frameworks and standards",
+        "order": 2,
+        "helpText": "0 = No Experience, 1 = Awareness, 2 = Practical Application, 3 = Implementation & Management, 4 = Strategic Leadership",
+        "interviewNote": "Be prepared to explain how you have applied these frameworks in FS contexts.",
+        "questions": [
+          {
+            "id": "framework_iso31000",
+            "question": "ISO 31000 (Risk Management)",
+            "description": "International standard for risk management principles and guidelines",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with ISO 31000",
+              "1": "Aware of ISO 31000 principles; have read the standard",
+              "2": "Applied ISO 31000 principles in risk assessments; understand framework structure",
+              "3": "Implemented ISO 31000 aligned risk frameworks; mapped organisational processes to standard",
+              "4": "Designed enterprise risk frameworks based on ISO 31000; led alignment programs across FS organisation"
+            },
+            "mirrorsRole": {
+              "questionId": "framework_iso31000",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "framework_coso_erm",
+            "question": "COSO ERM Framework (2017)",
+            "description": "Committee of Sponsoring Organizations Enterprise Risk Management framework",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with COSO ERM",
+              "1": "Aware of COSO ERM components and principles",
+              "2": "Applied COSO ERM in risk assessments and control design",
+              "3": "Implemented COSO-aligned ERM programs; integrated with strategy",
+              "4": "Designed enterprise-wide COSO ERM implementations; aligned with board governance"
+            },
+            "mirrorsRole": {
+              "questionId": "framework_coso_erm",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "framework_basel_iii",
+            "question": "Basel III/IV Framework",
+            "description": "Banking prudential regulation framework for capital, liquidity, and risk management",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with Basel framework",
+              "1": "Aware of Basel III/IV pillars and key requirements",
+              "2": "Applied Basel requirements in capital or risk calculations; understand RWA methodology",
+              "3": "Implemented Basel-compliant frameworks; managed regulatory submissions (Pillar 2/3)",
+              "4": "Designed enterprise Basel programs; led ICAAP/ILAAP; engaged with PRA on model approvals"
+            },
+            "mirrorsRole": {
+              "questionId": "framework_basel_iii",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "framework_solvency_ii",
+            "question": "Solvency II (Insurance)",
+            "description": "EU insurance prudential regulation framework",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with Solvency II",
+              "1": "Aware of Solvency II pillars and SCR/MCR concepts",
+              "2": "Applied Solvency II in risk assessments; understand standard formula",
+              "3": "Implemented Solvency II frameworks; managed ORSA process",
+              "4": "Designed internal models; led Solvency II programs across insurance groups"
+            },
+            "mirrorsRole": {
+              "questionId": "framework_solvency_ii",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "framework_three_lines",
+            "question": "Three Lines Model",
+            "description": "IIA Three Lines Model for governance and risk management",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with Three Lines Model",
+              "1": "Aware of Three Lines concepts and line responsibilities",
+              "2": "Worked within Three Lines structure; understand line boundaries",
+              "3": "Implemented Three Lines operating models; defined line accountabilities",
+              "4": "Designed enterprise Three Lines frameworks; optimised line coordination across FS groups"
+            },
+            "mirrorsRole": {
+              "questionId": "framework_three_lines",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "framework_nist_csf",
+            "question": "NIST Cybersecurity Framework",
+            "description": "National Institute of Standards and Technology cybersecurity framework",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No experience with NIST CSF",
+              "1": "Aware of NIST CSF functions (Identify, Protect, Detect, Respond, Recover)",
+              "2": "Applied NIST CSF in cyber risk assessments; mapped controls to framework",
+              "3": "Implemented NIST CSF aligned cyber programs; led maturity assessments",
+              "4": "Designed enterprise cyber frameworks based on NIST CSF; integrated with FS regulatory requirements"
+            },
+            "mirrorsRole": {
+              "questionId": "framework_nist_csf",
+              "matchType": "minimum"
+            }
+          }
+        ]
+      },
+      {
+        "id": "risk_governance_strategy",
+        "title": "Risk Governance & Strategy",
+        "description": "Board engagement, risk operating model, and strategic risk leadership",
+        "order": 3,
+        "helpText": "0 = No Experience, 1 = Awareness, 2 = Practical Application, 3 = Implementation & Management, 4 = Strategic Leadership",
+        "questions": [
+          {
+            "id": "board_risk_committee",
+            "question": "Board Risk Committee Engagement",
+            "description": "Experience presenting to and engaging with Board Risk Committees",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No Board Risk Committee exposure",
+              "1": "Prepared materials for BRC; observed meetings",
+              "2": "Presented specific topics to BRC; responded to committee questions",
+              "3": "Regular BRC presenter; shaped committee agenda; managed committee relationships",
+              "4": "CRO-level engagement; strategic advisor to BRC; influenced board risk appetite decisions"
+            },
+            "mirrorsRole": {
+              "questionId": "board_risk_committee",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "risk_charter_policy",
+            "question": "Risk Charter & Policy Development",
+            "description": "Creating and maintaining enterprise risk policies and charters",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No policy development experience",
+              "1": "Reviewed and provided input to risk policies",
+              "2": "Drafted risk policies and procedures; managed policy updates",
+              "3": "Designed risk policy frameworks; led policy governance processes",
+              "4": "Created enterprise risk charters; established group-wide policy hierarchies; board approval experience"
+            },
+            "mirrorsRole": {
+              "questionId": "risk_charter_policy",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "risk_operating_model",
+            "question": "Risk Operating Model Design",
+            "description": "Designing risk function structure, roles, and operating frameworks",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No operating model design experience",
+              "1": "Worked within established risk operating models; understand components",
+              "2": "Contributed to operating model improvements; optimised team structures",
+              "3": "Designed risk operating models for business units; defined RACI frameworks",
+              "4": "Created enterprise risk operating models; designed federated vs centralised structures"
+            },
+            "mirrorsRole": {
+              "questionId": "risk_operating_model",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "three_lines_coordination",
+            "question": "Three Lines Coordination",
+            "description": "Coordinating across first, second, and third lines of defence",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No cross-line coordination experience",
+              "1": "Understand line boundaries; participated in cross-line meetings",
+              "2": "Coordinated with other lines on specific projects; managed handoffs",
+              "3": "Led Three Lines coordination programs; established protocols and escalation paths",
+              "4": "Designed enterprise Three Lines governance; optimised combined assurance models"
+            },
+            "mirrorsRole": {
+              "questionId": "three_lines_coordination",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "risk_culture_design",
+            "question": "Risk Culture Design & Assessment",
+            "description": "Shaping and measuring organisational risk culture",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No risk culture work experience",
+              "1": "Understand risk culture concepts; participated in culture surveys",
+              "2": "Contributed to risk culture initiatives; analysed culture survey results",
+              "3": "Led risk culture programs; designed measurement frameworks; drove behavioural change",
+              "4": "Designed enterprise risk culture strategies; embedded culture in performance management"
+            },
+            "mirrorsRole": {
+              "questionId": "risk_culture_design",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "regulatory_engagement",
+            "question": "Regulatory Engagement & Liaison",
+            "description": "Direct engagement with PRA, FCA, or equivalent regulators",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No direct regulatory engagement",
+              "1": "Prepared materials for regulatory meetings; understand supervisory process",
+              "2": "Participated in regulatory meetings; responded to information requests",
+              "3": "Led regulatory engagements; managed supervisory relationships; handled s166 reviews",
+              "4": "CRO-level regulatory relationships; strategic dialogue with supervisors; influenced regulatory policy"
+            },
+            "mirrorsRole": {
+              "questionId": "regulatory_engagement",
+              "matchType": "minimum"
+            }
+          }
+        ]
+      },
+      {
+        "id": "risk_appetite_tolerance",
+        "title": "Risk Appetite & Tolerance",
+        "description": "Risk appetite framework design, cascading, and limit management",
+        "order": 4,
+        "helpText": "0 = No Experience, 1 = Awareness, 2 = Practical Application, 3 = Implementation & Management, 4 = Strategic Leadership",
+        "questions": [
+          {
+            "id": "raf_design",
+            "question": "Risk Appetite Framework (RAF) Design",
+            "description": "Designing enterprise risk appetite frameworks and statements",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No RAF design experience",
+              "1": "Understand RAF concepts; worked within established appetite frameworks",
+              "2": "Contributed to RAF development; drafted appetite statements for specific risks",
+              "3": "Designed RAF for business units; created quantitative and qualitative metrics",
+              "4": "Created enterprise RAF; aligned with strategy; secured board approval; integrated with capital planning"
+            },
+            "mirrorsRole": {
+              "questionId": "raf_design",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "raf_cascading",
+            "question": "RAF Cascading to Business Lines",
+            "description": "Translating enterprise risk appetite into business-level limits and metrics",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No appetite cascading experience",
+              "1": "Understand cascading concepts; worked with business-level limits",
+              "2": "Translated enterprise appetite into divisional limits; monitored adherence",
+              "3": "Designed cascading frameworks; created limit hierarchies; managed allocation processes",
+              "4": "Enterprise-wide cascading design; optimised limit allocation; integrated with business planning"
+            },
+            "mirrorsRole": {
+              "questionId": "raf_cascading",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "risk_limits",
+            "question": "Risk Limits & Thresholds",
+            "description": "Setting and monitoring risk limits, triggers, and thresholds",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No limit setting experience",
+              "1": "Understand limit concepts; monitored limits against thresholds",
+              "2": "Set limits for specific risk areas; calibrated triggers and thresholds",
+              "3": "Designed limit frameworks; created escalation hierarchies; managed limit governance",
+              "4": "Enterprise limit architecture; integrated limits across risk types; optimised limit utilisation"
+            },
+            "mirrorsRole": {
+              "questionId": "risk_limits",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "limit_breach_management",
+            "question": "Limit Breach Management",
+            "description": "Managing limit breaches, escalations, and remediation",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No breach management experience",
+              "1": "Understand breach processes; reported breaches through established channels",
+              "2": "Managed breach investigations; coordinated remediation actions",
+              "3": "Designed breach management frameworks; led escalation governance; tracked remediation",
+              "4": "Enterprise breach governance; optimised escalation protocols; integrated with regulatory reporting"
+            },
+            "mirrorsRole": {
+              "questionId": "limit_breach_management",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "risk_capacity",
+            "question": "Risk Capacity Assessment",
+            "description": "Assessing organisational capacity to bear risk (capital, liquidity, earnings)",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No risk capacity experience",
+              "1": "Understand risk capacity concepts; aware of capital constraints",
+              "2": "Contributed to capacity assessments; analysed capital headroom",
+              "3": "Led risk capacity exercises; integrated with stress testing and capital planning",
+              "4": "Designed enterprise capacity frameworks; optimised risk-return trade-offs; board-level capacity dialogue"
+            },
+            "mirrorsRole": {
+              "questionId": "risk_capacity",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "appetite_vs_tolerance",
+            "question": "Risk Appetite vs Tolerance Distinction",
+            "description": "Understanding and applying the distinction between appetite and tolerance",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No understanding of distinction",
+              "1": "Aware of conceptual difference; can explain in general terms",
+              "2": "Applied distinction in RAF design; set both appetite and tolerance metrics",
+              "3": "Designed frameworks articulating both concepts; trained stakeholders on distinction",
+              "4": "Created enterprise frameworks with clear appetite/tolerance architecture; regulatory best practice"
+            },
+            "mirrorsRole": {
+              "questionId": "appetite_vs_tolerance",
+              "matchType": "minimum"
+            }
+          }
+        ]
+      },
+      {
+        "id": "risk_assessment_identification",
+        "title": "Risk Assessment & Identification",
+        "description": "Risk identification methods, taxonomies, and assessment approaches",
+        "order": 5,
+        "helpText": "0 = No Experience, 1 = Awareness, 2 = Practical Application, 3 = Implementation & Management, 4 = Strategic Leadership",
+        "questions": [
+          {
+            "id": "risk_identification",
+            "question": "Risk Identification Methods",
+            "description": "Techniques for identifying risks across the organisation",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No risk identification experience",
+              "1": "Participated in risk identification workshops; understand common techniques",
+              "2": "Facilitated risk identification sessions; applied multiple identification methods",
+              "3": "Designed risk identification processes; created workshop methodologies; trained facilitators",
+              "4": "Enterprise risk identification frameworks; integrated horizon scanning and emerging risk identification"
+            },
+            "mirrorsRole": {
+              "questionId": "risk_identification",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "risk_taxonomy",
+            "question": "Risk Taxonomy Development",
+            "description": "Creating and maintaining risk classification structures",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No taxonomy development experience",
+              "1": "Worked with established taxonomies; understand classification principles",
+              "2": "Contributed to taxonomy development; mapped risks to categories",
+              "3": "Designed risk taxonomies; aligned with Basel/regulatory categories; managed taxonomy governance",
+              "4": "Created enterprise taxonomies; optimised for reporting and aggregation; influenced industry standards"
+            },
+            "mirrorsRole": {
+              "questionId": "risk_taxonomy",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "inherent_residual",
+            "question": "Inherent vs Residual Risk Assessment",
+            "description": "Assessing risk before and after controls",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No inherent/residual assessment experience",
+              "1": "Understand concepts; can explain difference between inherent and residual",
+              "2": "Applied inherent/residual assessments; rated controls effectiveness",
+              "3": "Designed assessment methodologies; created rating scales; trained assessors",
+              "4": "Enterprise assessment frameworks; optimised for decision-making; integrated with capital models"
+            },
+            "mirrorsRole": {
+              "questionId": "inherent_residual",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "risk_rating",
+            "question": "Risk Rating & Prioritisation",
+            "description": "Rating risks by impact and likelihood; prioritising for action",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No risk rating experience",
+              "1": "Participated in risk rating exercises; understand heat map concepts",
+              "2": "Applied rating methodologies; facilitated prioritisation discussions",
+              "3": "Designed rating frameworks; calibrated scales; created prioritisation criteria",
+              "4": "Enterprise rating standards; integrated quantitative and qualitative approaches; regulatory alignment"
+            },
+            "mirrorsRole": {
+              "questionId": "risk_rating",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "control_assessment",
+            "question": "Control Assessment & Effectiveness",
+            "description": "Evaluating control design and operating effectiveness",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No control assessment experience",
+              "1": "Understand control concepts; participated in control reviews",
+              "2": "Assessed control effectiveness; identified control gaps; recommended improvements",
+              "3": "Designed control assessment frameworks; led control testing programs; managed remediation",
+              "4": "Enterprise control frameworks; integrated with assurance functions; optimised control environment"
+            },
+            "mirrorsRole": {
+              "questionId": "control_assessment",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "top_risk_reporting",
+            "question": "Top Risk Reporting",
+            "description": "Identifying and reporting principal/top risks to leadership",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No top risk reporting experience",
+              "1": "Contributed to top risk reports; understand reporting requirements",
+              "2": "Prepared top risk reports; analysed trends; drafted commentary",
+              "3": "Designed top risk reporting frameworks; presented to ExCo; managed report governance",
+              "4": "Enterprise top risk architecture; board-level reporting; external disclosure (Annual Report)"
+            },
+            "mirrorsRole": {
+              "questionId": "top_risk_reporting",
+              "matchType": "minimum"
+            }
+          }
+        ]
+      },
+      {
+        "id": "key_risk_indicators",
+        "title": "Key Risk Indicators (KRIs)",
+        "description": "KRI design, threshold setting, and dashboard reporting",
+        "order": 6,
+        "helpText": "0 = No Experience, 1 = Awareness, 2 = Practical Application, 3 = Implementation & Management, 4 = Strategic Leadership",
+        "questions": [
+          {
+            "id": "kri_design",
+            "question": "KRI Design & Selection",
+            "description": "Designing meaningful key risk indicators",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No KRI design experience",
+              "1": "Understand KRI concepts; monitored established KRIs",
+              "2": "Designed KRIs for specific risk areas; linked KRIs to risk appetite",
+              "3": "Created KRI frameworks; selected enterprise KRIs; established data sourcing",
+              "4": "Enterprise KRI architecture; optimised predictive value; integrated with early warning systems"
+            },
+            "mirrorsRole": {
+              "questionId": "kri_design",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "kri_thresholds",
+            "question": "KRI Threshold Setting",
+            "description": "Calibrating green/amber/red thresholds for KRIs",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No threshold setting experience",
+              "1": "Understand threshold concepts; monitored against thresholds",
+              "2": "Set thresholds for specific KRIs; calibrated using historical data",
+              "3": "Designed threshold methodologies; created calibration frameworks; managed threshold governance",
+              "4": "Enterprise threshold architecture; statistical calibration; aligned with risk appetite and limits"
+            },
+            "mirrorsRole": {
+              "questionId": "kri_thresholds",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "leading_lagging",
+            "question": "Leading vs Lagging Indicators",
+            "description": "Distinguishing and using leading vs lagging risk indicators",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No understanding of distinction",
+              "1": "Aware of conceptual difference; can explain leading vs lagging",
+              "2": "Applied both indicator types; selected appropriate mix for risk areas",
+              "3": "Designed indicator frameworks with optimal leading/lagging balance; predictive analytics",
+              "4": "Enterprise early warning systems; machine learning for leading indicators; board-level dashboards"
+            },
+            "mirrorsRole": {
+              "questionId": "leading_lagging",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "kri_dashboards",
+            "question": "KRI Dashboard Design",
+            "description": "Creating effective KRI dashboards and visualisations",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No dashboard design experience",
+              "1": "Used KRI dashboards; understand visualisation principles",
+              "2": "Designed dashboards for specific audiences; created effective visualisations",
+              "3": "Created dashboard frameworks; designed drill-down capabilities; managed dashboard governance",
+              "4": "Enterprise dashboard architecture; real-time monitoring; integrated risk and business dashboards"
+            },
+            "mirrorsRole": {
+              "questionId": "kri_dashboards",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "kri_governance",
+            "question": "KRI Governance & Review",
+            "description": "Managing KRI lifecycle, review, and refresh processes",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No KRI governance experience",
+              "1": "Participated in KRI reviews; understand governance requirements",
+              "2": "Managed KRI review cycles; recommended KRI changes; tracked effectiveness",
+              "3": "Designed KRI governance frameworks; led annual reviews; managed stakeholder input",
+              "4": "Enterprise KRI governance; continuous improvement; integrated with strategic planning cycles"
+            },
+            "mirrorsRole": {
+              "questionId": "kri_governance",
+              "matchType": "minimum"
+            }
+          }
+        ]
+      },
+      {
+        "id": "credit_risk",
+        "title": "Credit Risk",
+        "description": "Credit risk assessment, modelling, and portfolio management",
+        "order": 7,
+        "helpText": "0 = No Experience, 1 = Awareness, 2 = Practical Application, 3 = Implementation & Management, 4 = Strategic Leadership",
+        "questions": [
+          {
+            "id": "credit_risk_assessment",
+            "question": "Credit Risk Assessment",
+            "description": "Assessing creditworthiness of counterparties and borrowers",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No credit risk assessment experience",
+              "1": "Understand credit risk concepts; familiar with credit ratings and scores",
+              "2": "Performed credit assessments; analysed financial statements; assessed credit applications",
+              "3": "Designed credit assessment frameworks; led underwriting teams; established credit criteria",
+              "4": "Enterprise credit risk architecture; strategic credit policy; board-level credit appetite"
+            },
+            "mirrorsRole": {
+              "questionId": "credit_risk_assessment",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "pd_lgd_ead",
+            "question": "PD/LGD/EAD Modelling",
+            "description": "Probability of Default, Loss Given Default, Exposure at Default modelling",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No PD/LGD/EAD modelling experience",
+              "1": "Understand PD/LGD/EAD concepts; can interpret model outputs",
+              "2": "Applied PD/LGD/EAD models; calculated expected loss; analysed model performance",
+              "3": "Built PD/LGD/EAD models; calibrated parameters; validated model accuracy",
+              "4": "Designed enterprise credit models; IRB approval experience; PRA/ECB model engagement"
+            },
+            "mirrorsRole": {
+              "questionId": "pd_lgd_ead",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "credit_scoring",
+            "question": "Credit Scoring & Rating Systems",
+            "description": "Developing and maintaining credit scoring models and rating systems",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No credit scoring experience",
+              "1": "Understand credit scoring concepts; can interpret scores and ratings",
+              "2": "Applied credit scores in decisions; monitored score performance",
+              "3": "Developed credit scoring models; designed rating scales; managed score governance",
+              "4": "Enterprise scorecard architecture; machine learning credit models; regulatory model approval"
+            },
+            "mirrorsRole": {
+              "questionId": "credit_scoring",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "counterparty_risk",
+            "question": "Counterparty Credit Risk",
+            "description": "Managing credit risk from derivatives and securities financing transactions",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No counterparty credit risk experience",
+              "1": "Understand CCR concepts; familiar with CVA, DVA, FVA",
+              "2": "Calculated counterparty exposures; monitored CCR limits; analysed netting benefits",
+              "3": "Designed CCR frameworks; implemented SA-CCR; managed counterparty limits",
+              "4": "Enterprise CCR architecture; XVA desk interaction; regulatory capital optimisation"
+            },
+            "mirrorsRole": {
+              "questionId": "counterparty_risk",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "collateral_management",
+            "question": "Collateral & Margin Management",
+            "description": "Managing collateral agreements and margin requirements",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No collateral management experience",
+              "1": "Understand collateral concepts; familiar with margin requirements",
+              "2": "Managed collateral agreements; calculated margin calls; monitored haircuts",
+              "3": "Designed collateral frameworks; optimised collateral allocation; managed CSA negotiations",
+              "4": "Enterprise collateral strategy; initial margin model approval; regulatory collateral requirements"
+            },
+            "mirrorsRole": {
+              "questionId": "collateral_management",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "credit_portfolio",
+            "question": "Credit Portfolio Management",
+            "description": "Managing credit risk at portfolio level including concentration and correlation",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No portfolio management experience",
+              "1": "Understand portfolio concepts; familiar with diversification and concentration",
+              "2": "Analysed portfolio composition; monitored concentration limits; reported portfolio metrics",
+              "3": "Designed portfolio frameworks; set concentration limits; managed portfolio optimisation",
+              "4": "Enterprise credit portfolio strategy; credit transfer/hedging; economic capital allocation"
+            },
+            "mirrorsRole": {
+              "questionId": "credit_portfolio",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "loan_loss_provisioning",
+            "question": "Loan Loss Provisioning (IFRS 9/CECL)",
+            "description": "Expected credit loss provisioning under IFRS 9 or CECL",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No provisioning experience",
+              "1": "Understand ECL concepts; familiar with staging (1/2/3) and SICR",
+              "2": "Calculated ECL provisions; analysed stage migrations; reported provision movements",
+              "3": "Designed ECL frameworks; built provisioning models; managed IFRS 9 implementation",
+              "4": "Enterprise provisioning strategy; external audit engagement; board provision governance"
+            },
+            "mirrorsRole": {
+              "questionId": "loan_loss_provisioning",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "credit_concentration",
+            "question": "Credit Concentration Risk",
+            "description": "Managing single-name, sector, and geographic concentration",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No concentration risk experience",
+              "1": "Understand concentration concepts; can interpret concentration reports",
+              "2": "Monitored concentration limits; analysed sector/geographic exposures",
+              "3": "Designed concentration frameworks; set large exposure limits; managed breach remediation",
+              "4": "Enterprise concentration strategy; Pillar 2 concentration add-ons; board concentration appetite"
+            },
+            "mirrorsRole": {
+              "questionId": "credit_concentration",
+              "matchType": "minimum"
+            }
+          }
+        ]
+      },
+      {
+        "id": "market_risk",
+        "title": "Market Risk",
+        "description": "Market risk measurement, trading book risk, and FRTB",
+        "order": 8,
+        "helpText": "0 = No Experience, 1 = Awareness, 2 = Practical Application, 3 = Implementation & Management, 4 = Strategic Leadership",
+        "questions": [
+          {
+            "id": "market_risk_measurement",
+            "question": "Market Risk Measurement",
+            "description": "Measuring and monitoring market risk exposures",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No market risk measurement experience",
+              "1": "Understand market risk concepts; familiar with risk factors (FX, IR, equity, commodity)",
+              "2": "Calculated market risk metrics; monitored P&L attribution; analysed risk factor sensitivities",
+              "3": "Designed market risk frameworks; implemented risk systems; managed limit frameworks",
+              "4": "Enterprise market risk architecture; trading desk engagement; regulatory model approval"
+            },
+            "mirrorsRole": {
+              "questionId": "market_risk_measurement",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "var_models",
+            "question": "Value at Risk (VaR) Models",
+            "description": "VaR methodology, calculation, and backtesting",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No VaR experience",
+              "1": "Understand VaR concepts; can interpret VaR reports (99%, 10-day)",
+              "2": "Calculated VaR; analysed VaR breaches; performed backtesting",
+              "3": "Built VaR models (historical, parametric, Monte Carlo); managed VaR governance",
+              "4": "Enterprise VaR architecture; IMA approval experience; regulatory VaR engagement"
+            },
+            "mirrorsRole": {
+              "questionId": "var_models",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "expected_shortfall",
+            "question": "Expected Shortfall (ES)",
+            "description": "Expected Shortfall calculation and FRTB ES requirements",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No Expected Shortfall experience",
+              "1": "Understand ES concepts; familiar with ES vs VaR distinction",
+              "2": "Calculated ES; analysed tail risk; compared ES to VaR",
+              "3": "Implemented ES frameworks; designed ES-based limits; FRTB ES compliance",
+              "4": "Enterprise ES architecture; IMA ES model approval; regulatory ES dialogue"
+            },
+            "mirrorsRole": {
+              "questionId": "expected_shortfall",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "sensitivity_greeks",
+            "question": "Sensitivity Analysis (Greeks)",
+            "description": "Delta, gamma, vega, and other sensitivity measures",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No sensitivity analysis experience",
+              "1": "Understand Greeks concepts; can interpret delta, gamma, vega reports",
+              "2": "Calculated sensitivities; monitored Greek limits; analysed hedging effectiveness",
+              "3": "Designed sensitivity frameworks; implemented Greek limits; managed options risk",
+              "4": "Enterprise sensitivity architecture; exotic products risk; regulatory sensitivity requirements"
+            },
+            "mirrorsRole": {
+              "questionId": "sensitivity_greeks",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "stress_testing_market",
+            "question": "Market Risk Stress Testing",
+            "description": "Stress testing market risk positions and portfolios",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No market risk stress testing experience",
+              "1": "Understand stress testing concepts; can interpret stress results",
+              "2": "Ran stress scenarios; analysed stress P&L; reported stress results",
+              "3": "Designed stress scenarios; implemented stress frameworks; managed stress limits",
+              "4": "Enterprise stress architecture; reverse stress testing; regulatory stress engagement"
+            },
+            "mirrorsRole": {
+              "questionId": "stress_testing_market",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "trading_book_risk",
+            "question": "Trading Book Risk",
+            "description": "Managing risk in the trading book vs banking book",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No trading book experience",
+              "1": "Understand trading/banking book distinction; familiar with boundary requirements",
+              "2": "Managed trading book positions; monitored trading limits; reported trading P&L",
+              "3": "Designed trading book frameworks; managed boundary; implemented trading policies",
+              "4": "Enterprise trading book strategy; desk-level engagement; regulatory trading book dialogue"
+            },
+            "mirrorsRole": {
+              "questionId": "trading_book_risk",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "frtb",
+            "question": "FRTB (Fundamental Review of Trading Book)",
+            "description": "Basel FRTB implementation and compliance",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No FRTB experience",
+              "1": "Understand FRTB concepts; familiar with SA vs IMA approach",
+              "2": "Contributed to FRTB implementation; analysed FRTB impact; reported FRTB metrics",
+              "3": "Led FRTB implementation; designed SA/IMA frameworks; managed desk-level requirements",
+              "4": "Enterprise FRTB strategy; IMA model approval; regulatory FRTB dialogue"
+            },
+            "mirrorsRole": {
+              "questionId": "frtb",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "model_validation_market",
+            "question": "Market Risk Model Validation",
+            "description": "Validating market risk and pricing models",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No model validation experience",
+              "1": "Understand model validation concepts; familiar with validation requirements",
+              "2": "Performed model validations; documented model limitations; tracked model issues",
+              "3": "Designed validation frameworks; led validation teams; managed model inventory",
+              "4": "Enterprise model validation; regulatory model approval; board model governance"
+            },
+            "mirrorsRole": {
+              "questionId": "model_validation_market",
+              "matchType": "minimum"
+            }
+          }
+        ]
+      },
+      {
+        "id": "liquidity_risk",
+        "title": "Liquidity Risk",
+        "description": "Liquidity risk framework, LCR/NSFR, and funding management",
+        "order": 9,
+        "helpText": "0 = No Experience, 1 = Awareness, 2 = Practical Application, 3 = Implementation & Management, 4 = Strategic Leadership",
+        "questions": [
+          {
+            "id": "liquidity_risk_framework",
+            "question": "Liquidity Risk Framework",
+            "description": "Overall liquidity risk management framework design",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No liquidity framework experience",
+              "1": "Understand liquidity risk concepts; familiar with liquidity ratios",
+              "2": "Applied liquidity frameworks; monitored liquidity metrics; reported liquidity position",
+              "3": "Designed liquidity frameworks; implemented liquidity policies; managed liquidity governance",
+              "4": "Enterprise liquidity strategy; board liquidity appetite; regulatory liquidity engagement"
+            },
+            "mirrorsRole": {
+              "questionId": "liquidity_risk_framework",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "lcr_nsfr",
+            "question": "LCR/NSFR Compliance",
+            "description": "Liquidity Coverage Ratio and Net Stable Funding Ratio management",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No LCR/NSFR experience",
+              "1": "Understand LCR/NSFR concepts; can interpret ratio reports",
+              "2": "Calculated LCR/NSFR; monitored compliance; analysed ratio drivers",
+              "3": "Designed LCR/NSFR frameworks; optimised ratios; managed regulatory reporting",
+              "4": "Enterprise liquidity ratio strategy; buffer optimisation; regulatory ratio dialogue"
+            },
+            "mirrorsRole": {
+              "questionId": "lcr_nsfr",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "cash_flow_forecasting",
+            "question": "Cash Flow Forecasting",
+            "description": "Forecasting cash flows for liquidity management",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No cash flow forecasting experience",
+              "1": "Understand cash flow concepts; can interpret cash flow reports",
+              "2": "Built cash flow forecasts; analysed forecast accuracy; reported cash positions",
+              "3": "Designed forecasting frameworks; improved forecast models; managed forecast governance",
+              "4": "Enterprise cash flow architecture; intraday liquidity; real-time monitoring"
+            },
+            "mirrorsRole": {
+              "questionId": "cash_flow_forecasting",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "contingent_liquidity",
+            "question": "Contingent Liquidity Planning",
+            "description": "Contingency funding plans and liquidity stress scenarios",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No contingent liquidity experience",
+              "1": "Understand CFP concepts; familiar with liquidity stress scenarios",
+              "2": "Contributed to CFP development; analysed stress scenarios; tested contingent actions",
+              "3": "Designed CFP frameworks; led CFP exercises; established early warning indicators",
+              "4": "Enterprise CFP strategy; regulatory CFP engagement; board contingency governance"
+            },
+            "mirrorsRole": {
+              "questionId": "contingent_liquidity",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "funding_strategy",
+            "question": "Funding Strategy & Diversification",
+            "description": "Managing funding sources and maturity profile",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No funding strategy experience",
+              "1": "Understand funding concepts; familiar with funding sources and costs",
+              "2": "Analysed funding composition; monitored funding costs; reported funding metrics",
+              "3": "Designed funding strategies; optimised funding mix; managed funding diversification",
+              "4": "Enterprise funding strategy; FTP framework design; treasury engagement"
+            },
+            "mirrorsRole": {
+              "questionId": "funding_strategy",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "ilaap",
+            "question": "ILAAP (Internal Liquidity Adequacy Assessment)",
+            "description": "Internal Liquidity Adequacy Assessment Process",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No ILAAP experience",
+              "1": "Understand ILAAP concepts; familiar with regulatory requirements",
+              "2": "Contributed to ILAAP; drafted ILAAP sections; analysed liquidity adequacy",
+              "3": "Led ILAAP process; designed ILAAP framework; managed regulatory submission",
+              "4": "Enterprise ILAAP strategy; PRA ILAAP engagement; board ILAAP approval"
+            },
+            "mirrorsRole": {
+              "questionId": "ilaap",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "alm",
+            "question": "Asset-Liability Management (ALM)",
+            "description": "Managing interest rate risk in the banking book and balance sheet structure",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No ALM experience",
+              "1": "Understand ALM concepts; familiar with IRRBB, duration gap",
+              "2": "Performed ALM analysis; calculated duration/gap; monitored NII sensitivity",
+              "3": "Designed ALM frameworks; implemented hedging strategies; managed ALCO reporting",
+              "4": "Enterprise ALM strategy; IRRBB capital; ALCO governance design"
+            },
+            "mirrorsRole": {
+              "questionId": "alm",
+              "matchType": "minimum"
+            }
+          }
+        ]
+      },
+      {
+        "id": "capital_planning_icaap",
+        "title": "Capital Planning & ICAAP",
+        "description": "Capital adequacy, ICAAP/ORSA, and capital allocation",
+        "order": 10,
+        "helpText": "0 = No Experience, 1 = Awareness, 2 = Practical Application, 3 = Implementation & Management, 4 = Strategic Leadership",
+        "questions": [
+          {
+            "id": "capital_planning",
+            "question": "Capital Planning",
+            "description": "Strategic capital planning and capital management",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No capital planning experience",
+              "1": "Understand capital concepts; familiar with CET1, Tier 1, Total Capital",
+              "2": "Contributed to capital plans; analysed capital projections; reported capital metrics",
+              "3": "Designed capital planning frameworks; led planning cycles; managed capital forecasting",
+              "4": "Enterprise capital strategy; board capital dialogue; regulatory capital planning engagement"
+            },
+            "mirrorsRole": {
+              "questionId": "capital_planning",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "icaap_process",
+            "question": "ICAAP Process Design",
+            "description": "Internal Capital Adequacy Assessment Process",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No ICAAP experience",
+              "1": "Understand ICAAP concepts; familiar with Pillar 2 requirements",
+              "2": "Contributed to ICAAP; drafted ICAAP sections; analysed Pillar 2 risks",
+              "3": "Led ICAAP process; designed ICAAP framework; managed regulatory submission",
+              "4": "Enterprise ICAAP strategy; PRA ICAAP engagement; board ICAAP approval"
+            },
+            "mirrorsRole": {
+              "questionId": "icaap_process",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "pillar_2_capital",
+            "question": "Pillar 2 Capital Assessment",
+            "description": "Assessing Pillar 2A and Pillar 2B capital requirements",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No Pillar 2 experience",
+              "1": "Understand Pillar 2 concepts; familiar with P2A/P2B distinction",
+              "2": "Calculated Pillar 2 add-ons; analysed risk-specific capital; documented methodology",
+              "3": "Designed Pillar 2 frameworks; led capital add-on calculations; managed PRA dialogue",
+              "4": "Enterprise Pillar 2 strategy; PRA capital setting engagement; board Pillar 2 governance"
+            },
+            "mirrorsRole": {
+              "questionId": "pillar_2_capital",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "capital_allocation",
+            "question": "Capital Allocation",
+            "description": "Allocating capital to business units and products",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No capital allocation experience",
+              "1": "Understand allocation concepts; familiar with economic capital",
+              "2": "Analysed capital allocation; calculated business unit capital; reported capital utilisation",
+              "3": "Designed allocation frameworks; optimised capital efficiency; managed allocation governance",
+              "4": "Enterprise capital allocation strategy; performance-based allocation; board capital dialogue"
+            },
+            "mirrorsRole": {
+              "questionId": "capital_allocation",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "raroc",
+            "question": "RAROC (Risk-Adjusted Return on Capital)",
+            "description": "Risk-adjusted performance measurement and capital efficiency",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No RAROC experience",
+              "1": "Understand RAROC concepts; can interpret risk-adjusted returns",
+              "2": "Calculated RAROC; analysed risk-adjusted performance; reported RAROC metrics",
+              "3": "Designed RAROC frameworks; implemented performance measurement; managed hurdle rates",
+              "4": "Enterprise RAROC strategy; incentive alignment; board performance governance"
+            },
+            "mirrorsRole": {
+              "questionId": "raroc",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "recovery_resolution",
+            "question": "Recovery & Resolution Planning",
+            "description": "Recovery planning and resolution preparedness",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No recovery/resolution experience",
+              "1": "Understand recovery planning concepts; familiar with resolution regimes",
+              "2": "Contributed to recovery plans; analysed recovery options; documented resolution info",
+              "3": "Designed recovery frameworks; led RRP submissions; managed resolution governance",
+              "4": "Enterprise recovery strategy; BoE/PRA resolution engagement; board resolution governance"
+            },
+            "mirrorsRole": {
+              "questionId": "recovery_resolution",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "orsa",
+            "question": "ORSA (Own Risk and Solvency Assessment)",
+            "description": "Insurance Own Risk and Solvency Assessment",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No ORSA experience",
+              "1": "Understand ORSA concepts; familiar with Solvency II requirements",
+              "2": "Contributed to ORSA; drafted ORSA sections; analysed solvency projections",
+              "3": "Led ORSA process; designed ORSA framework; managed regulatory submission",
+              "4": "Enterprise ORSA strategy; PRA ORSA engagement; board ORSA approval"
+            },
+            "mirrorsRole": {
+              "questionId": "orsa",
+              "matchType": "minimum"
+            }
+          }
+        ]
+      },
+      {
+        "id": "operational_risk_framework",
+        "title": "Operational Risk Framework",
+        "description": "OpRisk framework design, RCSA, and first line engagement",
+        "order": 11,
+        "helpText": "0 = No Experience, 1 = Awareness, 2 = Practical Application, 3 = Implementation & Management, 4 = Strategic Leadership",
+        "questions": [
+          {
+            "id": "oprisk_framework",
+            "question": "Operational Risk Framework Design",
+            "description": "Designing operational risk management frameworks",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No OpRisk framework experience",
+              "1": "Understand OpRisk concepts; familiar with Basel OpRisk categories",
+              "2": "Applied OpRisk frameworks; conducted risk assessments; reported OpRisk metrics",
+              "3": "Designed OpRisk frameworks; implemented policies; managed framework governance",
+              "4": "Enterprise OpRisk architecture; board OpRisk appetite; regulatory OpRisk engagement"
+            },
+            "mirrorsRole": {
+              "questionId": "oprisk_framework",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "rcsa_design",
+            "question": "RCSA Design & Facilitation",
+            "description": "Risk and Control Self-Assessment design and facilitation",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No RCSA experience",
+              "1": "Participated in RCSA workshops; understand RCSA concepts",
+              "2": "Facilitated RCSA sessions; documented risk assessments; tracked action items",
+              "3": "Designed RCSA methodologies; built RCSA templates; trained facilitators",
+              "4": "Enterprise RCSA architecture; automated RCSA processes; board RCSA reporting"
+            },
+            "mirrorsRole": {
+              "questionId": "rcsa_design",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "rcsa_methodology",
+            "question": "RCSA Methodology (Process Mapping)",
+            "description": "Process mapping, cause-event-impact analysis, and bow-tie diagrams",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No process mapping experience",
+              "1": "Understand process mapping concepts; can read bow-tie diagrams",
+              "2": "Created process maps; documented cause-event-impact chains; built bow-ties",
+              "3": "Designed mapping methodologies; trained teams on bow-tie analysis; standardised templates",
+              "4": "Enterprise process mapping architecture; integrated with control testing; regulatory best practice"
+            },
+            "mirrorsRole": {
+              "questionId": "rcsa_methodology",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "oprisk_taxonomy",
+            "question": "Operational Risk Taxonomy (Basel Event Types)",
+            "description": "OpRisk classification using Basel event types and categories",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No OpRisk taxonomy experience",
+              "1": "Familiar with Basel event types (IF, EPWS, CPBP, DPA, BDSF, EDPM, EF)",
+              "2": "Applied Basel taxonomy; categorised loss events; mapped risks to event types",
+              "3": "Designed OpRisk taxonomies; customised Basel categories; managed taxonomy governance",
+              "4": "Enterprise taxonomy architecture; ORX alignment; regulatory taxonomy engagement"
+            },
+            "mirrorsRole": {
+              "questionId": "oprisk_taxonomy",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "oprisk_policy",
+            "question": "Operational Risk Policy Development",
+            "description": "Creating and maintaining OpRisk policies and standards",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No OpRisk policy experience",
+              "1": "Reviewed OpRisk policies; understand policy requirements",
+              "2": "Drafted OpRisk policies; managed policy updates; tracked compliance",
+              "3": "Designed policy frameworks; led policy governance; managed stakeholder approval",
+              "4": "Enterprise OpRisk policy architecture; board policy approval; regulatory alignment"
+            },
+            "mirrorsRole": {
+              "questionId": "oprisk_policy",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "first_line_engagement",
+            "question": "First Line of Defence Engagement",
+            "description": "Partnering with business to embed OpRisk management",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No first line engagement experience",
+              "1": "Understand first line responsibilities; participated in business meetings",
+              "2": "Advised first line on OpRisk; reviewed business risk assessments; supported control owners",
+              "3": "Designed first line engagement models; embedded OpRisk in business processes; trained business",
+              "4": "Enterprise first line partnership; business OpRisk capability building; risk culture embedding"
+            },
+            "mirrorsRole": {
+              "questionId": "first_line_engagement",
+              "matchType": "minimum"
+            }
+          }
+        ]
+      },
+      {
+        "id": "loss_data_quantification",
+        "title": "Loss Data & Quantification",
+        "description": "Loss event collection, root cause analysis, and OpRisk quantification",
+        "order": 12,
+        "helpText": "0 = No Experience, 1 = Awareness, 2 = Practical Application, 3 = Implementation & Management, 4 = Strategic Leadership",
+        "questions": [
+          {
+            "id": "loss_data_collection",
+            "question": "Loss Data Collection & Quality",
+            "description": "Collecting and maintaining operational loss data",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No loss data experience",
+              "1": "Understand loss data concepts; can interpret loss reports",
+              "2": "Collected loss data; validated data quality; maintained loss database",
+              "3": "Designed loss data frameworks; implemented data standards; managed data governance",
+              "4": "Enterprise loss data architecture; ORX consortium participation; regulatory data requirements"
+            },
+            "mirrorsRole": {
+              "questionId": "loss_data_collection",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "loss_event_categorisation",
+            "question": "Loss Event Categorisation",
+            "description": "Categorising losses by event type, business line, and cause",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No loss categorisation experience",
+              "1": "Understand categorisation concepts; can interpret loss categories",
+              "2": "Categorised loss events; analysed loss patterns; reported loss trends",
+              "3": "Designed categorisation frameworks; managed boundary events; trained loss reporters",
+              "4": "Enterprise categorisation standards; regulatory categorisation alignment; industry benchmarking"
+            },
+            "mirrorsRole": {
+              "questionId": "loss_event_categorisation",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "root_cause_analysis",
+            "question": "Root Cause Analysis",
+            "description": "Investigating operational incidents to identify root causes",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No root cause analysis experience",
+              "1": "Understand RCA concepts; participated in incident reviews",
+              "2": "Conducted root cause analysis; applied 5-whys/fishbone; documented findings",
+              "3": "Designed RCA frameworks; led complex investigations; trained investigators",
+              "4": "Enterprise RCA capability; pattern recognition across incidents; systemic issue identification"
+            },
+            "mirrorsRole": {
+              "questionId": "root_cause_analysis",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "oprisk_quantification",
+            "question": "Operational Risk Quantification",
+            "description": "Quantitative approaches to measuring operational risk",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No OpRisk quantification experience",
+              "1": "Understand quantification concepts; can interpret capital numbers",
+              "2": "Applied quantification methods; calculated risk metrics; analysed distributions",
+              "3": "Designed quantification frameworks; built OpRisk models; validated methodologies",
+              "4": "Enterprise OpRisk quantification; advanced statistical methods; regulatory model engagement"
+            },
+            "mirrorsRole": {
+              "questionId": "oprisk_quantification",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "lda_modelling",
+            "question": "Loss Distribution Approach (LDA) Modelling",
+            "description": "Statistical modelling of operational loss distributions",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No LDA experience",
+              "1": "Understand LDA concepts; familiar with frequency/severity distributions",
+              "2": "Applied LDA models; fitted distributions; analysed model outputs",
+              "3": "Built LDA models; selected distributions; managed model governance",
+              "4": "Enterprise LDA architecture; regulatory model approval; academic-level statistical expertise"
+            },
+            "mirrorsRole": {
+              "questionId": "lda_modelling",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "external_loss_data",
+            "question": "External Loss Data (ORX Consortium)",
+            "description": "Using external loss data from industry consortia",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No external loss data experience",
+              "1": "Aware of external loss data sources; understand ORX consortium",
+              "2": "Used external loss data; scaled external losses; benchmarked against industry",
+              "3": "Integrated external data into models; managed ORX submissions; designed scaling factors",
+              "4": "Enterprise external data strategy; ORX steering committee; industry benchmarking leadership"
+            },
+            "mirrorsRole": {
+              "questionId": "external_loss_data",
+              "matchType": "minimum"
+            }
+          }
+        ]
+      },
+      {
+        "id": "oprisk_capital",
+        "title": "Operational Risk Capital",
+        "description": "OpRisk capital calculation, stress testing, and scenario analysis",
+        "order": 13,
+        "helpText": "0 = No Experience, 1 = Awareness, 2 = Practical Application, 3 = Implementation & Management, 4 = Strategic Leadership",
+        "questions": [
+          {
+            "id": "oprisk_capital_calc",
+            "question": "Operational Risk Capital Calculation",
+            "description": "Calculating regulatory and economic OpRisk capital",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No OpRisk capital experience",
+              "1": "Understand capital concepts; familiar with BIA/TSA/SMA",
+              "2": "Calculated OpRisk capital; analysed capital drivers; reported capital metrics",
+              "3": "Designed capital frameworks; implemented SMA; managed capital governance",
+              "4": "Enterprise OpRisk capital strategy; regulatory capital engagement; board capital dialogue"
+            },
+            "mirrorsRole": {
+              "questionId": "oprisk_capital_calc",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "ama_standardised",
+            "question": "AMA vs Standardised Measurement Approach",
+            "description": "Understanding regulatory capital approaches (legacy AMA and new SMA)",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No approach comparison experience",
+              "1": "Understand AMA/SMA concepts; familiar with approach differences",
+              "2": "Analysed approach impacts; compared capital outcomes; documented methodology",
+              "3": "Managed approach selection; implemented SMA transition; designed hybrid frameworks",
+              "4": "Enterprise approach strategy; regulatory approach dialogue; industry thought leadership"
+            },
+            "mirrorsRole": {
+              "questionId": "ama_standardised",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "oprisk_stress_testing",
+            "question": "Operational Risk Stress Testing",
+            "description": "Stress testing OpRisk capital and losses",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No OpRisk stress testing experience",
+              "1": "Understand stress testing concepts; can interpret stress results",
+              "2": "Ran OpRisk stress scenarios; analysed stress impacts; reported results",
+              "3": "Designed stress scenarios; implemented stress frameworks; managed stress governance",
+              "4": "Enterprise OpRisk stress architecture; regulatory stress engagement; board stress reporting"
+            },
+            "mirrorsRole": {
+              "questionId": "oprisk_stress_testing",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "scenario_analysis_oprisk",
+            "question": "Operational Risk Scenario Analysis",
+            "description": "Developing and using OpRisk scenarios for capital and risk assessment",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No scenario analysis experience",
+              "1": "Understand scenario concepts; participated in scenario workshops",
+              "2": "Developed scenarios; facilitated workshops; documented scenario assumptions",
+              "3": "Designed scenario frameworks; integrated scenarios with capital; managed scenario governance",
+              "4": "Enterprise scenario architecture; expert elicitation; regulatory scenario engagement"
+            },
+            "mirrorsRole": {
+              "questionId": "scenario_analysis_oprisk",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "capital_board_reporting",
+            "question": "Capital Reporting to Board",
+            "description": "Reporting OpRisk capital and risk profile to board/committees",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No board reporting experience",
+              "1": "Contributed to board reports; understand reporting requirements",
+              "2": "Prepared board reports; analysed trends; drafted commentary",
+              "3": "Designed board reporting frameworks; presented to committees; managed report governance",
+              "4": "CRO-level board engagement; shaped board agenda; influenced risk appetite decisions"
+            },
+            "mirrorsRole": {
+              "questionId": "capital_board_reporting",
+              "matchType": "minimum"
+            }
+          }
+        ]
+      },
+      {
+        "id": "important_business_services",
+        "title": "Important Business Services (IBS)",
+        "description": "IBS identification, service mapping, and dependency analysis",
+        "order": 14,
+        "helpText": "0 = No Experience, 1 = Awareness, 2 = Practical Application, 3 = Implementation & Management, 4 = Strategic Leadership",
+        "questions": [
+          {
+            "id": "ibs_identification",
+            "question": "IBS Identification & Mapping",
+            "description": "Identifying and mapping Important Business Services under PRA/FCA requirements",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No IBS identification experience",
+              "1": "Understand IBS concepts; familiar with PRA/FCA IBS requirements",
+              "2": "Contributed to IBS identification; documented service boundaries; mapped service components",
+              "3": "Led IBS identification; designed mapping methodology; managed board IBS approval",
+              "4": "Enterprise IBS architecture; regulatory IBS dialogue; industry thought leadership"
+            },
+            "mirrorsRole": {
+              "questionId": "ibs_identification",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "service_mapping",
+            "question": "End-to-End Service Mapping",
+            "description": "Mapping services from customer touchpoint through all supporting resources",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No service mapping experience",
+              "1": "Understand service mapping concepts; can read service maps",
+              "2": "Created service maps; documented service flows; identified handoff points",
+              "3": "Designed mapping frameworks; trained teams on methodology; standardised templates",
+              "4": "Enterprise service mapping architecture; real-time service visibility; regulatory best practice"
+            },
+            "mirrorsRole": {
+              "questionId": "service_mapping",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "dependency_mapping",
+            "question": "Dependency Mapping (People, Process, Tech, Data)",
+            "description": "Mapping critical dependencies across people, processes, technology, and data",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No dependency mapping experience",
+              "1": "Understand dependency concepts; can interpret dependency maps",
+              "2": "Created dependency maps; documented critical paths; identified key resources",
+              "3": "Designed dependency frameworks; integrated with service maps; managed dependency governance",
+              "4": "Enterprise dependency architecture; automated discovery; real-time dependency monitoring"
+            },
+            "mirrorsRole": {
+              "questionId": "dependency_mapping",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "third_party_dependencies",
+            "question": "Third-Party Dependency Assessment",
+            "description": "Assessing resilience risks from third-party and intra-group dependencies",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No third-party dependency experience",
+              "1": "Understand third-party risk concepts; familiar with outsourcing requirements",
+              "2": "Assessed third-party dependencies; documented contractual requirements; monitored SLAs",
+              "3": "Designed third-party resilience frameworks; managed supplier governance; led due diligence",
+              "4": "Enterprise third-party strategy; concentration risk management; regulatory TPRM engagement"
+            },
+            "mirrorsRole": {
+              "questionId": "third_party_dependencies",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "concentration_risk_opres",
+            "question": "Concentration Risk Analysis",
+            "description": "Identifying concentration risks in technology, suppliers, and locations",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No concentration risk experience",
+              "1": "Understand concentration concepts; can interpret concentration reports",
+              "2": "Analysed concentration risks; identified single points of failure; reported concentrations",
+              "3": "Designed concentration frameworks; established limits; managed remediation",
+              "4": "Enterprise concentration strategy; systemic risk analysis; regulatory concentration dialogue"
+            },
+            "mirrorsRole": {
+              "questionId": "concentration_risk_opres",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "single_point_failure",
+            "question": "Single Point of Failure Identification",
+            "description": "Identifying and remediating single points of failure",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No SPOF experience",
+              "1": "Understand SPOF concepts; can identify obvious single points",
+              "2": "Conducted SPOF analysis; documented critical dependencies; recommended mitigations",
+              "3": "Designed SPOF frameworks; led remediation programs; managed SPOF governance",
+              "4": "Enterprise SPOF architecture; proactive identification; board SPOF reporting"
+            },
+            "mirrorsRole": {
+              "questionId": "single_point_failure",
+              "matchType": "minimum"
+            }
+          }
+        ]
+      },
+      {
+        "id": "impact_tolerances",
+        "title": "Impact Tolerances",
+        "description": "Setting and testing impact tolerances for Important Business Services",
+        "order": 15,
+        "helpText": "0 = No Experience, 1 = Awareness, 2 = Practical Application, 3 = Implementation & Management, 4 = Strategic Leadership",
+        "questions": [
+          {
+            "id": "impact_tolerance_setting",
+            "question": "Impact Tolerance Setting",
+            "description": "Setting maximum tolerable disruption for Important Business Services",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No impact tolerance experience",
+              "1": "Understand impact tolerance concepts; familiar with PRA/FCA requirements",
+              "2": "Contributed to tolerance setting; analysed impact scenarios; documented tolerances",
+              "3": "Led tolerance setting; designed methodology; secured board approval",
+              "4": "Enterprise tolerance architecture; regulatory tolerance dialogue; industry calibration"
+            },
+            "mirrorsRole": {
+              "questionId": "impact_tolerance_setting",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "intolerable_harm",
+            "question": "Intolerable Harm Assessment",
+            "description": "Assessing thresholds for intolerable harm to consumers and markets",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No intolerable harm experience",
+              "1": "Understand intolerable harm concepts; familiar with consumer duty considerations",
+              "2": "Assessed harm scenarios; documented harm indicators; contributed to threshold setting",
+              "3": "Designed harm assessment frameworks; led stakeholder workshops; managed governance",
+              "4": "Enterprise harm architecture; regulatory harm dialogue; board harm appetite"
+            },
+            "mirrorsRole": {
+              "questionId": "intolerable_harm",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "tolerance_metrics",
+            "question": "Tolerance Metrics (Duration, Volume, Customer Impact)",
+            "description": "Defining metrics for measuring service disruption against tolerances",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No tolerance metrics experience",
+              "1": "Understand tolerance metric concepts; can interpret dashboards",
+              "2": "Defined tolerance metrics; established thresholds; monitored performance",
+              "3": "Designed metric frameworks; implemented monitoring; managed metric governance",
+              "4": "Enterprise tolerance metrics architecture; real-time monitoring; board dashboards"
+            },
+            "mirrorsRole": {
+              "questionId": "tolerance_metrics",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "tolerance_testing",
+            "question": "Impact Tolerance Testing",
+            "description": "Testing ability to remain within impact tolerances under severe scenarios",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No tolerance testing experience",
+              "1": "Understand tolerance testing concepts; observed testing exercises",
+              "2": "Participated in tolerance testing; documented test results; tracked remediation",
+              "3": "Designed testing programs; led test exercises; managed testing governance",
+              "4": "Enterprise testing architecture; regulatory testing dialogue; board test reporting"
+            },
+            "mirrorsRole": {
+              "questionId": "tolerance_testing",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "tolerance_board_approval",
+            "question": "Board Approval of Tolerances",
+            "description": "Securing board approval and ongoing governance of impact tolerances",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No board tolerance experience",
+              "1": "Contributed to board papers; understand approval requirements",
+              "2": "Prepared board materials; supported approval process; tracked board actions",
+              "3": "Led board approval process; presented to committees; managed annual review",
+              "4": "CRO-level board engagement; shaped board resilience agenda; influenced appetite"
+            },
+            "mirrorsRole": {
+              "questionId": "tolerance_board_approval",
+              "matchType": "minimum"
+            }
+          }
+        ]
+      },
+      {
+        "id": "dora_resilience_testing",
+        "title": "DORA & Resilience Testing",
+        "description": "DORA compliance, scenario testing, and crisis management",
+        "order": 16,
+        "helpText": "0 = No Experience, 1 = Awareness, 2 = Practical Application, 3 = Implementation & Management, 4 = Strategic Leadership",
+        "questions": [
+          {
+            "id": "dora_compliance",
+            "question": "DORA Compliance Framework",
+            "description": "Digital Operational Resilience Act compliance and implementation",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No DORA experience",
+              "1": "Understand DORA requirements; familiar with five pillars",
+              "2": "Contributed to DORA implementation; conducted gap analysis; documented controls",
+              "3": "Led DORA implementation; designed compliance frameworks; managed workstreams",
+              "4": "Enterprise DORA strategy; regulatory DORA dialogue; industry thought leadership"
+            },
+            "mirrorsRole": {
+              "questionId": "dora_compliance",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "tlpt",
+            "question": "Threat-Led Penetration Testing (TLPT/TIBER)",
+            "description": "Intelligence-led cyber resilience testing",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No TLPT experience",
+              "1": "Understand TLPT/TIBER concepts; familiar with testing requirements",
+              "2": "Participated in TLPT exercises; coordinated with red team; documented findings",
+              "3": "Led TLPT programs; managed threat intelligence; coordinated remediation",
+              "4": "Enterprise TLPT strategy; regulatory TLPT dialogue; industry testing leadership"
+            },
+            "mirrorsRole": {
+              "questionId": "tlpt",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "scenario_testing_opres",
+            "question": "Severe but Plausible Scenario Testing",
+            "description": "Testing resilience under severe but plausible disruption scenarios",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No severe scenario testing experience",
+              "1": "Understand scenario testing concepts; observed testing exercises",
+              "2": "Designed scenarios; participated in testing; documented outcomes",
+              "3": "Led scenario testing programs; designed severe scenarios; managed governance",
+              "4": "Enterprise scenario architecture; regulatory scenario engagement; board scenario reporting"
+            },
+            "mirrorsRole": {
+              "questionId": "scenario_testing_opres",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "tabletop_exercises",
+            "question": "Tabletop Exercise Facilitation",
+            "description": "Facilitating crisis simulation exercises with senior stakeholders",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No tabletop exercise experience",
+              "1": "Participated in tabletop exercises; understand exercise design",
+              "2": "Supported exercise design; documented outcomes; tracked action items",
+              "3": "Facilitated tabletop exercises; designed scenarios; led debrief sessions",
+              "4": "Enterprise exercise program; executive-level facilitation; regulatory exercises"
+            },
+            "mirrorsRole": {
+              "questionId": "tabletop_exercises",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "crisis_management",
+            "question": "Crisis Management & Response",
+            "description": "Managing crisis response and communication during major incidents",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No crisis management experience",
+              "1": "Understand crisis management concepts; familiar with response structures",
+              "2": "Participated in crisis response; supported communication; documented lessons",
+              "3": "Led crisis response teams; managed communications; designed response frameworks",
+              "4": "Enterprise crisis leadership; board crisis engagement; regulatory crisis dialogue"
+            },
+            "mirrorsRole": {
+              "questionId": "crisis_management",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "ict_incident_reporting",
+            "question": "ICT Incident Classification & Reporting",
+            "description": "Classifying and reporting major ICT incidents under DORA/regulatory requirements",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No ICT incident reporting experience",
+              "1": "Understand incident classification; familiar with reporting requirements",
+              "2": "Classified incidents; prepared reports; tracked regulatory deadlines",
+              "3": "Designed classification frameworks; led reporting programs; managed governance",
+              "4": "Enterprise incident architecture; regulatory reporting dialogue; industry benchmarking"
+            },
+            "mirrorsRole": {
+              "questionId": "ict_incident_reporting",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "bcp_integration",
+            "question": "BCP/DR Integration",
+            "description": "Integrating operational resilience with business continuity and disaster recovery",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No BCP/DR integration experience",
+              "1": "Understand BCP/DR concepts; familiar with integration requirements",
+              "2": "Supported integration efforts; documented linkages; participated in testing",
+              "3": "Led BCP/OpRes integration; designed unified frameworks; managed governance",
+              "4": "Enterprise resilience architecture; unified BCP/DR/OpRes strategy; regulatory alignment"
+            },
+            "mirrorsRole": {
+              "questionId": "bcp_integration",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "self_assessment_opres",
+            "question": "Regulatory Self-Assessment",
+            "description": "Conducting operational resilience self-assessments for regulatory purposes",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No self-assessment experience",
+              "1": "Understand self-assessment requirements; familiar with regulatory expectations",
+              "2": "Contributed to self-assessments; documented maturity; tracked improvements",
+              "3": "Led self-assessment programs; designed maturity frameworks; managed submissions",
+              "4": "Enterprise self-assessment architecture; regulatory dialogue; board assurance"
+            },
+            "mirrorsRole": {
+              "questionId": "self_assessment_opres",
+              "matchType": "minimum"
+            }
+          }
+        ]
+      },
+      {
+        "id": "ai_model_risk",
+        "title": "AI & Model Risk",
+        "description": "AI governance, model risk management, and emerging AI risks",
+        "order": 17,
+        "helpText": "0 = No Experience, 1 = Awareness, 2 = Practical Application, 3 = Implementation & Management, 4 = Strategic Leadership",
+        "questions": [
+          {
+            "id": "ai_governance",
+            "question": "AI Governance Framework",
+            "description": "Governing AI/ML model development, deployment, and monitoring",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No AI governance experience",
+              "1": "Understand AI governance concepts; familiar with AI risks",
+              "2": "Contributed to AI governance; documented AI risks; participated in model reviews",
+              "3": "Designed AI governance frameworks; led AI risk assessments; managed AI policies",
+              "4": "Enterprise AI governance; regulatory AI dialogue; board AI risk appetite"
+            },
+            "mirrorsRole": {
+              "questionId": "ai_governance",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "model_risk_management",
+            "question": "Model Risk Management (MRM)",
+            "description": "Managing risks from quantitative models across the organisation",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No MRM experience",
+              "1": "Understand MRM concepts; familiar with SR 11-7/SS1/21",
+              "2": "Participated in model reviews; documented model risks; tracked model issues",
+              "3": "Designed MRM frameworks; led model validation; managed model inventory",
+              "4": "Enterprise MRM; regulatory model approval; board model governance"
+            },
+            "mirrorsRole": {
+              "questionId": "model_risk_management",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "model_validation",
+            "question": "Model Validation",
+            "description": "Independent validation of quantitative models",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No model validation experience",
+              "1": "Understand validation concepts; can interpret validation reports",
+              "2": "Performed model validations; documented findings; tracked remediation",
+              "3": "Led validation teams; designed validation frameworks; managed validation governance",
+              "4": "Enterprise validation; regulatory model approval; academic-level validation expertise"
+            },
+            "mirrorsRole": {
+              "questionId": "model_validation",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "bias_fairness",
+            "question": "Bias Detection & Fairness",
+            "description": "Detecting and mitigating bias in AI/ML models",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No bias detection experience",
+              "1": "Understand bias concepts; familiar with fairness metrics",
+              "2": "Assessed models for bias; documented fairness tests; recommended mitigations",
+              "3": "Designed bias frameworks; implemented fairness testing; managed bias governance",
+              "4": "Enterprise fairness strategy; regulatory bias dialogue; industry thought leadership"
+            },
+            "mirrorsRole": {
+              "questionId": "bias_fairness",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "explainability",
+            "question": "AI Explainability (SHAP/LIME)",
+            "description": "Making AI/ML model decisions interpretable and explainable",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No explainability experience",
+              "1": "Understand explainability concepts; familiar with SHAP/LIME",
+              "2": "Applied explainability techniques; documented model rationale; supported business",
+              "3": "Designed explainability frameworks; implemented techniques; managed governance",
+              "4": "Enterprise explainability strategy; regulatory dialogue; academic-level expertise"
+            },
+            "mirrorsRole": {
+              "questionId": "explainability",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "genai_risk",
+            "question": "Generative AI Risk Management",
+            "description": "Risk assessment and quantification for generative AI and large language models",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No GenAI risk experience",
+              "1": "Understand GenAI risks; familiar with hallucination, data leakage risks",
+              "2": "Assessed GenAI use cases; documented risks; contributed to policies",
+              "3": "Designed GenAI risk frameworks; led use case approvals; managed governance",
+              "4": "Enterprise GenAI strategy; board GenAI dialogue; industry thought leadership"
+            },
+            "mirrorsRole": {
+              "questionId": "genai_risk",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "nist_ai_rmf",
+            "question": "NIST AI Risk Management Framework",
+            "description": "Applying NIST AI RMF for AI risk management",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No NIST AI RMF experience",
+              "1": "Understand NIST AI RMF concepts; familiar with framework functions",
+              "2": "Applied NIST AI RMF; mapped controls; documented compliance",
+              "3": "Implemented NIST AI RMF frameworks; led maturity assessments; managed governance",
+              "4": "Enterprise NIST AI RMF; integrated with FS regulations; industry alignment"
+            },
+            "mirrorsRole": {
+              "questionId": "nist_ai_rmf",
+              "matchType": "minimum"
+            }
+          }
+        ]
+      },
+      {
+        "id": "climate_esg_risk",
+        "title": "Climate & ESG Risk",
+        "description": "Climate risk assessment, TCFD, and ESG integration",
+        "order": 18,
+        "helpText": "0 = No Experience, 1 = Awareness, 2 = Practical Application, 3 = Implementation & Management, 4 = Strategic Leadership",
+        "questions": [
+          {
+            "id": "climate_risk_framework",
+            "question": "Climate Risk Framework",
+            "description": "Framework for managing climate-related financial risks",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No climate risk experience",
+              "1": "Understand climate risk concepts; familiar with physical/transition risk distinction",
+              "2": "Contributed to climate assessments; documented climate risks; supported disclosures",
+              "3": "Designed climate frameworks; led climate risk programs; managed governance",
+              "4": "Enterprise climate strategy; regulatory climate dialogue; board climate appetite"
+            },
+            "mirrorsRole": {
+              "questionId": "climate_risk_framework",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "physical_risk",
+            "question": "Physical Risk Assessment",
+            "description": "Assessing risks from acute and chronic physical climate impacts",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No physical risk experience",
+              "1": "Understand physical risk concepts; familiar with acute/chronic distinction",
+              "2": "Assessed physical risks; analysed asset exposure; documented findings",
+              "3": "Designed physical risk frameworks; led assessments; integrated with credit/market risk",
+              "4": "Enterprise physical risk strategy; geospatial analysis; regulatory dialogue"
+            },
+            "mirrorsRole": {
+              "questionId": "physical_risk",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "transition_risk",
+            "question": "Transition Risk Assessment",
+            "description": "Assessing risks from transition to low-carbon economy",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No transition risk experience",
+              "1": "Understand transition risk concepts; familiar with policy, technology, market drivers",
+              "2": "Assessed transition risks; analysed sector exposure; documented findings",
+              "3": "Designed transition frameworks; led assessments; integrated with credit analysis",
+              "4": "Enterprise transition strategy; pathway analysis; regulatory dialogue"
+            },
+            "mirrorsRole": {
+              "questionId": "transition_risk",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "ngfs_scenarios",
+            "question": "NGFS Climate Scenarios",
+            "description": "Using Network for Greening the Financial System scenarios",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No NGFS scenario experience",
+              "1": "Understand NGFS scenarios; familiar with orderly/disorderly/hot house",
+              "2": "Applied NGFS scenarios; analysed scenario impacts; reported results",
+              "3": "Designed scenario frameworks; led NGFS implementation; managed governance",
+              "4": "Enterprise scenario strategy; bespoke scenario development; regulatory engagement"
+            },
+            "mirrorsRole": {
+              "questionId": "ngfs_scenarios",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "tcfd_disclosure",
+            "question": "TCFD Disclosure",
+            "description": "Task Force on Climate-related Financial Disclosures reporting",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No TCFD experience",
+              "1": "Understand TCFD framework; familiar with four pillars",
+              "2": "Contributed to TCFD reporting; gathered data; drafted disclosures",
+              "3": "Led TCFD programs; designed disclosure frameworks; managed assurance",
+              "4": "Enterprise TCFD strategy; external disclosure leadership; investor engagement"
+            },
+            "mirrorsRole": {
+              "questionId": "tcfd_disclosure",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "climate_stress_testing",
+            "question": "Climate Stress Testing",
+            "description": "Stress testing portfolios under climate scenarios",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No climate stress testing experience",
+              "1": "Understand climate stress concepts; familiar with CBES/regulatory exercises",
+              "2": "Contributed to climate stress tests; analysed results; documented findings",
+              "3": "Led climate stress programs; designed methodologies; managed submissions",
+              "4": "Enterprise climate stress strategy; regulatory stress dialogue; board reporting"
+            },
+            "mirrorsRole": {
+              "questionId": "climate_stress_testing",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "esg_integration",
+            "question": "ESG Integration in Risk",
+            "description": "Integrating ESG factors into risk assessment and management",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No ESG integration experience",
+              "1": "Understand ESG concepts; familiar with ESG ratings and data",
+              "2": "Integrated ESG into assessments; analysed ESG risks; documented approach",
+              "3": "Designed ESG integration frameworks; led programs; managed governance",
+              "4": "Enterprise ESG strategy; investor ESG dialogue; regulatory ESG engagement"
+            },
+            "mirrorsRole": {
+              "questionId": "esg_integration",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "greenwashing_risk",
+            "question": "Greenwashing Risk Management",
+            "description": "Risk assessment and quantification for misleading sustainability claims",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No greenwashing risk experience",
+              "1": "Understand greenwashing concepts; familiar with regulatory concerns",
+              "2": "Assessed greenwashing risks; reviewed claims; documented findings",
+              "3": "Designed greenwashing frameworks; led reviews; managed governance",
+              "4": "Enterprise greenwashing strategy; regulatory dialogue; investor communication"
+            },
+            "mirrorsRole": {
+              "questionId": "greenwashing_risk",
+              "matchType": "minimum"
+            }
+          }
+        ]
+      },
+      {
+        "id": "cyber_technology_risk",
+        "title": "Cyber & Technology Risk",
+        "description": "Cyber risk quantification, technology risk, and third-party tech risk",
+        "order": 19,
+        "helpText": "0 = No Experience, 1 = Awareness, 2 = Practical Application, 3 = Implementation & Management, 4 = Strategic Leadership",
+        "questions": [
+          {
+            "id": "cyber_risk_framework",
+            "question": "Cyber Risk Framework",
+            "description": "Framework for managing cyber security risks",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No cyber risk framework experience",
+              "1": "Understand cyber risk concepts; familiar with NIST CSF",
+              "2": "Applied cyber frameworks; conducted assessments; documented controls",
+              "3": "Designed cyber risk frameworks; led programs; managed governance",
+              "4": "Enterprise cyber strategy; regulatory cyber dialogue; board cyber reporting"
+            },
+            "mirrorsRole": {
+              "questionId": "cyber_risk_framework",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "cyber_risk_quantification",
+            "question": "Cyber Risk Quantification (CRQ/FAIR)",
+            "description": "Quantifying cyber risk in financial terms using FAIR or similar",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No CRQ experience",
+              "1": "Understand CRQ concepts; familiar with FAIR methodology",
+              "2": "Applied CRQ techniques; calculated risk scenarios; reported findings",
+              "3": "Designed CRQ frameworks; led quantification programs; managed governance",
+              "4": "Enterprise CRQ strategy; integrated with capital; board-level reporting"
+            },
+            "mirrorsRole": {
+              "questionId": "cyber_risk_quantification",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "technology_risk",
+            "question": "Technology Risk Assessment",
+            "description": "Assessing risks from technology infrastructure and systems",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No technology risk experience",
+              "1": "Understand technology risk concepts; familiar with tech risk categories",
+              "2": "Conducted tech risk assessments; documented findings; tracked remediation",
+              "3": "Designed tech risk frameworks; led programs; managed governance",
+              "4": "Enterprise tech risk strategy; CTO partnership; board tech risk reporting"
+            },
+            "mirrorsRole": {
+              "questionId": "technology_risk",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "cloud_risk",
+            "question": "Cloud Infrastructure Risk",
+            "description": "Managing risks from cloud infrastructure and services",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No cloud risk experience",
+              "1": "Understand cloud risk concepts; familiar with shared responsibility model",
+              "2": "Assessed cloud risks; reviewed CSP controls; documented findings",
+              "3": "Designed cloud risk frameworks; led cloud assessments; managed governance",
+              "4": "Enterprise cloud strategy; multi-cloud risk; regulatory cloud dialogue"
+            },
+            "mirrorsRole": {
+              "questionId": "cloud_risk",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "third_party_tech_risk",
+            "question": "Third-Party Technology Risk",
+            "description": "Managing technology risks from third-party providers",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No third-party tech risk experience",
+              "1": "Understand TPRM concepts; familiar with tech outsourcing risks",
+              "2": "Assessed third-party tech risks; reviewed due diligence; tracked issues",
+              "3": "Designed TPRM frameworks; led tech vendor assessments; managed governance",
+              "4": "Enterprise TPRM strategy; concentration risk; regulatory TPRM dialogue"
+            },
+            "mirrorsRole": {
+              "questionId": "third_party_tech_risk",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "data_risk",
+            "question": "Data Risk & BCBS 239",
+            "description": "Managing data quality, data governance, and BCBS 239 compliance",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No data risk experience",
+              "1": "Understand data risk concepts; familiar with BCBS 239 principles",
+              "2": "Assessed data quality; documented data lineage; tracked issues",
+              "3": "Designed data risk frameworks; led BCBS 239 programs; managed governance",
+              "4": "Enterprise data strategy; CDO partnership; regulatory data dialogue"
+            },
+            "mirrorsRole": {
+              "questionId": "data_risk",
+              "matchType": "minimum"
+            }
+          }
+        ]
+      },
+      {
+        "id": "grc_systems_data",
+        "title": "GRC Systems & Data",
+        "description": "GRC platform experience, risk data management, and analytics",
+        "order": 20,
+        "helpText": "0 = No Experience, 1 = Awareness, 2 = Practical Application, 3 = Implementation & Management, 4 = Strategic Leadership",
+        "questions": [
+          {
+            "id": "grc_systems_experience",
+            "question": "GRC Platform Experience",
+            "description": "Experience with GRC platforms (Archer, ServiceNow, MetricStream, OpenPages, etc.)",
+            "type": "system_proficiency",
+            "required": true,
+            "systems": [
+              {
+                "id": "archer",
+                "name": "Archer (RSA)"
+              },
+              {
+                "id": "servicenow_grc",
+                "name": "ServiceNow GRC"
+              },
+              {
+                "id": "metricstream",
+                "name": "MetricStream"
+              },
+              {
+                "id": "openpages",
+                "name": "IBM OpenPages"
+              },
+              {
+                "id": "sas_risk",
+                "name": "SAS Risk Management"
+              },
+              {
+                "id": "riskauthority",
+                "name": "Moody's RiskAuthority"
+              },
+              {
+                "id": "onesumx",
+                "name": "Wolters Kluwer OneSumX"
+              },
+              {
+                "id": "riskonnect",
+                "name": "Riskonnect"
+              },
+              {
+                "id": "logicgate",
+                "name": "LogicGate"
+              },
+              {
+                "id": "protecht",
+                "name": "Protecht"
+              }
+            ],
+            "mirrorsRole": {
+              "questionId": "grc_systems_experience",
+              "matchType": "system_match"
+            }
+          },
+          {
+            "id": "risk_data_management",
+            "question": "Risk Data Management",
+            "description": "Managing risk data quality, lineage, and aggregation",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No risk data management experience",
+              "1": "Understand data management concepts; familiar with data quality principles",
+              "2": "Managed risk data; maintained data dictionaries; tracked data quality",
+              "3": "Designed data frameworks; led data quality programs; managed governance",
+              "4": "Enterprise risk data strategy; data architecture; regulatory data engagement"
+            },
+            "mirrorsRole": {
+              "questionId": "risk_data_management",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "risk_dashboards",
+            "question": "Risk Dashboard Design",
+            "description": "Designing effective risk dashboards and visualisations",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No dashboard design experience",
+              "1": "Use risk dashboards; understand visualisation principles",
+              "2": "Designed dashboards; created visualisations; supported stakeholders",
+              "3": "Led dashboard programs; established standards; managed governance",
+              "4": "Enterprise dashboard architecture; real-time monitoring; board dashboards"
+            },
+            "mirrorsRole": {
+              "questionId": "risk_dashboards",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "data_analytics",
+            "question": "Risk Data Analytics (SQL, Python)",
+            "description": "Using SQL, Python, or similar for risk data analysis",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No analytics coding experience",
+              "1": "Basic understanding; can read simple queries",
+              "2": "Write SQL queries; basic Python; extract and analyse data",
+              "3": "Advanced analytics; build automated reports; lead analytics projects",
+              "4": "Expert analytics; machine learning; enterprise analytics architecture"
+            },
+            "mirrorsRole": {
+              "questionId": "data_analytics",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "visualization",
+            "question": "Data Visualization (Tableau, PowerBI)",
+            "description": "Using Tableau, PowerBI, or similar for risk visualisation",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No visualisation tool experience",
+              "1": "Can use basic visualisations; understand tool capabilities",
+              "2": "Build dashboards; create effective visualisations; share reports",
+              "3": "Design complex dashboards; establish standards; train teams",
+              "4": "Enterprise visualisation strategy; advanced analytics; automation"
+            },
+            "mirrorsRole": {
+              "questionId": "visualization",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "automation",
+            "question": "Risk Process Automation",
+            "description": "Automating risk processes using RPA, workflow tools, or scripting",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No automation experience",
+              "1": "Understand automation concepts; identify automation opportunities",
+              "2": "Implemented simple automations; used workflow tools; improved efficiency",
+              "3": "Led automation programs; designed automated workflows; managed governance",
+              "4": "Enterprise automation strategy; intelligent automation; transformation leadership"
+            },
+            "mirrorsRole": {
+              "questionId": "automation",
+              "matchType": "minimum"
+            }
+          }
+        ]
+      },
+      {
+        "id": "regulatory_frameworks_supervision",
+        "title": "Regulatory Frameworks & Supervision",
+        "description": "FS regulatory knowledge and supervisory engagement",
+        "order": 21,
+        "helpText": "0 = No Experience, 1 = Awareness, 2 = Practical Application, 3 = Implementation & Management, 4 = Strategic Leadership",
+        "questions": [
+          {
+            "id": "pra_fca_supervision",
+            "question": "PRA/FCA Supervision",
+            "description": "Understanding and engaging with UK prudential and conduct regulators",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No UK regulatory experience",
+              "1": "Understand PRA/FCA roles; familiar with supervisory approach",
+              "2": "Prepared for regulatory meetings; responded to requests; supported submissions",
+              "3": "Led regulatory engagements; managed supervisory relationships; handled reviews",
+              "4": "CRO-level regulatory relationships; strategic dialogue; influenced policy"
+            },
+            "mirrorsRole": {
+              "questionId": "pra_fca_supervision",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "smcr",
+            "question": "SM&CR (Senior Managers Regime)",
+            "description": "Senior Managers and Certification Regime accountability",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No SM&CR experience",
+              "1": "Understand SM&CR concepts; familiar with SMF roles and conduct rules",
+              "2": "Supported SM&CR compliance; documented responsibilities; tracked certifications",
+              "3": "Designed SM&CR frameworks; managed statements of responsibility; led governance",
+              "4": "Enterprise SM&CR; held SMF role; regulatory accountability dialogue"
+            },
+            "mirrorsRole": {
+              "questionId": "smcr",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "basel_framework",
+            "question": "Basel Capital Framework",
+            "description": "Basel III/IV capital and risk requirements",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No Basel framework experience",
+              "1": "Understand Basel concepts; familiar with three pillars",
+              "2": "Applied Basel requirements; calculated RWAs; supported compliance",
+              "3": "Designed Basel frameworks; led implementation; managed governance",
+              "4": "Enterprise Basel strategy; regulatory Basel dialogue; industry input"
+            },
+            "mirrorsRole": {
+              "questionId": "basel_framework",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "crd_crr",
+            "question": "CRD/CRR (Capital Requirements)",
+            "description": "Capital Requirements Directive and Regulation implementation",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No CRD/CRR experience",
+              "1": "Understand CRD/CRR requirements; familiar with key provisions",
+              "2": "Applied CRD/CRR; supported compliance; documented implementation",
+              "3": "Designed CRD/CRR frameworks; led programs; managed governance",
+              "4": "Enterprise CRD/CRR strategy; regulatory dialogue; policy input"
+            },
+            "mirrorsRole": {
+              "questionId": "crd_crr",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "solvency_ii_regulation",
+            "question": "Solvency II Regulation",
+            "description": "Insurance prudential regulation and implementation",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No Solvency II regulation experience",
+              "1": "Understand Solvency II requirements; familiar with three pillars",
+              "2": "Applied Solvency II; calculated SCR; supported compliance",
+              "3": "Designed Solvency II frameworks; led implementation; managed ORSA",
+              "4": "Enterprise Solvency II strategy; internal model; regulatory dialogue"
+            },
+            "mirrorsRole": {
+              "questionId": "solvency_ii_regulation",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "mifid_ii",
+            "question": "MiFID II (Investment Firms)",
+            "description": "Markets in Financial Instruments Directive requirements",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No MiFID II experience",
+              "1": "Understand MiFID II requirements; familiar with key provisions",
+              "2": "Applied MiFID II risk requirements; supported compliance",
+              "3": "Designed MiFID II risk frameworks; led programs; managed governance",
+              "4": "Enterprise MiFID II strategy; regulatory dialogue; policy input"
+            },
+            "mirrorsRole": {
+              "questionId": "mifid_ii",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "regulatory_reporting",
+            "question": "Regulatory Reporting",
+            "description": "Preparing and submitting regulatory risk reports",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No regulatory reporting experience",
+              "1": "Understand reporting requirements; familiar with common returns",
+              "2": "Prepared regulatory reports; gathered data; tracked deadlines",
+              "3": "Designed reporting frameworks; led programs; managed governance",
+              "4": "Enterprise reporting strategy; regulatory dialogue; reporting transformation"
+            },
+            "mirrorsRole": {
+              "questionId": "regulatory_reporting",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "regulatory_change",
+            "question": "Regulatory Change Management",
+            "description": "Managing impact of regulatory changes on risk frameworks",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No regulatory change experience",
+              "1": "Understand regulatory change concepts; monitor horizon",
+              "2": "Assessed regulatory impacts; supported implementation; tracked changes",
+              "3": "Designed change frameworks; led implementations; managed governance",
+              "4": "Enterprise regulatory strategy; industry input; regulatory dialogue"
+            },
+            "mirrorsRole": {
+              "questionId": "regulatory_change",
+              "matchType": "minimum"
+            }
+          }
+        ]
+      },
+      {
+        "id": "stakeholder_management_influence",
+        "title": "Stakeholder Management & Influence",
+        "description": "Board presentation, executive presence, and risk translation",
+        "order": 22,
+        "helpText": "0 = No Experience, 1 = Awareness, 2 = Practical Application, 3 = Implementation & Management, 4 = Strategic Leadership",
+        "questions": [
+          {
+            "id": "board_presentation",
+            "question": "Board & ExCo Presentation",
+            "description": "Presenting risk topics to board and executive committees",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No board presentation experience",
+              "1": "Prepared board materials; understand board requirements",
+              "2": "Presented to senior management; supported ExCo presentations",
+              "3": "Regular ExCo presenter; shaped meeting agendas; handled Q&A",
+              "4": "Board-level presenter; strategic advisor; influenced decisions"
+            },
+            "mirrorsRole": {
+              "questionId": "board_presentation",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "crisis_leadership",
+            "question": "Crisis Leadership",
+            "description": "Leading teams and stakeholders through crisis situations",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No crisis leadership experience",
+              "1": "Participated in crisis response; understand crisis dynamics",
+              "2": "Supported crisis teams; maintained composure; delivered under pressure",
+              "3": "Led crisis workstreams; coordinated response; managed communications",
+              "4": "Enterprise crisis leadership; board crisis engagement; external communication"
+            },
+            "mirrorsRole": {
+              "questionId": "crisis_leadership",
+              "matchType": "minimum"
+            }
+          }
+        ]
+      },
+      {
+        "id": "fs_subsector_experience",
+        "title": "FS Sub-Sector Experience",
+        "description": "Experience across financial services sub-sectors",
+        "order": 23,
+        "helpText": "0 = No Experience, 1 = Awareness, 2 = Practical Application, 3 = Implementation & Management, 4 = Strategic Leadership",
+        "questions": [
+          {
+            "id": "sector_banking",
+            "question": "Banking (Retail/Commercial/Investment)",
+            "description": "Experience in retail, commercial, or investment banking",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No banking sector experience",
+              "1": "Understand banking business model; familiar with products/services",
+              "2": "Worked in banking risk; understand specific risk drivers",
+              "3": "Led banking risk programs; deep sector expertise",
+              "4": "Enterprise banking risk; CRO-level banking experience"
+            },
+            "mirrorsRole": {
+              "questionId": "sector_banking",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "sector_insurance",
+            "question": "Insurance (Life/General/Reinsurance)",
+            "description": "Experience in life, general insurance, or reinsurance",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No insurance sector experience",
+              "1": "Understand insurance business model; familiar with underwriting/claims",
+              "2": "Worked in insurance risk; understand specific risk drivers",
+              "3": "Led insurance risk programs; deep sector expertise",
+              "4": "Enterprise insurance risk; CRO-level insurance experience"
+            },
+            "mirrorsRole": {
+              "questionId": "sector_insurance",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "sector_asset_management",
+            "question": "Asset Management",
+            "description": "Experience in asset management and fund management",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No asset management experience",
+              "1": "Understand asset management model; familiar with fund structures",
+              "2": "Worked in AM risk; understand specific risk drivers",
+              "3": "Led AM risk programs; deep sector expertise",
+              "4": "Enterprise AM risk; CRO-level asset management experience"
+            },
+            "mirrorsRole": {
+              "questionId": "sector_asset_management",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "sector_wealth",
+            "question": "Wealth Management / Private Banking",
+            "description": "Experience in wealth management and private banking",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No wealth management experience",
+              "1": "Understand wealth management model; familiar with HNW clients",
+              "2": "Worked in wealth risk; understand specific risk drivers",
+              "3": "Led wealth risk programs; deep sector expertise",
+              "4": "Enterprise wealth risk; CRO-level wealth experience"
+            },
+            "mirrorsRole": {
+              "questionId": "sector_wealth",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "sector_payments",
+            "question": "Payments / Fintech",
+            "description": "Experience in payments, e-money, and fintech",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No payments/fintech experience",
+              "1": "Understand payments model; familiar with fintech landscape",
+              "2": "Worked in payments/fintech risk; understand specific risk drivers",
+              "3": "Led payments risk programs; deep sector expertise",
+              "4": "Enterprise payments risk; CRO-level fintech experience"
+            },
+            "mirrorsRole": {
+              "questionId": "sector_payments",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "sector_capital_markets",
+            "question": "Capital Markets / Trading",
+            "description": "Experience in capital markets and trading operations",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No capital markets experience",
+              "1": "Understand capital markets; familiar with trading products",
+              "2": "Worked in markets risk; understand trading risk drivers",
+              "3": "Led markets risk programs; deep sector expertise",
+              "4": "Enterprise markets risk; CRO-level capital markets experience"
+            },
+            "mirrorsRole": {
+              "questionId": "sector_capital_markets",
+              "matchType": "minimum"
+            }
+          },
+          {
+            "id": "sector_mortgage",
+            "question": "Mortgage / Consumer Finance",
+            "description": "Experience in mortgage lending and consumer finance",
+            "type": "slider",
+            "required": true,
+            "min": 0,
+            "max": 4,
+            "defaultValue": 0,
+            "proficiencyDefinitions": {
+              "0": "No mortgage/consumer finance experience",
+              "1": "Understand lending model; familiar with mortgage/consumer products",
+              "2": "Worked in lending risk; understand specific risk drivers",
+              "3": "Led lending risk programs; deep sector expertise",
+              "4": "Enterprise lending risk; CRO-level lending experience"
+            },
+            "mirrorsRole": {
+              "questionId": "sector_mortgage",
+              "matchType": "minimum"
+            }
+          }
+        ]
+      },
+      {
+        "id": "additional_information",
+        "title": "Additional Information",
+        "description": "Share anything else that demonstrates your value as a candidate",
+        "order": 24,
+        "helpText": "This is your opportunity to highlight achievements, results, and career progression that haven't been captured elsewhere",
+        "questions": [
+          {
+            "id": "key_achievements",
+            "question": "Key Achievements & Exceeding Expectations",
+            "description": "Describe examples from previous roles where you exceeded expectations, met challenging targets, or took on responsibilities beyond your role",
+            "type": "textarea",
+            "required": false,
+            "placeholder": "e.g., 'Led emergency response to major market stress event; Built enterprise risk framework from scratch that survived regulatory scrutiny; Selected to lead integration risk workstream for major acquisition...'"
+          },
+          {
+            "id": "quantifiable_impact",
+            "question": "Quantifiable Results & Impact",
+            "description": "Share specific metrics that demonstrate your impact, such as risk reductions, model improvements, cost savings, or business outcomes you have delivered",
+            "type": "textarea",
+            "required": false,
+            "placeholder": "e.g., 'Reduced operational losses by \u00a32.3M annually through enhanced control framework; Improved model performance reducing capital requirements by 15%; Delivered GRC platform implementation 20% under budget; Reduced risk reporting cycle time from 15 days to 3 days...'"
+          },
+          {
+            "id": "career_progression",
+            "question": "Career Progression & Promotions",
+            "description": "Describe your career trajectory, including promotions, expanded responsibilities, or recognition of your value by previous employers",
+            "type": "textarea",
+            "required": false,
+            "placeholder": "e.g., 'Promoted twice in 4 years at [Company], from Risk Analyst to Senior Manager; Selected to lead enterprise-wide risk transformation programme over more senior candidates; Headhunted by current employer to build out their risk function...'"
+          },
+          {
+            "id": "unique_value_proposition",
+            "question": "Your Unique Value",
+            "description": "What makes you stand out from other risk professionals? What unique combination of skills, experiences, or perspectives do you bring?",
+            "type": "textarea",
+            "required": false,
+            "placeholder": "e.g., 'Combination of front-office trading experience with deep risk expertise gives me credibility with the business; Quantitative background in data science allows me to bridge the gap between risk and analytics teams; Multi-sector experience across banking, insurance, and asset management...'"
+          },
+          {
+            "id": "anything_else",
+            "question": "Anything Else?",
+            "description": "Is there anything else you would like us to know about your skills, experience, or candidacy that you haven't had the opportunity to share?",
+            "type": "textarea",
+            "required": false,
+            "placeholder": "Use this space to share any additional information that would help us understand your candidacy..."
+          }
+        ]
+      }
+    ],
+    "metadata": {
+      "totalSections": 24,
+      "totalQuestions": 150,
+      "moduleStructure": {
+        "module1_fs_experience": [
+          "fs_risk_experience_overview",
+          "professional_certifications",
+          "risk_framework_knowledge"
+        ],
+        "module2_erm_core": [
+          "risk_governance_strategy",
+          "risk_appetite_tolerance",
+          "risk_assessment_identification",
+          "key_risk_indicators"
+        ],
+        "module3_financial_risk": [
+          "credit_risk",
+          "market_risk",
+          "liquidity_risk",
+          "capital_planning_icaap"
+        ],
+        "module4_operational_risk": [
+          "operational_risk_framework",
+          "loss_data_quantification",
+          "oprisk_capital"
+        ],
+        "module5_operational_resilience": [
+          "important_business_services",
+          "impact_tolerances",
+          "dora_resilience_testing"
+        ],
+        "module6_emerging_risk": [
+          "ai_model_risk",
+          "climate_esg_risk",
+          "cyber_technology_risk"
+        ],
+        "module7_grc_regulatory": [
+          "grc_systems_data",
+          "regulatory_frameworks_supervision"
+        ],
+        "module8_leadership": [
+          "stakeholder_management_influence",
+          "fs_subsector_experience"
+        ]
+      },
+      "estimatedCompletionMinutes": 25,
+      "lastUpdated": "2025-12-15"
+    }
+  }
+}

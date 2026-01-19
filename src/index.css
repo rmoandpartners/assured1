@@ -4,13 +4,21 @@
 
 @layer base {
   :root {
+    --color-pine: #0f241d;
+    --color-pine-light: #1a382e;
+    --color-silk: #f2f0e9;
+    --color-clay: #e0ddd5;
+    --color-sienna: #c25e00;
+    --color-text-main: #1a1a1a;
+    --color-muted-green: #8fa89e;
+    /* Legacy colors */
     --color-bg: theme('colors.cream.50');
     --color-bg-alt: theme('colors.cream.100');
     --color-surface: theme('colors.white');
     --color-ink: theme('colors.ink.950');
     --color-ink-muted: theme('colors.ink.600');
-    --color-accent: theme('colors.assured.600');
-    --color-accent-hover: theme('colors.assured.700');
+    --color-accent: #c25e00;
+    --color-accent-hover: #a34d00;
     --color-warm: theme('colors.copper.500');
   }
 
@@ -21,36 +29,107 @@
   }
 
   body {
-    @apply font-body text-ink-950 bg-cream-50;
+    @apply font-body bg-cream-50;
+    color: var(--color-text-main);
   }
 
   ::selection {
-    @apply bg-assured-200 text-ink-950;
+    background-color: rgba(194, 94, 0, 0.25);
+    color: #0f241d;
   }
 }
 
 @layer components {
+  /* Brutal Input - Editorial style with bottom border only */
+  .brutal-input {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    border-radius: 0;
+    padding: 1rem 0;
+    font-size: 1.25rem;
+    width: 100%;
+    transition: all 0.3s ease;
+    font-family: 'Cormorant Garamond', serif;
+    color: var(--color-pine);
+  }
+
+  .brutal-input:focus {
+    outline: none;
+    border-bottom: 2px solid var(--color-sienna);
+    padding-left: 10px;
+  }
+
+  .brutal-input::placeholder {
+    color: #9ca3af;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1rem;
+    opacity: 0.5;
+  }
+
+  /* Tag/Pill radio buttons */
+  .tag-radio:checked + label {
+    background-color: var(--color-pine);
+    color: var(--color-silk);
+    border-color: var(--color-pine);
+  }
+
   .btn-primary {
-    @apply inline-flex items-center justify-center px-8 py-4
-           font-body font-semibold text-base tracking-wide
-           bg-ink-950 text-cream-50
-           rounded-full
-           transition-all duration-300 ease-out
-           hover:bg-assured-700 hover:scale-[1.02]
-           focus:outline-none focus:ring-2 focus:ring-assured-500 focus:ring-offset-2 focus:ring-offset-cream-50
-           active:scale-[0.98];
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 2rem;
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    letter-spacing: 0.025em;
+    background-color: #0f241d;
+    color: #f2f0e9;
+    transition: all 300ms ease-out;
+  }
+
+  .btn-primary:hover {
+    background-color: #c25e00;
+    transform: scale(1.02);
+  }
+
+  .btn-primary:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #f2f0e9, 0 0 0 4px #c25e00;
+  }
+
+  .btn-primary:active {
+    transform: scale(0.98);
   }
 
   .btn-secondary {
-    @apply inline-flex items-center justify-center px-8 py-4
-           font-body font-semibold text-base tracking-wide
-           bg-transparent text-ink-950
-           border-2 border-ink-950
-           rounded-full
-           transition-all duration-300 ease-out
-           hover:bg-ink-950 hover:text-cream-50 hover:scale-[1.02]
-           focus:outline-none focus:ring-2 focus:ring-ink-950 focus:ring-offset-2 focus:ring-offset-cream-50
-           active:scale-[0.98];
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 2rem;
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    letter-spacing: 0.025em;
+    background-color: transparent;
+    color: #0f241d;
+    border: 2px solid #0f241d;
+    transition: all 300ms ease-out;
+  }
+
+  .btn-secondary:hover {
+    background-color: #0f241d;
+    color: #f2f0e9;
+    transform: scale(1.02);
+  }
+
+  .btn-secondary:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #f2f0e9, 0 0 0 4px #0f241d;
+  }
+
+  .btn-secondary:active {
+    transform: scale(0.98);
   }
 
   .section-padding {
@@ -62,11 +141,17 @@
   }
 
   .heading-display {
-    @apply font-display font-semibold text-ink-950 leading-tight;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 600;
+    color: #0f241d;
+    line-height: 1.1;
   }
 
   .text-gradient {
-    @apply bg-clip-text text-transparent bg-gradient-to-r from-ink-950 via-assured-800 to-ink-950;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(to right, #0f241d, #c25e00, #0f241d);
   }
 
   /* Noise texture overlay */
@@ -131,4 +216,294 @@
   .stagger-children > *:nth-child(4) { animation-delay: 0.4s; }
   .stagger-children > *:nth-child(5) { animation-delay: 0.5s; }
   .stagger-children > *:nth-child(6) { animation-delay: 0.6s; }
+}
+
+/* Onboarding Wizard Animations */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  10%, 30%, 50%, 70%, 90% { transform: translateX(-4px); }
+  20%, 40%, 60%, 80% { transform: translateX(4px); }
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes progressFill {
+  from {
+    width: 0%;
+  }
+}
+
+/* Animation utility classes */
+.animate-fade-up {
+  animation: fadeUp 0.5s ease-out forwards;
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.3s ease-out forwards;
+}
+
+.animate-fade-out {
+  animation: fadeOut 0.3s ease-out forwards;
+}
+
+.animate-slide-in-right {
+  animation: slideInRight 0.4s ease-out forwards;
+}
+
+.animate-slide-in-left {
+  animation: slideInLeft 0.4s ease-out forwards;
+}
+
+.animate-shake {
+  animation: shake 0.5s ease-in-out;
+}
+
+.animate-pulse {
+  animation: pulse 2s ease-in-out infinite;
+}
+
+.animate-scale-in {
+  animation: scaleIn 0.3s ease-out forwards;
+}
+
+/* Onboarding-specific styles */
+.onboarding-screen {
+  @apply animate-fade-up;
+}
+
+.question-enter {
+  animation: fadeUp 0.4s ease-out forwards;
+}
+
+.question-enter-stagger > * {
+  opacity: 0;
+  animation: fadeUp 0.4s ease-out forwards;
+}
+
+.question-enter-stagger > *:nth-child(1) { animation-delay: 0.05s; }
+.question-enter-stagger > *:nth-child(2) { animation-delay: 0.1s; }
+.question-enter-stagger > *:nth-child(3) { animation-delay: 0.15s; }
+.question-enter-stagger > *:nth-child(4) { animation-delay: 0.2s; }
+.question-enter-stagger > *:nth-child(5) { animation-delay: 0.25s; }
+.question-enter-stagger > *:nth-child(6) { animation-delay: 0.3s; }
+.question-enter-stagger > *:nth-child(7) { animation-delay: 0.35s; }
+
+/* Form input transitions */
+.form-input-transition {
+  @apply transition-all duration-200 ease-out;
+}
+
+/* Progress bar animation */
+.progress-bar-animated {
+  @apply transition-all duration-500 ease-out;
+}
+
+/* Selection option hover effect */
+.selection-option {
+  @apply transition-all duration-200 ease-out;
+}
+
+.selection-option:hover {
+  @apply transform scale-[1.02];
+}
+
+/* Slider track styling */
+input[type="range"] {
+  @apply appearance-none bg-transparent cursor-pointer;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+  height: 0.5rem;
+  border-radius: 9999px;
+  background-color: #e0ddd5;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  appearance: none;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 9999px;
+  background-color: #c25e00;
+  border: 4px solid white;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  margin-top: -0.5rem;
+  transition: all 150ms;
+}
+
+input[type="range"]::-webkit-slider-thumb:hover {
+  background-color: #a34d00;
+  transform: scale(1.1);
+}
+
+input[type="range"]::-webkit-slider-thumb:active {
+  background-color: #8a4200;
+  transform: scale(0.95);
+}
+
+input[type="range"]::-moz-range-track {
+  height: 0.5rem;
+  border-radius: 9999px;
+  background-color: #e0ddd5;
+}
+
+input[type="range"]::-moz-range-thumb {
+  appearance: none;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 9999px;
+  background-color: #c25e00;
+  border: 4px solid white;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  transition: all 150ms;
+}
+
+input[type="range"]::-moz-range-thumb:hover {
+  background-color: #a34d00;
+  transform: scale(1.1);
+}
+
+/* Focus states for accessibility */
+.focus-ring {
+  @apply focus:outline-none focus:ring-2 focus:ring-offset-2;
+  --tw-ring-color: #c25e00;
+  --tw-ring-offset-color: #f2f0e9;
+}
+
+/* Checkbox and radio custom styling */
+.custom-checkbox,
+.custom-radio {
+  appearance: none;
+  width: 1.25rem;
+  height: 1.25rem;
+  border: 2px solid #0f241d40;
+  background-color: white;
+  transition: all 150ms;
+  cursor: pointer;
+}
+
+.custom-checkbox {
+  border-radius: 0.25rem;
+}
+
+.custom-radio {
+  border-radius: 9999px;
+}
+
+.custom-checkbox:checked,
+.custom-radio:checked {
+  border-color: #c25e00;
+  background-color: #c25e00;
+}
+
+.custom-checkbox:checked::after {
+  content: '';
+  display: block;
+  width: 0.5rem;
+  height: 0.75rem;
+  border-right: 2px solid white;
+  border-bottom: 2px solid white;
+  transform: rotate(45deg);
+  margin: -2px auto 0;
+}
+
+.custom-radio:checked::after {
+  content: '';
+  display: block;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 9999px;
+  background-color: white;
+  margin: 0.125rem auto 0;
+}
+
+.custom-checkbox:focus,
+.custom-radio:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #f2f0e9, 0 0 0 4px #c25e00;
+}
+
+/* Save indicator animation */
+@keyframes savePulse {
+  0% { opacity: 1; }
+  50% { opacity: 0.6; }
+  100% { opacity: 1; }
+}
+
+.save-indicator {
+  animation: savePulse 1s ease-in-out;
+}
+
+/* Tooltip styles */
+.tooltip {
+  @apply invisible opacity-0 transition-all duration-200;
+}
+
+.tooltip-trigger:hover .tooltip,
+.tooltip-trigger:focus .tooltip {
+  @apply visible opacity-100;
 }

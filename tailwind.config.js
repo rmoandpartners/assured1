@@ -7,6 +7,50 @@ export default {
   theme: {
     extend: {
       colors: {
+        // Deep pine green - primary dark
+        pine: {
+          DEFAULT: '#0f241d',
+          light: '#1a382e',
+          50: '#f0f7f4',
+          100: '#dceee6',
+          200: '#bbdcce',
+          300: '#8fc3af',
+          400: '#5ea58b',
+          500: '#3d886e',
+          600: '#2d6d57',
+          700: '#265747',
+          800: '#21463a',
+          900: '#1c3b31',
+          950: '#0f241d',
+        },
+        // Warm silk cream - primary light
+        silk: {
+          DEFAULT: '#f2f0e9',
+          50: '#faf9f6',
+          100: '#f2f0e9',
+          200: '#e0ddd5',
+          300: '#ccc7bb',
+          400: '#b3ac9e',
+          500: '#9f9687',
+          600: '#8c8273',
+          700: '#746b5f',
+          800: '#605950',
+          900: '#514c44',
+        },
+        // Sienna accent
+        sienna: {
+          DEFAULT: '#c25e00',
+          50: '#fff8ed',
+          100: '#ffeed4',
+          200: '#ffd9a8',
+          300: '#ffbe70',
+          400: '#ff9636',
+          500: '#ff770f',
+          600: '#c25e00',
+          700: '#cc4902',
+          800: '#a23a0b',
+          900: '#82320c',
+        },
         // Deep, sophisticated ink tones
         ink: {
           50: '#f7f7f8',
@@ -61,6 +105,8 @@ export default {
       fontFamily: {
         display: ['"Cormorant Garamond"', 'Georgia', 'serif'],
         body: ['"DM Sans"', 'system-ui', 'sans-serif'],
+        editorial: ['"Cormorant Garamond"', 'Georgia', 'serif'],
+        technical: ['"Space Grotesk"', 'system-ui', 'sans-serif'],
       },
       fontSize: {
         'display-xl': ['clamp(3rem, 8vw, 6rem)', { lineHeight: '1.05', letterSpacing: '-0.02em' }],

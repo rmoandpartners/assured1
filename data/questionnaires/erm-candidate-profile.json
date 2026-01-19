@@ -2588,7 +2588,11 @@
             "description": "Please describe your most significant publications or thought leadership contributions",
             "type": "textarea",
             "required": false,
-            "placeholder": "e.g., 'Co-authored RIMS white paper on emerging risks in 2023; regular contributor to Risk.net on operational resilience topics'"
+            "placeholder": "e.g., 'Co-authored RIMS white paper on emerging risks in 2023; regular contributor to Risk.net on operational resilience topics'",
+            "conditionalOn": {
+              "field": "publications_thought_leadership",
+              "values": ["internal", "blogs_social", "trade_press", "academic_whitepapers", "book_chapters"]
+            }
           },
           {
             "id": "speaking_presenting",
@@ -2629,7 +2633,11 @@
             "description": "Please describe notable conferences or presentations you have delivered",
             "type": "textarea",
             "required": false,
-            "placeholder": "e.g., 'Keynote speaker at IRM Risk Leaders Conference 2024; panelist at RIMS Annual Conference; regular presenter at local IIA chapter'"
+            "placeholder": "e.g., 'Keynote speaker at IRM Risk Leaders Conference 2024; panelist at RIMS Annual Conference; regular presenter at local IIA chapter'",
+            "conditionalOn": {
+              "field": "speaking_presenting",
+              "values": ["internal", "local_chapter", "regional_national", "international", "regular_circuit"]
+            }
           },
           {
             "id": "professional_associations",
@@ -2666,7 +2674,11 @@
             "description": "Please list your professional association memberships and any leadership roles",
             "type": "textarea",
             "required": false,
-            "placeholder": "e.g., 'IRM Fellow; RIMS member since 2015; Chair of local IIA chapter risk committee; GARP FRM holder'"
+            "placeholder": "e.g., 'IRM Fellow; RIMS member since 2015; Chair of local IIA chapter risk committee; GARP FRM holder'",
+            "conditionalOn": {
+              "field": "professional_associations",
+              "values": ["member", "active_participant", "committee_leadership", "board_leadership"]
+            }
           },
           {
             "id": "certifications_reference",
@@ -2746,7 +2758,11 @@
             "description": "Please describe any notable innovations, methodologies, or tools you have developed",
             "type": "textarea",
             "required": false,
-            "placeholder": "e.g., 'Developed proprietary climate risk scenario methodology now used by 3 organisations; created open-source KRI dashboard template'"
+            "placeholder": "e.g., 'Developed proprietary climate risk scenario methodology now used by 3 organisations; created open-source KRI dashboard template'",
+            "conditionalOn": {
+              "field": "innovation_contributions",
+              "values": ["internal_improvements", "cross_org", "industry_adoption", "recognised_innovation"]
+            }
           },
           {
             "id": "awards_recognition",

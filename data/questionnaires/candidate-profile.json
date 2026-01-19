@@ -1522,6 +1522,10 @@
             "description": "Certifications focused on enterprise-wide risk management",
             "type": "multiselect",
             "required": false,
+            "conditionalOn": {
+              "field": "role_functions_sought",
+              "contains": ["risk_management"]
+            },
             "options": [
               {
                 "value": "irm_cert",
@@ -1594,6 +1598,10 @@
             "description": "Certifications for internal audit professionals",
             "type": "multiselect",
             "required": false,
+            "conditionalOn": {
+              "field": "role_functions_sought",
+              "contains": ["internal_audit"]
+            },
             "options": [
               {
                 "value": "cia",
@@ -1659,6 +1667,10 @@
             "description": "Certifications for internal controls, SOX compliance, and governance",
             "type": "multiselect",
             "required": false,
+            "conditionalOn": {
+              "field": "role_functions_sought",
+              "contains": ["internal_controls"]
+            },
             "options": [
               {
                 "value": "cima",
@@ -1712,6 +1724,10 @@
             "description": "Certifications for BCM, crisis management, and operational resilience",
             "type": "multiselect",
             "required": false,
+            "conditionalOn": {
+              "field": "role_functions_sought",
+              "contains": ["bcm_resilience"]
+            },
             "options": [
               {
                 "value": "cbcp",
@@ -1777,6 +1793,10 @@
             "description": "Certifications for sustainability, ESG reporting, and climate risk",
             "type": "multiselect",
             "required": false,
+            "conditionalOn": {
+              "field": "role_functions_sought",
+              "contains": ["sustainability_esg"]
+            },
             "options": [
               {
                 "value": "cfa_esg",
@@ -1907,6 +1927,10 @@
             "description": "Certifications for regulatory compliance, AML, and financial crime",
             "type": "multiselect",
             "required": false,
+            "conditionalOn": {
+              "field": "role_functions_sought",
+              "contains": ["compliance"]
+            },
             "options": [
               {
                 "value": "ica_cert",
